@@ -47,13 +47,11 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 set encoding=utf-8          " Set Unicode as the default encoding
 set fileencodings=ucs-bom,utf-8,latin1
 
-" What does this do?
 set modelines=5
 
 " Trim whitespace from python files
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
-"set foldmethod=indent
 
 " For XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
@@ -61,23 +59,6 @@ au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
 
 let mapleader = ","
-
-map <Leader>cd :exe 'cd ' . expand ("%:p:h")<CR>
-nmap <F1> :w<CR>
-imap <F1> <ESC>:w<CR>a
-map <F8> gg"+yG
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Installed
-
-" www.vim.org/scripts/script.php?script_id=301
-" $ADDED/xml.vim
-
-" www.vim.org/scripts/script.php?script_id=39
-" copied macros/matchit.vim to plugin/
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" XML
 
 map <Leader>x :set filetype=xml<CR>
   \:source $VIMRUNTIME/ftplugin/xml.vim<CR>
@@ -95,7 +76,3 @@ nmap <Leader>px !!xmllint --format -<CR>
 nmap <Leader>pxa :%!xmllint --format -<CR>
 
 nmap <Leader>i :%!xsltlint<CR>
-
-" todo:
-" check
-" http://mugca.its.monash.edu.au/~djkea2/vim/compiler/xmllint.vim
