@@ -28,18 +28,19 @@ set softtabstop=4
 set tabstop=4
 set fileformat=unix
 
-" Some binds i like
-map <C-k> d$ 		" Kill text with control-k
-map <F4> :q<CR> 	" Close a buffer with f4
-map <C-j> gqap 		" Justify text
+" Expand existing abbreviation
+
+map <C-X><C-X> diw:exe "normal i".@"<cr>
+map <C-j> :redir >>~/my.abbr<CR>:abbr<CR>:redir END<CR>
+map <C-k> :split ~/my.abbr<CR>:%s/^!/ab /e<CR>:wq<CR>:source ~/my.abbr<CR>
+
+
 
 colorscheme evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
 
-" For XML
-au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 " For subversion
 au BufNewFile,BufRead  svn-commit.* setf svn
 
@@ -53,6 +54,10 @@ set modelines=5
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 "set foldmethod=indent
+
+" For XML
+au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
 
 
 let mapleader = ","
