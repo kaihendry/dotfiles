@@ -9,7 +9,8 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/tmp");
+user_pref("browser.download.dir", "/home/hendry/personal/jutta-flight-march-2004");
+user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
 user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
@@ -23,15 +24,17 @@ user_pref("dom.disable_window_flip", true);
 user_pref("dom.disable_window_move_resize", true);
 user_pref("dom.disable_window_open_feature.status", true);
 user_pref("dom.disable_window_status_change", true);
-user_pref("editor.history_title_0", "ESN HYY/Helsinki");
-user_pref("editor.history_url_0", "http://www.helsinki.fi/jarj/snvk/Linda/ESN/");
+user_pref("editor.history_title_0", "CSS Diagrams");
+user_pref("editor.history_title_1", "ESN HYY/Helsinki");
+user_pref("editor.history_url_0", "http://www.surfare.net/~toolman/temp/diagram.html");
+user_pref("editor.history_url_1", "http://www.helsinki.fi/jarj/snvk/Linda/ESN/");
 user_pref("ext.checky.pref.agent.w3c.link", true);
 user_pref("ext.checky.pref.agent.wdg.css", true);
 user_pref("ext.checky.pref.agent.webthing.accessibility", true);
 user_pref("ext.checky.pref.agent.webthing.page", true);
 user_pref("ext.checky.pref.global.tempdirectory", "/home/hendry/.mozilla/default/ack41g03.slt");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "windows-1254, windows-1252, ISO-8859-15, ISO-8859-1, UTF-8");
+user_pref("intl.charsetmenu.browser.cache", "UTF-8, windows-1250, windows-1254, windows-1252, ISO-8859-15");
 user_pref("intl.charsetmenu.composer.cache", "ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("network.cookie.p3p", "frfradaa");
