@@ -102,6 +102,72 @@
 00:25 < hendry> shift+insert and middle button paste are outputing different stuff
 00:38 < suteri> Puuh. Itkua ja hampaiden kiristyst‰ t‰m‰ X :/
 --- Log closed Wed Dec 17 00:41:38 2003
+--- Log opened Wed Dec 17 16:54:06 2003
+16:54 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+16:54 -!- Irssi: #debian-fi: Total of 22 nicks [0 ops, 0 halfops, 0 voices, 22 normal]
+16:54 -!- Irssi: Join to #debian-fi was synced in 11 secs
+17:28 < hendry> liw: just been playing with lodju
+17:29 < hendry> made it segfault
+17:29 < hendry> then i resized the about box
+17:29 < hendry> and i can't resize it back to size
+17:31  * hendry has flu
+17:32 < hendry> have sympathy someone
+17:34 < desaster> :(
+17:43 < hendry> i know this may sound nuts
+17:43 < hendry> but i don't want to arrange my pictures with taxonomies
+17:44 < hendry> I just want it chronological 
+17:44 < hendry> simple
+17:52 < liiwi> yes
+18:12 < hendry> the way my camera takes pictures and stores the name is quite helpful
+18:12 < hendry> DCP_7846.JPG
+18:12 < hendry> next will be
+18:12 < hendry> DCP_7847.JPG
+18:12 < hendry> I wonder what happenes when 9999 comes up though
+18:13 < hendry> I think I will have a go at writing my own gallery program
+18:17 < hendry> i need a db. I guess the berkely one
+18:23 < Tv> hendry: See http://tv.debian.net/cam/
+18:24 < liw> hendry, segfault? ouch
+18:25 < liw> my camera starts with IMG_0001.JPG after IMB_9999.JPG (been there, done that)
+18:25 < liw> Lodju should probably acquire a way to sort pictures according to various criteria, but I don't have the energy to do anything about that this year, I suspect, too much work-work
+18:33 < hendry> Tv: i used bins
+18:33 < hendry> Tv: nice album, that's the structure i want
+18:35 < hendry> is there some fast curses based db interface
+18:35 < hendry> written in python
+18:36 < tale_debian> liw: Some cameras allow setting a new prefix for image names. Thus when you reach 9999 change the prefix if you want unique image names.
+18:36 < liw> tale_debian, that sounds useful for people with too much time on their hands :)
+18:37 < liw> I don't want to have to bother with the names of photo files
+18:37 < tale_debian> tv Sun albumiohjelma on huono kun siell‰ ei ole kissakuvia.
+18:37 < Tv> Hah.
+18:37 < liiwi> heh
+18:37 < Tv> Kissoille haukutaan.
+18:37 < liiwi> r‰ksr‰ks
+18:41 < tale_debian> tv Mini-konferenssisin ohjelmassa on minut merkitty pit‰m‰‰n Python-ohjelman paketoinnista. En min‰ semmoisesta mit‰‰n tied‰, lupasin menn‰ kuuntelemaan jos tuommoinen esitys tulee.
+18:41 < liiwi> se on opt-out tyylinen merkint‰ :P
+18:42 < Tv> tale_debian: luepas uudestaan, remppasin sen jo mielest√§ni kerran
+18:42 < Tv> + se on wiki, muokkaa itse
+18:42 < tale_debian> liiwi: Toisaalta lupasin pit‰‰ *  Python kielen‰, kohderyhm‰ ei-pythonistit mutta sit‰ taas ei ole minulle merkitty.
+18:42 < tale_debian> Luen sit‰ just nyt.
+18:42 < Tv> Noniin, remppaa.
+18:43 < Tv> Tod.n√§k. ei pythonisteja ei tapahtumassa ole, ainakaan montaa tuntia :)
+18:43 < tale_debian> Ei mulla tiet‰‰kseni ole mit‰‰n salasanoja tommoiseen.
+18:43 < liiwi> perlill‰ kirjoitettu twiki
+18:44 < Tv> Ei mullakaan.
+18:44 < Tv> guest/guest, muistaakseni
+18:45 < liw> el√§m√§ on liian lyhyt uusien tunnusten hankkimiseen, nillitt√§minen irciss√§ on helpompaa :)
+18:45 < tale_debian> No nyt taisin osata korjata.
+18:46 < tale_debian> Jos salasanat on noin helppoja, eikˆs tuommoiset wikit k‰yd‰ h‰irikˆim‰ss‰ rikki heti?
+18:46 < Tv> Lue mit√§ tarkoittaa "wiki".
+18:47 < liiwi> twikiss‰ on alkeellinen versionhallinta ja muuta pient‰, joten ainoa vaiva on korjaaminen
+18:49 < tale_debian> Kai se sitten on hyv‰. En ole en‰‰ jaksanut innostua kaikista uutuuksista.
+18:51 < liiwi> helppo k‰pelˆid‰ mutta ei liian helppo
+18:52 < Tv> wiki? uutuus?
+18:52 < liw> populaari-ilmi√∂n√§ wikit on, mit√§, pari vuotta vanhoja, eli aika uusia
+18:53 < Tv> Suhteellista..
+18:53  * Tv muistaa lukeneensa c2.comia kauuuuan sitten :)
+19:00 -!- Netsplit truong.freenode.net <-> irc.freenode.net quits: nchip
+19:02 -!- Netsplit over, joins: nchip
+20:08 -!- jhav [~jussi@ua11d139.elisa.omakaista.fi] has quit [Ping timeout: 14400 seconds]
+--- Log closed Wed Dec 17 21:12:17 2003
 --- Log opened Wed Dec 17 21:58:04 2003
 21:58 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
 21:58 -!- Irssi: #debian-fi: Total of 21 nicks [0 ops, 0 halfops, 0 voices, 21 normal]
@@ -120,3 +186,60 @@
 00:04 -!- liw [~liw@ip212-226-168-229.adsl.kpnqwest.fi] has quit ["Pink timeout"]
 00:18 -!- aatami [sventon@h22n9c1o1116.bredband.skanova.com] has joined #debian-fi
 --- Log closed Thu Dec 18 00:44:49 2003
+--- Log opened Thu Dec 18 23:30:52 2003
+23:30 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+23:30 -!- Irssi: #debian-fi: Total of 21 nicks [0 ops, 0 halfops, 0 voices, 21 normal]
+23:31 -!- Irssi: Join to #debian-fi was synced in 10 secs
+23:38 < hendry> I have something on my machine listening on 6667, and I can't figure out what
+23:39 < tpr> hendry, ircd?
+23:39 < tpr> tpr@tuli:~$ grep 6667 /etc/services
+23:39 < tpr> ircd            6667/tcp                        # Internet Relay Chat
+23:39 < nonix4> hendry: /usr/sbin/lsof -ni
+23:41 < hendry> as far as I know, I don't have a ircd running
+23:42 < hendry> irssi can't connect to it
+23:42 < hendry> telnet to it and it logs me off within 2 seconds
+23:44 < hendry> once I telneted to it, the same process opened :32807
+23:46 < hendry> fs
+23:47 < nchip> does lsof say what?
+23:48 < nchip> or netstat -avp
+23:48 < hendry> chkrootkit says Possible LPD worm installed Checking `lkm'... You have     4 process hidden for ps command Warning: Possible LKM Trojan installed
+23:48 < jerkku> does netstat -l -p help anything?
+23:48 < nchip> "4 process hidden for ps command" is a common false alarm
+23:49 < hendry> I watch traffic from my machine quite closely
+23:50 < hendry> so I find it hard to believe I have a trojan installed
+23:50 < hendry> but I don't understand why I can't figure out the program listening on 6667
+23:51 < nchip> netstat -avp|grep irc
+23:52 < tpr> hendry, why don't you just try to execute what nonix4 said?
+23:53 < tpr> with it you get the process id of tha program using that port..
+23:54 < hendry> tcp        0      0 *:ircd                  *:*                     LISTEN     - 
+23:54 < hendry> what process id?
+23:59 < nchip> in place of '-' there should be the pid
+--- Day changed Fri Dec 19 2003
+00:00 < hendry> I think there should be if there is a connection
+00:00 < hendry> argh
+00:00 < hendry> yes there should be one
+00:00 < hendry> hmph
+00:01 < nchip> looks like nfs in kernel can create lines like that
+00:01 < hendry> no, i just telnetted to port 80
+00:01 < hendry> tcp        0      0 127.0.0.1:80            127.0.0.1:32816         ESTABLISHED-
+00:02 < hendry> so er, how do I figure what process is listening
+00:03 < nchip> tcp        0      0 127.0.0.1:80            127.0.0.1:32797         ESTABLISHED494/apache
+00:03 < hendry> what does netstat just give me "-" ?
+00:04 < nchip> does it give that for all lines?
+00:05 < nchip> hendry: oh. you are not running it as root?
+00:05 < nchip> nonroot users cant see pids of other users sockets
+00:07 < hendry> tcp        0      0 0.0.0.0:6667            0.0.0.0:*               LISTEN     702/inetd
+00:07 < hendry> oh yea
+00:08 < hendry> false alarm
+00:08 < hendry> I am being paranoid
+00:08 < hendry> I thought I uninstalled bitlbee
+00:08 < nchip> :)
+00:09 < nchip> but now you know how to find a pid from listening daemon
+00:09  * hendry has learnt a lesson, thanks
+00:14 < hendry> anyone here want to do a finnish translation for Skolelinux?
+--- Log closed Fri Dec 19 00:38:31 2003
+--- Log opened Fri Dec 19 19:08:36 2003
+19:08 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+19:08 -!- Irssi: #debian-fi: Total of 19 nicks [0 ops, 0 halfops, 0 voices, 19 normal]
+19:08 -!- Irssi: Join to #debian-fi was synced in 11 secs
+19:12 -!- tale_debian [~tale@dsl-tregw2m26.dial.inet.fi] has quit [Remote closed the connection]

@@ -28,6 +28,12 @@
 19:59 !irc.eu.freenode.net *** Found your hostname
 19:59 !irc.eu.freenode.net *** No identd (auth) response
 --- Log closed Tue Dec 16 20:05:19 2003
+--- Log opened Wed Dec 17 16:52:39 2003
+16:52 !irc.eu.freenode.net *** Looking up your hostname...
+16:52 !irc.eu.freenode.net *** Checking ident
+16:52 !irc.eu.freenode.net *** Found your hostname
+16:54 !irc.eu.freenode.net *** No identd (auth) response
+--- Log closed Wed Dec 17 16:59:38 2003
 --- Log opened Wed Dec 17 21:57:33 2003
 21:57 !irc.eu.freenode.net *** Looking up your hostname...
 21:57 !irc.eu.freenode.net *** Checking ident
@@ -46,3 +52,15 @@
 00:02 !irc.eu.freenode.net *** Found your hostname
 00:04 !irc.eu.freenode.net *** No identd (auth) response
 --- Log closed Thu Dec 18 00:09:32 2003
+--- Log opened Thu Dec 18 23:30:21 2003
+23:30 !irc.eu.freenode.net *** Looking up your hostname...
+23:30 !irc.eu.freenode.net *** Checking ident
+23:30 !irc.eu.freenode.net *** Found your hostname
+23:30 !irc.eu.freenode.net *** No identd (auth) response
+--- Log closed Thu Dec 18 23:36:20 2003
+--- Log opened Fri Dec 19 19:08:05 2003
+19:08 !irc.eu.freenode.net *** Looking up your hostname...
+19:08 !irc.eu.freenode.net *** Checking ident
+19:08 !irc.eu.freenode.net *** Found your hostname
+19:08 !irc.eu.freenode.net *** No identd (auth) response
+--- Log closed Fri Dec 19 19:14:04 2003

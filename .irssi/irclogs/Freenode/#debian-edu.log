@@ -85,6 +85,27 @@
 22:56 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
 23:46 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
 --- Log closed Wed Dec 17 00:41:38 2003
+<<<<<<< .mine
+--- Log opened Wed Dec 17 16:54:06 2003
+16:54 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
+16:54 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+16:54 -!- Irssi: Join to #debian-edu was synced in 14 secs
+17:23 -!- Colargol [runesk@george.medisin.ntnu.no] has quit ["Client exiting"]
+17:35 -!- Fotokis [~Tommy@ti500710a002-0140.dialup.online.no] has quit ["Client Exiting"]
+17:55 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit ["Client Exiting"]
+18:01 -!- perh [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+18:13 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit ["Client Exiting"]
+18:14 -!- perh [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+19:00 -!- Colargol [runesk@george.medisin.ntnu.no] has joined #debian-edu
+19:04 < Werner_> Colargol: g'day.. I'm leaving Trondheim tomorrow, but should we try to set up a framework for the security-team by email during christmas?
+19:20 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+19:26 -!- pere is now known as pere_poff
+19:39 -!- Colargol [runesk@george.medisin.ntnu.no] has quit ["Client exiting"]
+20:00 -!- fjemtland [~fjemtland@developer.skolelinux.no] has joined #debian-edu
+20:54 -!- Fotokis [~Tommy@ti500710a001-0009.dialup.online.no] has joined #debian-edu
+21:05 -!- fjemtland [~fjemtland@developer.skolelinux.no] has quit ["[BX] Do you... BitchX?"]
+21:11 -!- Jerazol [~Tommy@ti500710a012-0115.dialup.online.no] has joined #debian-edu
+--- Log closed Wed Dec 17 21:12:17 2003
 --- Log opened Wed Dec 17 21:58:04 2003
 21:58 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
 21:58 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
@@ -112,3 +133,14 @@
 00:25 < klausAde> i'm struggling with upgraded firewall
 00:35 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
 --- Log closed Thu Dec 18 00:44:49 2003
+--- Log opened Thu Dec 18 23:30:52 2003
+23:30 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
+23:30 -!- Irssi: #debian-edu: Total of 20 nicks [0 ops, 0 halfops, 0 voices, 20 normal]
+23:31 -!- Irssi: Join to #debian-edu was synced in 14 secs
+--- Day changed Fri Dec 19 2003
+00:17 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
+--- Log closed Fri Dec 19 00:38:31 2003
+--- Log opened Fri Dec 19 19:08:36 2003
+19:08 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
+19:08 -!- Irssi: #debian-edu: Total of 19 nicks [0 ops, 0 halfops, 0 voices, 19 normal]
+19:08 -!- Irssi: Join to #debian-edu was synced in 15 secs

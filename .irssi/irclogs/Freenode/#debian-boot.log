@@ -567,6 +567,47 @@
 00:10 < manty> joeyh: around now
 00:38 -!- jackhead [~jackhead@p5085113E.dip.t-dialin.net] has quit ["leaving"]
 --- Log closed Wed Dec 17 00:41:38 2003
+--- Log opened Wed Dec 17 16:54:06 2003
+16:54 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+16:54 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+16:54 -!- Irssi: Join to #debian-boot was synced in 13 secs
+17:01 -!- decko [~decko@200.225.247.92] has quit ["Client exiting"]
+17:06 -!- michele [~michele@host130-115.pool81116.interbusiness.it] has quit ["."]
+17:07 -!- Mayatuk [~Mayatuk@pD952578C.dip.t-dialin.net] has joined #debian-boot
+17:09 -!- Mayatuk [~Mayatuk@pD952578C.dip.t-dialin.net] has left #debian-boot [""You run, never stop, got to win, got to run till you drop""]
+17:45 < hendry> i thought i saw somewhere that dailies were going to be restarted
+17:54 -!- zophyx [~Emile@protolinux.com] has quit [Remote closed the connection]
+17:59 -!- mrvn_ is now known as mrvn
+18:00 -!- godog [~filo@212.141.113.248] has joined #debian-boot
+18:02 < haggai> hendry: hi Kai, long time no see
+18:06 -!- fast [~fast@213.200.233.181] has quit ["Client exiting"]
+18:10 < hendry> haggai: oh hi. You made the news. :) Great work on Open Office btw
+18:16 -!- zophyx [~Emile@www.protolinux.com] has joined #debian-boot
+18:22 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has joined #debian-boot
+18:48 -!- godog [~filo@212.141.113.248] has quit [Read error: 104 (Connection reset by peer)]
+18:55 -!- jbailey [~jbailey@199.212.225.1] has joined #debian-boot
+18:55 -!- nanoprob1 [sleazegrin@h178n1fls304o291.telia.com] has quit [Read error: 110 (Connection timed out)]
+19:00 -!- Netsplit truong.freenode.net <-> irc.freenode.net quits: Md, rgh, Sahneschnitter, dannf, delYsid, frankie, piranha
+19:00 < haggai> hendry: thanks :)
+19:02 -!- Netsplit over, joins: delYsid, Md, frankie, piranha, dannf, Sahneschnitter, rgh
+19:04 -!- frankie [~frankie@firewall.ba.issia.cnr.it] has quit ["Bye"]
+19:12 -!- piotr_ [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+19:26 -!- pere is now known as pere_poff
+19:34 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit [Read error: 110 (Connection timed out)]
+19:53 -!- KAeL[N7] [~KAeL@atlas.bde.inp-toulouse.fr] has joined #debian-boot
+19:57 -!- Jonzl [~bittenich@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+19:57 -!- Jonzl [~bittenich@dfn236001.extern.uni-tuebingen.de] has quit [Remote closed the connection]
+20:13 < buxy> manty: ping ?
+20:15 -!- decko|rango is now known as decklo
+20:15 -!- decklo is now known as decko
+20:21 -!- piotr_ [~piotr@FW-30-241.go.retevision.es] has quit [Read error: 113 (No route to host)]
+20:24 -!- otavio [~otavio@200-203-056-007.pltce7001.dsl.brasiltelecom.net.br] has quit ["fui!"]
+20:24 -!- frankie [~frankie@adsl-220-218.37-151.net24.it] has joined #debian-boot
+20:27 -!- KAeL[N7] [~KAeL@atlas.bde.inp-toulouse.fr] has quit ["Leaving"]
+20:29 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+21:06 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has joined #debian-boot
+--- Log closed Wed Dec 17 21:12:17 2003
+=======
 --- Log opened Wed Dec 17 21:58:04 2003
 21:58 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
 21:58 -!- Irssi: #debian-boot: Total of 47 nicks [0 ops, 0 halfops, 0 voices, 47 normal]
@@ -690,3 +731,111 @@
 00:44 < buxy> manty: sure, no problem
 00:44 < buxy> just mail me when you're done
 --- Log closed Thu Dec 18 00:44:49 2003
+--- Log opened Thu Dec 18 23:30:52 2003
+23:30 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+23:30 -!- Irssi: #debian-boot: Total of 47 nicks [0 ops, 0 halfops, 0 voices, 47 normal]
+23:31 -!- Irssi: Join to #debian-boot was synced in 12 secs
+23:33 -!- sim [~chatzilla@nyx.xs4all.nl] has joined #debian-boot
+23:37 < manty> buxy: I didn't have time
+23:37 < manty> buxy: I'll try after dinner
+23:38 < manty> buxy: I have just arrived
+23:59 < otavio> joeyh: there?
+--- Log closed Fri Dec 19 00:38:31 2003
+--- Log opened Fri Dec 19 19:08:36 2003
+19:08 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+19:08 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+19:08 -!- Irssi: Join to #debian-boot was synced in 13 secs
+19:09 < Sesse> if cvs.alioth.debian.org had multiple A records, I could probably understand this
+19:09 < Sesse> but there is only one :-)
+19:09 < kungfuftr> *cough* don't suppose anyone would happen to know what dpkg actually requires in a target directory to run (ie: --root=)
+19:09 < kungfuftr> ?
+19:09 < Sesse> kungfuftr: a debian installation?
+19:09 < kungfuftr> Sesse-> what if there isn't one?
+19:09 < Sesse> probably /var/lib/dpkg with some sane info.
+19:10 < teo> joeyh, could I'd be added to the base-config project? I'm making an effort for that spanish translation too
+19:10 -!- fast [~fast@213.200.233.181] has quit ["Client exiting"]
+19:10 < kungfuftr> Sesse-> heh, how can one define "sane"... =0)
+19:11 < nevyn> I recently ran debian installer on a bunch of systems and had major kernel issues (using the image that is mentioned in the topic) does this reflect other peoples experience of the beta?
+19:11 < kungfuftr> Sesse-> is there a sane place one could find such sane info?
+19:11 < Sesse> kungfuftr: what are you trying to do? :-)
+19:12 < kungfuftr> use dpkg itself to do a bootstrap installation into a target directory.
+19:12 < nevyn> I got kernel panics on partitioning disks. for one system and when running discover after completing install for another.
+19:12 < Sesse> use debootstrap?
+19:12 < Sesse> nevyn: hmm, haven't heard of before
+19:12 < kungfuftr> um... that's what i'm currently re-writing, so it would kind fo defeat the purpose
+19:12 < nevyn> system installs woody fine.
+19:13 < Sesse> kungfuftr: yet another debootstrap rewrite? :-)
+19:13 < nevyn> pentium 133 and pentium 233mmx
+19:13 < Sesse> nevyn: file an installation report.
+19:13 < nevyn> both 64meg of ram...
+19:13 < Sesse> have you tried the latest daily images?
+19:13 < nevyn> are they what's linked in the topic?
+19:13 < joeyh> teo: sure, done. I should really add all d-i translators, but it's a lot of mindless work
+19:13 < kungfuftr> Sesse-> it's an internal project here at the office as it needs to tie in with our systems
+19:14 < teo> joeyh, yes, it can be done when they ask
+19:15 < kungfuftr> is already rather quite nice... just stumped on how to 'elude' dpkg to actually install stuff into the target directory... after that. i'm sorted.
+19:15 -!- moshez [~moshez@line133-133.adsl.actcom.co.il] has quit [Connection timed out]
+19:15 -!- noshadow [~brl@pcpool09.mathematik.uni-freiburg.de] has joined #debian-boot
+19:15 < nevyn> Sesse: b.d.o?
+19:16 < Sesse> nevyn: yes. see the template on the web site for more info.
+19:17 < nevyn> k
+19:19 -!- moshez [~moshez@line133-133.adsl.actcom.co.il] has joined #debian-boot
+19:20  * joeyh wonders if upx --best is worth the 1k savings ;-)
+19:21 < Sesse> it is =)
+19:21  * Sesse has fought many a kilobyte battle against d-i :-P
+19:21 < joeyh> need to make it only upx a given kernel once first
+19:21 < nevyn> hrm
+19:21 -!- p2-mate [~p2@NAT.office.mind.be] has quit ["later"]
+19:21 < nevyn> is the whole 64meg requirement going away anytime soon?
+19:22 < joeyh> in my testing, it's closer to 32 mb
+19:22 < joeyh> but you should enable swa as soon as you can
+19:22 < joeyh> if you boot with framebuffer disabled, that will save some 2 or 3 mb
+19:22 < nevyn> yeah but the problem is the installer unpacks a whole bunch of udebs. that it won't need util way after swap is enabled.
+19:23 < joeyh> Md: btw, your patch assumed a lot of stuff busybox doesn't do, but I think I've fixed it all
+19:23 < joeyh> yes, however those will fit in ~33 mb
+19:23 < Md> joeyh: what kind of stuff?
+19:23 < nevyn> joeyh: that's far too big.
+19:23 < joeyh> sed options, gre doesn't do regexs
+19:24 < joeyh> er, grep
+19:24 < waldi> *rebuild busybox*
+19:24 < nevyn> is there any plan to make the installer only install the udebs that are essential to get swap/disk partitioning going then pivotroot/use swap for the other udebs?
+19:24 < joeyh> the debix thing has the potential to drop it to 16 mb for cd installs
+19:24 < Md> sorry, I did not remember that these script are run with the busybox tools
+19:24 < joeyh> I doubt you'd save more than 5 mb doing that
+19:25 < joeyh> a special udeb that searched out free space and used it as swap could maybe save a bit more
+19:28 < joeyh> there are some other easy changes that I estimate can push it down to 24 mb.
+19:28 < joeyh> of course we could also try compressing the ramdisk
+19:29 < nevyn> joeyh: that's still larger than any other distro...
+19:29 < nevyn> we should be able to compete with slackware on this.
+19:29 < joeyh> surely you'd kidding
+19:31 < Md> I'd love to be able to install debian on a 16 MB box, but it's probably easier to attach the hard disk somewhere else...
+19:31 < joeyh> it's certianly easier when you get to dselect
+19:31 < Md> or just use a distribution made for this kind of old stuff
+19:31 < waldi> is anyone able to do some tests with busybox?
+19:31 < waldi> otherwise i will just upload them
+19:32 < nevyn> no I'm really not kidding.
+19:33 < nevyn> we should be able to install debian on 8meg machines. it won't be fast.... but it should work.
+19:33 < joeyh> oh well, I suppose if someone actually cares about it, they will do the work
+19:33 < joeyh> hah
+19:33 < joeyh> I still think you're wrong, I'd not be suprised if commercial distos has 64 to 128 minimum ram requirements these days
+19:34 < nevyn> slackware still installs on 4meg I think.
+19:34 < waldi> nevyn: no
+19:34 < waldi> nevyn: at least not with kernel > 2.0
+19:34 < waldi> on i386
+19:34 < Md> I would definitely not install a general purpose distribution on a 4 MB box
+19:35  * joeyh finds a post about redhat 7.1 saying 32 mb
+19:36 < nevyn> waldi: what's the minimum for slackware then?
+19:36 < waldi> nevyn: don't know
+19:36 < waldi> nevyn: but the kernel needs at least 5mb
+19:36 < waldi> so the distribution can't need less
+19:37 < nevyn> what kernel the default slackware one ?
+19:37 < waldi> i never used slackware
+19:37 < nevyn> the kernel does not require 5meg of ram.
+19:37 < joeyh> the new -small kernel looks interesting
+19:38 < joeyh> or -tiny I forget
+19:38 < nevyn> it's a bloated piece of crap but it doesn't need 5meg.
+19:45 -!- decko [~decko@233-172-161.xdsl-fixo.ctbcnetsuper.com.br] has joined #debian-boot
+19:45 -!- vinsci [~vinsci@dsl-jklgw3if1.dial.inet.fi] has quit [Read error: 110 (Connection timed out)]
+19:51 -!- vinsci [~vinsci@dsl-jklgw3if1.dial.inet.fi] has joined #debian-boot
+19:53 -!- frankie [~frankie@adsl-216-214.37-151.net24.it] has joined #debian-boot
+19:57 -!- kungfuftr [~scott@jadis.narnia.org.uk] has quit ["Lost terminal"]
