@@ -4,16 +4,15 @@ set alias_file=~/mail/mutt.addressbook
 # File to search for aliases in
 source  ~/mail/mutt.addressbook
 
+
 set imap_force_ssl=yes
-set mbox_type=maildir
-set folder=$HOME/Mail
-set spoolfile=+UnivCS/INBOX
+set folder={hendry@mail.cs.helsinki.fi/ssl}
+set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 
 # tab should be next new
 bind	index G			imap-fetch-mail
 
-#mailboxes ! +INBOX +INBOX.inex +INBOX.esn-helsinki +INBOX.debating +INBOX.junk
-source ~/mail/muttrc.mailboxes
+mailboxes ! +INBOX +INBOX.inex +INBOX.esn-helsinki +INBOX.debating +INBOX.junk
 
 #set move=yes
 
@@ -29,12 +28,7 @@ set ispell="aspell -e -c"
 #set allow_8bit
 set charset="utf-8"
 
-#set mbox_type=mbox               # Maildir
-#set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
-#set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
 set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y.%m-%b`" #Archive inbox mail
-#save-hook ~A ="inbox-`date +%m-%Y`"
-#set postponed=~/Mail/postponed  # location of postponed messages
 set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of postponed messages
 set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y.%m-%b`" #Archive send mail
 
@@ -89,8 +83,6 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>' 
 #send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
-
-#lists ohtuv03-digimon-list
 
 bind attach S save-entry
 macro attach s S^A~/mail/mail-attachments/

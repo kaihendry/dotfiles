@@ -30,6 +30,7 @@ if [ "$PS1" ]; then
     alias ll='ls -al'
     #alias la='ls -A'
     #alias l='ls -CF'
+    alias mutto='mutt -F ~/.muttorc'
 
     # set a (really) fancy prompt
 
