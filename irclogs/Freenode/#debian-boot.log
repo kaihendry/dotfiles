@@ -2230,3 +2230,9 @@
 12:13 < waldi> pere: ask aj for nmu approval
 12:14 < pere> I can not NMU every package under the sun.  I do not have time left to keep an eye on them after the NMU.
 12:14 -!- manty [~manty@204.Red-213-96-224.pooles.rima-tde.net] has joined #debian-boot
+12:43 -!- mrvn [mrvn@pD9519C3F.dip.t-dialin.net] has quit [Read error: 60 (Operation timed out)]
+12:46 -!- mrvn [mrvn@p5083553C.dip.t-dialin.net] has joined #debian-boot
+12:51 < mrvn> re
+12:53 -!- pb_ [~pb@cpc2-cmbg4-3-0-cust239.cmbg.cable.ntl.com] has joined #debian-boot
+13:14 < aj> it's 0-day NMU time, don't ask me for approval
+13:16 -!- Jonzl [~Jonzl@dfn236108.extern.uni-tuebingen.de] has quit [Read error: 104 (Connection reset by peer)]

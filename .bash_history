@@ -1,174 +1,3 @@
-svn commit
-svn update
-ls
-svn status
-svn add .viminfo 
-svn commit
-ls -al
-history 
-screen
-ssh mynnti.helsinki.fi
-ssh myynti.helsinki.fi
-ssh myntti.helsinki.fi
-exit
-history | grep ssh
-ssh myntti.helsinki.fi
-ll
-exit
-top
-ls /boot/
-cat /etc/lilo.conf 
-sudo aptitude
-apt-cache search 2.4.23
-apt-cache search 2.4.22
-uname -a
-sudo apt-get install pcmcia-modules-2.4.22-686 alsa-modules-2.4.22-1-686 kernel-image-2.4.22-1-686
-ls
-ls -al
-svn status
-svn update
-ls
-ls -al
-svn propget svn:externals .
-vim .bashrc 
-ls -a
-ll
-vim .bashrc 
-ubh
-cd dat
-cd data 
-cd alt.binaries.pictures.erotica.hardcore/
-ls
-cd
-ubh
-cd data
-cd alt.binaries.pictures.erotica.hardcore/
-feh *
-rm *
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
- cd "`echo -e '\057home\057hendry\057\056PyDS'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057\056camel\137certs'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057\056etwolf'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057irc'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057irc'`"
- cd "`echo -e '\057home\057hendry'`"
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
- cd "`echo -e '\057home\057hendry\057\056menu'`"
- cd "`echo -e '\057home\057hendry\057\056menu\057icons'`"
- cd "`echo -e '\057home\057hendry\057\056menu'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057\056metacity'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057\056mplayer'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057News'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057News'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057Desktop'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057TransGaming\137Drive'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057addressbook'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057dabase'`"
- cd "`echo -e '\057home\057hendry'`"
-./lupy
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
- cd "`echo -e '\057home\057hendry\057thumbs'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057tap'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057tap'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057swriting'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057porter'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057public\137html'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057python'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057python'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057quake\063'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057render'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057silke'`"
- cd "`echo -e '\057home\057hendry\057silke\057myfiles'`"
- cd "`echo -e '\057home\057hendry\057silke'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057sky\055cd'`"
- cd "`echo -e '\057home\057hendry'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057Nokia'`"
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057Christin'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057Cooking'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057QuickCam'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057Nokia'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057SO'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
- cd "`echo -e '\057home\057hendry\057soso\057ma\071projb'`"
- cd "`echo -e '\057home\057hendry\057soso'`"
-cd ~/mail/.svn/text-base/ ; ls
-cd ~/mail/.svn/
-ls
-cd text-base/
-ls
-ls -al
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
-feh SCAJ.jpg 
-mv 2408424.pdf personal/hut-transcript.pdf
-mv SCAJ.jpg pictures/
-vim accounts 
-svn add accounts 
-feh aitisi.jpg 
-mv aitisi.jpg pictures/
-ls
-feh feh_002972_000001_plan_of_cottage.jpg 
-cat jobstuff.txt 
-less jobstuff.txt 
-rm jobstuff.txt 
-ll
-rm -rf .xine/
-cd .xmms/
-ls
-cd ..
-rm -rf .xfce*
-ls -al
-vim .Xresources 
-rm .Xresources 
-ll
-vim .Xclients 
-rm -rf .Xclients 
-ls
-feh meg1\ Kopie.jpg 
-rm meg1\ Kopie.jpg 
-rm debate3.spx 
-ll
-rm .xawtv 
-feh jk.jpg 
-mv jk.jpg pictures/
-ls *.jpg
-feh *.jpg
-mv *.jpg pictures/
-rm .vimrc.bak 
-rm .xscreensaver 
-ls *.png
-feh *.png
-rm *.png
-rm -rf vellumdb/
 ls .aspell.*
 svn add .aspell.*
 cat .xftconfig 
@@ -496,5 +325,176 @@ rm debian/
 rm -rf debian/
 history | grep debian
 history | ssh
- PROMPT_COMMAND='pwd>&7;kill -STOP $$'
- cd "`echo -e '\057home\057hendry\057personal\057accomodation'`"
+history | grep ssh
+svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/debian
+mv python-scratch/ debian/
+cd debian/
+svn add python-scratch/
+svn commit
+cd
+ll
+svn status
+svn commit
+svn update
+ls
+cd school/
+cd datastructures/
+ls
+cd 
+tree datastructures
+tree school/datastructures/
+ls
+cd datastructures
+ls
+cd 
+cd datastructuresproject/
+ls
+ll
+ls
+cd 
+cd school/
+ls
+cd 
+mv datastructuresproject school/
+cd school/
+svn add datastructuresproject/
+cd 
+vim .bash_profile 
+ll
+cd .vim/
+ls
+cd 
+svn add .vim
+ls
+cd ictec/
+ls
+cd pip/
+ls
+cd ..
+lsl
+ll
+cd 
+cd school/
+cd 
+mv ictec/ school/
+cd school/
+svn add ictec/
+cd 
+lsl
+ll
+cd swriting/
+ls
+cd 
+ls school/swriting/
+rm -rf swriting/
+ls
+mc
+cd debian/
+ls
+dpkg --get-selections
+dpkg --get-selections > package-selections
+vim package-selections 
+ll
+dpkg --get-selections > package-selections.bilbo
+rm package-selections
+svn add package-selections.bilbo 
+svn commit
+cd 
+ls
+cd configs/
+ls
+ll
+cd 
+rm -rf configs/
+ll
+cd netinst/
+ls
+cd 
+rm -rf netinst/
+ls
+vim andreas.txt 
+rm andreas.txt 
+ll
+vim .reportbugrc 
+ls
+ll
+svn add .reportbugrc 
+vim lh6_comm.txt 
+rm lh6_comm.txt 
+ls
+rm -rf crossover/
+mv accomodation/ personal/
+cd personal/
+ls
+cd accomodation/
+ls
+ll
+vim shared.tex 
+ll
+mc
+cd ..
+svn add accomodation/
+cd 
+ls
+cd misc/
+ls
+ll
+mv MADONNA.BRITNEY.AND.CHRISTINA.3-WAY.KISS.\(FLAVA\).MPG /home/hendry/movie/
+cd 
+rm -rf misc/
+cd mail-attachments/
+ls
+ll
+cd 
+ls
+svn commit
+svn update
+ls
+svn add mail-attachments/
+cd mail
+ls
+cd ..
+svn rm mail-attachments/
+mv mail-attachments/ mail
+vim .muttrc 
+cd mail/
+ls
+svn add mail-attachments/
+cd mail-attachments/
+ls
+cd 
+svn update
+svn commit
+svn rm mail-attachments
+mv mail/mail-attachments/ .
+svn commit
+svn update
+svn rm mail-attachments/
+rm -rf mail-attachments/
+cd mail/
+ls
+mkdir mail-attachments
+svn add mail-attachments/
+cd 
+svn commit
+cd mail/
+svn commit
+cd porn/
+ls
+rm -rf alt.binaries.erotica.divx/
+ll
+cd 
+ls
+cd mozilla-bilbo/
+ls
+cd default/to37efex.slt/
+ls
+w3m bookmarks.html 
+mv bookmarks.html /home/hendry/public_html/
+cd 
+rm -rf mozilla-bilbo/
+ls
+rm -rf gnupg-old/
+ls
+pwd
+top
