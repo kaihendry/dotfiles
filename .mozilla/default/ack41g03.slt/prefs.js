@@ -17,6 +17,7 @@ user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
 user_pref("browser.startup.homepage_override.mstone", "rv:1.6");
 user_pref("browser.tabs.autoHide", false);
+user_pref("browser.tabs.extensions.auto_cleanUp_count", 2);
 user_pref("browser.tabs.extensions.default.type", 0);
 user_pref("browser.tabs.loadInBackground", true);
 user_pref("browser.tabs.opentabfor.middleclick", true);
