@@ -1,0 +1,43 @@
+--- Log opened Sun Dec 14 18:51:43 2003
+18:51 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #ati
+18:51 -!- Irssi: #ati: Total of 17 nicks [0 ops, 0 halfops, 0 voices, 17 normal]
+18:51 -!- Irssi: Join to #ati was synced in 8 secs
+18:53 -!- morfic [morfic@cs662583-130.satx.rr.com] has joined #ati
+18:59 < hendry> anyone run the 2.6 kernel and debian?
+19:04 -!- sunny [sunny@sunny.usercloak.freenode] has joined #ati
+19:08 -!- MacSlow [~mirco@p508E9BB0.dip.t-dialin.net] has joined #ati
+19:10 < creepy> I know only those who did not manage to use their radeon drivers with 2.6
+19:11 -!- MacSlow [~mirco@p508E9BB0.dip.t-dialin.net] has left #ati ["Ähm... ich muß weg..."]
+19:13 < hendry> creepy: oh so it does not work?
+19:14 < creepy> afaik it doesn't
+19:44 -!- jor [~jor@adsl219194.adsl.utwente.nl] has joined #ati
+20:00 -!- lu_zero [~lu_zero@ppp-228-177.25-151.libero.it] has quit ["[BX] Man and mouse alike, both end up in pussy"]
+20:01 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has joined #ati
+20:02 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has quit [Remote closed the connection]
+20:02 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has joined #ati
+20:07 -!- creepy [~lightning@b107.wh-wieland.uni-ulm.de] has quit ["gone.."]
+20:16 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has quit [".:: und tschüss ::."]
+20:35 -!- Netsplit sterling.freenode.net <-> irc.freenode.net quits: jor
+20:47 -!- jor [~jor@adsl219194.adsl.utwente.nl] has joined #ati
+21:02 -!- Lightkey [jonas@dialin-145-254-239-145.arcor-ip.net] has quit [Read error: 60 (Operation timed out)]
+21:16 -!- Lightkey [jonas@dialin-145-254-107-183.arcor-ip.net] has joined #ATI
+21:21 -!- SpyrooU [~Horzt@pD9E3A124.dip.t-dialin.net] has joined #ati
+21:26 -!- RzR [rzr@d213-103-25-42.cust.tele2.fr] has joined #ati
+21:31 -!- warp0x00 [~warpzero@dsl.142.mt.onewest.net] has quit [Excess Flood]
+21:32 -!- warp0x00 [~warpzero@dsl.142.mt.onewest.net] has joined #ati
+21:36 -!- SpyrooU [~Horzt@pD9E3A124.dip.t-dialin.net] has quit ["Gentoo ownz ya"]
+21:38 -!- Forge [forge@pcp05406437pcs.norstn01.pa.comcast.net] has joined #ati
+21:44 -!- SpyrooU [~Horzt@pD9E3A124.dip.t-dialin.net] has joined #ati
+22:36 -!- creepy [~lightning@b107.wh-wieland.uni-ulm.de] has joined #ati
+22:39 -!- morfic_ [morfic@cs662583-130.satx.rr.com] has joined #ati
+22:53 -!- morfic [morfic@cs662583-130.satx.rr.com] has quit [Read error: 110 (Connection timed out)]
+22:55 -!- tigermb [~tigermb@ipd50a4151.speed.planet.nl] has joined #ati
+23:02 -!- bushwakko [~wakko@158.36.28.151] has joined #ati
+23:18 -!- strawman [fc1-user@stjh1-0846.nb.aliant.net] has joined #ati
+23:20 -!- RamNinja [~scott@dialup-137.140.220.203.acc01-elbo-cof.comindico.com.au] has joined #ati
+23:27 -!- tigermb [~tigermb@ipd50a4151.speed.planet.nl] has quit ["killed by silence"]
+23:27 -!- RamNinja [~scott@dialup-137.140.220.203.acc01-elbo-cof.comindico.com.au] has quit [Remote closed the connection]
+23:29 -!- SpyrooU [~Horzt@pD9E3A124.dip.t-dialin.net] has quit ["Gentoo ownz ya"]
+23:41 -!- SpyrooU [~Horzt@pD9E3AAF9.dip.t-dialin.net] has joined #ati
+23:44 -!- SpyrooU [~Horzt@pD9E3AAF9.dip.t-dialin.net] has quit [Remote closed the connection]
+--- Log closed Sun Dec 14 23:56:49 2003

@@ -1,0 +1,195 @@
+--- Log opened Sun Dec 14 18:45:04 2003
+18:45 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+18:45 -!- Irssi: #debian-boot: Total of 42 nicks [0 ops, 0 halfops, 0 voices, 42 normal]
+18:45 -!- Irssi: Join to #debian-boot was synced in 13 secs
+18:47 -!- p2-mate [~p2@NAT.office.mind.be] has joined #debian-boot
+18:54 < waldi> dan_t: no
+18:58 < waldi> parted may be better but lacks support for ibm disklabels
+19:01 < waldi> also only a few archs now partition types which are used to determine lvm pvs
+19:01 < waldi> s/now/know about/
+19:03 -!- manty [~manty@19.Red-213-97-18.pooles.rima-tde.net] has joined #debian-boot
+19:05 -!- Marvin-- [~martin@sjogren.ost.sgsnet.se] has joined #debian-boot
+19:05 < dan_t> waldi: how i can search for partitions then ?
+19:27 < andred> nanoprobe: Let me know when you're going to start translating. I've done a few more translations and I'm working on some others now, so I want to make sure you don't start on anything I've already done.
+19:27 < nanoprobe> andred: Ok, was just about to start. Must every word be translated? Even such untransable words as 'freefat'
+19:28 < waldi> freefat?
+19:30 < andred> fatfree?
+19:30 < nanoprobe> in tools/autopartkit/debian/po/
+19:30 < nanoprobe> Haven't a clue what it is.
+19:30 < andred> It's means it's without "bells and whisles"
+19:30 < waldi> hmm, not in my copy
+19:31 < andred> nanoprobe: Didn't you mean fatfree?
+19:31 < nanoprobe> andred: Ahh, yeah.
+19:32 < andred> nanoprobe: You shouldn't translate word by word. Try to stay close to the original, but don't write write swedish with english word flow because of that.
+19:32 < nanoprobe> ok
+19:33 < nanoprobe> But I'll start translate autopartkit, there was no swedish trans. for that as far as I can see.
+19:33 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit [Read error: 104 (Connection reset by peer)]
+19:34 < andred> I haven't started on that one. But just because there aren't any swedish translations of the stuff in CVS doesn't mean they don't exist. I've done lots of them that haven't been checked in yet, so ask me before you begin with something.
+19:34 < andred> oh, wait. I have done that one
+19:35 < nanoprobe> Darn ;)
+19:35 < andred> Ohh, you meant that FatFree. That meant how much space was free in FAT.
+19:36 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+19:36 < nanoprobe> andred: Aboot-installer then?
+19:37 < andred> nanoprobe: Yeah, I've done all those things in the beginning
+19:37 < andred> Check out mips/
+19:37 < nanoprobe> ok
+19:38 < andred> s390 is another one I haven't done
+19:40 < andred> The boring stuff;-)
+19:41 < andred> Well, a lot of what I've done is horribly boring too
+19:45 < waldi> andred: s390 currently don't support translated things, as the terminal is ebdic and supports only a small subset of the ascii charset
+19:45 < andred> hehe, okay. That leavs mips:-)
+19:49 < manty> Marvin--: the images you have at your home at people.d.o are supposed to be ok?
+19:49 < manty> I mean at people.debian.org/~sjogren
+19:49 < manty> :-?
+19:51 < nanoprobe> andred: What's your translation for bootloader?
+19:51 -!- noshadow [~brl@pcpool09.mathematik.uni-freiburg.de] has quit ["and away..."]
+19:52 < andred> nanoprobe: startladdare
+19:53 < andred> nanoprobe: I'm going to talk to Peter Karlsson if we should include "boot loader" in paranthesis after it, since that's a well known notion
+19:53 -!- piotr_ [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+19:54 < andred> nanoprobe: Also follow http://www.debian.org/international/Swedish/ordlista as well as http://www.uddeborg.pp.se/sv/dok-6.html#ss6.1
+19:54 < andred> nanoprobe: And also svenska datatermgruppen
+19:55 < nanoprobe> Ok, thanks.
+19:55 < vinsci> andred: I think it would be a good idea; I wouldn't have a clue about "startladdare" :)
+19:58 -!- Arvind-NL [~Hoi@ip503d4396.speed.planet.nl] has joined #debian-boot
+19:58 < Arvind-NL> salut :)
+20:01 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has joined #debian-boot
+20:02 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has quit [Remote closed the connection]
+20:02 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has joined #debian-boot
+20:05 < Marvin--> manty: as I said in my mail to d-boot, I haven't tested them, but they build... :)
+20:06 < vinsci> are new builds possible again, now? (looking forward to solve the thinkpad R40e problem)
+20:06 < Marvin--> andred, nanoprobe: do you guys know (of) Daniel Husand?
+20:06 < andred> Marvin--: I don't
+20:06 < Marvin--> he, too, has offered to help with translation
+20:06 < Marvin--> sheesh :)
+20:07 < andred> Oh boy
+20:07 < andred> I wish people would have come sooner, or that I would have taken it more slowly. I'm almost done, I think.
+20:08 < andred> Well, a lot of stuff needs to be reviewed
+20:12 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit [Read error: 110 (Connection timed out)]
+20:16 -!- Jonzl [~bittenich@dfn236108.extern.uni-tuebingen.de] has quit [".:: und tsch�ss ::."]
+20:19 < Marvin--> I'll send him to you and nanoprobe so you guys can work stuff out
+20:20 < nanoprobe> Marvin-- Me neither.
+20:23 < andred> Puh, finally finished the first run though of LVM.
+20:24 -!- Elmchen [~marie@p3EE23835.dip.t-dialin.net] has joined #debian-boot
+20:24 -!- Elmchen [~marie@p3EE23835.dip.t-dialin.net] has left #debian-boot ["Client exiting"]
+20:25 -!- frankie [~frankie@adsl-12-218.37-151.net24.it] has joined #debian-boot
+20:33 < nanoprobe> andred: Ok, finished with the arcboot. What should I do with it now?
+20:35 -!- Netsplit sterling.freenode.net <-> irc.freenode.net quits: Balu, waldi
+20:35 < andred> Hmm, either I can review it and pass it on to someone with CVS access, or you can send it directly to Marvin-- or Peter Karlsson for review. I suggest the latter, because Peter is really good att suggesting improvements, and he can then check it into CVS.
+20:36 -!- Netsplit over, joins: Balu
+20:37 < nanoprobe> Ok, who is Peter and how do I send him the file?
+20:38 < andred> peter@softwolves.pp.se
+20:40 < Marvin--> that's it, I'm filing a wishlist bug for a list
+20:47 -!- waldi [~waldi@bblank.thinkmo.de] has joined #debian-boot
+20:50 -!- ior [io@famous.lindesign.se] has joined #debian-boot
+20:59 -!- moshez [~moshez@line133-133.adsl.actcom.co.il] has quit [Read error: 110 (Connection timed out)]
+21:26 -!- Md [md@md.staff.freenode] has joined #debian-boot
+21:29 -!- fremo_ [fred@AMontsouris-108-1-3-48.w193-251.abo.wanadoo.fr] has joined #debian-boot
+21:39 < andred> Marvin--: Damn, now I forgot to CC you on my new set of translations sent to Peter
+21:42 -!- fremo [fred@AMontsouris-108-1-30-3.w81-53.abo.wanadoo.fr] has quit [Read error: 104 (Connection reset by peer)]
+21:42 < andred> Marvin--: By the way, when do you think you'll get a chance to check in my translations?
+21:45 < vinsci> how would you expect d-i to react on a system without a serial port?
+21:46 < vinsci> is there a way to disable serial port usage in beta1?
+21:47 < andred> I donno, few people use serial ports these days, but most still have them activated.
+21:47 < vinsci> d-i freezes on a ThinkPad R40e , which doesn't have a serial port (nor a floppy)
+21:48 < andred> That's not how I would want it to react;-)
+21:49 < vinsci> me neither ;)
+21:53 < Marvin--> andred: I'm kinda trying to work on my degree project, got an idea earlier today that I want to investigate
+21:54 < Marvin--> andred: but I guess I could take a break
+21:54 < Marvin--> eep, that's a lot of mails, confusing... in which order should I look at what?
+21:57 -!- stratus [~stratus@RJ176106.user.veloxzone.com.br] has joined #debian-boot
+21:58 < vinsci> turns out I'd need the bcm5700 module for networking, too
+21:58 < vinsci> can I simply remaster the beta1 iso with a more suitable kernel?
+22:00 < stratus> Is cvs access still blocked? Why?
+22:00 < waldi> ask elmo
+22:02 < stratus> omg :( just as a footnote the cvs tree is browsable through viewcvs (http://cvs.d.o)
+22:02 < frankie> stratus: yep pserver is down
+22:02 < stratus> frankie, thanks.
+22:03 < stratus> only elmo knows when it will be back?
+22:03  * frankie remembers some pserver security issue read around
+22:04 < frankie> stratus: i currently can access only repositories by :ext: method and passwd, no anon access
+22:04 < stratus> I need rebuild d-i with another kernel.Can i download the beta-1 sources from a trustable place?
+22:05 < stratus> frankie, i don't have accounts.
+22:12 -!- frankie [~frankie@adsl-12-218.37-151.net24.it] has quit ["Client exiting"]
+22:15 -!- nanoprobe [sleazegrin@h178n1fls304o291.telia.com] has quit [Remote closed the connection]
+22:15 -!- nanoprobe [sleazegrin@h178n1fls304o291.telia.com] has joined #debian-boot
+22:15  * vinsci tries anaconda instead
+22:20 < andred> Marvin--: The order shouldn't matter I guess
+22:21 < andred> Well, some have been corrected and then I've sent a later mail
+22:23 < andred> choose-mirror, cdrom-detect, ddetect, partconf and partitioner have been sent more than once, so pick the latest e-mail of those. Usually I've written something like "uppdaterad" or "korrigerad" in that subject line
+22:25 < andred> The tree translations in "Korrigerade översättningar" should be ready for checkin, because Peter has checked those througly
+22:25 < andred> s/tree/three
+22:27 < Marvin--> right
+22:31 < andred> So, stuff like usb-discover which doesn't have any templates, are they just not ready for that yet, or will they not have any translatable strings?
+22:37 < Marvin--> if a package doesn't have any templates it's a good bet it isn't interactive ;)
+22:38 < andred> Sounds logical:-)
+22:38 < Marvin--> grmf, my neighbour has finished his degree project
+22:38 < Marvin--> must...keep...working...
+22:47 < andred> Some directories have po/ files under them, but no tranaslation. Those were the ones I were confused about.
+22:48 < Marvin--> they may have had templates before and then stuff has been rearranged
+22:48 < Marvin--> you know how cvs is when it comes to directories
+22:53 < vinsci> any source snapshots available for us non-developers?
+22:54 -!- bdale [~bdale@rover.gag.com] has quit [Remote closed the connection]
+23:00 < andred> Marvin--: Thanks for checking those three files in. Should I send the rest of the stuff that I've already sent to you to Peter so that he can review them and check them in?
+23:04  * joeyh sighs, and decides not to change base-config's templates
+23:04 < Marvin--> let's see, I've checked in anna, main-menu, choose-mirror, partitioner, partconf, utils, base-installer, prebaseconfig, ddetect, cdrom-detect
+23:04 < joeyh> I was too lazy to commit it last night..
+23:05 < andred> Marvin--: Oh, great. I didn't see all those
+23:05 < Marvin--> andred: the mails are on the way I guess
+23:09 < waldi> joeyh: do we realy need a slave cvs with anonymous access?
+23:10 < joeyh> I wish I knew what the status was
+23:10 < waldi> the behaviour of d-admin looks like
+23:11 < joeyh> for now I'm assuming they have a good reason
+23:12 < waldi> thats why *bsd uses anoncvs via ssh
+23:12 < joeyh> yes, I used to do that too (when I had a cvs repo)
+23:13 < vinsci> a daily tarball should be enough for us without debian accounts...
+23:14 < vinsci> and if I could find one, I could fix the problem for the ThinkPads...
+23:15 < joeyh> someone could just turn on the download tarball option in cvsweb
+23:17 < vinsci> better hurry up before the anaconda download finished ;-)
+23:21 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has quit [Read error: 54 (Connection reset by peer)]
+23:21 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has joined #debian-boot
+23:22 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has quit [Read error: 104 (Connection reset by peer)]
+23:23 < hendry> does d-i have parted on it? or can someone point me to an iso which will boot and allow me to run parted. knoppix's qtparted sucks
+23:23 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has joined #debian-boot
+23:27 < joeyh> yes, we have parted
+23:27 < stratus> vinsci, i need the tarball too
+23:28 < stratus> joeyh, any news?
+23:28 -!- seppy [~seppy@s2.enemy.org] has joined #debian-boot
+23:28 < joeyh> no..
+23:29 < stratus> :(
+23:29 < stratus> Can i download the beta1 sources from any trusted place?
+23:31 < joeyh> beta1 sources?
+23:31 < joeyh> what good would that be, they're 1.5 months old
+23:32 < vinsci> current source preferred, I think
+23:32 < joeyh> the entirity of d-i source is in the archive in source packages of course
+23:32 < seppy> I just found a typo in the installer. Is it ok to fix it in cvs's templates.pot?
+23:34 < vinsci> hmm, d-i is all of 29 kB?
+23:35 < stratus> i prefer the current source, of course.
+23:36 < stratus> but all we know that pserver is down :)
+23:36 < Marvin--> so go get it from the web interface, you lazy bum! :)
+23:37 < stratus> haha, how? :)
+23:37 < stratus> <joeyh> someone could just turn on the download tarball option in cvsweb
+23:37 < Marvin--> we-ell, you can click around and save as on everything you want ;)
+23:38 < Marvin--> but cvsweb tarball sounds better ;)
+23:39 < stratus> You can put the tarball on people.d.o for ppl without account and send a message to debian-devel signed.
+23:39 -!- moshez [~moshez@line133-133.adsl.actcom.co.il] has joined #debian-boot
+23:39 < stratus> :)
+23:39 < vinsci> apt-get source debian-installer works too, apparently... could be interesting doing an apt-get build-dep on that
+23:40 < stratus> vinsci, from main/debian-installer repo?
+23:41 < vinsci> unstable/main
+23:41 < vinsci> I suppose with packages.d.o down, there's no experimental uploads
+23:42 < stratus> Is d-i really there?
+23:42 < vinsci> $ apt-get source debian-installer
+23:43 < stratus> 20031113
+23:43 < stratus> ;(
+23:43 < vinsci> yes...
+23:44 < stratus> btw, it's better than download each file from cvs web interface.
+23:44 < vinsci> that's not an option :)
+23:44 < stratus> vinsci, only for Marvin-- :)
+23:46 < vinsci> well, my itch is going away at a 1Mbps rate right now...
+23:46 -!- piotr_ [~piotr@FW-30-241.go.retevision.es] has quit [Read error: 60 (Operation timed out)]
+23:48 < vinsci> With free software, the only thing more irritating than nobody showing up when you ask for help, is to offer help and be ignored.
+23:49 < stratus> vinsci, what?
+23:49 < vinsci> so let me rephrase that
+23:50 < vinsci> With free software, the only thing more irritating than nobody showing up when you ask for help with your own project, is to offer help to another project and be ignored.
+23:53 -!- Arvind-NL [~Hoi@ip503d4396.speed.planet.nl] has quit ["Leaving"]
+--- Log closed Sun Dec 14 23:56:49 2003

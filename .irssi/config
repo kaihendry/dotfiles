@@ -172,7 +172,7 @@ settings = {
   };
   "fe-common/core" = {
     autolog = "yes";
-    autolog_path = "~/irclogs/$tag/$0.log";
+    autolog_path = "~/.irssi/irclogs/$tag/$0.log";
   };
   "fe-text" = { term_type = "utf-8"; };
 };

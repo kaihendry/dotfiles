@@ -1,0 +1,48 @@
+--- Log opened Sun Dec 14 18:44:34 2003
+18:44 -!- Irssi: Starting query in bitlbee with root
+18:44 <root> Account successfully added
+18:44 <root> Trying to get all accounts connected...
+18:44 <root> ICQ - Logging in: Signon: 2386684
+18:44 <root> Password accepted
+18:44 <root> ICQ - Logging in: Connection established, cookie sent
+18:44 <root> ICQ - Logged in
+--- Log closed Sun Dec 14 18:50:33 2003
+--- Log opened Sun Dec 14 21:34:03 2003
+21:34 <root> Message from unknown ICQ handle 303916119:
+21:34 <root> howdy
+21:34 <hendry> info 303916119
+21:34 <root> Nick `303916119' does not exist
+21:34 <hendry> add 303916119
+21:34 <root> Not enough parameters given (need 2)
+21:34 <hendry> add 0 303916119
+21:34 <root> User `303916119' added to your contact list as `303916119'
+--- Log closed Sun Dec 14 21:39:33 2003
+--- Log opened Sun Dec 14 21:42:23 2003
+21:42 <hendry> accounts
+21:42 <root> Unknown command: accounts. Please use help commands to get a list of available commands.
+21:42 <hendry> help account
+21:42 <root> Syntax: account <action> [<arguments>]
+21:42 <root> 
+21:42 <root> Available actions: add, del, list, on, off
+21:42 <root> 
+21:42 <root> See help account <action> for more information
+21:42 <hendry> help account add
+21:42 <root> Syntax: account add <protocol> <username> <password> [<server>]
+21:42 <root> 
+21:42 <root> Adds an account on the given server with the specified protocol, username and password to the account list. Specifying the server is optional and principally only necessary when using oscar.
+21:42 <root> The following protocols are supported at the moment: jabber, msn, yahoo and oscar (For AIM/ICQ. For AIM use server login.oscar.aol.com, for ICQ use server login.icq.com. For the other protocols you don't have to specify a server.)
+21:42 <root> 
+21:42 <root> Example:
+21:42 <root> 
+21:42 <root> <wilmer> account add oscar 72696705 hobbelmeeuw login.icq.com
+21:42 <root> <root> Account successfully added
+21:42 <hendry> accout add jabber hendry kaio amessage.de
+21:42 <root> Unknown command: accout. Please use help commands to get a list of available commands.
+21:42 <hendry> account add jabber hendry kaio amessage.de
+21:42 <root> Account successfully added
+21:42 <hendry> account on
+21:42 <root> Trying to get all accounts connected...
+21:42 <root> JABBER - Logging in: Connecting
+21:42 <root> JABBER - Login error: Unable to connect
+21:42 <root> JABBER - Signing off..
+--- Log closed Sun Dec 14 21:48:33 2003

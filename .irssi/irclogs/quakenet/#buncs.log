@@ -1,0 +1,250 @@
+--- Log opened Sun Dec 14 18:45:37 2003
+18:45 -!- draq [~hendry@xdsl-176-161.nblnetworks.fi] has joined #buncs
+18:45 -!- Irssi: #buncs: Total of 13 nicks [8 ops, 0 halfops, 4 voices, 1 normal]
+18:45 -!- mode/#buncs [+o draq] by Q
+18:45 -!- Irssi: Join to #buncs was synced in 9 secs
+18:51 <@draq> hi
+18:54 -!- Mat-out is now known as Mathew
+19:25 -!- Dax|Zzing is now known as Dax|Driftin
+19:29 -!- Pulpy [~g@host81-128-248-245.in-addr.btopenworld.com] has joined #buncs
+19:29 < Pulpy> Hello .
+19:41 <@draq> lo
+19:54 -!- GwieF [GwieF@213.78.69.242] has quit [Ping timeout]
+19:55 -!- GwieF [GwieF@213.78.77.221] has joined #buncs
+19:55 -!- mode/#buncs [+o GwieF] by Q
+20:18 -!- Netsplit *.net <-> *.split quits: aeronic, @Kamakaze
+20:19 -!- Dax|Driftin is now known as Dax|NotHere
+20:23 -!- Kamakaze|food [~Kam@213-78-43-181.friaco.onetel.net.uk] has joined #buncs
+20:23 -!- mode/#buncs [+o Kamakaze|food] by Q
+20:37 -!- ChocoJon [~a@82-32-107-62.cable.ubr02.hawk.blueyonder.co.uk] has joined #buncs
+20:43 -!- Kamakaze|food is now known as Kamakaze
+20:53 <@Mathew> anyone know if striped raid 0 support four drives raided into one, or is it just two banks of two?
+20:55 <@Kamakaze> i think i did 3
+20:56 <@Mathew> hehe you cant remember allan?
+20:56 <@Kamakaze> it was several years ago
+20:56 <@Mathew> ah
+20:56 <@Kamakaze> i think i did it
+20:57 <@Kamakaze> then thought well its not really very useful
+20:57 <@Kamakaze> so undid it
+20:57 <@Kamakaze> then the hard drives broke
+20:57 <@Kamakaze> but thats because they were dodgy ibm ones
+20:57 <@Mathew> I wanna get 4 stuck together for real time uncompressed avi output in 60fps
+20:57 <@Mathew> So I need around 70mbs a sec
+20:58 <@Mathew> hence why I need to find out before I go out and buy four drives
+20:58 <@Kamakaze> well i dont see why it wouldnt work
+20:58 <@Mathew> me neither, it's a costly experiment though :)
+20:58 <@Kamakaze> well you then have 4 hard drives
+20:58 <@Kamakaze> its not as if they dont work on their own
+20:59 <@Mathew> true but I'm only buying them for that purpose
+20:59 <@Kamakaze> well
+20:59 <@Kamakaze> i would say yes
+20:59  * Mathew slaps ChocoJon
+20:59 <@Kamakaze> the minimum is 2 drives
+20:59 <@GwieF> the speed of a 4 way raid won't really be better thana 2 way raid
+21:00 <@Mathew> not even with bus mastering damian?
+21:00 <@Kamakaze> raid 0 says one of its uses it video editing
+21:01 <@Kamakaze> and it definitely can be used with 4
+21:01 <@Mathew> ah cool n1
+21:01 <@Mathew> I think Jon had it set up in his server before it broke :)
+21:02 <@Mathew> but I wanted to be sure
+21:02 <@GwieF> I can't claim to know all the ins and outs, but the speed increase isnt' very dramatic over a 2 way raid
+21:02 <@GwieF> the controller is just as important as the drives as well
+21:02 <@Mathew> promise bus mastering on my mobo
+21:03 <@Mathew> ATA 133
+21:03 <@Mathew> funnily enough it works out cheaper to have 4 than 2 drives, but then there's the noise and reliability issues
+21:03 -!- Netsplit over, joins: +aeronic
+21:06 <@Kamakaze> yes losing one can be a bitch
+21:06 <@Kamakaze> but if you dont intend to keep important data on it
+21:06 -!- Netsplit *.net <-> *.split quits: aeronic
+21:06 <@Mathew> lots of uncompressed movie renders
+21:06 <@Mathew> which will eventually be compressed
+21:07 < ChocoJon> Mathew - now paying attention
+21:07 < ChocoJon> what's your questions
+21:08 <@Mathew> just wondering if raiding 4 drives is beneficial
+21:08 <@Mathew> over 2 drives
+21:08 <@Mathew> using striped raid 0
+21:09 <@Mathew> it'll mainly be used to movie output, so the faster the write speed the better
+21:11 <@Kamakaze> well if 4 is cheaper
+21:11 <@Kamakaze> than 2 bigger ones
+21:11 <@Kamakaze> and 4 will be faster even if not a great deal
+21:12 -!- Netsplit over, joins: +aeronic
+21:13 < ChocoJon> Mathew: I think that raiding 4 drives using RAID 0, will give 4*capacity (smallest drive) and > 2*drive throughput
+21:13 < ChocoJon> but depends on controller
+21:14 <@Kamakaze> well obviously he would get all the same make and size drives
+21:14 -!- Netsplit *.net <-> *.split quits: aeronic
+21:14 <@Mathew> yup
+21:14 <@Mathew> 4 * diamondmax 8mb cache
+21:14 <@Mathew> bus mastering promise ATA 133 raid controller onboard mobo ChocoJon
+21:14 <@Kamakaze> you could get a 2gb hd and stripe it with 3 250gb hard disks for fun
+21:15 <@Mathew> hmm  :P
+21:19 -!- Netsplit over, joins: +aeronic
+21:23 < ChocoJon> Mathew: can't find the exact link but this might help
+21:23 < ChocoJon> http://www.pcguide.com/ref/hdd/perf/raid/concepts/perfReadWrite-c.html
+21:24 < ChocoJon> there is a limit and I think that 4 drives is the sweet spot for RAID 0
+21:24 < ChocoJon> *but* I could be wrong
+21:25 < ChocoJon> do you *really* need 70 MB/s?
+21:25 <@draq> is RAID the complete answer? what about remote backups?
+21:25 <+aeronic> 70mb/s?
+21:25 <+aeronic> thats not much
+21:25 <@Kamakaze> this isnt for backup
+21:25 <+aeronic> :)
+21:25 <@Kamakaze> and he doesnt really care about backup
+21:26 <@Kamakaze> its for high performance video stuff
+21:26 <@draq> so why RAID then?
+21:26 <+aeronic> increased performance
+21:26 <@Kamakaze> when you are storing uncompressed video 
+21:26 <@Kamakaze> and editing it
+21:26 <@draq> how about RAM then?
+21:26 < ChocoJon> I can get 25 Mb/s on a good day
+21:27 <@Kamakaze> lol
+21:27 < ChocoJon> on on HD to another
+21:27 <+aeronic> you can get 40mb/s on a single drive
+21:27 < ChocoJon> (sustained)
+21:27 <@Kamakaze> i dont know many machines with 300gb of ram
+21:27 < ChocoJon> I would more recommend a low loss compression card
+21:27 <@draq> there is a cluster at school with 3.5tb of RAM 
+21:27 <@Kamakaze> yes but its not something you have at home now is it
+21:27 <@draq> i don't know whether to believe that myself
+21:27 <+aeronic> <aeronic> you can get 40mb/s on a single drive <- eg the 250gig 7200rpm ones
+21:28 <+aeronic> just go for raid 0, near on 80meg/s
+21:28 < ChocoJon> don't you get a problem with transferring that much over the PCI bus?
+21:29 <+aeronic> pci goes up to 133meg/s
+21:29 < ChocoJon> why did I think that it was 33 Mb/s ?
+21:29 < ChocoJon> meh ...
+21:29 <+aeronic> 33mh
+21:29 <+aeronic> z
+21:29 <+aeronic> mhz even
+21:30 <+aeronic> 33mhz, and 32bits wide
+21:30 <+aeronic> which = 133meg/s
+21:30  * ChocoJon facepalms ...
+21:33 <@Mathew> basically jon
+21:33 <@Mathew> it's for on the fly uncompressed movie output
+21:33 <@Mathew> 1 frame = 1.4mbs
+21:33 <@Mathew> 30 fps = around 40 mbs needed
+21:33 <+aeronic> (in 1280*1024)
+21:33 <@Mathew> in 800x600
+21:33 < ChocoJon> why use uncompressed is my point?
+21:33 <+aeronic> how come
+21:33 < ChocoJon> :)
+21:33 <@Mathew> gaming outputs
+21:33 <+aeronic> 1280*1024 is 1.4meg
+21:33 <+aeronic> look at the size of a 1280*1024 bmp :)
+21:33 <@Mathew> I'd use uncompressed because it's gonna be repassed at least 3 times
+21:34 <+aeronic> or tiff, or tga
+21:34 < ChocoJon> repassed?
+21:34  * ChocoJon is feeling slow today
+21:34 <+aeronic> during the compression i think he means
+21:34 <@Mathew> through after effects, lightwave, photoshop, premiere/avid xpress dv
+21:34 <@Mathew> different applications
+21:34 <@Mathew> want as little degradation as possible
+21:34 < ChocoJon> have you considered a DV solution?
+21:34 < ChocoJon> 3.6 MB/s
+21:34 < ChocoJon> quite a lot less than 40 Mb/s
+21:34 < ChocoJon> but not 1280*1024
+21:35 <@Mathew> it's fine, I know what I'd like
+21:35 < ChocoJon> can't quite remember what res though
+21:35 <@Mathew> just getting there that's the problem
+21:35 < ChocoJon> DV - is lossless
+21:35 < ChocoJon> and I've found it to be very nice
+21:35 < ChocoJon> and I know another person who uses it for his job
+21:36 <@Mathew> I'm not looking to splash out on equipment
+21:37 <@Mathew> plus it's hard to manipulate in DV unless you use DV applications like Avid Xpress
+21:39 < ChocoJon> or Premiere
+21:40 < ChocoJon> ...
+21:42 < ChocoJon> I think that VirtualDub can use DV ...
+21:42 <@Mathew> it can pass DV
+21:42 <@Mathew> I use lightwave and After effects a lot to do effects
+21:43 < ChocoJon> ok - my knowledge is running out here
+21:43 < ChocoJon> and don't need to embarass myself more
+21:43 <@Mathew> :)
+21:43 <@Mathew> dv is nice in a studio
+21:43 <@Kamakaze> you should have just answered his question and shut up
+21:43 <@Mathew> for pros
+21:43 <@Mathew> as they have hardware to create effects
+21:44 <@Mathew> for us cheapskates... like me I'll settle for the hard drives :)
+21:45 < ChocoJon> I think that RAID 0 w/ 4 drives is going to be best solution
+21:45 <@Mathew> well if it doesnt work out I'll have 2 banks of 2 raided drives, so no great loss :)
+21:46 <@Mathew> and the same amount of space
+21:46 -!- NoVisAnima [ma1pm@dial81-131-57-17.in-addr.btopenworld.com] has joined #buncs
+21:46 -!- mode/#buncs [+o NoVisAnima] by Q
+21:46 -!- mode/#buncs [+v NoVisAnima] by NoVisAnima
+21:46 < ChocoJon> it may be better to do a four drive array
+21:46 < ChocoJon> *may*
+21:46 <@NoVisAnima> lo
+21:47 <@Mathew> yep I've clicked on order now, so we'll have to wait and see :)
+21:47 < ChocoJon> :)
+21:51 <+aeronic> <ChocoJon> I think that RAID 0 w/ 4 drives is going to be best solution
+21:51 <+aeronic> fastest, not best :P
+21:51 <+aeronic> 4 drives is perfect for raid 5
+21:51 <+aeronic> or 01
+21:51 < ChocoJon> he wants/needs 70 MB/s
+21:52 <+aeronic> but that halves the size
+21:52 <+aeronic> what drives has he ordered
+21:52 <@Mathew> diamondmax 8mb cache
+21:52 <+aeronic> what size
+21:52 <@Mathew> 120
+21:52 <+aeronic> and model
+21:52 <+aeronic> not the plus9?
+21:52 <@Mathew> yes
+21:52 <+aeronic> oh
+21:52 <+aeronic> youll need 4 drives then
+21:52 <@Mathew> that's what I ordered
+21:52 <+aeronic> kk
+21:52 <+aeronic> my plus9 gets around 25meg/s
+21:53 <@Mathew> Maxtor DiamondMax Plus9 120GB 8MB Cache - OEM (HD-013-MD)
+21:53 <@Mathew> Maxtor's latest DiamondMax Plus 9 series offers the ultimate performance for performance PCs and Digital Video systems. Featuring 7200 rpm operation, fast ATA133 interface and 8MB cache for lightning fast performance this drive uses FDB Fluid Bearings throughout.
+21:53 <+aeronic> i prefer the ibms for raw speed
+21:53 < ChocoJon> haven't you been paying attention, aeronic ? :-P
+21:53 <+aeronic> no
+21:53 < ChocoJon> You *might* need a better PSU though
+21:53 <+aeronic> =]
+21:53 <+aeronic> 400W min
+21:54 < ChocoJon> need 650W (I think) for Beast - 9 HDs ...
+21:54 <@Mathew> lol
+21:54 <@Mathew> yeah I figured that'd be a problem :/
+21:54  * aeronic ponders getting 4*250gig drives
+21:54 <+aeronic> mmmmmmmmm
+21:54 <@Mathew> so I bought a few other things too
+21:54 <+aeronic> no neeeed
+21:54 <@Mathew> :P
+21:54 < ChocoJon> I did *try* to tell him as he was building but he insisted that 350W would be fine ...
+21:54  * aeronic orders some dvd-rs
+21:55 <+aeronic> technically you only need 10W per drive
+21:55 <+aeronic> over what you normally have
+21:55 < ChocoJon> yeah - mobo would stay powered for long ...
+21:56 <@Mathew> dont think my controller is capable of raid 5 aeronic, it'll have to be striped raid 0
+21:56 <+aeronic> k
+21:56 <+aeronic> hardware or sw?
+21:56 <@Mathew> sw bus mastering on mobo
+21:56 < ChocoJon> very few, if any, o/b RAID controllers can do RAID 5 AFAIK
+21:56 <+aeronic> indeed
+21:56 <+aeronic> think some do 0+1
+21:57 <@Mathew> isnt raid 1 the equivalent of mirrored?
+21:57 <+aeronic> yup
+21:57 <@Mathew> ie backup devices
+21:57 <+aeronic> yes, so its no faster than a 2drive raid-0
+21:58 <@Mathew> that's only good for corporate businesses though isnt it?
+21:58 <@Mathew> if you've got important data
+21:58 <+aeronic> well i have important data on my pc
+21:58 <+aeronic> i certainly wouldnt have a 4 drive raid-0
+21:59 <+aeronic> however, i do back up regularly to cds and things
+21:59 <+aeronic> anyone of the 4 drives has a problem, or bad sector = that data gone
+21:59 < ChocoJon> I should too
+21:59 -!- Gaynor [user@cpc4-cdif2-4-0-cust126.cdif.cable.ntl.com] has joined #buncs
+21:59 -!- mode/#buncs [+v Gaynor] by NoVisAnima
+21:59 <@Mathew> it's mainly for experimentation, a lot of the stuff will be coming and going quickly
+21:59 <+aeronic> fine then
+21:59 <+aeronic> id prolly have 4 drives on raid, and one additional
+22:00 <+aeronic> where you can backup important stuff
+22:00 <@Mathew> I've already got 3 other drives I can put stuff on
+22:02 -!- NoVisAnima [ma1pm@dial81-131-57-17.in-addr.btopenworld.com] has quit [Ping timeout]
+22:07 -!- Gaynor [user@cpc4-cdif2-4-0-cust126.cdif.cable.ntl.com] has quit [Signed off]
+22:26 -!- |31770| [~OliverMen@host81-129-56-67.in-addr.btopenworld.com] has joined #buncs
+22:34 -!- Bonne- [~venus@81-178-244-154.dsl.pipex.com] has quit [Ping timeout]
+22:49 -!- nana` [~reiko@modem-527.cubone.dialup.pol.co.uk] has joined #buncs
+22:53 < nana`> raar
+23:08 -!- |31770| [~OliverMen@host81-129-56-67.in-addr.btopenworld.com] has quit [Signed off]
+23:11 -!- |31770| [~OliverMen@host81-129-56-67.in-addr.btopenworld.com] has joined #buncs
+23:24 -!- mode/#buncs [+o nana`] by Q
+23:45 -!- Bonne [~venus@81-178-244-154.dsl.pipex.com] has joined #buncs
+--- Log closed Sun Dec 14 23:56:49 2003
