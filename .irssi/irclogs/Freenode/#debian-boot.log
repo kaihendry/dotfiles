@@ -839,3 +839,154 @@
 19:51 -!- vinsci [~vinsci@dsl-jklgw3if1.dial.inet.fi] has joined #debian-boot
 19:53 -!- frankie [~frankie@adsl-216-214.37-151.net24.it] has joined #debian-boot
 19:57 -!- kungfuftr [~scott@jadis.narnia.org.uk] has quit ["Lost terminal"]
+20:04 -!- nevyn [~nevyn@dialup-55.83.221.203.acc52-dryb-mel.comindico.com.au] has quit ["Reconnecting"]
+20:05 -!- nevyn [~nevyn@dialup-55.83.221.203.acc52-dryb-mel.comindico.com.au] has joined #debian-boot
+20:05 -!- nevyn [~nevyn@dialup-55.83.221.203.acc52-dryb-mel.comindico.com.au] has quit [Client Quit]
+20:24 < otavio> Hi
+20:37 < otavio> joeyh: http://www.slackware.com/install/sysreq.php, Slack needs 16mb only.
+20:38 < joeyh> ok but I was thinking more mainstream commercial distros
+20:38 -!- manty [~manty@204.Red-213-96-224.pooles.rima-tde.net] has quit ["cenilla"]
+20:38 < otavio> joeyh: of course, slackware install system is more "clear" then d-i ... this do nothing
+20:39 < otavio> joeyh: comparing intallers with same features (or near of), d-i should be the smaller.
+20:39 < otavio> joeyh: I think
+20:46 -!- jackhead [~jackhead@pD9E407A1.dip.t-dialin.net] has joined #debian-boot
+20:46 < jackhead> Hallo everybody
+20:49 < Sesse> there, lots of nb.po checked in
+20:49 < Sesse> otavio: pere's work was only a few files, fortunately :-)
+20:51 < otavio> Sesse: nice ... have you a new diff?
+20:51 < Sesse> otavio: I've checked in
+20:51 < Sesse> joeyh gave me access :-)
+20:52 < otavio> Sesse: ahh perfect. :-)
+20:52 < otavio> joeyh: Can you talk one minute with me?
+20:52 < joeyh> yeah
+20:52 < otavio> joeyh: perfect.
+20:53 < otavio> joeyh: two issues ...
+20:53 < jackhead> BTW, is there a known problem with building anna from CVS? I tried a rebuild of various modules last night and building anna failed due to /usr/include/debian-installer/config.h missing.
+20:53 < otavio> joeyh: both in partionner...
+20:53  * Sesse wonders if there's another way to check the "translation percentage" than to wait 24h for the status.utf8.txt to regenerate
+20:53 < otavio> joeyh: Have you readed my mail about the priority of disc chooser?
+20:53 < joeyh> I saw it but have not looked at it closely
+20:54 < joeyh> jackhead: it builds ok here
+20:54 < joeyh> you're probably right, I guess
+20:54 < jackhead> joeyh: Can you run a dpkg -S /usr/include/debian-installer/config.h?
+20:54 < otavio> joeyh: yestarday, I tried to run in using critical priority and my system enters in loop.
+20:54 < otavio> joeyh: Can I commit this change so?
+20:55 < joeyh> you don't haved to ask me...
+20:55 -!- pb_ [~pb@dsl-62-3-66-204.zen.co.uk] has quit ["bbl"]
+20:55 < otavio> no?
+20:55 < joeyh> sounds like an obvious bug fix..
+20:55 < otavio> joeyh: perfect.
+20:55 < otavio> joeyh: I will do it so.
+20:55 < otavio> joeyh: next question ...
+20:56 < otavio> joeyh: When this open the disc chooser and you press ESC this open cfdisk with an invalid disc...
+20:56 < otavio> joeyh: this should go back to main-menu, no?
+20:57 < joeyh> ress esc?
+20:57 < joeyh> what does esc do in cdebconf?
+20:57 < otavio> joeyh: the Escape key.
+20:58 < otavio> joeyh: ??
+20:59 < joeyh> I didn't know escae did something in cdebconf
+20:59 < otavio> joeyh: no ... this is partitioner realted, I think
+21:00 < joeyh> it can't be
+21:00 < jackhead> Anybody running a system with serial console around?
+21:00 < otavio> joeyh: let try again here.
+21:00 < joeyh> unless you're talking about pressing scae in cfdisk
+21:00 < otavio> joeyh: no, before it... when you are choosing the disc... and if you like to go back to main-menu...
+21:01 < otavio> joeyh: the partitioner should include an abort option, no?
+21:01 < joeyh> well that UI is cdebconf
+21:01 < joeyh> I have no idea what it does when escape is hit
+21:01 < otavio> joeyh: like partconf
+21:01 < joeyh> same as the back button perhaps?
+21:01 < otavio> yes
+21:01 < joeyh> it's probably not checking the return value of the GO command
+21:03 < otavio> joeyh: I'll check this now.
+21:04 -!- noshadow [~brl@pcpool09.mathematik.uni-freiburg.de] has quit ["and away...."]
+21:04 < otavio> joeyh: bugs like missing template messages can be commited while in string freeze?
+21:04 < joeyh> yeah
+21:05 < otavio> joeyh: sorry be the questions ... Is my first time contributing in one project inside Debian like d-i.
+21:05 < otavio> joeyh: I'm tring do my best and do nothing wrong...
+21:05 < otavio> hehe
+21:05 < jackhead> joeyh: Can you run a dpkg -S /usr/include/debian-installer/config.h?
+21:05 < jackhead> I would like to know to which package this file belongs
+21:06 < otavio> jackhead: inside installer? no. udpkg doesn't implemts -S
+21:06 < jackhead> No, on the build system
+21:06 < joeyh> no such file
+21:06 < jackhead> Interesting
+21:06 < otavio> jackhead: probably libdebian-installer or like ...
+21:07 < jackhead> Another thing: is anybody running serial console around?
+21:07 < jackhead> When I try to choose another language than US-english on serial console, the system hangs
+21:07 < jackhead> On framebuffer, I get the main menu
+21:07 < jackhead> I would like to know if this happens for somebody else as well.
+21:09 < otavio> jackhead: try check at list history. Someone can have some installer report using same hardware.
+21:09 < jackhead> There is none
+21:09 < otavio> jackhead: humm ...
+21:09 < jackhead> I have already checked that
+21:09 < otavio> jackhead: ok. This was my best idea ;P hehehe
+21:17 < otavio> joeyh: the partitioner doesn't have 'Finish' template?
+21:17 < joeyh> Christian Perrier has a ending fix for that
+21:17 < joeyh> er, pending
+21:17 < otavio> joeyh: but is not yet included in cvs, right?
+21:18 < otavio> joeyh: I have looked at code now .
+21:18 < joeyh> not yet right
+21:19 < Sesse> joeyh: do you have any idea what scripts generate the nightly status.utf8.txt files? :-)
+21:21 < joeyh> denis would know, I don't
+21:23 < Sesse> ok
+21:24 < Sesse> no hurry, I just wanted to know if I missed something or not
+21:24 < Sesse> (nb.po up from 40% to what I believe is 100%)
+21:24 < joeyh> wow
+21:24  * joeyh wonders if denis could make it run hourly
+21:24 < Sesse> I should kick my quenya-speaking friends before the string freeze
+21:24 < Sesse> :-P
+21:25 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has joined #debian-boot
+21:25 < Sesse> s/the string/the end of the string/
+21:31 < otavio> Sesse: hehehe
+21:31 < otavio> Sesse: good work :-)
+21:39 < otavio> joeyh: I'm looking at the partitioner bug about wrong cfdisk call ... :-).
+21:39 -!- delYsid [~user@lexx.ipv6.delysid.org] has quit ["ERC Version 4.0 $Revision: 1.587 $ (IRC client for Emacs)"]
+21:40 < jackhead> A question regarding kbd-chooser:
+21:40 < jackhead> kbd-chooser fails here (mipsel, serial console) with the message that /usr/share/console/lists is not found.
+21:41 < jackhead> That seems to be provided by the console-keymaps-*.udebs
+21:41 < jackhead> Is that correct?
+21:44 < jackhead> This udeb seems to be always required, although there is no keymap to choose on a serial console and mipsel kernels do not not (by now) have loadable keymap support.
+21:44 < jackhead> There are simply no keymaps one could load
+21:45 -!- decko [~decko@233-172-161.xdsl-fixo.ctbcnetsuper.com.br] has quit ["Leaving"]
+21:51 < otavio> Fixed. Now if you press ESC this doesn't call cfdisk with wrong value. :-)
+21:51 < otavio> I'm commiting ... :-)
+22:01 < otavio> Folks, someone can looks at #220483? This looks like the user pressed ESC by mistake.
+22:06 -!- decko [~decko@200.225.247.61] has joined #debian-boot
+22:07 < otavio> decko: :-)
+22:07 < decko> hi otavio!!!
+22:09 -!- teo [~teo@the-geek.org] has quit ["going out"]
+22:14 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has joined #debian-boot
+22:23 -!- p2-mate [~p2@D577A9AE.kabel.telenet.be] has joined #debian-boot
+22:33 -!- streuner [~streuner@p508368B9.dip0.t-ipconnect.de] has joined #debian-boot
+22:34 < streuner> is adaptec 29230 supported in new installer?
+22:36 < Sesse> IIRC it should be
+22:36 < Sesse> not sure, though
+22:41 -!- otavio [~otavio@200-203-056-007.pltce7001.dsl.brasiltelecom.net.br] has quit ["talk with my gf ;-)"]
+22:55 -!- pere_movie is now known as pere
+23:18 < dan_t> hello!
+23:19 < dan_t> i have just buy a new pc with a 3c940 nic. it is supported in 2.4.23 kernel. is installer build with new .23 or with old .22 ?
+23:25 -!- dmd [davidd@sponge.xevion.net] has joined #debian-boot
+23:26 < dmd> Erm, I have a quick question, basically in the installer (on sid) I can't get past the cdrom section, becuase I don't have one, this is a laptop, sorry for asking in here, like any way to getting past that section, my network is up and I intend installing via that
+23:28 < jackhead> dmd: you cannot select an installation source?
+23:28 < dmd> this is before this iirc
+23:28 < dmd> it's just during detection
+23:28 < dmd> actually, sorry, this is after selecting source
+23:28 < dmd> which I selected ftp as
+23:28 < dmd> then loaded drivers, found my nic, got base files
+23:28 < jackhead> Moment, I boot an installer...
+23:28 < dmd> then I got prompted with this
+23:29 < jackhead> dmd: What exactly is the error message?
+23:29 < dmd> "detecting HW and loading kernel modules"
+23:29 < dmd> "your installion cdrom couldn't be mounted'
+23:29 < dmd> I did select ftp, and it did get the base install files via that
+23:30 < dmd> then I get prompted to perform manual cdrom configuration or not
+23:30 < jackhead> So you are already after the first reboot?
+23:30 < dmd> no
+23:30 < dmd> I think ill just get woody and dist-upgrade :)
+23:30 < jackhead> Hm...
+23:30 < dmd> still, I'll do it once more, take down the details and submit it as a bug
+23:30 < jackhead> ok
+23:31 < dmd> thanks :)
+23:31 -!- frankie [~frankie@adsl-216-214.37-151.net24.it] has quit ["Client exiting"]
+--- Log closed Sat Dec 20 00:08:05 2003
