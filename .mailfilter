@@ -44,3 +44,16 @@ if (/^X-Spam-Flag: YES/)
 {
 to $DEFAULT/.spam-spamassassin
 }
+
+
+# Enemies of Carlotta
+SENDER=$FROM
+/^(To|Cc):.*/
+RECIPIENT=getaddr($MATCH)
+
+`enemies-of-carlotta --name=$RECIPIENT --is-list`
+if ( $RETURNCODE == 0 )
+{
+        to "|enemies-of-carlotta --incoming"
+}
+
