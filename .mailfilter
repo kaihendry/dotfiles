@@ -18,6 +18,9 @@ to $DEFAULT/.rossetti
 if (/^From: root@dabase\.com /)
 to $DEFAULT/.cron
 
+if (/^From: faqw@dabase\.com /)
+to $DEFAULT/.faqw
+
 ## Silently drop all completely unreadable mail into separate folder
 if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)\?/ || /^Content-Type:.*charset="(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)/)
 to $DEFAULT/.spam-unreadable
