@@ -1,0 +1,39 @@
+[general]
+accounts = UnivCS
+
+[Account UnivCS]
+localrepository = LocalCS
+remoterepository = RemoteCS
+
+[Repository LocalCS]
+type = Maildir
+localfolders = ~/Mail/UnivCS
+
+[Repository RemoteCS]
+type = IMAP
+ssl = yes
+remotehost = mail.cs.helsinki.fi
+remoteuser = hendry
+
+##################################################
+# Mailbox name recorder
+##################################################
+
+[mbnames]
+
+# offlineimap can record your mailbox names in a format you specify.
+# You can define the header, each mailbox item, the separator,
+# and the footer.  Here is an example for Mutt.
+# If enabled is yes, all six setting must be specified, even if they
+# are just the empty string "".
+#
+# The header, peritem, sep, and footer are all Python expressions passed
+# through eval, so you can (and must) use Python quoting.
+
+enabled = yes
+filename = ~/mail/muttrc.mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
+

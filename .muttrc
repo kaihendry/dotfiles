@@ -30,11 +30,13 @@ set ispell="aspell -e -c"
 set charset="utf-8"
 
 #set mbox_type=mbox               # Maildir
-set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
-save-hook ~A ="inbox-`date +%m-%Y`"
+#set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
+#set mbox=~/Mail/"inbox-`date +%m-%Y`" # location of inbox
+set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y.%m-%b`" #Archive inbox mail
+#save-hook ~A ="inbox-`date +%m-%Y`"
 #set postponed=~/Mail/postponed  # location of postponed messages
 set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of postponed messages
-set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y.%m-%b`" #Archive mail
+set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y.%m-%b`" #Archive send mail
 
 color status 	white 		blue
 color index 	brightwhite	black   ~N    	
