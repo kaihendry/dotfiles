@@ -21,7 +21,7 @@ set noai		            " No auto indent
 set nobackup		        " No backup files
 set nowritebackup		    " No backup files
 set comments=nb:>	        " For email comment nesting
-set paste
+"set paste
 
 set expandtab		        " No tabs!
 set shiftwidth=4	        " A tab become four spaces
