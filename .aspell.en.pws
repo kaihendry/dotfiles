@@ -1,6 +1,7 @@
-personal_ws-1.1 en 24
+personal_ws-1.1 en 27
 href
 UTF
+pre
 Lucene
 TranSat
 CMS
@@ -10,8 +11,10 @@ ol
 ul
 UKP
 SSIs
+sudo
 li
 IIP
+IP
 INEX
 online
 CGI
