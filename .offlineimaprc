@@ -1,5 +1,5 @@
 [general]
-accounts = UnivCS, Bilbo
+accounts = UnivCS
 
 [Account UnivCS]
 localrepository = LocalCS

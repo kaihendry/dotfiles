@@ -90,3 +90,5 @@ message-hook "~h multipart" "set mime_forward=ask-yes"
 
 bind attach S save-entry
 macro attach s S^A~/Mail/mail-attachments/
+
+set edit_headers

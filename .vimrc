@@ -53,3 +53,44 @@ set modelines=5
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 "set foldmethod=indent
+
+
+let mapleader = ","
+
+map <Leader>cd :exe 'cd ' . expand ("%:p:h")<CR>
+nmap <F1> :w<CR>
+imap <F1> <ESC>:w<CR>a
+map <F8> gg"+yG
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Installed
+
+" www.vim.org/scripts/script.php?script_id=301
+" $ADDED/xml.vim
+
+" www.vim.org/scripts/script.php?script_id=39
+" copied macros/matchit.vim to plugin/
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" XML
+
+map <Leader>x :set filetype=xml<CR>
+  \:source $VIMRUNTIME/ftplugin/xml.vim<CR>
+  \:iunmap <buffer> <Leader>.<CR>
+  \:iunmap <buffer> <Leader>><CR>
+
+" catalog should be set up
+nmap <Leader>l <Leader>cd:%w !xmllint --valid --noout -<CR>
+nmap <Leader>r <Leader>cd:%w !rxp -V -N -s -x<CR>
+nmap <Leader>d4 :%w !xmllint --dtdvalid 
+ \"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" --noout -<CR>
+
+vmap <Leader>px !xmllint --format -<CR>
+nmap <Leader>px !!xmllint --format -<CR>
+nmap <Leader>pxa :%!xmllint --format -<CR>
+
+nmap <Leader>i :%!xsltlint<CR>
+
+" todo:
+" check
+" http://mugca.its.monash.edu.au/~djkea2/vim/compiler/xmllint.vim
