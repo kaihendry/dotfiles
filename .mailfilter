@@ -30,7 +30,7 @@ to ".spam-bogofilter"
 
 xfilter '/usr/bin/spamc'
 
-if (/^X-Spam-Status: YES /) 
+if (/^X-Spam-Flag: YES/) 
 {
 cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
