@@ -5,23 +5,20 @@ set alias_file=~/Mail/mutt.addressbook
 source  ~/Mail/mutt.addressbook
 
 set ssl_starttls=yes
-set certificate_file=~/cert
-#set certificate_file=~/Mail/certificates
+set certificate_file=~/Mail/certificates
 set imap_force_ssl=yes
 
-#set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
-#set folder={hendry@mail.cs.helsinki.fi/ssl}
+set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
+set folder={hendry@mail.cs.helsinki.fi/ssl}
 
-set spoolfile={hendry@dabase.com/ssl}
-set folder={hendry@dabase.com/ssl}
+#set spoolfile={hendry@dabase.com/ssl}
+#set folder={hendry@dabase.com/ssl}
 
+account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
+account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}INBOX'
 
-
-#account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
-#account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}INBOX'
-
-#mailboxes ! +bug
-#mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX {hendry@daidalos.pannuhuone.org/ssl}
+mailboxes !
+mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX {hendry@daidalos.pannuhuone.org/ssl}
 
 #set move=yes
 
@@ -32,7 +29,6 @@ set hostname="cs.helsinki.fi"
 set beep_new                    # beep if new mail comes in
 set editor="vim '+set tw=72'"
 set ispell="aspell -e -c"
-#set mh_purge           # remove messages marked as deleted from folders
 
 #set allow_8bit
 set charset="utf-8"
