@@ -75,7 +75,6 @@ user_pref("mozex.intercept.news", false);
 user_pref("mozex.intercept.telnet", false);
 user_pref("mozex.universal.command", "/usr/bin/X11/xterm vim %t");
 user_pref("mozex.universal.schemes", "");
-user_pref("network.cookie.cookieBehavior", 0);
 user_pref("network.cookie.p3p", "frfradaa");
 user_pref("network.cookie.p3plevel", 2);
 user_pref("network.cookie.prefsMigrated", true);
