@@ -8,8 +8,8 @@ if [ "$PS1" ]; then
     export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 
     # For subversion on CS computers
-    if [ -d /opt/subversion-0.34.0/bin/ ]; then
-        export PATH=$PATH:/opt/subversion-0.34.0/bin/:/home/group/nodes/scripts/bin
+    if [ -d /home/hendry/svn/bin/ ]; then
+        export PATH=$PATH:/home/hendry/svn/bin/
     fi
 
     export EDITOR=vim
@@ -63,8 +63,13 @@ fi
 export EMAIL=hendry@cs.helsinki.fi
 export CVSROOT=/home/group/nodes/cvs
 
-export LANG=en_GB.UTF-8
-export LC_ALL=en_GB.UTF-8
+#export LANG=en_GB.UTF-8
+#export LC_ALL=en_GB.UTF-8
+
+export LANG=en_GB
+export LC_ALL=en_GB
+
+
 
 export PATH=$PATH:/home/hendry/projects/scripts
 export PYTHONPATH=/home/hendry/projects/nevow/trunk

@@ -102,6 +102,7 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>' 
 #send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
+send-hook '~C list@dclug.org.uk' 'my_hdr From: Kai Hendry <hendry@prazefarm.co.uk>'
 
 set reverse_name
 unset reverse_realname

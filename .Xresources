@@ -6,8 +6,8 @@ UXTerm*title: term
 UXTerm*saveLines: 1024
 UXTerm*termName: xterm
 
-UXTerm*background:  black
-UXTerm*foreground:  gray
+UXTerm*background: black
+UXTerm*foreground: gray
 UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 
