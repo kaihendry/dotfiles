@@ -26,10 +26,10 @@ if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|
 to $DEFAULT/.spam-unreadable
 ####
 
-xfilter 'bogofilter -f -p -u -l -e -v'
+#xfilter 'bogofilter -f -p -u -l -e -v'
 
-if (/^X-Bogosity: (Spam|Yes)/)
-to ".spam-bogofilter"
+#if (/^X-Bogosity: (Spam|Yes)/)
+#to ".spam-bogofilter"
 
 #if (/^X-Bogosity: Unsure/)
 #cc "unsure-bogofilter"
