@@ -3,7 +3,7 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1072992544	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1072996416	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
 .tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
 .imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
