@@ -2,3 +2,64 @@
 00:13 -!- liw [~liw@ip212-226-168-229.adsl.kpnqwest.fi] has quit ["Pink timeout"]
 00:22 -!- TheBlueWizard [TheBlueWiz@207.111.96.96] has joined #debian-fi
 --- Log closed Sun Dec 07 01:00:54 2003
+--- Log opened Sun Dec 07 17:22:10 2003
+17:22 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-fi
+17:22 -!- Irssi: #debian-fi: Total of 21 nicks [0 ops, 0 halfops, 0 voices, 21 normal]
+17:22 -!- Irssi: Join to #debian-fi was synced in 11 secs
+17:25 -!- Viiru [~viiru@cs189010.pp.htv.fi] has quit [Nick collision from services.]
+17:25 -!- Viiru [~viiru@cs189228.pp.htv.fi] has joined #debian-fi
+18:54 -!- misty [~null@b-195-165.cable.kpy.customers.dnainternet.fi] has quit ["Lifett‰m‰‰n"]
+19:15 -!- Netsplit herbert.freenode.net <-> irc.freenode.net quits: jni, Talvi
+19:17 -!- Netsplit over, joins: jni
+21:10 -!- Talvi [winter@talvi.lnet.lut.fi] has joined #debian-fi
+21:12 < tpr> jaa-a, unstablessa on kuitenkin jo 2.4 t‰ll‰ hetkell‰.
+21:31 < hendry>  deny
+21:31 < hendry> deniing ?
+21:41 < liiwi> nih
+21:41 < desaster> juh
+21:41 < hendry> denying
+21:42 < hendry> sorry my english
+21:42 < liiwi> denim
+21:42 < liiwi> dynaam
+21:42 < liiwi> today, I've been mostly lisping
+21:44 < Viiru> Lisping is nice every now and then.
+21:44 < Viiru> This week I've mostly been speaking python.
+21:44 < Viiru> I should probably get some packages, too.
+21:46 < desaster> I've been "speaking" ircii lately
+22:19 -!- liw [~liw@ip212-226-168-229.adsl.kpnqwest.fi] has joined #debian-fi
+22:36 < liiwi> moi
+22:37 < ibid> liw: moi
+22:37 < liw> moi
+22:38 < liw> m√§ en ole jaksanut t√§n√§ viikonloppuna EoC:t√§ h√§k√§t (tiedoksi liiwille ja ibidille), Lodju vienyt kaiken ajan
+22:43 < ibid> juu
+22:46 < liw> jos ty√∂t ei est√§, m√§ pid√§n parin viikon joulu-uusivuosi-loman ja parin p√§iv√§n nukkumisen j√§lkeen toivottavasti olen sopivassa h√§kk√§ysvireess√§ tekem√§√§n oleellisia asioita kummallekin aktiiviselle projektilleni
+22:46  * ibid yritt‰‰ p‰‰st‰ taas grep-dctrl:‰‰n kiinni
+22:47 < liw> se oli yksi niist√§ inhottavista publibin k√§ytt√§jist√§, jotka est√§v√§t mua tappamasta koko kirjastoa? :)
+22:50 < ibid> :)
+22:51 < ibid> periaatteessa m‰ voisin toki ottaa sen yhden funktion osaksi
+22:51 < ibid> grep-dctrl:‰‰
+22:51 < ibid> poistuu se build-depends
+22:53 < liw> mik√§ funktio?
+22:55 < liw> ja juu, kyll√§ mulle sopii yhden funktion kopiointi, emm√§ publibi√§ erityisemmin yll√§pid√§ kuitenkaan
+22:55 < ibid> xgetaline
+22:56 < liw> ack
+22:56 < ibid> hm?
+22:56 < liw> "hm?"?
+22:56 < ibid> "ack"?  (acknowledge vai jotain muuta?)
+22:57 < liw> acknowledge, juu
+22:57 < ibid> :)
+22:57 < ibid> olen vaan joskus n‰hnyt ackia k‰ytett‰v‰n pettymyksen tms merkkin‰
+22:58 < liw> m√§ k√§yt√§n sit√§ ihan vaan ascii kuutosena :)
+22:58 < ibid> m‰ sanon yleens‰ "ok" :)
+22:58 < liw> ack tai check tai ok tai jotain muuta, pit√§√§ olla vaihtelua el√§m√§ss√§ :)
+22:58 < ibid> heh
+23:02 < ibid> onko niit‰ muita kuin grep-dctrl?
+23:03 < liw> oli niit√§ vissiin yksi tai kaksi lis√§√§, joilla on B-D publib-deviin
+23:04 < ibid> ajk@kukkaruukku[23:04:01]:ajk$ grep-dctrl -F Build-Depends publib -sPackage /var/lib/apt/lists/ftp.fi.debian.org_debian_dists_unstable_main_source_Sources 
+23:04 < ibid> Package: dwww
+23:04 < ibid> Package: falselogin
+23:04 < ibid> Package: grep-dctrl
+23:04 < ibid> Package: liwc
+23:04 < ibid> Package: sex
+23:05 < liw> m√§ tiesin, ett√§ grep-dctrl:sta on jotain hy√∂ty√§ :)
+23:05 < ibid> :)

@@ -6,57 +6,29 @@ Version:0.08:$
 [PLUGINS]
 /usr/lib/RealPlayer8/rpnp.so:$
 :$
-1045515493000:1:1:$
+1045515493000:1:5:$
 :$
 rpnp.so:$
 1
 0:audio/x-pn-realaudio-plugin:RealPlayer Plugin Metafile:rpm:$
 /usr/lib/flashplugin-nonfree/libflashplayer.so:$
 :$
-1047076135000:1:1:$
+1047076135000:1:5:$
 Shockwave Flash 6.0 r79:$
 Shockwave Flash:$
 2
 0:application/x-shockwave-flash:Shockwave Flash:swf:$
 1:application/futuresplash:FutureSplash Player:spl:$
-/usr/local/lib/j2sdk1.4.2/jre/plugin/i386/ns610-gcc32/libjavaplugin_oji.so:$
+/usr/lib/Acrobat5/Browsers/intellinux/nppdf.so:$
 :$
-1056101655000:1:1:$
-Java(TM) Plug-in 1.4.2:$
-Java(TM) Plug-in 1.4.2-b28:$
-29
-0:application/x-java-vm:Java::$
-1:application/x-java-applet:Java::$
-2:application/x-java-applet;version=1.1:Java::$
-3:application/x-java-applet;version=1.1.1:Java::$
-4:application/x-java-applet;version=1.1.2:Java::$
-5:application/x-java-applet;version=1.1.3:Java::$
-6:application/x-java-applet;version=1.2:Java::$
-7:application/x-java-applet;version=1.2.1:Java::$
-8:application/x-java-applet;version=1.2.2:Java::$
-9:application/x-java-applet;version=1.3:Java::$
-10:application/x-java-applet;version=1.3.1:Java::$
-11:application/x-java-applet;version=1.4:Java::$
-12:application/x-java-applet;version=1.4.1:Java::$
-13:application/x-java-applet;version=1.4.2:Java::$
-14:application/x-java-applet;jpi-version=1.4.2:Java::$
-15:application/x-java-bean:Java::$
-16:application/x-java-bean;version=1.1:Java::$
-17:application/x-java-bean;version=1.1.1:Java::$
-18:application/x-java-bean;version=1.1.2:Java::$
-19:application/x-java-bean;version=1.1.3:Java::$
-20:application/x-java-bean;version=1.2:Java::$
-21:application/x-java-bean;version=1.2.1:Java::$
-22:application/x-java-bean;version=1.2.2:Java::$
-23:application/x-java-bean;version=1.3:Java::$
-24:application/x-java-bean;version=1.3.1:Java::$
-25:application/x-java-bean;version=1.4:Java::$
-26:application/x-java-bean;version=1.4.1:Java::$
-27:application/x-java-bean;version=1.4.2:Java::$
-28:application/x-java-bean;jpi-version=1.4.2:Java::$
+1059519185000:1:5:$
+:$
+nppdf.so:$
+1
+0:application/pdf:Portable Document Format:pdf:$
 /usr/lib/mozilla/plugins/mplayerplug-in.so:$
 :$
-1066048786000:1:1:$
+1066048786000:1:5:$
 Video Player Plug-in for QuickTime and Windows Media Player streams using mplayer:$
 mplayerplug-in v0.95 handles QuickTime Windows Media Player Plugin:$
 31
@@ -91,17 +63,145 @@ mplayerplug-in v0.95 handles QuickTime Windows Media Player Plugin:$
 28:audio/mp3:MPEG audio:mp3:$
 29:video/fli:FLI animation:fli,flc:$
 30:video/x-fli:FLI animation:fli,flc:$
+/usr/lib/mozilla/plugins/mozplugger.so:$
+:$
+1067211638000:1:5:$
+MozPlugger version 1.3.2, written by <a href=http://fredrik.hubbe.net/>Fredrik H&uuml;binette</a> <a href=mailto:hubbe@hubbe.net>&lt;hubbe@hubbe.net&gt</a> and Louis Bavoil <a href=mailto:louis@bavoil.net>&lt;louis@bavoil.net&gt</a>.<br>For documentation on how to configure mozplugger, check the man page. (type <tt>man&nbsp;mozplugger</tt>):$
+MozPlugger 1.3.2:$
+87
+0:video/mpeg: MPEG animation: mpeg, mpg, mpe:$
+1:video/x-mpeg: MPEG animation: mpeg, mpg, mpe:$
+2:video/x-mpeg2: MPEG2 animation: mpv2, mp2ve:$
+3:video/msvideo: AVI animation: avi:$
+4:video/x-msvideo: AVI animation: avi:$
+5:video/fli: FLI animation: fli, flc:$
+6:video/x-fli: FLI animation: fli, flc:$
+7:application/x-mplayer2: Windows Media: wmv,asf,mov:$
+8:video/x-ms-asf: Windows Media: asf,asx,wma,wax,wmv,wvx:$
+9:video/x-ms-wmv: Windows Media: wmv:$
+10:video/quicktime: Quicktime animation: mov,qt:$
+11:video/x-quicktime: Quicktime animation: mov,qt:$
+12:video/dl: DL animation: dl:$
+13:video/x-dl: DL animation: dl:$
+14:video/sgi-movie: SGI animation: movie,movi,mv:$
+15:video/x-sgi-movie: SGI animation: movie,movi,mv:$
+16:video/anim: IFF animation: iff,anim5,anim3,anim7:$
+17:video/x-anim: IFF animation: iff,anim5,anim3,anim7:$
+18:audio/mp3: MPEG audio: mp3:$
+19:audio/x-mp3: MPEG audio: mp3:$
+20:audio/mpeg2: MPEG audio: mp2:$
+21:audio/x-mpeg2: MPEG audio: mp2:$
+22:audio/mpeg3: MPEG audio: mp3:$
+23:audio/x-mpeg3: MPEG audio: mp3:$
+24:audio/mpeg: MPEG audio: mpa,abs,mpega:$
+25:audio/x-mpeg: MPEG audio: mpa,abs,mpega:$
+26:audio/mpeg-url: MPEG music resource locator: m3u:$
+27:audio/x-mpeg-url: MPEG music resource locator: m3u:$
+28:audio/mpegurl: MPEG music resource locator: m3u:$
+29:audio/x-mpegurl: MPEG music resource locator: m3u:$
+30:audio/x-ogg: OGG audio: ogg:$
+31:audio/x-scpls: OGG audio: pls:$
+32:application/x-ogg: OGG audio: ogg:$
+33:audio/basic: Basic audio file: au,snd:$
+34:audio/x-basic: Basic audio file: au,snd:$
+35:audio/wav: Microsoft wave file:wav:$
+36:audio/x-wav: Microsoft wave file:wav:$
+37:image/sun-raster: SUN raster image: rs:$
+38:image/x-sun-raster: SUN raster image: rs:$
+39:image/x-rgb: RGB Image: rgb:$
+40:image/x-portable-pixmap: PPM Image: ppm:$
+41:image/x-portable-graymap: PGM Image: pgm:$
+42:image/x-portable-bitmap: PBM Image: pbm:$
+43:image/x-portable-anymap: PBM Image: pnm:$
+44:image/tiff: TIFF image: tiff,tif:$
+45:image/x-tiff: TIFF image: tiff,tif:$
+46:audio/x-pn-realaudio-plugin: RealPlayer Plugin Metafile: rpm:$
+47:audio/x-pn-realaudio: Realaudio-plugin resource locator: ra,rm,ram:$
+48:audio/x-realaudio: RealAudio file: ra,rm,ram:$
+49:application/vnd.rn-realmedia: RealMedia file: rm:$
+50:application/smil: RealPlayer: smi:$
+51:audio/vnd.rn-realaudio: RealAudio file: ra,ram:$
+52:audio/vnd.rn-realvideo: RealVideo file: rv:$
+53:application/pdf: PDF file: pdf:$
+54:application/x-pdf: PDF file: pdf:$
+55:text/pdf: PDF file: pdf:$
+56:text/x-pdf: PDF file: pdf:$
+57:application/x-dvi: DVI file: dvi:$
+58:application/x-postscript: PostScript file: ps:$
+59:application/postscript: PostScript file: ps:$
+60:application/rtf: Rich Text Format: rtf:$
+61:application/x-msword: Microsoft Word Document: doc, dot:$
+62:application/msword: Microsoft Word Document: doc, dot:$
+63:application/vnd.ms-excel: Microsoft Excel Document: xls, xlb:$
+64:application/vnd.sun.xml.writer: OpenOffice Writer 6.0 documents: sxw:$
+65:application/vnd.sun.xml.writer.template: OpenOffice Writer 6.0 templates: stw:$
+66:application/vnd.sun.xml.writer.global: OpenOffice Writer 6.0 global documents: sxg:$
+67:application/vnd.stardivision.writer: StarWriter 5.x documents: sdw:$
+68:application/vnd.stardivision.writer-global: StarWriter 5.x global documents: sgl:$
+69:application/x-starwriter: StarWriter 4.x documents: sdw:$
+70:application/vnd.sun.xml.calc: OpenOffice Calc 6.0 spreadsheets: sxc:$
+71:application/vnd.sun.xml.calc.template: OpenOffice Calc 6.0 templates: stc:$
+72:application/vnd.stardivision.calc: StarCalc 5.x spreadsheets: sdc:$
+73:application/x-starcalc: StarCalc 4.x spreadsheets: sdc:$
+74:application/vnd.sun.xml.draw: OpenOffice Draw 6.0 documents: sxd:$
+75:application/vnd.sun.xml.draw.template: OpenOffice Draw 6.0 templates: std:$
+76:application/vnd.stardivision.draw: StarDraw 5.x documents: sda:$
+77:application/x-stardraw: StarDraw 4.x documents: sda:$
+78:application/vnd.sun.xml.impress: OpenOffice Impress 6.0 presentations: sxi:$
+79:application/vnd.sun.xml.impress.template: OpenOffice Impress 6.0 templates: sti:$
+80:application/vnd.stardivision.impress: StarImpress 5.x presentations: sdd:$
+81:application/vnd.stardivision.impress-packed: StarImpress Packed 5.x files: sdp:$
+82:application/x-starimpress: StarImpress 4.x presentations: sdd:$
+83:application/vnd.ms-powerpoint: PowerPoint: ppt:$
+84:application/vnd.sun.xml.math: OpenOffice Math 6.0 documents: sxm:$
+85:application/vnd.stardivision.math: StarMath 5.x documents: smf:$
+86:application/x-starmath: StarMath 4.x documents: smf:$
 /usr/lib/mozilla/plugins/libmozswfdec.so:$
 :$
-1067480976000:1:1:$
+1067480976000:1:5:$
 Shockwave Flash 6.0 animation viewer handled by Swfdec-0.2.2.  Plays SWF animations, commonly known as Macromedia&reg; Flash&reg;.<br><br>This is alpha software.  It will probably behave in many situations, but may also ride your motorcycle, drink all your milk, or use your computer to browse porn.  Comments, feature requests, and patches are welcome.<br><br>See <a href="http://swfdec.sourceforge.net/">http://swfdec.sourceforge.net/</a> for information.<br><br>Flash, Shockwave, and Macromedia are trademarks of Macromedia, Inc.  Swfdec is not affiliated with Macromedia, Inc.:$
 Shockwave Flash:$
 1
 0:application/x-shockwave-flash:Shockwave Flash:swf:$
 /usr/lib/mozilla/plugins/libnullplugin.so:$
 :$
-1068180710000:1:5:$
+1068180710000:1:7:$
 The default plugin handles plugin data for mimetypes and extensions that are not specified and facilitates downloading of new plugins.:$
 Default Plugin:$
 1
 0:*:All types:.*:$
+/usr/local/lib/j2sdk1.4.2/jre/plugin/i386/ns610-gcc32/libjavaplugin_oji.so:$
+:$
+1056101655000:1:5:$
+Java(TM) Plug-in 1.4.2:$
+Java(TM) Plug-in 1.4.2-b28:$
+29
+0:application/x-java-vm:Java::$
+1:application/x-java-applet:Java::$
+2:application/x-java-applet;version=1.1:Java::$
+3:application/x-java-applet;version=1.1.1:Java::$
+4:application/x-java-applet;version=1.1.2:Java::$
+5:application/x-java-applet;version=1.1.3:Java::$
+6:application/x-java-applet;version=1.2:Java::$
+7:application/x-java-applet;version=1.2.1:Java::$
+8:application/x-java-applet;version=1.2.2:Java::$
+9:application/x-java-applet;version=1.3:Java::$
+10:application/x-java-applet;version=1.3.1:Java::$
+11:application/x-java-applet;version=1.4:Java::$
+12:application/x-java-applet;version=1.4.1:Java::$
+13:application/x-java-applet;version=1.4.2:Java::$
+14:application/x-java-applet;jpi-version=1.4.2:Java::$
+15:application/x-java-bean:Java::$
+16:application/x-java-bean;version=1.1:Java::$
+17:application/x-java-bean;version=1.1.1:Java::$
+18:application/x-java-bean;version=1.1.2:Java::$
+19:application/x-java-bean;version=1.1.3:Java::$
+20:application/x-java-bean;version=1.2:Java::$
+21:application/x-java-bean;version=1.2.1:Java::$
+22:application/x-java-bean;version=1.2.2:Java::$
+23:application/x-java-bean;version=1.3:Java::$
+24:application/x-java-bean;version=1.3.1:Java::$
+25:application/x-java-bean;version=1.4:Java::$
+26:application/x-java-bean;version=1.4.1:Java::$
+27:application/x-java-bean;version=1.4.2:Java::$
+28:application/x-java-bean;jpi-version=1.4.2:Java::$

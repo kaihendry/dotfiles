@@ -30,3 +30,28 @@
 00:51 < Alex> I prefer to do that first. :-)
 00:52  * pere is working on the debian-edu task, integrating the skolelinux tasks into the Debian archive.
 --- Log closed Sun Dec 07 01:00:54 2003
+--- Log opened Sun Dec 07 17:22:10 2003
+17:22 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+17:22 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+17:22 -!- Irssi: Join to #debian-edu was synced in 15 secs
+17:23 < Werner_> Barbarossa: become a DD (if you aren't already)...
+17:24 < Barbarossa> ah ook
+17:34 -!- vance [~vance@rn-re124c14.uwaterloo.ca] has joined #debian-edu
+18:38 < Alex> pere: Will you add me, "alexbr-guest", to the project?
+18:49 < pere> Alex: sure.
+18:50 < pere> Alex: added.
+18:55 < Alex> Thanks.
+18:58 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+19:15 -!- Netsplit herbert.freenode.net <-> irc.freenode.net quits: faj_zzzz
+19:17 -!- Netsplit over, joins: faj_zzzz
+20:48 < mariusk|z> pere: I made a user mkotsbak-guest
+20:49 < Barbarossa> pere: barbaross-guest exists now, too :)
+20:49 < pere> mariusk|z: good.  I just added you as a developer.
+20:50 < pere> Barbarossa: added. :)
+20:50 < Barbarossa> thnx
+20:50  * pere is heading for the movies. :)
+20:50 -!- pere is now known as pere_movie
+20:50 -!- stockholm [~andreas@petrus.schuldei.org] has joined #debian-edu
+21:36 -!- jld [~jld@168-226-190-181.speedy.com.ar] has joined #debian-edu
+21:36 -!- jld [~jld@168-226-190-181.speedy.com.ar] has left #debian-edu ["Cerrando la cliente"]
+22:44 -!- faj_zzzz is now known as finnarne
