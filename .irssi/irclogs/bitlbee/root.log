@@ -184,3 +184,31 @@
 19:59 <root> JABBER - Logging in: Authenticating
 19:59 <root> JABBER - Logged in
 --- Log closed Tue Dec 16 20:05:19 2003
+--- Log opened Wed Dec 17 21:57:33 2003
+21:57 -!- Irssi: Starting query in bitlbee with root
+21:57 <root> Account successfully added
+21:57 <root> Trying to get all accounts connected...
+21:57 <root> JABBER - Logging in: Connecting
+21:57 <root> Password accepted
+21:57 <root> JABBER - Logging in: Connected
+21:57 <root> JABBER - Logging in: Requesting Authentication Method
+21:57 <root> JABBER - Logging in: Authenticating
+21:57 <root> JABBER - Logged in
+--- Log closed Wed Dec 17 22:03:32 2003
+--- Log opened Wed Dec 17 22:16:44 2003
+22:16 <root> JABBER - Logged out: Connection lost
+22:16 <root> JABBER - Signing off..
+--- Log closed Wed Dec 17 22:22:32 2003
+--- Log opened Wed Dec 17 22:25:11 2003
+22:25 <hendry> account on
+22:25 <root> Trying to get all accounts connected...
+22:25 <root> JABBER - Logging in: Connecting
+22:25 <root> JABBER - Logging in: Connected
+22:25 <root> JABBER - Logging in: Requesting Authentication Method
+22:25 <root> JABBER - Logging in: Authenticating
+22:25 <root> JABBER - Logged in
+--- Log closed Wed Dec 17 22:30:32 2003
+--- Log opened Thu Dec 18 00:00:54 2003
+00:00 <root> JABBER - Logged out: Connection lost
+00:00 <root> JABBER - Signing off..
+--- Log closed Thu Dec 18 00:06:32 2003

@@ -85,3 +85,30 @@
 22:56 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
 23:46 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
 --- Log closed Wed Dec 17 00:41:38 2003
+--- Log opened Wed Dec 17 21:58:04 2003
+21:58 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
+21:58 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+21:58 -!- Irssi: Join to #debian-edu was synced in 16 secs
+21:58 < hendry> how big is this co of skolelinux?
+--- Log closed Wed Dec 17 22:04:27 2003
+--- Log opened Wed Dec 17 22:23:31 2003
+22:23 -!- hendry_ [~hendry@cs180217.pp.htv.fi] has joined #debian-edu
+22:23 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+22:23 -!- Irssi: Join to #debian-edu was synced in 21 secs
+22:26 < stockholm> wait...
+22:27 < stockholm> 540M    /home/andreas/src/skolelinux
+22:27 < stockholm> du output
+22:27 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has quit [Read error: 104 (Connection reset by peer)]
+22:28 < stockholm> hendry_: did you get that?
+--- Log closed Wed Dec 17 23:47:14 2003
+--- Log opened Thu Dec 18 00:04:04 2003
+00:04 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-edu
+00:04 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+00:04 -!- Irssi: Join to #debian-edu was synced in 15 secs
+00:16 -!- osmuvaag [~osmuvaag@ti132110a080-2473.bb.online.no] has joined #debian-edu
+00:19 < osmuvaag> I'm trying to install a fresh slx todays build. Autopart fails with error 'ped_file_system_create failed'. Has anyone else seen this?
+00:24 < klausAde> osmuvaag: yes, saw it myself today. Can you bug it?
+00:25 < osmuvaag> yes
+00:25 < klausAde> i'm struggling with upgraded firewall
+00:35 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
+--- Log closed Thu Dec 18 00:44:49 2003

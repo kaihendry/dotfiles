@@ -567,3 +567,126 @@
 00:10 < manty> joeyh: around now
 00:38 -!- jackhead [~jackhead@p5085113E.dip.t-dialin.net] has quit ["leaving"]
 --- Log closed Wed Dec 17 00:41:38 2003
+--- Log opened Wed Dec 17 21:58:04 2003
+21:58 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+21:58 -!- Irssi: #debian-boot: Total of 47 nicks [0 ops, 0 halfops, 0 voices, 47 normal]
+21:58 -!- Irssi: Join to #debian-boot was synced in 13 secs
+--- Log closed Wed Dec 17 22:04:27 2003
+--- Log opened Wed Dec 17 22:23:31 2003
+22:23 -!- hendry_ [~hendry@cs180217.pp.htv.fi] has joined #debian-boot
+22:23 -!- Irssi: #debian-boot: Total of 49 nicks [0 ops, 0 halfops, 0 voices, 49 normal]
+22:23 -!- Irssi: Join to #debian-boot was synced in 19 secs
+22:27 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has quit [Read error: 104 (Connection reset by peer)]
+22:55 -!- jackhead [~jackhead@p50851CBB.dip.t-dialin.net] has quit ["leaving"]
+23:00 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit [Connection timed out]
+23:02 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+23:13 < manty> buxy: pong
+23:13 < buxy> manty: check your mail
+23:13 < manty> ok
+23:14 < manty> buxy: I have everything setup
+23:14 < manty> I have mailed admins
+23:15 < manty> in fact I'm building already
+23:15 < manty> the only thing I need is the directory
+23:15 < manty> right now everything is at my $HOME at gluck
+23:15 < buxy> you setupped everything in your home ? or in the old tree ?
+23:15 < manty> and available at people.d.o~/manty
+23:15 < buxy> s/you setupped/did you setup/
+23:15 < manty>  /~manty I mean
+23:15 < buxy> :)
+23:16 < manty> at my home
+23:16 < manty> oldgluck is read only
+23:16 < manty> I have a mail pending to be sent explaining all this
+23:16 < manty> let me send it
+23:17 < buxy> oldgluck is not read-only
+23:17 < manty> ok, sent
+23:17 < manty> umm
+23:17 < manty> it was last time I checked
+23:17 < buxy> hertzog@gluck:/home/oldgluck/org/cdimage.debian.org$ touch test
+23:17 < buxy> hertzog@gluck:/home/oldgluck/org/cdimage.debian.org$ ls -al
+23:17 < buxy> total 24
+23:17 < buxy> drwxrwsr-x    5 root     debian-c     4096 Dec 17 14:17 .
+23:17 < buxy> drwxr-xr-x   16 root     root         4096 Dec 12 11:03 ..
+23:17 < buxy> -rw-rw-r--    1 root     debian-c      409 Aug 20 12:46 apache.conf
+23:17 < buxy> drwxr-sr-x    3 atterer  debian-c     4096 Mar 21  2003 atterer
+23:17 < buxy> drwxrwsr-x   12 manty    debian-c     4096 Nov 20 12:28 setup
+23:17 < buxy> -rw-r--r--    1 hertzog  debian-c        0 Dec 17 14:17 test
+23:18 < buxy> drwxrwsr-x    4 root     debian-c     4096 Nov 29  2002 www
+23:18 < manty> /mnt/tmp/c0d0p1 on /mnt/oldgluck type ext2 (ro,loop=/dev/loop0)
+23:18 < manty> /mnt/tmp/c0d0p6 on /mnt/oldgluck-usr type ext2 (ro,loop=/dev/loop1)
+23:18 < buxy> that's not the good oldgluck
+23:18 < manty> ah
+23:18 < buxy> I mean just the org tree
+23:18 < manty> well, anyway
+23:18 < manty> I have it setup at my home
+23:18 < manty> with everything audited
+23:18 < buxy> when did you mail -admin ?
+23:18 < manty> and all that
+23:18 < manty> on the 8th
+23:18 < manty> I believe
+23:19 < manty> do you want a copy of the mails?
+23:19 < buxy> yes please
+23:19 < manty> I have emailed them again afterwards
+23:19 < buxy> i was going to ask you
+23:19 < manty> ok
+23:19 < manty> a minute
+23:19 < buxy> I want to ping them, I'm fed up with all the mails about the 404 ... :)
+23:21 < buxy> I suggest that you clean the tree in oldgluck like I mentionned (by replacing everything with the copy you have in your home tree for example)
+23:21 < buxy> that way, they just have to move the full dir and they're done
+23:22 -!- michele [~michele@host186-0.pool62211.interbusiness.it] has joined #debian-boot
+23:32 -!- michele [~michele@host186-0.pool62211.interbusiness.it] has quit ["Client exiting"]
+23:33 < manty> I didn't wan to clean the old one
+23:33 < manty> just in case we want something
+23:33 < manty> but I can build up a new one
+23:33 < manty> for them to move over there
+23:34 < manty> what address do you want me to send the mails?
+23:35 < manty> I'm bouncing them to your debian.org address
+23:36 < manty> btw
+23:37 < manty> I have checked the debian-cd cvs already
+23:37 < manty> there is nothing wrong with it
+23:37 < manty> at least on the final checkout
+23:37 < manty> it is exactly what I have at home
+23:37 < manty> I think I was the last one commiting
+23:38 < manty> so...
+23:38 < manty> what do I do...
+23:38 < joeyh> are you going to be able to restore the beta1 images?
+23:38 < manty> I don't think so
+23:38 < manty> I don't have copies or MD5sums
+23:38 < joeyh> IIRC the urls in the topic have some known good ones
+23:38 < manty> if we could gather the md5sums...
+23:39 < manty> then we could
+23:39 < joeyh> they include gpg signed md5sums, I think.
+23:39 < manty> which one?
+23:40 < joeyh> hm, no, they are 11/19, after the beta
+23:40 < joeyh> never mind
+23:40 < joeyh> gotta go, setting up a dir that can just be copied in sounds good
+23:41 < manty> ok
+23:41 < manty> buxy: tell me when you have read what I sent you
+23:41 < manty> buxy: if you have received it
+--- Log closed Wed Dec 17 23:47:14 2003
+--- Log opened Thu Dec 18 00:04:04 2003
+00:04 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+00:04 -!- Irssi: #debian-boot: Total of 46 nicks [0 ops, 0 halfops, 0 voices, 46 normal]
+00:04 -!- Irssi: Join to #debian-boot was synced in 13 secs
+00:13 -!- luther [luther@AStrasbourg-206-1-7-108.w80-15.abo.wanadoo.fr] has quit ["ircII EPIC4-1.1.11 -- Are we there yet?"]
+00:17 < manty> buxy: so, do I get that dir ready?
+00:17 < manty> buxy: I was thinking that gluck.debian.org/cdimage is not a goot name
+00:18 < manty> maybe testingimages.debian.org or testingisos.debian.org would be better, don't you think?
+00:18 < manty> we can keep the old name also
+00:18 < manty> if I remember well when we started this it was supposed to be cdimage.debian.org
+00:19 < manty> but then there was some problem with that
+00:19 < manty> what about a new name without problems?
+00:41 < buxy> it's not a priority really
+00:42 < buxy> I'd better have it online right now
+00:42 < manty> sure
+00:42 < manty> but as the old dir was called cdimage.debian.org
+00:42 < manty> and that was not the name of the web...
+00:43 < manty> also, the old config for apache stated that we were cdimage.debian.org, which we weren't
+00:43 < buxy> manty: yeah, please setup everything in /home/oldgluck/org/cdimage.debian.org (and remove all the cruft there)
+00:43 < manty> ok, ok I'll do it
+00:43 < buxy> we still do not have any vhost for that service, it's not a problem
+00:44 < manty> but tomorrow
+00:44 < manty> today I have to go to sleep
+00:44 < buxy> it's better to have that called gluck.debian.org/cdimage because it shows that it's not something too official
+00:44 < buxy> manty: sure, no problem
+00:44 < buxy> just mail me when you're done
+--- Log closed Thu Dec 18 00:44:49 2003
