@@ -1,364 +1,3 @@
-apt-cache search ion
-apt-cache show ion
-sudo apt-get install ion
-sudo vim /etc/sudoers 
-su
-X
-X11 
-X
-X
-whereis X
-startx
-su
-vim .xsession-errors 
-sudo apt-get install xrdb
-cd /usr/share/doc/xdm/
-ls
-vim README.Debian 
-sudo xdm-config
-cd
-ls
-ll
-exit
-startx
-X
-/usr/X11R6/bin/X
-exit
-/usr/X11R6/bin/X
-ls -al /usr/X11R6/bin/X
-groups
-startx
-exit
-X
-whereis X
-locate X
-locate X | grep bin
-/usr/bin/X11
-/usr/bin/X11/X
-su
-groups
-X
-startx
-locate startx
-man startx
-startx
-exit
-screen
-cd
-screen
-exit
-cd
-startx
-
-ls /usr/X11R6/
-ls /usr/X11R6/bin/
-ls - al /usr/X11R6/
-ls -al /usr/X11R6/
-groups
-cat /etc/X11/Xwrapper.config 
-sudo cat /etc/X11/Xwrapper.config 
-exit
-ls
-ls
-exit
-aysi 
-resize 
-man resize
-sudo apt-get install parted
-parted
-sudo parted
-meminfo
-free -m
-cat /proc/apm 
-apt-cache search lphdisk
-sudo apt-get install mozilla-browesr
-sudo apt-get install mozilla-brower
-sudo apt-get install mozilla-browser
-cd /usr/src/
-lsl
-ls
-cd kernel-source-2.6.0-test9
-ls
-make menuconfig
-man make-kpkg
-su
-screen
-sudo init 0
-cd /etc/
-ls
-cd exim4/
-ls
-ll
-tree
-sudo apt-get install tree
-tree
-find .
-tree
-top
-xwininfo -root
-resize 
-sudo init 0
-sudo dhclient eth1
-resize
-resize
-top
-sudo init 0
-clear
-sudo dhclient eth1
-sudo aptitude
-svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn/cows
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/svn/cows
-sudo init 0
-ls
-ls
-ls
-ls -al
-vim .subversion/
-screen -list
-su
-su
-sudo dhclient eth1
-svn import . svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-svn update svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-cd ..
-ls
-rm -rf hendry
-ls -al hendry
-ls -al
-cd hendry
-cvs co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-ls
-ls -al
-svn help co
-rm -rf home
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-ls -al
-ls *
-mc
-sudo apt-get install mc
-mc
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-svn help co
-mc 
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-mv home/ ..
-mv home/* ..
-ls
-cd home/
-ls
-ls -al
-mc
-§
-cd ..
-mc
-ls
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-ls
-ll
-ls -al
-svn svn:ignore .ssh
-svn propset svn:ignore .ssh
-svn propset svn:ignore .ssh/
-ls -al
-svn help propset
-svn propset svn:ignore .ssh
-svn propset svn:ignore ".ssh"
-ls -al
-svn propedit .ssh
-svn propedit ".ssh"
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-svn propedit ".ssh"
-ls -al
-svn status
-svn propedit ".ssh" ssh
-svn pro
-ls
-svn propset svn:ignore ".ssh" ssh
-svn propset svn:ignore ssh
-svn propset svn:ignore .ssh
-svn propset svn:ignore ".ssh"
-touch test
-svn propset svn:ignore test
-ls
-rm test
-svn proplist
-svn proplist --verbose
-ls
-ls -al
-cvs rm .ssh
-svn rm .ssh
-svn status
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-svn propset svn:ignore test
-svn propset svn:ignore .ssh
-svn propset svn:ignore ".ssh"
-cd home/
-ls
-ls -al
-svn rm .ssh
-ls -al
-rm -rf .ssh/
-svn commit
-ls -al
-cd ..
-rm -rf home/
-mc
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-cd home/
-ls
-ls -al
-svn rm .subversion/
-svn commit
-ls
-ls -al
-cd ..
-mc
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-ls -al
-svn status
-
-svn propset svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn propset svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail mail
-svn propset svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn propset svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-mkdir mail
-svn propset svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" mail
-svn propset svn:externals mail "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" 
-rmdir mail
-svn propset svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" 
-svn propset svn:externals "mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" 
-svn propset svn:externals "mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn propset svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn proplist .
-svn proplist 
-svn proplist hoe
-svn proplist home
-ls -al
-svn ps svn:externals mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals . svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail .
-svn help ps
-svn status
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-mkdir mail
-svn ps svn:externals mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-rmdir mail
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps . svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail .
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail home/
-svn ps svn:externals home/ "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" home/
-ls
-rm -rf home/
-svn status
-ls -al
-svn ps svn:externals . "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn propget svn:externals
-svn proplist
-mkdir mail
-svn ps svn:externals mail "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" mail
-svn add mail
-svn commit
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" mail
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" .
-svn ps svn:externals . "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail"
-svn ps svn:externals svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail mail
-svn ps svn:externals mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-ls
-svn rm mail/
-rm -rf mail/
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-ls
-svn proplist .
-svn ps svn:externals "mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" .
-svn proplist .
-svn ps svn:externals "svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" .
-svn ps svn:externals "mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail" .
-svn proplist
-svn status
-svn propget svn:externals .
-rm -rf mail
-svn update
-ls -al
-svn cleanup
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-cd home/
-ls
-cd mail/
-ls
-cd ..
-cd ..
-rm -rf home/
-svn commit
-ls -al
-svn update
-svn help cleanup
-svn cleanup .
-svn update
-svn propget svn:externals .
-svn cleanup .
-svn status
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-cd home/
-ls
-svn cleanup mail
-svn update
-cd mail
-ls -al
-cd
-ls -al
-mc
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-ls
-ls -al
-cd mail/
-ls -al
-
-svn update
-svn help cleanup
-svn cleanup svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn update
-svn cleanup mail
-svn update
-svn cleanup svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-svn cleanup .
-svn update
-cd /tmp
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-rm -rf mail/
-cd 
-ls
-cd mail/
-ls -al
-cd ..
-ls -al
-svn propget svn:externals .
-mc
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home
-svn update
-svn propget svn:externals .
-ls
-rm -rf home
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/home .
-ls -al
-svn co svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-rm -rf mail/
 svn update
 svn rm mail
 svn commit
@@ -491,3 +130,371 @@ cd text-base/
 ls
 ls -al
  PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+feh SCAJ.jpg 
+mv 2408424.pdf personal/hut-transcript.pdf
+mv SCAJ.jpg pictures/
+vim accounts 
+svn add accounts 
+feh aitisi.jpg 
+mv aitisi.jpg pictures/
+ls
+feh feh_002972_000001_plan_of_cottage.jpg 
+cat jobstuff.txt 
+less jobstuff.txt 
+rm jobstuff.txt 
+ll
+rm -rf .xine/
+cd .xmms/
+ls
+cd ..
+rm -rf .xfce*
+ls -al
+vim .Xresources 
+rm .Xresources 
+ll
+vim .Xclients 
+rm -rf .Xclients 
+ls
+feh meg1\ Kopie.jpg 
+rm meg1\ Kopie.jpg 
+rm debate3.spx 
+ll
+rm .xawtv 
+feh jk.jpg 
+mv jk.jpg pictures/
+ls *.jpg
+feh *.jpg
+mv *.jpg pictures/
+rm .vimrc.bak 
+rm .xscreensaver 
+ls *.png
+feh *.png
+rm *.png
+rm -rf vellumdb/
+ls .aspell.*
+svn add .aspell.*
+cat .xftconfig 
+rm .xftconfig 
+vim xmlrpc.cgi 
+rm xmlrpc.cgi 
+rm xml.tar 
+ll
+rm -rf tomcat*
+rm -rf .thunderbird/
+rm test.tar 
+ls
+rm libstdc++5_3.3-0pre5_i386.deb 
+vim log.txt 
+ls
+rm log.txt 
+cd lupy
+ls
+cd ..
+cd lupy-package/
+ls
+cd ..
+cd mail
+ls
+cd 
+cd mail
+cd 
+du -h mail
+du -h Mail/
+du -h mail
+cd mail
+ls -al
+cd ..
+diff Mail/ mail
+diff -r Mail/ mail
+ls
+cd Mail/
+ls
+cd ..
+rm -rf Mail/
+cd enemy-territory/
+ls
+cd 
+cd evolution/
+ls
+cd 
+rm -rf evolution/
+rm mutt_bgrun 
+rm mutt.addressbook 
+vim p.ini 
+rm p.ini 
+ls
+vim samnotes.txt 
+rm samnotes.txt 
+ls
+rm dotfiles.tar.gz 
+rm blog.tar.gz 
+cd personal/
+ls
+cd 
+rm -rf cv
+rm feh_001928_000001_filelist 
+vim letter2mp.txt 
+rm letter2mp.txt 
+ls
+cd embassy/
+ls
+cat german.txt
+cd 
+rm -rf embassy/
+ll
+vim unicafe.txt 
+ll
+cd .wordtrans/
+ls
+ll
+cd ..
+rm -rf .wordtrans/
+cd xml/
+ls
+ll
+vim comic.xml 
+ll
+vim test.xml 
+ll
+cd ..
+rm -rf xml/
+ll
+cd xmaspraze/
+ll
+feh *
+cd 
+cd pictures/
+cd xmaspraze/
+ls
+feh *
+cd 
+rm -rf xmaspraze/
+ll
+rm -rf .xMule/
+vim .wmrc 
+rm .wmrc 
+ll
+rm -rf .xcdroast/
+rm -rf .wine/
+rm -rf .w3m
+vim vpd.properties 
+rm vpd.properties 
+ll
+rm test.spx 
+vim usbmouse.txt 
+rm usbmouse.txt 
+ll
+cd tb/
+ls
+cd 
+rm -rf tb
+rm -rf .tin/
+rm .totem.hendry 
+mv casino/ personal/
+rm -rf dabase/
+ls
+cd Desktop/
+ls
+cd 
+cd doc
+ls
+cd
+rm -rf do
+rm -rf doc
+rm -rf do
+rm -rf dofsdfs
+cd docbook/
+ll
+ls
+vim resume.xml 
+ll
+ls
+cd ..
+rm -rf docbook/
+ll
+ls
+cd lugano/
+ll
+cd images/
+ll
+cd 
+cd lugano/
+ls
+ll
+cd sent/
+ls
+cd images/
+ls
+ll
+feh *
+cd 
+cd pictures/
+cd lugano/
+ls
+ll
+feh *
+cd ..
+mv lugano/ lugano-visit
+cd 
+mv lugano/ pictures/
+cd
+ll
+cd s
+cd soso/
+ll
+mc
+ls
+antiword shit.doc 
+antiword Nokia.doc 
+ls
+cd QuickCam/
+ll
+cd Album/
+ll
+feh *
+ls
+cd Pictures/
+ls
+mv Picture\ 12.jpg bath-camshot.jpg
+feh bath-camshot.jpg 
+mutt -a bath-camshot.jpg jamie
+feh *
+  cd
+rm -rf soso/
+ll
+vim routine.txt 
+rm routine.txt 
+ll
+vim revcert.asc 
+ll
+cd .gp
+cd .gnupg/
+ls
+cd 
+mv revcert.asc .gnupg/
+ls
+cd enemy-territory/
+ls
+cd 
+rm -rf enemy-territory/
+sudo rm -rf enemy-territory/
+ll
+ls
+rm kweather.log 
+vim laurah.txt 
+rm laurah.txt 
+ll
+vim screenlog.2 
+ls
+rm screenlog.*
+ll
+cd phpgw/
+ls
+feh overview.eps 
+displauy overview.eps 
+display overview.eps 
+cd 
+cd school/
+ls
+cd 
+mv phpgw/ school/
+cd school/
+svn add phpgw/
+cd 
+ll
+ls
+mc
+ls
+mv notes.txt personal/
+cd personal/
+ls
+svn add notes.txt 
+cd 
+ll
+cd .qt
+ls
+cd ..
+rm -rf .qt
+rm -rf .vnc/
+rm -rf .ymessenger/
+rm -rf .themes/
+cd .phoenix/
+ll
+cd default/
+ls
+cd 
+rm -rf .phoenix/
+cd python/
+ls
+cd ..
+mv python/ debian/python-scratch
+cd debian/
+svn add python-scratch/
+ls
+svn update
+mv python-scratch/ ..
+cd 
+svn commit
+svn status
+cd personal/
+svn add hut-transcript.pdf casino/
+cd 
+svn commit
+cd .mozilla
+cd default/
+ll
+cd ack41g03.slt/
+ll
+svn propedit svn:ignore Cache
+ls
+ls -al
+svn propedit svn:ignore .
+ls
+svn propedit svn:ignore .
+svn proplist
+svn propget svn:ignore .
+svn propedit svn:ignore .
+cd
+svn commit
+cd /home/hendry/.mozilla/default/ack41g03.slt/
+ll
+cd 
+svn cleanup
+cd .mozilla/default/ack41g03.slt/
+svn propget svn:ignore .
+svn propedit svn:ignore .
+svn cleanip
+svn cleanup
+svn propedit svn:ignore .
+svn cleanup
+svn propget svn:ignore .
+svn cleanup
+cd 
+svn commit
+svn cleanup
+rm -rf .mozilla/default/ack41g03.slt/Cache.Trash
+svn cleanup
+rm -rf .mozilla/default/ack41g03.slt/Cache
+svn cleanup
+svn commit
+cd /home/hendry/.mozilla/default/ack41g03.slt/
+ll
+cd
+svn cleanup /home/hendry/.mozilla/default/ack41g03.slt/Cache.Trash
+svn update
+cd .mozilla/default/ack41g03.slt/
+svn rm Cache
+ls
+svn rm Cache.Trash/
+rm -rf Cache
+rm -rf Cache.Trash/
+cd
+svn commit
+svn update
+cd debian/
+ls
+cd ..
+rm debian/
+rm -rf debian/
+history | grep debian
+history | ssh

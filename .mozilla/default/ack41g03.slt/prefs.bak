@@ -10,6 +10,7 @@
  */
 
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/NetscapeSearch.src");
+user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
 user_pref("browser.startup.homepage_override.mstone", "rv:1.5");
 user_pref("intl.charsetmenu.browser.cache", "ISO-8859-1");
 user_pref("prefs.converted-to-utf8", true);

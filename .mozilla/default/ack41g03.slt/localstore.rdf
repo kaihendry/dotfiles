@@ -9,7 +9,7 @@
                    height="94" />
   <RDF:Description about="chrome://communicator/content/pref/pref.xul#prefDialog"
                    screenX="0"
-                   screenY="0" />
+                   screenY="26" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#flaggedCol"
                    hidden="true" />
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul">
@@ -83,6 +83,9 @@
   <RDF:Description about="chrome://messenger/content/messenger.xul#threadOutliner"
                    height="94" />
   <RDF:Seq about="nc:urlbar-history">
+    <RDF:li>suprnova.org</RDF:li>
+    <RDF:li>http://localhost/doc/subversion/book/</RDF:li>
+    <RDF:li>www.google.com</RDF:li>
     <RDF:li>http://news.bbc.co.uk/</RDF:li>
     <RDF:li>http://www.cs.helsinki.fi/u/hendry/</RDF:li>
     <RDF:li>localhost/doc/subversion</RDF:li>
