@@ -1,2 +1,8 @@
 XTerm*eightBitInput:   false
 XTerm*metaSendsEscape: true
+
+UXTerm*Background: black
+UXTerm*Foreground: grey90
+
+Xterm*Background: black
+Xterm*Foreground: grey90
