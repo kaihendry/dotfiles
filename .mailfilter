@@ -3,7 +3,7 @@
 DEFAULT="$HOME/Maildir"
 logfile $HOME/.maildroplog
 
-if (/^From: Cron Daemon <root@dabase\.com>/)
+if (/^From: root@dabase\.com /)
 to $DEFAULT/.cron
 
 ## Silently drop all completely unreadable mail into separate folder
@@ -18,8 +18,6 @@ to ".spam-bogofilter"
 
 #if (/^X-Bogosity: Unsure/)
 #cc "unsure-bogofilter"
-
-#### SpamAssassin ####
 
 xfilter '/usr/bin/spamc'
 
