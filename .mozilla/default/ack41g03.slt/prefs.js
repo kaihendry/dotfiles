@@ -9,13 +9,13 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/web/prazefarm.co.uk");
+user_pref("browser.download.dir", "/tmp");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
 user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
-user_pref("browser.startup.homepage_override.mstone", "rv:1.7");
+user_pref("browser.startup.homepage_override.mstone", "rv:1.6");
 user_pref("browser.tabs.autoHide", false);
 user_pref("browser.tabs.extensions.auto_cleanUp_count", 2);
 user_pref("browser.tabs.extensions.default.type", 0);
