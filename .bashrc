@@ -59,3 +59,5 @@ if [ "$PS1" ]; then
     umask 002
 
 fi
+
+export EMAIL=hendry@cs.helsinki.fi
