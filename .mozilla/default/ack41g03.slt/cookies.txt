@@ -3,14 +3,13 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-subversion.tigris.org	FALSE	/	FALSE	1644889450	LAST_QUERY	component%3Dsubversion%26issue_status%3DUNCONFIRMED%26issue_status%3DNEW%26issue_status%3DSTARTED%26issue_status%3DREOPENED%26keywords%3Dbite-sized%26cmdtype%3Ddoit
 subversion.tigris.org	FALSE	/	FALSE	1644889450	ISSUELIST	390%3A571%3A574%3A601%3A630%3A670%3A695%3A696%3A699%3A706%3A707%3A708%3A779%3A780%3A783%3A897%3A923%3A971%3A990%3A1209%3A1383%3A1390%3A1495%3A1628
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 www.startmonkey.com	FALSE	/	FALSE	1136985444	popup	true
 .bbc.co.uk	TRUE	/	FALSE	1076870352	BBCpatina	hp:7777775311021,
 .bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1075974816	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+subversion.tigris.org	FALSE	/	FALSE	1644889450	LAST_QUERY	component%3Dsubversion%26issue_status%3DUNCONFIRMED%26issue_status%3DNEW%26issue_status%3DSTARTED%26issue_status%3DREOPENED%26keywords%3Dbite-sized%26cmdtype%3Ddoit
 db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1076013940	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .www.raxnet.net	TRUE	/	FALSE	1105257160	phpbb2mysql_data	a%3A0%3A%7B%7D
 .hel.fi	TRUE	/	FALSE	2051222404	SITESERVER	ID=30793b717d06176072e9d5720cc7aade
@@ -99,8 +98,6 @@ www.boselaw.com	FALSE	/	FALSE	1293753601	WEBTRENDS_ID	217.30.176.161-3843879568.
 .compnetworking.about.com	TRUE	/	FALSE	1080077294	zDot	1
 .about.com	TRUE	/	FALSE	2145916799	TMog	3CELSC0K360A2N0W
 .about.com	TRUE	/	FALSE	1671437234	jsc	1
-.compnetworking.about.com	TRUE	/	FALSE	7071523634	zFS	3CE103C0110300101
-.about.com	TRUE	/	FALSE	7071523634	zFD	3CE103C0110300101
 .gator.com	TRUE	/	FALSE	1076610883	GatorWebPdpCookie_WUID	P9ytNQr0BI8AAGEnykY
 .mediaplex.com	TRUE	/	FALSE	1245628800	svid	90765997351
 statse.webtrendslive.com	FALSE	/S146738	FALSE	1609401600	WEBTRENDS_ID	217.30.176.161-417707120.29606530
@@ -134,7 +131,7 @@ server.iad.liveperson.net	FALSE	/	FALSE	1102961892	HumanClickID	-270345799750
 .rmuk.co.uk	TRUE	/	FALSE	1293840063	RMID	d91eb0a13fdca900
 .questionmarket.com	TRUE	/	FALSE	1107425805	AS1	156895-7-1071145422-1-1071145422_3705657-4-1071425788-1-1071425788_
 .revenue.net	TRUE	/	FALSE	1654837495	Queue	089b0b5e3e41ee15b14e09fcd365600d|1071850348:1071245548:1:11947:118:205751:1:80287803|1071843873:1071239073:1:11947:118:205751:1:77361565|1071497568:1071238368:1:11947:20:205886:1:57109280|
-statse.webtrendslive.com	FALSE	/dcs7llucd21e5ha1xa08pyzpx_1c1n	FALSE	1262390414	WT_VT	1071446400&1071964800&1072915200&1072915200&1072915200&1071404618
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1075974816	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 statse.webtrendslive.com	FALSE	/dcs7llucd21e5ha1xa08pyzpx_1c1n	FALSE	1386780737	WEBTRENDS_ID	217.30.176.161-2561930592.29606498
 www.rage3d.com	FALSE	/	FALSE	1074013161	BSUID	11598005
 www.rage3d.com	FALSE	/	FALSE	1074013161	WIDYMD	#2278:CLN#
@@ -186,3 +183,5 @@ telecom.esa.int	FALSE	/	FALSE	2016966296	CFTOKEN	73819941
 www.go.com	FALSE	/	FALSE	1577836800	CP	null*
 tobi.tildesoftware.net	FALSE	/	FALSE	2147483647	TILDESESSION	MNx5VxxSest6qua_UX4CL6n7xk7toqL15_vQxijR
 .ehg-dig.hitbox.com	TRUE	/	FALSE	1102242973	DM5205056IDWV6	V1Xi(#Xz%r@r@re^@X^i%Q%%z%zrzr"%r@r@re^@Xz%r@r@re^@X"%r@r@re^@X"%r@r@re^@X^i%Q%%"rz(xB$W:xB$G:hfI~xB$2T_aKxB(Ofm~z7}zA6W:6G:hfI~62T_aK|Ofm~zu::dmIhd
+statse.webtrendslive.com	FALSE	/dcs7llucd21e5ha1xa08pyzpx_1c1n	FALSE	1262390414	WT_VT	1071446400&1071964800&1072915200&1072915200&1072915200&1071404618
+linux.box.sk	FALSE	/	FALSE	1076497463	boxtz	200
