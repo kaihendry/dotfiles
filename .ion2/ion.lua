@@ -60,7 +60,7 @@ load_module("floatws")
 load_module("dock")
 
 winprop {
-   class = "Firefox-bin", 
+   class = "Mozilla-bin", 
    instance = "Gecko",
    target = "web"
 }
