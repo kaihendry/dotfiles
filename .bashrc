@@ -65,3 +65,5 @@ export CVSROOT=/home/group/nodes/cvs
 
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
+
+export PATH=$PATH:/home/hendry/projects/scripts
