@@ -62,3 +62,6 @@ fi
 
 export EMAIL=hendry@cs.helsinki.fi
 export CVSROOT=/home/group/nodes/cvs
+
+export LANG=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8
