@@ -23,3 +23,11 @@ Bugzilla_login
 *Bugzilla_password
 ~ODYxNjUx
 .
+http://en.wikipedia.org
+wpName
+~aGVuZHJ5
+*wpPassword
+~SlJBMFV2ZA==
+wpEmail
+~
+.
