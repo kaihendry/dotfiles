@@ -297,3 +297,172 @@
 20:29 -!- GlimmerMan [~m33p@host81-129-92-78.in-addr.btopenworld.com] has joined #buncs
 20:29 -!- mode/#buncs [+o GlimmerMan] by Q
 20:30 -!- ChocoJon [~a@82-32-107-62.cable.ubr02.hawk.blueyonder.co.uk] has quit [Signed off]
+20:37 -!- Bonne- [~venus@81-178-243-139.dsl.pipex.com] has joined #buncs
+20:40 -!- Neil|Work is now known as Neil|Away
+20:58 -!- Evo [evo@league.admin.game.net] has quit [Ping timeout]
+21:09 -!- Nana [legato@modem-119.aluminum.dialup.pol.co.uk] has joined #buncs
+21:13 < |31770|> how can i get the current data in the format YYYY-MM-DD HH.MM.SS as a string in php?
+21:13 < Nana> look at the date function on php.net
+21:13 < Nana> it tells you
+21:13 -!- NoVisAnima [ma1pm@dial81-131-7-232.in-addr.btopenworld.com] has joined #buncs
+21:13 -!- mode/#buncs [+o NoVisAnima] by Q
+21:13 < Nana> *looks
+21:13 <@NoVisAnima> lo
+21:14 < |31770|> im trying that but getting Died! :- Unknown column 'Array' in 'field list'
+21:14 < Nana> where is your code
+21:14 < |31770|> can u get to h drives?
+21:14 < |31770|> or u wna tme to make a txt file of it on the net
+21:15 < |31770|> put it up on the net
+21:15 < Nana> surely date("Y-m-d H.m.s", $blah);
+21:16 < |31770|> what the $blah?
+21:16 < Nana> sometimes if you have weirdo characters in the format string it goes a bit wrong
+21:16 < Nana> where $blah is your timestamp
+21:16 < |31770|> how do i get the current time as the timestamp then
+21:16 < |31770|> im using getdata() at the mo
+21:17 < |31770|> www.bath.ac.uk/~cs2om/buy.txt
+21:18 < Nana> surely time() gets the current time as the timestamp
+21:19 < Nana> http://uk2.php.net/manual/en/function.time.php
+21:19 < |31770|> no for windows i thought :/
+21:19 < Nana> erm....
+21:19 < Nana> unix timestamp means..like...a unix format timestamp
+21:19 < Nana> it doesnt mean it only works on unix
+21:19 < |31770|> ah ok
+21:20  * |31770| bing dumb then
+21:20 < Nana> :)
+21:20 <@NoVisAnima> ~:)
+21:20 < Nana> it just means its a 14 (i think) digit integer
+21:20 <@NoVisAnima> it means that it's calculated from the unix epoch
+21:20 <@NoVisAnima> dunno the digits
+21:20 < Nana> well that's what it says on the site :/
+21:20 < |31770|> date("Y-m-d H.m.s", time()) then
+21:21 < Nana> you might need to escape the dots/dashes
+21:21 < Nana> i forget which are reserved
+21:22 < Nana> see if taht works to start off with, if not backslash them
+21:22 < Nana> oh no, i think those are ok
+21:22 <@NoVisAnima> i thought as much
+21:22 < Nana> H is 24 hours by the way
+21:22 < Nana> use h if you only want 12 hour clock
+21:23 < |31770|> humm still parse erroring tried \ and using ' instead :/
+21:24 < Nana> error in what
+21:24 <@NoVisAnima> shouldn't be a problem
+21:24 < Nana> it'd be more helpful if you could put the whole document online
+21:24 < Nana> quite often parse errors arent caused on the line they occur on
+21:24 < |31770|> on that line expectin )
+21:25 <@NoVisAnima> *mutter* and in c they can even appear in other files *grumble*
+21:25 < Nana> expecting )?
+21:25 < |31770|> every thing else is working as I was using a blank data before
+21:25 < Nana> have you matched your other brackets elsewhere
+21:25 < |31770|> Parse error: parse error, expecting `')'' in /u/cs/2/cs2om/public_html/buy.php on line 31 
+21:25 < Nana> yeah 
+21:25 < Nana> look before that
+21:26 < Nana> you've missed one before and it's looking for that
+21:26 < |31770|> nah i think the " are ending the string so it thinks there should be a ) before the string ends
+21:26 < |31770|> i recon
+21:26 < |31770|> just got to work out how to fix it
+21:26 < Nana> ending what string?
+21:27 < Nana> the string is the first argument
+21:27 < |31770|>  www.bath.ac.uk/~cs2om/buy.txt
+21:27 < |31770|> pritty recent doesnt have the date thing correct but u can see where it is
+21:27 < Nana> no i cant!
+21:27 < Nana> it's all on one long big line
+21:27 <@NoVisAnima> ?
+21:28 <@NoVisAnima> it's appeared correctly for me
+21:28 < |31770|> view source
+21:28 < Nana> oh thats better
+21:28 <@NoVisAnima> you using IE?
+21:28 < Nana> whereabouts was it screwing up
+21:28 < |31770|> . getdate() .
+21:29 < |31770|> which is now date("Y-m-d H.m.s", time())
+21:29 < |31770|> but havnt updated the text, rest is the same though
+21:29 < Nana> you don't need the ".
+21:29 <@NoVisAnima> mm
+21:29 < Nana> VALUES ($saleID," . getdate() .",  should be VALUES ($saleID, getdate(), ....
+21:30 < Nana> otherwise it's literally going to print "getdate()" inside it
+21:30 < Nana> oh wait...
+21:30 <@NoVisAnima> i dont think so
+21:30 < Nana> sorry i am wrong
+21:30 <@NoVisAnima> there's a " 2 lines up
+21:30 < |31770|> does that with Parse error: parse error in /u/cs/2/cs2om/public_html/buy.php on line 31 
+21:31 < |31770|> wait might have fixed it
+21:31 < Nana> ohhhh
+21:31 < Nana> no
+21:31 < Nana> you've used getdate wrongly
+21:31 < Nana> you shouldn't be using getdate at all
+21:31 < Nana> http://uk2.php.net/manual/en/function.getdate.php
+21:31 < |31770|> [19:28] <|31770|> . getdate() .
+21:31 < |31770|> [19:29] <|31770|> which is now date("Y-m-d H.m.s", time())
+21:31 < Nana> getdate takes a timestamp as an argument
+21:32 < Nana> oh :/
+21:32 < |31770|> lol
+21:32 < |31770|> ;)
+21:32  * Nana should just shut up
+21:32 <@NoVisAnima> *sigh*
+21:32 < Nana> do you really want to store something already formatted
+21:32 < Nana> why don't you store the timestamp and then format it when you want to use it
+21:32 < Nana> it would be a lot better
+21:33 <@NoVisAnima> yeah just get it out in the right format
+21:33 < |31770|> the mysql database needs it in the form 0000-00-00 00.00.00 for it to work
+21:33 < Nana> so change the database
+21:33 < Nana> and make it a timestamp
+21:33 <@NoVisAnima> exactly
+21:33 < |31770|> bit late for that
+21:33 < Nana> or a bigint (14)
+21:33 < Nana> why?
+21:33 <@NoVisAnima> it's not too late
+21:33 < |31770|> its a date field
+21:33 < Nana> so what
+21:33 < Nana> just change it
+21:33 <@NoVisAnima> you can change the column
+21:34 <@NoVisAnima> just dont try doing it with mysql commands and get a nice gui ~:/
+21:34 < |31770|> cause i didnt do the database bit of the coursework and the report has already been writen on that bit
+21:34 <@NoVisAnima> hmm
+21:34 < Nana> you can say it was a last minute alteration
+21:34 < |31770|> + it due in on thurs
+21:34 < |31770|> hens the slight hax in the code to get it working
+21:34 <@NoVisAnima> yay for hax in the code
+21:35 <@NoVisAnima> i had an entire page worth of haxs for one of them
+21:35 <@NoVisAnima> and it worked
+21:35 < |31770|> + dont think the its very secure as u can by pass the login just by typing the correct url lol
+21:36 <@NoVisAnima> mmm i remember spending a while to put the security into ours
+21:36 <@NoVisAnima> well our software project thing
+21:36 < Nana> you could do an easy login thing
+21:36 < Nana> just create a table with a username and a md5'ed password
+21:36 < Nana> then ask them for it and look it up in the table
+21:37 < Nana> and then use session's to check if they're logged in
+21:37 <@NoVisAnima> what's that ' doing in sessions
+21:37 < Nana> who cares
+21:37 < |31770|> ???
+21:37 <@NoVisAnima> (i'm back at home and my sister has been keeps going on about correct use of english)
+21:38 < Nana> well sorry i have been at work all day
+21:38 <@NoVisAnima> sorry
+21:38  * NoVisAnima shuts up
+21:39 < |31770|> got most of the session stuff there just not the bit that test if u are logged in on each page
+21:39 < Nana> er....what *else* would you have for a session?
+21:39 < Nana> it only has to be an integer
+21:39 < |31770|> yeh im storing the user id
+21:39 < Nana> like if($_SESSION['loggedin'] == 1) {//do stuff} else { boot them off }
+21:40 < |31770|> i know but i got some strait html pages and cba to change them
+21:40 < |31770|> something else to put in the report
+21:40 < |31770|> would just error if u tryed to do anything without being logged in anyway as half the code uses ur user ID
+21:41 < |31770|> keep getting duplicate key errors :/
+21:42 < |31770|> but the data is going into the table correctly
+21:46 <@NoVisAnima> oh Nana i had the same kind of hardware problem you had earlier, the same fixing method worked (opening case and blowing stuff) 
+21:46 <@NoVisAnima> i wouldn't have thought of doing that usually ~:)
+21:48 -!- Nana is now known as nana|away
+21:55 < |31770|> tis all working now ty peeps for ur help ;)
+21:56 <@NoVisAnima> ~:)
+22:01 -!- nana|away [legato@modem-119.aluminum.dialup.pol.co.uk] has quit [Signed off]
+22:50 -!- Kam|shopping is now known as Kamakaze
+23:02 -!- NoVisAnima [ma1pm@dial81-131-7-232.in-addr.btopenworld.com] has quit [Signed off]
+23:03 -!- nana|away [legato@modem-103.doxycycline.dialup.pol.co.uk] has joined #buncs
+23:04 < nana|away> rar
+23:04 -!- nana|away is now known as nana
+23:05 -!- GwieF [GwieF@213.78.70.128] has quit [Read error: EOF from client]
+23:11 -!- GwieF [GwieF@213.78.68.24] has joined #buncs
+23:11 -!- mode/#buncs [+o GwieF] by Q
+23:32 -!- NoVisAnima [ma1pm@dial81-131-76-112.in-addr.btopenworld.com] has joined #buncs
+23:32 -!- mode/#buncs [+o NoVisAnima] by Q
+23:32 -!- mode/#buncs [+v NoVisAnima] by NoVisAnima
+23:36 -!- Evolution [evo@league.admin.game.net] has joined #buncs
+23:36 -!- mode/#buncs [+v Evolution] by Q
+--- Log closed Wed Dec 17 00:41:38 2003

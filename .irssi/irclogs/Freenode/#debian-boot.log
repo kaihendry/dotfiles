@@ -319,3 +319,251 @@
 20:27 -!- Azrael]2 [~azrael@pD9EB76BF.dip.t-dialin.net] has left #debian-boot []
 20:31 < gaudenz> gaudenz-guest@quantz:~$ id
 20:31 < gaudenz> uid=20149(gaudenz-guest) gid=20149 groups=20149
+20:31 < gaudenz> gaudenz-guest@quantz:~$ id
+20:31 < gaudenz> uid=20149(gaudenz-guest) gid=20149 groups=20149
+20:31 < gaudenz> sorry
+20:32 < gaudenz> joeyh: It seems not.
+20:32 < joeyh> maybe there's a delay of some kind for guests. Asking wiggy
+20:47 -!- jackhead [~jackhead@p5085113E.dip.t-dialin.net] has joined #debian-boot
+20:47 < jackhead> Hallo everybody.
+20:48 < gaudenz> hi
+20:50 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has joined #debian-boot
+20:55 < godog> gaudenz: you powerpc expert right? :) any changes to resize an hfs+ partition having only os X installed (i.e. with a bootdisk)
+20:57 < gaudenz> godog: I don't know any free hfs+ resizeing tool.
+20:57 -!- giuseppe is now known as eppesuig
+20:58 < jackhead> Anybody with a DECstation around? I have new kernel packages for d-i on mipsel which need some testing...
+20:58 < godog> hi eppesuig
+20:58 < godog> gaudenz: huh, ok thanks. and are there non-free options?
+20:58 < eppesuig> hi godog
+20:59 < gaudenz> godog: Don't know. Probably yes, but I'm not sure.
+20:59 < godog> gaudenz: ok thanks again :)
+20:59 -!- otavio [~otavio@200-203-056-007.pltce7001.dsl.brasiltelecom.net.br] has joined #debian-boot
+21:00 < otavio> joeyh: Can you added in alioth? my account is otavio
+21:03 < joeyh> otavio: added
+21:03 < otavio> joeyh: thanks.
+21:03 < joeyh> gaudenz: still permsissions problems?
+21:03 < otavio> joeyh: I'll commit a translation fix to pt_BR now.
+21:04 < otavio> joeyh: any problems, I warn you. Thanks.
+21:05 < andred> ior: Have you finished translating yaboot-installer?
+21:08 < gaudenz> joeyh: Thanks it works now.
+21:09 < joeyh> must be an hourly thing, as I did nothing except wait for the new hour
+21:09 < gaudenz> ;-)
+21:15 < jackhead> I am still struggeling with broken dependencies for hwdetect:
+21:15 < jackhead> hw-detect: Depends: rootskel (>= 0.54) but it is not going to be installed
+21:16 < jackhead> I have tried building a local udeb repository, but dpkg-scanpackages seems to be broken with regard to udebs
+21:16 < joeyh> is this during build?
+21:16 < jackhead> The -u option does not work
+21:16 < jackhead> joeyh: yes
+21:16 < joeyh> doesn't your arch have that rootskel yet?
+21:16 < joeyh> It was released on 3 dec
+21:16 < jackhead> joeyh: only and old version
+21:17 < joeyh> well, build the new one and drop it in localudebs?
+21:17 < jackhead> mipsel is still at 0.53
+21:17 < jackhead> I did that
+21:17 < jackhead> But that does not solve the dependency
+21:17 < jackhead> It should, but it does not.
+21:17 < joeyh> oh, yes, of course
+21:17 -!- godog [~filo@212.141.115.184] has quit ["Each new user of a new system uncovers a new class of bugs."]
+21:17 < joeyh> because the makefile just dpkg --unpackes those or something, apt is used to dl and still gets confused
+21:18 < joeyh> apt-ftparchive should have udeb support
+21:18 -!- fluid [~fluid@pD9E21441.dip.t-dialin.net] has quit [Read error: 113 (No route to host)]
+21:18 < jackhead> I tried that as well, but it did not work for me. It took debs, but not udebs, although I had set the extensions to .udeb
+21:18 < joeyh> iirc it is hard to set up
+21:18 < jackhead> I tried dpkg-scanpackages -u then, but that give me the following error:
+21:19 < jackhead>  dpkg-scanpackages -u localudebs /dev/null
+21:19 < jackhead> Binary dir -u not found
+21:19 < joeyh> http://www.debian.org/devel/debian-installer/archive
+21:19 < joeyh> did you try that?
+21:20 < jackhead> joeyh: no, I tried to make my own config.-
+21:20 < jackhead> I'll try the one described at your link
+21:20 < jackhead> dpkg-scanpackages should work, but it does not:
+21:20 < jackhead> http://www.debian.org/devel/debian-installer/archive
+21:20 < jackhead> sorry
+21:20 < jackhead> Usage: dpkg-scanpackages [-u] [-a<arch>] binarypath overridefile [pathprefix] > Packages
+21:20 < otavio> joeyh: I'm with permission problems...
+21:21 < otavio> cvs server: failed to create lock directory for `/cvsroot/d-i/debian-installer' (/cvsroot/d-i/debian-installer/#cvs.lock): Permission denied
+21:21 -!- Anthro [~gss@MRB-ALPHA.MIT.EDU] has joined #debian-boot
+21:22 < joeyh> otavio: maybe it takes a while for dd's to get in the right group too
+21:23 < Anthro> I'm trying to figure out whether the Woody 3.0r0 installer will be able to use a 3c574-TX PCMCIA card. Does anyone here know?
+21:23 < otavio> joeyh: probably ... ok. I'll wait
+21:23 < joeyh> Anthro: it should support any pcmcia card that linux supports
+21:24 < Anthro> joeyh: Will it detect it, or do I have to load a module (or more than one?) when given the opportunity? Which one(s)?
+21:24 < joeyh> it should just detect it
+21:25 < otavio> joeyh: the description of keybord name come from console-keymaps-* no?
+21:25 < Anthro> joeyh: That's true for either 2.2.20-idepci or bf2.4?
+21:25 < otavio> joeyh: I'm having problems with encode in pt_BR language.
+21:26 < gaudenz> joeyh: Did you commit all the netcfg template polishing?
+21:26 < joeyh> jackhead: edit dpkg-scanpackages, and change line 36 to use ARGV[0], not [1]
+21:26 < joeyh> that should fix your problem
+21:27 < joeyh> gaudenz: AFAIK, yes
+21:27 < joeyh> Anthro: both
+21:29 < joeyh> jackhead: this is bug #223604
+21:30 < jackhead> joeyh: thanks
+21:30 < jackhead> I am still fiddling with apt-ftparchive.
+21:30 < Anthro> Thank you kindly for the help!
+21:30 -!- Anthro [~gss@MRB-ALPHA.MIT.EDU] has left #debian-boot ["Client exiting"]
+21:31 < gaudenz> Is there way to get commit emails from alioth?
+21:31 < joeyh> it should be sending the same commit emails as before
+21:31 < gaudenz> s/way/a way/
+21:32 < gaudenz> joeyh: through the pts?
+21:32 < joeyh> so far I've only gotten one, but that is probably only lag
+21:32 < joeyh> yep
+21:32 < joeyh>  2   F Dec 16 To debian-insta debian-installer README,1.14,1.15
+21:32 < joeyh> that was from alioth
+21:42 < otavio> joeyh: Should I include in template the "Finding packages sizes" of base-installer? This is missed.
+21:42 < otavio> joeyh: This is not translated
+21:43 < joeyh> suppose so..
+21:53 < joeyh> otavio: still perms problems?
+22:00 -!- teo [~teo@the-geek.org] has joined #debian-boot
+22:00 < teo> hi
+22:00 < teo> is debian-boot CVS working?
+22:00 < joeyh> it's moved to alioth.debian.org, see my mail on the debian-boot mailing list
+22:01 < teo> wop
+22:03  * teo doing backup before running that weird perl command :)
+22:04 < joeyh> apparently there is a cvschroot command that might be safer.
+22:05 < joeyh> what's your user id?
+22:05 < teo> teo
+22:05 < joeyh> <clickity clickity>
+22:09 < teo> Permission denied
+22:09 < teo> may be the adding to the group is delayed?
+22:09 < joeyh> it may take up to an hour for the change to take
+22:09 < joeyh> some cron job I think
+22:10 < teo> it's ok, thank you
+22:10 < waldi> alioth uses the sf software which uses cronjobs for anything
+22:10 < manty> re
+22:10 < joeyh> ah, manty
+22:10 < teo> hi manty
+22:10 < manty> hi
+22:11  * manty is short on batery, so expecting interruption in 19 minutes or so
+22:11 < teo> waldi, I hope that they are distributed in time, if all of them run at the same time every $TIMEPERIOD
+22:12 < joeyh> manty: the isos lack kernel-pcmcia-modules packages to go with the kernel packages. This means pcmcia can't work after install
+22:12 < joeyh> any chance that can easily be fixed?
+22:12 < teo> joeyh, let me know if you need help managing the alioth project
+22:12 < manty> joeyh: I think so
+22:12 < manty> that is not an udeb, right?
+22:13 < joeyh> I think these packages are i386 specific, yes they are debs
+22:13 < joeyh> next on my list is getting some non-isoliniux isos produced
+22:13 < joeyh> maybe this is not a good time for that with the build system still fubar
+22:14 < manty> joeyh: let's see...
+22:15 < joeyh> then we need to look at copying the syslinux .txt files from d-i to the isolinux isos, so their help texts actually match d-i
+22:15 < manty> I'll try to check the kernel-pcmcia-modules thing
+22:15 < manty> but about the isolinux...
+22:15 < joeyh> after that, there is the issue of slimming down the isos so they still fit on eg, 128 (-5 for boot) mb usb sticks
+22:15 < manty> the problem we had had nothing to do with isolinux
+22:15 < manty> that is a bug on certain bios
+22:16 < joeyh> yeah, I know, that's why we need some syslinux isos
+22:16 < manty> the same isolinux but the bussinesscard instead of the netinst
+22:16 < manty> worked
+22:16 < joeyh> oh, really?
+22:16 < manty> on those machines
+22:16 < manty> yes
+22:16 < joeyh> all of them?
+22:16 < manty> it must be some obscure bug
+22:16 < joeyh> we got lots of failure reports
+22:16 < manty> I don't know
+22:16 < manty> I can produce images
+22:16 < manty> and verify them here
+22:16 < joeyh> seems to me if we can just make some syslinux images to point people at when this fails, that would be good
+22:16 < manty> with a machine on which isolinux breaks
+22:17 < joeyh> I have no problem with keeping isolinu default, it's entirely up to debian-cd
+22:17 < manty> I still think that syslinux is more compatible
+22:17 < manty> and will work on most systems
+22:17 < joeyh> yes, me too
+22:17 < manty> but I'd like to debug the isolinux problem
+22:18 < manty> the thing is that I wrote both the authors of mkisofs and isolinux
+22:18 < manty> and got an aswer back from the isolinux guy saying that I was not giving enough info
+22:18 < manty> so I wrote back with more info
+22:18 < manty> and no reply since then
+22:19 < manty> we can start making no isolinux images
+22:19 < manty> but that won't fix the problem
+22:19 < joeyh> that would be good
+22:19 < jackhead> joeyh: some preliminary status feedback: mipsel builds successfully builds a bootable netboot image now.
+22:19 < joeyh> jackhead: cool!
+22:19 < manty> I don't know if the syslinux image is already fixed
+22:20 < manty> it had no info at all in syslinux
+22:20 < manty> I had reported that when I tested on building cds with syslinux
+22:20 < gaudenz> joeyh: Is the terminal of the floppy installs without utf8?
+22:20 < jackhead> joeyh: there are still bugs in it, but at least it autobuilds now and it actually boots.
+22:20 < joeyh> gaudenz: it should have the full framebuffer and utf-8
+22:20 < manty> joeyh: anyway, I'll check that also
+22:20 < joeyh> manty: do you mean it lacked the syslinux screens?
+22:21 < gaudenz> languagechooser shows strange characters..
+22:21 < manty> yes
+22:21 < manty> joeyh: it had one and was almost empty
+22:22 < joeyh> if you look in a current cdrom-image.img from d-i, it will have full syslinux helps texts in it, customised for d-i
+22:22 < joeyh> that may eventually include a boot logo too
+22:22 < joeyh> maybe it's stupid to include that in that file, if it needs to really be elsewhere on the cd
+22:22 < joeyh> does it need to be elsewhere for syslinux, or is that right?
+22:23 < jackhead> joeyh: One bug in the "detect network hardware stage". The system treis to load the usual modules (ide, ide-cd and so on) and sees that they do not exist (drivers are compiled in). That is fine so far, but then I get a red screen stating "Error while running 'modprobe -v sd_mod'". This module does not exist either, because CDROM support is compiled in.
+22:23 < joeyh> gaudenz: that would tend to indicate framebuffer is working, unless they're strange latin characters.. ;-)
+22:24 < gaudenz> joeyh: They look like utf8 printed in latin1
+22:24 < joeyh> jackhead: I think you may have an old hw-detect
+22:24 < jackhead> joeyh: I'll rebuild it from source and give it another try
+22:25 < joeyh> it's also possible that discover is reporting that sd_mod is needed (it does not on i386, and so there is a special hack to modprobe it, but this should not display anything if it fails
+22:27 < joeyh> gaudenz: it looks correct in my local build in vmware
+22:28 -!- pere is now known as pere_poff
+22:28 < joeyh> gaudenz: hmm, make sure you have a /unifont.bgf
+22:29 < gaudenz> joeyh: unifont.bgf is only 56379 bytes is that possible?
+22:29 < joeyh> should be 2.4 mb
+22:29 < gaudenz> joeyh: How can I detect if i'm running on framebuffer?
+22:30 < joeyh> dunno, I can tell in vmware because of the screen size and font
+22:35 -!- NLElllegaard [~gnalle@62.79.97.134.adsl.kh.worldonline.dk] has joined #debian-boot
+22:35 < joeyh> manty: still around?
+22:46 -!- NLElllegaard is now known as toomuchloving
+22:46 -!- toomuchloving [~gnalle@62.79.97.134.adsl.kh.worldonline.dk] has left #debian-boot []
+22:56 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-boot
+23:01 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has joined #debian-boot
+23:02 < Sesse> pere :-)
+23:03 < pere> Sesse: finised with your exams now?
+23:03 < Sesse> pere: just one left
+23:03 < Sesse> on friday
+23:05 < Sesse> I'll be going home to Oslo the day after
+23:05 < Sesse> no debian machines in oslo, though :-(
+23:06 < SnackPack> any way to get CVS read access?
+23:06 < SnackPack> this kinda sucks
+23:06 < Sesse> SnackPack: register on alioth
+23:06 < SnackPack> an open source program that I can't access the development of
+23:06 < SnackPack> alioth?
+23:06 < Sesse> alioth.debian.org
+23:06 < jackhead>  cvs -d:pserver:anonymous@cvs.alioth.debian.org:/cvsroot/d-i login
+23:07 < Sesse> which reminds me...
+23:07 < Sesse> joeyh: could you add "sesse-guest" to commit access on alioth?
+23:07 < Sesse> or perhaps I should send a GPG signed message again :-)
+23:09 < jackhead> joeyh: The modprobe sd_mod problem still exists with a freshly built hwdetect from cvs
+23:10 < SnackPack> thanks guys
+23:10 < Sesse> np
+23:12 < teo> joeyh, I got access, thanks
+23:15 -!- godog [~filo@212.141.112.150] has joined #debian-boot
+23:20 < jackhead> A question regarding the keyboard-chooser
+23:20 < jackhead> I am running on serial console, nonetheless there is the keyboard-chooser option in main-menu.
+23:20 < jackhead> If I select it, it immediately returns to main-menu.
+23:21 < jackhead> If some step fails, I end up in main menu at the keyboard-chooser step.
+23:21 < jackhead> Is this intentional?
+23:21 < Sesse> probably a bug
+23:41 < jackhead> Another bug that is still there: while retrieving packages I sometimes get a "retrieving %s".
+23:42 < jackhead> Not always, just sometimes.
+23:43 -!- p2-mate [~p2@NAT.office.mind.be] has quit ["later"]
+23:45 < pere> Sesse: I notice n{ob}.po is lagging behind. :/
+23:46 < Sesse> pere: yes, me too
+23:46 < waldi> it seems that noone wants to do reports with the new busybox
+23:46 < waldi> maybe i should just upload them
+23:46 < Sesse> pere: I'll probably be able to do translations from home, though
+23:47 < pere> good.  I will be almost completely disconnected during christmas.
+23:47 < Sesse> I'll be rather busy from 27th-31th
+23:51 -!- seppy [~seppy@s2.enemy.org] has joined #debian-boot
+23:56 -!- decko|vestiba [~decko@233-172-161.xdsl-fixo.ctbcnetsuper.com.br] has quit ["Leaving"]
+23:58 < seppy> anyone having cvs-access to alioth? I get permission denied.
+23:59 < pere> I got access.
+23:59 < pere> seppy: someone said something about slow group update for -guest accounts.  Not sure if it is correct.
+--- Day changed Wed Dec 17 2003
+00:00 < seppy> where is the difference between guest and DD accounts? How to check if I am recognized as DD?
+00:00 < pere> If your account name is <foo>-guest, you are not recognized as a DD.  If it is <foo>, you are.
+00:01 < seppy> ah ;)  ... you can commit? or do a non-anonymous co?
+00:05 < pere> I can update at least.  Didn't try to commit yet.
+00:05 < pere> I can commit to base-config on alioth, so I guess most things are ok.
+00:06 < Sesse> I'm still waiting for DAM, so I can get rid of all this -guest and cvs-over-pserver stuff :-(
+00:06 < seppy> hrmpf. what command do you use to update?
+00:09 < pere> cvs update
+00:10 < manty> joeyh: around now
+00:38 -!- jackhead [~jackhead@p5085113E.dip.t-dialin.net] has quit ["leaving"]
+--- Log closed Wed Dec 17 00:41:38 2003

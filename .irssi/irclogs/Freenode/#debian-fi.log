@@ -57,3 +57,48 @@
 20:19 < Viiru> hendry: I don't think it's even possible to make gnus store anything in an mbox. It reads them just fine, though.
 20:30 < hendry> i am from the mutt/vim camp
 20:31 < liiwi> nnmbox exists, so gnus can use it as backend
+20:33 < Viiru> Well, nnmaildir was available as an extra module. Dunno if it's in the source now. Anyway, I never got it to work in anything like a sane manner.
+20:37 < hendry> are there any good console RSS readers?
+20:37 < Viiru> Hmm. Luulin ensin että moosicin oli NMU:ttanut joku asiallinen henkilö ja yllätyin suuresti havaitessani mitä idioottimaisuuksia ko. henkilö oli tehnyt. Sittenpä tarkistin changelogin ja totesin että eipä ollut järin yllättävää..
+20:38 < hendry> i.e. written in python
+20:41 < Viiru> Mitenhän se on saanut dh_pythonin hajoamaan?
+21:45 < liiwi> hendry: http://toursst.sourceforge.net/
+21:46  * Tv pats liiwi
+21:47 < Tv> hendry: TouRSSt is python and writes stuff in maildirs.
+21:54  * liiwi bites tv's hand
+21:56 < Tv> Bad monkey, no cookie!
+21:58  * liiwi climbs to a tree and starts munching banana
+22:07  * Viiru would like to see liiwi do that.
+22:38 < Viiru> Hmph. Sbuild ei näemmä taasen tykkää meikäläisestä.
+22:41 < Viiru> Kuivaa käytöstä moinen.
+23:10 < hendry> copy and paste is so broken in X
+23:11 < Viiru> Hmm?
+23:11 < Viiru> Broken? How?
+23:12 < hendry> I select a url painstakingly with a mouse in this uxterm
+23:12 < hendry> go over to paste it into xterm
+23:12 < hendry> go over to paste it into MOZILLA
+23:12 < hendry> and some other thing gets pasted in
+23:13 < Viiru> Yes, it's a fifo. People get used to it in time.
+23:18 < hendry> does Mozilla do XBEL?
+23:19 < hendry> toursst does not have a man page. shock.
+23:44 -!- Viiru [~viiru@cs184097.pp.htv.fi] has quit ["ERC Version 4.0 $Revision: 1.584 $ (IRC client for Emacs)"]
+23:48 < liiwi> hendry: sooo, how many manpages have you written? :P
+23:50 < hendry> ok, what about this XBEL stuff
+23:50 < hendry> i committed myself to maintaining bookmarks.html in subversion
+23:50 < hendry> from mozilla
+23:51 < hendry> was this a mistake?
+23:58 < hendry> if I want to make a patch for a debian package
+23:58 < hendry> how do i do it? i can't recall
+23:59 < hendry> cd /tmp/; apt-get source package; cp -r package-1.1/ package-1.1.orig/
+--- Day changed Wed Dec 17 2003
+00:00 < hendry> and then fix file in package 1.1, and run /tmp$ diff package-1.1/ package-1.1.orig
+00:00 < hendry> ?
+00:02 < hendry> /tmp$ diff package-1.1/ package-1.1.orig | mail package-maintainer@debian.org
+00:14 < liiwi> diff -u
+00:15 < liiwi> anyway, goodnight
+00:15 < nonix4> -ur
+00:16 < nonix4> and usually orig before modified...
+00:21 < hendry> nn
+00:25 < hendry> shift+insert and middle button paste are outputing different stuff
+00:38 < suteri> Puuh. Itkua ja hampaiden kiristystä tämä X :/
+--- Log closed Wed Dec 17 00:41:38 2003
