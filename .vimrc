@@ -31,15 +31,6 @@ set softtabstop=4
 set tabstop=4
 set fileformat=unix
 
-" Expand existing abbreviation
-" Not used atm mind
-
-map <C-X><C-X> diw:exe "normal i".@"<cr>
-map <C-j> :redir >>~/my.abbr<CR>:abbr<CR>:redir END<CR>
-map <C-k> :split ~/my.abbr<CR>:%s/^!/ab /e<CR>:wq<CR>:source ~/my.abbr<CR>
-
-
-
 colorscheme evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -60,24 +51,3 @@ autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 
 " For XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
-
-
-
-let mapleader = ","
-
-map <Leader>x :set filetype=xml<CR>
-  \:source $VIMRUNTIME/ftplugin/xml.vim<CR>
-  \:iunmap <buffer> <Leader>.<CR>
-  \:iunmap <buffer> <Leader>><CR>
-
-" catalog should be set up
-nmap <Leader>l <Leader>cd:%w !xmllint --valid --noout -<CR>
-nmap <Leader>r <Leader>cd:%w !rxp -V -N -s -x<CR>
-nmap <Leader>d4 :%w !xmllint --dtdvalid 
- \"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" --noout -<CR>
-
-vmap <Leader>px !xmllint --format -<CR>
-nmap <Leader>px !!xmllint --format -<CR>
-nmap <Leader>pxa :%!xmllint --format -<CR>
-
-nmap <Leader>i :%!xsltlint<CR>
