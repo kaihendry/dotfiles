@@ -108,3 +108,6 @@ macro attach s S^A~/Mail/mail-attachments/
 
 #more powerful editing :)
 #set edit_headers
+
+lists whatwg@whatwg.org
+subscribe whatwg@whatwg.org
