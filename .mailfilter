@@ -1,0 +1,5 @@
+DEFAULT="$HOME/Maildir"
+LOGFILE="/tmp/maildrop"
+
+if ( /^Subject: rosebud/ )
+    to $DEFAULT/.INBOX.bud
