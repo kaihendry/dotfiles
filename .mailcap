@@ -91,7 +91,7 @@ text/html			; w3m -T text/html -dump '%s'		; copiousoutput; description="HTML Te
 text/plain			; cat %s                               	; copiousoutput
 application/MSWORD		; antiword %s				; copiousoutput
 image/*             ; feh %s                    ; 
-application/pdf;                $HOME/mutt_bgrun acroread %s; test=sh -c 'test $DISPLAY'
+application/pdf;                acroread %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput
 # Java Web Start
 application/x-java-jnlp-file; /tmp/j2sdk_nb/j2sdk1.4.2/jre/javaws/javaws %s

@@ -55,4 +55,7 @@ if [ "$PS1" ]; then
     if [ -f /etc/bash_completion ]; then
       . /etc/bash_completion
     fi
+
+    umask 002
+
 fi
