@@ -48,7 +48,7 @@ user_pref("font.name.cursive.x-western", "adobe-courier-iso8859-1");
 user_pref("font.name.fantasy.x-western", "adobe-courier-iso8859-1");
 user_pref("font.size.variable.x-western", 20);
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "UTF-8, Shift_JIS, us-ascii, ISO-8859-15, ISO-8859-1");
+user_pref("intl.charsetmenu.browser.cache", "windows-1252, UTF-8, Shift_JIS, us-ascii, ISO-8859-15");
 user_pref("intl.charsetmenu.composer.cache", "UTF-8, ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("ldap_2.servers.history.filename", "history.mab");
