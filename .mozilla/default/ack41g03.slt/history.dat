@@ -13,10 +13,10 @@ $00P$00a$00g$00e$00)(D8=9)(87=http://news.bbc.co.uk/)(ED=1070639680233682)
   (88=1070497053774171)(89=news.bbc.co.uk)(8A=1)(E8=5)(8B
     =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00N$00e$00w$00s$00 $00F$00r$00o\
 $00n$00t$00 $00P$00a$00g$00e$00)(8C
-    =http://news.bbc.co.uk/nol/ifs_news/hi/front_page/ticker.stm)(91=4)
-  (94=http://www.theregister.co.uk/)(95=1070525599549209)(96
-    =www.theregister.co.uk)(86=2)(97=T$00h$00e$00 $00R$00e$00g$00i$00s$00t$00e\
-$00r$00)(98
+    =http://news.bbc.co.uk/nol/ifs_news/hi/front_page/ticker.stm)(270
+    =1070709908269756)(94=http://www.theregister.co.uk/)(95
+    =1070525599549209)(96=www.theregister.co.uk)(86=2)(97
+    =T$00h$00e$00 $00R$00e$00g$00i$00s$00t$00e$00r$00)(98
     =http://ad.doubleclick.net/adi/N3390.TribalFusion/B1205913.3;sz=468x60;cli\
 ck=http://a.tribalfusion.com/h.click/MPFSDDOKGNSNPDJJSRLOTVDYNSEKITDQSSORRPJMH\
 HJOGJJLKEKSWUBWLSLHNRHKPKNQA/;ord=946643374?)(99=1070525602896784)(9A
@@ -30,20 +30,20 @@ $00o$00f$00 $00t$00h$00e$00 $00W$00e$00e$00k$00)(A0
     =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00M$00i$00d$00d$00l$00e$00 $00E\
 $00a$00s$00t$00 $00|$00 $00I$00s$00r$00a$00e$00l$00'$00s$00 $00f$00i$00r$00s$00\
 t$00 $00E$00s$00k$00i$00m$00o$00 $00s$00o$00l$00d$00i$00e$00r$00)(AA
-    =http://www.cs.helsinki.fi/u/hendry/)(1EF=1070708197058723)(A8
+    =http://www.cs.helsinki.fi/u/hendry/)(26B=1070709840642438)(A8
     =1070560809962419)(A9=www.cs.helsinki.fi)(AB
     =K$00a$00i$00 $00H$00e$00n$00d$00r$00y$00 $00@$00 $00H$00e$00l$00s$00i$00n\
-$00k$00i$00)(112=6)(AC
-    =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=index)(AD
-    =db.cs.helsinki.fi)(AE
+$00k$00i$00)(EC=7)(AC
+    =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=index)(1EF
+    =1070708197058723)(AD=db.cs.helsinki.fi)(AE
     =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
 $00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00I$00n$00d$00e$00x$00)(10C=8)
   (AF
     =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.058.h\
 tp)(E0=1070576169571473)(B0=1070560817546992)(B1
     =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
-$00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00n$00t$00r$00y$00)(B9
-    =http://localhost/doc/subversion/)(B7=1070561923149757)(B8=localhost)
+$00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00n$00t$00r$00y$00)(91=4)
+  (B9=http://localhost/doc/subversion/)(B7=1070561923149757)(B8=localhost)
   (BA=I$00n$00d$00e$00x$00 $00o$00f$00 $00/$00d$00o$00c$00/$00s$00u$00b$00v$00\
 e$00r$00s$00i$00o$00n$00)(BB=http://localhost/doc/subversion/book/)
   (12D=1070702441883653)(BC
@@ -68,12 +68,12 @@ t$00h$00 $00S$00u$00b$00v$00e$00r$00s$00i$00o$00n$00)(C0
   (113=1070700021654695)(CF=1070572826859824)(D0
     =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
 $00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00d$00i$00t$00 $00W$00i$00z$00a$00\
-r$00d$00)(D1=http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py)(115
-    =1070700084969895)(D2=1070573022984361)(10D
+r$00d$00)(D1=http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py)(215
+    =1070708572660538)(D2=1070573022984361)(D6
     =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
 $00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00d$00i$00t$00 $00W$00i$00z$00a$00\
-r$00d$00 $00-$00 $00R$00e$00v$00i$00e$00w$00 $00C$00h$00a$00n$00g$00e$00s$00)
-  (117=11)(DB
+r$00d$00 $00-$00 $00C$00h$00a$00n$00g$00e$00s$00 $00C$00o$00m$00m$00i$00t$00t$00\
+e$00d$00)(216=13)(DB
     =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.013.h\
 tp)(DC=1070574177264181)(E1
     =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.060.h\
@@ -112,8 +112,8 @@ a$00n$00 $00G$00N$00U$00/$00L$00i$00n$00u$00x$00)(10F
     =1070702473574092)(110=1070700006142585)(111
     =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
 $00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00W$00i$00z$00a$00r$00d$00 $001$00.$00\
-0$00.$004$00)(118=http://www.google.com/)(1F2=1070708236842671)(119
-    =1070701586767533)(11A=www.google.com)(11E=G$00o$00o$00g$00l$00e$00)
+0$00.$004$00)(118=http://www.google.com/)(28E=1070710330782470)(119
+    =1070701586767533)(11A=www.google.com)(117=11)(11E=G$00o$00o$00g$00l$00e$00)
   (11B
     =http://www.google.fi/cxfer?c=PREF%3D:TM%3D1070701587:S%3D0tjd1ipw3_OQ2hq6)
   (11C=www.google.fi)(11D=http://www.google.fi/)(191=1070707811527535)
@@ -362,16 +362,161 @@ $00y$00)(20A=http://www.python.org/community/sigs.html)(20B
 $00E$00d$00u$00c$00a$00t$00i$00o$00n$00)(210
     =http://www.python.org/doc/essays/ppt/jpf001/tsld001.htm)(211
     =1070708420418366)(212=L$00e$00 $00P$00y$00t$00h$00o$00n$00 $00$E0$00 $00P\
-$00a$00r$00i$00s$00)>
+$00a$00r$00i$00s$00)(217
+    =http://www.google.com/search?q=ww&sourceid=mozilla-search&start=0&start=0\
+&ie=utf-8&oe=utf-8)(218=1070708577385617)(219
+    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00w$00w$00)
+  (21A
+    =http://www.google.com/search?hl=en&lr=&ie=UTF-8&oe=utf-8&q=java+free+soft\
+ware+mix&btnG=Google+Search)(21B=1070708585176431)(21C
+    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00j$00a$00v$00a\
+$00 $00f$00r$00e$00e$00 $00s$00o$00f$00t$00w$00a$00r$00e$00 $00m$00i$00x$00)
+  (21D=http://gcc.gnu.org/java/faq.html)(21E=1070708595555105)(21F
+    =gcc.gnu.org)(220
+    =T$00h$00e$00 $00G$00C$00J$00 $00F$00A$00Q$00 $00-$00 $00G$00N$00U$00 $00P\
+$00r$00o$00j$00e$00c$00t$00 $00-$00 $00F$00r$00e$00e$00 $00S$00o$00f$00t$00w$00\
+a$00r$00e$00 $00F$00o$00u$00n$00d$00a$00t$00i$00o$00n$00 $00($00F$00S$00F$00\)\
+$00)(221=http://www.poppendieck.com/wicked.htm)(222=1070708928172392)
+  (223=www.poppendieck.com)(224=W$00i$00c$00k$00e$00d$00)(225
+    =http://www.dotfile.com/)(226=1070709039387054)(227=www.dotfile.com)
+  (228=D$00o$00t$00F$00i$00l$00e$00)(229=http://www.dotfiles.com/)(22A
+    =1070709043940327)(22B=www.dotfiles.com)(22C
+    =d$00o$00t$00f$00i$00l$00e$00s$00.$00c$00o$00m$00:$00 $00h$00o$00m$00e$00)
+  (22D
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709045896&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2F)(22E
+    =http://rcm.amazon.com/e/cm?t=dotfiles-20&p=11&o=1&l=bn1&browse=75&mode=bo\
+oks&bg1=FFFFFF&fc1=000000&lc1=1E7FB2&f=ifr)(24D=1070709105687904)(22F
+    =rcm.amazon.com)(214=12)(230
+    =http://rcm.amazon.com/e/cm?t=dotfiles-20&p=28&o=1&l=dl1&f=ifr)
+  (231=http://www.dotfiles.com/index.php3?cat_id=8)(24A=1070709102400346)
+  (232=1070709072614169)(233
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709072880&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D8)(234
+    =http://www.dotfiles.com/index.php3?cat_id=10)(235
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709075441&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D10)(236=1070709076132677)(237
+    =http://www.dotfiles.com/index.php3?cat_id=9)(244=1070709094623030)
+  (238=1070709079213307)(239
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709079320&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D9)(23A
+    =http://www.dotfiles.com/index.php3?cat_id=13)(23B=1070709083767585)
+  (23C
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709083849&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D13)(23D
+    =http://www.dotfiles.com/index.php3?cat_id=7)(23E=1070709087343999)
+  (23F
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709087493&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D7)(240
+    =http://www.dotfiles.com/index.php3?cat_id=11)(241=1070709091201852)
+  (242
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709091289&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D11)(243
+    =http://www.dotfiles.com/index.php3?cat_id=12)(245
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709094714&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D12)(247
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709097395&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D9)(246=1070709098108637)(248
+    =http://www.dotfiles.com/index.php3?cat_id=6)(249
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709099322&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D6)(24B
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709102499&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D8)(24C
+    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
+48138&random=1070709105053&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
+dotfiles.com%2Findex.php3%3Fcat_id%3D10)(24E=http://www.linuxbrit.co.uk/)
+  (24F=1070709113376430)(250=www.linuxbrit.co.uk)(251
+    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00W$00e$00l$00c$00o\
+$00m$00e$00)(252=http://snowman.net/)(253=1070709135842394)(254
+    =snowman.net)(255=S$00n$00o$00w$00-$00M$00a$00n$00'$00s$00 $00N$00e$00t$00\
+w$00o$00r$00k$00)(256=http://www.linuxbrit.co.uk/community/)(257
+    =1070709143607162)(258=[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00\
+ $00C$00o$00m$00m$00u$00n$00i$00t$00y$00)(259
+    =http://www.linuxbrit.co.uk/bashprompt/)(25A
+    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00B$00a$00s$00h$00 \
+$00P$00r$00o$00m$00p$00t$00s$00)(25B=http://www.linuxbrit.co.uk/tips/)
+  (25C=1070709147313276)(25D=[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-\
+$00 $00T$00i$00p$00s$00)(25E=http://www.linuxbrit.co.uk/tips/#aptcache)
+  (25F=1070709153001156)(260=http://www.linuxbrit.co.uk/downloads/)
+  (261=1070709192320697)(262
+    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00D$00o$00w$00n$00l\
+$00o$00a$00d$00s$00)(263=http://cvs.snowman.net/)(264=1070709741288083)
+  (265=cvs.snowman.net)(266=http://cvs.snowman.net/cgi-bin/viewcvs.cgi)
+  (267=1070709745318067)(268=http://cvs.snowman.net/cgi-bin/viewcvs.cgi/)
+  (269=1070709753537538)(26A=C$00V$00S$00 $00R$00e$00p$00o$00s$00i$00t$00o$00r\
+$00y$00)(26C=http://db.cs.helsinki.fi/~hendry/kai.html)(26D
+    =1070709902106177)(26E=A$00b$00o$00u$00t$00 $00K$00a$00i$00 $00H$00e$00n$00\
+d$00r$00y$00)(26F=http://news.bbc.co.uk/2/hi.html)(271
+    =http://news.bbc.co.uk/2/hi/africa/3296141.stm)(272=1070709931432497)
+  (273
+    =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00A$00f$00r$00i$00c$00a$00 $00|\
+$00 $00Z$00i$00m$00b$00a$00b$00w$00e$00 $00d$00o$00g$00s$00 $00C$00o$00m$00m$00\
+o$00n$00w$00e$00a$00l$00t$00h$00 $00s$00u$00m$00m$00i$00t$00)(275
+    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=galeon&btnG=Google\
++Search)(274=1070710001317365)(276
+    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00g$00a$00l$00e\
+$00o$00n$00)(277=http://galeon.sourceforge.net/)(278=1070710006612900)
+  (279=galeon.sourceforge.net)(27A
+    =G$00a$00l$00e$00o$00n$00:$00 $00t$00h$00e$00 $00w$00e$00b$00,$00 $00o$00n\
+$00l$00y$00 $00t$00h$00e$00 $00w$00e$00b$00)(27C
+    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=subversion&btnG=Go\
+ogle+Search)(27D=1070710142044408)(27E
+    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00s$00u$00b$00v\
+$00e$00r$00s$00i$00o$00n$00)(27F=http://subversion.tigris.org/)(280
+    =1070710156340702)(281=subversion.tigris.org)(282
+    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00.$00t$00i$00g$00r$00i$00s$00.$00o\
+$00r$00g$00)(283
+    =http://subversion.tigris.org/servlets/ProjectMailingListList)(284
+    =1070710164897896)(285
+    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00M$00a$00i$00l$00i$00n$00g\
+$00 $00l$00i$00s$00t$00s$00)(286
+    =http://subversion.tigris.org/servlets/SearchList?listName=users)
+  (287=1070710169828216)(288
+    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00S$00e$00a$00r$00c$00h$00 \
+$00m$00a$00i$00l$00i$00n$00g$00 $00l$00i$00s$00t$00 $00a$00r$00c$00h$00i$00v$00\
+e$00)(289
+    =http://subversion.tigris.org/servlets/SearchList?list=users&searchText=do\
+tfiles&defaultField=body&Search=Search)(28A=1070710211699134)(28B
+    =http://subversion.tigris.org/servlets/ReadMsg?list=users&msgId=275493)
+  (28C=1070710217182902)(28D
+    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00M$00a$00i$00l$00 $00r$00e\
+$00a$00d$00e$00r$00)(28F
+    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=bash+history+lengt\
+h&btnG=Google+Search)(290=1070710335561664)(291
+    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00b$00a$00s$00h\
+$00 $00h$00i$00s$00t$00o$00r$00y$00 $00l$00e$00n$00g$00t$00h$00)(292
+    =http://lists.suse.com/archive/suse-linux-e/2001-Apr/0068.html)
+  (293=1070710367541321)(294=lists.suse.com)(295
+    =S$00u$00S$00E$00 $00L$00i$00n$00u$00x$00 $00e$00n$00g$00l$00i$00s$00h$00 \
+$00d$00i$00s$00c$00u$00s$00s$00i$00o$00n$00:$00 $00H$00o$00w$00 $00t$00o$00 $00\
+s$00e$00t$00 $00t$00h$00e$00 $00h$00i$00s$00t$00o$00r$00y$00 $00l$00e$00n$00g$00\
+t$00h$00 $00i$00n$00)(296
+    =http://lists.suse.com/archive/suse-linux-e/2001-Apr/0088.html)
+  (297=1070710374762865)(298
+    =S$00u$00S$00E$00 $00L$00i$00n$00u$00x$00 $00e$00n$00g$00l$00i$00s$00h$00 \
+$00d$00i$00s$00c$00u$00s$00s$00i$00o$00n$00:$00 $00R$00e$00:$00 $00[$00S$00L$00\
+E$00]$00 $00H$00o$00w$00 $00t$00o$00 $00s$00e$00t$00 $00t$00h$00e$00 $00h$00i$00\
+s$00t$00o$00r$00y$00)>
 {1:^80 {(k^81:c)(s=9)[1(^8C=LE)]} 
   [2(^82^81)(^84^D7)(^85^82)(^88=)(^87^84)(^86=9)]
   [3(^82^87)(^84^ED)(^85^88)(^88^89)(^8A=1)(^86=5)(^87^8B)]
-  [4(^82^8C)(^84^ED)(^85^88)(^88^89)(^89=1)(^87=)(^86=4)]
+  [4(^82^8C)(^84^270)(^85^88)(^88^89)(^89=1)(^87=)(^86=5)]
   [5(^82^94)(^84^95)(^85^95)(^88^96)(^8A=1)(^86=2)(^87^97)]
   [6(^82^98)(^84^99)(^85^99)(^88^9A)(^89=1)(^87^9B)]
   [7(^82^9C)(^84^99)(^85^99)(^88^9D)(^89=1)(^87^9E)]
   [8(^82^A0)(^84^A1)(^85^A1)(^88^89)(^87^A2)]
-  [A(^82^AA)(^84^1EF)(^85^A8)(^88^A9)(^87^AB)(^86=6)(^8A=1)]
+  [A(^82^AA)(^84^26B)(^85^A8)(^88^A9)(^87^AB)(^86=7)(^8A=1)]
   [B(^82^AC)(^84^1EF)(^85^A8)(^88^AD)(^87^AE)(^86=8)]
   [C(^82^AF)(^84^E0)(^85^B0)(^88^AD)(^87^B1)(^86=4)]
   [E(^82^B9)(^84^B7)(^85^B7)(^88^B8)(^87^BA)]
@@ -384,7 +529,7 @@ $00a$00r$00i$00s$00)>
   [15(^82^C9)(^84^CD)(^85^CA)(^88^B8)(^86=2)]
   [16(^82^CB)(^84^CC)(^85^CC)(^88^B8)]
   [17(^82^CE)(^84^113)(^85^CF)(^88^AD)(^87^D0)(^86=3)]
-  [18(^82^D1)(^84^115)(^85^D2)(^88^AD)(^87^10D)(^86=11)]
+  [18(^82^D1)(^84^215)(^85^D2)(^88^AD)(^87^D6)(^86=13)]
   [19(^82^DB)(^84^DC)(^85^DC)(^88^AD)(^87^B1)]
   [1A(^82^E1)(^84^130)(^85^E2)(^88^AD)(^87^B1)(^86=2)]
   [1B(^82^E3)(^84^E9)(^85^E4)(^88^AD)(^87^D0)(^86=2)]
@@ -396,7 +541,7 @@ $00a$00r$00i$00s$00)>
   [21(^82^FF)(^84^107)(^85^100)(^88^101)(^87^102)(^86=2)]
   [22(^82^103)(^84^104)(^85^104)(^88^105)(^87^106)]
   [23(^82^10F)(^84^12F)(^85^110)(^88^AD)(^87^111)(^86=2)]
-  [24(^82^118)(^84^1F2)(^85^119)(^88^11A)(^8A=1)(^86=8)(^87^11E)]
+  [24(^82^118)(^84^28E)(^85^119)(^88^11A)(^8A=1)(^86=11)(^87^11E)]
   [25(^82^11B)(^84^119)(^85^119)(^88^11C)(^89=1)]
   [26(^82^11D)(^84^191)(^85^119)(^88^11C)(^87^11E)(^86=5)]
   [27(^82^11F)(^84^120)(^85^120)(^88^11C)(^87^121)]
@@ -484,275 +629,78 @@ $00a$00r$00i$00s$00)>
   [79(^82^207)(^84^208)(^85^208)(^88^1DB)(^87^209)]
   [7A(^82^20A)(^84^20B)(^85^20B)(^88^1DB)(^87^20C)]
   [7B(^82^20D)(^84^20E)(^85^20E)(^88^1DB)(^87^20F)]
-  [7C(^82^210)(^84^211)(^85^211)(^88^1DB)(^87^212)]}
+  [7C(^82^210)(^84^211)(^85^211)(^88^1DB)(^87^212)]
+  [7D(^82^217)(^84^218)(^85^218)(^88^11A)(^87^219)]
+  [7E(^82^21A)(^84^21B)(^85^21B)(^88^11A)(^87^21C)]
+  [7F(^82^21D)(^84^21E)(^85^21E)(^88^21F)(^87^220)]
+  [80(^82^221)(^84^222)(^85^222)(^88^223)(^87^224)]
+  [81(^82^225)(^84^226)(^85^226)(^88^227)(^8A=1)(^86=2)(^87^228)]
+  [82(^82^229)(^84^22A)(^85^22A)(^88^22B)(^8A=1)(^86=2)(^87^22C)]
+  [83(^82^22D)(^84^22A)(^85^22A)(^88^190)(^89=1)(^87=)]
+  [84(^82^22E)(^84^24D)(^85^22A)(^88^22F)(^89=1)(^87=)(^86=12)]
+  [85(^82^230)(^84^24D)(^85^22A)(^88^22F)(^89=1)(^87=)(^86=12)]
+  [86(^82^231)(^84^24A)(^85^232)(^88^22B)(^87^22C)(^86=2)]
+  [87(^82^233)(^84^232)(^85^232)(^88^190)(^89=1)(^87=)]
+  [88(^82^234)(^84^24A)(^85^232)(^88^22B)(^87^22C)(^86=2)]
+  [89(^82^235)(^84^236)(^85^236)(^88^190)(^89=1)(^87=)]
+  [8A(^82^237)(^84^244)(^85^238)(^88^22B)(^87^22C)(^86=2)]
+  [8B(^82^239)(^84^238)(^85^238)(^88^190)(^89=1)(^87=)]
+  [8C(^82^23A)(^84^23B)(^85^23B)(^88^22B)(^87^22C)]
+  [8D(^82^23C)(^84^23B)(^85^23B)(^88^190)(^89=1)(^87=)]
+  [8E(^82^23D)(^84^23E)(^85^23E)(^88^22B)(^87^22C)]
+  [8F(^82^23F)(^84^23E)(^85^23E)(^88^190)(^89=1)(^87=)]
+  [90(^82^240)(^84^241)(^85^241)(^88^22B)(^87^22C)]
+  [91(^82^242)(^84^241)(^85^241)(^88^190)(^89=1)(^87=)]
+  [92(^82^243)(^84^244)(^85^244)(^88^22B)(^87^22C)]
+  [93(^82^245)(^84^244)(^85^244)(^88^190)(^89=1)(^87=)]
+  [94(^82^247)(^84^246)(^85^246)(^88^190)(^89=1)(^87=)]
+  [95(^82^248)(^84^246)(^85^246)(^88^22B)(^87^22C)]
+  [96(^82^249)(^84^246)(^85^246)(^88^190)(^89=1)(^87=)]
+  [97(^82^24B)(^84^24A)(^85^24A)(^88^190)(^89=1)(^87=)]
+  [98(^82^24C)(^84^24D)(^85^24D)(^88^190)(^89=1)(^87=)]
+  [99(^82^24E)(^84^24F)(^85^24F)(^88^250)(^8A=1)(^86=2)(^87^251)]
+  [9A(^82^252)(^84^253)(^85^253)(^88^254)(^87^255)]
+  [9B(^82^256)(^84^257)(^85^257)(^88^250)(^87^258)]
+  [9C(^82^259)(^84^257)(^85^257)(^88^250)(^87^25A)]
+  [9D(^82^25B)(^84^25C)(^85^25C)(^88^250)(^87^25D)]
+  [9E(^82^25E)(^84^25F)(^85^25F)(^88^250)]
+  [9F(^82^260)(^84^261)(^85^261)(^88^250)(^87^262)]
+  [A0(^82^263)(^84^264)(^85^264)(^88^265)(^87=)]
+  [A1(^82^266)(^84^267)(^85^267)(^88^265)(^89=1)]
+  [A2(^82^268)(^84^269)(^85^269)(^88^265)(^87^26A)]
+  [A3(^82^26C)(^84^26D)(^85^26D)(^88^AD)(^87^26E)]
+  [A4(^82^26F)(^84^26D)(^85^26D)(^88^89)(^87^8B)]
+  [A5(^82^271)(^84^272)(^85^272)(^88^89)(^87^273)]
+  [A6(^82^275)(^84^274)(^85^274)(^88^11A)(^87^276)]
+  [A7(^82^277)(^84^278)(^85^278)(^88^279)(^87^27A)]
+  [A8(^82^27C)(^84^27D)(^85^27D)(^88^11A)(^87^27E)]
+  [A9(^82^27F)(^84^280)(^85^280)(^88^281)(^87^282)]
+  [AA(^82^283)(^84^284)(^85^284)(^88^281)(^87^285)]
+  [AB(^82^286)(^84^287)(^85^287)(^88^281)(^87^288)]
+  [AC(^82^289)(^84^28A)(^85^28A)(^88^281)(^87^288)]
+  [AD(^82^28B)(^84^28C)(^85^28C)(^88^281)(^87^28D)]
+  [AE(^82^28F)(^84^290)(^85^290)(^88^11A)(^87^291)]
+  [AF(^82^292)(^84^293)(^85^293)(^88^294)(^87^295)]
+  [B0(^82^296)(^84^297)(^85^297)(^88^294)(^87^298)]}
 
-@$${58{@
-<(213=1070708471094808)(214=12)>
-[-18:^80(^82^D1)(^84^213)(^85^D2)(^88^AD)(^87^10D)(^86=12)]
-@$$}58}@
+@$${69{@
 
-@$${59{@
+<(299=http://lists.suse.com/archive/suse-linux-e/2001-Apr/0091.html)
+  (29A=1070710393751902)>
+{1:^80 {(k^81:c)(s=9)1 } [-B1(^82^299)(^84^29A)(^85^29A)(^88^294)(^87^298)]}
+@$$}69}@
 
-<(215=1070708572660538)(D6
-    =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
-$00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00d$00i$00t$00 $00W$00i$00z$00a$00\
-r$00d$00 $00-$00 $00C$00h$00a$00n$00g$00e$00s$00 $00C$00o$00m$00m$00i$00t$00t$00\
-e$00d$00)(216=13)(217
-    =http://www.google.com/search?q=ww&sourceid=mozilla-search&start=0&start=0\
-&ie=utf-8&oe=utf-8)(218=1070708577385617)(219
-    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00w$00w$00)
-  (21A
-    =http://www.google.com/search?hl=en&lr=&ie=UTF-8&oe=utf-8&q=java+free+soft\
-ware+mix&btnG=Google+Search)(21B=1070708585176431)(21C
-    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00j$00a$00v$00a\
-$00 $00f$00r$00e$00e$00 $00s$00o$00f$00t$00w$00a$00r$00e$00 $00m$00i$00x$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-7D(^82^217)(^84^218)(^85^218)(^88^11A)(^87^219)]
-  [-7E(^82^21A)(^84^21B)(^85^21B)(^88^11A)(^87^21C)]}
-[-18:^80(^82^D1)(^84^215)(^85^D2)(^88^AD)(^87^D6)(^86=13)]
-@$$}59}@
+@$${6A{@
 
-@$${5A{@
+<(29B=http://www.tigris.org/servlets/Join)(29C=1070710423090033)(29D
+    =www.tigris.org)(29E=R$00e$00g$00i$00s$00t$00e$00r$00)>
+{1:^80 {(k^81:c)(s=9)1 } [-B2(^82^29B)(^84^29C)(^85^29C)(^88^29D)(^87^29E)]}
+@$$}6A}@
 
-<(21D=http://gcc.gnu.org/java/faq.html)(21E=1070708595555105)(21F
-    =gcc.gnu.org)(220
-    =T$00h$00e$00 $00G$00C$00J$00 $00F$00A$00Q$00 $00-$00 $00G$00N$00U$00 $00P\
-$00r$00o$00j$00e$00c$00t$00 $00-$00 $00F$00r$00e$00e$00 $00S$00o$00f$00t$00w$00\
-a$00r$00e$00 $00F$00o$00u$00n$00d$00a$00t$00i$00o$00n$00 $00($00F$00S$00F$00\)\
-$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-7F(^82^21D)(^84^21E)(^85^21E)(^88^21F)(^87^220)]}
-@$$}5A}@
+@$${6B{@
 
-@$${5B{@
-
-<(221=http://www.poppendieck.com/wicked.htm)(222=1070708928172392)(223
-    =www.poppendieck.com)(224=W$00i$00c$00k$00e$00d$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-80(^82^221)(^84^222)(^85^222)(^88^223)(^87^224)]}
-@$$}5B}@
-
-@$${5C{@
-
-<(225=http://www.dotfile.com/)(226=1070709039387054)(227=www.dotfile.com)
-  (228=D$00o$00t$00F$00i$00l$00e$00)(229=http://www.dotfiles.com/)(22A
-    =1070709043940327)(22B=www.dotfiles.com)(22C
-    =d$00o$00t$00f$00i$00l$00e$00s$00.$00c$00o$00m$00:$00 $00h$00o$00m$00e$00)
-  (22D
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709045896&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2F)(22E
-    =http://rcm.amazon.com/e/cm?t=dotfiles-20&p=11&o=1&l=bn1&browse=75&mode=bo\
-oks&bg1=FFFFFF&fc1=000000&lc1=1E7FB2&f=ifr)(22F=rcm.amazon.com)(230
-    =http://rcm.amazon.com/e/cm?t=dotfiles-20&p=28&o=1&l=dl1&f=ifr)>
-{1:^80 {(k^81:c)(s=9)1 } [-81(^82^225)(^84^226)(^85^226)(^88^227)(^8A=1)
-    (^86=2)(^87^228)]
-  [-82(^82^229)(^84^22A)(^85^22A)(^88^22B)(^8A=1)(^86=2)(^87^22C)]
-  [-83(^82^22D)(^84^22A)(^85^22A)(^88^190)(^89=1)(^87=)]
-  [-84(^82^22E)(^84^22A)(^85^22A)(^88^22F)(^89=1)(^87=)]
-  [-85(^82^230)(^84^22A)(^85^22A)(^88^22F)(^89=1)(^87=)]}
-@$$}5C}@
-
-@$${5D{@
-
-<(24D=1070709105687904)(231=http://www.dotfiles.com/index.php3?cat_id=8)
-  (24A=1070709102400346)(232=1070709072614169)(233
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709072880&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D8)(234
-    =http://www.dotfiles.com/index.php3?cat_id=10)(235
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709075441&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D10)(236=1070709076132677)(237
-    =http://www.dotfiles.com/index.php3?cat_id=9)(244=1070709094623030)
-  (238=1070709079213307)(239
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709079320&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D9)(23A
-    =http://www.dotfiles.com/index.php3?cat_id=13)(23B=1070709083767585)
-  (23C
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709083849&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D13)(23D
-    =http://www.dotfiles.com/index.php3?cat_id=7)(23E=1070709087343999)
-  (23F
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709087493&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D7)(240
-    =http://www.dotfiles.com/index.php3?cat_id=11)(241=1070709091201852)
-  (242
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709091289&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D11)(243
-    =http://www.dotfiles.com/index.php3?cat_id=12)(245
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709094714&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D12)(247
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709097395&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D9)(246=1070709098108637)(248
-    =http://www.dotfiles.com/index.php3?cat_id=6)(249
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709099322&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D6)(24B
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709102499&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D8)(24C
-    =http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-07878079294\
-48138&random=1070709105053&format=120x600_as&output=html&url=http%3A%2F%2Fwww.\
-dotfiles.com%2Findex.php3%3Fcat_id%3D10)(24E=http://www.linuxbrit.co.uk/)
-  (24F=1070709113376430)(250=www.linuxbrit.co.uk)(251
-    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00W$00e$00l$00c$00o\
-$00m$00e$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-86(^82^231)(^84^24A)(^85^232)(^88^22B)(^87^22C)
-    (^86=2)]
-  [-87(^82^233)(^84^232)(^85^232)(^88^190)(^89=1)(^87=)]
-  [-88(^82^234)(^84^24A)(^85^232)(^88^22B)(^87^22C)(^86=2)]
-  [-89(^82^235)(^84^236)(^85^236)(^88^190)(^89=1)(^87=)]
-  [-8A(^82^237)(^84^244)(^85^238)(^88^22B)(^87^22C)(^86=2)]
-  [-8B(^82^239)(^84^238)(^85^238)(^88^190)(^89=1)(^87=)]
-  [-8C(^82^23A)(^84^23B)(^85^23B)(^88^22B)(^87^22C)]
-  [-8D(^82^23C)(^84^23B)(^85^23B)(^88^190)(^89=1)(^87=)]
-  [-8E(^82^23D)(^84^23E)(^85^23E)(^88^22B)(^87^22C)]
-  [-8F(^82^23F)(^84^23E)(^85^23E)(^88^190)(^89=1)(^87=)]
-  [-90(^82^240)(^84^241)(^85^241)(^88^22B)(^87^22C)]
-  [-91(^82^242)(^84^241)(^85^241)(^88^190)(^89=1)(^87=)]
-  [-92(^82^243)(^84^244)(^85^244)(^88^22B)(^87^22C)]
-  [-93(^82^245)(^84^244)(^85^244)(^88^190)(^89=1)(^87=)]
-  [-94(^82^247)(^84^246)(^85^246)(^88^190)(^89=1)(^87=)]
-  [-95(^82^248)(^84^246)(^85^246)(^88^22B)(^87^22C)]
-  [-96(^82^249)(^84^246)(^85^246)(^88^190)(^89=1)(^87=)]
-  [-97(^82^24B)(^84^24A)(^85^24A)(^88^190)(^89=1)(^87=)]
-  [-98(^82^24C)(^84^24D)(^85^24D)(^88^190)(^89=1)(^87=)]
-  [-99(^82^24E)(^84^24F)(^85^24F)(^88^250)(^8A=1)(^86=2)(^87^251)]}
-[-84:^80(^82^22E)(^84^24D)(^85^22A)(^88^22F)(^89=1)(^87=)(^86=12)]
-[-85:^80(^82^230)(^84^24D)(^85^22A)(^88^22F)(^89=1)(^87=)(^86=12)]
-@$$}5D}@
-
-@$${5E{@
-
-<(252=http://snowman.net/)(253=1070709135842394)(254=snowman.net)(255
-    =S$00n$00o$00w$00-$00M$00a$00n$00'$00s$00 $00N$00e$00t$00w$00o$00r$00k$00)
-  (256=http://www.linuxbrit.co.uk/community/)(257=1070709143607162)
-  (258=[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00C$00o$00m$00m$00\
-u$00n$00i$00t$00y$00)(259=http://www.linuxbrit.co.uk/bashprompt/)(25A
-    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00B$00a$00s$00h$00 \
-$00P$00r$00o$00m$00p$00t$00s$00)(25B=http://www.linuxbrit.co.uk/tips/)
-  (25C=1070709147313276)(25D=[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-\
-$00 $00T$00i$00p$00s$00)(25E=http://www.linuxbrit.co.uk/tips/#aptcache)
-  (25F=1070709153001156)>
-{1:^80 {(k^81:c)(s=9)1 } [-9A(^82^252)(^84^253)(^85^253)(^88^254)(^87^255)]
-  [-9B(^82^256)(^84^257)(^85^257)(^88^250)(^87^258)]
-  [-9C(^82^259)(^84^257)(^85^257)(^88^250)(^87^25A)]
-  [-9D(^82^25B)(^84^25C)(^85^25C)(^88^250)(^87^25D)]
-  [-9E(^82^25E)(^84^25F)(^85^25F)(^88^250)]}
-@$$}5E}@
-
-@$${5F{@
-
-<(260=http://www.linuxbrit.co.uk/downloads/)(261=1070709192320697)(262
-    =[$00L$00i$00n$00u$00x$00B$00r$00i$00t$00]$00 $00-$00 $00D$00o$00w$00n$00l\
-$00o$00a$00d$00s$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-9F(^82^260)(^84^261)(^85^261)(^88^250)(^87^262)]}
-@$$}5F}@
-
-@$${60{@
-
-<(263=http://cvs.snowman.net/)(264=1070709741288083)(265=cvs.snowman.net)
-  (266=http://cvs.snowman.net/cgi-bin/viewcvs.cgi)(267=1070709745318067)
-  (268=http://cvs.snowman.net/cgi-bin/viewcvs.cgi/)(269=1070709753537538)
-  (26A=C$00V$00S$00 $00R$00e$00p$00o$00s$00i$00t$00o$00r$00y$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-A0(^82^263)(^84^264)(^85^264)(^88^265)(^87=)]
-  [-A1(^82^266)(^84^267)(^85^267)(^88^265)(^89=1)]
-  [-A2(^82^268)(^84^269)(^85^269)(^88^265)(^87^26A)]}
-@$$}60}@
-
-@$${61{@
-<(26B=1070709840642438)(EC=7)>[-A:^80(^82^AA)(^84^26B)(^85^A8)(^88^A9)
-    (^87^AB)(^86=7)(^8A=1)]
-@$$}61}@
-
-@$${62{@
-
-<(270=1070709908269756)(26C=http://db.cs.helsinki.fi/~hendry/kai.html)
-  (26D=1070709902106177)(26E=A$00b$00o$00u$00t$00 $00K$00a$00i$00 $00H$00e$00n\
-$00d$00r$00y$00)(26F=http://news.bbc.co.uk/2/hi.html)>
-{1:^80 {(k^81:c)(s=9)1 } [-A3(^82^26C)(^84^26D)(^85^26D)(^88^AD)(^87^26E)]
-  [-A4(^82^26F)(^84^26D)(^85^26D)(^88^89)(^87^8B)]}
-[-4:^80(^82^8C)(^84^270)(^85^88)(^88^89)(^89=1)(^87=)(^86=5)]
-@$$}62}@
-
-@$${63{@
-
-<(271=http://news.bbc.co.uk/2/hi/africa/3296141.stm)(272=1070709931432497)
-  (273
-    =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00A$00f$00r$00i$00c$00a$00 $00|\
-$00 $00Z$00i$00m$00b$00a$00b$00w$00e$00 $00d$00o$00g$00s$00 $00C$00o$00m$00m$00\
-o$00n$00w$00e$00a$00l$00t$00h$00 $00s$00u$00m$00m$00i$00t$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-A5(^82^271)(^84^272)(^85^272)(^88^89)(^87^273)]}
-@$$}63}@
-
-@$${64{@
-
-<(274=1070710001317365)(275
-    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=galeon&btnG=Google\
-+Search)(276=G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00g$00a\
-$00l$00e$00o$00n$00)(277=http://galeon.sourceforge.net/)(278
-    =1070710006612900)(279=galeon.sourceforge.net)(27A
-    =G$00a$00l$00e$00o$00n$00:$00 $00t$00h$00e$00 $00w$00e$00b$00,$00 $00o$00n\
-$00l$00y$00 $00t$00h$00e$00 $00w$00e$00b$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-A6(^82^275)(^84^274)(^85^274)(^88^11A)(^87^276)]
-  [-A7(^82^277)(^84^278)(^85^278)(^88^279)(^87^27A)]}
-[-24:^80(^82^118)(^84^274)(^85^119)(^88^11A)(^8A=1)(^86=9)(^87^11E)]
-@$$}64}@
-
-@$${65{@
-
-<(27B=1070710138889247)(116=10)(27C
-    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=subversion&btnG=Go\
-ogle+Search)(27D=1070710142044408)(27E
-    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00s$00u$00b$00v\
-$00e$00r$00s$00i$00o$00n$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-A8(^82^27C)(^84^27D)(^85^27D)(^88^11A)(^87^27E)]}
-[-24:^80(^82^118)(^84^27B)(^85^119)(^88^11A)(^8A=1)(^86=10)(^87^11E)]
-@$$}65}@
-
-@$${66{@
-
-<(27F=http://subversion.tigris.org/)(280=1070710156340702)(281
-    =subversion.tigris.org)(282=s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00.$00t$00\
-i$00g$00r$00i$00s$00.$00o$00r$00g$00)(283
-    =http://subversion.tigris.org/servlets/ProjectMailingListList)(284
-    =1070710164897896)(285
-    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00M$00a$00i$00l$00i$00n$00g\
-$00 $00l$00i$00s$00t$00s$00)(286
-    =http://subversion.tigris.org/servlets/SearchList?listName=users)
-  (287=1070710169828216)(288
-    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00S$00e$00a$00r$00c$00h$00 \
-$00m$00a$00i$00l$00i$00n$00g$00 $00l$00i$00s$00t$00 $00a$00r$00c$00h$00i$00v$00\
-e$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-A9(^82^27F)(^84^280)(^85^280)(^88^281)(^87^282)]
-  [-AA(^82^283)(^84^284)(^85^284)(^88^281)(^87^285)]
-  [-AB(^82^286)(^84^287)(^85^287)(^88^281)(^87^288)]}
-@$$}66}@
-
-@$${67{@
-
-<(289
-    =http://subversion.tigris.org/servlets/SearchList?list=users&searchText=do\
-tfiles&defaultField=body&Search=Search)(28A=1070710211699134)(28B
-    =http://subversion.tigris.org/servlets/ReadMsg?list=users&msgId=275493)
-  (28C=1070710217182902)(28D
-    =s$00u$00b$00v$00e$00r$00s$00i$00o$00n$00:$00 $00M$00a$00i$00l$00 $00r$00e\
-$00a$00d$00e$00r$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-AC(^82^289)(^84^28A)(^85^28A)(^88^281)(^87^288)]
-  [-AD(^82^28B)(^84^28C)(^85^28C)(^88^281)(^87^28D)]}
-@$$}67}@
-
-@$${68{@
-
-<(28E=1070710330782470)(28F
-    =http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=bash+history+lengt\
-h&btnG=Google+Search)(290=1070710335561664)(291
-    =G$00o$00o$00g$00l$00e$00 $00S$00e$00a$00r$00c$00h$00:$00 $00b$00a$00s$00h\
-$00 $00h$00i$00s$00t$00o$00r$00y$00 $00l$00e$00n$00g$00t$00h$00)>
-{1:^80 {(k^81:c)(s=9)1 } [-AE(^82^28F)(^84^290)(^85^290)(^88^11A)(^87^291)]}
-[-24:^80(^82^118)(^84^28E)(^85^119)(^88^11A)(^8A=1)(^86=11)(^87^11E)]
-@$$}68}@
+<(29F=1070710480093394)(2A0=http://www.tigris.org/servlets/TLogin)(2A1
+    =L$00o$00g$00i$00n$00)>
+{1:^80 {(k^81:c)(s=9)1 } [-B3(^82^2A0)(^84^29F)(^85^29F)(^88^29D)(^87^2A1)]}
+[-B2:^80(^82^29B)(^84^29F)(^85^29C)(^88^29D)(^87^29E)(^86=2)(^89=1)]
+@$$}6B}@
