@@ -3,50 +3,62 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-statse.webtrendslive.com	FALSE	/S146738	FALSE	1609401600	wtl146738	7&3CEMbVCD&http://www.nhsdirect.nhs.uk/&http://www.google.com/search?hl%3Den%26ie%3DUTF-8%26oe%3DUTF-8%26q%3Dnhs%26btnG%3DGoogle+Search&3CEMfKCD&http://www.nhsdirect.nhs.uk/en.asp?TopicID%3D724%26AreaID%3D4777%26LinkID%3D3852&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/&http://www.google.com/search?hl%3Den%26ie%3DUTF-8%26oe%3DUTF-8%26q%3Dnhs%26btnG%3DGoogle+Search&1&8&8&0&&0&&0&&0000000&Chest+infection%3B3CEMfKCD|Chest+infection%2CCauses%3B3CEMepCD|Chest+infection%2CIntroduction%3B3CEMfKCD|Chest+infection%2CPrevention%3B3CEMf5CD|Chest+infection%2CSymptoms%3B3CEMdqCD|Chest+infection%2CTreatment%3B3CEMe3CD|SearchResults%3B3CEMdmCD|SearchResults%2Cyellow+phelm%3B3CEMd4CD|SearchResults%2Cyellow+phlegm%3B3CEMdmCD|index%3B3CEMbVCD|index%2Cnone%3B3CEMbVCD|resourceIndex%3B3CEMbgCD|resourceIndex%2Cnone%3B3CEMbgCD|&&217.30.176.161-417707120.29606530&
-statse.webtrendslive.com	FALSE	/S146738	FALSE	1609401600	WEBTRENDS_ID	217.30.176.161-417707120.29606530
+www.boselaw.com	FALSE	/	FALSE	1293753601	WEBTRENDS_ID	217.30.176.161-3843879568.29606542
+.allmusic.com	TRUE	/	FALSE	1102957223	username	UIDMISS70312141700080824
+.allmusic.com	TRUE	/	FALSE	2147385600	__utma	215752519.1189881428.1071439478.1071439478.1071439478.1
+.imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+.atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073489176	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073852373	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+.about.com	TRUE	/	FALSE	1080077294	zDot	1
+.compnetworking.about.com	TRUE	/	FALSE	1071869294	uzDot	1
+.compnetworking.about.com	TRUE	/	FALSE	1080077294	zDot	1
+.about.com	TRUE	/	FALSE	1071869294	uzDot	1
+.about.com	TRUE	/	FALSE	2145916799	TMog	3CELSC0K360A2N0W
+.about.com	TRUE	/	FALSE	1671437234	jsc	1
+.compnetworking.about.com	TRUE	/	FALSE	7071523634	zFS	3CE103C0110300101
+.about.com	TRUE	/	FALSE	7071523634	zFD	3CE103C0110300101
+.gator.com	TRUE	/	FALSE	1076610883	GatorWebPdpCookie_WUID	P9ytNQr0BI8AAGEnykY
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.advertising.com	TRUE	/	FALSE	1229106783	ROLL	VK4b0lbG1AGwlSMAfb4hGZC!
+.mediaplex.com	TRUE	/	FALSE	1245628800	svid	90765997351
+.amazon.co.uk	TRUE	/	FALSE	1071532806	session-id	202-7122145-3091833
+.amazon.co.uk	TRUE	/	FALSE	2082758407	ubid-acbuk	432-2846814-7105916
+.amazon.co.uk	TRUE	/	FALSE	2082758408	x-acbuk	RWZGP4bQAP8YOzFgVDV5@VUU2ORtzfCg
+.amazon.co.uk	TRUE	/	FALSE	1071532806	session-id-time	1071532800
+statse.webtrendslive.com	FALSE	/S146738	FALSE	1609401600	WEBTRENDS_ID	217.30.176.161-417707120.29606530
+statse.webtrendslive.com	FALSE	/S146738	FALSE	1609401600	wtl146738	7&3CEMbVCD&http://www.nhsdirect.nhs.uk/&http://www.google.com/search?hl%3Den%26ie%3DUTF-8%26oe%3DUTF-8%26q%3Dnhs%26btnG%3DGoogle+Search&3CEMfKCD&http://www.nhsdirect.nhs.uk/en.asp?TopicID%3D724%26AreaID%3D4777%26LinkID%3D3852&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/en.asp&http://www.nhsdirect.nhs.uk/&http://www.google.com/search?hl%3Den%26ie%3DUTF-8%26oe%3DUTF-8%26q%3Dnhs%26btnG%3DGoogle+Search&1&8&8&0&&0&&0&&0000000&Chest+infection%3B3CEMfKCD|Chest+infection%2CCauses%3B3CEMepCD|Chest+infection%2CIntroduction%3B3CEMfKCD|Chest+infection%2CPrevention%3B3CEMf5CD|Chest+infection%2CSymptoms%3B3CEMdqCD|Chest+infection%2CTreatment%3B3CEMe3CD|SearchResults%3B3CEMdmCD|SearchResults%2Cyellow+phelm%3B3CEMd4CD|SearchResults%2Cyellow+phlegm%3B3CEMdmCD|index%3B3CEMbVCD|index%2Cnone%3B3CEMbVCD|resourceIndex%3B3CEMbgCD|resourceIndex%2Cnone%3B3CEMbgCD|&&217.30.176.161-417707120.29606530&
+.servedby.advertising.com	TRUE	/	FALSE	1074018784	87082454	_3fdcace0,,294974^142832_
+.servedby.advertising.com	TRUE	/	FALSE	1074018788	11209039	_3fdcace4,,294976^112945_
+.servedby.advertising.com	TRUE	/	FALSE	1074018788	35993088	_3fdcace4,,294976^112944_
+.servedby.advertising.com	TRUE	/	FALSE	1073931473	19026915	_3fdb57d1,,223250^110957_
+.advertising.com	TRUE	/	FALSE	1228839649	ACID	ee520010711596490012!
+.servedby.advertising.com	TRUE	/	FALSE	1074026286	57312376	_3fdcca2e,,88187^142074_
+.servedby.advertising.com	TRUE	/	FALSE	1073751654	81799	_3fd89966,,102759^61674_
+.servedby.advertising.com	TRUE	/	FALSE	1073751654	30868418	_3fd89966,,69834^132084_
+.advertising.com	TRUE	/	FALSE	1229114277	BASE	gAONwrclOSCOScWEwFAgxClPSBnr3oBzH+QsgZeN/IP5WwuT82Z38UD!
+.servedby.advertising.com	TRUE	/	FALSE	1074026274	38605100	_3fdcca22,,102759^61574&71276^142830_
+.servedby.advertising.com	TRUE	/	FALSE	1073931465	91888962	_3fdb57c9,,223250^110957_
 .servedby.advertising.com	TRUE	/	FALSE	1074026277	1	_3fdcca25,,69711^144150_
 .fastclick.net	TRUE	/	FALSE	1071607162	m1	d15003:1::1:1071434361|
 .fastclick.net	TRUE	/	FALSE	1071607159	m3	d31353:1::4804:1071434359|
 .servedby.advertising.com	TRUE	/	FALSE	1074026273	2709304973	_3fdcca21,2709304973,102759^88566&69834^142071_
-.servedby.advertising.com	TRUE	/	FALSE	1073931392	98755822	_3fdb5780,,223250^110957_
-.servedby.advertising.com	TRUE	/	FALSE	1073931465	91888962	_3fdb57c9,,223250^110957_
-.servedby.advertising.com	TRUE	/	FALSE	1074026274	38605100	_3fdcca22,,102759^61574&71276^142830_
-.advertising.com	TRUE	/	FALSE	1229114277	BASE	gAONwrclOSCOScWEwFAgxClPSBnr3oBzH+QsgZeN/IP5WwuT82Z38UD!
-.servedby.advertising.com	TRUE	/	FALSE	1073751654	30868418	_3fd89966,,69834^132084_
-.servedby.advertising.com	TRUE	/	FALSE	1073751654	81799	_3fd89966,,102759^61674_
-.servedby.advertising.com	TRUE	/	FALSE	1074026286	57312376	_3fdcca2e,,88187^142074_
-.advertising.com	TRUE	/	FALSE	1228839649	ACID	ee520010711596490012!
-.servedby.advertising.com	TRUE	/	FALSE	1073931473	19026915	_3fdb57d1,,223250^110957_
-.servedby.advertising.com	TRUE	/	FALSE	1074018788	35993088	_3fdcace4,,294976^112944_
-.servedby.advertising.com	TRUE	/	FALSE	1074018788	11209039	_3fdcace4,,294976^112945_
-.servedby.advertising.com	TRUE	/	FALSE	1074018784	87082454	_3fdcace0,,294974^142832_
+.advertising.com	TRUE	/	FALSE	1229106783	ROLL	VK4b0lbG1AGwlSMAfb4hGZC!
+.fastclick.net	TRUE	/	FALSE	1133367745	pluto	135809697|0|
+.fastclick.net	TRUE	/	FALSE	1071844016	m2	
 .servedby.advertising.com	TRUE	/	FALSE	1074018783	37520075	_3fdcacdf,,294976^83467_
+.servedby.advertising.com	TRUE	/	FALSE	1073931392	98755822	_3fdb5780,,223250^110957_
 .servedby.advertising.com	TRUE	/	FALSE	1073931373	32809080	_3fdb576d,,223250^110957_
 .servedby.advertising.com	TRUE	/	FALSE	1073751653	52370316	_3fd89965,,102759^61700&69711^144150_
 .servedby.advertising.com	TRUE	/	FALSE	1074018795	29335067	_3fdcaceb,,294976^112945_
-.fastclick.net	TRUE	/	FALSE	1133367745	pluto	135809697|0|
-.fastclick.net	TRUE	/	FALSE	1071844016	m2	
 .tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 .statcounter.com	TRUE	/	FALSE	1229113973	session_220557	1071433972%260
-.imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
-.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-.amazon.co.uk	TRUE	/	FALSE	1071532806	session-id	202-7122145-3091833
-.amazon.co.uk	TRUE	/	FALSE	1071532806	session-id-time	1071532800
-.amazon.co.uk	TRUE	/	FALSE	2082758407	ubid-acbuk	432-2846814-7105916
-.amazon.co.uk	TRUE	/	FALSE	2082758408	x-acbuk	RWZGP4bQAP8YOzFgVDV5@VUU2ORtzfCg
-.atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073489176	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073852373	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 rb2.design.ru	FALSE	/	FALSE	1893455841	uid	536560819
 .spylog.com	TRUE	/	FALSE	1086982173	VISID	HJHDTBHHBQIZFEDDHF
 www.durex.com	FALSE	/	FALSE	1262303099	country	UK
 .bluestreak.com	TRUE	/	FALSE	1386393153	id	17841994495724956 bb=K1Roo"t4QQwowto|K1"AQ_t4QQ"A"to|
-.gator.com	TRUE	/	FALSE	1076610883	GatorWebPdpCookie_WUID	P9ytNQr0BI8AAGEnykY
 gallery.menalto.com	FALSE	/	FALSE	1860366528	POSTNUKESID	f00e756c47c71be110381d948ca49870
 .ign.com	TRUE	/	FALSE	1171426052	ATA	ign.1071426445097.217.30.176.161
 .ign.com	TRUE	/	FALSE	1371426495	Twinkie	1071426481.00010000000000000000.20000001200312142000000120000001200000012000000120000001200000012000000120000001

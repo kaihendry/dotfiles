@@ -19,6 +19,7 @@ user_pref("browser.tabs.opentabfor.middleclick", true);
 user_pref("dom.disable_open_during_load", true);
 user_pref("intl.accept_languages", "");
 user_pref("intl.charsetmenu.browser.cache", "UTF-8, ISO-8859-2, us-ascii, windows-1252, ISO-8859-1");
+user_pref("ldap_2.prefs_migrated", true);
 user_pref("plugin.soname.list", "libXt.so:libXext.so");
 user_pref("prefs.converted-to-utf8", true);
 user_pref("privacy.popups.first_popup", false);
