@@ -2,11 +2,6 @@
 
 UXTerm*utf8: 1
 UXTerm*scrollBar: False
-UXTerm*font: -misc-fixed-medium-r-semicondensed-*-11-*-*-*-c-*-iso8859-1
-UXTerm*boldFont: -misc-fixed-bold-r-semicondensed-*-11-*-*-*-c-*-iso8859-1
-UXTerm*widefont: -misc-fixed-medium-r-semicondensed-*-11-*-*-*-c-*-iso8859-1
-UXTerm*wideBoldFont: -misc-fixed-bold-r-semicondensed-*-11-*-*-*-c-*-iso8859-1
-UXTerm*geometry: 94x58
 UXTerm*title: term
 UXTerm*saveLines: 1024
 UXTerm*termName: xterm

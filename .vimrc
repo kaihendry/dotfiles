@@ -1,4 +1,4 @@
-" $Id: .vimrc,v 1.19 2003/10/26 07:32:13 hendry Exp $
+" $Id$
 
 " Spell check
 map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
@@ -44,7 +44,7 @@ au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 au BufNewFile,BufRead  svn-commit.* setf svn
 
 set encoding=utf-8          " Set Unicode as the default encoding
-set fileencodings=
+set fileencodings=ucs-bom,utf-8,latin1
 
 " What does this do?
 set modelines=5
