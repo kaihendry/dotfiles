@@ -32,15 +32,25 @@ if [ "$PS1" ]; then
     alias mutto='mutt -F ~/.muttorc'
     export todo=~/personal/todo.txt
 
-    # user@host pwd should be provided my WM title bar IMO
-    PS1='$ '
-
     # If this is an xterm set the title to user@host:dir
     case $TERM in
     xterm*)
+        # Xterm and rxvt use <esc> ] <num> ; <title> <bel>
+        #  Where <num> is 0 for both icon name and window title,
+        #                 1 for icon name
+        #                 2 for window title
+        #  \[ and \] are there to have bash ignore unprintable characters
+        PS1='\[\033]0;\h\007\]\h\$ '
         PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
         ;;
+
+    screen)
+        # Screen uses "<esc> k <title> <esc> \" for window title
+        PS1='\[\033k\h\033\\\]\h\$ '
+        ;;
     *)
+        # user@host pwd should be provided my WM title bar IMO
+        PS1='\h\$ '
         ;;
     esac
 

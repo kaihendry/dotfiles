@@ -1,3 +1,10 @@
+#2c
+<<<<<<< .mine
+<<<<<<< .mine
+=======
+=======
+>>>>>>> .r675
+>>>>>>> .r700
 http://bugs.kannel.org
 http://db.cs.helsinki.fi
 http://domainmonger.com
@@ -65,18 +72,6 @@ DNAFINLANDPLCLIENTUSERID
 ~NDA4MzY3NzMz
 *DNAFINLANDPLCLIENTPSWD
 ~Z3M3eWRn
-.
-http://praze.localhost
-log
-~YWRtaW4=
-*pwd
-~NzM4YmIx
-.
-http://wordpress.org
-user_usr
-~aGVuZHJ5
-*user_pwd
-~ODYxNjUx
 .
 https://gw-a.demo.tuwien.ac.at:1112
 username
