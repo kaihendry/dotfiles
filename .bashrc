@@ -33,18 +33,7 @@ if [ "$PS1" ]; then
 
     # set a (really) fancy prompt
 
-    COLOR1="\[\033[0;36m\]"
-    COLOR2="\[\033[0;32m\]"
-    COLOR3="\[\033[0;36m\]"
-    COLOR4="\[\033[1;37m\]"
-
-    if [ "$UID" = "0" ];
-    then
-    # I am root
-    COLOR2="\[\033[1;31m\]"
-    fi
-
-    PS1="$COLOR2($COLOR3\u@\h$COLOR2:$COLOR1\W$COLOR2)$COLOR1\\$ $COLOR4"
+    export PS1='\h:\w\$ '
 
     # If this is an xterm set the title to user@host:dir
     case $TERM in

@@ -157,7 +157,10 @@
                    screenY="26"
                    sizemode="normal" />
   <RDF:Seq about="nc:urlbar-history">
-    <RDF:li>www.google.com</RDF:li>
+    <RDF:li>mail.cs.helsinki.fi</RDF:li>
+    <RDF:li>www.kitten-x.com</RDF:li>
+    <RDF:li>http://www.google.fi</RDF:li>
+    <RDF:li>http://www.google.com/</RDF:li>
     <RDF:li>www.linuxbrit.co.uk</RDF:li>
     <RDF:li>http://www.dotfiles.com/</RDF:li>
     <RDF:li>www.dotfile.com</RDF:li>
