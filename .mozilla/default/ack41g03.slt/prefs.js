@@ -15,7 +15,7 @@ user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
 user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
-user_pref("browser.startup.homepage_override.mstone", "rv:1.7");
+user_pref("browser.startup.homepage_override.mstone", "rv:1.6");
 user_pref("browser.tabs.autoHide", false);
 user_pref("browser.tabs.extensions.auto_cleanUp_count", 2);
 user_pref("browser.tabs.extensions.default.type", 0);
@@ -48,7 +48,7 @@ user_pref("font.name.cursive.x-western", "adobe-courier-iso8859-1");
 user_pref("font.name.fantasy.x-western", "adobe-courier-iso8859-1");
 user_pref("font.size.variable.x-western", 20);
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "ISO-8859-15, ISO-8859-1, ISO-8859-2, UTF-8, windows-1252");
+user_pref("intl.charsetmenu.browser.cache", "UTF-8, Shift_JIS, us-ascii, ISO-8859-15, ISO-8859-1");
 user_pref("intl.charsetmenu.composer.cache", "UTF-8, ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("ldap_2.servers.history.filename", "history.mab");
