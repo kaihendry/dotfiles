@@ -1,2 +1,2 @@
 startup_message off
-termcapinfo xterm ti@:te@
+#termcapinfo xterm ti@:te@
