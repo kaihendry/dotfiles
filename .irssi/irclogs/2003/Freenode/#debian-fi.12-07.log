@@ -63,3 +63,64 @@
 23:04 < ibid> Package: sex
 23:05 < liw> mä tiesin, että grep-dctrl:sta on jotain hyötyä :)
 23:05 < ibid> :)
+23:05 < liw> dwww oli sekin alunperin mun softa - montakohan vuotta menee vielä, että se saadaan kitkettyä pois
+23:06 < ibid> heh
+23:06 < liw> sex ei ole ongelma, mä olen aikeissa luopua siitäkin, jahka löydän kivan korvaavan editorin
+23:06 < ibid> liwc?
+23:06 < liw> liwc voi olla ongelma, mutta ehkä siitä selviää kopioimalla muutaman funktion tms
+23:06 < ibid> sen se rmccmt oli hauska
+23:07 < liw> rmccmt on kiva, mä löysin sillä C-kurssini harjoitustöistä plagiaatin
+23:08 < ibid> mulla on sellainen patenttikoodirivinlaskija c:lle joka k�ytt�� rmccmt:t�
+23:08 < ibid> oletkos muuten cycloneen tutustunut?
+23:08 < liw> en oo, se oli joku C:n korvaajakieli?
+23:09 < ibid> joo
+23:09 < ibid> melkein c-sorsayhteensopiva
+23:09 < ibid> lis�� aluepohjaisen muistinhallinnan, diskriminoidut unionit ja tyyppiturvallisuuden
+23:09 < liw> dark on tainnut muutaman kerran mainita, mä en jaksa innostua jälleen yhdestä C:n korvaajasta, mä haluan korkeamman tason kielen
+23:09 < ibid> tuossa on monia sellaisia ominaisuuksia
+23:10 < ibid> mun mielikieli olisi kai C++ done right :)
+23:10 < ibid> eli kieli joka on sek� korkean ett� matalan tason
+23:10 < liw> mä olen, ei kovin yllättäen, ollut tykästynyt lispahtaviin kieliin viime aikoina (spesifiesti omaan lispiini)
+23:10 < ibid> heh
+23:10 < liw> oma lisp, hyvä lisp :)
+23:10 < ibid> mulla oli lisp-kuherrusvuosi pari vuotta sitten
+23:10 < ibid> :)
+23:11 < ibid> yksi mun backburner-projekteista on attoscheme
+23:11 < liw> mut toisaalta mä haluaisin käännösaikaisia tyyppitarkistuksia yms kivaa myös
+23:11 < ibid> oletko ml-sukuisiin kieliin tutustunut?
+23:11 < ibid> sml, ocaml
+23:12 < liw> en vielä
+23:12 < liw> vähän O'Camlin jotain manuskaa luin, ja Haskellin, siinä se
+23:12 < ibid> (mun fo-luentomonisteessa on haskellia)
+23:13 < liw> mulla on liikaa töitä, mä en ehdi leikkimään tarpeeksi :(
+23:13 < ibid> :)
+23:13 < ibid> sanoim
+23:14 < ibid> mulla on tosin onneksi intohimo kielten tutkimiseen ja kehittelyyn, sit� tulee tehty� joka tapauksessa
+23:15 < liw> jup ja se on hyvä
+23:15 < liw> mä en oikeasti taida olla kieltentutkija, mä vaan olen nyt vuoden tms halunnut löytää uuden kielen Pythonin tilalle
+23:16 < ibid> mulla on nyt sellainen projekti jossa teen C:n n�k�isen kielen jossa on algebralliset tietotyypit
+23:16 < ibid> ja joka toteutetaan translaattorilla joka tekee mahdollisimman luettavaa seet�
+23:16 < ibid> l�hinn� opetustarkoituksiin
+23:17 < ibid> ongelma on se ett� mulle tulee koko ajan lis�� cooleja featureja mieleen
+23:17 < liw> mulla on se hyvä puoli, ettei mun purkkiin mahdu kovin paljoa isompaa kielen toteutusta, jo nytkin linkkeri meni pistämään C:n pinon ja yhden staattisen taulukon päällekäin
+23:18 < ibid> ohoh
+23:18 < liw> selvä bugi
+23:26 < liiwi> twin: t�n��n olen suurimmaksi osaksi lispsahdellut
+23:27 < liw> twin, huu, mitäs?
+23:28 < liiwi> aloitin tuossa lukemaan 'structure and interpretation of computer programs, 2nd ed' nimist� teosta, ja oli pakko kokeilla hiuka siin� k�siteltyj� asioita
+23:29 < liw> mä pääsin ekan tai tokan luvun loppuun ja sit mä tein oman lispin :)
+23:29 < liw> pitäis lukea lpoutkin, tai ehkä katsoa ne opetusvideot
+23:29 < liiwi> koin useamman kuin yhden ahaa-el�myksen
+23:29 < liw> niin mäkin silloin
+23:32 < ibid> niin m�kin silloin :)
+23:34 < liw> SICP kuuluu kyllä ehdottomasti "Necessary computer books" -luettelooni
+23:34 < liiwi> juu
+23:34 < liiwi> kyll�
+23:35 < liiwi> tuollaista kun olisi opetettu yl�asteen 'atk' tunneilla..
+23:37 < liw> ai teillä oli yläasteella, meillä oli vaan lukiossa ja sekin oli eksperimetnaalista
+23:39 < ibid> samoin
+23:39 < liiwi> logoa ja pascalia ja basic:ia
+23:39 < ibid> eik� meill� ollut ohjelmointia
+23:39 < liiwi> yl�asteella oli vaan jotain wordin ja excelin k�pistely�... me pelattiin vaan mechwarrioria :)
+23:39 < liw> mä istuin enimmäkseen yksin mikroluokassa kun muut oli kuuntelemassa opettajaa luokkahuoneessa
+--- Log closed Mon Dec 08 00:00:33 2003

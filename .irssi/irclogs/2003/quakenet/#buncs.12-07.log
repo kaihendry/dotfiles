@@ -799,3 +799,11 @@
 23:04 -!- mode/#buncs [+o GwieF_] by Q
 23:04 -!- mode/#buncs [+v GwieF_] by Novis|busy
 23:04 -!- GwieF [GwieF@213.78.92.162] has quit [Ping timeout]
+23:10 -!- Krypt0n [~a@dsl-217-155-82-142.zen.co.uk] has joined #buncs
+23:10 -!- mode/#buncs [+v Krypt0n] by Novis|busy
+23:34 -!- Novis|busy is now known as NoVisAnima
+23:47 -!- ChocoJon [~a@82-32-107-62.cable.ubr02.hawk.blueyonder.co.uk] has joined #buncs
+23:47 -!- mode/#buncs [+v ChocoJon] by NoVisAnima
+23:56 <+|31770|> is there a way to trace the stack in lisp without having an error
+23:57 <+Krypt|LpTp> no idea
+--- Log closed Mon Dec 08 00:00:33 2003

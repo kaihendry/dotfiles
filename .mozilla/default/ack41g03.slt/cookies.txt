@@ -3,48 +3,47 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-metrics.watchfire.com	FALSE	/buystream/perspective/bin/	FALSE	1070832931	bpExpire1	visitStartTime-1070829615&lastPg-watchfire$2eerrors$2e404$2easpx?aspxerrorpath$3d$2esolutions$2elinkbot$2easpx&timeAtLastPg-1070829615&orderOfLastPg-1&tzone-2&lang-en-us&dntime-&
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073258777	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
+plone.org	FALSE	/	FALSE	1102375040	wstyle	Large Text
+.ibm.com	TRUE	/	FALSE	1078600764	msp	2
+.www.ibm.com	TRUE	/rc	FALSE	1293753601	sauidp	p0030000000004F3F10708245440000076448.00D5F3B40B
 metrics.watchfire.com	FALSE	/buystream/perspective/bin/	FALSE	1197321331	bpNoExpire1	3F322931716F6C656A6D656F686E6E6A6D6B7A2A32716D7A3A2A716D6C6B6C646E656A6D697A302A716D6C6B6C646E656A6D697A
-metrics.watchfire.com	FALSE	/buystream/perspective/bin/	FALSE	1070832931	bpPathHistory1	watchfire$2eerrors$2e404$2easpx?aspxerrorpath$3d$2esolutions$2elinkbot$2easpx
 .www.klografx.de	TRUE	/	FALSE	1070920250	last_page	about
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 wtdcs.duke-energy.com	FALSE	/	FALSE	1386189950	DUKE_ENERGY_ID	213.243.180.11-426062592.29605123::3D2E386F3CA8069E05BE59C3CE58A9C6
-.time.com	TRUE	/	FALSE	2051222400	PFUID	cdbcee863fd3914b10cd1001ffffff9d
-.time.com	TRUE	/	FALSE	1070916306	adsPopup0	1070829901063
 www.time.com	FALSE	/	FALSE	1102365909	Reminder	NO
 .time.com	TRUE	/	FALSE	1078865102	PopUpCallsTD	meta%7C1070829902806%7C1%7Eunload%7C1070829902806%7C1
+.time.com	TRUE	/	FALSE	2051222400	PFUID	cdbcee863fd3914b10cd1001ffffff9d
+.time.com	TRUE	/	FALSE	1070916306	adsPopup0	1070829901063
 .timeinc.net	TRUE	/	FALSE	2051222401	PFUID	cdbcee933fd3914e5abf1001ffffff9d
 .mediaplex.com	TRUE	/	FALSE	1245628801	svid	31304709616
 .atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522
 .atwola.com	TRUE	/	FALSE	1102242987	badsrfi	V023aafb85addf73103fd1b12bf993
 www.artima.com	FALSE	/	FALSE	1073421781	jive.user.lastvisited	1070829608034
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073248758	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .cygnusproductions.com	TRUE	/	FALSE	2051222401	SITESERVER	ID=4ca126a7d6045f784c089694c5e56bb5
 .intelli-direct.com	TRUE	/	FALSE	2272053600	vidi	3328339776
 adserver.anm.co.uk	FALSE	/	FALSE	2145801576	NGUserID	ac1e02df-28542-1070825431-2
 .tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
 www.netaway.com	FALSE	/	FALSE	1076009005	portal	
-.www.ibm.com	TRUE	/rc	FALSE	1293753601	sauidp	p0030000000004F3F10708245440000076448.00D5F3B40B
-.ibm.com	TRUE	/	FALSE	1078600764	msp	2
 www.redhat.com	FALSE	/	FALSE	1228504487	Apache	213.243.180.11.227811070824486822
 .ebay.co.uk	TRUE	/	FALSE	1102354383	nonsession	AQAAAAEAAAAIAAAAZAAAAE5k0z9O8fo/MDEwNzA4MTgzODJ4NzdodHRwOi8vY2dpLmViYXkuY28udWsvd3MvZUJheUlTQVBJLmRsbD9WaWV3SXRlbSZjYXRlZ29yeT0xNDg2Jml0ZW09MzA2MTUwMjA1M04*f
 .ebay.co.uk	TRUE	/	FALSE	1228671191	lucky9	213080
 www.paypal.com	FALSE	/	FALSE	2016898391	Stronghold	213.243.180.11.46141070818303799
-.ehg-oreilly.hitbox.com	TRUE	/	FALSE	1102348851	DM520404M4ZRV6	V1rrrrrz%r@ri%BiQr^r%B%ez%zrzr"%r@ri%BiQrz%r@ri%BiQr"%r@ri%BiQr"%r@ri%BiQr^r%B%e"rz(xB$GDuxB$IxB$BrrBxB$%BxB$%ixB$nl0xB(c:mxB[xBrPOIfxBr2FxBry}}xX$xBrxQ>[acxB(xBr%ixB5xBrBrrBxQ[z7}zA6GDu6I6BrrB6%B6%i6nl0|c:m"HPOIfH2FHy}}tH4[ac|H%i`HBrrBszOffGxXjxB$xB$:DhkauxB(O22fxB(72xB$cW2xB[u2TxB$a_Dc:FmBxB$k2d2khIGGahxB(G3xX$2TFfITcaxX[cIcxBeGIWaTImaxX[jrV%]B
 .ehg-oreilly.hitbox.com	TRUE	/	FALSE	1102348851	DM520402AEDEV6	V1rrrrrz%r@ri%BiQr^r%B%ez%zrzr"%r@ri%BiQrz%r@ri%BiQr"%r@ri%BiQr"%r@ri%BiQr^r%B%e"rz(xB$GDuxB$IxB$BrrBxB$%BxB$%ixB$nl0xB(c:mxB[xBrPOIfxBr2FxBry}}xX$xBrxQ>[acxB(xBr%ixB5xBrBrrBxQ[z7}zA6GDu6I6BrrB6%B6%i6nl0|c:m"HPOIfH2FHy}}tH4[ac|H%i`HBrrBszOffGxXjxB$xB$:DhkauxB(O22fxB(72xB$cW2xB[u2TxB$a_Dc:FmBxB$k2d2khIGGahxB(G3xX$2TFfITcaxX[cIcxBeGIWaTImaxX[jrV%]B
 .hitbox.com	TRUE	/	FALSE	1102348851	WSS_GW	V1AXiArrz%r@ri%BiQr
 .hitbox.com	TRUE	/	FALSE	1070899251	CTG	1070812850
+.ehg-oreilly.hitbox.com	TRUE	/	FALSE	1102348851	DM520404M4ZRV6	V1rrrrrz%r@ri%BiQr^r%B%ez%zrzr"%r@ri%BiQrz%r@ri%BiQr"%r@ri%BiQr"%r@ri%BiQr^r%B%e"rz(xB$GDuxB$IxB$BrrBxB$%BxB$%ixB$nl0xB(c:mxB[xBrPOIfxBr2FxBry}}xX$xBrxQ>[acxB(xBr%ixB5xBrBrrBxQ[z7}zA6GDu6I6BrrB6%B6%i6nl0|c:m"HPOIfH2FHy}}tH4[ac|H%i`HBrrBszOffGxXjxB$xB$:DhkauxB(O22fxB(72xB$cW2xB[u2TxB$a_Dc:FmBxB$k2d2khIGGahxB(G3xX$2TFfITcaxX[cIcxBeGIWaTImaxX[jrV%]B
 www.xml.com	FALSE	/	FALSE	1577836800	CP	null*
 .gallery.menalto.com	TRUE	/	FALSE	1102345596	phpbb2mysql_data	a%3A2%3A%7Bs%3A11%3A%22autologinid%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22userid%22%3Bs%3A5%3A%2228094%22%3B%7D
 gallery.menalto.com	FALSE	/	FALSE	1859749735	POSTNUKESID	089af227f1c8c78f406ff1ffecb086a6
 .fastclick.net	TRUE	/	FALSE	1070967804	m3	d31353:2::1302:1070795003|
 .servedby.advertising.com	TRUE	/	FALSE	1073386926	57312376	_3fd308ae,,88187^142074_
-.servedby.advertising.com	TRUE	/	FALSE	1073386902	5777331688	_3fd30896,5777331688,102759^88566&69834^143671_
 .advertising.com	TRUE	/	FALSE	1228474903	BASE	86r106UL7smy6+tzylmPiX1FakidySE!
-.advertising.com	TRUE	/	FALSE	1228474897	ACID	ee010010707948970001!
 .servedby.advertising.com	TRUE	/	FALSE	1073386903	38605100	_3fd30897,,102759^61574&71276^142830_
 .fastclick.net	TRUE	/	FALSE	1133002980	pluto	913220973|0|
+.servedby.advertising.com	TRUE	/	FALSE	1073386902	5777331688	_3fd30896,5777331688,102759^88566&69834^143671_
+.advertising.com	TRUE	/	FALSE	1228474897	ACID	ee010010707948970001!
 www.tbray.org	FALSE	/	FALSE	1102330267	style	sans
 www.menalto.com	FALSE	/demo/gallery2/	FALSE	1859192448	GALLERYSID	3cdbd8a4ee8b9a7639d2da20ff956253
 .b3ta.com	TRUE	/	FALSE	1102281605	session_cookie	0

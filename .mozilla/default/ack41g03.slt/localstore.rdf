@@ -10,13 +10,30 @@
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#TransferRate"
                    ordinal="11" />
   <RDF:Seq about="nc:urlbar-history">
+    <RDF:li>www.debian.info</RDF:li>
+    <RDF:li>www.debian.fi</RDF:li>
+    <RDF:li>debian.fi</RDF:li>
+    <RDF:li>ln.hixie.ch</RDF:li>
+    <RDF:li>www.opera.com</RDF:li>
+    <RDF:li>mozilla.org</RDF:li>
+    <RDF:li>http://www.google.com/</RDF:li>
+    <RDF:li>www.w3.org</RDF:li>
+    <RDF:li>plone.org</RDF:li>
+    <RDF:li>http://tap.homelinux.org/~hendry/testwiki/</RDF:li>
+    <RDF:li>prazefarm.co.uk</RDF:li>
+    <RDF:li>scribot.com</RDF:li>
+    <RDF:li>http://people.debian.org/~daenzer/</RDF:li>
+    <RDF:li>http://www.ibm.com/</RDF:li>
+    <RDF:li>google.com</RDF:li>
+    <RDF:li>uk.imdb.com</RDF:li>
+    <RDF:li>file:///tmp/</RDF:li>
+    <RDF:li>http://www.cs.helsinki.fi/research</RDF:li>
+    <RDF:li>freshmeat.net</RDF:li>
     <RDF:li>http://www.duke-energy.com</RDF:li>
     <RDF:li>http://www.time.com</RDF:li>
     <RDF:li>www.chase.com</RDF:li>
-    <RDF:li>http://www.google.com/</RDF:li>
     <RDF:li>www.slashdot.org</RDF:li>
     <RDF:li>http://www.theregister.co.uk/</RDF:li>
-    <RDF:li>http://people.debian.org/~daenzer/</RDF:li>
     <RDF:li>www.urbanmyth.org/microcode</RDF:li>
     <RDF:li>http://www.linux-laptop.net/</RDF:li>
     <RDF:li>linuxtv.org</RDF:li>
@@ -76,8 +93,8 @@
     <NC:persist resource="chrome://communicator/content/bookmarks/addBookmark.xul#bookmarks-view"/>
   </RDF:Description>
   <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#newBookmarkDialog"
-                   screenX="24"
-                   screenY="24" />
+                   screenX="202"
+                   screenY="52" />
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul#abResultsOutliner"
                    height="94" />
   <RDF:Description about="chrome://messenger/content/messenger.xul">
@@ -203,7 +220,7 @@
   <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#bookmarks-view"
                    colinfo=" col:Name?width=&amp;hidden=&amp;ordinal=1"
                    height="184"
-                   width="385" />
+                   width="483" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#totalCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/pref/pref.xul#prefDialog"
