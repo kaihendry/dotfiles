@@ -101,7 +101,7 @@ send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>'
 #send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 
-#bind attach S save-entry
+bind attach S save-entry
 macro attach s S^A~/Mail/mail-attachments/
 
 #more powerful editing :)

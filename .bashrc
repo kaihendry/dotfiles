@@ -9,7 +9,7 @@ if [ "$PS1" ]; then
 
     # For subversion on CS computers
     if [ -d /opt/subversion-0.34.0/bin/ ]; then
-        export PATH=$PATH:/opt/subversion-0.34.0/bin/
+        export PATH=$PATH:/opt/subversion-0.34.0/bin/:/home/group/nodes/scripts/bin
     fi
 
     export EDITOR=vim
@@ -61,3 +61,4 @@ if [ "$PS1" ]; then
 fi
 
 export EMAIL=hendry@cs.helsinki.fi
+export CVSROOT=/home/group/nodes/cvs

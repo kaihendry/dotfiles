@@ -47,6 +47,7 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 set encoding=utf-8          " Set Unicode as the default encoding
 set fileencodings=ucs-bom,utf-8,latin1
 
+" How many lines to look for vim commands
 set modelines=5
 
 " Trim whitespace from python files

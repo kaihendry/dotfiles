@@ -90,7 +90,7 @@ application/x-starmath;/home/hendry/.openoffice/1.0.2/soffice %s
 text/html			; w3m -T text/html -dump '%s'		; copiousoutput; description="HTML Text";
 text/plain			; cat %s                               	; copiousoutput
 application/MSWORD		; antiword %s				; copiousoutput
-image/*             ; feh %s                    ; 
+image/*             ; xv %s                    ; 
 application/pdf;                acroread %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput
 # Java Web Start
