@@ -7,6 +7,11 @@ if [ "$PS1" ]; then
 
     export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 
+    # For subversion on CS computers
+    if [ -d /opt/subversion-0.34.0/bin/ ]; then
+        export PATH=$PATH:/opt/subversion-0.34.0/bin/
+    fi
+
     export EDITOR=vim
     export VISUAL=vim
     export CVSEDITOR=vim
