@@ -1,13 +1,13 @@
 # Mozilla User Preferences
 // This is a generated file!
 
-user_pref("browser.download.dir", "/home/hendry/personal/jutta-flight-march-2004");
+user_pref("browser.download.dir", "/home/hendry");
 user_pref("browser.download.save_converter_index", 0);
-user_pref("browser.history.last_page_visited", "http://www.faqs.org/docs/bashman/bashref_toc.html#SEC_Contents");
+user_pref("browser.history.last_page_visited", "http://www.mozilla.org/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
 user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
-user_pref("browser.startup.homepage_override.mstone", "rv:1.2.1");
+user_pref("browser.startup.homepage_override.mstone", "rv:1.0.1");
 user_pref("browser.tabs.loadInBackground", true);
 user_pref("browser.tabs.opentabfor.middleclick", true);
 user_pref("browser.toolbars.showbutton.print", false);
