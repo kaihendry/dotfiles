@@ -7,11 +7,14 @@ source  ~/Mail/mutt.addressbook
 
 set imap_force_ssl=yes
 
+set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
+set folder={hendry@mail.cs.helsinki.fi/ssl}
 
-account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}INBOX; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
-account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}INBOX'
+#account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
+#account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}INBOX'
 
-mailboxes ! +INBOX +INBOX.inex +INBOX.debating +INBOX.junk
+mailboxes ! +INBOX +INBOX.debating +INBOX.junk
+mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX {hendry@daidalos.pannuhuone.org/ssl}INBOX
 
 #set move=yes
 
