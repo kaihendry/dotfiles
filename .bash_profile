@@ -9,17 +9,17 @@
 
 # include .bashrc if it exists
 
-#if [ -f ~/.bashrc ]; then
-#    source ~/.bashrc
-#fi
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
 
 # set PATH so it includes user's private bin if it exists
-#if [ -d ~/bin ] ; then
-#    PATH=~/bin:"${PATH}"
-#fi
+if [ -d ~/bin ] ; then
+    PATH=~/bin:"${PATH}"
+fi
 
 # do the same with MANPATH
-#if [ -d ~/man ]; then
-#    MANPATH=~/man:"${MANPATH}"
-#    export MANPATH
-#fi
+if [ -d ~/man ]; then
+    MANPATH=~/man:"${MANPATH}"
+    export MANPATH
+fi

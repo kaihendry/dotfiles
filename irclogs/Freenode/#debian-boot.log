@@ -2225,3 +2225,8 @@
 11:08 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has quit [Read error: 110 (Connection timed out)]
 11:17 -!- hile [~hile@ua199d55.elisa.omakaista.fi] has quit [Read error: 110 (Connection timed out)]
 11:57 -!- Jonzl [~Jonzl@dfn236108.extern.uni-tuebingen.de] has joined #debian-boot
+12:11 < pere> joeyh: I noticed your agressive plan to get the next beta out.  I am not sure there will be enough time to test all the changes that will be commited to CVS once CVS is working.
+12:12 < pere> Another problem I am experiencing is the fact that passwd (shadow package) isn't updated very often.  I'm still waiting for the norwegian translations to be accepted.  I've been waiting since 2003-08-20.
+12:13 < waldi> pere: ask aj for nmu approval
+12:14 < pere> I can not NMU every package under the sun.  I do not have time left to keep an eye on them after the NMU.
+12:14 -!- manty [~manty@204.Red-213-96-224.pooles.rima-tde.net] has joined #debian-boot

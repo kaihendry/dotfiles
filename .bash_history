@@ -1,5 +1,3 @@
-svn update
-svn rm mail
 svn commit
 svn update
 ls
@@ -498,3 +496,5 @@ rm debian/
 rm -rf debian/
 history | grep debian
 history | ssh
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057personal\057accomodation'`"
