@@ -1,67 +1,3 @@
-cd ..
-rm -rf .qt
-rm -rf .vnc/
-rm -rf .ymessenger/
-rm -rf .themes/
-cd .phoenix/
-ll
-cd default/
-ls
-cd 
-rm -rf .phoenix/
-cd python/
-ls
-cd ..
-mv python/ debian/python-scratch
-cd debian/
-svn add python-scratch/
-ls
-svn update
-mv python-scratch/ ..
-cd 
-svn commit
-svn status
-cd personal/
-svn add hut-transcript.pdf casino/
-cd 
-svn commit
-cd .mozilla
-cd default/
-ll
-cd ack41g03.slt/
-ll
-svn propedit svn:ignore Cache
-ls
-ls -al
-svn propedit svn:ignore .
-ls
-svn propedit svn:ignore .
-svn proplist
-svn propget svn:ignore .
-svn propedit svn:ignore .
-cd
-svn commit
-cd /home/hendry/.mozilla/default/ack41g03.slt/
-ll
-cd 
-svn cleanup
-cd .mozilla/default/ack41g03.slt/
-svn propget svn:ignore .
-svn propedit svn:ignore .
-svn cleanip
-svn cleanup
-svn propedit svn:ignore .
-svn cleanup
-svn propget svn:ignore .
-svn cleanup
-cd 
-svn commit
-svn cleanup
-rm -rf .mozilla/default/ack41g03.slt/Cache.Trash
-svn cleanup
-rm -rf .mozilla/default/ack41g03.slt/Cache
-svn cleanup
-svn commit
 cd /home/hendry/.mozilla/default/ack41g03.slt/
 ll
 cd
@@ -498,3 +434,67 @@ galeon
  PROMPT_COMMAND='pwd>&7;kill -STOP $$'
  cd "`echo -e '\057home\057hendry\057\056irssi'`"
  cd "`echo -e '\057home\057hendry\057\056irssi\057logs'`"
+vim .bashrc 
+svn commit
+lsl
+ll
+svn status | less
+cd .mozilla-snapshot/
+ls
+ll
+cd hendry/n4ffvbzo.slt/
+ls
+w3m bookmarks.html 
+cd 
+rm -rf .mozilla-snapshot/
+ll
+cd personal/
+svn commit
+cd 
+ls
+ll
+mc
+ls
+cd svn/
+ls
+ll
+cd 
+mc
+rm -rf bog_backup.tar 
+ll
+ls
+svn status
+cd .irssi/
+ls
+cd scripts/
+ls
+cd 
+svn add .irssi/
+ls
+svn update
+svn commit
+cat .bash_history 
+ls
+ll
+ls
+ll
+svn commit
+shopt -p 
+ls
+mc
+rm dogbertBYE.tar 
+ll
+ls
+rm gnupg-sam.tar 
+ls .*
+ls
+svn propedit svn:ignore .
+svn status
+svn commit
+svn update
+svn commit
+ll
+history | grep svn+ssh
+svn ls svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo
+svn propget svn:externals .
+svn propget svn:ignore .
