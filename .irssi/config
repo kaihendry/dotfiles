@@ -30,7 +30,7 @@ servers = (
     address = "localhost";
     chatnet = "bitlbee";
     port = "6667";
-    autoconnect = "no";
+    autoconnect = "yes";
   },
   {
     address = "irc.fi.quakenet.org";
