@@ -1,6 +1,7 @@
 # $Id$
 
 DEFAULT="$HOME/Maildir"
+logfile $HOME/.maildroplog
 
 ## Silently drop all completely unreadable mail into separate folder
 if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)\?/ || /^Content-Type:.*charset="(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)/)
@@ -24,3 +25,9 @@ if (/^X-Spam-Status: YES /)
 cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
 }
+
+if (/^To: .*prazefarm\.co\.uk/)
+to $DEFAULT/.prazefarm
+
+if (/^To: .*rossetti\.org\.uk/)
+to $DEFAULT/.rossetti

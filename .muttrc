@@ -30,7 +30,6 @@ set beep_new                    # beep if new mail comes in
 set editor="vim '+set tw=72'"
 set ispell="aspell -e -c"
 
-#set allow_8bit
 set charset="utf-8"
 
 set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y.%m-%b`" #Archive inbox mail
@@ -72,7 +71,25 @@ macro pager K "!gpg --lsign-key " "Sign PGP Key"
 macro index X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
 macro pager X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
 
+
+hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
+          X-MimeOLE: Content-Type:
+unignore *
+ignore "from " received mime-version status x-status 
+ignore sender references return-path lines precedence content-length
+ignore priority x-priority x-auth
+ignore X-eGroups-Return X-Mailing-List List-Help List-Unsubscribe List-Archive
+ignore X-Sieve
+ignore Message-Id
 ignore Envelope-to
+ignore Content-Type
+ignore content-transfer-encoding content-disposition
+ignore In-reply-to
+ignore x-originalarrivaltime
+ignore x-bogosity
+ignore x-spam-status
+ignore x-spam-level
+ignore x-mailer user-agent
 
 #set autoedit           # start editor without asking for to, subject,...
 set auto_tag           # if something is tagged, run commands on tagged msgs.
@@ -93,7 +110,8 @@ send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>'
 #send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 
-bind attach S save-entry
+#bind attach S save-entry
 macro attach s S^A~/Mail/mail-attachments/
 
+#more powerful editing :)
 #set edit_headers
