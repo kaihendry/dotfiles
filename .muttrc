@@ -68,6 +68,10 @@ set pgp_replyencrypt  # always encrypt reply to encrypted message
 macro pager J "!gpg --keyserver wwwkeys.eu.pgp.net --recv-key " "Get PGP Key"
 macro pager K "!gpg --lsign-key " "Sign PGP Key"
 
+# BOGOFILTER
+macro index X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
+macro pager X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
+
 ignore Envelope-to
 
 #set autoedit           # start editor without asking for to, subject,...

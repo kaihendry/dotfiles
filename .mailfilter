@@ -1,8 +1,6 @@
 # $Id$
 
 DEFAULT="$HOME/Maildir"
-LOGFILE="/tmp/maildrop"
-LOG="/tmp/maildrop"
 
 ## Silently drop all completely unreadable mail into separate folder
 if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)\?/ || /^Content-Type:.*charset="(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)/)
@@ -14,21 +12,15 @@ xfilter 'bogofilter -f -p -u -l -e -v'
 if (/^X-Bogosity: (Spam|Yes)/)
 to ".spam-bogofilter"
 
-# if unsure, copy this into the "spam-bogofilter" folder and
-# CONTINUE processing
 #if (/^X-Bogosity: Unsure/)
 #cc "unsure-bogofilter"
-#### end bogofilter passthrough-update ####
 
 #### SpamAssassin ####
-# if spamassassin detects spam (this example assumes spamd is running),
-# teach bogofilter about it (avoiding to register spamassassin markup)
-# and store it to spam-spamassassin
+
 xfilter '/usr/bin/spamc'
 
-if (/^X-Spam-Status: YES /) {
+if (/^X-Spam-Status: YES /) 
+{
 cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
 }
-
-#### end SpamAssassin ####
