@@ -57,4 +57,4 @@ ioncore.load_module("mod_ionws")
 --ioncore.load_module("mod_sp")
 
 -- For detailing which workspace my browser should go
-include("x-www-browser")
+include("browserprop")
