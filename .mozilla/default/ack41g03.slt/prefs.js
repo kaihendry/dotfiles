@@ -9,7 +9,7 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/tmp");
+user_pref("browser.download.dir", "/home/hendry/mp3");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
@@ -163,6 +163,7 @@ user_pref("security.warn_leaving_secure", false);
 user_pref("security.warn_submit_insecure", false);
 user_pref("signon.SignonFileName", "70572827.s");
 user_pref("timebomb.first_launch_time", "1070540841017589");
+user_pref("update_notifications.provider.0.last_checked", 1080531758);
 user_pref("wallet.SchemaValueFileName", "70706990.w");
 user_pref("wallet.captureForms", false);
 user_pref("wallet.caveat", true);
