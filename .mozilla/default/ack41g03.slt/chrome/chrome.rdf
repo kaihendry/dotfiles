@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:c="http://www.mozilla.org/rdf/chrome#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description about="urn:mozilla:package:cookie">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:cookie"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:cview">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:cview"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:embed">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:embed"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:global-platform">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:global-platform"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:mozldap">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:mozldap"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:wallet">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:wallet"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:editor-region">
+    <c:selectedLocale resource="urn:mozilla:locale:US:editor-region"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:layoutdebug">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:layoutdebug"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:global-region">
+    <c:selectedLocale resource="urn:mozilla:locale:US:global-region"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:communicator-platform">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:communicator-platform"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:communicator-region">
+    <c:selectedLocale resource="urn:mozilla:locale:US:communicator-region"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:global">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:global"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:autoconfig">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:autoconfig"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:editor">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:editor"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:navigator-region">
+    <c:selectedLocale resource="urn:mozilla:locale:US:navigator-region"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:p3p">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:p3p"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:content-packs">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:content-packs"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:communicator">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:communicator"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:navigator-platform">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:navigator-platform"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:navigator">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:navigator"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:necko">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:necko"/>
+  </RDF:Description>
+  <RDF:Description about="urn:mozilla:package:help">
+    <c:selectedLocale resource="urn:mozilla:locale:en-US:help"/>
+  </RDF:Description>
+</RDF:RDF>

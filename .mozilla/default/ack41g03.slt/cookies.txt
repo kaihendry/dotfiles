@@ -1,0 +1,10 @@
+# HTTP Cookie File
+# http://www.netscape.com/newsref/std/cookie_spec.html
+# This is a generated file!  Do not edit.
+# To delete cookies, use the Cookie Manager.
+
+.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
+.tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
+.imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+.atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522

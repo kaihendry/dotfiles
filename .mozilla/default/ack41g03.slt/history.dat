@@ -1,0 +1,82 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (8A=Typed)(8B=LastPageVisited)(8C=ByteOrder)
+  (80=ns:history:db:row:scope:history:all)
+  (81=ns:history:db:table:kind:history)(82=URL)(83=Referrer)
+  (84=LastVisitDate)(85=FirstVisitDate)(86=VisitCount)(87=Name)
+  (88=Hostname)(89=Hidden)>
+
+<(80=LE)(81=file:///usr/share/doc/mozilla-browser/localstart.html)(B2
+    =1070561737788711)(82=1070496943638051)(83=)(84
+    =L$00o$00c$00a$00l$00 $00D$00e$00b$00i$00a$00n$00 $00S$00t$00a$00r$00t$00 \
+$00P$00a$00g$00e$00)(B3=8)(87=http://news.bbc.co.uk/)(9F=1070525629690255)
+  (88=1070497053774171)(89=news.bbc.co.uk)(8A=1)(91=4)(8B
+    =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00N$00e$00w$00s$00 $00F$00r$00o\
+$00n$00t$00 $00P$00a$00g$00e$00)(8C
+    =http://news.bbc.co.uk/nol/ifs_news/hi/front_page/ticker.stm)(8E=3)
+  (94=http://www.theregister.co.uk/)(95=1070525599549209)(96
+    =www.theregister.co.uk)(86=2)(97=T$00h$00e$00 $00R$00e$00g$00i$00s$00t$00e\
+$00r$00)(98
+    =http://ad.doubleclick.net/adi/N3390.TribalFusion/B1205913.3;sz=468x60;cli\
+ck=http://a.tribalfusion.com/h.click/MPFSDDOKGNSNPDJJSRLOTVDYNSEKITDQSSORRPJMH\
+HJOGJJLKEKSWUBWLSLHNRHKPKNQA/;ord=946643374?)(99=1070525602896784)(9A
+    =ad.doubleclick.net)(9B=C$00l$00i$00c$00k$00 $00H$00e$00r$00e$00)
+  (9C=http://events.theregister.co.uk/feed/featured_event.php?width=160)
+  (9D=events.theregister.co.uk)(9E
+    =T$00h$00e$00 $00R$00e$00g$00i$00s$00t$00e$00r$00 $00E$00v$00e$00n$00t$00 \
+$00o$00f$00 $00t$00h$00e$00 $00W$00e$00e$00k$00)(A0
+    =http://news.bbc.co.uk/2/hi/middle_east/3288515.stm)(A1
+    =1070525674271524)(A2
+    =B$00B$00C$00 $00N$00E$00W$00S$00 $00|$00 $00M$00i$00d$00d$00l$00e$00 $00E\
+$00a$00s$00t$00 $00|$00 $00I$00s$00r$00a$00e$00l$00'$00s$00 $00f$00i$00r$00s$00\
+t$00 $00E$00s$00k$00i$00m$00o$00 $00s$00o$00l$00d$00i$00e$00r$00)(A7
+    =http://www.cs.helsinki.fi/u/hendry)(B4=1070561893885718)(A8
+    =1070560809962419)(A9=www.cs.helsinki.fi)(AA
+    =http://www.cs.helsinki.fi/u/hendry/)(AB
+    =K$00a$00i$00 $00H$00e$00n$00d$00r$00y$00 $00@$00 $00H$00e$00l$00s$00i$00n\
+$00k$00i$00)(AC=http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=index)
+  (AD=db.cs.helsinki.fi)(AE
+    =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
+$00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00I$00n$00d$00e$00x$00)(AF
+    =http://db.cs.helsinki.fi/~hendry/faqwiz/faqw.py?req=show&file=faq01.058.h\
+tp)(B5=1070561901814031)(B0=1070560817546992)(B1
+    =h$00e$00n$00d$00r$00y$00'$00s$00 $00t$00i$00p$00s$00 $00a$00n$00d$00 $00t\
+$00r$00i$00c$00k$00s$00 $00F$00A$00Q$00 $00E$00n$00t$00r$00y$00)(B6
+    =http://localhost/doc/subversion)(B7=1070561923149757)(B8=localhost)
+  (B9=http://localhost/doc/subversion/)(BA
+    =I$00n$00d$00e$00x$00 $00o$00f$00 $00/$00d$00o$00c$00/$00s$00u$00b$00v$00e\
+$00r$00s$00i$00o$00n$00)(BB=http://localhost/doc/subversion/book/)(BC
+    =I$00n$00d$00e$00x$00 $00o$00f$00 $00/$00d$00o$00c$00/$00s$00u$00b$00v$00e\
+$00r$00s$00i$00o$00n$00/$00b$00o$00o$00k$00)(BD
+    =http://localhost/doc/subversion/book/book.html)(BE=1070561927330558)
+  (BF=V$00e$00r$00s$00i$00o$00n$00 $00C$00o$00n$00t$00r$00o$00l$00 $00w$00i$00\
+t$00h$00 $00S$00u$00b$00v$00e$00r$00s$00i$00o$00n$00)(C0
+    =http://localhost/doc/subversion/book/book.html#svn-ch-3-sect-2)
+  (C1=1070561985783801)(C2
+    =http://localhost/doc/subversion/book/book.html#svn-ch-5-sect-6.2)
+  (C3=1070562002715546)>
+{1:^80 {(k^81:c)(s=9)[1(^8C=LE)]} 
+  [2(^82^81)(^84^B2)(^85^82)(^88=)(^87^84)(^86=8)]
+  [3(^82^87)(^84^9F)(^85^88)(^88^89)(^8A=1)(^86=4)(^87^8B)]
+  [4(^82^8C)(^84^9F)(^85^88)(^88^89)(^89=1)(^87=)(^86=3)]
+  [5(^82^94)(^84^95)(^85^95)(^88^96)(^8A=1)(^86=2)(^87^97)]
+  [6(^82^98)(^84^99)(^85^99)(^88^9A)(^89=1)(^87^9B)]
+  [7(^82^9C)(^84^99)(^85^99)(^88^9D)(^89=1)(^87^9E)]
+  [8(^82^A0)(^84^A1)(^85^A1)(^88^89)(^87^A2)]
+  [9(^82^A7)(^84^B4)(^85^A8)(^88^A9)(^8A=1)(^86=3)(^89=1)]
+  [A(^82^AA)(^84^B4)(^85^A8)(^88^A9)(^87^AB)(^86=2)]
+  [B(^82^AC)(^84^B4)(^85^A8)(^88^AD)(^87^AE)(^86=2)]
+  [C(^82^AF)(^84^B5)(^85^B0)(^88^AD)(^87^B1)(^86=2)]
+  [D(^82^B6)(^84^B7)(^85^B7)(^88^B8)(^8A=1)(^86=2)(^89=1)]
+  [E(^82^B9)(^84^B7)(^85^B7)(^88^B8)(^87^BA)]
+  [F(^82^BB)(^84^B7)(^85^B7)(^88^B8)(^87^BC)]
+  [10(^82^BD)(^84^BE)(^85^BE)(^88^B8)(^87^BF)]
+  [11(^82^C0)(^84^C1)(^85^C1)(^88^B8)]
+  [12(^82^C2)(^84^C3)(^85^C3)(^88^B8)]}
+
+@$${14{@
+
+<(C4=http://localhost/doc/subversion/book/book.html#svn-ch-3-sect-7.3)
+  (C5=1070562112306154)>
+{1:^80 {(k^81:c)(s=9)1 } [-13(^82^C4)(^84^C5)(^85^C5)(^88^B8)]}
+@$$}14}@
