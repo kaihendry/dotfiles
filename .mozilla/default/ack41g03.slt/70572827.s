@@ -29,6 +29,12 @@ https://www.amazon.co.uk
 https://www.gandi.net
 https://www.helsinki.fi
 .
+192.168.1.1:80 (Prestige 650R-31)
+\=username=\
+~YWRtaW4=
+*\=password=\
+~a2FkdWl0NHBvcnQ=
+.
 http://bugs.skolelinux.no
 Bugzilla_login
 ~aGVuZHJ5QGNzLmhlbHNpbmtpLmZp
