@@ -1,0 +1,269 @@
+--- Log opened Sat Dec 06 16:56:00 2003
+16:56 -!- draq [~hendry@cs180011.pp.htv.fi] has joined #buncs
+16:56 -!- Irssi: #buncs: Total of 13 nicks [8 ops, 0 halfops, 4 voices, 1 normal]
+16:56 -!- mode/#buncs [+v draq] by NoVisAnima
+16:56 -!- mode/#buncs [+o draq] by Q
+16:56 -!- Irssi: Join to #buncs was synced in 9 secs
+17:09 <@Neil|Hungover> I have tea \o/
+17:10 <@NoVisAnima> what a good idea
+17:32 -!- NanakiXII [legato@modem-366.gazelle.dialup.pol.co.uk] has joined #buncs
+17:32 -!- mode/#buncs [+v NanakiXII] by NoVisAnima
+17:34 <+NanakiXII> raar
+17:35 <@NoVisAnima> rarrr
+17:38 <@NoVisAnima> how's you?
+17:38 <+NanakiXII> beastied out
+17:41 <@NoVisAnima> any particular reason
+17:41 <+NanakiXII> i have almost finished my lit review
+17:41 <@NoVisAnima> ~:)
+17:42 <@NoVisAnima> and then is that all your cwk done (except jade)?
+17:42 <+NanakiXII> no
+17:42 <+NanakiXII> lisp
+17:42 <@NoVisAnima> ick, i'd forgotten about that
+17:43 <@NoVisAnima> hopefully that wont be too bad
+17:49 <@NoVisAnima> ~:)
+17:50 <+NanakiXII> woo
+17:50 <+NanakiXII> soudns like you had a nice day
+17:50 <@NoVisAnima> yup, i've got all perked up and am going to be able to get stuff done
+17:51 <@NoVisAnima> just got to keep reminding myself *not* to wander into town to watch that film again...
+17:52 <@NoVisAnima> though there could be an organised trip to see it after cwk maybe?
+17:55 <@NoVisAnima> ~:D
+17:55 <@NoVisAnima> flo still thinks that he doesn't need to bother with a lit review
+17:55 <+NanakiXII> ha ha ha @ him
+17:55 <+NanakiXII> but knowing the smug german gitthat he is he will probably get away with it
+17:56  * NanakiXII is 'stremely cold
+17:56 <@NoVisAnima> close the window?
+17:56 <+NanakiXII> it isnt open
+17:56  * NanakiXII does osaka thumb pose *eyaaaayyy*
+17:56 <@NoVisAnima> ^_^
+17:57 <+NanakiXII> anyway i only came on here to get a paper
+17:57 <@NoVisAnima> heh
+17:57 <@NoVisAnima> nice to know you're getting on well, gl with the rest of it ~:)
+18:02 <+|31770|> anyone see whats wrong with this http://www.bath.ac.uk/~cs2om/login.phps
+18:03 <+|31770|> errors on line 10 :/
+18:03 <@Kamakaze> you have an s
+18:03 <+NanakiXII> heh
+18:03 <+NanakiXII> surely the extension should be .php or .php3
+18:03 <+|31770|> lol i know theres an s its so u can see the code
+18:04 <+|31770|> it gives parse error online 10 when its .php
+18:04 <@Kamakaze> ok
+18:04 <+NanakiXII>  mysql_query('SELECT count(User_ID) FROM tblCustomer WHERE Email_address LIKE $input_email);
+18:04 <+NanakiXII> there is a mismatched '
+18:04 <+NanakiXII> ad...surely it should be a string anyway
+18:05 <+|31770|> ah
+18:05 <@Kamakaze> yes its errors dont often indicate that something is wrong on the line given
+18:05 <+NanakiXII> well in this case it kinda did
+18:05 <+NanakiXII> because there was an error assigning $userCount
+18:06 <+|31770|> well that moved the error to line 11
+18:06 <@Kamakaze> there was a parse error
+18:06 <@Kamakaze> on the line with a ' in
+18:06 <@Kamakaze> on line 10 there was another '
+18:06 <@Kamakaze> which ended the string and made everything else wrong
+18:06 <+NanakiXII> you've got another mismatched '
+18:06 <+NanakiXII> on line 11
+18:06 <@Kamakaze> }elseif (&userCount < 1 ) {
+18:06 <@Kamakaze> and should that be a &
+18:06 <+NanakiXII> oh no wait you havent
+18:07 <+NanakiXII> and those should really be "'s anyway
+18:07 <@Kamakaze> no
+18:07 <@Kamakaze> they shouldnt be "
+18:07 <+|31770|> cant have more then one " can u
+18:07 <+NanakiXII> there's another on the $password thing
+18:07 <@Kamakaze> did you copy and paste your query
+18:08 <+NanakiXII> and the $_SESSION['user'] assignment
+18:08 <@Kamakaze> because they all have the same problems
+18:08 <+|31770|> yeh but corrected all of them now
+18:08  * |31770| updates phps file
+18:08 <+|31770|> ok that has those changes in
+18:08 <+NanakiXII> grrr
+18:08 <+NanakiXII> time to go do work
+18:08 -!- NanakiXII [legato@modem-366.gazelle.dialup.pol.co.uk] has quit [Signed off]
+18:08 <@Kamakaze> if you are using '
+18:09 <@Kamakaze> you want to do LIKE '.$input_email
+18:09 <+|31770|> ok
+18:10 <@Kamakaze> echo 'You have entered the incorrect password, please try again.'
+18:10 <@Kamakaze> has a missing ;
+18:11 <@Kamakaze> as does the other echo
+18:12 <@Kamakaze> im guessing you are new at this
+18:12 <+|31770|> lol yeh
+18:12 <+|31770|> got to do half the php coding for the database assignment
+18:13 <@Kamakaze> well mysql_query returns a record set
+18:13 <+|31770|> done some html before but not php
+18:13 <@Kamakaze> not just a single answer
+18:13 <+|31770|> but if u restrict it doe that make a single answer?
+18:13 <@Kamakaze> no
+18:13 <@Kamakaze> you need to get the data from the record set
+18:14 <+|31770|> how do i do that?
+18:14 <@Kamakaze> mysql_fetch_array
+18:14 <+|31770|> instead of query?
+18:14 <@Kamakaze> so eg. $recordSet = mysql_query("SELECT name FROM people LIMIT 1")
+18:14 <@Kamakaze> then $data = mysql_fetch_array($recordSet);
+18:15 <@Kamakaze> then you can do this
+18:15 <@Kamakaze> echo $data['name'];
+18:15 <+|31770|> ok
+18:19 <+|31770|> right have made some changes is that more what u need then?
+18:20 <@Kamakaze> something like that
+18:21 <@Kamakaze> $password['Password']
+18:21 <@Kamakaze> would get the password value
+18:21 <@Kamakaze> you are missing a $ off the userSet
+18:22 <@Kamakaze> and it should be $user['User_ID']
+18:22 <@Kamakaze> also the usercount query needs to be changed
+18:22 <+|31770|> ok
+18:22 -!- GwieF [GwieF@213.78.65.2] has quit [Read error: Connection reset by peer]
+18:23 -!- GwieF [GwieF@213.78.65.2] has joined #buncs
+18:23 -!- mode/#buncs [+o GwieF] by Q
+18:23 -!- mode/#buncs [+v GwieF] by NoVisAnima
+18:25 <+|31770|> with my 1st if : if (!$userCount) {
+18:25 <+|31770|> 		die('mySQL error: '.mysql_errno().':'.mysql_error());
+18:26 <+|31770|> does that need changeing because its just to reprot errors so doesnt test the value
+18:26 <@Kamakaze> thats ok 
+18:26 <+|31770|> thought so
+18:26 <@Kamakaze> but you dont want the elseif
+18:27 <+|31770|> does it want to be usercount set
+18:27 <+|31770|> just anouther if statement then ?
+18:27 <@Kamakaze> yes you want to get the data with a fetch array inside the else
+18:27 <@Kamakaze> then you can check if the usercount is less than 1
+18:28 <@Kamakaze> also you probably want to change the query so it says count(User_ID) as usercount
+18:28 -!- Neil|Hungover [~br@lhstaticip22.lionhead.com] has quit [Read error: Connection reset by peer]
+18:28 <@Kamakaze> so that you can access the count with $data['usercount']
+18:28 <+|31770|> will that do the same thing if it says usercount
+18:29 <+|31770|> ?
+18:29 <+|31770|> or do i need to add a varible
+18:29 -!- Neil|Work [~br@lhstaticip22.lionhead.com] has joined #buncs
+18:29 -!- mode/#buncs [+o Neil|Work] by Q
+18:29 -!- mode/#buncs [+v Neil|Work] by NoVisAnima
+18:29 <@Kamakaze> well it doesnt matter what the variables are called
+18:30 <@Kamakaze> just do what you did for the other queries with the user count ont
+18:30 <@Kamakaze> one
+18:31 <+|31770|> ok ive done that i think
+18:32 <@Kamakaze> [count(User_ID)] 
+18:32 <@Kamakaze> i dont think it will like that
+18:33 <@Kamakaze> 'SELECT count(User_ID) as userCount FROM tblCustomer WHERE Email_address LIKE '.$input_email
+18:33 <@Kamakaze> i would replace the first query with that
+18:33 <@Kamakaze> then 
+18:33 <@Kamakaze> $userCount['userCount']
+18:33 <+|31770|> ah i  c
+18:34 <+|31770|> ok done that but it erroring on line 18
+18:35 <+|31770|> is that the session start thing
+18:35 <@Kamakaze> $password[Password]
+18:35 <@Kamakaze> should be
+18:36 <@Kamakaze> $password['Password']
+18:36 <@Kamakaze> and also you dont want to be assigning 0 to $password['Password']
+18:36 <+|31770|> do i wnat to put ' around the other ones aswell
+18:36 <@Kamakaze> yes
+18:36 <+|31770|> == work?
+18:36 <@Kamakaze> yes
+18:37 <@Kamakaze> $password = mysql_fetch_array($recordSet);
+18:37 <@Kamakaze> that $recordSet should be $passwordSet
+18:37 <@Kamakaze> since that is what you called it
+18:37 <+|31770|> yay now got to the sql errors ;)
+18:52 <+Krypt|LpTp> yay (let a 1 c) => (VAR a 1)\nc
+18:52 <@NoVisAnima> ~:)
+18:53 <+Krypt|LpTp> getting there!
+18:53 <@NoVisAnima> that's the spirit
+19:14 <@NoVisAnima> AIIEE
+19:14 <@NoVisAnima> burgers aren't supposed to make a loud popping noise while they're cooking are they?
+19:18 -!- NanakiXII [legato@modem-3634.jaguar.dialup.pol.co.uk] has joined #buncs
+19:18 -!- mode/#buncs [+v NanakiXII] by NoVisAnima
+19:19 -!- NanakiXII is now known as Nana|php
+19:20 <+Krypt|LpTp> if they are popping burgers then yes
+19:20 <+Nana|php> ?
+19:20 <@NoVisAnima> these aren't poppnig burgers
+19:20 <@NoVisAnima> just normal burgers in me grill
+19:20 <@NoVisAnima> and it went POP
+19:21 <@NoVisAnima> very loudly
+19:21 <@NoVisAnima> lo Nana|php
+19:21 <+Nana|php> it's just fat
+19:21 <@NoVisAnima> fat usually doesn't make a noise that loud though
+19:21 <+Nana|php> i think i might go and play on my brother's xmas present
+19:22 <+Nana|php> mind you, not having a memory card sucks butt
+19:23 <@NoVisAnima> tut tut
+19:24 <@NoVisAnima> you should make sure you have the equipment needed to actually play games when at home, v useful for cheering you up and relaxing ~:)
+19:25 -!- Krypt0n [~a@dsl-217-155-82-142.zen.co.uk] has joined #buncs
+19:25 -!- mode/#buncs [+v Krypt0n] by NoVisAnima
+19:25 -!- Nana|php [legato@modem-3634.jaguar.dialup.pol.co.uk] has quit [Signed off]
+20:15 -!- GwieF [GwieF@213.78.65.2] has quit [Ping timeout]
+20:17 -!- GwieF [GwieF@213.78.83.136] has joined #buncs
+20:17 -!- mode/#buncs [+o GwieF] by Q
+20:17 -!- mode/#buncs [+v GwieF] by NoVisAnima
+21:18 -!- Rach|here [Dot_Com@host-138-38-227-243.nat.bath.ac.uk] has joined #buncs
+21:18 -!- mode/#buncs [+v Rach|here] by NoVisAnima
+21:19 <+Rach|here> lo all
+21:19 <@NoVisAnima> lo
+21:19 <+Rach|here> can anyone help me at all?
+21:19 <+Rach|here> ah, lo NoVisAnima
+21:19 <@NoVisAnima> how so?
+21:20 <+Rach|here> know owt bout bit torrent?
+21:20 <@NoVisAnima> mm hmm
+21:21 <+Rach|here> where do I get torrents from?
+21:21 <@NoVisAnima> you could try www.suprnova.org
+21:22 <+Rach|here> Forbidden
+21:22 <+Rach|here> You don't have permission to access /~skrams/SuprNova on this server.
+21:22 <+Rach|here> apparently
+21:22 <@NoVisAnima> refresh
+21:23 <@NoVisAnima> suprnova keeps faffing up with the number of hits it gets
+21:23 <+Rach|here> ahhh, ta
+21:26 <+Rach|here> wow, it works, eat that BUCS :)
+21:28 <@NoVisAnima> tee hee
+21:28 <+Rach|here> well, they took kazaa away from me, what was I meant to do?
+21:29 <@NoVisAnima> dont over use it
+21:29 <@NoVisAnima> cos they'll take that away next
+21:29 <+Rach|here> lol, true
+21:30 <+Rach|here> but no one I've asked has really heard of it, should be OK I hope
+21:32 <@NoVisAnima> should be
+21:33 -!- NoVisAnima is now known as Novis|phone
+21:33 -!- Krypt|LpTp [~A@dsl-217-155-82-142.zen.co.uk] has quit [Read error: Connection reset by peer]
+22:18 -!- Novis|phone is now known as NoVisAnima
+22:34 -!- Mathew` [MaT@82-32-29-145.cable.ubr04.azte.blueyonder.co.uk] has quit [Signed off]
+22:39 -!- Mathew [MaT@82-32-29-145.cable.ubr04.azte.blueyonder.co.uk] has joined #buncs
+22:39 -!- mode/#buncs [+o Mathew] by Q
+22:39 -!- mode/#buncs [+v Mathew] by NoVisAnima
+23:15 -!- Rach|here [Dot_Com@host-138-38-227-243.nat.bath.ac.uk] has quit [Signed off]
+23:22 -!- Nana|php [legato@modem-4061.gazelle.dialup.pol.co.uk] has joined #buncs
+23:22 -!- mode/#buncs [+v Nana|php] by NoVisAnima
+23:22 <+Krypt0n> bah, so much for 20mins of relaxation of savage. 2hrs later :E
+23:22 <+Nana|php> i am a beasty beasty beasty beast
+23:22 -!- Nana|php is now known as Nana|beast
+23:25  * Nana|beast groans loudly
+23:26 <@NoVisAnima> ~:/
+23:26 <@NoVisAnima> problem?
+23:27 -!- mode/#buncs [+o Krypt0n] by Q
+23:27 <+Nana|beast> that's more like it!!!
+23:28 <@NoVisAnima> what the?
+23:28 <+Nana|beast> i am trynig to re-do my silly blog
+23:28 <@NoVisAnima> ~:o
+23:31 <@NoVisAnima> how's it going
+23:32 <+Nana|beast> good
+23:34 -!- Nana|beast is now known as nana|blog
+23:34 <+nana|blog> afk
+23:36 <@NoVisAnima> aiiee, i spend a good 3 hours not cooking dinner because i keep doing things
+23:40 <+nana|blog> yaaay
+23:40 <+nana|blog> finished
+23:40 -!- nana|blog is now known as Nana`
+23:42 -!- Krypt|LpTp [~A@dsl-217-155-82-142.zen.co.uk] has joined #buncs
+23:42 -!- mode/#buncs [+v Krypt|LpTp] by NoVisAnima
+23:43 <@NoVisAnima> so it's online somewhere?
+23:44 -!- mode/#buncs [+o Krypt|LpTp] by Krypt0n
+23:45 <+Nana`> http://www.cosplay.me.uk/blog
+23:47 <@NoVisAnima> reminds me of... this http://web.archive.org/web/20020602222618/www.nanaki.co.uk/journal/
+23:47 <+Nana`> yes, quite
+23:48 <+Nana`> did i just say that or did you already know 
+23:49 <@NoVisAnima> i recognised the layout
+23:50 <+Nana`> but how did you see it before
+23:51 <+Nana`> (i did an entry)
+23:52 <@NoVisAnima> well just as you said you were finishing i popped there to see if i'd remembered where you said you'd put it
+23:52 <@NoVisAnima> then i recognised the layout and checked the web archive to see if there was anything of the old one
+23:53 <+Nana`> well i dont see how you wouldve seen nanaki.co.uk before
+23:53 <+Nana`> i didnt know you when i owned that domain
+23:54 <@NoVisAnima> oh you didn't know me by face
+23:54 <@NoVisAnima> but i've been on *here* since the early part of the first year
+23:55 <@NoVisAnima> i do remember you having that domain
+23:55 <@NoVisAnima> i do remember when you had a "stalker" and moved the journal to something along the lines of "donutcomeherefagitz"
+23:55 <+Nana`> oh
+23:57 <@NoVisAnima> i have a rather silly memory
+23:57 <+Nana`> Hm...
+23:57 <@NoVisAnima> i remember little stupid facts without thinking
+23:57 <@NoVisAnima> but it's the whole putting them together for any good use
+23:57 <@NoVisAnima> like... exam answers
+23:57 <@NoVisAnima> when things go wrong
+23:58 <+Nana`> er...generally I think they'd call "remembering little facts" stalking
+--- Log closed Sun Dec 07 00:00:03 2003

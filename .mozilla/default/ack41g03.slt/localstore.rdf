@@ -4,13 +4,11 @@
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#unreadCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#LastVisitDate"
-                   ordinal="13"
-                   width="" />
+                   ordinal="13" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#sizeCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#BookmarkAddDate"
-                   ordinal="9"
-                   width="" />
+                   ordinal="9" />
   <RDF:Description about="NC:BookmarksRoot#$f063a763"
                    NC:open="true" />
   <RDF:Description about="NC:BookmarksRoot"
@@ -69,13 +67,16 @@
                    height="480"
                    screenX="0"
                    screenY="26"
-                   sizemode="normal" />
+                   sizemode="maximized" />
   <RDF:Description about="chrome://navigator/content/navigator.xul#main-window"
                    screenX="0"
                    screenY="26"
                    width="625"
                    height="514"
                    sizemode="maximized" />
+  <RDF:Description about="chrome://navigator/content/metadata.xul">
+    <NC:persist resource="chrome://navigator/content/metadata.xul#metadata"/>
+  </RDF:Description>
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#ProgressPercent"
                    ordinal="5" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#bookmarks-view"
@@ -84,8 +85,7 @@
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#URL"
                    ordinal="3"
-                   width="399"
-                   hidden="" />
+                   width="399" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#statusCol"
                    hidden="true" />
   <RDF:Description about="chrome://navigator/content/viewPartialSource.xul#main-window"
@@ -97,6 +97,8 @@
   <RDF:Description about="chrome://communicator/content/pref/pref.xul">
     <NC:persist resource="chrome://communicator/content/pref/pref.xul#prefDialog"/>
   </RDF:Description>
+  <RDF:Description about="rdf:#$1UZZ.2"
+                   NC:open="true" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul">
     <NC:persist resource="chrome://messenger/content/mail3PaneWindowVertLayout.xul#threadOutliner"/>
     <NC:persist resource="chrome://messenger/content/mail3PaneWindowVertLayout.xul#statusCol"/>
@@ -120,8 +122,7 @@
                    NC:open="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#Name"
                    ordinal="1"
-                   width="188"
-                   hidden="" />
+                   width="188" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#TimeElapsed"
                    ordinal="13" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#messengerWindow"
@@ -134,8 +135,7 @@
                    sortDirection="descending"
                    ordinal="3" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#LastModifiedDate"
-                   ordinal="11"
-                   width="" />
+                   ordinal="11" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#Name"
                    ordinal="1" />
   <RDF:Description about="NC:PersonalToolbarFolder"
@@ -143,8 +143,7 @@
   <RDF:Description about="chrome://messenger/content/messenger.xul#unreadCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#ShortcutURL"
-                   ordinal="5"
-                   width="" />
+                   ordinal="5" />
   <RDF:Description about="chrome://navigator/content/navigator.xul#sidebar-panels"
                    last-selected-panel="urn:sidebar:panel:bookmarks" />
   <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#newBookmarkDialog"
@@ -187,8 +186,13 @@
   <RDF:Description about="chrome://navigator/content/viewSource.xul">
     <NC:persist resource="chrome://navigator/content/viewSource.xul#main-window"/>
   </RDF:Description>
+  <RDF:Description about="chrome://navigator/content/metadata.xul#metadata"
+                   screenX="0"
+                   screenY="26" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#sizeCol"
                    hidden="true" />
+  <RDF:Description about="rdf:#$fUZZ.2"
+                   NC:open="true" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#TimeRemaining"
                    ordinal="7" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#Transferred"
@@ -199,6 +203,10 @@
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul#abResultsOutliner"
                    height="94" />
   <RDF:Seq about="nc:urlbar-history">
+    <RDF:li>validator.w3.org</RDF:li>
+    <RDF:li>http://tap.homelinux.org/~hendry/testwiki/moin.cgi/test</RDF:li>
+    <RDF:li>tap.homelinux.org/~hendry/testwiki</RDF:li>
+    <RDF:li>http://www.helsinki.fi/hyy/esn/minutes/</RDF:li>
     <RDF:li>http://www.google.fi/</RDF:li>
     <RDF:li>www.go</RDF:li>
     <RDF:li>cnn.com</RDF:li>
@@ -225,8 +233,7 @@
   </RDF:Seq>
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#Description"
                    ordinal="7"
-                   width="22"
-                   hidden="" />
+                   width="22" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#totalCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#bookmarks-view"

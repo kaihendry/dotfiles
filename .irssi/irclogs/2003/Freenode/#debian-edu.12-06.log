@@ -1,0 +1,126 @@
+--- Log opened Sat Dec 06 16:55:28 2003
+16:55 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+16:55 -!- Irssi: #debian-edu: Total of 17 nicks [0 ops, 0 halfops, 0 voices, 17 normal]
+16:55 -!- Irssi: Join to #debian-edu was synced in 15 secs
+18:14 < k4x> hello everybody
+18:14 < k4x> i need some help
+18:15 < Alex> What's your problem?
+18:15 < k4x> i am translating the security advises
+18:15 < k4x> is it realy possible to do apt-get update when you are in teh single user mode?
+18:17 < k4x> http://www.skolelinux.no/security/SLX-SA-2003-1.html.en
+18:19 < Alex> I'll try on this vmware-tjener.
+18:19 < k4x> ok
+18:19 < k4x> and enter "init 1" on the command line. Then do the apt-get install-thing on the Main server first (Tjener), and 
+18:20 < k4x> i think you have in int 1 no network
+18:20 < k4x> s/int/init/
+18:22 < Alex> Network's up
+18:23 < k4x> ok
+18:24 < k4x> so i continue to translate
+18:24 < k4x> thank you!
+18:26 < Alex> :)
+18:32 < finnarne> k4x: Thx
+18:32 < finnarne> I think that network is down if you run init in RH and Slack, but it's still there in Debian. 
+18:33 < finnarne> sorry - s/init in/init 1 in/
+18:42 < k4x> ok 
+18:42 < k4x> soon i finished
+18:43 < Barbarossa> tach kurt
+18:44 < k4x> huhu
+19:00 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
+19:04 < Barbarossa> hi pere 
+19:05 < pere> hi
+19:20 < pere> anyone with deep PAM/NSS knowledge around?
+19:20 < Barbarossa> here
+19:21 < pere> I'm looking at our pam.d files, and the files in the shadow package.
+19:21 < pere> The issue came up when I tried to upgrade to a new version of passwd, and was asked how I wanted to handle the /etc/pam.d/passwd upgrade.
+19:22 < pere> "Our" pam files are slightly different from the files in passwd, in addition to the extra ldap lines.  I fail to understand why.
+19:22 < Barbarossa> can you put both on the net?
+19:23 < pere> both are on the net.  our files are in src/cfengine-skolelinux/etc/pam.d/ i Skolelinux CVS, and the passwd files are in src/rebuilds/shadow/debian/pam.d/.
+19:27 < Barbarossa> ok
+19:27 < pere> I send an email to devel@, with a quesiton about one of the differences.
+19:27 < Barbarossa> the max=8 thing?
+19:28 < pere> that is one of the differences, yes.
+19:28 < pere> that was the topic of my email.
+19:29 < Barbarossa> I think, we can drop that
+19:29 < pere> is it what I think it is, an instruction to ignore the last part of the password?
+19:30 < Barbarossa> I think yes :)
+19:30 < Barbarossa> IIRC that was the way to handle to long passwords for some years
+19:32 < pere> what was the problem?
+19:36 -!- Fotokis [~Tommy@ti500710a010-0092.dialup.online.no] has joined #debian-edu
+19:36 < klausAde> pere:max=8 is an instruction to ignore the last part of the password, as my students find out all the time.
+19:38 < pere> but why is it there in the first place?
+19:43 < Barbarossa> pere: I think the crypt-algo did/does(?) not support more that 8 chars
+19:44 < pere> Barbarossa: but we use md5, and it should not have such problems, right?
+19:45 < Barbarossa> md5 will work fine with more chars
+19:45 < Alex> md5 encrypted passwords has no limit.
+19:45 < Alex> s/has no limit/have no such limits/ :)
+19:47  * Barbarossa is going to buy some food, Cu later
+20:06 -!- Fotokis [~Tommy@ti500710a010-0092.dialup.online.no] has quit ["Client Exiting"]
+20:17 < finnarne> anyone who can tell me why automount on an old ltspserver wont work with ldap. 
+20:17 < pere> finnarne: did you remove /etc/auto.master?
+20:17 < finnarne> pere: I did. 
+20:18 < finnarne> i get lookup(ldap): couldn't connect to (null): Can't contact LDAP server
+20:18 < finnarne> in syslog
+20:18 < pere> finnarne: make a script to check the LDAP map, and compare the output on a freshly installed system, and on the failing system. :)
+20:19 < finnarne> pere: you mean the info about ldap when I do a ldapsearch ? 
+20:19 < finnarne> sorry - the info about automount in ldap when I do a ldapsearch ? 
+20:21 < finnarne> pere: i did an "ldapsearch -LLL -h ldap -b ou=Automount,dc=skole,dc=skolelinux,dc=no -x '(objectClass=automount)'", on both and i did get the same result.
+20:23 < pere> hva sier 'ping ldap'?
+20:23 < finnarne> den har ikek problemer. 
+20:24 < finnarne> I found some differences in /etc/nsswitch.conf and in /etc/libnss-ldap. 
+20:24 < finnarne> but editing them doesn't help
+20:25 < finnarne> but could it be necesarry with a reboot after editing the nss-files ? 
+20:26 < pere> try 'sh -x /etc/init.d/autofs restart' and see where it fails.  Check /etc/default/autofs as well.
+20:27 < finnarne> pere: I've done it , see #565
+20:27 < pere> reboot should not be required, but you might have to restart a few services. 
+20:28 < pere> automount only read the LDAP info when the init.d script is executed, so I suspect you need to restart it every time the LDAP database is changed. :(
+20:41 < stockh0lm> that is where we need dependencys between services.
+20:41 < finnarne> pere: When I added ldap: in front of the basedn the automounting worked
+20:48 < pere> where?
+20:52 < finnarne> pere: On the command-line: 
+20:53 < finnarne> /usr/sbin/automount --pid-file=/var/run/autofs/_:skole.pid --timeout=300 /skole ldap ldap:ou=skole,ou=Automount,dc=skole,dc=skolelinux,dc=no
+21:06 < finnarne> :( reboot did not fix it ( it was a long shoot) 
+21:28 < pere> finnarne: strange.
+21:29 < pere> (that adding 'ldap:' helped)
+21:29 < finnarne> pere: I'm copying /etc from a working and a non-working installation now, to se if i can find whats different. 
+21:29 < pere> good idea
+21:30 -!- stockh0lm [~andreas@petrus.schuldei.org] has quit [Remote closed the connection]
+21:30 -!- stockholm [~andreas@petrus.schuldei.org] has joined #debian-edu
+21:31 < Barbarossa> hi andreas
+21:34 < pere> echo
+21:46 < stockholm> echo -e "hi, petter"
+21:47 < finnarne> pere: in cfengine_skolelinux, editing /etc/libnss-ldap.conf, theres a line which should edit nss_base_passwd, there is a single "i". 
+21:47 < finnarne> I guess it should be removed. 
+21:49 < Barbarossa> :-)
+21:51 < finnarne> eureka !
+21:51 < finnarne> found it :) 
+21:53 < finnarne> ther needs to be a line "HOST ldap" in /etc/ldap/ldap.conf
+22:09 < pere> finnarne: you are right, that i should be removed.
+22:09 < finnarne> one new problem arises when I uses automount of directories on the client. One of the ltspserver on this site, also holds the backup. meaning that i need to move the backup catalogue to another place than /skole/backup
+22:10 < pere> finnarne: please add a script testing that HOST ldap is in ldap.conf, and stick it in base-config-skolelinux/testsuite/.
+22:12 < pere> finnarne: why?  automount take control over /skole/?
+22:12 < finnarne> pere: i gues so. 
+22:13 < finnarne> but maybe not ? 
+22:13 < pere> I wish linux automount could handle direct automount maps. :(
+22:16 < finnarne> pere: on my laptop I uses auto.net which mounts mountpoints from the server at InterMedium (when I'm at IM)
+22:17 < finnarne> and in my /export, i have a symbolic link webspy, which points to /var/autofs/net/webspy
+22:17 < pere> Hm, we could use symlinks like that, but then we had to maintain the symlinks on the clients (instead of the LDAP database on the server).
+22:18 < finnarne> then my laptop ask the host webspy which mounts that are availible. 
+22:19 < finnarne> but we have the problem of distriobuting other things as well, things like kschoolmenu libraries
+22:19 < finnarne> that could be done by using automount though - bad example. 
+22:22 < pere> yes, we need to distribute menues somehow.  PErhaps as separate packages?
+22:31 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit [Read error: 60 (Operation timed out)]
+22:31 < pere> finnarne: do you need help making a test script?
+22:57 < finnarne> pere: I gues snot, but i needed som food :)
+22:58  * Barbarossa is going to eat a pizza :)
+22:58  * pere had pasta. :)
+22:59 < Barbarossa> *away*
+22:59  * finnarne had roastbeef with bernaise and potatoes :) 
+23:01 < pere> New and improved passwd package in woody-test.  It ask how to handle /etc/pam.d/passwd during upgrade.  That is anoying.
+23:04 -!- lAphy [martinl@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit ["leaving"]
+23:16 < finnarne> pere: I Also want to add a test to ldap-server, to test if the default mount-points are defined. 
+23:30 < pere> finnarne: more tests are good. :)
+23:44 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
+23:48 < finnarne> pere: is slapd running when we run the test for ldap-server ? 
+23:48 < finnarne> pere: sorry - found it. 
+23:54 < pere> everything should be runnging when we do the install tests.  Everything is restarted just before the testing starts.
+--- Log closed Sun Dec 07 00:00:03 2003

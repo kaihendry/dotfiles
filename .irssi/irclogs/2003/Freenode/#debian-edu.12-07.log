@@ -1,0 +1,32 @@
+--- Log opened Sun Dec 07 00:00:03 2003
+00:15 < Alex> Where in the debian.org-web will our debian-edu pages be?
+00:16 < Alex> I'm beginning to organize our pages and translate these days.
+00:26 < pere> Alex: not sure.  I think stockholm have been thinking a bit about such things.
+00:29 < Alex> Okay. I'll just use /education with my local copy in the mean time and get started with it.
+00:29 < Alex> Where do you want it in our repository?
+00:30 < stockholm> Alex: they should go here: http://www.debian.org/devel/debian-edu
+00:30 < stockholm> Alex: i think that does not exist yet, it needs to be created.
+00:30 < Alex> okay.
+00:31 < stockholm> Alex: debian cvs should be up and running again, so you should be able to get an up-to-date cvs version.
+00:34 < pere> cvs.debian.org is working?  How do I get a password?
+00:34 < Alex> pserver doesn't seem to work.
+00:34 < stockholm> hm.
+00:34 < stockholm> i just heard it, i did not try...
+00:34 < Alex> :-)
+00:36 < Alex> I haven't found any policies on e.g. making custom templates such as a navigation bar.
+00:36 < stockholm> Alex: did you write joey@debian.org and asked for a password? he hands them out. 
+00:36 < Alex> No, I haven't.
+00:37 < stockholm> try what he says. mention skolelinux and that he said in oldenburg that he would grant you as the projects web-dude access.
+00:37 < Alex> In Oldenburg?
+00:37 < stockholm> yes.
+00:38 < stockholm> he did not say so to you but to me (and petter?)
+00:41 < k4x> hi from guetersloh
+00:41 < stockholm> Alex: and mention your preferred login right away. (c:
+00:41 < stockholm> k4x: hi, dude!
+00:42 < k4x> ich werde noch uebersetzungsweltmeister ...
+00:42 < stockholm> (c:
+00:46 < Alex> stockholm: I'll just get started and learn webwml locally first. :-)
+00:46 < stockholm> Alex: yes, you can do that, too. 
+00:51 < Alex> I prefer to do that first. :-)
+00:52  * pere is working on the debian-edu task, integrating the skolelinux tasks into the Debian archive.
+--- Log closed Sun Dec 07 01:00:54 2003
