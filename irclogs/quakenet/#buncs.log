@@ -25261,3 +25261,13 @@
 12:34 -!- Kam|shopping [~Kam@213-78-43-181.friaco.onetel.net.uk] has joined #buncs
 12:34 -!- mode/#buncs [+v Kam|shopping] by Novis|sleep
 12:35 -!- Kam|shopping is now known as Kamakaze
+13:41 -!- Novis|sleep is now known as NoVisAnima
+13:54 <+|31770|> cananyone see what wrong with www.bath.ac.uk/~cs2om/createtableCredit.phps ?
+13:56 <@NoVisAnima> it appears to be trying to GET info from me that i haven't sent
+13:56 <@NoVisAnima> that and you added an s to that link...
+13:57 <+|31770|> it doesnt work wihotu s
+13:57 <+|31770|> thought u would wnat to see the code
+13:57 <+|31770|> si put s on the end
+13:57 <@NoVisAnima> well you've made it read only
+13:57 <+|31770|> shouldnt be
+13:57 <@NoVisAnima> or rather it wants a local hot

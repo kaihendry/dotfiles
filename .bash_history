@@ -1,5 +1,3 @@
-cd .qt
-ls
 cd ..
 rm -rf .qt
 rm -rf .vnc/
@@ -498,3 +496,5 @@ galeon
  PROMPT_COMMAND='pwd>&7;kill -STOP $$'
  cd "`echo -e '\057home\057hendry\057\056galeon'`"
  PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057\056irssi'`"
+ cd "`echo -e '\057home\057hendry\057\056irssi\057logs'`"
