@@ -3,25 +3,33 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-.bbc.co.uk	TRUE	/	FALSE	1076870352	BBCpatina	hp:7777775311021,
-.sourceforge.net	TRUE	/	FALSE	1072516869	username	fogwRzMuKFc%3D
+.sourceforge.net	TRUE	/	FALSE	1072610577	username	fogwRzMuKFc%3D
 sourceforge.net	FALSE	/	FALSE	1103448069	persist_session	QXbMt9QlVRE%3D
-.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
-www.finnkino.fi	FALSE	/	FALSE	1293746400	city	1
-.sanomawsoy.fi	TRUE	/	FALSE	1078099200	GUID	FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+.guardian.co.uk	TRUE	/	FALSE	1072697557	GU_LOCATION	ZmluOjU6ZXM6NTplc3Bvbzo1Oi0xOmNhYmxlOiA2MC4yMTc6IDI0LjY2N0AyMDMzMjkxNzE0OTE2NTE5MTE4NTkxMTQ4MTk3MjM5MTY4MzMxNzcxMDk%3d
+ads.guardian.co.uk	FALSE	/	FALSE	2145801601	NGUserID	c0a8fa37-12546-1070904545-17
+.cnn.com	TRUE	/	FALSE	1281665523	CNNid	Gaa5117-16375289-1070970788746-1
+www.cnn.com	FALSE	/	FALSE	1165578844	nnselect	1070970844279
+.www.cnn.com	TRUE	/	FALSE	1072089077	adsPopup0	1072002675663
+.atwola.com	TRUE	/	FALSE	1102242987	badsrfi	V023aafb85addf73103fd1b12bf993
+.bbc.co.uk	TRUE	/	FALSE	1076870352	BBCpatina	hp:7777775311021,
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+adserver.news.com.au	FALSE	/	FALSE	2145801599	NGUserID	ca8b6a76-3757-1071961551-2
+.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
+.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
+.doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
+.sanomawsoy.fi	TRUE	/	FALSE	1078099199	GUID	FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+www.finnkino.fi	FALSE	/	FALSE	1293746401	city	1
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1074341347	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1074033047	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+www.blizzard.com	FALSE	/	FALSE	2145801600	NGUserID	c0a80a67-1260-1071915509-1
 .yahoo.com	TRUE	/	FALSE	1271361600	B	8k960kkvu6e5r&b=2
-.yahoo.com	TRUE	/	FALSE	1071942235	PU	t=1
 php-nuke.kristillinenkoulu.net	FALSE	/	FALSE	1103389861	lang	english
 www.tbray.org	FALSE	/	FALSE	1103323443	style	sans
 www.mistaril.com	FALSE	/	FALSE	1089067018	browser_ID	2a9b427066b028376149e9ccecefb848
 .fastclick.net	TRUE	/	FALSE	1133367745	pluto	135809697|0|
-.fastclick.net	TRUE	/	FALSE	1071942871	m1	10139:2:23070:0:1071769848|
 .ehg-dig.hitbox.com	TRUE	/	FALSE	1103305703	DM510925K6FBV6	V1Xi(#X"rz%r@%@e^@rBi@rQirz%zrzr"%r@%@e^@rBz%r@%@e^@rB"%r@%@e^@rB"%r@%@e^@rBi@rQir"rz(xB$l2hImIKxB$5:~_l:DfI2TxB$2T_aKxB(Ofm~z7}z)OuKr6@zA6l2hImIK65:~_l:DfI2T62T_aK|Ofm~zOffGxXjxB$xB$TakFxB(uucxB(c:xB(DdxB$BxB$O2xB$aTfahfI2TmaTfxB$XXXreQ^xB(Ffm
 .ehg-dig.hitbox.com	TRUE	/	FALSE	1103305703	DM5109250IBWV6	V1Xi(#X"rz%r@%@e^@rBi@rQirz%zrzr"%r@%@e^@rBz%r@%@e^@rB"%r@%@e^@rB"%r@%@e^@rBi@rQir"rz(xB$l2hImIKxB$5:~_l:DfI2TxB$2T_aKxB(Ofm~z7}z)OuKr6QrzA6l2hImIK65:~_l:DfI2T62T_aK|Ofm~zOffGxXjxB$xB$TakFxB(uucxB(c:xB(DdxB$BxB$O2xB$aTfahfI2TmaTfxB$XXXreQ^xB(Ffm
 .ehg-dig.hitbox.com	TRUE	/	FALSE	1103305703	DM51030813MRV6	V1Xi(#X"rz%r@%@e^@rBi@rQirz%zrzr"%r@%@e^@rBz%r@%@e^@rB"%r@%@e^@rB"%r@%@e^@rBi@rQir"rz(xB$l2hImIKxB$5:~_l:DfI2TxB$2T_aKxB(Ofm~z7}z)O:ma6rzA6l2hImIK65:~_l:DfI2T62T_aK|Ofm~zOffGxXjxB$xB$TakFxB(uucxB(c:xB(DdxB$BxB$O2xB$aTfahfI2TmaTfxB$XXXreQ^xB(Ffm
@@ -48,8 +56,6 @@ www.bitemyshinymetalass.com	FALSE	/	FALSE	1293753600	WEBTRENDS_ID	217.30.176.161
 sj3.ru	FALSE	/	FALSE	1893456001	uid	4251974402
 .www.scottevest.com	TRUE	/	FALSE	1074357298	scrolleritem	0
 linux.oreillynet.com	FALSE	/	FALSE	1577836800	CP	null*
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1074033047	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073852373	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 www.menalto.com	FALSE	/demo/gallery2/	FALSE	1860073959	GALLERYSID	38f33fe6e089eb8c7de9054b70216110
 gallery.menalto.com	FALSE	/	FALSE	1860613782	POSTNUKESID	f00e756c47c71be110381d948ca49870
 www.bbmp3.com	FALSE	/	FALSE	1103205916	bblastvisit	1071669915
@@ -59,9 +65,6 @@ www.bbmp3.com	FALSE	/	FALSE	1103205916	bblastvisit	1071669915
 .rottentomatoes.com	TRUE	/	FALSE	1075500812	RT_CRUMB	217.30.176.161.1071612794
 .tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
 .revenue.net	TRUE	/	FALSE	1654837491	Queue	ae3773b91a8b799c2c2dc10f4fe2c3e7|1071870323:1071611123:1:11947:20:205518:1:71102053|
-www.cnn.com	FALSE	/	FALSE	1165578844	nnselect	1070970844279
-.cnn.com	TRUE	/	FALSE	1281665523	CNNid	Gaa5117-16375289-1070970788746-1
-.atwola.com	TRUE	/	FALSE	1102242987	badsrfi	V023aafb85addf73103fd1b12bf993
 www.referralblast.com	FALSE	/	FALSE	1293753236	EGSOFT_ID	217.30.176.161-557570048.29606912
 .com.com	TRUE	/	FALSE	1262304010	XCLGFcgversion	1
 .com.com	TRUE	/	FALSE	1262304010	XCLGFbrowser	zhAACj/YKhGYAgAAOAI
@@ -84,8 +87,6 @@ toolbar.mweb.co.za	FALSE	/	FALSE	1229019687	WEBTRENDS_ID	217.30.176.161-38625395
 banner.coza.com	FALSE	/	FALSE	1229019698	WEBTRENDS_ID	217.30.176.161-3979669536.29606309::4FC2221C05B29CBAEDD3C29EE9B83BAA
 a.coza.com	FALSE	/	FALSE	2145801781	NGUserID	c4029c49-1808-1071339507-2
 .xmts.net	TRUE	/	FALSE	1079264207	code	10713397200200298993
-.guardian.co.uk	TRUE	/	FALSE	1072697557	GU_LOCATION	ZmluOjU6ZXM6NTplc3Bvbzo1Oi0xOmNhYmxlOiA2MC4yMTc6IDI0LjY2N0AyMDMzMjkxNzE0OTE2NTE5MTE4NTkxMTQ4MTk3MjM5MTY4MzMxNzcxMDk%3d
-ads.guardian.co.uk	FALSE	/	FALSE	2145801601	NGUserID	c0a8fa37-12546-1070904545-17
 .telegraph.co.uk	TRUE	/	FALSE	1121487982	ETCT	918200937
 ads.telegraph.co.uk	FALSE	/	FALSE	2145801601	NGUserID	c0a88111-2597-1071487977-2
 .connextra.com	TRUE	/	FALSE	1103023866	Coral	A%7Cpostimpression%7C1%7C200312151131%7C1000%7CSun_ROS_RMR_120x300%7CCoral_Football_Ticker_120x300

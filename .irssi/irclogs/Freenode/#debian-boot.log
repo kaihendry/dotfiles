@@ -990,3 +990,418 @@
 23:31 < dmd> thanks :)
 23:31 -!- frankie [~frankie@adsl-216-214.37-151.net24.it] has quit ["Client exiting"]
 --- Log closed Sat Dec 20 00:08:05 2003
+--- Log opened Sat Dec 20 16:27:33 2003
+16:27 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+16:27 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+16:27 -!- Irssi: Join to #debian-boot was synced in 13 secs
+16:30 -!- seb128 [~seb128@ANancy-111-1-7-221.w81-250.abo.wanadoo.fr] has left #debian-boot ["I like core dumps"]
+16:56 -!- mrvn_ is now known as mrvn
+16:58 < otavio> mrvn: ??
+16:59 < mrvn> otavio: re
+17:00 < otavio> mrvn: Hello, how r ou?
+17:00 < otavio> ops.
+17:00 < otavio> how r u?
+17:00 < mrvn> check the install_mirror script. It generates a Release file.
+17:00 < otavio> mrvn: hum ... but I doesn't want it ... I want a network image ... I need doesn't include a base on it.
+17:00 < otavio> You see?
+17:02 < mrvn> no
+17:03 < otavio> I want create a image witout .disk/base_installable and with network suport (netinst)
+17:03 < otavio> have you included this support in your branch?
+17:04 < mrvn> yes, untested and horribly out of date.
+17:04 < otavio> yes... perfect. I can fix what is wrong if you like ...
+17:04 < otavio> but, witch dest/<target> I need call?
+17:05 < mrvn> dest/cdrom-base-all-none.iso
+17:05 < mrvn> or dest/cdrom-udeb-all-none.iso
+17:05 < otavio> mrvn: cdrom-base?
+17:05 < otavio> hum ... ok
+17:05 < otavio> I'll try this now
+17:05 -!- garrigue [1001@d213-102-7-35.cust.tele2.fr] has quit ["Leaving"]
+17:05 < otavio> Thanks ...
+17:05 < mrvn> cdrom image, the base initrd, all udebs, no debs.
+17:06 < otavio> ok ...
+17:06 < otavio> thanks by your help :-)
+17:06 < mrvn> Check the Makefile's all target if I got the name wrong.
+17:06 < otavio> Should I commit the missing udebs to mrvn branch?
+17:06 < otavio> Or leave it to you to do?
+17:07 < mrvn> compare them to the main branchs list and bring them in sync.
+17:07 < otavio> ok .
+17:08 < mrvn> I copied a cvs snapshot to my laptop and will work on it over the hollidays. Expect some merging next year.
+17:11 < otavio> mrvn: nice.
+17:11 < otavio> mrvn: this will make the work more easy since the changes will go directly to this build system :-)
+17:13 -!- jackhead [~jackhead@p5085189A.dip.t-dialin.net] has joined #debian-boot
+17:13 < jackhead> Hallo everybody
+17:14 < mrvn> I hope I get some net connectivity over the hollidays but I'm not sure.
+17:15 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has joined #debian-boot
+17:17 < jackhead> mrvn: do you have a system running on serial console?
+17:17 < mrvn> sometimes
+17:18 < jackhead> Does choosing another language than US-English work for you when you are on serial console?
+17:19 < jackhead> For me, it hangs the whole system and I would like to know whether this happens on another architecture as well.
+17:20 < mrvn> never tried that d-i on serial.
+17:20 < jackhead> Perhaps you could give it a try sometimes.
+17:21 < waldi> mrvn: it should work
+17:22 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has left #debian-boot []
+17:23 -!- decko is now known as decko|theater
+17:27 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has joined #debian-boot
+17:27 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has left #debian-boot []
+17:29 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has joined #debian-boot
+17:52 < bubulle> For translators : I just commited a change in partitioner so that "FInish" may now be translated. See recent thread "Finish" still not translated in partitioner" in -boot. Thus, you have one more string to translate
+17:53 -!- frankie [~frankie@adsl-181-217.37-151.net24.it] has joined #debian-boot
+17:55 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has left #debian-boot []
+17:55 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has joined #debian-boot
+18:02 -!- godog [~filo@212.141.99.47] has joined #debian-boot
+18:08  * joeyh caches all the installation reports in preparation for a day of going over them ... yeef
+18:10 < otavio> joeyh: hi
+18:10 < joeyh> hey
+18:10 < otavio> joeyh: Can you talk with me?
+18:10 < joeyh> breifly
+18:11 < otavio> joeyh: fine.
+18:11 < otavio> joeyh: I'm thinking in implement the base-installer Release parser...
+18:11 < joeyh> ah, good
+18:12 < otavio> joeyh: but I wanna know one issue ... in official CD, the release is included in dists/.../Release too?
+18:12 < joeyh> yes, it is
+18:12 < otavio> joeyh: and in netinst? where is downloaded it?
+18:12 < joeyh> at least it in in the netinst
+18:12 < joeyh> in a network install? It will have to be downloaded by base-installer
+18:13 < joeyh> since base-installer already has an URI, I think you could just pass that to wget and it might work for file:// uirs (cdrom) too.
+18:13 < otavio> joeyh: yes ... and stored directly in sarge?
+18:13 < joeyh> robably download to a temp file and deleted
+18:13 < otavio> joeyh: currently doesn't work ... I'll look at this now .
+18:14 < otavio> joeyh: the problem is ... if I build a image and this uses sid packages ... I cannot remove choose-mirror
+18:14 < otavio> joeyh: otherwise, the base-installer fail since sid used libacl1 and sarge doesn't
+18:15 < joeyh> hm, so you're saying d-i cannot currently install sid?
+18:15 < otavio> joeyh: one tip only ... how can I debug more easy?
+18:15 < otavio> joeyh: install but only if you have choose-mirror on it and choose unstable ...
+18:15 < otavio> joeyh: this doesn't "read" the CD release and then doesn't know witch packages are included on it
+18:16 < otavio> joeyh: if you pass a wrong option...
+18:16 < otavio> joeyh: pass testing and have sid on cd
+18:16 < joeyh> well, if you have a sid cd, and no choose-mirror, then the base-installer should take care of reading the release file, and getting the release name to pass to debootstra
+18:16 < otavio> joeyh: this fail
+18:16 < otavio> joeyh: yes
+18:17 < joeyh> right now it does depend on choose-mirror, but that was just a quick hack to get it using the symbolic names
+18:17 < joeyh> I would certianly like to see choose-mirror not installed on netinst (non-business card) cds
+18:18 < joeyh> brr, gotta go
+18:20 < otavio> joeyh: nice ... we talk more later.
+18:25 -!- bubulle [~bubulle@lns-th2-5f-81-56-227-253.adsl.proxad.net] has left #debian-boot []
+18:44 -!- joeyh [joey@kitenet.net] has left #debian-boot ["Client exiting"]
+18:54 -!- godog [~filo@212.141.99.47] has quit [Read error: 54 (Connection reset by peer)]
+19:02 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+19:15 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit ["Lost terminal"]
+19:16 < jackhead> pere_poff: are you here?
+19:19 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+19:19 -!- billyoc [~billyoc@66-65-21-18.nyc.rr.com] has quit [Read error: 110 (Connection timed out)]
+20:05 -!- p2-mate [~p2@NAT.office.mind.be] has joined #debian-boot
+20:13 < otavio> Someone can help me how to debug one issue?
+20:15 -!- pere_gone is now known as pere
+20:15 < pere> jackhead: now I am. :)
+20:17 < waldi> okay, new busybox is uploaded
+20:17 < waldi> Welcome to the Debian Installer development channel | Grab an image here until gluck is up again: http://www.mmweg.rwth-aachen.de/~sebastian.ley/d-i/ or here for powerpc: http://www.soziologie.ch/~steinlin/d-i/powerpc/ | http://www.debian.org/devel/debian-installer/
+20:18 < jackhead> pere: you maintain ddetect/hwdetect?
+20:18 < otavio> How can I include debug info in some module? I'm looking to fix one issue in partconf but I need include some "printf's" in some place to see what is happing...
+20:18 < jackhead> pere: I have one problem on mips and mipsel
+20:19 < jackhead> pere: when hw-detection runs, it first tries to load a bunch of modules (ide, ide-detect, ide-cdrom) etc.
+20:19 < jackhead> pere: that works fine, the system sees that these modules are not available.
+20:20 < jackhead> After that, it tries to load sr_mod and sd_mod, which as well cannot be found, because they are compiled statically int the kernel.
+20:20 < otavio> So, what is more easy way to do it? di_log()?
+20:20 < jackhead> pere: But with these, it brings a red error screen and requests the user to acknowledge that the modules could not be loaded.
+20:21 < jackhead> pere: Why does it accept that the other modules cannot be found and proceeds, but chokes on sd_mod and sr_mod
+20:25 < waldi> otavio: di_log(DI_LOG_LEVEL_DEBUG, ...)
+20:28 < pere> jackhead: I suspect sd_mod and sr_mod are returned from discover when it find a SCSI machine.
+20:29 < jackhead> pere: but they are compiled in statically
+20:30 < jackhead> pere: so of course the modprobe must fail
+20:30 < pere> the ide* modules are staticly listed in hw-detect, and we ignore it if they are missing.  The modules returned from discover is supposed to be loaded, and we return an error if they are missing (or do we, I thought it was a medium priority dialog).
+20:30 < jackhead> pere: it is a scsi system
+20:30 < jackhead> pere: mipsel currently runs on medium priority
+20:30 < pere> it is a known and old problem, <URL: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=200467 >.
+20:31 < pere> I have no good solution, as I am unable to come up with a way to detect which modules are already compiled into the kernel.
+20:32 -!- joeyh [joey@kitenet.net] has joined #debian-boot
+20:33 < pere> joeyh: hi. :)
+20:33 < joeyh> argh
+20:33 < joeyh> so tired of reading install reports
+20:34 < jackhead> pere: the only thing I can ad hoc think of is parsing /proc/ksyms for known symbols in these modules
+20:34 < pere> joeyh: merry christmas. :)
+20:34 < jackhead> brb
+20:34 < joeyh> pcmcia is such a mess
+20:35 < joeyh> we need a lot of done on the cd images in this and other areas
+20:35 < joeyh> hmm, still no reply to my recent big list of problems with the ISOs posted to debian-cd
+20:37 < otavio> waldi: but then this will output where?
+20:37 -!- streuner [~streuner@p508368B9.dip0.t-ipconnect.de] has quit [Read error: 60 (Operation timed out)]
+20:37 < waldi> otavio: syslog
+20:37 -!- streuner [~streuner@p508365D8.dip0.t-ipconnect.de] has joined #debian-boot
+20:38 < otavio> waldi: ok
+20:42 < pere> joeyh: do you know why allistair moved the debconf priority to the start of the installation?  I think it was a bad idea.
+20:46 < otavio> pere: why is bad choose teh priority at begin?
+20:47 < pere> because it add an extra question during installation, and make it easier for us d-i developers to not do a good job in providing working default values to the questions we ask.
+20:47 < pere> extra questions increase confusion and slow down install speed.
+20:48 < pere> joeyh: PCMCIA didn't work in woody, and is very badly treated in debian, so I am not surprised that it doesn't work properly. :/
+20:53 < joeyh> pere: there was a thread about it. I agree with you.
+20:53 < joeyh> pere: agree 100%
+20:54 < joeyh> I think that should be reverted
+20:55 -!- dev0 [~tobias@pD953C59E.dip.t-dialin.net] has joined #debian-boot
+20:56  * tbm just ran into this, and agrees
+20:58 < joeyh> it may be that it really is needed (with proper woding and choices), but we don'tr know that because the boot time docs for beta-1 were entirely lacking
+21:02 < joeyh> I need to figure out why I'm getting pcmcia irq conflicts in d-i on my test laptop
+21:03 < otavio> Folks ...
+21:03 < joeyh> oh, FUCK
+21:03 < joeyh> master is rejecting my mail again
+21:03 < otavio> partconf have 100% pt_BR support but the filesystem options is not translated.
+21:03 < joeyh> +delay=784168, status=deferred (host master.debian.org[146.82.138.7] said: 451
+21:03 < joeyh> +rejected: can't currently verify any sender in the header lines (envelope
+21:03 < joeyh> +sender is <joey@kitenet.net>) - try later (in reply to end of DATA command))
+21:03 < joeyh> why does this keep happening to me?
+21:04 < joeyh> C62C917FD5     1451 Sat Dec 13 23:00:34  joey@kitenet.net
+21:04 < joeyh>                                          tbm@debian.org
+21:04 < joeyh> so that's where that went
+21:06 < joeyh> well, I just categorised a slew of d-i install reports, but for all I know, that, along with all my other mail, will never reach the bts :-(
+21:14 < tbm> joeyh: feel free to bounce it to tbm@cyrius.com
+21:15 < otavio> Someone can help me with this problem?
+21:16 < joeyh> otavio: IIRC, the list is constructed on the fly from the names of available programs
+21:16 < otavio> Teh 'Create %s file system' of partconf is not translated.
+21:16 < joeyh> so not easily translatable. Is there a reason to trasnslate stuff like "ext2" anyway?
+21:16 < otavio> joeyh: no no no
+21:16 < joeyh> it seems that master refuses mail whose envelope from does not match its From: line
+21:17 < otavio> joeyh: This is included in po file to be: "Criar sistema de arquivos %s" ...
+21:17 < joeyh> so I guess these @debian.org email addresses are only supposed to be used for receiving mail, not sending
+21:17 < otavio> joeyh: but this is not load ... I doesn't see any reason to it
+21:18 < otavio> joeyh: "Create %s file system" should be translated to "Criar sistema de arquivos %s" but this fail.
+21:18 < otavio> joeyh: the po file is up2date
+21:20 < joeyh> it seems that partconf does a metaget of that value from the debconf db.
+21:20 < joeyh> I'm not sure how cdebconf metaget works with l10n. File a big report
+21:20 -!- bam287 [~bam287@du237.202.onewest.net] has joined #debian-boot
+21:21 -!- JayDub is now known as [NetSkier
+21:23 < otavio> joeyh: yes. This does a metaget ...
+21:23 < otavio> hum ...
+21:24 -!- frankie [~frankie@adsl-181-217.37-151.net24.it] has quit ["Client exiting"]
+21:24 < joeyh> with perl debconf, metaget does return the translated value of a field
+21:25 < joeyh> this may not be true with cdebconf, and it's not really in the spec
+21:30 < joeyh> waldi: hmm, no freeramdisk in the new busybox-cvs?
+21:35 < otavio> joeyh: looking in others modules I see many metaget uses and all works fine....
+21:36 < otavio> joeyh: the only current difference is the #, no-c-format on this
+21:36 < otavio> joeyh: possible can be a cdebconf bug no?
+21:36 < joeyh> yeah, lemme try it in vmware. Will be a few minutes
+21:37 < otavio> ??
+21:37 < joeyh> try talking to cdebconf and see what it's doing
+21:38 < otavio> joeyh: how I can do this? please explain to me
+21:38 < joeyh> I'm trying it
+21:38 < otavio> ahh
+21:41 < joeyh> pt_BR's languagechooser line is too wide for the screen, isn't it?
+21:42 < otavio> joeyh: yes
+21:42 < joeyh> this is nicely translated and it's not even current
+21:44 -!- bam287 [~bam287@du237.202.onewest.net] has quit [No route to host]
+21:44 < otavio> joeyh: not understand.
+21:44 < otavio> joeyh: I've fixed the languagechooser.
+21:45 < joeyh> just sasying good job
+21:47 < otavio> joeyh: yes. ... Andre did a really good work on this.
+21:47 < joeyh> metaget certianly seems to be returning English no matter what language I try.
+21:47 < joeyh> same for other templates
+21:47 < otavio> joeyh: yes ...
+21:47 < otavio> joeyh: no ...
+21:47 < otavio> joeyh: To me, this looks only when you use one %s scape, no?
+21:47 < joeyh> it returns the English text for debconf/priority description
+21:47 < otavio> humm and how I got the translated one?
+21:48 < joeyh> well it doesn't normally use metaget to get that
+21:48 < otavio> joeyh: but in partconf case, this is needed since this is post processed.
+21:49 < joeyh> the code in cdebconf tries to localise metagets.
+21:50 < joeyh> but it doesn't seem to work at least all the time, surely this is a cdebconf bug
+21:51 < waldi> joeyh: hmm, no
+21:52 < otavio> joeyh: do you can give me the src pointer? So I can solve this bug :-)
+21:52 < joeyh> waldi: it's needed for 32 mb installs
+21:52 < joeyh> otavio: I was looking in cdebconf's command.c, then questions.c and template.c
+21:52 < waldi> joeyh: both udebs?
+21:52 < joeyh> not very familiar with the code though
+21:52 < otavio> joeyh: neither me.
+21:53 < joeyh> waldi: not on the boot floppy one, only the other
+21:55 < dannf> i'm testing out d-i on ia64 over serial console - on menus with a "<Go Back>", am i supposed to be able to tab to it?
+21:56 < waldi> joeyh: commited
+21:57 < otavio> joeyh: look at  commands.c in 439 line.
+21:57 < otavio> joeyh: this pass NULL like Language.
+21:58 < joeyh> dannf: if there's no arrow keys to use, then yes, tab should work
+21:58 < joeyh> oh, doh
+21:58 < dannf> i have arrow keys that work also - but that doesn't get me to the <Go back> item
+21:59 < joeyh> try the right arrow key
+21:59 < joeyh> tab and then right arrow
+21:59 < dannf> "Continue" remains highlighted
+21:59 < dannf> but i can move from the menu to continue with the right arrow
+21:59 < joeyh> hmm. I don't know. escape should also work for go back
+22:00  * dannf has no clue how to debug that
+22:01 < dannf> in one instance, esc did go back.  in the "Execute a shell" sub menu, it executes a shell instead of going back to the main menu.
+22:02 < joeyh> it can also be bugs in the menu items, not noticing back up and doing the wrong thing
+22:02 < joeyh> oh, and the back up button can sometimes be disabled, but it should not be visible then
+22:03 < dannf> ok
+22:11 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+22:12 < jackhead> Does anybody besides me get dying busybox shells?
+22:13 < jackhead> I am running on serial console and when I select the "shell" menu option and get a shell, after a few commands, the shell dies and main-menu gets respawned.
+22:13 < jackhead> Why main-menu?
+22:13 < jackhead> IF the shell dies, this should not kill main-menu, or am I overlooking something?
+22:14 < dannf> jackhead: i'm at a shell atm - what commands are you running?
+22:14 < dannf> s/shell/shell over serial console/
+22:15 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [Client Quit]
+22:15 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+22:15 < jackhead> I have tried running the kbd-chooser postinst manually by calling udpkg --configure --force kbd-chooser, for example
+22:16 < jackhead> I had also run a tail, killed it with a CTRL-C and main-menu got respawned
+22:17 < dannf> hrm... my console just hung after ctrl-c'ing a tail
+22:18 < jackhead> It does not happen always for me, but quite often.
+22:18 < jackhead> I am currently building a new netboot image, I'll retry it in a few minutes
+22:18 < joeyh> some kind of signal problem?
+22:18 < joeyh> like the ctrl-c goes to the wrong process maybe?
+22:19 < jackhead> Interestingly once I got a shell prompt after the CTRL-C and 2 seconds later, main-menu was respawned
+22:19 < dannf> speaing of netboot images - is the purpose to be able to do a medialess install?  i can't seem to navigate to a way that gets the network going, w/o requiring a local cd
+22:19 < joeyh> well for some architectures it's easy..
+22:20 < jackhead> dannf: yes, it netboots a kernel with an attached ramdisk
+22:20 < joeyh> even decent i386 hardware should be able to pxeboot
+22:20 < jackhead> I am doing that on mipsel, though, where the firmware itself supports tftp booting
+22:20 < dannf> sure, i'm capable of netbooting fine & getting into the installer, that's what i'm doing now, i just can't get an install going w/ whaat's in the initrd
+22:21 < joeyh> iirc there was a way to make it dl the initrd too, but I don't have my netboot server set u anymore
+22:21 < dannf> the modules i need are there - but there's no main menu item for starting the net
+22:21 < dannf> kernel modules, that is
+22:22 < dannf> i'm on ia64 - maybe we're missing some udebs?
+22:22 < jackhead> dannf: after configuring the network, there should be an option to load installer modules
+22:22 < joeyh> oh, if it loads the initrd, then you're set, you just need to fix the initrd..
+22:23 < jackhead> dannf: I am rebooting my box into the installer.
+22:23 < jackhead> dannf: we can go through the options together in a minute
+22:23 < dannf> jackhead: k
+22:23 < joeyh> main-menu should be on all initrds
+22:23  * joeyh learns to read..
+22:24 < jackhead> dannf: Which debconf-priority do you use? I start on medium
+22:24 < joeyh> as far as I can see, the ia64 initrd should include netcfg-dhc and netcfg-static
+22:24 < dannf> jackhead: i wasn't asked
+22:24 < jackhead> Do you get a menu after booting or are you thrown into language-chooser directly=
+22:25 < dannf> i go into main-menu
+22:25 < jackhead> ok, then you are probably at medium
+22:25 < jackhead> my box is still booting...
+22:26 < jackhead> dannf: you are running on serial console you said?
+22:27 < dannf> my main menu has "Choose language", "Detect a keyboard and select layout" "Detect CDROM" "Load installer modules" "Install kernel" "Verify cd contents" "Execute a shell"
+22:27 < jackhead> Does it crash for you, if you choose another language than US-English?
+22:27 < dannf> jackhead: yes
+22:27 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit ["und tschüss"]
+22:27 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+22:27 < jackhead> dannf: Thanks, than this is not a platform specific problem but something generic
+22:27 < dannf> jackhead: doesn't seem to
+22:27 < jackhead> aeh
+22:28 < jackhead> It does not crash if you select e.g. German=
+22:28 < dannf> yes, i'm using serial console, no, it doesn't crash when choosing other languages
+22:28 < jackhead> hm.
+22:28 < dannf> lemme try German
+22:28 < dannf> i chose "German (Germany)" from the language chooser - it didn't crash, but i don't see germna text
+22:29 < jackhead> Ok, thanks. For me, it crashes then.
+22:29 < jackhead> What makes me wonder is the "Detect CDROM" option you get.
+22:29 < jackhead> That should be "Detect network hardware"
+22:30 < jackhead> Moment, I'll look something up
+22:31 < jackhead> Hm, the ia64 netboot config has:
+22:31 < jackhead> dhcp-client-udeb
+22:31 < jackhead> netcfg-dhcp
+22:32 < jackhead> That should give you a "Configure the network using dynamic addressing (DHCP)" option
+22:32 < dannf> i386 has dhcp-client-udeb, but not netcfg-dhcp
+22:33 < dannf> is there something i can look at from a shell to verify that it is indeed installed in my initrd?
+22:34 < jackhead> Do a "cd /var/lib/dpkg/info"
+22:34 < jackhead> and look for the postinst files there.
+22:34 < jackhead> There should be one for each udeb.
+22:35 < dannf> k - i don't see anything w/ dhcp in the name
+22:35 < jackhead> So the udebs are really missing
+22:35 < jackhead> For me I get:
+22:36 < jackhead> choose-mirror.postinst    ethdetect.postinst        netcfg-dhcp.postinst
+22:36 < jackhead> delo-installer.postinst   kbd-chooser.postinst      netcfg-static.postinst
+22:36 < jackhead> di-utils-reboot.postinst  languagechooser.postinst
+22:36 < jackhead> di-utils-shell.postinst   load-installer.postinst
+22:36  * dannf does a clean build & logs it
+22:36 < jackhead> Good luck
+22:37 < dannf> the build does get-packages them
+22:38 < jackhead> joey: I just did a tail -f /var/log/messages a few times and stopped it with CTRL-C. On the third attempt the shell died
+22:38 < jackhead> joeyh: main-menu got a new pid now, so it got respawned from init
+22:46 -!- Marvin-- [~martin@sjogren.ost.sgsnet.se] has joined #debian-boot
+22:47 -!- p2-mate [~p2@NAT.office.mind.be] has quit ["bye"]
+22:50 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit ["und tschüss"]
+22:51 < jackhead> Is there a way to avoid "previous" menu option, i.e. circumvent the dependencies? I am trying to debug a bootloader-installer and each testing cycle needs hours because of the longish base-install
+22:52 < Marvin--> there's no non-hackish way, really
+22:52 < Marvin--> hackish way: edit the status file after anna has run
+23:00 -!- filthy [~phil@cs24243255-37.austin.rr.com] has joined #debian-boot
+23:01 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+23:02 < filthy> hey folks.  can anyone give me some advice for install debian on a scsi HD?
+23:02 < filthy> so far i haven't been able to get the installer to recognize my hard drives
+23:03 < waldi> jackhead: lower the priority to medium
+23:04 < filthy> I've even tried the new installer with no luck
+23:05 < filthy> is there perhaps a debian scsi channel?
+23:05 -!- moshez [~moshez@line133-133.adsl.actcom.co.il] has left #debian-boot []
+23:06 -!- Gandalfar [~gandalf@BSN-77-246-247.dsl.siol.net] has joined #debian-boot
+23:07 < Gandalfar> hello, in cdebconf can keyboard shortcuts be localized or when translating should I leave them on default english ones?
+23:12 < jackhead> waldi: I am already running at priority medium
+23:12 < jackhead> waldi: I have mounted the "old" partition without making a new fs on it, but when I select the "Install bootloader" step d-i runs base-install again
+23:14 -!- abrotman [~abrotman@pcp03723050pcs.potshe01.pa.comcast.net] has joined #debian-boot
+23:15 < waldi> hmm
+23:15 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [".:: und tschüss ::."]
+23:21 < Gandalfar> why is there CD on some points and CD-ROM on others?
+23:21 < Gandalfar> shouldn't be this more consistent
+23:23 -!- Gandalfar [~gandalf@BSN-77-246-247.dsl.siol.net] has quit ["leaving"]
+23:32 -!- gyu [~gyu@tollan.csillagkapu.hu] has joined #debian-boot
+23:33 -!- Netsplit calvino.freenode.net <-> irc.freenode.net quits: otavio
+23:34 -!- Netsplit over, joins: otavio
+23:39  * dannf had both an initrd= and an append="initrd=" in my bootloader config - and the one i overlooked was taking effect *sigh*
+23:40 < dannf> using rootskel from cvs, things are working much better
+23:41 < abrotman> if i use the netinst cd with no net access currently active .. will i be left with a functional(at least apt-get,dpkg) system?
+23:41 < abrotman> like the same as skipping tasksel and dselect in the woody installer
+23:59 -!- Misirlou [~aew@c-24-125-24-134.va.client2.attbi.com] has joined #debian-boot
+--- Day changed Sun Dec 21 2003
+00:02 < abrotman> what is on the floppy-image.img?
+00:02 < jackhead> The initrd
+00:03 < abrotman> so if i have a system that doesn't boot from CD .. can i use that?
+00:03 < tbm> abrotman: see http://cvs.alioth.debian.org/cgi-bin/cvsweb.cgi/~checkout~/debian-installer/doc/INSTALLATION-HOWTO?content-type=text/plain&cvsroot=d-i&only_with_tag=HEAD
+00:03 < jackhead> You need two: bootfloppy.img (kernel) and floppy-image.img (initrd).
+00:03 < tbm> it tells you which 3 floppies you need
+00:03 < tbm> plus the cd_drivers disk
+00:03 < dan_t> hello
+00:04 < abrotman> i may try this on an old 486 :)
+00:04 < dan_t> i want to try to fix the evms problem in debian installer
+00:05 < gyu> abrotman: my favourite install method: make a grub floppy, which can handle the machine's nic, and load a kernel image, and an initrd from a tftp server, which i specify on the floppy, on the grub's menu.lst :-)
+00:05 < abrotman> gyu: that would imply i had a server .. i feel so without
+00:05 < abrotman> i sold all of my boxes except this 48
+00:05 < abrotman> 486
+00:08 < gyu> hmm... all of them? You haven't any other machine, just a 486?
+00:09 < abrotman> no .. i have my Thinkpad
+00:09 < abrotman> but i sold an SMP box, SPARC, SGI
+00:09 -!- Arrogance [~aks@CPE0050ba556e4b-CM0f2039968794.cpe.net.cable.rogers.com] has joined #debian-boot
+00:10 < gyu> abrotman: have that thinkpad any nic?
+00:10 < abrotman> gyu?
+00:10 < gyu> nic=network interface card
+00:10 < abrotman> it has 10/100 and wireless
+00:11 < gyu> than, you just have to apt-get install your-favourite-tftpd  and apt-get source grub, than recompile that
+00:11 < abrotman> or i could just use boot floppies :)
+00:14 < gyu> I like to do my method: I have'to done the images once, once the floppy with grub, A crosslink cable,than I can instal Debian onto any machine, have a nic :-)
+00:19 -!- piranha [piranha@3ffe:b80:1ca1:0:0:0:deca:fbad] has quit [Read error: 60 (Operation timed out)]
+00:19 < tbm> gyu: is this documented somewhere?
+00:20 < gyu> tbm: sorry about it, but not... :-(
+00:22 < gyu> tbm: i started a project to create more easy initrd, and other images through uml+rootstrap+and my rootstrap modules, but i have no time, to make a publicly usable version :-(
+00:22 < gyu> tbm: i thought to many functions to my modules, and I either have any time :-(((
+00:24 < gyu> s/thought/planned/
+--- Log closed Sun Dec 21 00:25:53 2003
+--- Log opened Sun Dec 21 13:21:57 2003
+13:21 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+13:21 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+13:22 -!- Irssi: Join to #debian-boot was synced in 13 secs
+13:22 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [Read error: 113 (No route to host)]
+13:22 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+13:23 -!- Jonzl|weg [~bla@dfn236001.extern.uni-tuebingen.de] has quit [Read error: 113 (No route to host)]
+13:43 -!- pere_Zzzz is now known as pere
+13:43 < Sesse> pere :-)
+13:46 < waldi> hmm, how large is debootstrap?
+13:49  * waldi is going to upload packages which can't satisfy dependencies because of the NEW lag
+13:50 -!- laber [~bla@dfn236001.extern.uni-tuebingen.de] has quit ["( www.nnscript.de :: NoNameScript 3.8 :: www.XLhost.de )"]
+13:50 < waldi> s/dep/build-dep/
+13:52 -!- frankie [~frankie@adsl-220-217.37-151.net24.it] has quit [Remote closed the connection]
+13:53 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit ["und tschüss"]
+13:56 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has joined #debian-boot
+13:56 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+14:33 -!- streuner [~streuner@p508365D8.dip0.t-ipconnect.de] has quit []
+14:40 -!- godog [~filo@212.141.102.176] has joined #debian-boot
+14:44 -!- yang [~lakota@sisyphus.mtveurope.org] has joined #debian-boot
+14:44 < yang> In debian installer , when creating ext3 filesystem, when writing inodes to the disk, the process freezes, any idea why that happens? its debian pa-risc
+14:45 < yang> it happened to me with 5 disks allready
+14:47 < godog> tried manually with mke2fs -j ?
+14:52 < yang> no i havent
+14:55 < godog> please do, perhaps the problem is with mke2fs and pa-risc
+14:55 < yang> what would be the proper line to format /dev/sda3 with mke2fs
+14:56 < yang> mke2fs -j 7dev/sda3 ?
+14:56 < godog> yeah
+14:56 < yang> this hangs too :/
+14:56 < yang> stops on block 21 of 31
+14:57 < godog> search for bugs on http://bugs.debian.org and/or file a new one :)
+14:57 < yang> i mean, when writing indoe tables
+14:58 < yang> it could be something wrong with this machine

@@ -250,3 +250,37 @@
 23:48 -!- jni [~geetee@hawking.pp.htv.fi] has quit [Read error: 110 (Connection timed out)]
 23:54 -!- jni [~geetee@hawking.pp.htv.fi] has joined #Debian-fi
 --- Log closed Sat Dec 20 00:08:05 2003
+--- Log opened Sat Dec 20 16:27:33 2003
+16:27 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+16:27 -!- Irssi: #debian-fi: Total of 21 nicks [0 ops, 0 halfops, 0 voices, 21 normal]
+16:27 -!- Irssi: Join to #debian-fi was synced in 11 secs
+16:47 < nchip> Tv: nowadays your vpenis size is counted by how old/slow hardware you can get Linux to run on ;)
+16:51 < nchip> looks like my wlan AP has 82.94 BogoMips :/
+16:59 < Tv> nchip: I have two embedded boxes on my desk :)
+17:03 < liiwi> into what are they embedded?
+17:04 < liiwi> och samma pÂ svenska
+17:11 < Tv> toinen on aika levi√§n√§ ja toinen on muovilaatikossa
+17:12 < liiwi> X-Mailer: mPOP Web-Mail 2.19
+17:12 < liiwi> n‰ytt‰‰ olevan xploitattavissa
+17:12 < Viiru> Jeejee.
+17:12 < Tv> mPOP kuulostaa Hensonien kappaleelta.
+17:12 < liiwi> julmetusti crapolaa muutamista webmailih‰rvelleist‰
+17:13 < Viiru> Tv: Hurjaa.
+18:26 -!- jni [~geetee@hawking.pp.htv.fi] has quit [Read error: 60 (Operation timed out)]
+18:30 -!- jni [~geetee@hawking.pp.htv.fi] has joined #Debian-fi
+18:40 < liiwi> jeejee
+18:40 < liw> jeejee?
+18:59 -!- jni_ [~geetee@hawking.pp.htv.fi] has joined #Debian-fi
+19:02 -!- jni [~geetee@hawking.pp.htv.fi] has quit [Read error: 110 (Connection timed out)]
+19:25 -!- jni [~geetee@hawking.pp.htv.fi] has joined #Debian-fi
+19:42 -!- jni_ [~geetee@hawking.pp.htv.fi] has quit [Read error: 110 (Connection timed out)]
+19:42 -!- jni [~geetee@hawking.pp.htv.fi] has quit [Read error: 60 (Operation timed out)]
+19:49 -!- jni [~geetee@hawking.pp.htv.fi] has joined #Debian-fi
+--- Day changed Sun Dec 21 2003
+00:06 -!- TheBlueWizard [TheBlueWiz@pc92dn1d.ppp.FCC.NET] has joined #debian-fi
+--- Log closed Sun Dec 21 00:25:53 2003
+--- Log opened Sun Dec 21 13:21:57 2003
+13:21 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+13:21 -!- Irssi: #debian-fi: Total of 19 nicks [0 ops, 0 halfops, 0 voices, 19 normal]
+13:22 -!- Irssi: Join to #debian-fi was synced in 10 secs
+13:48 -!- Viiru [~viiru@cs184248.pp.htv.fi] has joined #debian-fi

@@ -45,3 +45,11 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 
 set encoding=utf-8          " Set Unicode as the default encoding
 set fileencodings=
+
+" What does this do?
+set modelines=5
+
+" Trim whitespace from python files
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
+"set foldmethod=indent
