@@ -9,7 +9,7 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/home/hendry/movie");
+user_pref("browser.download.dir", "/tmp");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
@@ -45,7 +45,7 @@ user_pref("font.name.cursive.x-western", "adobe-courier-iso8859-1");
 user_pref("font.name.fantasy.x-western", "adobe-courier-iso8859-1");
 user_pref("font.size.variable.x-western", 20);
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "ISO-8859-2, ISO-8859-15, ISO-8859-5, UTF-8, ISO-8859-1");
+user_pref("intl.charsetmenu.browser.cache", "windows-1252, ISO-8859-2, ISO-8859-15, ISO-8859-5, UTF-8");
 user_pref("intl.charsetmenu.composer.cache", "ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("mailnews.quotingPrefs.version", 1);
