@@ -28,13 +28,13 @@ $/
 	
 
 # File marks:
-'0  1  7  ~/svn-commit.tmp
+'0  1  3  ~/svn-commit.tmp
 '1  77  0  ~/.subversion/README.txt
 '2  33  1  /usr/share/doc/xdm/README.Debian
 '3  1  0  ~/.xsession-errors
 
 # Jumplist (newest first):
--'  1  7  ~/svn-commit.tmp
+-'  1  3  ~/svn-commit.tmp
 -'  77  0  ~/.subversion/README.txt
 -'  6  0  ~/.subversion
 -'  4  0  ~/.subversion
@@ -135,9 +135,9 @@ $/
 # History of marks within files (newest to oldest):
 
 > ~/svn-commit.tmp
-	"	1	7
-	^	1	8
-	.	1	7
+	"	1	3
+	^	1	4
+	.	1	3
 
 > ~/.subversion/README.txt
 	"	77	0
