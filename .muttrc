@@ -12,10 +12,10 @@ set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 set folder={hendry@mail.cs.helsinki.fi/ssl}
 
 # mailboxes I like to hear about when there is new mail
-mailboxes {hendry@prazefarm.co.uk/ssl}
+mailboxes {hendry@dabase.com/ssl}
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
-mailboxes imaps://hendry@prazefarm.co.uk/prazefarm
-mailboxes imaps://hendry@prazefarm.co.uk/rss
+mailboxes imaps://hendry@dabase.com/prazefarm
+mailboxes imaps://hendry@dabase.com/rss
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.w3-di
 
 set realname="Kai Hendry"
@@ -61,8 +61,8 @@ set pager_index_lines=5
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
 
-macro index S "<tag-prefix><save-message>imaps://hendry@prazefarm.co.uk/spam\n"
-macro pager S "<tag-prefix><save-message>imaps://hendry@prazefarm.co.uk/spam\n"
+macro index S "<tag-prefix><save-message>imaps://hendry@dabase.com/spam\n"
+macro pager S "<tag-prefix><save-message>imaps://hendry@dabase.com/spam\n"
 
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
