@@ -8,9 +8,11 @@ http://www.htmobile.hr
 https://admin.iki.fi
 https://gateway-vallila.hupnet.helsinki.fi
 https://gateway.hupnet.helsinki.fi
+https://login.funknetz.at
 https://mail.cs.helsinki.fi
 https://mail.dabase.com
 https://www.amazon.co.uk
+https://www.gandi.net
 https://www.helsinki.fi
 .
 http://bugs.skolelinux.no
@@ -25,6 +27,12 @@ Bugzilla_login
 *Bugzilla_password
 ~ODYxNjUx
 .
+http://domainmonger.com
+username
+~ZHJhcQ==
+*password
+~YWZyaWNh
+.
 http://en.wikipedia.org
 wpName
 ~aGVuZHJ5
@@ -38,4 +46,10 @@ log
 ~YWRtaW4=
 *pwd
 ~ODAwNTUz
+.
+https://gw-a.demo.tuwien.ac.at:1112
+username
+~Z2FzdDEwNzFAbW9iaWwudHV3aWVuLmFjLmF0
+*password
+~dXNlUjIwMDQ=
 .
