@@ -84,6 +84,8 @@ ignore x-spam-status
 ignore x-spam-level
 ignore x-mailer user-agent
 
+macro index S "|sa-learn --spam --no-rebuild > /dev/null&nd"
+
 #set autoedit           # start editor without asking for to, subject,...
 set auto_tag           # if something is tagged, run commands on tagged msgs.
 set fast_reply         # do not ask for to, subject,... when replying

@@ -1,4 +1,4 @@
-#xrdb -merge .Xresources
+#xrdb -merge ~/.Xresources
 
 UXTerm*utf8: 1
 UXTerm*scrollBar: False
@@ -11,10 +11,17 @@ UXTerm*foreground: gray
 UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 
-#UXTerm*Font: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-iso10646-1
+UXTerm*Font: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-iso10646-1
 UXTerm*Font: -efont-fixed-medium-r-normal-*-16-*-*-*-*-*-iso10646-1
 UXTerm*Font2: -efont-fixed-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
 UXTerm*Font3: -efont-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-1
 UXTerm*Font4: -efont-fixed-medium-r-normal-*-16-*-*-*-*-*-iso10646-1
 UXTerm*Font5: -misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
 UXTerm*Font6: -efont-fixed-medium-r-normal-*-24-*-*-*-*-*-iso10646-1
+
+#UXTerm*Font: -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
+#UXTerm*Font: terminus-28
+#UXTerm*Font2: terminus-24
+#UXTerm*Font3: terminus-20
+#UXTerm*Font4: terminus-16
+#UXTerm*Font5: terminus-14
