@@ -1,0 +1,4 @@
+base=/home/hendry/mail
+folders=inbox...:sent-mail...
+vfolder=searchresults
+database=/home/hendry/.mairix_database
