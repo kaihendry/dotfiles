@@ -4,7 +4,7 @@
 map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
 :autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
 
-set mouse=a		        " Set to get mouse to work
+set mouse=a		        " Set to get mouse to work (doesn't work in screen)
 set nocp		            " forget about compatibility with old version of vi
 syntax on		            " Syntax highlighting
 set background=dark 	    " Set background to dark to have nicer syntax highlighting
@@ -21,6 +21,7 @@ set noai		            " No auto indent
 set nobackup		        " No backup files
 set nowritebackup		    " No backup files
 set comments=nb:>	        " For email comment nesting
+set paste
 
 set expandtab		        " No tabs!
 set shiftwidth=4	        " A tab become four spaces
@@ -29,6 +30,7 @@ set tabstop=4
 set fileformat=unix
 
 " Expand existing abbreviation
+" Not used atm mind
 
 map <C-X><C-X> diw:exe "normal i".@"<cr>
 map <C-j> :redir >>~/my.abbr<CR>:abbr<CR>:redir END<CR>
