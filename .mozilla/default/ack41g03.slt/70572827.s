@@ -1,10 +1,12 @@
 #2c
 http://db.cs.helsinki.fi
 http://www.1rstwap.com
+https://admin.iki.fi
 https://gateway-vallila.hupnet.helsinki.fi
 https://gateway.hupnet.helsinki.fi
 https://mail.cs.helsinki.fi
 https://www.amazon.co.uk
+https://www.helsinki.fi
 .
 http://bugs.skolelinux.no
 Bugzilla_login
