@@ -36,7 +36,7 @@ if [ "$PS1" ]; then
     #alias la='ls -A'
     #alias l='ls -CF'
     alias mutto='mutt -F ~/.muttorc'
-    alias todo='cat ~/personal/todo.txt'
+    export todo=~/personal/todo.txt
 
     # user@host pwd should be provided my WM title bar IMO
     PS1='$ '
