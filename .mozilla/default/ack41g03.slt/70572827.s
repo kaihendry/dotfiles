@@ -31,3 +31,9 @@ wpName
 wpEmail
 ~
 .
+http://natalian.org
+log
+~YWRtaW4=
+*pwd
+~ODAwNTUz
+.
