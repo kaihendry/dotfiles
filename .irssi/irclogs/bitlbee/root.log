@@ -46,3 +46,130 @@
 21:42 <root> JABBER - Login error: Unable to connect
 21:42 <root> JABBER - Signing off..
 --- Log closed Sun Dec 14 21:48:33 2003
+--- Log opened Tue Dec 16 18:08:06 2003
+18:08 -!- Irssi: Starting query in bitlbee with root
+18:08 <root> Account successfully added
+18:08 <root> Account successfully added
+18:08 <root> Trying to get all accounts connected...
+18:08 <root> ICQ - Logging in: Signon: 2386684
+18:08 <root> JABBER - Logging in: Connecting
+18:08 <root> Password accepted
+18:08 <root> JABBER - Logging in: Connected
+18:08 <root> JABBER - Logging in: Requesting Authentication Method
+18:08 <root> ICQ - Logging in: Connection established, cookie sent
+18:08 <root> JABBER - Login error: Error 401: Unauthorized
+18:08 <root> JABBER - Signing off..
+18:08 <root> ICQ - Logged in
+18:08 <hendry> accounts list
+18:08 <root> Unknown command: accounts. Please use help commands to get a list of available commands.
+18:08 <hendry> help commands
+18:08 <root> BitlBee commands:
+18:08 <root>   help     - BitlBee help system
+18:08 <root>   register - Register yourself
+18:08 <root>   identify - Identify yourself with your password
+18:08 <root>   account  - IM-account list maintenance
+18:08 <root>   blist    - List all the buddies in your contact list
+18:08 <root>   add      - Add a buddy to your contact list
+18:08 <root>   info     - Request user information
+18:08 <root>   rename   - Rename (renick) a buddy
+18:08 <root>   remove   - Remove a buddy from your contact list
+18:08 <root>   block    - Block someone
+18:08 <root>   allow    - Unblock someone
+18:08 <root>   save     - Save your account data
+18:08 <root>   set      - Miscellaneous settings
+18:08 <root>   yes      - Accept a request
+18:08 <root>   no       - Deny a request
+18:08 <root>   nick     - Change friendly name, nick
+18:08 <hendry> account list
+18:08 <root>  0. OSCAR, 2386684 on login.icq.com (connected)
+18:08 <root>  1. JABBER, hendry
+18:08 <root> End of account list
+18:08 <hendry> account del 1
+18:08 <root> Account deleted
+18:08 <hendry> help account add
+18:08 <root> Syntax: account add <protocol> <username> <password> [<server>]
+18:08 <root> 
+18:08 <root> Adds an account on the given server with the specified protocol, username and password to the account list. Specifying the server is optional and principally only necessary when using oscar.
+18:08 <root> The following protocols are supported at the moment: jabber, msn, yahoo and oscar (For AIM/ICQ. For AIM use server login.oscar.aol.com, for ICQ use server login.icq.com. For the other protocols you don't have to specify a server.)
+18:08 <root> 
+18:08 <root> Example:
+18:08 <root> 
+18:08 <root> <wilmer> account add oscar 72696705 hobbelmeeuw login.icq.com
+18:08 <root> <root> Account successfully added
+18:09 <hendry> account add jabber hendry 861651 amessage.de
+18:09 <root> Account successfully added
+18:09 <hendry> help account
+18:09 <root> Syntax: account <action> [<arguments>]
+18:09 <root> 
+18:09 <root> Available actions: add, del, list, on, off
+18:09 <root> 
+18:09 <root> See help account <action> for more information
+18:09 <hendry> account on 2
+18:09 <root> Incorrect account number
+18:09 <hendry> account on
+18:09 <root> Trying to get all accounts connected...
+18:09 <root> JABBER - Logging in: Connecting
+18:09 <root> JABBER - Login error: Unable to connect
+18:09 <root> JABBER - Signing off..
+18:09 <hendry> account add jabber hendry 861651 amessage.de
+18:09 <root> Account successfully added
+18:10 <hendry> account on
+18:10 <root> Trying to get all accounts connected...
+18:10 <root> JABBER - Logging in: Connecting
+18:10 <root> JABBER - Login error: Unable to connect
+18:10 <root> JABBER - Signing off..
+18:10 <root> JABBER - Logging in: Connecting
+18:10 <root> JABBER - Login error: Unable to connect
+18:10 <root> JABBER - Signing off..
+18:10 <hendry> account add jabber hendry@amessage.de 861651
+18:10 <root> Account successfully added
+18:10 <hendry> account on
+18:10 <root> Trying to get all accounts connected...
+18:10 <root> JABBER - Logging in: Connecting
+18:10 <root> JABBER - Login error: Unable to connect
+18:10 <root> JABBER - Signing off..
+18:10 <root> JABBER - Logging in: Connecting
+18:10 <root> JABBER - Login error: Unable to connect
+18:10 <root> JABBER - Signing off..
+18:10 <root> JABBER - Logging in: Connecting
+18:10 <root> JABBER - Logging in: Connected
+18:10 <root> JABBER - Logging in: Requesting Authentication Method
+18:10 <root> JABBER - Logging in: Authenticating
+18:10 <root> JABBER - Login error: Error 401: Unauthorized
+18:10 <root> JABBER - Signing off..
+18:10 <hendry> account list
+18:10 <root>  0. OSCAR, 2386684 on login.icq.com (connected)
+18:10 <root>  1. JABBER, hendry
+18:10 <root>  2. JABBER, hendry
+18:10 <root>  3. JABBER, hendry@amessage.de
+18:10 <root> End of account list
+18:10 <hendry> account del 2
+18:10 <root> Account deleted
+18:10 <hendry> account del 1
+18:10 <root> Account deleted
+18:10 <hendry> account list
+18:10 <root>  0. OSCAR, 2386684 on login.icq.com (connected)
+18:10 <root>  1. JABBER, hendry@amessage.de
+18:10 <root> End of account list
+18:10 <hendry> account del 1
+18:10 <root> Account deleted
+18:11 <hendry> account add jabber hendry@amessage.de kaio
+18:11 <root> Account successfully added
+18:11 <hendry> account on
+18:11 <root> Trying to get all accounts connected...
+18:11 <root> JABBER - Logging in: Connecting
+18:11 <root> JABBER - Logging in: Connected
+18:11 <root> JABBER - Logging in: Requesting Authentication Method
+18:11 <root> JABBER - Logging in: Authenticating
+18:11 <root> JABBER - Logged in
+18:11 <hendry> account list
+18:11 <root>  0. OSCAR, 2386684 on login.icq.com (connected)
+18:11 <root>  1. JABBER, hendry@amessage.de (connected)
+18:11 <root> End of account list
+18:11 <hendry> account del 0
+18:11 <root> Account is still logged in, can't delete
+18:11 <hendry> account off 0
+18:11 <root> ICQ - Signing off..
+18:11 <hendry> account del 0
+18:11 <root> Account deleted
+--- Log closed Tue Dec 16 18:17:05 2003

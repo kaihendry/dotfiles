@@ -61,6 +61,7 @@ set pager_index_lines=5
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
 
+# check these commands work
 macro pager J "!gpg --keyserver wwwkeys.eu.pgp.net --recv-key " "Get PGP Key"
 macro pager K "!gpg --lsign-key " "Sign PGP Key"
 
