@@ -1,3 +1,7 @@
 I want two frames. One for console. One for web.
 The title of the xterm should be the PWD.
 Re-introduce a bind for renaming a frame. Not necessary...
+
+WTF:
+Ion startup error log:
+>> Unable to find 'x-www-browser' on configuration file search path.
