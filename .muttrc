@@ -18,6 +18,7 @@ mailboxes {hendry@daidalos.pannuhuone.org/ssl}
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
 mailboxes imaps://hendry@daidalos.pannuhuone.org/prazefarm
 mailboxes imaps://hendry@daidalos.pannuhuone.org/rss
+mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.w3-di
 
 set realname="Kai Hendry"
 set from="hendry@cs.helsinki.fi"
