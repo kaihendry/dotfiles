@@ -36,10 +36,10 @@ if [ "$PS1" ]; then
     #alias la='ls -A'
     #alias l='ls -CF'
     alias mutto='mutt -F ~/.muttorc'
+    alias todo='cat ~/personal/todo.txt'
 
-    # set a (really) fancy prompt
-
-    PS1='\u@\h:\w\$ '
+    # user@host pwd should be provided my WM title bar IMO
+    PS1='$ '
 
     # If this is an xterm set the title to user@host:dir
     case $TERM in
