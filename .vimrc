@@ -4,7 +4,7 @@
 map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
 :autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
 
-"set mouse=a		        " Set to get mouse to work
+set mouse=a		        " Set to get mouse to work
 set nocp		            " forget about compatibility with old version of vi
 syntax on		            " Syntax highlighting
 set background=dark 	    " Set background to dark to have nicer syntax highlighting
