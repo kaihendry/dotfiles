@@ -1,4 +1,4 @@
-startkde
-#/usr/bin/mozilla-firefox &
-#x-terminal-emulator -e screen &
-#exec x-window-manager
+#startkde
+x-www-browser &
+x-terminal-emulator -e screen -UR &
+exec x-window-manager
