@@ -61,8 +61,8 @@ set pager_index_lines=5
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
 
-macro index S "<tag-prefix><save-message>imaps://hendry@daidalos.pannuhuone.org/spam-spamassassin\n"
-macro pager S "<tag-prefix><save-message>imaps://hendry@daidalos.pannuhuone.org/spam-spamassassin\n"
+macro index S "<tag-prefix><save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
+macro pager S "<tag-prefix><save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
 
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
