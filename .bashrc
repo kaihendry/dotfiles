@@ -18,6 +18,7 @@ if [ "$PS1" ]; then
     # check the window size after each command and, if necessary,
     # update the values of LINES and COLUMNS.
     shopt -s checkwinsize
+    shopt -s histappend
 
     # enable color support of ls and also add handy aliases
     if [ "$TERM" != "dumb" ]; then
@@ -52,6 +53,7 @@ if [ "$PS1" ]; then
     *)
         # user@host pwd should be provided my WM title bar IMO
         PS1='\h\$ '
+        PROMPT_COMMAND=`history -a`
         ;;
     esac
 
