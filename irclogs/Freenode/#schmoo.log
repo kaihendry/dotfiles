@@ -1,0 +1,81 @@
+--- Log opened Mon Aug 18 22:51:37 2003
+22:51 -!- hendry [~hendry@hoas-50dd00ee.hoasnet.inet.fi] has joined #schmoo
+22:51 -!- Irssi: #schmoo: Total of 3 nicks [1 ops, 0 halfops, 0 voices, 2 normal]
+22:51 -!- Irssi: Join to #schmoo was synced in 1 secs
+22:51 <@liiwi> there we go
+22:51 < hendry> ah, this is what this is about :)
+22:51 <@liiwi> hendry, squish moshez
+22:52 <@liiwi> moshez, squish hendry
+22:52 < _moshez> squish!
+22:52 < hendry> _moshez: hi
+22:52 < _moshez> hi
+22:52 < _moshez> did you ask me about Lupy?
+22:52 < _moshez> or something else?
+22:52 < hendry> yes, I been trying to contact you about it
+22:52 < hendry> lupy debian package
+22:52 < hendry> Have you done one?
+22:52 < _moshez> did you see it has a debian/ directory built in?
+22:52 < _moshez> no, I haven't
+22:53 < _moshez> it doesn't seem stable enough yet
+22:53 < hendry> It has some problems. I use it :)
+22:53 < hendry> what about debian dir?
+22:53 < _moshez> yes. but that's the reason I decided not to polish up and upload
+22:53 < _moshez> hendry: it should be good enough to build a package, modulo maybe adding a changelog entry
+22:53 < _moshez> I wrote it :)
+22:54 < hendry> I don't have a debian dir in my lupy disb. 
+22:54 < _moshez> hrm
+22:54 < _moshez> CVS should have one
+22:54  * _moshez shrugs
+22:54 < _moshez> I think....
+22:55 < hendry> ok, new version... /me wgets
+22:55 < _moshez> forget about versions, just check cvs
+22:56 < hendry> http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/lupy/
+22:56 <@liiwi> so, anyone thinking about maintaining (uploading etc.) the package?
+22:57 < hendry> something wrong with sf? or is it elsewhere?
+22:57 <@liiwi> sf suck
+22:57 <@liiwi> s
+22:57 < _moshez> IIRC it's on tm.com
+22:57 < _moshez> ask amiramir
+22:57 <@liiwi> tm.com/users/amiramir/ ?
+22:58 < _moshez> anyway, I'm not quite sure enough that it should get into debian
+22:58 < _moshez> liiwi: amiramir is his username on fn
+22:58 <@liiwi> how come?
+22:58 < _moshez> well, the API still seems a bit prone to change
+22:58 <@liiwi> ok, so it should be packages anyway
+22:58 < _moshez> so packages depending on it would have to overspecify versioning depends or risk breakage
+22:59  * _moshez shrugs
+22:59 < _moshez> CVS should have my debian/ dir
+22:59 < _moshez> I'm not sure what the release schedule for it looks like
+22:59 < hendry> here my outdated packages : http://www.cs.helsinki.fi/u/hendry/debian/
+22:59 < hendry> well, maybe i should find something else to package...
+22:59 < _moshez> and what versions which version of Quotient needs
+22:59 <@liiwi> heh
+22:59 < _moshez> which is most important to me
+23:00 < hendry> what is divmod? a twisted off shoot?
+23:00 < _moshez> it's an application on top of Twisted
+23:00 <@liiwi> nah, something grown on top of twisted
+23:00 < _moshez> actually no it's not
+23:00 < _moshez> divmod is a company
+23:01 < _moshez> they develop something called Quotient
+23:01 <@liiwi> get outta my head, you hyperactive thing
+23:01 < _moshez> you meant to ask "what is quotient"
+23:01 < _moshez> quotient is ready to be packaged yet either :)
+23:01 < hendry> _moshez: anyway, if you can suggest something for to package or do debian wise I would be grateful
+23:02 < _moshez> hendry: find something orphaned
+23:02 < _moshez> hendry; wnpp :)
+23:02 <@liiwi> yes, there's always wnpp
+23:02 <@liiwi> actually
+23:02 < _moshez> and also, d-i needs help, but that needs more Cish skills :(
+23:03 <@liiwi> and plenty of programming-mojo
+23:03 <@liiwi> hrm
+23:03 < hendry> is that python->python2.3 thing sorted?
+23:03 < hendry> I have not had a lot of time this month. Next month I can do stuff...
+23:03 <@liiwi> I think it mostly needs nmus
+23:04 <@liiwi> oh moshez
+23:04 <@liiwi> http://kotisivu.mtv3.fi/gaeshido/galleria.htm
+23:04 <@liiwi> in the first pic, observe Tv eating shoe
+23:04 < hendry> Ok, well. I'm tired. Will get into the Debian thing again later
+23:04 < hendry> _moshez: nice to finally chat to you
+23:04 < _moshez> heh :)
+23:05 -!- _moshez [~moshez@di3-99.dialin.huji.ac.il] has left #schmoo []
+--- Log closed Mon Aug 18 23:05:09 2003

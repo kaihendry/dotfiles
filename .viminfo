@@ -7,17 +7,11 @@
 
 # hlsearch on (H) or off (h):
 ~h
-# Last Substitute String:
-$/
-
 # Command Line History (newest to oldest):
 :q
-:wq
-:edit ~/.bashrc
-:q!
 
 # Search String History (newest to oldest):
-?^"=
+?\\begin\s*{\s*document\s*}
 
 # Expression History (newest to oldest):
 
@@ -26,186 +20,193 @@ $/
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	mail svn+ssh://hendry@melkinpaasi.cs.helsinki.fi/home/fs/hendry/repo/mail
-"1	LINE	0
-	
-"2	LINE	0
-	
-"3	LINE	0
-	#folder-hook .    set signature=~/Mail/signature
-"4	LINE	0
-	# signature (I dont like sigs)
-"5	LINE	0
-	
-"6	LINE	0
-	
-"7	LINE	0
-	
-"f	CHAR	0
+"a	CHAR	0
 	
 ""-	CHAR	0
-	Hi
+	data
 
 # File marks:
-'0  1  14  ~/svn-commit.tmp
-'1  1  0  ~/.bash_profile
-'2  30  18  ~/.bashrc
-'3  11  0  ~/.bashrc
-'4  1  0  /boot/grub/menu.lst
-'5  2  80  ~/svn-prop.tmp
-'6  1  7  /tmp/svn-commit.tmp
-'7  1  0  /tmp/personal/cv/index.shtml
-'8  1  0  ~/.mutt_certificates
-'9  91  0  ~/.muttrc
+'0  191  0  ~/svn-commit.tmp
+'1  1  5  ~/.mozilla/default/ack41g03.slt/svn-prop.tmp
+'2  2  0  ~/.mozilla/default/ack41g03.slt/svn-prop.tmp
+'3  1  0  ~/.mozilla/default/ack41g03.slt/Cache/svn-prop.tmp
+'4  573  0  ~/screenlog.2
+'5  1  0  ~/laurah.txt
+'6  1  0  ~/revcert.asc
+'7  53  0  ~/routine.txt
+'8  1  1  /tmp/mutt-bilbo-4736-0
+'9  1  0  ~/docbook/resume.xml
 
 # Jumplist (newest first):
--'  1  14  ~/svn-commit.tmp
--'  1  0  ~/.bash_profile
--'  30  18  ~/.bashrc
--'  11  4  ~/.bashrc
--'  51  0  ~/.bashrc
--'  1  0  /boot/grub/menu.lst
--'  2  80  ~/svn-prop.tmp
--'  1  0  ~/svn-prop.tmp
--'  1  7  /tmp/svn-commit.tmp
--'  1  0  /tmp/personal/cv/index.shtml
--'  1  0  ~/.mutt_certificates
--'  91  0  ~/.muttrc
--'  1  0  ~/.muttrc
--'  28  7  ~/configs/.bashrc
--'  1  0  ~/configs/.bashrc
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
--'  8  0  ~/.subversion
--'  9  0  ~/.subversion
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  33  1  /usr/share/doc/xdm/README.Debian
--'  1  0  /usr/share/doc/xdm/README.Debian
--'  1  0  ~/.xsession-errors
+-'  191  0  ~/svn-commit.tmp
+-'  1  0  ~/svn-commit.tmp
+-'  1  5  ~/.mozilla/default/ack41g03.slt/svn-prop.tmp
+-'  2  0  ~/.mozilla/default/ack41g03.slt/svn-prop.tmp
+-'  1  0  ~/.mozilla/default/ack41g03.slt/Cache/svn-prop.tmp
+-'  573  0  ~/screenlog.2
+-'  1  0  ~/screenlog.2
+-'  1  0  ~/laurah.txt
+-'  1  0  ~/revcert.asc
+-'  53  0  ~/routine.txt
+-'  1  0  ~/routine.txt
+-'  1  1  /tmp/mutt-bilbo-4736-0
+-'  1  0  ~/docbook/resume.xml
+-'  1  0  ~/scripts/bu.py
+-'  2  29  ~/.ubhrc
+-'  1  0  ~/.ubhrc
+-'  105  62  ~/seminar/paper.tex
+-'  1  0  ~/seminar/paper.tex
+-'  36  0  ~/seminar/paper.tex
+-'  14  11  ~/seminar/paper.tex
+-'  13  11  ~/seminar/paper.tex
+-'  12  11  ~/seminar/paper.tex
+-'  11  11  ~/seminar/paper.tex
+-'  10  11  ~/seminar/paper.tex
+-'  9  11  ~/seminar/paper.tex
+-'  8  11  ~/seminar/paper.tex
+-'  7  11  ~/seminar/paper.tex
+-'  6  11  ~/seminar/paper.tex
+-'  5  11  ~/seminar/paper.tex
+-'  4  11  ~/seminar/paper.tex
+-'  2  20  ~/seminar/paper.tex
+-'  105  0  ~/Session.vim
+-'  1  0  ~/Session.vim
+-'  1  0  ~/sonera.pgp
+-'  1  0  ~/ssl.txt
+-'  1  0  ~/transcript.txt
+-'  53  0  ~/directions.txt
+-'  1  0  ~/directions.txt
+-'  1  0  ~/usbmouse.txt
+-'  1  0  ~/vpd.properties
+-'  1  0  ~/.wmrc
+-'  1  0  ~/xml/test.xml
+-'  1  0  ~/xml/comic.xml
+-'  1  0  ~/unicafe.txt
+-'  1  0  ~/letter2mp.txt
+-'  54  0  ~/samnotes.txt
+-'  1  0  ~/samnotes.txt
+-'  1  0  ~/p.ini
+-'  1  0  ~/log.txt
+-'  1  0  ~/xmlrpc.cgi
+-'  1  0  ~/.Xclients
+-'  1  0  ~/.Xresources
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/.Xresources
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/.Xclients
+-'  1  0  ~/.Xresources
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/accounts
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/win
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/mutt_bgrun
+-'  1  0  ~/.Xresources
+-'  1  0  ~/accounts
 
 # History of marks within files (newest to oldest):
 
 > ~/svn-commit.tmp
-	"	1	14
-	^	1	15
-	.	1	14
+	"	191	0
+	^	1	4
+	.	1	3
 
-> ~/.bash_profile
+> ~/.mozilla/default/ack41g03.slt/svn-prop.tmp
+	"	1	5
+	^	1	6
+	.	1	5
+
+> ~/.mozilla/default/ack41g03.slt/Cache/svn-prop.tmp
+	"	1	0
+	^	1	1
+	.	1	0
+
+> ~/screenlog.2
+	"	573	0
+
+> ~/laurah.txt
 	"	1	0
 
-> ~/.bashrc
-	"	30	18
-	^	30	19
-	.	30	18
-
-> /boot/grub/menu.lst
+> ~/revcert.asc
 	"	1	0
 
-> ~/svn-prop.tmp
-	"	2	80
-	^	2	81
-	.	2	80
+> ~/routine.txt
+	"	53	0
 
-> /tmp/svn-commit.tmp
-	"	1	7
-	^	1	8
-	.	1	7
+> /tmp/mutt-bilbo-4736-0
+	"	1	1
+	^	1	2
+	.	1	1
 
-> /tmp/personal/cv/index.shtml
+> ~/docbook/resume.xml
+	"	1	0
+	.	1	0
+
+> ~/scripts/bu.py
 	"	1	0
 
-> ~/.mutt_certificates
+> ~/.ubhrc
+	"	2	29
+	^	2	30
+	.	2	29
+
+> ~/seminar/paper.tex
+	"	105	62
+
+> ~/Session.vim
+	"	105	0
+
+> ~/sonera.pgp
 	"	1	0
 
-> ~/.muttrc
-	"	91	0
-	.	7	0
+> ~/ssl.txt
+	"	1	0
 
-> ~/configs/.bashrc
-	"	28	7
+> ~/transcript.txt
+	"	1	0
 
-> ~/.subversion/README.txt
-	"	77	0
+> ~/directions.txt
+	"	53	0
 
-> /usr/share/doc/xdm/README.Debian
-	"	33	1
-	.	33	0
+> ~/usbmouse.txt
+	"	1	0
 
-> ~/.xsession-errors
+> ~/vpd.properties
+	"	1	0
+
+> ~/.wmrc
 	"	1	0

@@ -1,0 +1,462 @@
+--- Log opened Sat Nov 15 14:43:36 2003
+14:43 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #skolelinux
+14:43 -!- Irssi: #skolelinux: Total of 31 nicks [20 ops, 0 halfops, 0 voices, 11 normal]
+14:43 -!- Irssi: Join to #skolelinux was synced in 2 secs
+14:55 -!- OleA [AeLo@ti511110a060-0178.dialup.online.no] has joined #skolelinux
+14:56 -!- OleA [AeLo@ti511110a060-0178.dialup.online.no] has left #skolelinux [OleA]
+15:22 -!- Antestor [~khollund@189.80-203-233.nextgentel.com] has joined #skolelinux
+15:27 -!- Antestor [~khollund@189.80-203-233.nextgentel.com] has quit [using sirc version 2.211+KSIRC/1.2.4]
+16:16 < jbragnar> Colargal: hvor er dere?
+16:16 < jbragnar> hadde vært hyggelig å hilse på :-)
+16:21 < Colargal> jbragnar: er ute og tar en røyk
+16:32 <@Snoopey> blæ. Net::DNS bryr seg ikke om timeout-verdien jeg setter.
+16:32 <@mariusk_> Noen som vet en pen måte å forhindre en tjeneste som default i SL?
+16:32 <@mariusk_> forhindre at en tjeneste starter ved boot (imap)
+16:34 < Colargal> update-rc.d
+16:37 <@mariusk_> Colargal: jeg skal fixe d permanent i SL
+16:38 <@mariusk_> noe penere måte enn cfengine?
+16:38 <@lunaq> update-rc.d fikser det permanent.
+16:38 <@mariusk_> lunaq: ja, men må kjøres noe sted under installajosnen
+16:38  * mariusk_ er på utviklersaming og løser bug #
+16:38 <@mariusk_> 462
+16:41 <@lunaq> mariusk_: C-M-f2 så kommer du til en fin konsoll. Logg inn og utfør update-rc.d greiene
+16:42 <@mariusk_> lunaq: trokke du skjønner. Jeg prøver å fikse det på ALLE INSTALLASJONER av SL fremover.
+16:42 <@lunaq> Å. Slik.
+16:42 <@lunaq> Aner ikke.
+16:42 <@mariusk_> lunaq: greit om du kan klones og gjøre legges ved hver CD og gjøre det :-)
+16:42 <@lunaq> while(1) { clone(lunaq); } 
+16:42 <@lunaq> ;)
+16:43 <@lunaq> Hva er det du skal? Du skal starte imap-ssl-sakene ved oppstart?
+16:44 <@mariusk_> lunaq: den starter og d r ok. den utem ssl skal dog IKKE starte
+16:44 < Colargal> mariusk_: enten ved hjelp av debconf (om det funker), eller via cfengine
+16:45 <@mariusk_> Colargal: ser ikke ut som debconf har noe støtte for det for denne
+16:57 <@mariusk_> må nok bruke cfengine til å endre en configfil
+16:57 -!- stockholm [~andreas@petrus.schuldei.org] has quit [Connection reset by peer]
+16:58 -!- stockholm [-andreas@81.27.1.16] has joined #skolelinux
+17:00 -!- TommyG [~Tommy@ti500710a140-0303.dialup.online.no] has joined #skolelinux
+17:09 < Colargal> hvem stakk av med kaffen?
+17:11 < Colargal> vi vil ha KAFFE!!!!
+17:16 <@Snoopey> :-)
+17:18 < TommyG> Sene kvelder på utviklersamling?
+17:18 < TommyG> Store mengder kaffe bøttes inpå?
+17:40  * Colargal traktet cowboy-kaffe
+17:40 < Colargal> denne fjerner de fleste av de indre organer umiddelbart
+17:42 -!- TommyG [~Tommy@ti500710a140-0303.dialup.online.no] has quit [Client Exiting]
+17:48 -!- Antestor [~khollund@189.80-203-233.nextgentel.com] has joined #skolelinux
+17:50 -!- Antestor [~khollund@189.80-203-233.nextgentel.com] has quit [using sirc version 2.211+KSIRC/1.2.4]
+17:53 <@cobar> Noen burde legge inn den ene kaffekanna i bugzilla. Den virker ikke 
+17:54 < Colargal> haha
+18:09 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has joined #Skolelinux
+18:11 <@jemtland> Werner_: ping 
+18:12 < Mariuskm> werner er i SL møte
+18:16 <@jemtland> Mariuskm: Jepp. 
+18:17 <@jemtland> Er det noen som sitter i møte, som kan si i fra til Werner at nettet nå er opp på test servere..... Hvis han kan avse et minutt, så har jeg lyst til å sette igang installasjon av backup pakkene.
+18:25 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has quit [Ping timeout]
+19:05 -!- Barbaross [max@ist.von-ihnen.de] has quit [leaving]
+19:05 -!- Barbaross [max@ist.von-ihnen.de] has joined #skolelinux
+19:05 -!- mode/#skolelinux [+o Barbaross] by bugbot
+19:06 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #skolelinux
+19:14 -!- sLins [-slinsie@c-6b0e73d5.08-21-6f736c2.cust.bredband.no] has quit [Connection reset by peer]
+19:27 -!- Netsplit *.stealth.net <-> *.DE quits: @k4x, @Barbaross
+19:31 -!- Netsplit over, joins: Barbaross, @k4x
+19:31 -!- mode/#skolelinux [+o Barbaross] by bugbot
+19:47 -!- sLins [-slinsie@c-6b0e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+20:17 -!- haraldib [~harald@81.80-202-20.nextgentel.com] has joined #skolelinux
+20:39 -!- jbragnar [~ragnar@193.156.199.2] has quit [Client Exiting]
+20:43 -!- Colargal [~runesk@193.156.199.2] has quit [EOF From client]
+21:13 -!- haraldib [~harald@81.80-202-20.nextgentel.com] has quit [EOF From client]
+22:15 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit [Klienten avslutter]
+23:08 -!- TommyG [~Tommy@ti500710a000-0215.dialup.online.no] has joined #skolelinux
+23:12 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #skolelinux
+23:35 -!- mode/#skolelinux [+ooo klausAde klausOff ozmjobb] by Barbaross
+23:35 -!- mode/#skolelinux [+o stockholm] by Barbaross
+23:41 -!- TommyG [~Tommy@ti500710a000-0215.dialup.online.no] has quit [Client Exiting]
+23:59 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit [Ping timeout]
+--- Day changed Sun Nov 16 2003
+00:08 <@Snoopey> yes.
+00:08 -!- ARNi [-acidx@129.240.107.18] has joined #skolelinux
+00:08 <@Snoopey> arrrrrni.
+00:08 < ARNi> Snoopey ;)
+00:10 < ARNi> fant ut at jeg tar en tur imorra alikevel.. en kammerat (langly fra irc.egil) hadde lyst til å ta seg en tur..
+00:11 <@Snoopey> :-)
+00:11 < ARNi> vi tar den T-banen som vi egentlig skulle tatt idag
+00:11 < ARNi> 09.38 fra Grønland eller.no
+00:12 <@Snoopey> Da møter jeg dere. :)
+00:12 -!- sLins [-slinsie@c-6b0e73d5.08-21-6f736c2.cust.bredband.no] has quit [Connection reset by peer]
+00:12 < ARNi> den er go' :)
+00:12 -!- sLins [-slinsie@c-6b0e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+00:13 < ARNi> Martin joiner ikke imorra heller?
+00:15 <@Snoopey> Nei, jeg tror ikke det.
+00:15 < ARNi> oki
+00:32 -!- martinl [martinl@c-6b0e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+00:32 < martinl> :)
+00:32 < ARNi> ;)
+00:32 < martinl> ARNi: :) Hepps
+00:32 < ARNi> halla martinl!
+00:33 < ARNi> du henger med!
+00:33 -!- martinl is now known as lAphy
+00:33 < lAphy> :)
+00:33 < lAphy> hihi
+00:33 < ARNi> vi har akkurat avtalt, langly, Snoopey og meg om å møtes på T-banen imorra
+00:33 < ARNi> du blir fortsatt ikke med?
+00:33 <@Snoopey> *dra lAphy i skjegget*
+00:33 <@Snoopey> heng med!
+00:34 <@Snoopey> (til samlingen - ikke i skjegget)
+00:34 < lAphy> ARNi: :) Er litt begrensinger satt av sjefen ;)
+00:34 < ARNi> hehe
+00:34 <@Snoopey> Sjefen sitter og spiller Sonic nå
+00:34 < ARNi> sånn kan det g¨å
+00:34 < ARNi> gå
+00:34 < lAphy> hihi
+00:34 <@Snoopey> Og er sååååååååå konsentrert.
+00:34 < ARNi> :P
+00:35 < lAphy> ARNi: jeg må uansett få gjennomtestet labboppgavene for onsdag, torsdag, og fredag for Listog
+00:35 < ARNi> ok
+00:35 < ARNi> det vi så på her på onsdag?
+00:35 < lAphy> Avsluttende labboppgaver for studentene denne uka. 
+00:35 <@Snoopey> :-)
+00:36 < lAphy> ARNi: Onsdag skal de ha avsluttning på det. Torsdag og fredag skal de ha config av samba
+00:36 < ARNi> nice
+00:36 < ARNi> og da er kurset over?
+00:37 < lAphy> ARNi: Det praktiske biten er over. De har mappeinnlevering om ikke så lenge. De skal ha tid for å gå gjennom mappene
+00:37 < ARNi> skjønner
+00:37 < lAphy> ARNi: :) Morro å kurse folk i Linux. Får se om jeg ser etter noen flere slike småjobber :)
+00:38 < ARNi> ;) Ser jo det at du stoorkoser deg på labben der!
+00:38 < lAphy> :)
+00:41 < ARNi> du kan jo for eksempel prøve å frelse foreleserne og studieadministrasjonen :)
+00:46 < lAphy> ;) hihi
+00:47 < lAphy> ARNi: Det blir deres jobb. Dere som er i systemet over tid :)
+00:47 < lAphy> ARNi: På den andre siden.. NITH kjører Linux på all vesentlig infrastruktur i hele systemet. Dvs.. Det som ikke kjører Cisco :)
+00:47 < ARNi> huff
+00:47 < ARNi> hørtes ut som en slitsom jobb :)
+00:47 < lAphy> ARNi: Driftspersonalet på skolen er allerde frelst :)
+00:48 -!- TommyG [~Tommy@ti500710a001-0231.dialup.online.no] has joined #skolelinux
+00:48 < ARNi> jepp.. det er sant.. tenkte litt på desktop systemet..
+00:48 < lAphy> ARNi: Det er driftsperonalet som drifter desktopene. Er ikke så lang vei til dualboot f.eks da
+00:48 < ARNi> det er sant
+00:49 < ARNi> men det står vel litt på det politiske plan og vel..
+00:49 < lAphy> ARNi: Tja.. Tror det står på driftsfolka. Deres villighet til å ta på seg mer
+00:49 < ARNi> hmm... okey
+00:50 < lAphy> ARNi: Men dette er ikke det samme som å få det inn i undervisningen i større grad. Det er bare et skritt for å få studentene mer aktive på linux. Det kan igjen føre til andre ting
+00:50 < lAphy> ARNi: Skolen har fått policy på pdf i det siste.. Slikt er gode tegn
+00:50 < ARNi> jess..det var hovedsakelig det jeg tenkte på
+00:51 < lAphy> :) Trikset tror jeg er å gå et skritt om gangen
+00:51 < ARNi> sant det
+00:52 < lAphy> haha.. sjekk /msg
+01:02 -!- kmaraas [~kmaraas@145.80-203-35.nextgentel.com] has quit [Ping timeout]
+01:05 -!- TommyG [~Tommy@ti500710a001-0231.dialup.online.no] has quit [Client Exiting]
+--- Log closed Sun Nov 16 01:11:01 2003
+--- Log opened Sun Nov 16 11:20:47 2003
+11:20 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #skolelinux
+11:20 -!- Irssi: #skolelinux: Total of 29 nicks [20 ops, 0 halfops, 0 voices, 9 normal]
+11:20 -!- Irssi: Join to #skolelinux was synced in 2 secs
+11:25 -!- markus_x3 [~markus@193.156.199.2] has joined #skolelinux
+11:54 -!- kmaraas [~kmaraas@145.80-203-35.nextgentel.com] has joined #skolelinux
+12:11 -!- langly [~langly@193.156.199.2] has joined #skolelinux
+12:19 -!- royk_home [~roy@148.80-202-172.nextgentel.com] has joined #Skolelinux
+12:21 <@Snoopey> gjæsp.
+12:23 -!- arniX [~arni@193.156.199.2] has joined #skolelinux
+12:27 < kmaraas> sene kvelder på utviklersamling? :)
+12:28 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has joined #Skolelinux
+12:29 <@Snoopey> hehehe
+12:29  * Mariuskm venter på t-bane...
+12:29 < Mariuskm> som har planer om å være forsinka
+12:33 < Mariuskm> hvordan går bug squashinga?
+12:33 < Mariuskm> dere som sitter på major-bugs
+12:41 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has quit [Connection reset by peer]
+12:42 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has joined #Skolelinux
+12:50 <@Snoopey> 403 begynner å bli klar i hvert fall.
+12:52 < Mariuskm> og d r?
+12:58  * Mariuskm hopper av t-banen
+13:01 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+13:24 -!- Colargal [~runesk@193.156.199.2] has joined #skolelinux
+13:24 < Colargal> ååå for ein stråååålande mooooorgon!!!!
+13:24 <@Werner_> nåh...
+13:24 -!- mode/#skolelinux [+o Colargal] by Werner_
+13:24 <@Colargal> hehe
+13:25 <@Colargal> er det noen debian utviklere som er våkne her på Ulsrud?
+13:26 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit [Klienten avslutter]
+13:26 <@mariusk_> tja
+13:26 <@mariusk_> Petter kommer forhåpentligvis snart
+13:26 <@Werner_> mariusk_: sikker? :)
+13:26 <@Colargal> noen som vet hvor han er da?
+13:26  * Colargal vil forsøke å få koordinert en liten signering av gpg-nøkler
+13:26 <@Snoopey> mariusk_: Det er vel tvilsomt.. :)
+13:27 <@Snoopey> Han og Ragnar slo håret løs i natt. :-)
+13:28 < sLins> hahahah
+13:33 <@Werner_> Colargal: klar for det!
+13:53 <@mariusk_> Snoopey: klokka var ca 5 da jeg forlot dem
+13:54 <@Snoopey> mariusk_: 8)
+14:03 <@Colargal> Werner_: du har printet ut fingerprint?
+14:05 -!- Netsplit *.se <-> *.DE quits: @k4x, @Barbaross
+14:06 -!- mode/#skolelinux [+o Barbaross] by bugbot
+14:06 -!- Netsplit over, joins: @Barbaross, @k4x
+14:09 -!- Mariuskm [~mariuskm@g-001.osl255.netcom.no] has quit [Ping timeout]
+14:53 -!- Colargal [~runesk@193.156.199.2] has quit [Ping timeout]
+14:58 -!- Colargal [~runesk@193.156.199.2] has joined #skolelinux
+15:00 <@Werner_> Colargal: nope... will do :)
+15:08 < Colargal> B4C64517
+15:08 < Colargal> gpg-key2ps brukte jeg
+15:23 <@fajulsrud> Colargal: Hvor finner du gpg-key2ps ? 
+15:24 -!- mode/#skolelinux [+ooo Colargal markus_x3 ozmjobb] by Barbaross
+15:24 <@Barbaross> pere_poff: ping
+15:25 <@Colargal> fajulsrud: signing-party
+15:26 <@cobar> apt-cache search gpg-key2ps
+15:45 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #skolelinux
+15:46 <@mariusk_> Hmm. ligger skel-filer i SL-cvsen noe sted=
+15:46 <@mariusk_> ?
+16:11  * mariusk_ la inn en
+16:11  * mariusk_ vha. cfengine-ting
+16:11 <@Barbaross> does anyone know if pere is alive? :)
+16:12 <@fajulsrud> Barbaross: Yes, he is alive, but he is not avalible . 
+16:12 <@fajulsrud> he is in a meeting. 
+16:12 <@Barbaross> Do you know when he's back?
+16:13 < klausAde> fajulsrud: any progress with the mylex? (@home with sick familymember)
+16:13 -!- mode/#skolelinux [+o klausAde] by Barbaross
+16:13 <@Barbaross> what's with mylex?
+16:15 <@klausAde> Barbaross: http://bugs.skolelinux.no/show_bug.cgi?id=510
+16:17 <@Barbaross> hmpf If I had SCSI-disc I could have a lokk at this :-S
+16:18 <@klausAde> Barbaross: any good at perl?
+16:18 <@Barbaross> no sorry
+16:21 <@Snoopey> klausAde: Elaborate your perl problem.
+16:22 <@klausAde> Snoopey: can you get this working? https://secure.rvglug.org/pipermail/rvglug/2002-January/001120.html
+16:23 <@fajulsrud> klausAde: no - it has not possible to talk with pere_poff today, as he celebrated a bit last night, (opr this morning) 
+16:23 <@klausAde> Snoopey: i'm no perl-mann, only thing that I see thats wrong is that we don't have /sbin/pidof but /bin/pidof
+16:25 <@klausAde> Snoopey: i've seen a lot of request for such a feature, beeing able to inform all logged on users about something.
+16:25 <@klausAde> Snoopey: what you say?
+16:30 <@Snoopey> klausAde: What's match-string?
+16:30 <@Snoopey> What process do you specify? 
+16:31 <@klausAde> Snoopey: the author suggeste startkde, but that doesn't work. For testing i'm using 'opera'
+16:31 <@klausAde> Snoopey: does it work for you?
+16:31 <@Snoopey> I tried kwin, kdeinit, e.g. Didn't work out.
+16:36 <@Snoopey> I don't think it gets XAUTHORITY right.
+16:36 <@klausAde> Snoopey: i think so too.
+16:43 <@Snoopey> uh. `cat ...`
+16:43 <@Snoopey> småstygt script. :-)
+16:48 <@Barbaross> argh wo killed my translation in DI? :-S
+16:51 <@Barbaross> autopartkit in pr42 seems not to work on my maschine...
+16:52 <@Snoopey> klausAde: fikk til, tror jeg. :)
+16:52 <@Snoopey> Den fungerer her på en arbeidsstasjon i hvert fall - har ingen tynnklienttjener å teste på.
+16:54 <@Snoopey> klausAde: d.skolelinux.no/~snoopey/xwall.pl
+16:54 <@Snoopey> minst like stygt som originalscriptet, dog. :-)
+16:58 <@Snoopey> mariusk_: har åpnet bug 462 igjen. Common name bør vel være postoffice og ikke localhost.
+16:58 <@Snoopey> I sertifikatet, altså.
+17:03 <@klausAde> Snoopey: looking gooood.
+17:04 <@Snoopey> ls
+17:04 <@Snoopey> fnis.
+17:14 -!- arniX [~arni@193.156.199.2] has quit [...]
+17:14 -!- langly [~langly@193.156.199.2] has quit [leaving]
+17:25 <@mariusk_> Snoopey: men sertifikatet har vel ingenting med den saken å gjøre?
+17:25 <@mariusk_> Snoopey: bruker nok samme sertifikatet som webmin f.eks.
+17:26 <@Barbaross> autopartkit tries to partinionize my ZIP-disk :-/
+17:30 <@mariusk_> Colargal: jeg stoler ikke på deg. har du fingerprint og ID her?
+17:31 <@mariusk_> Colargal: Jeg mener PGP-nøkkelen din
+17:42  * mariusk_ stoler på Colargal nå
+17:46 -!- p33r\ [dark@oraw421.cm.chello.no] has joined #skolelinux
+17:48 -!- TommyG [~Tommy@ti500710a002-0185.dialup.online.no] has joined #skolelinux
+17:55 <@Snoopey> mariusk_: Den bruker eget sertifikat, gjør den ikke?
+17:55 <@Snoopey> Jeg har i hvert fall generert et sertifikat spesielt for IMAP på serveren jeg har her. courier-imapd det óg :)
+17:55  * stockholm is home...
+18:00 -!- p33r\ [dark@oraw421.cm.chello.no] has quit []
+18:01 -!- stockholm [-andreas@81.27.1.16] has quit [ping timeout by peer]
+18:03  * mariusk_ drar
+18:05 <@Colargal> fajulsrud: fikk du lastet opp nøkkel?
+18:09 -!- Colargal [~runesk@193.156.199.2] has quit [EOF From client]
+18:26 -!- stockholm [-andreas@81.27.1.16] has joined #skolelinux
+18:26 -!- mode/#skolelinux [+o stockholm] by Barbaross
+18:29 <@stockholm> yay!
+18:29 <@stockholm> danke, barbaraossa
+18:29 <@Barbaross> hi
+18:29 <@Barbaross> ich bastel gerade an dem samba zeuch
+18:30 <@stockholm> ah. finnarne glaube ich auch
+18:31 <@Barbaross> ich glaube das hat ischh eh erledigt
+18:31 <@Barbaross> wenn wir die neuen samba-pakete nehmen braucht das script kein ruht-pw mer
+18:31 <@stockholm> Barbaross: von wann sind die?
+18:32 <@Barbaross> ich hab vorhin das postinst-script aktualisiert
+18:32 <@Barbaross> passwort generieren, ein ldap packen, samba geben und gut
+18:32 <@stockholm> baby will was, halbe stunde bin ich wieder da.
+18:33 <@Barbaross> :-)
+18:43 <@Snoopey> yes.
+18:44 <@Snoopey> a 
+18:44 <@Snoopey> teite tastaturet.
+18:44 <@lunaq> teite Snoopey
+18:44 <@lunaq> (:)
+18:52 -!- markus_x3 [~markus@193.156.199.2] has quit [Ping timeout]
+18:53 -!- markus_x3 [~markus@193.156.199.2] has joined #skolelinux
+18:55 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [Ping timeout]
+18:56 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+18:59 -!- markus_x3 [~markus@193.156.199.2] has quit [Ping timeout]
+19:03 -!- fajulsrud [~finnarne@212.125.240.90] has quit [Ping timeout]
+19:06 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [Connection reset by peer]
+19:10 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+19:12 -!- fajulsrud [~finnarne@212.125.240.90] has joined #skolelinux
+19:12 -!- mode/#skolelinux [+o fajulsrud] by bugbot
+19:30 -!- TommyG [~Tommy@ti500710a002-0185.dialup.online.no] has quit [Client Exiting]
+19:33 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [Connection reset by peer]
+19:36 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+19:51 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [Ping timeout]
+20:01 -!- kmaraas [~kmaraas@145.80-203-35.nextgentel.com] has quit [Leaving]
+20:13 -!- hilaire [+hilaire@81.56.227.203] has joined #skolelinux
+20:13 -!- mode/#skolelinux [+o hilaire] by Barbaross
+21:12 -!- kmaraas [~kmaraas@145.80-203-35.nextgentel.com] has joined #skolelinux
+21:48 -!- hilaire [+hilaire@81.56.227.203] has quit [Client exiting]
+22:07 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+22:48 <@Werner_> Colargal: nope... will do :)
+22:49 <@Werner_> sorry feil vindu... uansett takk for trivelig helg alle sammen!
+22:51 -!- TommyG [~Tommy@ti500710a000-0207.dialup.online.no] has joined #skolelinux
+23:02 <@Snoopey> I lige måde :)
+23:20 -!- TommyG [~Tommy@ti500710a000-0207.dialup.online.no] has quit [Client Exiting]
+--- Log closed Sun Nov 16 23:41:49 2003
+--- Log opened Mon Nov 17 18:30:02 2003
+18:30 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #skolelinux
+18:30 -!- Irssi: #skolelinux: Total of 35 nicks [21 ops, 0 halfops, 0 voices, 14 normal]
+18:30 -!- Irssi: Join to #skolelinux was synced in 2 secs
+18:49 -!- hilaire [-hilaire@cddp40.net1.nerim.net] has quit [Client exiting]
+18:49 -!- kmaraas [~kmaraas@145.80-203-35.nextgentel.com] has joined #skolelinux
+18:53 -!- mode/#skolelinux [+o klausAde] by Barbaross
+19:00 -!- Laaknor [lak@inett.biz] has quit [Ping timeout]
+19:01 -!- slragnar [~ragnar@ti221110a080-2826.bb.online.no] has quit [Ping timeout]
+19:01 -!- ozmaway [~osmuvaag@ti132110a080-0348.bb.online.no] has quit [Ping timeout]
+19:14 -!- osmuvaag [-osmuvaag@ti132110a080-0348.bb.online.no] has joined #skolelinux
+19:15 -!- osmuvaag [-osmuvaag@ti132110a080-0348.bb.online.no] has quit [Leaving]
+19:20 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit [Ping timeout]
+19:26 -!- pere_ [~pere@217-13-7-8.dd.nextgentel.com] has joined #skolelinux
+19:34 -!- perh [~perh@26.80-202-19.nextgentel.com] has joined #skolelinux
+19:34 -!- mode/#skolelinux [+o perh] by bugbot
+19:40 -!- markus_x3 [~markus@217-13-23-149.dd.nextgentel.com] has joined #skolelinux
+19:40 < markus_x3> Kom dere forran TV'en
+19:40 < markus_x3> Nå er det snart vi som er på lufta
+19:40 <@Colargol> får ikke sett det der likevel ;)
+19:40 < markus_x3> Colargol: Synd
+19:40  * Colargol hjem for å sove
+19:41 <@Snoopey> markus_x3: Ta opp og legg ut!
+19:43 < markus_x3> Jeg tar opp
+19:43 <@Snoopey> markus_x3: :-) 
+19:43 < markus_x3> Men først på VHS
+19:43 < markus_x3> Jeg skal be om kopi fra NRK
+19:43 < markus_x3> Det er litt bedre men dyrt
+19:43 <@Snoopey> :)
+19:43 < markus_x3> Colargol: Har du glemt en switch
+19:45 <@Colargol> markus_x3: muligens
+19:46 <@Colargol> markus_x3: jeg har ikke sjekket om den ligger i laptopveska... men om den ble funnet inne ved det jeg satt, er den nok min
+19:46 <@Colargol> (eller NTNU sin rettere sagt)
+19:48 <@klausAde> markus_x3: flott!!!
+19:48 < markus_x3> Da var det hele overe, og det var jo slett ikke værst
+19:48  * pere_ er ikke i nærheten av en TV og lurer på hva som skjedde.
+19:48 < markus_x3> Men det var jo ikke mer en 1 min, av 10 min med opptak
+19:48 -!- eivind [-asd@062016175100.customer.alfanett.no] has joined #skolelinux
+19:48 < markus_x3> pere_: Ulsrud var på TV
+19:48 < markus_x3> Om SL
+19:49 <@klausAde> markus_x3: velkommen til "østlandssendingen-klubben":-)
+19:49 < markus_x3> Og Bjørn Martinsen i Skoleetaten bbekrefter at nå går de for SL hvis Ulsrud blir OK
+19:49 < markus_x3> klausAde: Bedre sent enn aldri
+19:50 <@klausAde> markus_x3: bedre er at vi "stadig vekk" er i nyhetene.
+19:50 < markus_x3> ;-)
+19:51 -!- eivind [-asd@062016175100.customer.alfanett.no] has quit [Client exiting]
+19:55 < lAphy> :)
+19:55 < lAphy> Bra jobba
+19:57 -!- Veggen [~vegard@213-187-177-230.dd.nextgentel.com] has quit [Connection reset by peer]
+19:58 -!- Veggen [~vegard@213-187-177-230.dd.nextgentel.com] has joined #skolelinux
+19:59 -!- Laaknor [lak@inett.biz] has joined #skolelinux
+20:01 -!- markus_x3 [~markus@217-13-23-149.dd.nextgentel.com] has quit [Ping timeout]
+20:09 -!- lAphy [martinl@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [leaving]
+20:11 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+20:11 < pere_> faj_away: har du lastet opp gpg-nøkkelen din?
+20:12 < sLins> wow
+20:12 -!- cobar [olekvi@home.kvisberg.net] has left #skolelinux [-*- -*-]
+20:12 < pere_> sLins: wow?
+20:13 < sLins> det tok meg sikkert en halv time å komme inn på en ircnet server
+20:13 < pere_> sLins: har du oppdaget #debian-edu på irc.debian.org?
+20:14 < sLins> tjah. jeg har lest topic om ikke annet :)
+20:15 <@faj_away> pere_: Jepp, har ikek fått fjernet den gamle enda :) 
+20:15 -!- MaGzLinux [~MaGz@b2-wak1.cm.chello.no] has joined #skolelinux
+20:16 -!- markus_x3 [~markus@217-13-23-149.dd.nextgentel.com] has joined #skolelinux
+20:17 -!- MaGzLinux is now known as MaGz
+20:18 < pere_> faj_away: signering sendt opp.
+20:18 <@Colargol> sLins: du kommer vel ikke inn på norske tjenere fordi IPen du har er "svensk"
+20:20 < Veggen> Colargol: ergh....serverne sjekker vel ikke på ip-adresser, da.
+20:20 < pere_> jeg tror vel kanskje jeg også begynner å bli lei av innloggingsproblemene på IRCNet.
+20:20 <@Colargol> Veggen: nei på ripe-delegering
+20:20 < Veggen> Colargol: sannelig.
+20:21 < Veggen> lenge siden jeg sjekket I-linjene... :)
+20:21 < sLins> Colargol: hvor norsk er irc.stealth.net?
+20:21 < sLins> pluss flere
+20:21 < sLins> men jeg er vesentlig mye mer møkkalei windows.
+20:21 <@Colargol> sLins: veldig lite
+20:21 < sLins> hihi
+20:22 <@Colargol> sLins: irc.swipnet.se og irc.ludd.luth.se vil muligens funke for deg
+20:22 < sLins> wowo. ludd for ludds :p
+20:24 < markus_x3> Hva med at vi bytter net for IRC'en, slik vi har snakket om
+20:24 < markus_x3> Det holder ikke at vi sliter med disse problemene
+20:24 -!- TommyG [~Tommy@ti500710a011-0203.dialup.online.no] has joined #skolelinux
+20:24 <@Colargol> markus_x3: det er mindre enn 2-3% av norske brukere som vil ha disse problemene.. men om dt er god nok grunn, vet jeg ikke
+20:25 < markus_x3> Da er halvparten av disse med hos oss. Mange klager
+20:26 < sLins> markus_x3: eyh. jeg så en kjekkas på tv i stad :)
+20:26 < sLins> kult :)
+20:26 < pere_> Colargol: jeg kom meg ikke på irc fra ulsrud.  
+20:26 < TommyG> Gikk glipp av den sendinga
+20:27 < markus_x3> En liten slank man, regner jeg med ;-)
+20:27 < TommyG> Går vel muligens i reprise i morgen formidag
+20:27 < markus_x3> Vi har vært på radioen også, hele etermiddagen
+20:28 < TommyG> En skikkelig PR Blitz
+20:28 <@Colargol> pere_: det gjorde jeg
+20:28 < TommyG> Hvem er det som modererer Bruker lista? Kommet mye spam igjennom de siste dagene
+20:28 < pere_> Colargol: ingen av mine vanlige IRC-tjenere slapp meg inn.  Jeg hadde andre ting å kaste bort tid på, så jeg ga opp.
+20:29 < pere_> er det noen som modererer brukerlista?
+20:29 < markus_x3> tror vel ikke det
+20:29 < TommyG> vet ikke hvordan systemet fungerer jeg
+20:29 <@Colargol> http://ip-to-country.directi.com/node/view/36?ip_address=213.115.14.113 viser årsaken til sLins problem med å få brukt norske tjenere iallefall... svenske tjenere vil sansynligvis funke fint
+20:29 < TommyG> Er det ikke noe med at om man ikke er påmeldt lista, så må mailer godkjennes
+20:30 -!- ArOgen [~christof@k5f10e1.cm.chello.no] has joined #skolelinux
+20:30 < sLins> Colargol: men jeg prøvde ikke bare norske tjenere
+20:30 -!- osmuvaag [~osmuvaag@ti132110a080-0348.bb.online.no] has joined #skolelinux
+20:30 < sLins> mest trolig prøvde jeg ikke det i det hele tatt
+20:30 -!- mode/#skolelinux [+o osmuvaag] by bugbot
+20:30 < sLins> aner ikke
+20:30 < pere_> Colargol: det er sikkert mulig å finne ut av slikt når en har problemer, men jeg synes ikke det er verdt å bruke tiden på, når det finner raskere alternativer.
+20:30 <@Colargol> pere_: bruke irc.pvv.ntnu.no (samt 4-5 ndre tjenere på andre nett), og det var ikke noe i veien med det.. det er dog en lang timeout på ident
+20:30 < sLins> jeg har autoetleannaet på xchat'n
+20:30 -!- slragnar [~ragnar@ti221110a080-2826.bb.online.no] has joined #skolelinux
+20:30 -!- mode/#skolelinux [+o slragnar] by bugbot
+20:31 <@Colargol> sLins: med "svensk" IP, må du bruke svensk IRCnet-tjener, eller den stealth-tingen
+20:31 -!- mode/#skolelinux [+o markus_x3] by Barbaross
+20:31 <@Colargol> sLins: så godt som alle europeiske IRCnet-tjenere er forbeholdt landet de står i
+20:31 < sLins> oh
+20:32 < sLins> jeg er ikke vant til det
+20:32 <@Colargol> :)
+20:36  * MaGz is away: Jeg har travlt
+20:36 < ArOgen> skal du ut MaGz ?
+20:36 < MaGz> ja..
+20:36 < MaGz> er du med?
+20:37 < ArOgen> nei
+20:37 < ArOgen> orker ikke
+20:37 < MaGz> :P
+20:53 < ArOgen> markus_x3: Markus fra Ulsrud vgs?
+20:56 -!- slragna1 [~ragnar@ti221110a080-2826.bb.online.no] has joined #skolelinux
+20:56 -!- mode/#skolelinux [+o slragna1] by bugbot
+20:57 -!- sLins [-slinsie@c-710e73d5.08-21-6f736c2.cust.bredband.no] has quit [Ping timeout]
+20:58 <@markus_x3> ArOgen: Meg ja
+20:59 <@faj_away> dagens østlandssendong: mms://straum.nrk.no/_stlandssendingen/2003-11-17/_stl_send__18_40
+20:59 <@faj_away> _17_11_03_900_WM_20031117_184001.wmv
+20:59 <@faj_away> argh
+20:59 <@faj_away> mms://straum.nrk.no/_stlandssendingen/2003-11-17/_stl_send__18_40_17_11_03_900_WM_20031117_184001.wmv
+21:00 <@slragnar> slragna1: hei
+21:00 < ArOgen> markus_x3: Ok. Christoffer her, som ble intervjuet.
+21:00 < TommyG> *fyre opp mplayer*
+21:01 <@faj_away> det var langt uti sendingen gitt. 
+21:02 <@markus_x3> faj_away: bare klaging
+21:02 -!- faj_away is now known as faj_se_tv
+21:02 <@markus_x3> ArOgen: Var d fornøyd
+21:04 <@faj_se_tv> er skoleetaten pålagt å standardisere på Windows ?  
+21:04 <@faj_se_tv> den var ny 
+21:04 -!- faj_se_tv is now known as finnarne
+21:05 <@slragna1> Ã¦Ã¸Ã¥Ã†Ã˜Ã…
+21:05 -!- slragnar changed the topic of #skolelinux to: CD pr42 is out | #debian-edu @ irc.debian.org for an English only-channel || htt
+21:05 <@slragnar> jøss
+21:06 <@slragnar> jeg gjorde da ingenting
+21:06 < ArOgen> hehe
+21:06 <@finnarne> slragnar: Han så bedre ut på tv :) 
+21:06 <@slragnar> åffer en da?
+21:06 <@finnarne> markus :) 
+21:06 <@slragnar> å
+--- Log closed Mon Nov 17 21:06:57 2003

@@ -1,0 +1,177 @@
+--- Log opened Thu Jul 31 20:40:22 2003
+20:40 -!- Irssi: Starting query in Freenode with edward
+20:40 <hendry> lo?
+--- Log closed Thu Jul 31 20:45:36 2003
+--- Log opened Sun Aug 17 17:18:35 2003
+17:18 -!- Irssi: Starting query in Freenode with edward
+17:18 <hendry> howdy
+--- Log closed Sun Aug 17 17:23:52 2003
+--- Log opened Sun Aug 17 22:14:50 2003
+22:14 -!- Irssi: Starting query in Freenode with edward
+22:14 <hendry> hellloooooooooo
+--- Log closed Sun Aug 17 22:20:05 2003
+--- Log opened Sun Aug 17 22:25:15 2003
+22:25 <edward> hi
+22:25  * edward is just going out
+22:27 <hendry> bugger
+22:27 <hendry> wanted to ask you about gpg stuff
+22:27 <hendry> need to figure out wtf I am supposed to do
+--- Log closed Sun Aug 17 22:33:05 2003
+--- Log opened Tue Sep 23 21:47:30 2003
+21:47 -!- Irssi: Starting query in Freenode with edward
+21:47 <hendry> foo
+--- Log closed Tue Sep 23 21:52:57 2003
+--- Log opened Tue Sep 23 22:07:22 2003
+22:07 <edward> hello
+22:08 <hendry> busy?
+--- Log closed Tue Sep 23 22:13:57 2003
+--- Log opened Tue Sep 23 22:26:04 2003
+22:26 <edward> no
+22:26 <edward> sorry, i was distracted for a bit
+22:28 <hendry> Have you signed my key and stuff?
+22:30 <edward> not sure
+22:31 <hendry> wtf do I do when someone signs my key again
+22:32 <edward> they should send you a file, feed it to gpg
+22:32 <edward> gpg signedkey.pgp
+22:33 <edward> hang on, no that is wrong
+22:34 <edward> gpg --imporg signedkey.pgp
+22:34 <edward> or they might just upload the key to the keyservers
+22:34 <edward> in wich case you need to do
+22:34 <edward> gpg --keyserver keyring.debian.org --recv-key yourkeyid
+22:35 <edward> or whatever keyserver
+22:38 <hendry> Is that keyring only for DD?
+22:41 <hendry> Some dewd sent me an inline -----BEGIN PGP PUBLIC KEY BLOCK-----
+22:41 <hendry> any ideas how I handle that in mutt ?
+22:42 <edward> save the mail to a file
+22:42 <edward> C should save it
+22:43 <edward> feed it to mutt
+22:43 <edward> s/mutt/gpg/
+22:45 <hendry> is there a way to nicely see who has signed my key. And who I haven't or vice versa oh god...
+22:47 <edward> gpg --list-sigs keyid
+22:48 <hendry> oh yes. I have yours.
+22:48 <hendry> sig 3?
+22:48 <hendry> sig 2
+22:48 <edward> how much people trust you
+22:48 <hendry> 3 is alot? or crap?
+22:48 <edward> can't remember
+22:51 <hendry> what about my sigs on others (?)
+22:52 <edward> not easy to find
+22:53 <hendry> any news? been upto anything interesting?
+22:53 <hendry> do you have a blog or something?
+22:55 <edward> http://www.evilgeniuses.org.uk/~edward/
+22:55 <edward> it is not very up to date
+22:55 <edward> are you on frienster.com?
+22:55 <edward> friendster.com even
+22:56 <hendry> fakester? :)
+22:56 <edward> you not a fan?
+22:56 <hendry> maybe I will sign up
+22:56 <hendry> will you be my friend?
+22:56 <edward> sure
+22:56 <edward> edward@debian.org
+22:56 <hendry> heard about it through an RDF/Semantic conference a collegue atteneded
+22:57 <hendry> Serious Relationship?
+22:57 <hendry> I want to meet HOT CHICKS
+22:58 <hendry> Open Marriage??????+
+22:59 <edward> where was the RDF conference?
+22:59  * edward is interested in RDF
+23:01 <hendry> why's that?
+23:01  * edward thinks it is the future
+23:02 <hendry> i've yet to see a decent app
+23:02 <edward> it will spark the second tech boom
+23:02 <hendry> ppl can't code html
+23:02 <hendry> can we leave it up to them to lay down semantics?
+23:02 <edward> if you knew HTML in 1996 you could earn a lot of money
+23:02 <edward> you'll be able to earn lots if you can do RDF in 2003
+23:02 <edward> actually more like 2005
+23:03 <hendry> if you have cisco, novell, m$ quals you could earn more
+23:03 <hendry> ;)
+23:03 <hendry> 29,245 people in your Personal Network, through 1 friend.
+23:03 <edward> the semantics is easy, i just pull data out of a database, and include the column headings
+23:03 <hendry> WTFD
+23:04 <hendry> that be true. but where is that done?
+23:04 <edward> semantic web is not finished yet
+23:07 <hendry> there by standards
+23:07 <hendry> there be no decent imps
+23:08 <edward> yep
+23:08 <hendry> shall i give you a testomony?
+23:08 <hendry> christ
+23:08 <hendry> how do you spell that
+23:08 <hendry> 3 definitions found
+23:08 <hendry> From The Collaborative International Dictionary of English v.0.48 [gcide]:
+23:08 <hendry>   Testimonial \Tes`ti*mo"ni*al\, n. [Cf. OF. testimoniale, LL.
+23:08 <hendry>      testimonialis, L. testimoniales (sc. litterae). See
+23:08 <hendry>      {Testimonial}, a.]
+23:08 <hendry>      1. A writing or certificate which bears testimony in favor of
+23:08 <hendry>         one's character, good conduct, ability, etc., or of the
+23:08 <hendry>         value of a thing.
+23:08 <hendry>         [1913 Webster]
+23:08 <hendry>   
+23:08 <hendry>      2. Something, as money or plate, presented to a preson as a
+23:08 <hendry>         token of respect, or of obligation for services rendered.
+23:08 <hendry>         [1913 Webster]
+23:08 <hendry> From The Collaborative International Dictionary of English v.0.48 [gcide]:
+23:08 <hendry>   Testimonial \Tes`ti*mo"ni*al\, a. [L. testimonialis: cf. F.
+23:08 <hendry>      testimonial.]
+23:08 <hendry>      Relating to, or containing, testimony.
+23:08 <hendry>      [1913 Webster]
+23:08 <hendry> From WordNet (r) 2.0 (August 2003) [wn]:
+23:08 <hendry>   testimonial
+23:08 <hendry>        adj 1: expressing admiration or appreciation; "testimonial dinner"
+23:08 <hendry>        2: of or relating to or constituting testimony
+23:08 <hendry>        n 1: something that serves as evidence; "his effort was testimony
+23:08 <hendry>             to his devotion" [syn: {testimony}]
+23:08 <hendry>        2: something given or done as an expression of esteem [syn: {tribute}]
+23:08 <hendry>        3: something that recommends (or expresses commendation) of a
+23:08 <hendry>           person or thing as worthy or desirable [syn: {recommendation},
+23:08 <hendry>            {good word}]
+23:08 <hendry> favor
+23:08 <hendry> christ
+23:11 <edward> :-)
+23:12 <hendry> http://www.friendster.com/viewfullphoto.jsp?id=5155015
+23:14 <edward> :-)
+23:14 <edward> friendster is a bit slow
+--- Log closed Tue Sep 23 23:19:58 2003
+--- Log opened Tue Sep 23 23:21:52 2003
+23:21 <hendry> seems quite interesting
+23:22 <hendry> feel a bit pathetic having just you as my one friend mind
+23:24 <edward> get some other friends to join
+23:24 <hendry> i've made a testimonial
+23:28 <edward> i just read it
+23:28 <edward> very helpful
+23:30 <hendry> want me to lie?
+23:30 <hendry> lol
+23:31 <hendry> tell me what I should say
+23:31  * edward can never think what to write
+23:31 <edward> friendster is all a bit odd
+23:32 <edward> but an interesting experiment
+23:32  * edward thinks the newspapers will spot it and start writing about it, then there will be a lot more people on it
+23:32 <edward> but it will crash, friendster have no business model and will not be able to pay for the database server and bandwidth
+23:33 <hendry> didn't you see the VC stuff on theregister?
+23:33 <edward> no
+23:34 <hendry> http://www.theregister.co.uk/content/6/32965.html
+23:36 <edward> interesting
+23:39 <hendry> it is a little slow after a while of usage
+23:40 <edward> yep
+23:43 <hendry> are you on an IM network?
+23:43 <edward> ICQ and AIM
+23:44 <edward> last81 on AIM
+23:44 <edward> 2077090 on ICQ
+23:45 <hendry> isn't AIM/ICQ the same?
+23:46 <edward> kind of
+23:46 <edward> but i wanted to try iChat AV
+23:47 <edward> which requires an AIM or .mac account
+23:47 <edward> does not work with an ICQ account
+--- Log closed Tue Sep 23 23:52:58 2003
+--- Log opened Tue Sep 23 23:53:25 2003
+23:53 <hendry> iChat AV?
+23:53 <hendry> what's that?
+23:53 <hendry> What client do you use btw
+23:57 <edward> gaim
+23:57 <edward> i cycle between using gnomeicu, gaim and ickle
+23:57 <edward> http://www.apple.com/ichat/
+--- Log closed Wed Sep 24 00:02:58 2003
+--- Log opened Wed Sep 24 00:19:07 2003
+00:19 <hendry> that run on debian ?
+00:19 <hendry> :P
+00:19 <hendry> nn
+--- Log closed Wed Sep 24 00:20:35 2003

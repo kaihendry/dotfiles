@@ -1,0 +1,195 @@
+--- Log opened Tue Sep 30 18:18:24 2003
+18:18 -!- Irssi: Starting query in Freenode with part
+18:18 <hendry> wanna come around for tea?
+18:18 <part> sure
+18:19 <hendry> anytime from now. although i need to go down an do washing at 18:30
+18:19 <part> I just got home from work
+18:20 <hendry> which means ? :)
+18:21 <part> haven't started doing anything yet
+18:22 <hendry> k
+18:23 <part> should I drop by now or later after you've done your washing?
+18:23 <hendry> come in 10mins, k?
+18:24 <part> sure
+--- Log closed Tue Sep 30 18:29:55 2003
+--- Log opened Tue Sep 30 21:05:50 2003
+21:05 <part> back now..
+21:06 <part> the main issue about the network was that there were 11 people (or househoulds) interested, and that was just too little
+21:07 <hendry> oh no
+21:07 <part> he asked some people, like me, and got the number of people up to 14, which was enough to warrant the deal
+21:07 <part> so it is going to happen
+21:08 <hendry> ah sweet
+21:08 <part> you really should learn finnish ;)
+21:08 <hendry> when?
+21:10 <part> no schedule yet, he was going to talk with the dsl provider tomorrow or so, should know more about it in a few days
+21:10 <part> or maybe Laturi should learn to speak english :)
+21:12 <part> do you speak anything else besides english?
+21:14 <hendry> i am learning German
+--- Log closed Tue Sep 30 21:19:57 2003
+--- Log opened Tue Sep 30 22:20:21 2003
+22:20 -!- part [~tjhukkan@ip212-226-143-253.adsl.kpnqwest.fi] has quit [Read error: 113 (No route to host)]
+--- Log closed Tue Sep 30 22:25:59 2003
+--- Log opened Tue Sep 30 23:12:04 2003
+23:12 -!- part [~tjhukkan@ip212-226-143-253.adsl.kpnqwest.fi] has quit [Remote closed the connection]
+--- Log closed Tue Sep 30 23:17:59 2003
+--- Log opened Sat Oct 04 14:05:00 2003
+14:05 -!- Irssi: Starting query in Freenode with part
+14:05 <hendry> you can come around for tea/fruit
+14:06 <part> I'm terribly hungry, I'm going to get some supplies and cook lunch
+--- Log closed Sat Oct 04 14:11:47 2003
+--- Log opened Sun Oct 05 20:13:14 2003
+20:13 -!- Irssi: Starting query in Freenode with part
+20:13 <part> have you got time to share the movies?
+--- Log closed Sun Oct 05 20:18:30 2003
+--- Log opened Sun Oct 05 21:10:36 2003
+21:10 <hendry> yes now
+21:10 <hendry> just watched phone booth
+21:12 <part> did you like it?
+--- Log closed Sun Oct 05 21:17:31 2003
+--- Log opened Sun Oct 05 21:24:26 2003
+21:24 <hendry> it was OK. still thought I could better spend my time
+21:24 <hendry> :)
+21:25 <part> you can almost always think of better ways to spend time
+21:26 <part> :)
+21:26 <part> have you got a spare UTP cable?
+21:27 <hendry> hmmm
+21:28 <hendry> I do, but I think I packed it away
+21:29 <hendry> no I don't 
+21:29 <hendry> I can't be bothered to go up to storage and find it
+21:29 <hendry> wait let me ask me flat mate
+21:31 <hendry> Bernard said you could use his
+21:34 <part> great
+21:35 <part> I'll come over in a moment
+21:35 <hendry> ok
+--- Log closed Sun Oct 05 21:41:31 2003
+--- Log opened Sun Oct 05 22:36:03 2003
+22:36 <part> well, apm battery level indicator seems to be useless as well on this laptop, it kept running quite happily and said 5% instead of the earlier 3% when I looked
+22:38 <part> oh, and I hate these laptop pointing-stick mice
+--- Log closed Sun Oct 05 22:43:32 2003
+--- Log opened Sun Oct 05 23:34:07 2003
+23:34 <hendry> ä
+23:34 <hendry> ummm
+23:34 <hendry> how do I encode something like ä in utf-8?
+--- Log closed Sun Oct 05 23:39:33 2003
+--- Log opened Sun Oct 05 23:58:44 2003
+23:58 <part> iconv might help
+23:58 <part> where do you want to use it?
+--- Log closed Mon Oct 06 00:04:33 2003
+--- Log opened Wed Oct 08 20:38:41 2003
+20:38 -!- Irssi: Starting query in Freenode with part
+20:38 <hendry> tea?
+--- Log closed Wed Oct 08 20:44:27 2003
+--- Log opened Wed Oct 08 22:17:49 2003
+22:17 <part> perhaps
+22:18 <hendry> ;)
+22:18 <part> I don't have timestamps here, I have no idea how long ago you said that :)
+22:21 <hendry> about 2 hours ago
+22:21 <part> oh :)
+22:21 <hendry> you're welcome still. i slept this afternoon so i have a couple of hours left in me at least
+22:23 <part> I've been busy configuring some stuff, and I want to get it done today..
+22:24 <hendry> ok. what is it btw? :)
+22:25 <part> sql-ledger
+22:25 <part> the largest problem is that someone else has hand-compiled apache and lots of other stuff even though it's a debian system
+22:27 <hendry> sql-ledger sucks. I tried it, in mind for my parents
+22:27 <hendry> but that was about 2 years ago
+22:30 <part> I'm not going to be using it, I'm installing it for others to use in a project
+22:30 <part> gaah1
+22:30 <part> !
+22:30 <part> I hate vim
+22:30 <part> and my keyboard
+22:31 <part> my left shift key is broken, it sometimes fails
+22:31 <hendry> left shift and vim?
+22:31 <part> unrelated things :)
+22:31 <part> vim is trying to be too clever and indents apache config when it doesn't really know how to indent it
+22:32 <part> luckily there is nvi
+22:34 <hendry> what you mean? when you paste?
+22:34 <hendry> I swapped that 3com card for another 2nd hand one, and I think it is also not working
+22:34 <part> no, when I press tab
+22:35 <hendry> Could you please give me the link to the cheapest lookin' PCI combo card on kauppa.iqs.fi?
+22:35 <hendry> tabs are EVIL
+22:37 <part> vim is evil
+22:42 <hendry> " $Id: .vimrc,v 1.17 2003/10/05 21:26:30 hendry Exp $
+22:42 <hendry> " Spell check
+22:42 <hendry> map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
+22:42 <hendry> :autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
+22:42 <hendry> "set mouse=a		        " Set mouse to work
+22:42 <hendry> set nocp		            " forget about compatibility with old version of vi
+22:42 <hendry> syntax on		            " Syntax highlighting
+22:42 <hendry> set background=dark 	    " Set background to dark to have nicer syntax highlighting
+22:42 <hendry> set ttyfast		            " Smoother changes
+22:42 <hendry> set ruler		            " We show vertic
+22:42 <hendry> hmmm
+22:43 <part> I'm using 'vi' as root, I will not start customising it :-P
+--- Log closed Wed Oct 08 22:48:29 2003
+--- Log opened Wed Oct 08 22:52:26 2003
+22:52 <part> you're rcs?
+22:53 <hendry> set expandtab               " No tabs!                                                                                                                                   
+22:53 <hendry> set shiftwidth=4            " A tab become four spaces                                                                                                                   
+22:53 <hendry> set softtabstop=4                                                                                                                                                        
+22:53 <hendry> set tabstop=4 
+22:53 <hendry> my config yes
+22:54 <part> ehh.. I meant to ask if you're using rcs
+22:54 <hendry> I use CVS
+22:54 <hendry> RCS is the older version right? 
+22:55 <hendry> I use it on my tips and tricks page
+22:55 <hendry> RCS that is
+22:55 <part> ok
+22:55 <part> cvs is an extension on top of rcs
+22:55 <part> rcs handles single files, and essentially so does cvs
+22:55 <part> I've been looking at subversion today...
+22:59 <hendry> comments then ? 
+22:59 <hendry> i keep forgetting howto setup a new repr in CVS
+--- Log closed Wed Oct 08 23:05:29 2003
+--- Log opened Wed Oct 08 23:09:38 2003
+23:09 <part> heh
+23:09 <part> comments on what?
+23:10 <part> cvs init is what you're looking for
+23:10 <part> I'm aiming to have all of my own projects under subversion from now on
+23:11 <part> got sql-ledger to work a while ago
+23:11 <hendry> is it as sucky as I remember it?
+23:12 <part> I don't know how you remember it :)
+23:12 <part> seems like it could be useful if you need such a tool
+23:12 <part> I don't personally, so I really can't tell whether it's sucky or not
+23:15 <hendry> http://www.sql-ledger.org/cgi-bin/users.pl
+23:15 <hendry> add to the lusers? :)
+23:17 <part> technically I'm not using it :)
+--- Log closed Wed Oct 08 23:23:29 2003
+--- Log opened Tue Oct 28 20:03:03 2003
+20:03 -!- Irssi: Starting query in Freenode with part
+20:03 <hendry> coming?
+--- Log closed Tue Oct 28 20:08:51 2003
+--- Log opened Tue Nov 04 19:39:13 2003
+19:39 -!- Irssi: Starting query in Freenode with part
+19:39 <hendry> come around now
+--- Log closed Tue Nov 04 19:44:29 2003
+--- Log opened Sat Nov 08 19:02:39 2003
+19:02 -!- Irssi: Starting query in Freenode with part
+19:02 <part> found any (board-)games?
+--- Log closed Sat Nov 08 19:08:38 2003
+--- Log opened Sat Nov 08 19:19:24 2003
+19:19 <hendry> i bought lunch money
+--- Log closed Sat Nov 08 19:24:38 2003
+--- Log opened Sat Nov 08 23:52:57 2003
+23:52 <part> neat
+--- Log closed Sat Nov 08 23:58:42 2003
+--- Log opened Sun Nov 09 02:49:53 2003
+02:49 -!- part [~tjhukkan@ip212-226-143-253.adsl.kpnqwest.fi] has quit ["."]
+--- Log closed Sun Nov 09 02:55:44 2003
+--- Log opened Wed Nov 19 21:19:49 2003
+21:19 -!- Irssi: Starting query in Freenode with part
+21:19 <part> meep
+--- Log closed Wed Nov 19 21:25:01 2003
+--- Log opened Wed Nov 19 21:32:09 2003
+21:32 <hendry> hi
+21:32 <hendry> called to ask you about an update with the home pna
+21:32 <hendry> and what does the notice at the bottom of the stairwell read
+--- Log closed Wed Nov 19 21:38:02 2003
+--- Log opened Wed Nov 19 21:42:24 2003
+21:42 <part> is your phone connection crappy or did you just turn your phone off after you called me?
+21:44 <hendry> vibration does not work
+21:44 <hendry> it was on silence
+21:44 <hendry> call me again
+21:46 <part> ok
+--- Log closed Wed Nov 19 21:52:02 2003
+--- Log opened Wed Nov 19 22:09:22 2003
+22:09 -!- part [~tjhukkan@ip212-226-143-253.adsl.kpnqwest.fi] has quit ["."]
+--- Log closed Wed Nov 19 22:12:23 2003

@@ -1,0 +1,167 @@
+--- Log opened Tue Nov 04 16:09:52 2003
+16:09 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #debian
+16:09 -!- Irssi: #debian: Total of 98 nicks [9 ops, 0 halfops, 7 voices, 82 normal]
+16:09 -!- Irssi: Join to #debian was synced in 2 secs
+16:10 <@pluesch0r> wtf!
+16:10 <@pluesch0r> my tv set just gave up on color.
+16:10 <@pluesch0r> everything's black & white now. except for the teletext (hooray).
+16:10 <@deviant> yawn
+16:10 <@pluesch0r> deviant: morning.
+16:11 <@deviant> hey flasch. 
+16:11 <+ryushe> morning
+16:11 <@deviant> i didnt woke up now.. \
+16:11 <@deviant> i`m on my legs near 5 hours ;)
+16:13 <@pluesch0r> color is back again! right when simpsons start! yay!
+16:14 -!- rent0n [~rent0n@2001:618:497:5:0:0:2919:234a] has joined #debian
+16:15 < rent0n> ciao
+16:15 < rent0n> so benissimo che non è un chan d'aiuto ma...
+16:15 < rent0n> nn saprei a chi chiedere
+16:15 < rent0n> io provo a domandare se c'è qualche anima pia che risponde =)
+16:15 -!- mode/#debian [+l 109] by unknown
+16:15 < rent0n> allora
+16:15 <@pluesch0r> rent0n: english.
+16:15 <@pluesch0r> or kick.
+16:16 < rent0n> ops
+16:16 < rent0n> didn't know
+16:16 <@pluesch0r> learn to read the topic, damn italian.
+16:16 <@deviant> topic god damn.
+16:16 -!- gorion [gorion@syndicate.pl] has joined #debian
+16:16 <@deviant> not a whole world is speaking italian.
+16:16 -!- mode/#debian [+o gorion] by unknown
+16:17 <@deviant> neither is it a priority language.
+16:17 < rent0n> there's no reason to be so irritated and RACIST
+16:17 < seta> italians dont know other places than italy
+16:17 <+ryushe> hehe
+16:17 < rent0n> that's not true
+16:17 <@pluesch0r> rent0n: ask your question. this is no place for discussions.
+16:17 < seta> rent0n, well, sometimes it seems that.
+16:17 < sunta>  how do I get rid of this, any ideas? postfix-script: warning: /var/spool/postfix/etc/openldap/ldap.conf and /etc/openldap/ldap.conf differ
+16:18 < rent0n> ok
+16:18 < rent0n> ill ask anyways
+16:18 < rent0n> mmmmmm
+16:18 < rent0n> im trying to install debian on a old pc
+16:18 <@deviant> rent0n: i`m a damn racist!
+16:18 < rent0n> it hasn't cdrom boot
+16:18 <@deviant> what now?
+16:18 < rent0n> but only floppy boot
+16:18 < rent0n> so
+16:19 <+ryushe> so you boot from floppies :)
+16:19 < rent0n> i downloaded the rescue.bin root.bin driver1.bin driver2.bin driver3.bin driver4.bin
+16:19 < rent0n> and make floppies
+16:19 < rent0n> all right
+16:19 < rent0n> but
+16:19 < rent0n> in taht pc i haven't internet connection and
+16:20 < rent0n> i need
+16:20 < rent0n> the base-software but the link on the site(www.debian.org)
+16:20 < rent0n> is not active
+16:20 <+ryushe> is it ide? if so, screw open your desktop, remove cd-rom > old machine, make cd set and boot from cd 
+16:21 <+ryushe> ^^^ /me loves the hard way :)
+16:21 < rent0n> ryushe
+16:21 < rent0n> mmm
+16:21 < rent0n> where i have to doi those things
+16:21 < rent0n> ^
+16:22 < rent0n> ?
+16:22 <+ryushe> euhh, at home? at work? dunno where you keep your hardware mate :)
+16:24 -!- hdkiller [~hdkiller@videoton.videoton.hu] has left #debian [hdkiller]
+16:24 < rent0n> that's ok
+16:24 <+alankila> ok, now I want to get the smartass who decided that .pl is prolog source file
+16:24 < rent0n> but
+16:24 -!- Tony856 [-antoon@f240043.upc-f.chello.nl] has joined #debian
+16:24 <+alankila> I mean, who on the damn earth thinks .pl stands for prolog these days
+16:24 < rent0n> it doesn't matter
+16:24 <+alankila> took long enough to figure out why kate couldn't display .pl files correctly
+16:25 < rent0n> what's the american site of debian?
+16:27 -!- wac [~wac@c-196.vc-graz.ac.at] has joined #debian
+16:27 <+ryushe> www.debian.org ?
+16:27 <+ryushe> jees
+16:27 < rza> hehehee
+16:27 <+ryushe> please feel free to use google or your common sense ...
+16:28 < rza> www.debian.org -> select server near to you?
+16:28 -!- Netsplit ircd.seed.net.tw <-> irc.seed.net.tw quits: Sasami
+16:28 < rent0n> ...
+16:28 < rent0n> just because
+16:28 < rent0n> debian.org comes in my browser in italian...
+16:28 < rent0n> anyways
+16:28 < rent0n> i have this problem
+16:28 < rent0n> see this
+16:28 < rent0n> page
+16:29 < rent0n> http://www.debian.org/releases/stable/i386/ch-appendix#s-file-descs
+16:29 < rent0n> and go
+16:29 < rent0n> to 11.2.3.4 paragraph
+16:29 < rent0n> there are no links for base system
+16:29 <+alankila> rent0n: the Italian is because you've told your browser that your preferred language is Italian
+16:30 < rza> how about browsing ftp?
+16:30 <+alankila> fix that if you want it to come up in English
+16:30 <+ryushe> dude, there is an option at the top of the screen to choose country/language
+16:30 < rent0n> yes, now i've understood=)
+16:30 <+ryushe> rent0n > seriously though, why again are you installing linux ?
+16:30 < rent0n> why am i installing linux?
+16:31 < rent0n> see
+16:31 < rent0n> this is not the first time i install linux
+16:31 < rent0n> i have linux on other pcs
+16:31 < rza> rent0n: how about cd-image?
+16:31 < rza> or boot floppies and install the rest from network?
+16:31 < rent0n> but this time im in trouble because i haven't internet connection and cdrom boot
+16:32 <+ryushe> rza > he said he has no network and no cd-rom
+16:32 -!- Netsplit over, joins: Sasami
+16:32 < rza> ok
+16:32 < rent0n> anyways
+16:32 < rza> have fun with floppies
+16:32 <+ryushe> hehe
+16:32 < rent0n> i need those floppy .bin files
+16:32 < rent0n> what can i do to find them?
+16:32 <+ryushe> make about 400 floppies and use em :)]
+16:32 < rza> ftp://debian.org/debian/dists/stable/main/disks-i386/base-images-current/images-1.44/
+16:32 < rent0n> do you jknow the ftp directory where they are?
+16:33 < rent0n> oh
+16:33 < rent0n> perfect
+16:33 < rent0n> ^________^
+16:33 < rent0n> i just did'nt find the directory
+16:33 < rza> http://www.debian.org/releases/stable/i386/ch-appendix
+16:33 < rza> that explains where to get base images
+16:33 -!- gorion [gorion@syndicate.pl] has quit [Ping timeout]
+16:34 < rza> if you can use a bit of common sense
+16:34 < rent0n> ok, thank you
+16:34 < rent0n> and please
+16:34 < rza> np
+16:35 < rent0n> don't attack any italian that comes in this room
+16:35 < rent0n> italians are not always the same
+16:35 < rza> not any
+16:35 < rza> if that means all
+16:35 -!- mode/#debian [+l 110] by unknown
+16:35 <@pluesch0r> rent0n: just drop the subject, will ya?
+16:35 < rent0n> ok
+16:35 < rza> just the ones that ask dump questions
+16:35 < rza> anyways
+16:35 < rza> my time to go
+16:35 < rza> home sweet home
+16:35 < rza> laters
+16:35 < rent0n> was mine a dump question?
+16:36 < rza> yes
+16:36 <@Q-FONK> rza: btw, you were in Quentin Tarentino's new movie. :D
+16:36 < rent0n> ok=)
+16:36 < rent0n> anyways
+16:36 < rent0n> thank you
+16:36 < rent0n> bye
+16:36 < rent0n> =)
+16:36 < rza> Q-FONK: im "julkkis"
+16:36 < rza> :)
+16:36 -!- rent0n [~rent0n@2001:618:497:5:0:0:2919:234a] has left #debian [rent0n]
+16:36 < rza> anyways
+16:36 < rza> now off
+16:36 <@Q-FONK> niin kuin minäkin :D
+16:36 <@Q-FONK> ok, cya
+16:40 -!- gorion [gorion@syndicate.pl] has joined #debian
+16:40 -!- mode/#debian [+o gorion] by unknown
+16:53 < Tony856> does anyone know something about tape streamers with debian i think my device is broken :(
+16:53 < Tony856> /dev/st0: Input/output error
+16:53 < Tony856> when i do mt -f /dev/st0 erase
+16:53 < Tony856> or any operation, only rewind works
+16:59 -!- Tony856 [-antoon@f240043.upc-f.chello.nl] has quit [Max SendQ exceeded]
+17:00 -!- Tony856 [-antoon@f240043.upc-f.chello.nl] has joined #debian
+17:00 < Tony856> /dev/st0: Input/output error
+17:01 < Tony856> when i do mt -f /dev/st0, none of the mt operations works, exept rewind
+17:01 < Tony856> i think my device is broken
+17:05 -!- ToYKillAS [~Omen@217-117-55-52.teledisnet.be] has quit [m4Dn355 c'est moi]
+17:12 < hendry> '/wc
+--- Log closed Tue Nov 04 17:12:22 2003

@@ -1,0 +1,1632 @@
+--- Log opened Fri Jun 20 12:57:50 2003
+12:57 -!- hendry [hendry@hoas-50dd0851.hoasnet.inet.fi] has joined #london.pm
+12:57 -!- Irssi: #london.pm: Total of 61 nicks [52 ops, 0 halfops, 6 voices, 3 normal]
+12:57 -!- Irssi: Join to #london.pm was synced in 1 secs
+12:57 -!- mode/#london.pm [+o hendry] by slavorg
+12:57 <@Magnus> hendry hendry hendry
+12:58 <@hendry> Magnus: sup sup sup
+12:58 <@mstevens> woohoo! AMP likely to close NPI to new business!
+12:58 <@yoda> Magnus: i was really annoyed, as one of my mates got to go work backstage on her manchester gig
+12:58  * Magnus wonders what they will do with the stolen boeing
+12:58 <@Magnus> I bet, load a nucular bomb onto it
+12:58 <@Magnus> and fly to $city
+12:58 <@hendry> Magnus: right. they are going to have a party innit
+12:58 <@Ahrimanes> hm how old is kylie by now?
+12:58 <@vorsprung> s/stage/side/
+12:58 <@Magnus> kylie is 40
+12:59 <@vorsprung> Ahrimanes, 30 something
+12:59 <@yoda> $city = "the mouth of george bush"
+12:59 <@Dom2> Fuck.  It's my fathers birthday tomorrow
+12:59 <@davorg> bugger
+12:59  * davorg forgot to buy bowie tickets at 10am
+12:59 <@yoda> fuck, i forgot father's day
+12:59 <@davorg> and now it's all sold out
+12:59 <@yoda> oh well, it's expected of me
+12:59 <@vorsprung> davorg, it's ok he sucks nowadays
+13:00 <@davorg> vorsprung: not true any more
+13:00 <@yoda> i remembered mother's day this year. that's about as much as i can cope with in a year :)
+13:00 <@davorg> bowie hasn't sucked for 10 years
+13:00 <@vorsprung> davorg, he wasn't so great when I saw him in 1982 and he hasn't got any better :)
+13:00 -!- broquaint [dan@81.187.213.98] has joined #london.pm
+13:00 -!- mode/#london.pm [+o broquaint] by slavorg
+13:00 <@davorg> he was good when i saw him last in 1995
+13:01 <@davorg> also good in 1990. a bit shit in 1987 and rubbish in 1983.
+13:01 <@vorsprung> i suppose it's possible he is good again
+13:02 <@davorg> bloody hell. £36 or £46!!
+13:03 <@Magnus> does he do star man
+13:03 <@davorg> don't know
+13:04 <@hendry> DrHyde: Do you run anything like MT on your box?
+13:04 <@hendry> Shevek: And content management systems on your machine?
+13:04 <@hendry> Magnus: what is the Bradford url?
+13:05  * hendry needs to do a webpage for parent's B&B today
+13:07  * davorg decides that £203 is too much to pay for 4 bowie tickets
+13:07 <@davorg> he'll have to get by without me this time
+13:07  * davorg bets it'll be shown on mtv
+13:07 <@Magnus> hendry: www.bradfordonavon.com
+13:10 <@gbjk> (ACUCOBOL-GT Debugger)-- # Subscript deficiencies
+13:11 <@hendry> Magnus: Do you run a box with MT, which I host prazefarm.co.uk with? :)
+13:12 <@yoda> coo, birmingham and manchester railways stations now have wifi hotspots
+13:12 <@yoda> and we might get wifi on the trains at some point soon as well
+13:15  * DrHyde waves
+13:15 <@Greg> hey ho dave
+13:15 <@gbjk> Hey - that's a good idea
+13:15 <@gbjk> Morning Greg
+13:15  * gbjk is up to eyes in nasty code
+13:16 <@DrHyde> morning my little greggy
+13:16 <@Greg> (trains with wifi)++
+13:16 <@Greg> trains are already a great form of transport
+13:16  * Greg hearts trains
+13:17 <@yoda> when they upgrade the birmingham to euston trains to the nice new ones with power points that'll go great with wifi :)
+13:17 <@TeeJay> crikey - redhat made a significant profit last quarter
+13:18 <@gbjk> TeeJay: really?
+13:18 <@gellyfish> wait until SCO sues them
+13:18 <@gellyfish> ;-)
+13:18 <@hendry> DrHyde: Hi hi, do you run any content management system something or other on barnyard?
+13:19 <@doop> gellyfish: http://www.redhat.com/about/presscenter/2003/press_q1fy2004.html claims "$1.5 million, or $0.01 per share"..
+13:20 <@gellyfish> coo
+13:20  * Greg looks forward to IBM releasing the patent dogs err i mean lawyers sometime soon
+13:20 -!- PerfDave [~grimoire@81-86-215-33.dsl.pipex.com] has quit [leaving]
+13:20 <@Greg> IBM has a stupid amount of patents
+13:22 -!- DrHyde [~david@plough.barnyard.co.uk] has quit [Lost terminal]
+13:22 <@Magnus> hendry: yes, of course.
+13:22 <@Magnus> hendry: I'll try and do it this weekend
+13:25 -!- PerfDave [grimoire@81-86-215-33.dsl.pipex.com] has joined #london.pm
+13:25 -!- mode/#london.pm [+o PerfDave] by slavorg
+13:26 -!- DrHyde [~david@plough.barnyard.co.uk] has joined #london.pm
+13:26 -!- mode/#london.pm [+o DrHyde] by clunker
+13:26 <@TeeJay> eh up DrHyde
+13:27  * DrHyde wonders why his screen died
+13:27 <@bob> cause it hates you
+13:27 <@PerfDave> DrHyde: It's just resting (etc)
+13:27  * DrHyde blames livejournal
+13:27 <@PerfDave> #include <parrotsketch.h>
+13:27 <@PerfDave> DrHyde: Good call!
+13:27  * dipsy buffs her fingernails nonchalantly
+13:29 <@gbjk> TeeJay: btw - Liked Once Upon A time in China II a lot
+13:33 <@TeeJay> gbjk: tis good
+13:34 <@TeeJay> good examples of combat umbrella use
+13:34 <@gbjk> SCO-- # Very lost
+13:34 <@gbjk> TeeJay: yeah - heee
+13:34 <@gbjk> SCO-- # Lost it, even
+13:34 <@noidd> SCO++ # making a good profit for its shareholders
+13:34 <@TeeJay> noidd: but it hasn't yet
+13:34 <@gbjk> TeeJay: Keep forgetting to look up No shadow kick
+13:35 <@aef> It has for the ones clever enough to sell out :)
+13:35 <@noidd> it has if you sell your shares :-)
+13:35 <@gbjk> TeeJay: cloth pole fight scene was very good
+13:35 <@vorsprung> aef, heh right!
+13:35 <@noidd> its gone from about 1$ a share to 12$ a share in 2 months
+13:35 <@TeeJay> gbjk: yeah - no shadow kick looks like a crescent kick with a leading leg
+13:35 <@gbjk> Didn't Realise that Wong Fei-Hung's father was also one of the ten tigers of Canton
+13:36 <@TeeJay> yes - he also invented the Tiger-Crane form of Hung Gar
+13:36 <@aef> It's funny how the directors of a company have a duty to act in the interests of their shareholders at any given time. Which includes inflating the share price so they can sell it to some other person and make a profit, which the next person pays for, though they are also a shareholder now. Because they weren't when the decision to inflate was made.
+13:37 <@gbjk> Yo Ming Guek
+13:37 <@gbjk> TeeJay: yeah - I knew that
+13:37 <@gbjk> TeeJay: Didn't that proceed the Fujian version ?
+13:37 <@gbjk> he was from Fushan, wasn't he .. which is a neighbouring province ?
+13:37 <@TeeJay> gbjk: no - tis a form not a style
+13:37 <@TeeJay> yeah neighbouring province
+13:38 <@TeeJay> but chinese province are large
+13:38 <@gbjk> TeeJay: I know
+13:38 <@TeeJay> crane and tiger are common combination
+13:38 <@gbjk> TeeJay: that's true
+13:38 <@TeeJay> both part of shaolin five animals
+13:39 <@gbjk> Wasn't Wong Fei-Hung one of the ones that developed the Ten Forms fit ...
+13:39 -!- vorsprung [vorsprung@brsl-3e35255c.pool.mediaWays.net] has quit [leaving]
+13:40 <@TeeJay> gbjk: dunno
+13:40 <@gbjk> Fukien == Fujian ?
+13:40 <@TeeJay> gbjk: yeah
+13:40 <@gbjk> Just wanted to check
+13:40 <@hendry> Does MT support language templating stuff?
+13:40 <@gbjk> Coz I was sure the South Shaolin Temple was in Fujian
+13:40 <@TeeJay> now one of the poorest sections of china
+13:41 <@TeeJay> gbjk: yeah
+13:41 <@gbjk> Hence the whole history idea
+13:43 -!- vorsprung [vorsprung@brsl-3e35255c.pool.mediaWays.net] has joined #london.pm
+13:43 -!- mode/#london.pm [+o vorsprung] by slavorg
+13:44  * gbjk moves to #History of Shaolin Kung Fu
+13:48 -!- marnameow [~marna@212.35.238.162] has joined #london.pm
+13:48 -!- mode/#london.pm [+o marnameow] by slavorg
+13:48 <@Magnus> hendry: no
+13:49 <@mstevens> hello workmarna
+13:49 <@marnameow> Hello! I did eventually make it into work. Now I need coffee by the *gallon*!
+13:53 <@aef> It's sold by the litre, nowadays...
+13:53 <@Magnus> hahahah
+13:53 <@Magnus> I was in a coffee shop/bar on Wednesday night
+13:53 <@Magnus> they had vintage gramophones from the 20's and 50's playing
+13:53 <@Magnus> and my mate asked for a Latte
+13:53 <@Magnus> so I went down to order it
+13:54 <@yoda> marnameow: leave work and find a nice coffee shop :)
+13:54 <@Magnus> and the girl asked small/medium/large
+13:54 <@Magnus> I asked how big the large was
+13:54 <@Magnus> and she showed me
+13:54 <@Magnus> and I said "surely that's a fatal dose of caffeine"
+13:54 <@Magnus> and she looked completely blank
+13:54 <@aef> Magnus: And then you seduce her?
+13:54 <@bob> Magnus: no that about 10 grams
+13:54 <@doop> 50mg/kg AFAIR
+13:54 <@Magnus> but.... it's funny, right?
+13:55 <@Magnus> she was foreign.
+13:55 <@Magnus> the gramophones were good though
+13:57 <@marnameow> But did you seduct her?
+13:57 <@Magnus> no
+13:57 <@Magnus> it only works on people that are responsive
+13:57 <@TeeJay> Magnus: not fast enough
+13:58 <@marnameow> Did you *attempt* to seduct her?
+13:59 <@Magnus> sigh
+13:59 <@PerfDave> "Responsive"? You mean you can pull anybody who wants to be pulled?
+14:00 <@lathos> Did you threaten to overrule her?
+14:00 <@Magnus> ok it wasn't really a fastseduction story
+14:00 <@Magnus> it was a coffee story
+14:00 <@PerfDave> I'm easily seduced by coffee
+14:01  * Dom2 mopes and sulks
+14:01 <@PerfDave> Not by people who give me coffee, just by coffee.
+14:01  * Magnus budgens
+14:02  * AlexMc murmers "Chocolate"
+14:02  * Dom2 is eating a chocolate flapjack as comfort food
+14:03  * AlexMc needs tea
+14:03  * CPAN upload: Class-WeakSingleton-1.00 by JJORE
+14:03 <@AlexMc> what the hell is a weak singleton?
+14:03 <@PerfDave> It's class!
+14:03 <@AlexMc> how is that different from a singleton?
+14:04 <@AlexMc> oh I know, I can rtfm
+14:04 <@AlexMc> I feel like shit, this cold is not nice
+14:04 <@AlexMc> I thought I got rid of it :-(
+14:07 <@davorg> an evening on the deck of a boat wouldn't have helped :)
+14:08 <@lathos> How was the ORA bash?
+14:08 <@davorg> we had to wait an hour and a half for tim to turn up
+14:09 <@lathos> Damn. That means we could have made it.
+14:09 <@davorg> :)
+14:09 <@lathos> Just as well we didn't though; I appreciated being able to Get Stuff Done.
+14:09 <@davorg> he was coming from Bath and got caught up in the train chaos
+14:10 <@davorg> so the trip was somewhat truncated
+14:11 <@lathos> I knew we shuold have phoned Josette's mobile. Oh well.
+14:11 <@davorg> you didn't miss much tbh
+14:12 <@davorg> bit of free food and drink
+14:12 <@davorg> and the chance to mingle with the cream of the UK IT publishing industry :)
+14:12 <@davorg> who were (to tell the truth) a bit dull really
+14:13 <@lathos> Yes, I can imagine.
+14:15 <@PerfDave> Good god, Red Robot is the hideous offspring of me and marna: http://www.dieselsweeties.com/archive.php?s=562
+14:22 <@TeeJay> spongebob squarepants - I thought I was the only hacker who watched childrens cartoons
+14:23 <@PerfDave> I used to live on Nickleodeon when I was unemployed and looking afte rmy girlfriend's toddler
+14:23  * davorg gets ominous emails about "employee briefings" on Monday following "press specculation" about the future of the company
+14:23 <@davorg> if it wasn't true, they'd just say "it's not true"
+14:23  * TeeJay stills misses CartoonNetwork
+14:24 <@TeeJay> davorg: fire up word and update your CV - you know the drill
+14:24 <@davorg> CV already updated
+14:24 < rataxis> then load it into $MUA and scattergun it at the agencies.
+14:25 <@davorg> sounds like it's the tunbridge wells office that will be most effected
+14:25 < rataxis> private jobpimp, incoming!
+14:25 <@TeeJay> davorg: as if they haven't got it bad enough having to work in T W
+14:25 <@davorg> TeeJay: many of them _live_ in TW
+14:25 <@TeeJay> davorg: worse still !
+14:25 < rataxis> PerfDave : just how hideous would the bastard offspring of you and marna /be/ anyway?
+14:26 <@davorg> they deserve medals
+14:26 < rataxis> i'm having visions of babies with red beards.
+14:26 <@TeeJay> sift+- # here go on a Mexican Food and Tequila Binge on expenses
+14:26 <@TeeJay> when we left sift we spent about 300 quid in an afternoon
+14:26 < rataxis> TeeJay : mexican food outside mexico isn't mexican food anyway
+14:26 < rataxis> so they los
+14:26 < rataxis> lose
+14:26 <@TeeJay> rataxis: feh
+14:26 <@gellyfish> hey! leave TW alone - I was BORN THERE!
+14:27 <@davorg> gellyfish: do you live there now?
+14:27 <@TeeJay> gellyfish: har har *points*
+14:27 < rataxis> no, seriously. mexican people wouldn't sneeze into a tin of "refried" beans.
+14:27 <@TeeJay> rataxis: this was a decent restaurant
+14:27 <@Dom2> dipsy, tw?
+14:27 <@gellyfish> davorg, no
+14:27 <+dipsy> tw is Tomorrow's World
+14:27 <@davorg> gellyfish: i rest my case
+14:27 <@TeeJay> they had supping Tequila
+14:27 <@TeeJay> which was nice
+14:27 <@TeeJay> and quite expensive
+14:27 <@Dom2> no dipsy, tw is (royal) Tunbridge Wells
+14:27 <+dipsy> okay, Dom2.
+14:27 < rataxis> yum. tequila++ 
+14:28 <@Magnus> ntk++ # early
+14:28  * TeeJay still laughs at the 'Royal Forest of Bracknell'
+14:28 < rataxis> tequila shots with orange and cinnamon in place of lemon and salt is nice. as long as it's good tequila.
+14:28 <@Dom2> Magnus: bilmey, mines not here yet
+14:28 <@Dom2> Ooops, I lie, here it is
+14:28 <@Greg> tequilla++
+14:28 <@Magnus> rataxis: why do you say that about the sneezing?
+14:28 <@Magnus> rataxis: some friends of mine wanked into the pork vat at Bowyer's
+14:28 <@Dom2> Just when I was running out of useless web sites in order to avoid doing work
+14:29 < rataxis> Magnus : because "mexican" food all over the world fucking sucks.
+14:29 < rataxis> it has nothing in common with mexican food.
+14:29 -!- hex is now known as hox
+14:29 < rataxis> hogs?
+14:29 <@Magnus> oh I see
+14:29 < rataxis> yoo git awah from them hogs now jethro before ah tan yooah haide
+14:29  * CPAN upload: HTML-Hard-Disk-0.2.0 by SHLOMIF
+14:30 -!- hox is now known as hex
+14:30 <@TeeJay> (118 188)++ # cogs
+14:30 <@Magnus> what is real mexican food like then
+14:30 < rataxis> Magnus : edible.
+14:30 < rataxis> fresh.
+14:30 <@davorg> rataxis: i had mexican food in san diego. does that count?
+14:30 < rataxis> not generally incredibly spicy
+14:30 <@TeeJay> same goes for greek food
+14:30 <@TeeJay> most greek restaurants in the UK have shit food compared to greece itself
+14:30 < rataxis> davorg : I've no idea. If it was somewhere that mexicans went to eat then probably.
+14:31 < rataxis> i mean, SD is at least v close to mexico.
+14:31 <@AlexMc> TeeJay: I hardly recognise greek food in the UK
+14:31 <@davorg> it was where californians went to eat
+14:31 < rataxis> ah.
+14:31 <@davorg> but it was staffed by mexicans
+14:31 < rataxis> *every* restaurant in .us is staffed by mexicans
+14:31 <@AlexMc> admittedly I lived in Cyprus which has its own style of greek food, but frankly nothing compares to the foo my mum and grandma makes
+14:31 < rataxis> they're cheap, reliable, don't have huge egos, and can really cook.
+14:32 <@davorg> mexican food in the uk might not be authenically mexican, but i still really like it
+14:32 <@Greg> not just mexicans
+14:32 <@Greg> and i assume you are basing this on kitchen confidential
+14:33  * CPAN upload: File-Scan-0.57 by HDIAS
+14:33 <@Greg> which covers the topic well
+14:33 < rataxis> Greg: heh, yeah, doesn't it :)
+14:33 < rataxis> davorg : nobody says you can't like it (altho if you mean TGI Fridays etc you need your head^Wtastebuds examined)
+14:33 <@gellyfish> hey apparently the rumour is that we're not being sold now
+14:34 < rataxis> I'm just saying it's not very authentic.
+14:34 < rataxis> Greg: not /just/ Tony Bourdain, but he does seem to speak the truth.
+14:34 <@davorg> rataxis: rest assured that I _don't_ mean TGI Fridays :)
+14:36 <@marnameow> In the kitchen here there's a cleaning product that claims to be the world's first sprayable liquid gel with active oxygen
+14:37 <@marnameow> I want a new job writing that crap!
+14:37 < rataxis> marnameow : damn that lazy oxygen!
+14:37 -!- vorsprun1 [vorsprung@brsl-3e3523e8.pool.mediaWays.net] has joined #london.pm
+14:37 <@davorg> do they mean ozone?
+14:39 -!- vorsprung [vorsprung@brsl-3e35255c.pool.mediaWays.net] has quit [Ping timeout: 180 seconds]
+14:39 <@marnameow> Nope - it says 'the active oxygen helps lift the dirt and the liquid-gel absorbs it'
+14:39 <@TeeJay> crikey - israel doing something right shock!
+14:39 < rataxis> there's a word for that.
+14:40 < rataxis> fake science for advertising purposes
+14:40 < rataxis> a la every shampoo advert for the last 10 years
+14:40 < rataxis> "the provitamin microbeads penetrate to the very heart of the hairs..."
+14:41 <@TeeJay> 'the magic hair fairies chant as the follicle gnomes rebuild your hair with magic hammers!'
+14:41 <@Dom2> TeeJay: possibly more accurate than most l'oreal commericals.
+14:41 <@chrisa> 'follicle gnomes' - is their third stage 'profit' too?
+14:42 <@TeeJay> Pantene MagicFairy - now with mystical gnomes
+14:42 <@chrisc> crikey, ntk's early today
+14:45  * CPAN upload: HTML-Hard-Disk-0.2.1 by SHLOMIF
+14:45 <@lathos> Not gonna say it.
+14:46 <@mstevens> coo, earlyntk
+14:46 <@muttley> anyone know of a good page comparing cost of owener ship of sun hardware vs x86 server hardware
+14:47 <@Greg> i'm sure both sun and dell/compaq can provide you with pages like that
+14:48 <@Greg> they may of course vary in their comparisons
+14:49 < rataxis> heh, yes.
+14:50 < rataxis> muttley : to some extent, it depends on what you'll use the things for.
+14:51 <@lathos> "New Zealand's farmers have criticised a proposed tax on the flatulence emitted by their sheep and cattle"
+14:51 < rataxis> i'm inclined to suggest that a pair of E10Ks will have lower ongoing maintenance costs than a cluster of P4 servers
+14:51 < rataxis> but the sun hardware might be twice as expensive for roughly equivalent processing power.
+14:52 < rataxis> OTOH the Sun boxen might be better at your application than the PCs - it depends what they'll be doing.
+14:52 < rataxis> or is that not what you were asking?
+14:57  * CPAN upload: Class-WeakSingleton-1.01 by JJORE
+14:58 <@muttley> rataxis: somebody on a nother list was asking why Unix people complain about the cost of software and trumpet [Ff]ree software then go out and "pay through the nose for Sun hardware"
+14:58 <@muttley> I'm trying to explain that whilst x86 maybe cheap, as server hardware it doth verily suck donkey wang
+14:59 <@Greg> it depends on the application
+14:59 <@Shevek> Xeon easily outperforms Sparc for web hosting.
+14:59 <@muttley> Greg: true
+14:59 <@muttley> but performance isn't everything
+15:00 <@Greg> i tend to think that the problem with linux is the admins are of a lower standard than solaris/aix admins
+15:00 <@mstevens> whenever I've compared intel / sparc for web hosting / running perl code, I've always seen better performance from intel
+15:00 <@gellyfish> yes you have to have loads of flashing lights as well
+15:01 <@Greg> but web applications are pretty non-demanding apps even with crack addled perl programmers involved
+15:01 <@Greg> look at databases that need multigigabyte main memory to even consider working at solaris/sun/oracle starts to look a lot more appealing
+15:01 <@mstevens> greg: they are, however, what I tend to use computers for, so I tend to think it's an interesting thing.
+15:02 <@Dom2> crack! 
+15:02 <@Dom2> feed me more crak!
+15:02 <@Greg> shit
+15:02 <@mstevens> greg: we've had lots of success with linux for oracle/sybase, but our databases tend to be very likely loaded by DBA standards
+15:02 <@Greg> i was thinking the word uninteresting when i wrote that
+15:02 <@Greg> and i deleted it
+15:02 <@Greg> and mstevens read my mind
+15:03 -!- itz [~itz@62.3.198.42] has joined #london.pm
+15:03 -!- mode/#london.pm [+o itz] by slavorg
+15:03 <@Greg> or else it was a coincidence
+15:03 <@Kake> OK, this is odd.  A "calcium phosphate chemist" has sent me his CV in the hope that I can give him a post-doc position.
+15:04  * mstevens refreshes his mental not to have a look at sybase ASA
+15:04 <@mstevens> note
+15:04 <@Kake> Mental knot.
+15:06 <@davorg> mstevens: ASA - Adaptive Server Anywhere?
+15:06 <@davorg> used to be a nice product back when it was called SQL Anywhere
+15:06 <@Greg> i seem to recall it could do some nice things
+15:06 <@davorg> haven't used it for years
+15:07 <@Greg> like 'symbolic link tables' for want of a better description
+15:07 <@mstevens> davorg: yes
+15:07 <@Greg> between databases
+15:07 <@mstevens> davorg: it might still be called SQL Anywhere, the names drive me insane
+15:07 <@Greg> and servers
+15:07 <@davorg> mstevens: no. they rebranded it a few years ago
+15:07 <@davorg> as part of the ASx line
+15:07 <@AlexMc> Kake: ha ha ha, I get the odd MS Windows software developer sending me his CV. sometimes I even reply
+15:08 <@mstevens> davorg: but I liked using ASE at work enough to want to consider buying ASA for personal use.
+15:08 <@davorg> AlexMc: i often reply asking why they've sent a Word document to an open source company
+15:08 <@davorg> i never get a responce :)
+15:09 <@davorg> oh. looks like they've renamed it again. SQL Anywhere Studio
+15:09 <@davorg> http://www.sybase.com/products/anywhere
+15:10 <@davorg> rebranding--
+15:16 <@hex> me++ # getting stuff done
+15:17 <@mstevens> me-- # not getting stuff done
+15:17 <@yoda> me-- # watching a dvd instead of reinstalling my laptop
+15:18 <@noidd> me++ # lurking various irc channels instead of clearing the house
+15:21 <@Magnus> nooooooooooooooo
+15:21 <@Magnus> I know who dies in Harry Potter 5
+15:22 <@bob> Magnus: hopefulyl all of them
+15:22 <@aef> Mmm.
+15:22  * aef seems to now have a weekend and no plans for it.
+15:22 <@bob> aef: sit int eh sun and do noting
+15:23 <@aef> Mmm. Could do.
+15:23 <@aef> Should also tidy the house, learn C++, learn Java and do some coding.
+15:23 <@aef> And go to the gym some more.
+15:23 <@bob> aef: meh sounds far to much liek hard work
+15:24 <@aef> I have a flatmate moving in at the end of the month. But me tidy by then.
+15:24 <@noidd> tell me magnus
+15:24 <@noidd> who dies
+15:24 <@noidd> ?
+15:24 <@noidd> hopefully the whiney bitch
+15:25 <@marnameow> Magnus, you should really tell everyone you meet. It's your duty to be evil-spoiler-boy!
+15:25  * noidd wants to know
+15:25 <@noidd> by message if you have to
+15:26 <@noidd> just tell me damnit
+15:26 <@Magnus> haha I could go to the midnight opening of waterstones with it on my t-shirt
+15:26 <@Magnus> msg noidd Dumbledore
+15:26 <@Magnus> oh arse
+15:26 <@noidd> that would be HILLARIOUS
+15:26 <@Magnus> I'd get beaten up
+15:27 <@noidd> would be funny as hell tho ;-0
+15:27 <@aef> Magnus: Do it.
+15:27 <@aef> dipsy?
+15:27 <+dipsy> yes, aef?
+15:27 <@aef> Mmm.
+15:27  * TeeJay is picking up a load of empty boxes from his local bookshop early saturday morning
+15:27 <@TeeJay> perfect for packing my books into
+15:30 <@Dom2> aaaaaaaaargh
+15:30 <@Dom2> database are making my life hard again
+15:35 <@yoda> what's the problem this time?
+15:36 <@Magnus> poor old greg
+15:36 <@Magnus> doesn't know his harry potter
+15:36  * CPAN upload: Compress-LZW-0.01 by MHOWARD
+15:40  * TeeJay is tempted by head-first into java
+15:40 <@TeeJay> hmmm 50's imagery
+15:46 <@TeeJay> anyone done QT with c++ ?
+15:46  * TeeJay imagines QT would be a good way to learn C++
+15:46 <@Dom2> TeeJay: I have the book at home
+15:46 <@TeeJay> Dom2: but is QT icky or not ?
+15:46 <@TeeJay> GTK is ok
+15:47 <@TeeJay> but only because I am a C hacker at heart
+15:47 <@Magnus> davorg: that dns comic is incorrect anyway
+15:47  * TeeJay has tried to learn c++ about 3 times
+15:47 <@doop> I have as well; I keep going back to C or perl or both.
+15:47 <@TeeJay> I usually get to the point where it would all be so much easier in a different language
+15:48 <@doop> Trying to learn from tutorials on the web which turn out to use non-ANSI-isms doesn't help.
+15:48 <@TeeJay> nah - just having problems that are easier solved using something else
+15:48 <@itz> most of the OO freaks I have met dislike C++ and prefer Obj C although things are supposed to be better with STL
+15:48  * TeeJay still laughs that Zeus made their own STL
+15:49 <@TeeJay> they really are fruitcakes tho
+15:49 <@mstevens> teejay: I bet it was fast and reliable, tho.
+15:49 <@TeeJay> probably
+15:49 <@TeeJay> the interview quiz involved things like the start of the unix epoch
+15:50 <@TeeJay> 100 tech trivia questions - good fun
+15:50 <@mstevens> teejay: The question I remember from the zeus interview was the speed of sound in air at sea level
+15:50 <@mstevens> there was also some math trivia in there IIRC
+15:50 <@TeeJay> yup
+15:50 <@doop> You were supposed to remember that (~300m/s) or work it out?
+15:50 <@itz> arent these exactly the sort of facts people look up rather than remember?
+15:51 <@TeeJay> itz: some of the harder ones were ' what is significant about this number'
+15:51 <@mstevens> doop: probably remember, the num questions / time was such you weren't supposed to finish, and didn't have time to do any calculations
+15:51 <@TeeJay> its one way of seeing if you really are a geek or not
+15:51 <@mstevens> teejay: the other ones I remember were "who is our CEO", and, from the verbal interview, "How do you hack root on a unix system" (which I have shamelessly nicked)
+15:52  * TeeJay had 30 seconds to design a HA web site system
+15:53  * TeeJay should have put ' I have no interests in IT, especially nothing hard' in his CV
+15:53 <@mstevens> teejay: I think I got harassed about high performance, rather than high availablity.
+15:53  * TeeJay mentioned he was interested in HA
+15:53 <@TeeJay> never again
+15:54 <@itz> maybe you should have asked back "why would anyone buy zeus when apache is free"? :)
+15:54 <@TeeJay> itz: some good reasons
+15:54 <@mstevens> teejay: I made lots of stupid comments about ways to make high performance web servers which the guy  interviewing me apparently thought were terrible.
+15:54 <@TeeJay> like ISAPI on UNIX
+15:54 <@TeeJay> mstevens: did the same, oh well
+15:55 <@TeeJay> like how to load balance ssl effectively
+15:55 <@mstevens> teejay: I never found out if I'd have gotten the job, because iii made me an offer before zeus made a decision
+15:55  * TeeJay didn't - was too lame
+15:55 <@TeeJay> :(
+15:55 <@chrisc> load balancing ssl is tricky
+15:55 <@TeeJay> chrisc: zeus and some cisco things shared a cache for ssl keys or something
+15:56 <@chrisc> yep
+15:56 <@TeeJay> would have been good to know that before the interview
+15:56  * TeeJay read up on c/C++ before the interview only to have no questions on either
+15:56  * TeeJay doesn't swot before interviews anymore
+15:57 <@chrisc> no point
+15:57 <@Greg> i think about them
+15:57 <@Greg> i'm very literal here
+15:57 <@chrisc> swot up about the company, but techie stuff you either know or you don't
+15:57 <@Greg> before an interview i will think about it and imagine it
+15:58 <@noidd> Silly Question: has anyone ever seen/read the Threepenny Opera?
+15:58 <@TeeJay> work &
+15:58 <@itz> noidd: I saw it as a child and remember nothing of it
+15:58  * CPAN upload: Math-Symbolic-0.100 by SMUELLER
+15:59 <@noidd> itz: thanks
+15:59 <@noidd> friend of mine is doibg the piano in it
+16:00 <@noidd> I looked up a synopsis of the thing and it looks/sounds surreal
+16:02 <@itz> "beggars banquet" rings some bells as well 
+16:02 <@Greg> SMUELLER? SMUELLER? ....... SMUELLER? ....... SMUELLER?
+16:03 <@mstevens> bored
+16:04 < vorsprun1> noidd, the shark has pretty teeth, dear
+16:04 <@Magnus> noidd: I've heard of it
+16:04 < vorsprun1> noidd, are they doing it in german or english?
+16:05 < vorsprun1> dipsy?
+16:06 <+dipsy> vorsprun1?
+16:10 <@TeeJay> debian, whats the worst that could happen ?
+16:11 <@Dom2> TeeJay: endless time spent configuring the fucker
+16:12 <@TeeJay> Dom2: or apt-get force install package
+16:13 <@TeeJay> holy dependancies batman!
+16:13 <@Dom2> TeeJay: It'll still ask you 300 questions about whether your want the package in pink or purple
+16:13 <@Dom2> instead of providing you with a default
+16:13 <@Dom2> and then like you say it'll suck up all your bandwidth pulling down obscure dependencies
+16:14  * TeeJay just twats debian with the enter key until it submits to his will
+16:14 <@Dom2> Damn, I'm bitter today
+16:17 <@TeeJay> I see somebody got caught in the reply-to-list CV trap - har har!
+16:18 <@TeeJay> all MLM should come with CV catchers
+16:18 <@Dom2> "Oh No Not Again"
+16:18 <@TeeJay> maybe that could be Siesta's killer featuer
+16:19 <@TeeJay> with option strings2html for the archive
+16:19 <@chrisa> what, puts them into a special 'fools' archive?
+16:19 <@Dom2> I think siesta's killer feature will be an oreillynet.com article
+16:19 <@Dom2> closely followed by "lots of users".
+16:19 <@TeeJay> who do I twat at ora to get an osdir write up for autodia ?
+16:19 <@richardc> :)
+16:19 <@Dom2> TeeJay: no idea
+16:20  * TeeJay could of course look at osdir
+16:20 <@richardc> I think you could be right there.  it does seem to draw people in
+16:20 <@Dom2> TeeJay: sorry, try Steve Mallet
+16:20 <@TeeJay> har har har!
+16:20 <@richardc> modems-- # as ever
+16:20 <@TeeJay> not related to timmy ?
+16:20 <@Dom2> richardc: What I meant to say was "marketing".  But that's an evil word. :)
+16:21 <@TeeJay> debian-- # make my printer work damn it
+16:21 <@TeeJay> suse++ # just works
+16:21 <@richardc> I'm strange, I wan't to do 'releasing' before 'marketing'
+16:22 <@Dom2> richardc: I agree entirely.
+16:22 <@TeeJay> attack of the rogue apostrophe!
+16:22 <@TeeJay> they're e'veryw'here I tel'l you!
+16:22 < vorsprun1> TeeJay-- #dissing the sacred debian
+16:22 <@Dom2> i'd'ont'k'n'o'w'w'h'a't'ym'e'a'n
+16:23 -!- sphyg [~lucifer@chiark.greenend.org.uk] has joined #london.pm
+16:23 <@Kake> But if you wait until your thing is finished before you market it, then someone will market an unfinished version and everyone will use that instead.
+16:23 -!- mode/#london.pm [+o sphyg] by clunker
+16:23 <@TeeJay> they've got dom2!
+16:23 <@itz> which linux distro works just randomly depends on which drivers are in it and what hardware you have
+16:23 <@Dom2> TeeJay: my mind is blown
+16:23 <@TeeJay> itz: suse is pretty hot for hardware support out of the box
+16:23 <@TeeJay> always has been
+16:24 <@TeeJay> its just a bit, well, german
+16:24 <@richardc> Kake: depends.  if we got a bunch of people trying to use Siesat right now, then result would be a lot of people pissed off and confused
+16:24 <@itz> true but what I said still stands
+16:24 <@itz> its just rolling dice
+16:24 <@gellyfish> richardc, how would that be different from the status quo
+16:24 <@Kake> Don't mind mel I'm just being bitter.  I think I shall go and have a cup of tea.
+16:25 <@gellyfish> beeeeeeeeeeeer!
+16:25 <@Dom2> tea
+16:25 <@TeeJay> mmmm flying teapots
+16:25 <@TeeJay> dipsy: summon flying teapots
+16:25 <+dipsy> FLYING TEAPOTS FLYING TEAPOTS FLYING TEAPOTS COME TO ME
+16:25 <@Dom2> zero the hero
+16:25 <@richardc> gellyfish: it's me they'll be pissed off at
+16:25 <@TeeJay> ENEEDGONGMP3
+16:26 <@Dom2> TeeJay: where do you want me to send them to?
+16:26 <@TeeJay> me
+16:26 <@Dom2> TeeJay: I've only got flying teapot
+16:26 <@TeeJay> here
+16:26 <@Greg> teapots++ # good for 3d rendering
+16:26 <@Dom2> TeeJay: Hold on a mo
+16:26 <@TeeJay> that'll do nicely
+16:26 <@gellyfish> richardc, blame me - everyone else does
+16:26 <@itz> I knew a David Allen groupie once
+16:26 <@TeeJay> Dom2: there be a big firewall in the way - can you put them somewhere reachable by http ?
+16:26 <@TeeJay> itz: yeah so did I, she was a cornish artist who lived in a tower
+16:27 <@gellyfish> I am actually acquainted with David Allen
+16:27 <@Dom2> TeeJay: yep
+16:27 <@TeeJay> gellyfish: cool
+16:27 <@richardc> imap++ # for when you positively absolutelyl have to do modems
+16:27 <@gellyfish> last time I saw him I was sitting on the curb outside the Warwicj Castle in portobello road
+16:28 <@gellyfish> he was hassling me about something a mutual acquaintance was supposed to have done
+16:28 <@itz> the david allen groupie I knew presented him with a picture she painted of him backstage stalker-stylee
+16:28 <@Greg> i assume we are not thinking of the same dave allen
+16:28 <@Greg> old northern irish comedian
+16:28 -!- mstevens [~mstevens@kochi.etla.org] has quit [gone]
+16:28 <@TeeJay> bah
+16:29 <@TeeJay> (people who bind vars needlessly)--
+16:29 <@itz> I always prefered hawkwing to gong anyway because they were louder
+16:29 <@gellyfish> itz, yes
+16:29 <@Dom2> itz: The nice thing about hawkwind is that when you went to one of their gigs you didn't have to look at the fuckers because there was so much smoke
+16:30 <@itz> dom2: they were always different fuckers on stage anyway apart from Mr Brock himself
+16:33 <@TeeJay> itz: true - but see smoke in the way
+16:34  * TeeJay necked an eigth of cannabis resin before going in to watch hawkwind
+16:34 <@TeeJay> felt quite ill at the end of the evening
+16:34 <@TeeJay> resin and snakebite don't mix
+16:34 <@itz> an 1/8 is a lot even by my standards
+16:34 <@TeeJay> s/eigth/sixteenth/ # I'm not *stupid*
+16:35 <@Kake> gellyfish: You are bad and slack and didn't come to the pub.
+16:38 <@gellyfish> Kake, yes I admit everything
+16:38 <@Elthek> BAD GELLYFISH BAD BAD
+16:39 <@Greg> chess?
+16:39 <+dipsy> chess is, like, a far more dynamic game. go is definitely more zen
+16:39 <@Elthek> oh, someone should play chess with me now.
+16:39 <@Elthek> dude!
+16:39 <@Greg> sweet!
+16:39 <@Elthek> where's my car?
+16:39 <@Greg> ;-)
+16:39 <@TeeJay> Dom2++ # good taste
+16:39 <@Greg> ok, ill logon and you can challenge
+16:39  * Magnus wonders what Harry Potter is really about
+16:39 <@Elthek> Okie.
+16:39 <@itz> magnus: $$$$$
+16:40 <@Dom2> TeeJay: Oh, I wouldn't go that far...
+16:40 <@Magnus> itz: no, I don't see why you'd think that.
+16:40 <@richardc> it's about 9 quid, available in all good bookshops now
+16:40 <@Greg> Magnus: buddhism
+16:40 <@Magnus> warner are milking it for all they can
+16:40 <@Magnus> but rowling isn't writing it for the money
+16:41 <@gellyfish> ooh suuuuuuuure
+16:41 <@Magnus> I'm not interested in cynical views on that
+16:41 <@itz> has anyone bothered to download any of the alleged P2P versions of the new one?
+16:41 <@Magnus> all fake
+16:41 <@gellyfish> no
+16:41  * muttley thinks Harry Potter is about various, errm, social groups finally realising that kids don't *actually* like books about 12 year single mums and their relationships with their 25 year old tower block crack dealing boyfriends
+16:41 <@Magnus> she says there is an overall point, that no-one has quite hit apon yet
+16:41 <@Greg> im not sure if she is or not, but i _know_ she is interested in exploring non-commercial side events
+16:41 <@muttley> lol @ 'FORTRAN compilers are more like "error, gorak think u program not working.  gorak consult rock and tree."'
+16:41  * Greg waits on Elthek to challenge him
+16:42 <@Magnus> muttley: what books are those?
+16:42 <@Dom2> muttley: I though fortran compilers where all about "this doesn't look like assembly to me, you lose!"
+16:42 <@TeeJay> Dom2: one of the bonzo dog doodah band came to our wedding
+16:42 <@Magnus> I think there's a message in there for kids, about growing up, or about relating to your parents, or something
+16:42 <@Magnus> Harry has lost his parents
+16:42 <@Magnus> and in a way, all adolescents lose touch with their parents
+16:43 <@marnameow>  There's a theme of growing up throughout them - but this is not at all unusual in childrens' books.
+16:43 <@richardc> in surprise news, I'm speaking at YAPCX
+16:44 <@Dom2> TeeJay: Really?  Wow!  Was that the one that appeared on buzzcocks?
+16:44 <@Dom2> richardc: christmas island yapc?
+16:44 <@marnameow> The parents thing is a little harder to pin down. There's not all that much family interaction in the books, so less to go on.
+16:44 <@Magnus> marnameow: yes, I think rowling has something specifically to say about this generation, or hers
+16:44 <@TeeJay> Dom2: don't know, probably not - he is going out with one of my wife's friends
+16:45 <@marnameow> Magnus: What do you think she has to say?
+16:45 <@richardc> Dom2: modem of death YAPC
+16:45 <@gellyfish> I haven't even read all of Shakespeare yet why would I want to read Harry Potter?
+16:45 <@TeeJay> but you don't *read* shakespeare
+16:45 <@TeeJay> you watch it
+16:45 <@Magnus> marnameow: not sure
+16:45 <@TeeJay> or act it
+16:45 <@aef> TeeJay: You don't _watch_ Shakespeare, you dig him up :
+16:45 <@aef> :)
+16:46  * TeeJay wishes that Oscar Wilde wrote more novels and less arty-farty poetry crap
+16:46 <@gellyfish> TeeJay, er then how does one know what happens in the play if you don't read it ?
+16:46 <@marnameow> Magnus: What do *you* think when you come away from reading the books. Straight after, when you finish, what's in your brane?
+16:46 <@TeeJay> gellyfish: you pay attention to what happens on stage, duh!
+16:46 <@marnameow> Shakespeare's *fun* to read. 
+16:46 <@Magnus> marnameow: consciously, the emotional thrill ride of it all
+16:46 <@gellyfish> HOW DO THE FUCKING ACTORS KNOW THEN SHIT FOR BRAINS
+16:46 <@Magnus> marnameow: it's the sub-conscious message that interests me
+16:47 <@TeeJay> they watch other actors, like, dug
+16:47 <@chrisa> they keep bogging off into the wing to ask the prompt
+16:48 <@marnameow> Magnus: There be schools of thort that say you need to construct your own message.
+16:48 <@Dom2> dipsy, prompt?
+16:48 <+dipsy> i haven't a clue, dom2
+16:48 <@marnameow> So you could impose whatever meaning you wanted on the text.
+16:48 <@Dom2> dipsy, prompt is <reply>It's your turn!
+16:48 <+dipsy> OK, Dom2.
+16:48 <@itz> whats a recursive (file) lock?
+16:48 <@Magnus> marnameow: no, she's admitted she has something specific to say
+16:48  * gellyfish mumbles something about the intentional fallacy and wanders off for a smoke
+16:49 <@noidd> TeeJay: Shakespere wrote more than plays
+16:49 <@Dom2> gellyfish has an internation phallus?
+16:49 <@noidd> some of his best works I think were in his sonnets
+16:49 <@noidd> and you have to read those
+16:49 <@marnameow> Magnus: What did she say exactly?
+16:49  * richardc & # offline
+16:50 <@Magnus> http://news.bbc.co.uk/1/hi/entertainment/arts/3004456.stm # complete interview here
+16:51  * CPAN upload: Math-Symbolic-0.101 by SMUELLER
+16:51 <@Magnus> There is one thing that if anyone guessed I would be really annoyed as it is kind of the heart of it all. And it kind of explains everything and no-one's quite got there but a couple of people have skirted it. 
+16:52  * TeeJay sings o~ sound of the underground o~
+16:54 <@itz> magnus: maybe if you manipulate all the words in the books using your own arbitary method you find a secret message?
+16:55 <@itz> ^ arbitrary
+16:55 <@gellyfish> noidd++ # precisely
+16:57 <@Magnus> itz: no, that's not the point
+16:57 <@Ranguard> Does anyone have the Ericsson T68i phone (need a test done) with MMS :) ?
+16:58 -!- mstevens [~mstevens@kochi.etla.org] has joined #london.pm
+16:58 -!- mode/#london.pm [+o mstevens] by slavorg, clunker
+16:58 <@marnameow> Magnus: But that's not definitely a *message* or meaning or whatever that you take from the book (which is what I thought you were looking for)?
+16:58 <@mstevens> how do I do an outer join between table a and table b, and table a and table c, in SQL, using ANSI joins?
+16:59 <@Magnus> marnameow: it's more the message to take from the whole 7 book series
+16:59  * sphyg yawns
+16:59 <@marnameow> It could be a neat plot twist that ties everything up.
+16:59 <@noidd> we have anyone who can speak german here?
+17:00 <@Magnus> marnameow: no, it's building a big picture
+17:00 <@sphyg> marna: enoscrollback. what would?
+17:00 <@aef> This is why SQL should use set notation, it's so much easier :)
+17:00 <@gellyfish> mstevens, select * from table_a left outer join table_b on table_b.key table_a.key left outer join table_c on table_c.key = table_a.key
+17:00  * CPAN upload: MIME-Explode-0.24 by HDIAS
+17:00  * CPAN upload: Config-General-2.20 by TLINDEN
+17:00 <@noidd> there must be a german on #perl, brb
+17:01 <@marnameow> sphyg: Magnus looking for meaning in Harry Potter.
+17:01 <@gellyfish> ITYM 'Meaning'
+17:01 <@gellyfish> of course it has 'meaning' or it wouldn't be readable
+17:01 <@marnameow> Magnus: Well, yes. It would be a really shoddy series if there weren't overarching themes and plot. I mean, that's one of the *points*.
+17:02 <@Magnus> sigh
+17:02 <@marnameow> I think I might even have meant *MEANING*
+17:02 <@Magnus> didn't you ever watch babylon 5?
+17:02 <@sphyg> jkr is the new jms
+17:02 <@Magnus> sphyg++
+17:02  * davorg is sure there isn't any "meaning" in HP
+17:02 <@marnameow> No, I didn't like B5.
+17:02 <@davorg> i mean, it's just a kids book
+17:02 <@gellyfish> I'm with davorg
+17:02 <@Magnus> davorg: yes but you are blind to such things.
+17:03 <@davorg> ?
+17:03 <@davorg> why do you say that?
+17:03 <@Magnus> you think the matrix is about cool fight scenes
+17:03 <@Dom2> davorg: the meaning is "spend more on merchandising"
+17:04 <@gellyfish> alterntatively Magnus is schizophrenic - seeing pattern in otherwise ambiguous material
+17:04 <@Magnus> Dom2: no it's not, you're just cynical
+17:04 <@Dom2> No, everybody knows that the matrix is about kittens
+17:04 <@sphyg> dom: are you channeling marna?
+17:04 <@marnameow> HP has meaning of a sort - it's almost painfully didactic in places.
+17:04 <@Dom2> Keanu has just used hair gel to town down his fluff
+17:04  * Magnus sighs
+17:04 <@Dom2> sphyg: Ooops, might be
+17:04 <@marnameow> And the books (the first four, at any rate) follow the same pattern.
+17:05 <@Magnus> that's because they follow a year at school
+17:05 <@davorg> Magnus: no the matrix is fight scenes with some tired philosophy and religious imagery thrown in to make idiots think it's "deep"
+17:05 <@itz> davorg: true but it does it very well
+17:06 <@Magnus> davorg: we've had this conversation, and you started asking me if I'd read books on philosophy that I read years ago
+17:06 <@marnameow> Yes. But if you're going to go .khunting for meaning it's best to start with the obvious bits and that's a good starting point.
+17:06 <@Magnus> davorg: and then I asked you if you'd read some that I've read more recently, and you hadn't
+17:06 <@Magnus> davorg: but carry on, I'm sure I'm just stupid.
+17:06 <@sphyg> marna: how was spike?
+17:06 <@davorg> Magnus: i know. but that doesn't mean I'm blind to seeing the meaning. it means i saw it and dismissed it :)
+17:06 <@marnameow> spike cannot sing all that well. And he didn't strip.
+17:07 <@Magnus> davorg: so you lose.
+17:07 <@marnameow> How does he lose?
+17:07  * Magnus goes back to thinking about potter
+17:08  * CPAN upload: Business-FedEx-DirectConnect-0.17 by JPOWERS
+17:08 <@marnameow> Magnus, if you want to find deep-and-meaningfulness in books HP may not be the best starting point.
+17:08 <@marnameow> And it's all just a construct in your brane. 
+17:08 <@Dom2> I always preferred winnie the pooh for "deep and meaningful"
+17:08 <@sphyg> i disagree
+17:08 <@Magnus> marnameow: on the contrary, harry potter is the best starting point
+17:08 <@davorg> i should blog my feelings on HP. I still don't understand why so many adults get so excited by it.
+17:09 <@Magnus> followed by the chronicles of narnia
+17:09 <@Dom2> davorg: because they all have dreary mundane lives with no imagniation
+17:09 <@Magnus> and the pullman books
+17:09 <@Dom2> davorg: I know I fall into that category :(
+17:09 <@marnameow> ANd anything that Rowling put in as being deep is a construct in her brane.
+17:09 <@Magnus> marnameow: well true
+17:09 <@sphyg> scribot: http://www.chiark.greenend.org.uk/~lucifer/hp.html # why i like harry potter
+17:09 <@marnameow> Magnus: Narnia would be a much better place to start because it's a lot more overt.
+17:10 <@Magnus> marnameow: if you like
+17:10 <@sphyg> narnis is old fashioned
+17:11 <@itz> I liked narnia even although its just Christain nonsense
+17:11 <@sphyg> (which doesn't mean it's not good)
+17:11 <@gbjk> sphyg: how's you ?
+17:11 <@gbjk> I'm driving past you on sunday
+17:11 <@gbjk> then living just above you for a week or so
+17:11 <@marnameow> I just think Potter kis a daft place to start because there's too much semi-written bumph around it to distract you, and the books lend themselves to branecandy reading rather than analysis.
+17:11 <@sphyg> gbjk: how come?
+17:12 <@gbjk> sphyg: staying with god parents for a weeks holiday
+17:12 <@gbjk> :-)
+17:12 <@Greg> great game Elthek 
+17:12 <@davorg> narnia has meaning. it was written as allegory. HP has about as much meaning as the famous five.
+17:12 <@Elthek> Greg: *bursts out laughing*
+17:12 <@Greg> very competitive for us two
+17:12 <@Elthek> 3.9 seconds!
+17:12 <@gbjk> LMFAO
+17:12 <@Greg> wonderful stuff
+17:12 <@gbjk> What the hell ?
+17:12 <@Elthek> Yep, I think that's the best you've ever played.
+17:12 <@Elthek> gbjk: I won with 3.9 seconds on my clock.
+17:12 <@sphyg> gbjk: if i'm not still moulting i'd say pub!
+17:13 <@gbjk> Elthek: I only know three openings that pull that off !?
+17:13 <@gbjk> Elthek: Smothered check ?
+17:13 <@gbjk> moulting ?
+17:13 <@Magnus> sphyg: how did the polyjuice episode later return to haunt harry?
+17:13 <@Elthek> Uh, kinda.  I had two queens and he didn't have any.  :)
+17:13 <@sphyg> magnus: er, lupin in goblet
+17:13 <@gbjk> Elthek: I'm confused, in 3.9 seconds how the hell did you do THAT?
+17:13 <@gbjk> sphyg: what's moulting
+17:13 <@Greg> it was an incredible game
+17:14 <@Elthek> gbjk: I didn't do anything in 3.9 seconds.  I had 3.9 seconds left when I checkmated.
+17:14 <@gbjk> Elthek: How do I see the game ?
+17:14 <@Elthek> Greg: It was.  :)
+17:14  * Magnus is all for brain candy being used to feed people important concepts
+17:14 <@sphyg> gbjk: sunburn
+17:14 <@Magnus> sphyg: lupin?
+17:14 <@gbjk> Elthek: Ah - nice
+17:14 <@sphyg> magnus: dark arts teacher
+17:14 <@Elthek> gbjk: Log in, exam elthek 35
+17:14 <@Magnus> but what about the polyjuice
+17:14 <@marnameow> Magnus: I'm just not convinced that there's an important concekpt in there.
+17:14 <@gbjk> sphyg: sounds like a plan ... if I can drag the missus away from the shops
+17:14 <@marnameow> And I'm not so hot on the idea of sneaking ideas in with the fun. 
+17:14 <@Greg> i'd suggest watching it in real time towards the end if your client allows
+17:14 <@Greg> it was a great game
+17:14 <@Greg> thanks Elthek 
+17:15 <@Magnus> marnameow: how about 'the little boy who cried wolf' or 'the rabbit and the hare'
+17:15 <@Magnus> er
+17:15 <@Magnus> 'the hare and the tortoise'
+17:15 <@Greg> Elthek: i think i'm starting to remember enough chess to get somewhere near as good as i was when i was 12
+17:15 <@marnameow> fables - yes. They're rather obvious.
+17:15 <@sphyg> marna: so ideas can't be fun?
+17:15 <@Elthek> Greg: Yes, haven't had a game that good in a long time, with anyone.
+17:16  * Greg has a warm happy feeling after the game
+17:16 <@Greg> very good
+17:16 <@Greg> but i feel a bit hyper
+17:16 <@Elthek> Hah.  You should have seen me making those queen moves.
+17:16 <@Elthek> *click*click*click*click*click*click*
+17:16 <@Kake> Elthek, which city are you in now?
+17:17 -!- cwest [~Casey@209.195.191.8] has joined #london.pm
+17:18 -!- mode/#london.pm [+o cwest] by slavorg
+17:18 <@Elthek> Kake: Brighton.
+17:18 <@Elthek> Then Cambridge on Monday, Boston on Wednesday.
+17:18 <@Kake> Poo.
+17:18 <@Dom2> Elthek: You're a high flying man. :)
+17:18 <@Elthek> And I need to put an Oxford in there at some point, too.
+17:18 <@sphyg> elthek; cambridge?
+17:19 <@Elthek> sphyg: Yes!  Actually, I was going to see if I can bug you about crash space.  Giving a talk at the uni on Monday morning.
+17:20 <@Elthek> sphyg: (I'm after crash space for sunday night so I don't have to get up at 6am to get there on time from Brighton.  It's okay if you're busy, Marna offered to let me stay at her place in London either.)
+17:20 <@gbjk> Good Game Elthek and Greg :-)
+17:20 <@Greg> it was fun wasnt it
+17:21 <@sphyg> elthek: sure, mail me so i remember.  what's the talk?
+17:21 <@noidd> ah well, back to working on the house
+17:21 <@Greg> i reckon im about 2 months away from being able to give Elthek a good run for his money every time
+17:21 <@gbjk> Sphyg: So you fancy a drink ?
+17:22 <@Elthek> Greg: Christ, I made the last eight moves in under five seconds.  :)
+17:22 <@Greg> yarr
+17:22 <@gbjk> Sphyg: shall I try to ditch the gf to avoid spare wheel paranoia ? :D
+17:22 <@Greg> it was fun
+17:22 <@gbjk> lol @ you too
+17:22 <@gbjk> s/too/two/g
+17:22 <@Elthek> sphyg: It's a presentation on my third-year project, to the Inference group, CS and Microsoft Research.
+17:22 <@Elthek> But it's okay, because I'm not REALLY FUCKING NERVOUS or anything.
+17:22 <@Greg> Elthek: really? i'd be fucking nervous if i was you
+17:22 <@Greg> and i mean really nervous
+17:22 <@Elthek> Greg: Cunt.  :)
+17:23 <@Greg> microsoft send really good people into these sorts of things
+17:23 <@Greg> woooow weee id be nervous
+17:23 <@sphyg> gbjk: when?
+17:23 <@Elthek> Dude!
+17:23 <@Greg> gosh i'm even nervous for you now and im not doing it ;-)
+17:23 <@Greg> Sweet!
+17:23 <@Elthek> No!  Not sweet!
+17:23 <@Greg> No! Dude!
+17:23 <@sphyg> elthek: coo, you're an academic
+17:23 <@Greg> don't worry i've seen microsoft in action recently they tend to hide from me
+17:24 <@gbjk> Greg: what did you do
+17:24 <@Elthek> sphyg: Shush.  :)
+17:24  * Greg just discused stuff with them and their network manager sort of ran away and didnt want to answer my questions
+17:24 <@Greg> but its a long story
+17:25 <@Elthek> Greg: Heh.  I can still feel adrenalin from that game.  :)
+17:28  * hex wonders how someone from Brazil came to be on london-list
+17:29  * Dom2 points out COALESCE to a sql seeking colleague
+17:29  * sphyg goes shopping
+17:29 <@Dom2> hex: the usual way.  flunked all the entrance exams.
+17:30 <@marnameow> Ooh! Less than a week to Galstonbury. I think I cna start getting excited now.
+17:30 <@Dom2> you're going?
+17:30 <@Elthek> sphyg: Hey, are you going to the Tim O'Reilly talk on Monday night?
+17:30 <@marnameow> Yup!
+17:31 <@Dom2> wow, how did you manage to get tickets?
+17:31 <@davorg> dipsy, going to glastonbury?
+17:31 <+dipsy> davorg: bugger all, i dunno
+17:31  * marnameow is going to the Tim O'Reilly talk. Sheep just booked us.
+17:31 <@DrHyde> from top ...
+17:31 <@DrHyde> 28870 drc        9   0  586M 586M  1188 S     0.0 29.0   0:15 vi ...
+17:31 <@DrHyde> bwahahahahahaa
+17:31  * Elthek isn't sure he'll be able to get back from Cambridge in time.
+17:31 <@Dom2> DrHyde: Makes a change from seeing perl looking like that
+17:31 <@sphyg> elthek: dunno yet
+17:31 <@marnameow> Dom2: Was working from home the morning they came out. Put the phone on handsfree and waited.
+17:31 <@Magnus> Elthek: you should invite him to dinner, like we did
+17:31 <@Dom2> DrHyde: I'd also be more impressed if the memory was 64Mb. :)
+17:32 <@Dom2> marnameow: well done, indeed!W
+17:32 <@DrHyde> my perl processes max out at about 300Mb :-(
+17:32 <@sphyg> magnus: huh?
+17:32 <@marnameow> I bought three, and *so* wished that I'd got another one later.
+17:32 <@Dom2> DrHyde: I wrote a script to test how fast memory leaks can build up
+17:32 <@Dom2> DrHyde: It just created circular refs in a while loop
+17:32 <@marnameow> There are too many people I know who don't have them.
+17:32 <@Magnus> sphyg: Tim O'Reilly went to dinner with netcrafters on Wednesday
+17:32 <@Magnus> and his mum
+17:32 <@Dom2> DrHyde: That hit 1.5Gb in under 5 minutes :)
+17:33 <@marnameow> Tom O'Reilly will get *fat* with all these dinners!
+17:33 <@davorg> he had a huge cake last night
+17:33 <@davorg> but he shared it with all of us :)
+17:33 <@marnameow> Oh, Friday! That means.... I should make a poll!
+17:34 <@sphyg> bah
+17:34 <@Elthek> sphyg: Oh, okay.  I just sent you e-mail anyway.  :)
+17:34 <@hex> TeeJay: replying to something you said at 14:42ish - I (semi-)know Viv Stanshall's wife.
+17:34 <@DrHyde> davorg: you went sailing down the river?
+17:34 <@davorg> not sailing, but yes.
+17:34 <@Kake> davorg: did you look out for perlmongers at the Anchor?
+17:35 <@davorg> i did. twice.
+17:35 <@davorg> but we were too far away
+17:35 <@Kake> Aw.
+17:35 <@DrHyde> i was going to go, but couldn't cos of Other Stuff
+17:35 <@DrHyde> waaaah! unfair!
+17:35 <@TeeJay> hex: cool
+17:35 <@davorg> tim arrived over 90 minutes late due to train nonsense
+17:36 <@DrHyde> arse! i could of made it then!
+17:36 <@Dom2> trains-- # complete shit
+17:36 <@DrHyde> people-- # make trains shit
+17:36 <@Kake> trains++ # fun
+17:36 <@davorg> DrHyde: s/of/have/ # or are you Greg?
+17:36 <@DrHyde> moo
+17:36 <@Magnus> me++ # best
+17:36 <@hex> TeeJay: she randomly turned up a few years back on a mailing list I've been on since the beginning of time
+17:36 <@DrHyde> i'm playing Sentence Golf
+17:37 <@hex> shit! coulda made it!
+17:37 <@hex> come on, someone must be able to beat that
+17:37 <@DrHyde> hex: fuckfuckfuck
+17:37 <@hex> heh :)
+17:37 <@DrHyde> i can beat that too ...
+17:37 <@DrHyde> :)
+17:38 <@hex> ">:("
+17:38 <@hex> that's for your original challenge tho
+17:38  * DrHyde disappears to do some more work
+17:38 <@Kake> hex: I've smoked hash with the lead singer of the Flying Pickets
+17:38  * DrHyde puts on his "Databases Are My Bitch" hat
+17:38 <@hex> Kake: congratulations. Who are the Flying Pickets?
+17:38  * davorg once mixed the sounds for the Flying Pickets
+17:39 <@Kake> Bah, do you know nothing.
+17:39 <@Greg> more chess anyone?
+17:39 <@hex> oh, and the Human League used to hang out in my flat.
+17:39 <@hex> </one-upmanship>
+17:39 <@Kake> Was that before you moved in? :)
+17:39 <@hex> Nope.
+17:39 <@Greg> well paisley used to visit us!
+17:39 <@hex> I was about two years old at the time
+17:39 <@Magnus> I have smelt White Town's farts
+17:39 <@hex> Greg: who, the Rev. Ian?
+17:39 <@Magnus> he's a fuckin cool guy
+17:39 <@Greg> of course
+17:39 <@Magnus> "I could never be Your Woman"
+17:40 <@Greg> ph3ar my leet showbiz connections
+17:40 <@hex> Magnus: of course not, I couldn't imagine snogging Ian Paisley
+17:40 <@Greg> i once bumped into peter cook, and i mean literally
+17:40  * davorg was once threatened with physical violence by the lead singer of bad manners
+17:40 <@hex> Buster Bloodvessel? Cool!
+17:40 <@Magnus> also, I went to school with Emma Pierson, of Grange Hill, Beast, and Bedtime
+17:40 <@davorg> he's a dick
+17:40 <@Magnus> in fact I owe her an ice cream
+17:40  * Greg carried liam neeson's fathers coffin
+17:40 <@hex> davorg: but he has a comedy tongue
+17:40 <@hex> Greg: coo.
+17:40 <@davorg> maybe. but he's still a dick
+17:41 <@hex> heh
+17:41 <@davorg> Magnus: wasn't she also in Time Gentlemen Please
+17:41 <@Magnus> davorg: oh yeah, I haven't seen it thoug
+17:41  * hex combs his celebrity-connection branex
+17:41 <@hex> s/x/z/
+17:41 <@Magnus> she was lovely at school
+17:41 <@hex> my dad beat Richard Branson in a curry-eating contest once. 
+17:41 <@Magnus> complete bitch last time I ran into her
+17:41 <@Greg> and i got Mr Bronson (from Grange Hill and of course one of the Star Wars movies and one of the Indiana Jones movies) drunk
+17:41 <@itz> I used to live on the same road as Queen's bass player
+17:42 <@yaxu> blimey
+17:42 <@hex> It's a veritable celebrity network!
+17:42 <@itz> before he was famous
+17:42 <@Dom2> Celeb::Hookup
+17:42 <@yaxu> i saw will self walking through leicester square earlier
+17:42 <@Greg> its seven degrees of pathetic celeb stories
+17:42 <@hex> arrr
+17:42 <@davorg> oh and I once crashed and burned whilst chatting up various members of Toto Coelo
+17:42 <@yaxu> bjork once fell on me in a club
+17:42  * hex saw Ginger Spice whilst going to the pub with muttley once
+17:42 <@Greg> davorg: <aside> you are showing your age now </aside>
+17:42 <@Magnus> Greg: how did you meet mr bronson?
+17:43 <@davorg> :)
+17:43 <@itz> a friend's brother once shared his bong with lemmy as well
+17:43 <@Magnus> and who was he in Star Wars/Indiana Jones
+17:43 <@davorg> melinda messenger stood on my toe
+17:43 <@yaxu> i've met ashley pomeroy
+17:43 <@hex> my dad used to play challenge games of Asteroids with Lemmy
+17:43 <@Magnus> I was 5 feet away from Prince Harry on Sunday
+17:43 <@Kake> yaxu++
+17:43 <@Greg> Magnus: he was invited to an edinburgh university roleplaying fair, and i just ended up in the bar with him
+17:43 <@Greg> in IJ he was hitler
+17:43 <@hex> oh, and I met that Dave Gorman once
+17:43 <@Greg> he has played hitler on a number of occasions
+17:43 <@Magnus> hitler??? no way
+17:44 <@Greg> hex: don't go down the comedy route, dave will win
+17:44 <@Greg> Magnus: you know in the 3rd movie, where hitler signs the grail diary
+17:44 <@Magnus> I didn't think much of Robert Llewellyn
+17:44 <@hex> Greg: I've already exhausted my comedy list :)
+17:44 <@Magnus> grumpy twat
+17:44 <@Magnus> Greg: yes, I know
+17:44 <@yaxu> i met one of the guys from press gang / grange hill
+17:44 <@Greg> in star wars i cant remember who he was
+17:44 <@hex> Magnus: I saw him in a shopping centre near my house last year
+17:44 <@Greg> apparently he has played hitler 3 times
+17:44 <@Magnus> I think he had his boyfriend accompanying him, and they both kept loudly talking about their wives and girlfriends
+17:45  * davorg booked marillion before anyone had heard of them
+17:45 <@hex> er... and when Mark Morrison got arrested for waving a gun around, that was in one of my local newsagents
+17:45 <@yaxu> i met jem finer from the pogues too
+17:45 <@Dom2> Robert Llewellyn is great
+17:45 <@Greg> davorg:  that fact will make probably only one person envious on this channel, and its someone who already knows the fact
+17:45 <@davorg> oh and i turned down culture club _because_ no-one had heard of them
+17:45 <@itz> what about a "my brush with fame" wikki?
+17:45 <@PerfDave> davorg: You're to blame for encouraging Marillion? ;)
+17:45 <@davorg> PerfDave: well, a bit
+17:46 <@PerfDave> davorg: Damn you!
+17:46 <@Greg> davorg++ # encouraging marillion
+17:46 <@yaxu> sean from autechre joined one of my mailing lists once
+17:46 <@itz> is that the band who are like Genesis only worse?
+17:46 <@davorg> see http://dave.org.uk/blog/archives/000008.html for my marillion story
+17:46 <@PerfDave> (although on Marillion-related claims to fame, a mate of mine lives just down the road from Fish and plays with his synths. Fish now describes Marillion as "A bunch of pretentious middle-class wank" apparently.
+17:46 <@davorg> itz: yeah
+17:46 <@PerfDave> )
+17:46 <@yaxu> itz: worse than genesis?
+17:46 <@yaxu> ???
+17:47 <@yaxu> i was talking to leafcutter john earlier, who's a bit famous
+17:47 <@PerfDave> yaxu: Strange, scary, but true
+17:47 <@Magnus> my friend flyerd eddie izzard at edinburgh festival
+17:47 <@yaxu> we have a box full of every cd that phil collins ever released, including the genesis stuff
+17:48 <@davorg> why?
+17:48  * itz admits to recent genesis mp3 downloading
+17:48 <@yaxu> were going to do their website but managed to get out of it
+17:48 <@yaxu> itz--
+17:48 <@yaxu> itz++ # honest
+17:49  * davorg admits to recent genesis cd rippage
+17:49 <@TeeJay> who could get a cheap .org.uk domain ?
+17:49 <@itz> floyd are better of course
+17:49  * TeeJay fancies setting up a FreeSoftwareForLibraries website
+17:49 <@davorg> true
+17:49 <@Greg> floyd are an entirely different band to genesis
+17:49 <@TeeJay> to organise free software cdroms for local libraries
+17:49 <@TeeJay> anyone else interested
+17:50 <@marnameow> TeeJay: Would it mean talking to libraries? Cuz that's a bit eep.
+17:50 <@davorg> scribot: http://story.news.yahoo.com/news?tmpl=story&u=/nm/20030619/wr_nm/religion_britain_witchcraft_dc_2 # Paganism on the rise. Buffy, Harry and Sabrina to blame
+17:50 <@yaxu> the internet is a library
+17:50 <@Greg> TeeJay: interesting idea, but im not sure libraries are a high enough profile now
+17:50 <@marnameow> What sort of free software? Our libraries are Windoze-obsessed like everywhere else at work.
+17:51 <@PerfDave> I watched about half abour of Blair Witch 2 the other night before the fucking fluffy Wiccan got too annoying
+17:51 <@Greg> although the idea of teaming up with a PC manufacturer and supplying pc's with a cd burner and a stock of ISO's including gutenburg is very appealing
+17:51 <@TeeJay> Greg: indeed
+17:51 <@TeeJay> marna: openoffice, apache, gimp, etc
+17:51 <@Greg> libraries++
+17:51 <@TeeJay> could put together a few pundles
+17:51 <@TeeJay> like graphics, web dev, games, etc
+17:52 <@Greg> TeeJay: is it not cheaper just to sell the preburned CD's at libraries
+17:52 <@TeeJay> and CPAN / debian mirrors on CDROM
+17:52 <@itz> libraries++ // unjustly and ironically overlooked in the new Information Age
+17:52 <@TeeJay> why not loan them out - a few copies of each
+17:52 <@Greg> start with your local library
+17:52 <@TeeJay> Greg: plan to
+17:52 <@marnameow> TeeJay: IME they won't actually be able to use them. Because all the puters are controlled by the evil it folks.
+17:52 <@Greg> just turn up one day and say i'd like you to sell these 50 CD's for me
+17:52 <@Kake> A lot of libraries charge for CD loan anyway, so almost may as well sell them.
+17:52 <@marnameow> Or are you wanting to give them out to people?
+17:53 <@Greg> i dont care who gets the cash
+17:53 <@TeeJay> whichever
+17:53 <@Greg> but its all free stuff
+17:53 <@TeeJay> goak is to ensure its available
+17:53 <@Kake> It is a nice idea though, go for it.
+17:53 <@itz> is it worth selling CDs they are practically zerocost
+17:53 <@Greg> free operating systems, free software and free books
+17:53 <@TeeJay> yup
+17:53 <@TeeJay> free documentation, etc
+17:53 <@Kake> You might want to supply some printed very basic docs with them.
+17:53 <@Greg> itz: but they are not 0 cost exactly
+17:53 <@TeeJay> giving away would cost too much - giving each library a few copies of each CD would be affordable
+17:54 <@TeeJay> how they charged would be irrelevent as long as they were available
+17:54 <@Magnus> TeeJay: it's a good idea
+17:54 <@itz> greg: probably cost more to collect the revenue than the actual revenue itself
+17:54 <@Kake> Start with your local library, keep notes of what works and what doesn't, pop it on a website with some success stories, publicise it.
+17:54 <@Magnus> TeeJay: you could get a grant from the lottery to do that with
+17:55 <@TeeJay> Magnus: indeed
+17:55 <@Greg> TeeJay: why not remove the whole library thing and start a network marketting campaign as follows, you the seed say to someone would you like a CD (or CD set of $foo), you can either have it for free if you promise to duplicate it twice and offer it under the same terms as i am offering to you, or you can pay me me $foo which is just the cost of burning the CD's
+17:55 <@TeeJay> if we did it for several libraries at the same time we could get in the paper and put together a website for others to follow suit
+17:55  * TeeJay uses libraries
+17:56 <@marnameow> Libraries keep wanting their books back. I don't like that.
+17:56 <@Greg> me too
+17:56  * marnameow seems to run a library instead.
+17:56 <@Greg> but when i was a kid i couldnt afford to buy enough books
+17:56 <@itz> keep renewing
+17:56 <@Greg> libraries are very special places
+17:56 <@Greg> very very special
+17:57 <@itz> the Victorians did libraries best
+17:57 <@marnameow> I read everything in the library when I wa small.
+17:58 <@marnameow> I didn't read right through the grown up library because there was so much trash that even I couldn't read.
+17:59 <@Magnus> I just stuck to the classics
+17:59 <@Magnus> Adams, Pratchett
+17:59 <@Magnus> Peter David
+18:00  * davorg read nothing but sci-fi when he was young
+18:00 <@davorg> i got better
+18:01 <@itz> Danny Dunn
+18:01 <@marnameow> I read almost everythng I could get my little paws on.
+18:01  * yaxu has booked train tickets to glasto
+18:01 <@PerfDave> I grew up on Alan Garner and Isaac Asimov, mostly
+18:01  * yaxu gets EXCITED
+18:01  * TeeJay grew up on Asimov
+18:01 <@davorg> i grew up on asimov. but he moved so i fell off.
+18:02 <@davorg> looking back, i can't believe i read so much asimov
+18:02 <@davorg> what was i thinking?
+18:02 <+pasty> "hex" at 217.10.129.148 pasted Truly bad pun I just read at http://paste.husk.org/42
+18:03  * yaxu read very little, considering that he grew up living above his dad's bookshop
+18:03  * yaxu spent his time in the office on the computer instead
+18:03 <@marnameow> You lived above a *bookshop*? Wow! That would have been marna-heaven
+18:03 <@Magnus> hex: truly bad
+18:03 <@itz> Heinlein++
+18:04 <@yaxu> marnameow: yep, worked in it on saturdays
+18:04 <@muttley> seen mbm
+18:04 <+dipsy> mbm was last seen on #london.pm 14 days, 21 hours, 39 minutes and 50 seconds ago, saying: right, see people in the pub [Thu Jun  5 18:22:08 2003]
+18:04 <@davorg> heinlein is a lot better than asimov
+18:04 <@yaxu> marnameow: working in a bookshop isn't quite as idyllic as it might sound though
+18:04 <@davorg> his politics were a bit dodgy tho
+18:04 <@hex> muttley: my god! he never came back!
+18:04 <@aef> Magnus: Yeah, have you seen Black Books? :)
+18:04 <@Magnus> no
+18:04 <@muttley> hex: lol
+18:04 <@marnameow> yaxu: But the books, the books! The reading of the books! 
+18:04 <@Magnus> need to
+18:05 <@yaxu> marnameow: i didn't really get into books past my asterix and tintin phase until i read 1984 for gcse english
+18:05 <@itz> that Moorcock is a bit of a leftie isn't he? :)
+18:05 <@marnameow> I really wanted to work in a bookshop when I was younger. This is back when I had shitty jobs places like Burger King.
+18:05 <@davorg> itz: he can be :)
+18:05 <@yaxu> marnameow: you don't have time to read, though
+18:05 <@marnameow> But I spent almost all of my childhood reading.
+18:05 <@marnameow> You don;t have time to read in Burger King, either.
+18:06 <@yaxu> marnameow: lots of ordering and stock managing and ringing customers and serving etc
+18:06 <@marnameow> But at least you get to snuggle the books in a bookshop.
+18:07 <@hex> "Could you sign this for me?" "Sure." "...What did you write?" "You should be in jail."
+18:07 <@davorg> hmmm... book snuggling considered a bit strange :)
+18:08 <@marnameow> Book strokeage also strange?
+18:08 <@davorg> almost certainly
+18:09 <@marnameow> Book hugging?
+18:09 <@davorg> books are for readin'
+18:09 <@marnameow> And lovin' - you got to give the books some lovin' too.
+18:09 <@davorg> maybe. where lovin' == giving them a nice bookcase to live in
+18:10 <@marnameow> Once, when I was moving house, I poured all my books into a pile on the floor and rolled around in it before putting the books on shelves.
+18:10 <@marnameow> I think you'll consider that odd too.
+18:10 <@davorg> just possibly
+18:10 <@itz> hard or paperbacks?
+18:10 <@davorg> :)
+18:10 <@marnameow> mostly paperbacks.
+18:12  * CPAN upload: Time-Format-0.06 by ROODE
+18:13 <@hex> (New Riders)++ # Linux Firewalls
+18:14 <@hex> You... poured... your books.
+18:14  * hex winces
+18:16 <@marnameow> Oh dear. We're having that 'which bodypart/sense would you miss most/least'
+18:17 <@marnameow> I think me n' Chrys's detatched reasoning is squicking Fiona.
+18:18 <@PerfDave> Book hugging is even more wrong than tree-hugging.
+18:18 <@TeeJay> good domain for freesoftware for libraries ?
+18:18 <@TeeJay> something catchier than fs4l
+18:18 <@marnameow> fast seduction for libraries!
+18:18 <@PerfDave> freelib! Confuse everybody!
+18:19 <@marnameow> kittenpiesurprise.org.uk ? No? Whyever not?
+18:19 <@TeeJay> cds4all ?
+18:19 <@TeeJay> free4all ?#
+18:20 <@Greg> Magnus++ # puts up with jibes, which albeit are friendly are fairly often, with good grace
+18:20 <@TeeJay> probably gone
+18:20 <@itz> hopefully one day soon the kitty meme will follow the pony one into the sunset
+18:20 <@PerfDave> kittenpie... Mmm, dead kittens *munchmunchmunch*
+18:20  * Greg is definetly a woofter not a cat
+18:20 <@Ranguard> TeeJay: isn't it more about getting stuff out to people - just so happens that U'll be doing it mostly through libraries
+18:21 <@marnameow> I think I may be a kitten-meme carrier. 
+18:21 <@TeeJay> Ranguard: yes
+18:21 <@TeeJay> could also aim at schools
+18:21 <@PerfDave> itz: The kitten meme seems to be locked into f*rrydom, which is itself a meme that should be stamped out
+18:21 -!- mbm [mbm@colon.colondot.net] has joined #london.pm
+18:21 -!- mode/#london.pm [+o mbm] by clunker
+18:21 <@TeeJay> software4all ?
+18:21 <@Magnus> Greg: which jibe in particular
+18:21  * Magnus bows before mbm
+18:21 -!- mode/#london.pm [+o mbm] by slavorg
+18:21 <@mbm> woo, it's friday afternoon, it's sunny, and my boss promised me a drink.
+18:21 <@marnameow> My kitten-meme is fairly furry-free.
+18:22 <@mbm> marnameow: how about a poi-meme
+18:22 <@marnameow> Can you poi while drinking?
+18:22 <@mbm> no, not yet
+18:22 <@Greg> magnus: fs
+18:22  * Magnus can
+18:22 <@marnameow> mbm: You carry that. Not me.
+18:22 <@PerfDave> poi. It's (allegedly) acceptable GBH.
+18:22 <@Ranguard> TeeJay: is it just going to be software ?
+18:22 <@Magnus> marnameow: if you like, I will demonstrate poi while drinking next weekend
+18:22 <@Magnus> more like drinking while poi
+18:22 <@TeeJay> Ranguard: no
+18:22 <@mbm> Magnus: scary
+18:23 <@marnameow> You have to find me first, though.
+18:23 <@TeeJay> not just software but mostly software
+18:23 <@Magnus> marnameow: I will use my spidey-sense
+18:23 <@chrisa> mbm: there so *is* a poi-meme already
+18:23 <@TeeJay> software4all is available
+18:23 <@Magnus> poi?
+18:23 <+dipsy> somebody said poi was an art of twirling that was performed by Maori women in order to keep themselves supple and agile. The moves used by firechains have many similarities to those of poi, apart from the fact that the balls used in traditional poi were not lit or at http://www.homeofpoi.com/ or plural and singular like sheep or waving balls on string around like a hippy nonce or as pointless as juggling
+18:23 <@TeeJay> softwareanddocumentation4all is a bit long :)
+18:23 <@marnameow> Ooh bugger. I wanted to make a big purple sparkley kitten for glasto.
+18:23 <@Ranguard> TeeJay: lets think about it over the weekend :)
+18:23 <@Magnus> marnameow: I promise not to try and fastseduce you
+18:23  * Magnus is making many t-shirts
+18:23 <@TeeJay> Ranguard: can you set up software4all.cuckoo.org ?
+18:23 <@marnameow> You'll not fast-seduce me! 
+18:24 <@adam> Magnus: I can't imagine it works if you warn people.
+18:24 <@TeeJay> until we decide and buy a domain ?
+18:24 <@marnameow> It wouldn't work.
+18:24 <@Ranguard> TeeJay: sure, 2 mins
+18:24 <@chrisa> Magnus: can you make an 'uck Po' please?
+18:24 <@TeeJay> cool :)
+18:24 <@TeeJay> Ranguard++
+18:24 <@marnameow> Magnus: What will your tshirts day?
+18:24 <@marnameow> say, even....
+18:24 <@Magnus> chrisa: ?
+18:24 <@chrisa> as in 'uck Wa'
+18:24 <@mbm> chrisa: well, of course.
+18:24 <@Magnus> marnameow: I'm making one that just says 'MAGNUS' in huge letters across my tits
+18:25 <@Magnus> I am making three that say 'You can have this t-shirt... if you give me a snog'
+18:25 <@marnameow> In case you forget who you are, or in case other people do?
+18:25 <@Magnus> and on the back it will say 'no mingers'
+18:25 <@Magnus> which I might make into a t-shirt all by itself
+18:25 <@Magnus> I will probably bring my 'I've got SARS' t-shirt too
+18:25 <@marnameow> What if bois want the snogging tshirt? Will you accept their snogs?
+18:26 <@Magnus> of course not
+18:26 <@Magnus> that would be silly
+18:26 <@Kake> They will have to get someone who wants to snog them to snog Magnus and win the tshirt.
+18:26  * lathos remembers that housemates are the root of all kinds of evil.
+18:26 <@Magnus> actually maybe to be safe I will put "(girls only)" on the back
+18:27 <@Magnus> although perhaps no mingers covers that
+18:27 <@lathos> (Having just extricated a key, a lighter, and other bits and pieces from the washing machine.)
+18:27 <@Magnus> other t-shirt "DON'T BOTHER - I have a really small penis"
+18:27 <@marnameow> You should make a tshirt that says 'line up here for hot fastseductin' action'
+18:27  * PerfDave wants a "No you're *not* a fucking kitten/elf/vampire/(delete as appropriate)" range of T-shirts
+18:28 <@Elthek> PerfDave: Yes!
+18:28 <@marnameow> PerfDave: With velcro, and you can change the hated thing as you meet people who are kittens or elfs or vampires.
+18:28 <@Ranguard> TeeJay: http://software4all.cuckoo.org/ will be live when the DNS propogated
+18:28 <@PerfDave> Can T-shirts have drop-down boxes? :)
+18:29 <@marnameow> Could do a foldy-down cloth one?
+18:29  * aef is a delete as appropriate! I am!
+18:30 <@PerfDave> That reminds me, i need to work on the ticky box T-shirts for Whitby
+18:30 <@marnameow> ticky box tshirt?
+18:30 <@Kake> Ooh, Auf Wiedersehen Pet is on tonight.
+18:30 <@Kake> I love that programme.
+18:30  * Magnus tries hard to think of other t-shirt ideas
+18:30 <@PerfDave> marnameow: Laminated T-shirt with a ticky box that you can tick with a felt tip and wipe clean and tick again for hours of ticky fun
+18:33 <@marnameow> Magnus: I bought the sheep a tshirt that says 'Feminist chicks dig me'
+18:33 <@Magnus> that's cool
+18:33 <@Magnus> a lesbian I met on wednesday night had an 'easy on the meatballs' t-shirt
+18:33 <@Magnus> with a picture of a fork, meatballs, with spaghetti dangling
+18:33 <@Magnus> to give the suggestion of a penis
+18:33 <@Magnus> I asked her if it meant she was a VAG-etarian
+18:33 <@Magnus> and she kept saying no, she ate meat
+18:34 <@marnameow> Did she hit you?
+18:34 <@Magnus> no
+18:34 <@Magnus> in fact she was fairly cuddly by the end of the night
+18:34 <@Magnus> but she was stupid
+18:35 <@hex> Hey, did you see this article in the paper? Apparently a psychic dwarf has gone on the run with money he stole from the circus. The headline says "Small Medium at Large"
+18:35 <@marnameow> But you didn't seduct her?
+18:35 <@marnameow> Did you try to seduct her?
+18:35 <@Kake> Did you threaten to seduct her?
+18:35 <@hex> 'seduct'?
+18:35 <@Magnus> hush
+18:36 <@PerfDave> hex: Never buy a retarded dwarf. It's not big and it's not clever.
+18:36  * marnameow is going to make a 'seducterated' tshirt for Magnus to give his victims.
+18:36 <@Kake> Poor laptop.  It is importing the Metro Glasto CD and its little fan is going like mad.
+18:36 <@PerfDave> 5e|>|_|<3|>
+18:36 <@hex> PerfDave++ # sense of humour as bad as mine
+18:37 <@hex> What's this I hear about a growing movement of people who actually /believe/ they're pixies, or spirits, or something?
+18:37 <@Kake> otherkin
+18:37 <@Kake> Google for it.
+18:38 <@Kake> I don't think it's as funny as breatharians though.
+18:39 <@hex> Kake: that's them.
+18:40 <@hex> Vegetarians > Vegans > Fruitarians > Breatharians > Buddha
+18:40 <@itz> Buddha did the starvation thing and it didn't work
+18:41 <@TeeJay> itz: yup
+18:41 <@hex> itz: no, I mean, he no longer has to eat, having transcended.
+18:41 <@TeeJay> hex: don't think he ever stopped eating at any point
+18:42 -!- vorsprun1 [vorsprung@brsl-3e3523e8.pool.mediaWays.net] has quit [Ping timeout: 180 seconds]
+18:42 <@TeeJay> some hindu and muslim saints have tho
+18:42 <@TeeJay> even some christian saints have
+18:42 <@hex> TeeJay: what, even after reaching Nirvana?
+18:42  * hex nods
+18:42 <@TeeJay> hex: still have to nourish the body - also buddha made an effort to not use siddhi even if he could
+18:42 <@TeeJay> as do most with siddhi
+18:43 <@PerfDave> otherkin is a kind of sperset of people believing they ar in some way non-human. Covers f*rries, v*mpires, and lots of other people who need to GET OUT MORE.
+18:43 <@hex> TeeJay: I was unaware of that. Thanks.
+18:44 <@TeeJay> buddha was aware of the dangers of personality cults and so avoided siddhi
+18:44 <@PerfDave> siddhi are kind of super-powers, right? :)
+18:44 -!- vorsprung [vorsprung@brsl-3e352382.pool.mediaWays.net] has joined #london.pm
+18:44 -!- mode/#london.pm [+o vorsprung] by slavorg
+18:44 <@itz> the whole buddha as smiling fat guy wasn't even there originally and the art just used footprints
+18:45 <@PerfDave> hex: Vaguely useful otherkin links in the comments of http://www.livejournal.com/users/diffrentcolours/314564.html
+18:45 < rataxis> PerfDave : I thought you viewed otherkin as "just animal enough to use for shotgun practice" ?
+18:46 <@Kake> Heh.
+18:46 <@Kake> Ooh, it's nearly the weekend.
+18:46 < rataxis> not for me.
+18:46 < rataxis> 3 hrs, 14 mins to go :/
+18:46 <@Kake> That's nearly.
+18:46 < rataxis> is it fuck.
+18:46 <@PerfDave> rataxis: No, I view them as human beings, who need to GET OUT MORE. Partly so I can shoot them :)
+18:46 < rataxis> PerfDave : shrug.
+18:47 < rataxis> it has to be said, tho, that a ears-and-tail set from claire's accessories does not a cat make.
+18:47 < rataxis> no matter how much you rub peoples' legs and miaow.
+18:47 < rataxis> it does make you easier to pick out through a rifle scope tho....
+18:47 <@PerfDave> rataxis: Or bap your "paws" in people's face, who politely *don't* break your arms as you thoroughly deserve :)
+18:48 < rataxis> PerfDave : yeah, I have issues with people who do that.
+18:48 <@itz> Saturday, June 21, 2003: Summer Solstice 8:10pm (BST)
+18:48 <@Kake> You're a right pair of whingers, you two.
+18:48 < rataxis> "do that again and you'll draw back a bloody stump" works well.
+18:48 < rataxis> Kake: we're _sysadmins_
+18:48 <@vorsprung> are you?
+18:49 <@PerfDave> Kake: I don't like having my personal space invaded by irritating people.
+18:49 < rataxis> yes.
+18:49 < rataxis> and so's alex.
+18:49 < rataxis> aren't you?
+18:49 <@vorsprung> you don't seem violent enough.  Yes I am 
+18:49 < rataxis> aren't you was directed at perf.
+18:49 < rataxis> _I'm_ not violent enough?
+18:49 <@vorsprung> nope
+18:49 < rataxis> I punched a Mormon on the tube the other day!
+18:49 <@PerfDave> I'm a sysadmin. But I'm a relaxed sysadmin who doesn't do caffeine and doesn't smoke.
+18:50 <@vorsprung> oh good
+18:50 < rataxis> fucker wouldn't take no for an answer.
+18:50 <@mbm> rataxis: Moron Mormon?
+18:50 < rataxis> PerfDave : you just chew on your restraints
+18:50 < rataxis> mbm: moron punchbag.
+18:50 < rataxis> mormon even
+18:50 <@vorsprung> PerfDave, do you go rock climbing?
+18:50 <@PerfDave> vorsprung: No, I just rock \m/
+18:50 < rataxis> and he's lucky I have some self control. I only hit him once. and not very hard.
+18:50  * CPAN upload: Tk-DBI-Tree-0.03 by XPIX
+18:51 < rataxis> but hey, that's what he gets for picking on somebody with an alcohol and speed hangover.
+18:51 <@hex> itz: they seem to have been around for a while: http://www.laughing-buddha-statue.com/Good_Life_Buddha.htm
+18:51 <@PerfDave> "picking on"?
+18:51 < rataxis> i had the headphones on ffs. the big fuckers. he must've been able to tell.
+18:51 <@vorsprung> rataxis, he was asking for it
+18:51 <@mbm> rataxis: !
+18:52 <@itz> hex: for a while yes but originally buddhist art didn't show the Buddha at all
+18:52 <@itz> hex: ant-personality cult thing
+18:52 < rataxis> vorsprung : he was, man. i mean, i said "LOOK, I'M NOT INTERESTED IN YOUR FUCKING BIBLE AND IF YOU DON'T STOP HASSLING ME I WILL CAUSE YOU PAIN" several times.
+18:52 <@vorsprung> PerfDave, so you are a sys admin but you aren't tense or violent?
+18:52 <@hex> itz: right
+18:52 -!- hex changed the topic of #london.pm to:  Only he is wise who understands the state of non-learning
+18:52 < rataxis> hex: are you quoting zen master greg?
+18:52 <@vorsprung> PerfDave, are your users already all dead? is that it?
+18:53 <@PerfDave> vorsprung: Oh, I'm tense and violent, but I don't go around punching people who don't (a) ask nicely or (b) hit me first.
+18:53 < rataxis> PerfDave : he asked nicely.
+18:53 <@PerfDave> vorsprung: No, my users are clueful and don't know my phone number :)
+18:53 <@hex> rataxis: nope, Pu-Tai
+18:53 < rataxis> he asked if i wanted to talk to him about jesus. I declined. He carried on. At that moment, he asked me to make him fuck off.
+18:53 <@lathos> Idiots.
+18:53 < rataxis> lathos : where?
+18:53 <@hex> Jesus is coming! Everybody look busy!
+18:54 <@lathos> Mormons, I mean.
+18:54 <@lathos> EVERYWHERE.
+18:54 <+dipsy> somebody said everywhere was (going to the dogs)
+18:54 <@doop> "I'm sorry, but my boyfriend is a satanist, and he wouldn't approve"
+18:54 <@Magnus> rataxis: brilliant
+18:54 <@hex> When Christians try and convert me on the street I generally lecture them about Islam.
+18:54 <@vorsprung> "Do you know how joseph smith walked on water? he hid benches a couple of inches under that lake"
+18:55 <@itz> where are his gold tablets then?
+18:55 <@hex> The spectacle of an (apparent) white Muslim is enough to freak out most street leaflet-profferers
+18:55 <@Magnus> I like christians
+18:55 <@vorsprung> YEAH and where are the gold tablets!!!!
+18:55 <@lathos> I generally throw them really, really awkward questions to see how they cope. It's good training for me.
+18:55 <@PerfDave> Last time somebody asked me if I was interested in the Bible I looked at the one they were carrying, asked them if I could have a look and started going on about the history of various bible-translations
+18:55 <@hex> lathos: Good approach.
+18:55 <@itz> "a bunch of my mates saw the gold tablets they exist honest"
+18:55 <@Magnus> if there is one group of people who I can confuse by turning their own arguments around on them, it's christians
+18:55  * marnameow is buggering off home now. 'Rah!
+18:55 <@Magnus> you think I troll in here
+18:56 <@Magnus> you should see me talking to christians
+18:56 <@lathos> The Mormons are too easy, though.
+18:56 <@lathos> The JWs like a good fight.
+18:56 <@hex> Now that's something I'd like to see.
+18:56 -!- marnameow [~marna@212.35.238.162] has quit [Home for kitten]
+18:56 <@vorsprung> "mormons are easy ...X rated at your local video store"
+18:57 <@Magnus> the best bit is when you play dumb
+18:57 <@Magnus> so they don't see you coming
+18:57 <@Magnus> and then you bring up the book of the dead, for example
+18:57 <@vorsprung> hex, if you hit an artery that would be that.  As they can't have a transfusion
+18:57 <@hex> In the red corner, weighing in at *mumble* pounds, the Penitent Perl Programmer, lathos! In the blue corner, weighing in at many more pounds, a bunch of Jehovah's Witnesses!
+18:58 <@hex> Lllllett's geeettt reeeadddy to ruuummbbllleeee!
+18:58 <@lathos> Glass of wine? Oh, that's right, you guys don't drink, even though Jesus did, because you try and be better than him.
+18:58 <@hex> lathos++
+18:58 <@itz> hex: which side would Larry be on?
+18:58 <@lathos> itz: He'd be the ref.
+18:58 <@PerfDave> Best module for XML / RPC?
+18:58 <@vorsprung> itz, the side of the righteous
+18:58 <@hex> vorsprung: good answer.
+18:58 <@Magnus> and then there's the whole thing how Judas actually did Jesus the biggest favour ever
+18:59 <@Magnus> or how God must have intended for humans to fall, otherwise he'd be fallible
+18:59 <@vorsprung> seeing as larry trained as a missionary and pumps vast amounts of cash into a church I think we can guess where he stands on the religion question
+18:59 <@Magnus> and then when that fails you can just point out the weaknesses in their personalities that lead to them being christians
+18:59 <@PerfDave> I don't have a problem with Christians, provided they don't try to convert me. I have more of a problem with church organisations.
+19:00 <@itz> wasn't Judas told to go to the Romans by Jesus anyway?
+19:00 <@Magnus> itz: well quite
+19:00 <@lathos> itz: Um. No.
+19:00 <@Magnus> yeah I'm sure he was
+19:00 <@itz> one of the Gospels gives that impression
+19:01 <@lathos> Cite?
+19:01 <@Magnus> probably one of the dead sea scrolls
+19:01 <@itz> gimme a min
+19:01 <@lathos> You're probably thinking of "What you have to do, do quickly."
+19:02 <@Magnus> possibly
+19:02  * Magnus is looking
+19:02 <@hex> aaarrgghh
+19:02 <@hex> "I'm sanguine/psi vampire kin, which from reading all the posts here isn't too common(?). There certainly doesn't seem to be a particular interest in livejournal of this type of kin."
+19:02 <@itz> sounds like that ? reg?
+19:02 <@itz> ref?
+19:02 <@yoda> bah. anyone here use mozilla firebird?
+19:02 <@aef> Surely larry would be a _bless'ed_ ref? :)
+19:02 <@itz> yoda: yes its good
+19:03 <@PerfDave> hex: To be fair, when somebody like that talks to me, I can feel my life force draining away...
+19:03 <@lathos> itz: John 13:27, And after the sop Satan entered into him. Then said Jesus unto him, That thou doest, do quickly
+19:03 <@yoda> itz: any idea why "alt-left arrow" isn't working on my system?
+19:03 <@PerfDave> lathos: Is that support for the rhythm method? ;)
+19:04 <@lathos> This is me not going that way.
+19:04 <@itz> lathos: yes thats the one
+19:05 <@lathos> "So, let's just get this out the way, shall we?"
+19:05 <@hex> scribot: http://campross.crosswinds.net/Ryuei/SantaMaitreya.html # Santa is Buddha!
+19:05 <@hex> lathos: I'd want to do it quickly if Satan entered into me.
+19:06 <@itz> lathos: the whole of John 12:21-30 sounds like a leader telling a follower to betray him
+19:06 <@aef> But if Jesus, God and Holy Ghost are one, and Satan entered into Jesus...
+19:06 <@lathos> aef: Good try.
+19:06 <@itz> rather than prediction
+19:07 <@lathos> itz: I'm not sure how you get to that. Do you mean ch.12?
+19:07 <@itz> yes
+19:07 <@vorsprung> itz, judas was in charge of the cash.  That remark could have ment anything
+19:07 <@hex> lathos: I take it you're a Trinitarian then
+19:07 <@Magnus> I thought that ITV 'Second Coming' thing was pretty good
+19:07 <@lathos> itz: I don't follow, then.
+19:07 <@lathos> hex: Huh?
+19:07 <@itz> someone in charge of the cash is the most trusted follower
+19:08 <@itz> its usually held to be prediction but it reads more like instruction I think
+19:08 <@vorsprung> hex, do you mean
+19:08 <@Magnus> itz: could be a translation thing
+19:09 <@vorsprung> hex, Trinitarian == accepts the notion of father, son and holy ghost
+19:09 <@hex> vorsprung: yes, exactly
+19:09 <@itz> magnus: sure you can read virtually any meaning into it 
+19:09 <@lathos> itz: John 12:21-30 reads like "It's all about to go really bad."
+19:09 <@vorsprung> hex, most christians do it's a conventional point of view
+19:09 <@lathos> hex: Yes, then.
+19:09 <@vorsprung> hex, I don't think I've met one that didn't in fact
+19:09  * hex nods
+19:10 <@hex> vorsprung: there aren't many of us Unitarians
+19:10 <@itz> lathos: thats what I meant by "prediction" above
+19:10 <@hex> technically speaking I'm a Unitarian Universalist, but I share some of the approach of Islam to their prophets.
+19:10 <@lathos> itz: Yes. How do you get from there to "instruction"?
+19:11 -!- davorg is now known as dav_gorn
+19:11 <@Magnus> what does UU mean?
+19:11 <@aef> Gah, I remember about some European who thought it breached the One God thing and ended up accidentally causing a bloody attempted revolt or something.
+19:11 -!- jouke [~jouke@pvoice.xs4all.nl] has joined #london.pm
+19:11 -!- mode/#london.pm [+o jouke] by slavorg
+19:11 <@jouke> hey all
+19:11 <@lathos> "Unitarianism Universalism is an unusual religious organization, because it  does not require its members to adhere to specific beliefs."
+19:12 <@lathos> Cool, like Discordianists.
+19:12 <@PerfDave> So that quote from John is Jesus doing hte Lemmings "uh-oh" noise? :)
+19:12 <@vorsprung> hex,
+19:12 <@vorsprung> Titus 3:9
+19:12 <@vorsprung> But avoid foolish controversies and genealogies and arguments and quarrels about the law, because these are unprofitable and useless.
+19:12 <@hex> Magnus: http://www.uua.org/aboutuu/
+19:12  * gellyfish "net send"s abrasive message to finance person who doesn't answer phone
+19:12 <@PerfDave> Discordians are forbidden from eating hot dog buns on a Friday :)
+19:12 <@lathos> PerfDave: They are also forbidden from believing what they read.
+19:12 <@PerfDave> lathos: I read that, but I don't believe it.
+19:12 <@lathos> But I only read that, so I'm not sure.
+19:12 <@itz> lathos: I am disagreeing with the covententional explanation of "prediction" and proposing a new one "instruction"
+19:12 <@hex> vorsprung: UU seeks to draw meaning from the teachings of various religions
+19:13 <@Magnus> hex: looks good to me
+19:13 <@lathos> itz: And I am asking on what basis you are proposing that.
+19:13  * gellyfish cranks up the chainsaw
+19:13 <@vorsprung> hex, good.  So does everyone
+19:13 <@Magnus> vorsprung: no they don't
+19:13 <@PerfDave> Urgh urgh urgh urgh urgh
+19:13 <@hex> vorsprung: I'd disagree
+19:13 <@vorsprung> hex, except fundementalist bigots of course
+19:13 <@PerfDave> Ick ick ick ick fuck fuck fuck fuck fuck
+19:13 <@Magnus> vorsprung: most religious people think all other religions are wrong
+19:13 <@lathos> http://www.religioustolerance.org/u-u1.htm # UUs.
+19:13 <@Magnus> their's is the One True Religion
+19:13 <@hex> vorsprung: okay, now with the qualifying comments ;)
+19:13 <@Magnus> dicks
+19:14 <@PerfDave> Why is it only at the *end* of the afternoon that you spot the mould inside the bottle from which you've been drinking all day? *splutter*
+19:14 <@Magnus> PerfDave: you've now got SARS
+19:14 <@vorsprung> PerfDave, it came from inside *your* mouth :)
+19:14 <@vorsprung> hex, nope
+19:14 <@itz> lathos: if you read the text and take the most obvious simple  interpretation of words and events   rather than the one everyone has been taught
+19:15 <@hex> lathos: that's a good page; thank you.
+19:15 <@lathos> itz: I'm reading the text, and the text says "I'm not going to say 'save me from this hour', because it's for this hour that I've come". If you're reading that as an instruction instead of a prophecy, we're probably too far apart to reason.
+19:16 <@vorsprung> jouke, are you going for a job at sift?
+19:16 <@hex> Interesting: "King John Sigismund of Transylvania (now a part of Romania and Hungary) in 1568 issued the first edict of religious freedom. This allowed citizens to hold diverse religious beliefs and still be loyal to the state."
+19:16 <@hex> Hoorah for King John!
+19:16 <@vorsprung> statist
+19:17 <@aef> The mould's probably thinking "Why is it only at the *end* of the afternoon that you notice that Perf's been drinking from your bottle all day?"
+19:17 <@hex> If it's a good state, you should be loyal to it. Unfortunately, the number of good states are few and far between.
+19:17 <@hex> But that's beyond the scope of this conversation.
+19:18 <@vorsprung> oh ok
+19:18 <@itz> "one of you is going to betray me ... be quick about what you are doing"
+19:18  * CPAN upload: WWW-Mechanize-0.46 by PETDANCE
+19:18 <@vorsprung> I'm off to walk the dog then :)
+19:18 <@lathos> itz: Are you really, really sure you mean chapter 12, and not chapter 13 which is what we were talking about before?
+19:18 <@Magnus> the bible is irrelevant
+19:19 <@Magnus> and boring
+19:19 <@hex> itz: Judas thought that the Matrix could be more real than the real world, so he pulled the plug on Jesus.
+19:19 <@Magnus> hex: hehe.
+19:19 -!- _Dave [~daveh@dhcs.demon.co.uk] has quit [Remote closed the connection]
+19:20 <@hex> Unfortunately then Jesus came back and kicked Agent Smith's ass with the power of the Word (all those little green letters).
+19:20 <@itz> lathos: yes you are right but that's a direct quote anyway
+19:20 <@lathos> Ah, good. I'm glad I asked the first time if you meant that chapter. :)
+19:21 <@lathos> I suppose "This is going to happen. Let's get it over quickly." could be thought of as an instruction *as well*.
+19:21 <@aef> In the beginning there was the word, and the word was LILO: ?
+19:21 <@lathos> But it's only instructing something that's going to happen anyway...
+19:21 <@Magnus> jesus must have intended the crucification
+19:21 <@Magnus> 'cos he's god
+19:22 <@Magnus> you're not thinking four dimensionally
+19:22 <@Magnus> god is infinite
+19:22 <@Magnus> he knew what would happen
+19:22 <@Magnus> otherwise he's not god
+19:23 <@vorsprung> lathos, or he could be talking to satan, not judas
+19:23 <@vorsprung> lathos, or..
+19:23  * Dom2 sighs
+19:23 <@itz> thus spake Magnus
+19:23 <@vorsprung> lathos, lets face it we weren't there
+19:23 <@lathos> Even so. It looks more like "*sigh* OK, bring it on."
+19:23 <@Dom2> meetings-- # watching people arguing about the same thing in different words
+19:23 <@vorsprung> lathos, he was getting a bit tense at this point
+19:24 <@lathos> Yes.
+19:24 <@hex> aef: Let It Luminate Omniversally
+19:25 -!- vorsprung [vorsprung@brsl-3e352382.pool.mediaWays.net] has quit [leaving]
+19:25 <@Magnus> but grief
+19:25 <@doop> aef: in the beginning was the word, and the word was 0x7f454c46
+19:25 <@Magnus> that's the whole point
+19:25 <@Magnus> jesus = god become man
+19:25 <@Magnus> he's experiencing the finite
+19:25 <@Magnus> he has to die
+19:25 <@Magnus> otherwise it's not complete
+19:27 <@hex> bwahaha
+19:27 <@hex> Yoz going off the handle on londongeej
+19:27 <@hex> s/j/k/
+19:27 <@Dom2> dipsy, litany against meetings?
+19:27 <+dipsy> "I must not attend meetings. Meetings are the mind killer. Meetings are the little-death that brings total obliteration. I will face my meeting. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the wasted time has gone there will be nothing. Only I will remain."
+19:27 <@Magnus> I mean, the christians can't even agree on gay bishops
+19:28 <@AlexMc> you saw that program last night too then Magnus#
+19:28 <@Magnus> AlexMc: no, news.bbc
+19:28 <@AlexMc> oh
+19:28 <@Magnus> don't they know that god made fags
+19:28  * PerfDave & # train to Leeds
+19:28  * Ranguard gets told of a power outage tonight and wishes they'd invested in UPS for the servers - oh well :)
+19:29 -!- jouke [~jouke@pvoice.xs4all.nl] has left #london.pm []
+19:29 <@itz> power outage on a Friday? good timing
+19:29 <@lathos> I thought it was 0x28121969
+19:29 <@aef> lathos: Heretic!
+19:29 <@doop> God made fags so that they could be burned. That's what fag means.
+19:30 <@Ranguard> itz: yea, and theres no way I'm coming tomorrow if the machines don't start up again - they can just cope without them :)
+19:30 <@hex> doop: but a faggot is a tasty piece of meat, generally eaten with gravy.
+19:30 <@hex> Allegedly.
+19:30 <+dipsy> You might say that, I couldn't possibly comment
+19:30 <@yoda> startx
+19:30  * hex has never got his gob around a faggot
+19:30 <@yoda> oops
+19:31  * hex points at yoda. "Ha ha!"
+19:31 <@hex> </nelson>
+19:31 <@Magnus> hometime
+19:32  * mstevens escapes from the friday afternoon meeting from hell
+19:34 <@mstevens> I can remember random phrases, like "mid-swaps", and "benchmark bond", but there's no coherent whole
+19:34 <@Dom2> mstevens: let the minutes pixies sort out the detail for you
+19:35 <@lathos> I need to borrow some BBC decimal hours.
+19:35 <@Greg> any chess types still around? Elthek? gbjk?
+19:35 <@Greg> lathos want to beat me?
+19:35 -!- mmlj4 [~looseduk@ip68-99-40-179.no.no.cox.net] has quit [Remote closed the connection]
+19:35 <@mstevens> dom2: this was informal-internal-thingy, thus no minutes. It was basically the world's quickest introduction to switching, hedging, and interest rate swaps.
+19:36  * lathos is by no means a chess type. I only watch to see if it helps my go analysis. :)
+19:36 <@Greg> yeah, but i might actually beat you then ;-)
+19:36 <@lathos> All right. I guess I've got time.
+19:36 <@Greg> ok, login to fics and i'll challenge
+19:36 <@mstevens> dom2: I understood bits, although I'm still trying to work out why you price things in percentages
+19:37 <@Dom2> mstevens: No, you price things in camels.  everybody knows that
+19:37 <@lathos> I am GuestXJXW.
+19:37 <@lathos> WTF.
+19:38 <@mstevens> dom2: although it's actually surprisingly interesting getting the trader's view of things like the UK leaving the ERM
+19:38 <@Elthek> Go lathos!
+19:38 <@Dom2> mstevens: Oh, didn't realise you were in a brokerage thingy
+19:38 <@Dom2> mstevens: I can imagine that there's be somewaht of a cultural divide...
+19:39 -!- broquaint [dan@81.187.213.98] has quit [Ping timeout]
+19:39 <@mstevens> dom2: we have an ex-trader, who's the CEO, but we're a software company
+19:39 <@lathos> Ohhhkay.
+19:39 <@Dom2> mstevens: ah, ok
+19:39 <@Dom2> mstevens: nonethless, interesting to hear other peoples opinion
+19:40 <@gellyfish> I think I might go to the pub
+19:41 <@Dom2> gellyfish: plan!
+19:41  * Dom2 pub &
+19:41 <@yoda> itz: i tracked down the problem with mozilla firebird. wasn't actually anything to do with it, but was due to the default bindings on my wm grabbing that key combination first. i'd forgotten that was the default state, as i'd been running a modified config for ages before the reinstall
+19:42 <@Greg> lathos will win
+19:42 <@itz> yoda: ah!
+19:43 -!- muttley is now known as muttgone
+19:43 <@mstevens> ms
+19:44 <@itz> do non blocking exclusive locks work on solaris?
+19:45  * gellyfish tries to find playmates to go to pub
+19:45 <@hex> gellyfish: you won't have any luck here, they're all up at Hef's
+19:46 <@mstevens> is it nearly hometime yet?
+19:46 -!- mmlj4 [~looseduk@ip68-99-40-179.no.no.cox.net] has joined #london.pm
+19:46 -!- mode/#london.pm [+o mmlj4] by slavorg
+19:48 <@Ranguard> night all
+19:48 -!- Ranguard is now known as RanAway
+19:48 <@lathos> Greg: Phone
+19:49 <@Greg> np
+19:49 <@Greg> i dont have autoflag on so take as long as you need
+19:50 <@lathos> OK, off the phone. Now I need to read out this exchange. :)
+19:51  * hex wonders why his server logs occasionally show hits on randomly-capitalised versions of files on one of his sites, like "DOwnLOdE-basiC.CsS"
+19:51 <@hex> Maybe a spy is trying to communicate with me.
+19:51 <@hex> DOLOE CCS
+19:51 <@hex> or perhaps
+19:52 <@hex> wnd-basis
+19:52 <@aef> Or maybe it's 1100110100001101
+19:52 <@hex> hmmm
+19:53 <@mbm> ok. home^Wpubtime
+19:53 <@mbm> bye all
+19:53 -!- mbm [mbm@colon.colondot.net] has left #london.pm []
+19:56 <@Greg> good game lathos
+19:56 <@Elthek> Congrats, lathos!
+19:56 <@lathos> Thanks.
+19:56 <@Greg> i was sloppy at the start and was punished
+19:56 <@Elthek> (Can I play you now?  :)
+19:56 <@lathos> In a bit. I've got to put the washing out.
+19:56 <@Elthek> Rar.  Okay.
+19:58 <@Greg> Elthek: quick game?
+19:58 <@Elthek> Greg: Okay.
+19:58 <@Greg> challenge away
+19:58 <@Elthek> You're apparantly not logged in.  :)
+19:58 <@Greg> logged on now
+19:58  * mstevens waves elthek
+19:59 <@Elthek> mstevens: Hiya.  :)
+19:59 <@gellyfish> yes pub
+19:59 <@gellyfish> connex-- # somehow managed to set fire to Charing Cross just to piss me off
+20:00 <@lathos> *Again*?
+20:01 <@gellyfish> so it appears
+20:01 <@Magnus> scribot: http://www.adsa.co.uk/ # Dumb site of the day.  Go to 'Your Local Store'.  Search for 'Longwell Green'.  Go back, search for 'Hanham'.  Dumb.
+20:01 -!- iamcal [~bees@64.246.28.104] has quit [buh bye]
+20:01 <@hex> LOL,
+20:01 <@hex> "Linux: There are several bugs involved with the PostScript module that are not present in the Xprint module (Bugs 6810, 24824, 28088, 31356, 52058, 52420, 63737, 65784, 67338, 68373, 80190, 82982, 85207, 107756, 119263, 119265, 123144, 123408, 125006, 126602, 127422, 131071, 131088, 135695, 137115) 144376, 144418, 150897, 152882, 154027, 157132, 158025, 161827, 166780, 168614, 172525, 175879, 176319, 176938, 177211, 177494, 179448, 179538, 182324, 
+20:01 <@hex> Magnus: did you mean "Asda"?
+20:02  * hex likes the use of "several" in that sentence.
+20:02 <@Magnus> scribot: http://www.asda.co.uk/ is what I meant, of course.
+20:02 <@Magnus> hex: yes.  please test what I said before I click send on this arrogant message to Asda tech support.
+20:03 -!- mstevens [~mstevens@kochi.etla.org] has quit [gone]
+20:04 <@hex> Magnus: d'oh
+20:04 <@hex> Wow, they sell Curry Pot. 
+20:04 <@hex> Gives a whole new meaning to "hotbox".
+20:05  * CPAN upload: Tk-Program-0.03 by XPIX
+20:06 <@Magnus> hex: how dumb is that
+20:06 <@Magnus> can you imagine how dumbly programmed their system has to be to do that
+20:06 -!- gellyfish [gellyfish@desk95.ch.netscalibur.co.uk] has quit [Ping timeout]
+20:09  * aef tries to remember what site it is, that when I search for stores and enter Oxford in the _Town_ field, it asks me if I mean Oxford St, London, or Oxford.
+20:09 <@hex> hometime.
+20:10  * CPAN upload: Lingua-PL-Numbers-1.0 by HENRIKS
+20:10 <@Magnus> brilliance
+20:12 -!- hex is now known as grault
+20:16 <@lathos> Aargh. I've just been spammed by Simply.
+20:17 <@lathos> I wonder what 'X-Msg-Ref: server-20.tower-1.messagelabs.com!1056128690!44278' means.
+20:19 <@Greg> gg
+20:19 <@Elthek> gg.
+20:19 <@Greg> clearly one game a day is enough for my feeble brain
+20:19 <@Elthek> My head hurts.
+20:19 <@Elthek> :)
+20:20 <@lathos> Elthek: Want a less challenging one? :)
+20:20 <@lathos> Ah, I'd rather you did Kake's foo.
+20:27 <@Elthek> lathos: I think I'm just about done with Kake's, without trying to understand all the code.  Looks like a great article.
+20:27 -!- srushe [steve@80.76.206.67] has quit [leaving]
+21:19 <@Kake> mstevens++ # ace poll
+21:26 -!- soccos [paul@psharpe2-egw.access.nethere.net] has joined #london.pm
+21:27 -!- soccos [paul@psharpe2-egw.access.nethere.net] has quit [Client exiting]
+21:53 <@marna> Meep?
+21:53 <+dipsy> i think Meep is a very little cat sound
+21:53  * CPAN upload: UnixODBC-0.20 by RKIES
+21:59 <@doop> Rrrr.
+22:00 <@marna> Little gently growling doop!
+22:00 <@doop> RRRRRR!
+22:02  * DrHyde drinks tea
+22:04 <@doop> xxx++ # Saves me having to pay USD19.90 to World Scientific.
+22:05 <@doop> Raaaa!
+22:06  * CPAN upload: Apache-AuthenHook-2.00_01 by GEOFF
+22:29 -!- _Dave [~daveh@dhcs.demon.co.uk] has joined #london.pm
+22:29 -!- mode/#london.pm [+o _Dave] by slavorg
+22:39  * doop decides that it is a silly time to be at work, and goes to the pub.
+22:41 <@bob> indeeed
+--- Log closed Fri Jun 20 22:51:09 2003

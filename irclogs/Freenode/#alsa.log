@@ -1,0 +1,118 @@
+--- Log opened Sat Jun 21 14:29:55 2003
+14:29 -!- hendry [~hendry@hoas-50dd080f.hoasnet.inet.fi] has joined #alsa
+14:29 -!- Irssi: #alsa: Total of 14 nicks [0 ops, 0 halfops, 0 voices, 14 normal]
+14:29 -!- Irssi: Join to #alsa was synced in 0 secs
+14:36 -!- hdavid [~hdavid@cable-212.76.235.7.coditel.net] has joined #alsa
+14:37 < hdavid> hello ?
+14:37 < Foske> hdavid: it seems the specialists are on holliday
+14:38 < hendry> hdavid: hi
+14:38 < hendry> Foske: why do you say that?
+14:38 < hdavid> :(
+14:39 < Damaged> sigh i'd give anything to figure out why my sound just keeps repeating when i stop playing something, andwhy i can't play multiple things at once
+14:39 < Foske> hendry: for I have been around here much in the last few days, and haven't seen much activity other than people coming in and asking a question 
+14:40 < hendry> Foske: Ok. Good explanation 
+14:40 < hendry> hdavid: I hate gaim
+14:41 < hendry> hdavid: so what problem(s) you have still to fix=
+14:42 < hdavid> oss (or the default sound module for knoppix) keeps on loading at boot time and therefore preventing alsa to work
+14:42 < Foske> use a bigger hammer ! ;-)
+14:42 < hdavid> alsa work ok if i rmmod the faulty module and load alsa module
+14:42 < Foske> knoppix, a CD distro isn't it ?
+14:43 < Foske> can't you modify the boot loader ?
+14:43 < hdavid> lilo ?
+14:43 < Foske> eh
+14:43 < Foske> boot scripts
+14:44 < hdavid> yes sure but what can i do about that in there
+14:44 < hdavid> (newbie)
+14:45 < hendry> There *must* be docs about this
+14:45 < Foske> hdavid: modules are usually loaded by boot scripts, for Mandrake and RedHat /etc/rc.d/rc.sysinit and other rc.* files
+14:45 < Foske> I am unfamiliar with Knoppix though
+14:46 < hdavid> in var log it say "es1371 DETECTED...." maybe some kind of auto config tool ???
+14:47 < hendry> hdavid: yes, this could be Knoppix's fault...
+14:47 < hendry> hdavid: have you tried Knoppix BB?
+14:47 < hendry> hdavid: did you update the sources.list?
+14:47 < hdavid> no ? what's that ??
+14:47 < hdavid> knoppix for babies ?
+14:47 < Foske> Knoppix is nice for taking a peek at Linux, but I think it isn't suited for things like this
+14:47 < hdavid> hendry : not yet
+14:47 < hendry> http://www.knoppix.net/forum/
+14:48 < hendry> Foske: I think it is suitable for installing Debian
+14:48 < hdavid> indeed :)
+14:48 < Foske> ?
+14:48 < hdavid> easy for newbies as I
+14:49 < hendry> hdavid: try search for alsa there
+14:49 < hendry> some interesting results
+14:49 < Foske> anyway
+14:49 < hendry> Foske: it has a hd-install script
+14:50 < hendry> what are the benefits of using ALSA over this emu10k oss driver then ?
+14:50 < Foske> I'm still stuck with SB Live midi, I can load soundfonts, rosegarden sees the alsa devices, but I just can't get sound...
+14:50 < Foske> hendry: 5.1 sound is one of them :)
+14:50 < hdavid> here i cann get sound on my sb128
+14:51 < hdavid> but not with my envy24 based card
+14:52 < hendry> Foske: what is 5.1 sound btw?
+14:52 < hdavid> 5 speakers + one bass speaker
+14:52 < hendry> Foske: permissions perhaps?
+14:52 < hendry> hdavid: hmm, I just have 2 :)
+14:53 < hdavid> 2.1 : 2 speaker + 1 bass speaker
+14:53 < hdavid> surround modes
+14:53 < hdavid> this shoudl configure your sound card outputs for a 2.1/5.1/7.
+14:53 < hdavid> system
+14:53 < Foske> hendry: same behaviour as root, besides, rosegarden plays fine, it's just that don'
+14:54 < hdavid> use 2.1
+14:54 < Foske> t hear anything
+14:54 < hdavid> btw...
+14:54 < hendry> Foske: well, I don't use ALSA so I am no expert. Good that you tried root
+14:54 < hdavid> what should i do to get lowlatency kernel ?
+14:54 < hendry> I don't have a bass speaker
+14:54 < hendry> I have output split into a R L for my little Sony hifi
+14:54 < hdavid> henrdy : i don't know then...
+14:55 < Foske> hendry: strange channel you're on, then ;-)
+14:55 < hendry> hdavid: you need to apply a patch. 
+14:55 < hendry> Foske: just trying to help hdavid :)
+14:56 < hdavid> foske: how where when ?
+14:56 < hendry> hdavid: have you fixed up the sources.list ? and ran dselect update?
+14:56 < hdavid> not yet
+14:56 < hendry> hdavid: do that *first*
+14:57 < hendry> hdavid: then I can help you further
+14:57  * hendry is not going to use ALSA until 2.6 comes out
+14:58 < Foske> hendry: Mandrake 9.1 comes with it already, so I thought I'd give it a try
+14:58 < hdavid> can't we try it on a deb ?
+14:58 < hdavid> what is new in 2.6 ?
+14:59 < hendry> hdavid: 2.6? what are you talking about?
+14:59 < hdavid> kernel i guess
+14:59 < hdavid> ;)
+14:59 < hendry> hdavid: 2.6 has too much new stuff
+14:59 < hendry> hdavid: there is no deb but you can make one yourself with 2.5
+15:01 < hdavid> ok
+15:01 < hdavid> compile one for me ;)
+15:02 < hdavid> source list updates
+15:02 < hdavid> done
+15:03 < hendry> hdavid: ran dselect update?
+15:03 < hdavid> doing it now
+15:03 < hdavid> done
+15:03 < hendry> hdavid: run apt-get -u dist-upgrade
+15:03 < hdavid> root@fidji:/etc/apt# apt-get install irssi
+15:03 < hdavid> Reading Package Lists... Done
+15:03 < hdavid> Building Dependency Tree... Done
+15:03 < hdavid> Package irssi has no available version, but exists in the database.
+15:03 < hdavid> This typically means that the package was mentioned in a dependency and
+15:03 < hdavid> never uploaded, has been obsoleted or is not available with the contents
+15:03 < hendry> you should have quite a bit to upgrade
+15:03 < hdavid> of sources.list
+15:04 < hdavid> E: Package irssi has no installation candidate
+15:04 < hdavid> root@fidji:/etc/apt#
+15:04 < hendry> we better go private
+15:04 < hdavid> ok
+15:04 < hdavid> how do i go private ??
+15:05 < hendry> can't you see by private message?
+15:10 < Damaged> i wonder if theres some way i can send alsa-driver requests through the alsa-oss compat layer, since only the oss layer works right for some reason :P
+15:14 < Foske> rather frustrtating... I read 5 SB Live midi howto's now, they all say the same, and I still get no sound ;-)
+15:15 -!- hdavid [~hdavid@cable-212.76.235.7.coditel.net] has quit ["Leaving"]
+15:16 -!- hdavid [~hdavid@cable-212.76.235.7.coditel.net] has joined #alsa
+15:21 < Damaged> is there a way i can see what devices oss is using?
+15:22 < Damaged> like sound-service-0-1
+15:26 < hdavid> my ews88mt produces NO sound :(:(
+15:27 < hdavid> but envy control work
+15:27 < hdavid> s
+15:30 < hdavid> oh it works now... just closed envycontrol :)
+15:41 -!- hdavid [~hdavid@cable-212.76.235.7.coditel.net] has quit [Remote closed the connection]
+--- Log closed Sat Jun 21 15:51:35 2003

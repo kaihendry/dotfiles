@@ -4,9 +4,103 @@ Generated File. Do not edit.
 Version:0.08:$
 
 [PLUGINS]
+/usr/lib/RealPlayer8/rpnp.so:$
+:$
+1045515493000:1:1:$
+:$
+rpnp.so:$
+1
+0:audio/x-pn-realaudio-plugin:RealPlayer Plugin Metafile:rpm:$
+/usr/lib/flashplugin-nonfree/libflashplayer.so:$
+:$
+1047076135000:1:1:$
+Shockwave Flash 6.0 r79:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
+/usr/local/lib/j2sdk1.4.2/jre/plugin/i386/ns610-gcc32/libjavaplugin_oji.so:$
+:$
+1056101655000:1:1:$
+Java(TM) Plug-in 1.4.2:$
+Java(TM) Plug-in 1.4.2-b28:$
+29
+0:application/x-java-vm:Java::$
+1:application/x-java-applet:Java::$
+2:application/x-java-applet;version=1.1:Java::$
+3:application/x-java-applet;version=1.1.1:Java::$
+4:application/x-java-applet;version=1.1.2:Java::$
+5:application/x-java-applet;version=1.1.3:Java::$
+6:application/x-java-applet;version=1.2:Java::$
+7:application/x-java-applet;version=1.2.1:Java::$
+8:application/x-java-applet;version=1.2.2:Java::$
+9:application/x-java-applet;version=1.3:Java::$
+10:application/x-java-applet;version=1.3.1:Java::$
+11:application/x-java-applet;version=1.4:Java::$
+12:application/x-java-applet;version=1.4.1:Java::$
+13:application/x-java-applet;version=1.4.2:Java::$
+14:application/x-java-applet;jpi-version=1.4.2:Java::$
+15:application/x-java-bean:Java::$
+16:application/x-java-bean;version=1.1:Java::$
+17:application/x-java-bean;version=1.1.1:Java::$
+18:application/x-java-bean;version=1.1.2:Java::$
+19:application/x-java-bean;version=1.1.3:Java::$
+20:application/x-java-bean;version=1.2:Java::$
+21:application/x-java-bean;version=1.2.1:Java::$
+22:application/x-java-bean;version=1.2.2:Java::$
+23:application/x-java-bean;version=1.3:Java::$
+24:application/x-java-bean;version=1.3.1:Java::$
+25:application/x-java-bean;version=1.4:Java::$
+26:application/x-java-bean;version=1.4.1:Java::$
+27:application/x-java-bean;version=1.4.2:Java::$
+28:application/x-java-bean;jpi-version=1.4.2:Java::$
+/usr/lib/mozilla/plugins/mplayerplug-in.so:$
+:$
+1066048786000:1:1:$
+Video Player Plug-in for QuickTime and Windows Media Player streams using mplayer:$
+mplayerplug-in v0.95 handles QuickTime Windows Media Player Plugin:$
+31
+0:video/quicktime:Quicktime:mov:$
+1:video/x-quicktime:Quicktime:mov:$
+2:video/quicktime:Quicktime:mp4:$
+3:video/quicktime:Quicktime - Session Description Protocol:sdp:$
+4:application/x-quicktimeplayer:Quicktime:mov:$
+5:video/x-ms-asf-plugin:Windows Media:asf,asx:$
+6:video/x-msvideo:AVI:avi:$
+7:video/msvideo:AVI:avi:$
+8:application/x-mplayer2:WMV:wmv:$
+9:video/x-ms-wm:MSNBCPlayer:asf:$
+10:video/x-ms-asf:Windows Media:asf,asx:$
+11:video/x-ms-wmv:Windows Media:wmv:$
+12:video/x-ms-wvx:Windows Media:wvx:$
+13:audio/x-ms-wax:Windows Media:wax:$
+14:audio/x-ms-wma:Windows Media:wma:$
+15:application/x-drm-v2:Windows Media:asx:$
+16:audio/wav:Microsoft wave file:wav:$
+17:audio/x-wav:Microsoft wave file:wav:$
+18:video/mpeg:MPEG:mpg,mpeg:$
+19:audio/mpeg:MPEG:mpg,mpeg:$
+20:video/x-mpeg:MPEG:mpg,mpeg:$
+21:video/x-mpeg2:MPEG2:mpv2,mp2ve:$
+22:audio/mpeg:MPEG:mpg,mpeg:$
+23:audio/x-mpeg:MPEG:mpg,mpeg:$
+24:audio/mpeg2:MPEG audio:mp2:$
+25:audio/x-mpeg2:MPEG audio:mp2:$
+26:audio/mpeg3:MPEG audio:mp3:$
+27:audio/x-mpeg3:MPEG audio:mp3:$
+28:audio/mp3:MPEG audio:mp3:$
+29:video/fli:FLI animation:fli,flc:$
+30:video/x-fli:FLI animation:fli,flc:$
+/usr/lib/mozilla/plugins/libmozswfdec.so:$
+:$
+1067480976000:1:1:$
+Shockwave Flash 6.0 animation viewer handled by Swfdec-0.2.2.  Plays SWF animations, commonly known as Macromedia&reg; Flash&reg;.<br><br>This is alpha software.  It will probably behave in many situations, but may also ride your motorcycle, drink all your milk, or use your computer to browse porn.  Comments, feature requests, and patches are welcome.<br><br>See <a href="http://swfdec.sourceforge.net/">http://swfdec.sourceforge.net/</a> for information.<br><br>Flash, Shockwave, and Macromedia are trademarks of Macromedia, Inc.  Swfdec is not affiliated with Macromedia, Inc.:$
+Shockwave Flash:$
+1
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
 /usr/lib/mozilla/plugins/libnullplugin.so:$
 :$
-1068180710000:1:1:$
+1068180710000:1:5:$
 The default plugin handles plugin data for mimetypes and extensions that are not specified and facilitates downloading of new plugins.:$
 Default Plugin:$
 1

@@ -1,0 +1,27 @@
+--- Log opened Fri Apr 25 16:14:52 2003
+16:14 -!- hendry [hendry@hoas-50dd0744.hoasnet.inet.fi] has joined #mozillazine
+16:14 -!- Irssi: #mozillazine: Total of 54 nicks [5 ops, 0 halfops, 0 voices, 49 normal]
+16:14 -!- Irssi: Join to #mozillazine was synced in 1 secs
+16:15 < hendry> How do I make Mozilla install an .xpi file ?
+16:16 < biesi> just open the file
+16:16 < biesi> file|open
+16:16 -!- Gandalf [gandalf@ns.przeglad.com.pl] has joined #mozillazine
+16:21  * hendry trying to get liveheaders to work...
+16:21 -!- BlindMan [othmar@h081217022198.dyn.cm.kabsi.at] has quit [ircII EPIC4-1.1.2 -- Are we there yet?]
+16:21 < biesi> you must have enabled software installation in preferencs
+16:29 < hendry> biesi: haha
+16:29 < hendry> thanks for that... just wasted two hours :/
+16:36 -!- BuLma^NrZ`aw [bulma@onyx.regie-france.com] has quit [Read error: 131 (Connection reset by peer)]
+16:43 -!- BuLma^NrZ`tAf [bulma@onyx.regie-france.com] has joined #mozillazine
+16:43 -!- IRCMonkey [chatzilla@p508B586A.dip.t-dialin.net] has joined #mozillazine
+16:44 -!- IRCMonkey [chatzilla@p508B586A.dip.t-dialin.net] has quit [ChatZilla 0.8.25 [Mozilla rv:1.4a/20030401]]
+16:48 -!- Matti [server600@pD953C5AC.dip.t-dialin.net] has joined #mozillazine
+16:50 -!- biesi is now known as biesi-away
+16:51 -!- headtailgrep [hahahahah@CPE0080c844a2c9-CM008037854d9a.cpe.net.cable.rogers.com] has joined #mozillazine
+16:52 < headtailgrep> hi!
+16:54 -!- katakai_ [chatzilla@ntkngw056088.kngw.nt.adsl.ppp.infoweb.ne.jp] has quit [Ping timeout: 180 seconds]
+16:55 -!- katakai_ [chatzilla@ntkngw056088.kngw.nt.adsl.ppp.infoweb.ne.jp] has joined #mozillazine
+17:05 -!- Gandalf [gandalf@ns.przeglad.com.pl] has quit [Read error: 131 (Connection reset by peer)]
+17:07 -!- dbradley [dbradley@h-64-236-184-29.unassigned.aoltw.net] has quit [and left this reality]
+17:10 -!- zach is now known as zach_school
+--- Log closed Fri Apr 25 17:14:40 2003

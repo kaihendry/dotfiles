@@ -1,0 +1,39 @@
+--- Log opened Thu Mar 06 00:15:01 2003
+00:15 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  We're about to purge some clonebots.  It's a semi-manual process, so please email staff@freenode.net if you are klined by mistake.  Thanks.
+--- Log closed Thu Mar 06 00:20:34 2003
+--- Log opened Sun Mar 30 20:22:38 2003
+20:22 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  Main rotation server hubbing problem, give us a moment to rehub.  Apologies for the inconvenience.
+--- Log closed Sun Mar 30 20:28:09 2003
+--- Log opened Thu Apr 10 19:25:10 2003
+19:25 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  Welcome to freenode!  We'll be rehubbing the new main rotation server in just a moment.  As always, detail info about network operations and other random commentary can often be found on WALLOPS, use "/mode yournick +w"....and thank you for using freenode!
+--- Log closed Thu Apr 10 19:30:46 2003
+--- Log opened Thu Apr 10 21:48:04 2003
+21:48 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  Apologies for the interruption, but we'd better cap test the new server.  Users affected, about 1500.... results on WALLOPS if you're interested (/mode yournick +w)....
+--- Log closed Thu Apr 10 21:53:49 2003
+--- Log opened Sat Apr 26 00:36:27 2003
+00:36 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  News article up (http://freenode.net/news.shtml) about automated network bans and you should probably take a look.  Thanks, and thank you for using freenode!
+--- Log closed Sat Apr 26 00:41:45 2003
+--- Log opened Mon Apr 28 17:29:09 2003
+17:29 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  For new users, welcome to freenode!  You may want to check out our FAQ at http://freenode.net/faq.shtml .... detailed server status information is available on wallops (on most clients, "/umode +w" or "/mode yournick +w" .... Thanks, and have a great week!
+--- Log closed Mon Apr 28 17:34:56 2003
+--- Log opened Wed Jun 25 17:56:21 2003
+17:56 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  One of our more stable main rotation servers has apparently decided to chime in with a problem, please bear with us.
+--- Log closed Wed Jun 25 18:01:57 2003
+--- Log opened Sun Aug 03 01:31:03 2003
+01:31 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  What with the ongoing clonebot stuff, staff are thinking it might be time to just bite the bullet and install the 1.0.32 release candidate.  If you want to hear detail and comment, please stop by #upgrade .  Thanks.
+--- Log closed Sun Aug 03 01:36:13 2003
+--- Log opened Mon Aug 04 18:23:53 2003
+18:23 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  Just a reminder:  If you spot a bug in the new code, please email bugs@freenode.net .... Hint: the code is on http://www2.doc.ic.ac.uk/~aps100/dancer/dancer-ircd/1.0/pre/dancer-ircd-1.0.31+pre23.tar.gz and we are always willing to accept a patch :) Thanks for your support and patience, and have a great afternoon! :)
+--- Log closed Mon Aug 04 18:29:22 2003
+--- Log opened Wed Aug 06 22:28:57 2003
+22:28 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  We just experienced a very interesting problem with services and an EU hub.  We're investigating, and suspect it won't recur anytime soon.
+22:33 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  Please bear with us, we *may* have a major dehubbing and rehubbing in just a sec.
+22:34 -lilo(levin@lilo.staff.freenode)- [Global Notice] Looks like not.  Thanks for your patience.
+--- Log closed Wed Aug 06 22:40:23 2003
+--- Log opened Mon Aug 11 20:25:43 2003
+20:25 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all.  As you're aware, we've had some difficulties with the new code.  We're looking at them now.  Please bear with us.  Thank you for your patience, and thank you for using freenode.
+--- Log closed Mon Aug 11 20:31:40 2003
+--- Log opened Thu Aug 14 17:37:38 2003
+17:37 -lilo(levin@lilo.staff.freenode)- [Global Notice] Hi all. We're working on an alternative approach to providing system status, which should result in the elimination of global notices.  Please message me if you have any comments, positive or negative; and we'll have something up on the news site when we're ready to go with it.  Thanks.
+17:41 -lilo(levin@lilo.staff.freenode)- [Global Notice] I'll respond slowly to those who have commented.  Thanks again for your input.
+--- Log closed Thu Aug 14 17:46:27 2003

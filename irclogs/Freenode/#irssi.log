@@ -1,0 +1,142 @@
+--- Log opened Thu Feb 27 21:42:02 2003
+21:42 < Dooku> is it possible to find out which cipher is used for an SSL connection?
+21:42 < hednod> GOOOOOOOOOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLLL!!!!!!!!!!!!!!!!!!!!!!!!!
+21:42 < hednod> er sorry
+21:42 < hednod> got carried away
+21:42 < hednod> >;)
+21:43 < twigga> :)
+21:43 < Dooku> hednod: who is playing?
+21:43 < hednod> hendry:
+21:43 < solicit> irssi vs other clients
+21:44 < solicit> completely balanced teams :)
+21:45 < elho> Dooku: in a connection, dunno. but to see what a server accepts, theres sclient or however it was called
+21:46 < Dooku> elho: yes, but the server accepts 56 to 168 bit connections, i don't know which cipher irssi uses
+21:58 -!- tossu_ [~eero@kpo05-46.link.iwn.fi] has joined #irssi
+22:17 -!- pilotz [~razmsimo@vejas.pit.ktu.lt] has joined #irssi
+22:17 < pilotz> helow
+22:22 < pilotz> checking for SSL_read in -lssl... (cached) no
+22:22 < pilotz> why is that?:/
+22:22 < pilotz> i cann't ./configure in way with ssl :/
+22:23 < pilotz> what's the prob
+22:24 < pilotz> anyone alive ?:}
+22:24 < tfing> pilotz: rm config.cache
+22:24 < tfing> then retry
+22:36 < twigga> goodnight
+22:39 -!- hugo [hugo@m3.net81-67-40.noos.fr] has quit ["brb"]
+--- Log closed Thu Feb 27 22:39:16 2003
+--- Log opened Thu Apr 24 23:11:12 2003
+23:11 -!- hendry [~hendry@hoas-50dd033d.hoasnet.inet.fi] has joined #irssi
+23:11 -!- Irssi: #irssi: Total of 97 nicks [5 ops, 0 halfops, 0 voices, 92 normal]
+23:11 -!- Irssi: Join to #irssi was synced in 1 secs
+23:12 < hendry> is there some way of writing a plugin for irssi in python ?
+23:12 < tfing> not for the moment
+23:12 < coekie> no (at least not yet)
+23:13 < caphuso> hendry: sure. first step: add python support to irssi...
+23:13 < bob2> not unless you want to write the python plugin, first :-)
+23:15 < hendry> I guess I could use /exec -out instead
+23:16 < hendry> Just want to output what song I am playing. the xmms plugin I am using sucks
+23:16 < bob2> xmms.pl?
+23:16 < hendry> yes
+23:18 < bob2> how bad can it suck?
+23:18 < tam> off topic: does anyone know if solaris has a restart option for init.d scripts? (just asking because i'm reading the documentation and it says stop and then start, not just restart)
+23:18 < bob2> it's only 60 lines of perl :)
+23:23 < hednod> anyone have any idea why irssi would keep whoising someone on my notify list
+23:23 < coekie> hednod: you use the -idle thing?
+23:23 < hednod> coekie: yup
+23:23 <@Shruuf> that's it
+23:23 < coekie> well, the only way to check idle time, is to whois
+23:23 < hednod> ah
+23:24 < coekie> but irssi should hide that, you shouldn't really see that ;)
+23:24 < hednod> well they should put a warning in the notify help page
+23:24 < hednod> "will cause massive /whois spam"
+23:24 < hednod> when i just startup the client, it doesn't do it
+--- Log closed Thu Apr 24 23:24:51 2003
+--- Log opened Sun Jun 15 15:40:31 2003
+15:40 -!- hendry [~hendry@hoas-50dd0044.hoasnet.inet.fi] has joined #irssi
+15:40 -!- Irssi: #irssi: Total of 97 nicks [7 ops, 0 halfops, 0 voices, 90 normal]
+15:40 -!- Irssi: Join to #irssi was synced in 1 secs
+15:40 < hendry> I keep getting "(Unauthorized connection)" when I try connect to IRCNet servers. Can someone enlighten me why?
+15:41 <@Geert> Sure, you are not Ilined
+15:41 <@Geert> You must find a server fitting your IP-range
+15:41 < lash_> hendry: try irc1.inet.fi
+15:41 < lash_> hendry: sonera's clients should get there
+15:43 -!- Mundy_ [~mundy@p1-max1.adl.ihug.com.au] has quit [Read error: 113 (No route to host)]
+15:44 < hendry> Hmmm... also why does it so long to connect?
+15:44 < raz^hail> because your identd port is most likely to be filtered
+15:49 < hendry> raz^hail: why?
+15:55 -!- Indefatigable [~Absolon@esx132dhcp939.essex01.md.comcast.net] has joined #irssi
+16:00 -!- n00kie_ [~n00kie@M339P027.adsl.highway.telekom.at] has joined #irssi
+16:02 -!- baggins is now known as bagginsa
+16:02 -!- bagginsa is now known as baggins
+16:09 -!- n00kie [~n00kie@M288P017.adsl.highway.telekom.at] has quit [Read error: 110 (Connection timed out)]
+16:14 < Ziekke> Is there anywhere that references the color codes used in the autolog?
+16:19 -!- ikaro [~ikaro@2001:730:11:36:0:0:0:1] has joined #irssi
+16:19 -!- hoxu [qv76JNdYfT@dsl-jklgw3i1c.dial.inet.fi] has quit [Remote closed the connection]
+--- Log closed Sun Jun 15 16:22:16 2003
+--- Log opened Tue Oct 07 22:40:17 2003
+22:40 -!- hendry [~hendry@62.78.149.199] has joined #irssi
+22:40 -!- Irssi: #irssi: Total of 97 nicks [6 ops, 0 halfops, 0 voices, 91 normal]
+22:40 -!- Irssi: Join to #irssi was synced in 1 secs
+--- Log closed Tue Oct 07 22:40:24 2003
+--- Log opened Wed Nov 05 20:55:06 2003
+20:55 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #irssi
+20:55 -!- Irssi: #irssi: Total of 105 nicks [5 ops, 0 halfops, 0 voices, 100 normal]
+20:55 -!- Irssi: Join to #irssi was synced in 2 secs
+20:56 < hendry> http://tap.homelinux.org/~hendry/2003-11-05-205551_1024x768_scrot.png
+20:57 < hendry> How do I get irssi to parse latin-1 while using uxterm ?
+20:57 < Stric> recode.pl is one way
+20:58 < thomas_N> can i deal with utf-8 as well using this script?
+20:58 < hendry> zgrep -i utf actually is coming up with something
+20:59 < Stric> thomas_N: I use recode.pl to have utf8 for some channels in my latin1 term.. it can encode in various ways back and forth with fallbacks etc
+21:00 -!- dryan [dryan@80.195.26.94] has quit [Client Quit]
+21:00 < thomas_N> i'll have a look. As long as aterm doesn't support utf-8 i have to stick to ISO-something
+21:02 < hendry> Can't locate package Irssi::Nick for @Irssi::Irc::Nick::ISA at (eval 18) line 24.
+21:02 < hendry> for recode.pl ...
+21:02 < hendry> I so hate perl
+21:03 < hendry> uxterm++ :)
+21:04 < thomas_N> hendry: uxterm doesn't have (fake) transparency and fading
+21:04 < hendry> thomas_N: you're lame :)
+21:04 < thomas_N> hmm, same error message here, hendry :(
+21:04 < thomas_N> hey, i also use OS X, i need stuff like that!
+--- Log closed Wed Nov 05 21:07:45 2003
+--- Log opened Wed Nov 05 21:11:41 2003
+21:11 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #irssi
+21:11 -!- Irssi: #irssi: Total of 104 nicks [5 ops, 0 halfops, 0 voices, 99 normal]
+21:11 -!- Irssi: Join to #irssi was synced in 1 secs
+21:11 < hendry> http://tap.homelinux.org/~hendry/irssi-utf-8.png
+21:11 < hendry> See the topic of that screenshot?
+21:12 < thomas_N> i can do €s too here :P
+21:12 < thomas_N> the black background is depressing
+21:14 < hendry> thomas_N: notice the last char of the topic
+21:15 < thomas_N> i did, looks broken :)
+21:16 < hendry> a bug?
+21:19 -!- ferret [~ferret@a245.worc.ox.ac.uk] has quit ["Your evalution period has expired. Thanks for using Life. Program will now quit."]
+21:26 -!- dryan [dryan@80.195.26.94] has joined #irssi
+21:27 -!- misentpry [~misentry@border-gw-1.hel008.suomicommunications.com] has quit [Read error: 60 (Operation timed out)]
+21:30 -!- UnNamed [500@16.Red-80-32-164.pooles.rima-tde.net] has joined #irssi
+21:32 -!- misentpry [~misentry@border-gw-1.hel008.suomicommunications.com] has joined #irssi
+21:32 -!- cha0tic [~null@p508C7647.dip.t-dialin.net] has joined #irssi
+21:36 -!- vettore [~vettore@62.129.8.64] has quit ["eating..."]
+21:42 -!- a1fa2 [~aboove@150.208.212.30] has joined #irssi
+21:56 -!- a1fa [~aboove@150.208.212.30] has quit [Connection timed out]
+21:56 -!- evIL|robot [~someone@pD9ECF680.dip.t-dialin.net] has joined #irssi
+22:20 -!- flupke [1000@212.68.232.167.brutele.be] has quit ["leaving"]
+22:20 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:21 -!- jcarlyle [~carlyle@63.111.22.70] has quit [Remote closed the connection]
+22:21 -!- jcarlyle [~carlyle@63.111.22.70] has joined #irssi
+22:24 -!- flupke [1000@212.68.232.167.brutele.be] has quit [Client Quit]
+22:24 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:24 -!- flupke [1000@212.68.232.167.brutele.be] has quit [Client Quit]
+22:25 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:26 -!- flupke [1000@212.68.232.167.brutele.be] has quit [Client Quit]
+22:29 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:29 -!- flupke [1000@212.68.232.167.brutele.be] has quit [Client Quit]
+22:29 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:35 -!- flupke [1000@212.68.232.167.brutele.be] has quit ["leaving"]
+22:35 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:36 -!- flupke [1000@212.68.232.167.brutele.be] has quit [Client Quit]
+22:37 -!- flupke [1000@212.68.232.167.brutele.be] has joined #irssi
+22:37 -!- uther [~uther@199.72.172.49] has quit ["leaving"]
+22:41 < bipak> lol
+22:44 < hendry> yes funny
+--- Log closed Wed Nov 05 22:44:52 2003

@@ -1,0 +1,14 @@
+--- Log opened Tue Apr 22 17:06:01 2003
+17:06 -!- Irssi: Starting query in Freenode with dlite
+17:06 <dlite> I want to write python parser which will convert xml file into html
+17:10 <hendry> I would probably use DOM. Although if you need it fast, SAX
+17:10 <hendry> OR you could use mozilla. A style sheet perhaps?
+17:10 <dlite> python SAX check dtd before parse?
+17:10 <dlite> or dtd don't needed in that case?
+17:11 <hendry> I don't know. I am no expert. All I know is on my tips page
+17:11 <dlite> are you here?
+17:11 <hendry> I don't know. I am no expert. All I know is on my tips page
+17:11 <dlite> well, tnx anyway
+17:11 <dlite> bye
+17:11 <hendry> bye
+--- Log closed Tue Apr 22 17:16:48 2003

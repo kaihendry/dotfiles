@@ -1,0 +1,343 @@
+--- Log opened Wed Aug 06 20:00:12 2003
+20:00 -!- hendry [~hendry@hoas-50dd00f3.hoasnet.inet.fi] has joined #scummvm
+20:00 -!- Irssi: #scummvm: Total of 51 nicks [7 ops, 0 halfops, 0 voices, 44 normal]
+20:00 -!- Irssi: Join to #scummvm was synced in 1 secs
+20:00 < LethalWP> MaliXeanz: --aspect-ratio -f   ?
+20:00 < MaliXeanz> hmmm... oh
+20:00 < muskie> then gave up and reinstalled mandrake 9
+20:00 < MaliXeanz> man, I should read instructions first x)
+20:00 < LethalWP> just press f when you're in a game
+20:00 < MaliXeanz> gotcha
+20:00 < muskie> now..
+20:00 < LethalWP> muskie: ! i use rh linux, i'm very happy with it
+20:00 < muskie> did endy tag it?
+20:00 < muskie> meh
+20:00 < LethalWP> more happy than my debian
+20:01 < MaliXeanz> LethalWP: f button doesnt do anything =/
+20:01 < Yohein> well
+20:01 < LethalWP> it doesn't go full screen?
+20:01 < Yohein> i've got to go now
+20:01 < Yohein> :)
+20:01 < LethalWP> bye yoh
+20:01 < Yohein> thanks for your help
+20:01 < Yohein> :D
+20:01 < MaliXeanz> btw, how am I supposed to save in indy:foa if my f1 button doesnt work in the vm? =/ I dont get it
+20:01 < Yohein> bye
+20:01 -!- Yohein [~ircap75@212.166.94.63] has quit ["..."]
+20:01 < muskie> urpmi is a lot easier to type than apt-get
+20:01 < MaliXeanz> lea: it doesnt go fullscreen, yes
+20:01 < LethalWP> f5
+20:01 < muskie> that's the only reason I use mandrake. XD
+20:01 < MaliXeanz> mkay, lets try
+20:01 < LethalWP> lucas games always used f5
+20:02 -!- Ge0rG [~georg@duenndns.de] has joined #scummvm
+20:02 < MaliXeanz> ah! good.
+20:02 < xplo> muskie: alias urpmi="apt-get" };>
+20:02 < MaliXeanz> tnx a million
+20:03 < timofonic> exist a scummvm game with 2 player support, o yes ?
+20:03 < LethalWP> nope
+20:04 < MaliXeanz> hey, what the... I tried to rise my music volume by pressing [ and the game window doubled its size
+20:05 < smelialichu> <LethalWP> $ ldd scummvm |grep vorb << do you mean that scummvm does have ogg support by default?
+20:06 -!- dv [~lyc@terrato.org] has left #scummvm ["Drive defensively; buy a tank."]
+20:06 < muskie> who the heck are these people?!
+20:07 < LethalWP> no i mean: check your compiled binary, maybe it was compiled with, if it needs that lib, it's in
+20:07 < LethalWP> if it doesn't, it's nt
+20:07 < LethalWP> o
+20:07 < smelialichu> how do I check if it has it compiled?
+20:07 < smelialichu> executing that command tells me no such file or directory
+20:08 < smelialichu> libvorbisfile.so.3 => /usr/lib/libvorbisfile.so.3 (0x400ef000)
+20:08 < smelialichu>         libvorbis.so.0 => /usr/lib/libvorbis.so.0 (0x400f6000)
+20:08 < smelialichu> ok, I cd'ed to /usr/bin
+20:08 < smelialichu> so I do have vorbis support
+20:08 < LethalWP> it seems to be compiled in yupz
+20:09 < smelialichu> but no mp3?
+20:09 < smelialichu> legal reasons?
+20:09 < LethalWP> ask the guy who compiled it
+20:09 < LethalWP> or he didn't read the Makefile before compiling
+20:09 < smelialichu> well I got the official release
+20:09 < smelialichu> in binary rpm form
+20:10 <@olki> you're talking about redhat rpms?
+20:10 <@olki> ah
+20:10 <@olki> yep
+20:10 <@olki> wjp didn't compile with mp3
+20:10 < smelialichu> oh yeah
+20:10 < muskie> yo guys?
+20:10 < smelialichu> red hat can't play back mp3's
+20:10 <@olki> since mp3 libraries aren't included in redhat anyway
+20:10 < smelialichu> unless you install the libraries
+20:10 < LethalWP> smelialichu: it can, with the required soft installed
+20:10 < muskie> Would anyone mind burning me a copy of Mandrake 9.1?
+20:10 < smelialichu> but all the other builds are fine with mp3 then I guess?
+20:11 < muskie> I'm not upgrading over a 56k modem here. :P
+20:11 < smelialichu> LethalWP: that's what I meant :)
+20:11 < LethalWP> muskie: do you come at home to get it?
+20:11 < smelialichu> muskie: by a magazine with it on
+20:11 < smelialichu> I got it on a DVD on the front of Linux Format
+20:11 < LethalWP> muskie: it'll be faster for you to d/l it, than me sending you the cds (a letter from .be to .au takes 1 week)
+20:11 <@olki> smelialichu: then just compile scummvm yourself...
+20:11 < timofonic> mandrake sux
+20:11 < LethalWP> timofonic: you can't use it
+20:12 < muskie> ahem. 9.1. :P i got mandrake 9.0 off a CD in the first place. :P
+20:12 < smelialichu> olki: sure, I was just asking if windows/dc ports etc have mp3 support by default
+20:12 < timofonic> LethalWP: cant use it ? why ? exist mandrake PPC
+20:12 < smelialichu> it's just not the rpm because red hat doens't include mp3 libraries?
+20:12 <@olki> no idea. you would have to ask the respective porters
+20:12 < smelialichu> timofonic: I like mandrake
+20:12 < smelialichu> k
+20:12 < timofonic> LethalWP: i prefer debian, slackware
+20:12 < timofonic> smelialichu: i hate mandrake
+20:12 < LethalWP> i prefer redhat over debian
+20:12 < smelialichu> timofonic: why do you hate mandrake?
+20:12 < LethalWP> & haven't played a lot with mandrake
+20:13 < timofonic> smelialichu: redhat 5.2 was good
+20:13 < timofonic> but newer versions not
+20:13 < LethalWP> smelialichu: like we care about redhat's decision
+20:13 < LethalWP> first thing i do when i install rh is getting xmms reading mp3s
+20:13 < LethalWP> =)
+20:13 < smelialichu> so how would I compress the .sou?
+20:14 < LethalWP> rtfm
+20:14 < timofonic> smelialichu: with the tools... read...
+20:14 < smelialichu> ahh yes, sorry
+20:14 < LeChuck> Arr, Murray be tellin 'me some scurvy curr just commited a change to CVS
+20:15 -!- pfault [~blah@Toronto-HSE-ppp3858122.sympatico.ca] has joined #scummvm
+20:17 -!- joostp [~joost@ip503dc57b.speed.planet.nl] has joined #scummvm
+20:17 -!- mode/#scummvm [+o joostp] by ChanServ
+20:18 < muskie> so.. uhh..
+20:18 < muskie> Did Endy Tag 0.5.1?
+20:18 -!- pagefault [~blah@Toronto-HSE-ppp3858315.sympatico.ca] has quit [Read error: 60 (Operation timed out)]
+--- Log closed Wed Aug 06 20:25:17 2003
+--- Log opened Wed Aug 06 20:25:50 2003
+20:25 -!- hendry [~hendry@hoas-50dd00f3.hoasnet.inet.fi] has joined #scummvm
+20:25 -!- Irssi: #scummvm: Total of 52 nicks [8 ops, 0 halfops, 0 voices, 44 normal]
+20:25  * olki points to joost
+20:25 -!- Irssi: Join to #scummvm was synced in 9 secs
+20:30 < smelialichu> is there no xbox port at the moment because there's no decent legal development kit?
+20:32 < muskie> o.o
+20:32 < muskie> there's no decent legal devkit for the damn Dreamcast! XD
+20:32 < muskie> well, except for KallistiOS...
+20:32 < smelialichu> there is
+20:33 < smelialichu> as you said, KallistiOS. That's a great dev kit
+20:33 < smelialichu> but the DC port doesn't use that anyway
+20:33 < smelialichu> it uses libronin
+20:47 -!- Netsplit orwell.freenode.net <-> irc.freenode.net quits: nnooiissee, Otiose, akawaka, timofonic, @Jamieson630, quesne, Str1ker, falso, @pigeon, tore
+20:48 < LeChuck> Arr, Murray be tellin 'me some scurvy curr just commited a change to CVS
+20:48 < smelialichu> wouldn't lechuck be a little more useful if it had the comment for the cvs committal too?
+20:49 -!- wjp [~wjp@ip503c5297.speed.planet.nl] has quit ["rebooting"]
+20:50 -!- pafcu_ [~pafcu@cs78164177.pp.htv.fi] has joined #scummvm
+20:50 -!- Netsplit over, joins: @Jamieson630, timofonic, nnooiissee, Otiose, akawaka, @pigeon, falso, tore, Str1ker, quesne
+20:50 -!- ServerMode/#scummvm [+bb MS_luca*!*@* *!*@202.154.43.146] by sterling.freenode.net
+20:50 -!- pafcu [pafcu@cs78164177.pp.htv.fi] has quit [Read error: 54 (Connection reset by peer)]
+20:50 -!- pafcu_ is now known as pafcu
+20:52 < LeChuck> Arr, Murray be tellin 'me some scurvy curr just commited a change to CVS
+20:54 < smelialichu> which Scumm games is it possible to die in?
+20:55 < LethalWP> indy 3
+20:55 < LethalWP> i thin kyou can get stuck in zak & maniac mansion
+20:55 < smelialichu> darn, I hate getting stuck or dieing :/
+20:55 < LethalWP> that's all i think
+20:55 < LethalWP> or from what i know
+20:55 < smelialichu> you can't die on indy 4?
+20:55 < Lightkey> heh, are there adventures where you can't die?
+20:55 < smelialichu> yes
+20:56 < smelialichu> Monkey Island
+20:56 <@joostp> I think you can die in indy4 too
+20:56 < LethalWP> Lightkey: most of lucasarts game
+20:56 < LethalWP> nope
+20:56 < LethalWP> there are different endings
+20:56 < LethalWP> one where you die
+20:56 < LethalWP> but still, it's the end of the game
+20:56 < Lightkey> yeah, where you die for example ;)
+20:56 < smelialichu> Sam and Max, etc tons of lucasarts where you can't die
+20:56 <@Jamieson630> Maniac Mansion lets you die left and right (a la Sierra Games), and Indy4 does allow you to die but makes it really obvious that the choice that gets you killed is a really stupid choice.
+20:56 <@olki> you can die when you lose a fight in indy4
+20:56 < LethalWP> there is no fight in indy4?
+20:56 < smelialichu> dieing in the ending is different
+20:56 < LethalWP> yeah one at the start, but that doesn't count
+20:56 <@olki> and you can die in monkey1 if you stay longer than 10 minutes under water
+20:57 < LethalWP> olki: oh 10 mins =) it didn't take me that much time to find the stupid/funny trick;)
+20:57 -!- wjp [~wjp@ip503c5297.speed.planet.nl] has joined #scummvm
+20:57 < smelialichu> does it actually kill you after 10mins?
+20:57 <@Jamieson630> You can also die in Indy4 if you try to pick a fight with Kerner while he's pointing a gun at you.
+20:57 < smelialichu> I never bothered trying :)
+20:57 < DJ_Syto> yes, you can die in indy 4
+20:57 < DJ_Syto> and indy 3
+20:57 -!- DJ_Syto [noban@62-36-56-82.dialup.uni2.es] has quit ["• IRcap [7.5] • http://www.ircap.com •"]
+20:58 <@olki> heh... dyslexia... I read "www.icrap.com" instead of "www.ircap.com" in that quit message :)
+20:59 < pagefault> does scumm 0.5.1 fix any BASS issues?
+20:59 <@olki> yep. several ones
+20:59 < pagefault> cool
+21:02 < LeChuck> Arr, Murray be tellin 'me some scurvy curr just commited a change to CVS
+21:02 -!- Fanskapet [cerebri@h182n1fls33o878.telia.com] has quit ["."]
+21:02 < muskie> once again.
+21:02 < muskie> has endy Tagged 0.5.1 yet?!
+21:03 < wjp> yes
+21:03 < wjp> tag is 'release-0-5-1' according to his email
+21:03 < pagefault> too bad cvs is delayed 24 hrs
+21:03 < pagefault> :/
+21:04 < muskie> thankye
+21:10 -!- hawk [~hawk@as1-6-7.lio.s.bonet.se] has quit ["bbl"]
+21:12 < wjp> you can get a source zip from SF already, though
+21:13 < muskie> ack
+21:13 < muskie> no wonder it's so damn cold
+21:13 < muskie> my window is wide open!!
+21:13 < wjp> cold? lucky you :-)
+21:13  * muskie shuts the window, locks it, boards it up, and piuts a steel gill on the thing for good mwasure!
+21:13  * wjp sends some excess heat muskie's way
+21:13 < muskie> lucky:?
+21:14 < muskie> it's 7 degrees out there
+21:14 < muskie> KELVIN!
+21:15  * LavosSpawn64 is sweating like hell
+21:15 < wjp> yeah... me too...
+21:16 < LavosSpawn64> Was downtown buying some clothes for the last 3 hours... it was hell..!
+21:16  * joostp was inside for the last 3 hours...it was hell! :)
+21:16 < LavosSpawn64> heh ;)
+21:17 < WooShell> buying clothes?? at this temperature you should start SELLING it...
+21:19 < LavosSpawn64> nah. the new ones consist of far less material than the old ones.
+21:19 <@olki> indeed. /me is sitting here in just his boxers and is sweating like hell...
+21:21 < LeChuck> Arr, Murray be tellin 'me some scurvy curr just commited a change to CVS
+21:30 -!- Netsplit orwell.freenode.net <-> irc.freenode.net quits: wjp
+21:30 -!- Netsplit over, joins: wjp
+21:31 -!- kornalius [tryit@207.134.67.174] has joined #scummvm
+21:32 < kornalius> Any news on 5.01 for PocketPC?
+21:34 -!- Netsplit orwell.freenode.net <-> irc.freenode.net quits: @kh_zZz
+21:37 -!- Netsplit over, joins: kh_zZz
+21:39 < LavosSpawn64> which kind of news?
+21:39 < kornalius> When is 5.01 (PocketPC) is going to be released?
+21:40 < muskie> well..
+21:40 < muskie> since 5.01's been tagged..
+21:40 < wjp> 5.01? that would be after 0.6, 0.7, ..., 1.0, 2.0, 3.0, 4.0?
+21:40 < muskie> now?
+21:40 < muskie> heh
+21:40 < LavosSpawn64> within.uhm... 10 hours, I guess...
+21:41 < muskie> it's 0.5.1, korn.
+21:46 < LavosSpawn64> muskie: By the way... 7 degree in australia? Does it really ever get that cold over in au?
+21:46 < muskie> yes, lavis. it does.
+21:46 < LavosSpawn64> And besides, in winter temperatures here can drop to -15°, so stop whining already. ;)
+21:47 < WooShell> -15? bah. 
+21:47 < LavosSpawn64> bah?
+21:47 < LavosSpawn64> What's that supposed to mean? :)
+21:47 < WooShell> over there *wave* they had -41 last winter.
+21:47 < LavosSpawn64> ...where?
+21:47 < WooShell> (only one night... :P)
+21:48 < WooShell> dont ask me what that Kaff is called, but it was in the news as the coldest place in .de
+21:48  * LavosSpawn64 luckily never had to endure a temperature like that...
+21:48 < WooShell> and that's somewhere over there *wave* *point*
+21:48 < falso> here
+21:48 < falso> check my last email
+21:48 < falso> with the discworld develloper
+21:49 < falso> *FLOOD*
+21:49 < LavosSpawn64> It's their own fault if they want to live on a stupid mountain.
+21:49 < falso> From: Gregg Barnett <gregg@empire-interactive.com>
+21:49 < falso> To: Pedro de Oliveira <falso@rdk.homeip.net>
+21:49 < falso> Subject: RE: to Mr. Gregg Barnett
+21:49 < falso> Sorry Pedro. I'm the last person. The studio and the code are long gone.
+21:49 < falso> Gregg
+21:49 < WooShell> the coldest here last winter was -28 for three nights...
+21:49 < falso> > -----Original Message-----
+21:49 < falso> > From: Pedro de Oliveira [mailto:falso@rdk.homeip.net]
+21:49 < falso> > Sent: 05 August 2003 18:36
+21:49 < falso> > To: Gregg Barnett
+21:49 < falso> > Subject: Re: to Mr. Gregg Barnett
+21:49 < falso> > 
+21:49 < falso> > 
+21:49 < falso> > well. i just want to ask you if you know anyone that i make contact, 
+21:49 < falso> > some emails of other persons that develloped the game with you?
+21:49 < falso> > 
+21:49 < falso> > Regards,
+21:49 < falso> > Pedro de Oliveira
+21:49 < falso> *FLOOD
+21:49 < falso> :(
+21:49 < LavosSpawn64> Now that's bad news.
+21:49 < falso> really
+21:49 < falso> :|
+21:49 < muskie> discworld?
+21:49 < smelialichu> shame :(
+21:50 < smelialichu> I love Discworld
+21:50 < falso> everyone loves discoworl
+21:50 < falso> everyone loves discoworld
+21:50 < smelialichu> was Discworld 2 written with a scripting language?
+21:50 <@joostp> Bullshit. I'm sure someone, somewhere has the source.
+21:50 < smelialichu> joostp: I bet they do too
+21:50 < falso> joostp,  yes maybe
+21:50 < falso> joostp,  but who?
+21:50 < MadMoose> it's down to the nitty-gritty business of RE then
+21:50 < smelialichu> joostp: but legally it's probably ambiguous who has the right to let us use it
+21:50 < falso> smelialichu,  discworld 1 is the best one
+21:50 < LavosSpawn64> well, then go find someone with good IDA knowledge and way too much time on his hands. :)
+21:50 < falso> lavosspawn64,  im learning c
+21:51 <@joostp> falso: I dunno, people who worked on it...but with a reply like this, I doubt they want to give it out..
+21:51 < falso> lavosspawn64,  if i can help ill try
+21:51 < WooShell> otoh, where no owners are left, there is little risk of anyone complaining...
+21:51 < LavosSpawn64> learning C is a good place to start with, but it'll take years until you're up to that level.
+21:51 < falso> joostp,  i had other mails with him
+21:51 < smelialichu> that's not the point
+21:51 < LavosSpawn64> WooShell: Good point. ;)
+21:51 < LavosSpawn64> it's not?
+21:52 < falso> check here the last one joostp 
+21:52 < falso> Hi Pedro,
+21:52 < falso> It's nice to see the great work you're doing with Scumm games, and I agree
+21:52 < falso> that Discworld would be a good game to port over. Unfortunately, I don't
+21:52 < falso> have the source code (or for that matter the rights). Perfect Entertainment
+21:52 < falso> went under some years back and nobody knows where the original source code
+21:52 < falso> is today. Sorry about that, but I do wish you luck in porting other games
+21:52 < falso> over.
+21:52 < falso> All the best
+21:52 < falso> Gregg Barnett
+21:52 < smelialichu> if we are given source code by a developer who doesn't have the right to give it out, we don't have the right to use and could be forced to tear out the discworld part of the scummvm engine (when written)
+21:52 < falso> :(
+21:52 < LavosSpawn64> Yes, if there was someone with an interest in forcing us
+21:53 < LavosSpawn64> If there's noone holding the copyright, I can't imagine who it could be
+21:53 <@joostp> falso: I remember that mail. Didn't show much initiative from him as well, even though he says he would like to see it ported.
+21:53 < smelialichu> LavosSpawn64: but someone will own the copyright, even if it is not clear who it is
+21:53 < falso> if the code is lost forever
+21:53 -!- |Cable| [~roxx@cm137105.red.mundo-r.com] has joined #scummvm
+21:53 < falso> its really a bad thing
+21:54 < falso> cause discworld is really a good game
+21:54 < smelialichu> if a company goes under, the source code doesn't suddenly become public domain
+21:54 < falso> that shouldnt be forgotten
+21:54 < falso> :|
+21:54 < LavosSpawn64> I think the probability is pretty low, though.
+21:54 < LavosSpawn64> quite close to zero.
+21:54 <@joostp> falso: yes, well there is always reverse engineering.. :|
+21:54 < falso> joostp,  that should be very hard
+21:54 < LavosSpawn64> smelialichu: And I don't even think we could be forced to remove it.
+21:54 < falso> joostp,  did you guys did simon the sorcerer that way?
+21:55 < smelialichu> LavosSpawn64: maybe not, but it's a battle we may be forced to fight
+21:55 < LavosSpawn64> smelialichu: Even though of course it depends on your country's law. But in germany, I don't think they could.
+21:55 < smelialichu> does the scummvm project want legal troubles?
+21:55 < smelialichu> http://ask.slashdot.org/article.pl?sid=03/08/05/1920207&mode=nested&tid=126&tid=163&tid=185
+21:55 < MadMoose> LavosSpawn64: unless Terry Pratchett disagrees, of course...
+21:55 < smelialichu> that is a recent ask slashdot post about who owns the source code when a company folds
+21:56 <@joostp> falso: Simon was also RE'd, yes.  as far as I know..adventure soft is not too happy with scummvm support for simon games, but they haven't taken (legal) action
+21:56 <@olki> they're not happy, no
+21:56 < falso> joostp,  they still seel the game
+21:56 < falso> sell
+21:57 <@joostp> falso: that's besides the point..do you think scummvm support for those games will damage sales?
+21:57 < falso> like.. it makes the games be more warezed
+21:57 < falso> but...
+21:58 < falso> those games have been warezed some years ago
+21:58 <@joostp> maybe more warez, yes, but also more bought.
+21:58 <@joostp> that sounded crappy, but you get the point.
+21:59 < falso> yes
+21:59 < falso> :)
+22:00 < smelialichu> I don't see why they shouldn't be happy
+22:00 < smelialichu> it allows more people to play the games
+22:00 < smelialichu> now that means more sales
+22:00 < smelialichu> and yes, I guess more people looking for pirated copies too
+22:01 < falso> i jsust have a original game
+22:01 < falso> that scumm supports
+22:01 < MadMoose> It's not like it's gonna drive their sales any lower
+22:01 < falso> indiana jones and teh fate of atlantis
+22:01 < falso> the other ones i've downloaded them from the net
+22:01 < falso> cause i love those games
+22:02 < falso> and its not possible to get them anywhere now
+22:02 < smelialichu> It's not like people are going to say "Great, ScummVM supports Simon. I was going to go and buy an original copy, but now I'm going to download a warez copy"
+22:02 < MadMoose> I bought the the LEC entertainment pack
+22:02 -!- falso was kicked from #scummvm by olki [how stupid can one be...]
+22:02 -!- falso [bud@81.84.125.200] has joined #scummvm
+22:07 < smelialichu> I run scummvm configure, and it says
+22:07 < smelialichu> Checking for Ogg Vorbis... no
+22:07 < smelialichu> Checking for MAD... no
+22:07 < smelialichu> but I have libmad installed
+22:08 < smelialichu> and ogg vorbis playback libraries
+22:08 < Harekiet> and ofcourse you got the development versions
+--- Log closed Wed Aug 06 22:08:41 2003

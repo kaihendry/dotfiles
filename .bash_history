@@ -397,3 +397,97 @@ vim .bashrc
 ls -a
 ll
 vim .bashrc 
+ubh
+cd dat
+cd data 
+cd alt.binaries.pictures.erotica.hardcore/
+ls
+cd
+ubh
+cd data
+cd alt.binaries.pictures.erotica.hardcore/
+feh *
+rm *
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057\056PyDS'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057\056camel\137certs'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057\056etwolf'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057irc'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057irc'`"
+ cd "`echo -e '\057home\057hendry'`"
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057\056menu'`"
+ cd "`echo -e '\057home\057hendry\057\056menu\057icons'`"
+ cd "`echo -e '\057home\057hendry\057\056menu'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057\056metacity'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057\056mplayer'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057News'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057News'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057Desktop'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057TransGaming\137Drive'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057addressbook'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057dabase'`"
+ cd "`echo -e '\057home\057hendry'`"
+./lupy
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057thumbs'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057tap'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057tap'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057swriting'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057porter'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057public\137html'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057python'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057python'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057quake\063'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057render'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057silke'`"
+ cd "`echo -e '\057home\057hendry\057silke\057myfiles'`"
+ cd "`echo -e '\057home\057hendry\057silke'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057sky\055cd'`"
+ cd "`echo -e '\057home\057hendry'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057Nokia'`"
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057Christin'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057Cooking'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057QuickCam'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057Nokia'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057SO'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+ cd "`echo -e '\057home\057hendry\057soso\057ma\071projb'`"
+ cd "`echo -e '\057home\057hendry\057soso'`"
+cd ~/mail/.svn/text-base/ ; ls
+cd ~/mail/.svn/
+ls
+cd text-base/
+ls
+ls -al
+ PROMPT_COMMAND='pwd>&7;kill -STOP $$'

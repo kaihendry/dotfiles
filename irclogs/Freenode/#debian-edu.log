@@ -1,0 +1,557 @@
+--- Log opened Tue Nov 04 14:55:46 2003
+14:55 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #debian-edu
+14:55 -!- Irssi: #debian-edu: Total of 4 nicks [0 ops, 0 halfops, 0 voices, 4 normal]
+14:55 -!- Irssi: Join to #debian-edu was synced in 1 secs
+14:55 < hendry> greetings
+15:10 -!- stockholm [~andreas@petrus.schuldei.org] has quit [Read error: 104 (Connection reset by peer)]
+15:12 -!- stockholm [~andreas@petrus.schuldei.org] has joined #debian-edu
+16:42 -!- stockh0lm [~andreas@petrus.schuldei.org] has joined #debian-edu
+16:42 -!- stockholm [~andreas@petrus.schuldei.org] has quit [Read error: 104 (Connection reset by peer)]
+17:14 -!- stockh0lm [~andreas@petrus.schuldei.org] has quit [Read error: 104 (Connection reset by peer)]
+17:31 < hendry> pere: are you there? 
+17:35 < pere> hendry: yes
+17:42 < hendry> http://www.cs.helsinki.fi/u/hendry/work/venturecup/idea.txt
+17:42 < hendry> I am writing a proposal for some capital for funding a Finnish "SkoleLinux" project
+17:43 < hendry> I wondered if you have some "advocacy" links for me. Esp. with regard to "friendly" licensing.
+17:44 < hendry> All I can find is http://developer.skolelinux.no/projectinfo.html.en
+17:44 < hendry> Is SkoleLinux being adopted in Norwegian schools ?
+17:47 < pere> we have 44 test schools at the moment.  I'll get back to you.  I have to run to reach the post office before 17:00 local time.  Back in 30 minutes. :)
+17:56 < hendry> I need some food
+17:56 < hendry> http://tap.homelinux.org/debatewiki/VentureCup
+18:22  * pere is back.
+18:23 < pere> are you aware of the devel@skolelinux.no mailing list?  It is the english-speaking developers list.
+18:28 < pere> it sounds very good that you want to adjust Skolelinux to the finnish schools.
+18:28 < pere> I believe the best way would be for you to get write access to the skolelinux CVS, and update your fixes directly there.
+18:29 < pere> how many people are working on this at the moment?
+18:29 < pere> regarding english text:
+18:30 < pere> there is the handbok: http://developer.skolelinux.no/dokumentasjon/IKT-bok.en.html
+18:30 < pere> architecture description: http://developer.skolelinux.no/arkitektur/arkitektur.html.en
+18:31 < pere> intro for new developers: http://developer.skolelinux.no/dokumentasjon/devel_intro.html.en
+18:32 < pere> you should subscribe to devel@skolelinux.no, and send an email describing your plans.  I believe the installation system is mostly translated to finnish already, so you should just verify that the last pieces are in place.
+18:33 < pere> I see that I have taken out the finnish language choice from the install menu (because no-one was working on finnish).  I'll reinsert it.
+19:05 < hendry> pere: there have been _no_ work here as yet
+19:06 < hendry> today I have had the energy to try it out and apply for some money before tomorrow's deadline :)
+19:06  * hendry was at debcamp
+19:18 < pere> I believe I remember you from debcamp. :)
+19:18 < pere> what kind of application is this?
+19:26 < pere> hendry: if you want to talk to other skolelinux people, you might join #skolelinux on IRCNet.
+19:26 < pere> 30 people present on the channel now.
+19:26 < pere> I use irc.ifi.uio.no, but irc.pvv.org and irc.hitos.no might work too
+19:38 -!- pere is now known as pere_poff
+--- Log closed Tue Nov 04 19:46:30 2003
+--- Log opened Tue Nov 18 19:47:33 2003
+19:47 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #debian-edu
+19:47 -!- Irssi: #debian-edu: Total of 10 nicks [0 ops, 0 halfops, 0 voices, 10 normal]
+19:47 -!- Irssi: Join to #debian-edu was synced in 14 secs
+20:18 -!- Fotokis [~Tommy@ti500710a140-0366.dialup.online.no] has joined #debian-edu
+20:30 -!- Fotokis [~Tommy@ti500710a140-0366.dialup.online.no] has quit ["Client Exiting"]
+20:58 -!- Fotokis [~Tommy@ti500710a140-0366.dialup.online.no] has joined #debian-edu
+21:21 -!- finnarne is now known as faj_away
+21:21 -!- Fotokis [~Tommy@ti500710a140-0366.dialup.online.no] has quit ["Client Exiting"]
+21:47 < pere> Werner_: I just checked it.  It looks good, assuming you can calculate.  I did not check all the numbers, only two or three.  Just activate them.
+22:00 -!- vance [~vance@rn-re124c14.uwaterloo.ca] has joined #debian-edu
+22:02 < stockholm> how many ldap server does ulstol have?
+22:03 < pere> ulsrud uses 1 LDAP server.
+22:03 < stockholm> ok
+22:04 < stockholm> roland finds the problem puzzeling. he asked for the ps ax at the problem-time.
+22:06 < stockholm> faj_away: could you ps ax not just the ldap server when the 1024 ldap limit is hit but also some other servers?
+22:13 < Werner_> pere: ok.. I'll double-check the values and commit.
+22:13 -!- pere is now known as pere_poff
+22:45 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
+22:52 -!- faj_away is now known as finnarne
+23:02 -!- Netsplit herbert.freenode.net <-> irc.freenode.net quits: pere
+23:07 -!- Netsplit over, joins: pere
+23:14 < pere> anyone awake?
+23:15 < finnarne> aloa
+23:16 < pere> I am thinking how we can integrate skolelinux into debian, and also how we can make it easier to install single service servers in skolelinux.
+23:17 < pere> I miss someone to discuss my ideas with.  Anyone with some knowledge about the skolelinux build structure, debian and packaging around to play ball?
+23:17  * finnarne is testing to see if fam can help the openldap open file problem
+23:18 < pere> fam?
+23:19 < pere> how could file alteration monitor help with the ldap problem?
+23:21 < finnarne> if kde checks continously for file changes, then the ldap server might be busy authenticating the users to give them access to check . 
+23:21 < pere> only if the uid->username mapping is looked up, I believe.
+23:22 < stockholm> finnarne: roland says it is most likely nscd is what we need.
+23:23 < stockholm> pere: i dont know how skolelinux is build
+23:23 < finnarne> stockholm: Others have mentioned that as well. 
+23:23 < stockholm> yes.
+23:23 < stockholm> i know.
+23:23 < pere> stockholm: yes, nscd should have an impact.  Did anyone know if the DNs caching bug is fixed.
+23:23 < stockholm> pere: i tried to contact wiggy about it.
+23:23 < stockholm> did not get an answer yet.
+23:23 < finnarne> pere: Have you ever tested kwebmin ? 
+23:24 < pere> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=139879
+23:24 < pere> finnarne: yes, once, I believe.
+23:25 < pere> ok, I'll try even if no one else know how skolelinux is built.  Take notes, someone. :)
+23:25 < finnarne> pere: I cant access webmin@localhost on the ltspserver ):
+23:25 < finnarne> pere: My logging is on (-: 
+23:25 < pere> At the moment, the skolelinux profiles are autobuild from CVS src/task-skolelinux/, based on the content of lists/task*.txt.
+23:26 < pere> The format of these lists are fairly random, just something I came up with one night.
+23:26 < pere> The content of these lists are checked against the current APT sources, to make sure the packages are available in woody, and the packages that do exist are moved into the generated debian/control.
+23:27 < pere> Then the meta packages are created and copied into the skolelinux APT source.
+23:27 < pere> In addition, a list of packages to put on the CD is copied into the src/debian-cd/tasks/ directory, to be used when the CD is built.
+23:28 < pere> The building of the meta packages are done in a cron job for user builder, while the building of the package list is done in a cron job as user root.
+23:29 < pere> the reason the CD building is done as user root is that at the start of the build 'apt-get update' is executed to make sure the list of packages in the APT sources is up to date.
+23:30 < finnarne> pere: That could have been done as a sudo job...
+23:30 < pere> This weekend we agreed that we should move the skolelinux packages into debian using debian-edu as the base name of "our" packages.
+23:30 < pere> finnarne: the real fix is to tell APT to work on local files, instead of trying to update the global APT cache.
+23:30 < finnarne> yes that would have been better. fakeroot ? 
+23:31  * finnarne is wondering if that is beside the point
+23:31 < pere> finnarne: do not really need fakeroot, one can tell APT to use local files.
+23:31 < pere> yes, this is beside the point.
+23:32 < pere> anyway, if we want to move the task packages to alioth, and put it in debian as debian-edu-*, we need to do it in a way that still make it possible to generate the CD on developer.
+23:33 < pere> At the moment, the meta package build process are unable to handle 'or'-dependencies, and this make it impossible to use the same meta packages in woody and sid.
+23:34 < pere> We could stop autogenerating the meta packages, and just update the control file manually.  I do not like that solution as it would remove a lot of the info we have in the task-skolelinux-*.txt files.
+23:35 < pere> Fairly unrelated, but a problem I need to take into consideration, is the fact that we want to be able to install single services on servers, to be able to set up standalone backup server, log server, file server etc.
+23:35 < pere> To be able to do that, we need to split the server task into several subtasks, and let the mainserver profile use all of them.
+23:36 < pere> It all comes down to a question on how the task generation code should be rewritten, and I am not sure how we best could do this.
+23:36 < pere> (hm, am I still making sense?)
+23:36 < finnarne> looks like it 
+23:37 < Barbarossa> hi guys :)
+23:37 < pere> as the meta packages are only used during installation, I am thinking that it might make more sense to move the files in task-skolelinux/ into base-config-skolelinux, and just keep a list of packages to install.  Ie drop the meta packages.
+23:38 < finnarne> pere: What about the upgrade path ? 
+23:38 < pere> The reason I choosed meta packages earlier, is that I was unable to get base-config to install the packages we wanted, and their dependencies, using the available system in base-config.  This is no longer a problem.
+23:39 < pere> finnarne: we have to do this before version 1.0, as the upgrade path will be hard.
+23:39 < pere> (I will only _enforce_ proper upgrade path handling after version 1.0.  Before that, we should limit ourself to best effort only. :)
+23:40 < finnarne> pere: What I mean is that - like it is now, if we add a package, it will appear at an old installation after a dist-upgrade
+23:40  * Barbarossa ist trying to find the red line
+23:40 < pere> finnarne: yes, I know.  Some like it, some don't.  I think I like that feature.
+23:41 < finnarne> pere: You know I have argued about every new language that are made availible (-8=
+23:42 < pere> On one hand, I would really like to move our tasks to alioth, and make them part of the debian-edu package.  On the other hand, I want to keep all the CD building automagic systems running.
+23:42 < pere> I'm not sure if I can have both.
+23:43 < finnarne> As I'm not familiar with alioth, why should it be a problem. We are speaking of making alioth the main CVS, or .. ?
+23:44 < pere> well, I only plan to put the skolelinux specific parts in alioth.  The CD building will stay on developer.
+23:44 < Barbarossa> alioth == debian-build-system?
+23:44 < pere> I guess we could use the anoncvs feature to check out the alioth CVS source on developer, and continue as we do now...
+23:45 < pere> alioth is the debian sourceforge copy.
+23:45 < pere> alioth.debian.org
+23:45 < Barbarossa> ah ok
+23:48 < pere> Regarding the single service server install, I think it is a good idea to add a question to the profile package, and setting the priority of the question below the default limit.
+23:48 < stockholm> pere: why not have woody and sid/sagre meta packages, and autogenerate those?
+23:49 < Barbarossa> I thing some kind of expert-mode might be a good idea
+23:49 < pere> This question should be displayed if the main-server profile was selected, and should list all the available services to install.  The default should be all services, and the user should be able to uncheck some of the options.
+23:50 < pere> Barbarossa: export mode would then be enabled using DEBCONF_PRIORITY=medium on the boot line.
+23:50 < stockholm> what happend to make metapackages unnecessary fot this?
+23:50 < pere> stockholm: the install step in base-config was changed.
+23:51 < Barbarossa> pere: I would do it the other way around: let the user select "extra Server" (e.g.) and them let him decide which services should run on the maschine
+23:52 < stockholm> alioth is a ia64 machine, we cant build binary packages for arch i386 there, anyways
+23:52 < pere> stockholm: I do not think we have any binary packages being autobuilt.
+23:52 < pere> Barbarossa: but that would require us to add another visible option, and I am not sure if I want to confuse the users any more.
+23:53 < Barbarossa> but that would be more logic :)
+23:54 < stockholm> pere: you should ask the alioth root person (wiggy) how far he can let us do crazy stuff on alioth. that could solve the problem alltogether.
+23:54 < Barbarossa> stockholm: :-)
+23:54 < Barbarossa> pere: If you have to select the profile "Mainserver" to get a printserver it might be confusing
+23:54 < pere> stockholm: not really.  I can't build the CD on alioth.
+23:55 < pere> Barbarossa: perhaps.  I haven't thought this trought yet. :)
+23:55 < Barbarossa> A new visible options is there in every way
+23:56 < stockholm> pere: what keeps you?
+23:56 < stockholm> why cant you built it there? do you need root, really?
+23:56 < Barbarossa> If we add one question/button for "expert mode" we could add further questions for people who know what they do (change ip-ranges e.g.)
+23:56 < Barbarossa> stockholm: you need
+23:56 < pere> but my point is that for this to happen, we need to split the server package list into several sub lists.  This splitting should happen when we move the task packages to alioth.
+23:56 < Barbarossa> apt-get update
+23:57 < stockholm> Barbarossa: yes i read that.
+23:57 < stockholm> but that could be in the root cron file. 
+23:57 -!- Fotokis [~Tommy@ti500710a012-0217.dialup.online.no] has joined #debian-edu
+23:57 < stockholm> they did that for me before.
+23:57 < pere> stockholm: I need a complete Debian mirror, and a complete Debian security mirror, and an local APT source for the skolelinux packages.
+23:57 < Barbarossa> I think to do that on developer is a good idea
+23:58 < pere> all of these must be on the same partition that the CD is built, because debian-cd uses hardlinks.
+23:58 < pere> I am not going to ask for this on the alioth machine. :)
+23:58 < stockholm> wiggy wont mirror security. 
+23:58 < pere> One have to mirror security to get the security fixes on the CD. :)
+23:58 < stockholm> he might do that if it is not accessible from outside.
+--- Day changed Wed Nov 19 2003
+00:00 < stockholm> pere: there is #alioth
+00:00 < stockholm> but wiggy is not there right now. 
+00:00 < stockholm> well, he is logged in, but not there.
+00:00 < pere> I do not think that is a good solution.  If we want to integrate skolelinux into debian, we need to find proper solutions to our problems.
+00:02 < stockholm> pere: <Lo-lan-2> I suppose it could happen, yes
+00:03 < stockholm> pere: i agree.
+00:04 < stockholm> i think we should not move the build process to alioth in the first place because we *can* not build binary packages arch-i386 then.
+00:04 < pere> I guess the real solution is to rewrite the meta package build system to handle 'or', and to make our package list installable both in woody and in sarge.  Next, we stop autobuilding them, and build them manually, uploading them into both skolelinux and sid.
+00:04 < stockholm> we limit ourselfs to arch:any
+00:05 < pere> stockholm: all our skolelinux specific packages are arch:all.
+00:05 < stockholm> up untill now. what will the future bring?
+00:05 < stockholm> perhaps we need to rebuild samba, or do security builds?
+00:06 < stockholm> that is the limit i talk about.
+00:06 < pere> I would be surprised if we need to do binary stuff.  Binary packages should be handled manually, I believe.
+00:06 < Barbarossa> ..oo( I could build for mips :-) )
+00:07 < hendry> I would like to try building the CD
+00:07 < hendry> I have the resources at my dept. Can I mirror your configuration and see how it works?
+00:07 < pere> hendry: sure, go ahead.  All you need should be in CVS.
+00:08 < stockholm> pere: join #alioth. all improtant people are there now. 
+00:09 -!- Fotokis [~Tommy@ti500710a012-0217.dialup.online.no] has quit ["Client Exiting"]
+00:09 < hendry> pere: do you have a viewcvs link to the CVS?
+00:09 < pere> stockholm: ok, but I do not understand why that is useful.
+00:10 < pere> stockholm: eh, I am alone on #alioth.
+00:10 < stockholm> well, because they can make live a lot easier for us. (c:
+00:10 < pere> If we want the skolelinux packages to be normal debian packages, and I do, we should not need any special handling from alioth.
+00:11 < stockholm> pere: they suggest to modify debian-cd to get teh needed stuff.
+00:11 < stockholm> the respective servers are on a 100mbit line, a few hops away.
+00:12 < finnarne> anyone who care to help me with a KDE problem: I cant log in on my ltspserver after i started fam. I get an error message saying 'There was an error during start of KDE's internal communication between processes. The System gave the message: \n\nCould not read network connection list.\n/skole/tjener/home0/finnarne/.DCOPserver_ltspserver00.intern_:0\n\nCheck that the application "dcopserver" is running'
+00:12  * stockholm feels silly becaues he echos stuff between two channels
+00:13 < stockholm> finnarne: did you restart kde?
+00:13 < pere> stockholm: where is this #alioth?  I am on #alioth now, and I am alone.
+00:13 < finnarne> stockholm: I restarted both tjener, and ltspserver00 
+00:13 < stockholm> oftc.net
+00:13 < stockholm> wiggy does not like freenode. (c:
+00:14 < pere> Yet another irc net.  I fail to understand why people are so interested in irc networks.  For me, any network works.  But I do not like to have to trace down the correct network all the time.
+00:15 < stockholm> for debian there are just two. (c:
+00:15 < hendry> welcome to the wonderful world of IM
+00:15 < stockholm> cetero censeo ircnet esse delendam
+00:15 < stockholm> this latin must suck badly. (c:
+00:16  * Barbarossa should be able to translate that...
+00:16 < pere> We do not seem to be making progress.
+00:17 < stockholm> pere: did you decide against speaking with them? that is the sensible thing to do.
+00:17 < stockholm> debian is about cooperation and tlaking to teh right people, you know.
+00:18  * Barbarossa is going to bed now
+00:18 < pere> stockholm: yes, but the right people is the people knowing skolelinux.  I fail to see how the people administrating the CVS repository should be able to assist us.  And I do not want to depend on alioth for more then the CVS repository.
+00:19 < pere> everything else we need to build skolelinux in debian should be part of the existing debian infrastructure.
+00:20 < finnarne> pere: I'm in favour of having the cvs at alioth, and continue building our things at developer. 
+00:21 < stockholm> sure. we can solve this problem differntly, too.
+00:21 < stockholm> finnarne: me, too, because of the binary packages. (c:
+00:22 < finnarne> stockholm: I halted the ltspserver, then restarted the server, and last started the ltspserver, and it seems to fix it. 
+00:22 < pere> btw, did everyone register on alioth? You should be listed as a debian-edu developer.
+00:22 < stockholm> i am on alioth, yes...
+00:22 < pere> if we rewrite the CD build system to generate the list of packages to put on the CD based on the meta packages, we could avoid some of the inter-dependencies.
+00:23 < finnarne> pere: I've signed up, and sent a note to stockholm to take me in as an debian-edu project member. 
+00:23 < pere> the only problem with this approach is the "extra" packages, which is not listed in a meta package.
+00:24 < finnarne> funny. when no ldap users is logged in, lsof | grep slapd | wc -l says 215 files
+00:24 < finnarne> then i enter my name (but not password, and it says 230
+00:24 < finnarne> then I log in and it goes to 285. 
+00:25 < stockholm> pere: wiggy does not know about the nscd dns problem. do you have a pointer?
+00:25 < finnarne> Then, when I log out, it goes to 322 (-8
+00:25 < pere> stockholm: yes, http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=139879
+00:27 < finnarne> what is the correct way of changing from vim to elvis as the default vi 
+00:29 < stockholm> update-alternatives
+00:29 < stockholm> but who would want to do that?!
+00:30 < finnarne> have you ever read man pages from within vim ? 
+00:31 < hendry> stockholm: I am not a DD. Can you advise how I can be one in the context of debian-edu ?
+00:33 < finnarne> 8-) update-alternatives --install symbolic vi /usr/bin/elvisnox 130 
+00:33 < hendry> finnarne: do you know about K in vim ?
+00:33 < finnarne> hendry: no
+00:34 < hendry> it's quite cool. go over a word in a file, like "find" and hit K in vim
+00:34 < pere> hendry: you can get access to both skolelinux and debian-edu without being a debian developer.
+00:34 < stockholm> hendry: you can help. 
+00:34 < pere> access=CVS access.
+00:35 < hendry> pere: thanks, I also have this goal of becoming a DD. I have been at it for awhile. :)
+00:35 < hendry> I need a thesis topic. Any good quantitive type research I wonder that needs to be done in this context too
+00:36 < stockholm> hendry: pick up the tasks a debian developer would do. do them. we can help you with uploads etc. think if you really like those things. then we can recommend you, if you wish.
+00:36 < hendry> My earlier topic about usability is getting very difficult to lay down
+00:36 < stockholm> pere: wiggy said we should try to reproduce the demonstrsted bug. 
+00:36 < hendry> stockholm: yes. I should close some bugs.
+00:37 < stockholm> hendry: yes, that is always a real poplular thing to do!
+00:37 < hendry> finnarne: tried K yet in vim ? :)
+00:38 < finnarne> hendry: Yes, and i disliked the ting that it switched away from the editor whenever i pressed K :) 
+00:38 < hendry> finnarne: you can also; man date | ul -i | vim -
+00:39 < hendry> finnarne: but i agree that's nasty
+00:41 < stockholm> pere: that bug was colsed a year ago. and he did so becaue YOU told him it was fixed!
+00:41 < pere> yes, in the glibc CVS and later versions of glibc.
+00:42 < pere> stockholm: who is wiggy.  I have better memory for real names.
+00:42 < hendry> what is the script called to put things and take things out of the runlevels on a debian system?
+00:43 < stockholm> wichert akkmann. our security guru
+00:43 < pere> right.
+00:44 < stockholm> finnarne: you are on a stabel box, can you verify that http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=139879 does no longer work?
+00:44 < pere> finnarne: you have to seed DNS with a localhost entry to check it.
+00:48 < finnarne> I have to enter localhost as a machine in /etc/bin/db.intern, install ncsd on ltspserver00, then do the test ? 
+00:48 < finnarne> pere: stockholm: I've added idletimeout to the slapd.conf: 
+00:48 < finnarne>                Specify  the  number  of  seconds  to  wait  before
+00:48 < finnarne>                forcibly closing an  idle  client  connections.   A
+00:48 < finnarne>                idletimeout   of  0  disables  this  feature.   The
+00:48 < finnarne>                default is 0.
+00:49 < stockholm> yes, that could help, too.
+00:49 < pere> finnarne: read and understand bug #190072 before you do this.
+00:52 < hendry> bed time. nn
+--- Log closed Wed Nov 19 00:52:28 2003
+--- Log opened Wed Nov 19 21:03:35 2003
+21:03 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #debian-edu
+21:03 -!- Irssi: #debian-edu: Total of 13 nicks [0 ops, 0 halfops, 0 voices, 13 normal]
+21:03 -!- Irssi: Join to #debian-edu was synced in 15 secs
+21:16 < stockholm> it is true: webmin does not sent a proper http header, but uses <meta ....> for content type. mozilla does not recognize that and will not display norwegian chars correctly.
+21:17 < stockholm> lets burn that pice of @'#+? really bad software.
+21:17 < stockholm> did i mention the warnings it generates all over the place?
+21:18 < stockholm> bah.
+21:32 < stockholm> ha. one can solve allmost all webmin problems by not using webmin. now i use CGI::Application for html-header generation and it works!
+21:44 < jbragnar> stockholm: is there a way i can get rid of a number of users in one go?
+21:49 -!- Fotokis [~Tommy@ti500710a140-0194.dialup.online.no] has joined #debian-edu
+22:08 -!- Fotokis [~Tommy@ti500710a140-0194.dialup.online.no] has quit ["Client Exiting"]
+--- Log closed Wed Nov 19 22:12:23 2003
+--- Log opened Sun Nov 23 17:07:21 2003
+17:07 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+17:07 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+17:07 -!- Irssi: Join to #debian-edu was synced in 15 secs
+17:11 < stockholm> mariusk: i ran into ACL issues, while creating the EditUserData page. i could skip those and come back to them later. then i just need to do the editGroupData page and we can have a beta
+17:11 < Barbarossa> what ACL issues?
+17:11 < Barbarossa> Could one help?
+17:12 < stockholm> Barbarossa: you could write a set of acls for ldap according to the mail i wrote to devel@s.n. (c:
+17:12 < Barbarossa> uff
+17:13 < stockholm> right. never done that before, either.
+17:13 < Barbarossa> let's talk about that later, I'm writing some kind of homework atm :)
+17:13 < stockholm> ok
+--- Log closed Sun Nov 23 17:31:21 2003
+--- Log opened Sun Nov 23 20:29:27 2003
+20:29 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+20:29 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+20:29 -!- Irssi: Join to #debian-edu was synced in 15 secs
+20:37 -!- vance_ [~vance@rn-re124c14.uwaterloo.ca] has joined #debian-edu
+20:39 -!- Fotokis [~Tommy@ti500710a001-0074.dialup.online.no] has joined #debian-edu
+20:49 -!- vance [~vance@rn-re124c14.uwaterloo.ca] has quit [Connection timed out]
+20:59 -!- Fotokis [~Tommy@ti500710a001-0074.dialup.online.no] has quit ["Client Exiting"]
+--- Log opened Mon Nov 24 20:22:51 2003
+20:22 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+20:22 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+20:23 -!- Irssi: Join to #debian-edu was synced in 15 secs
+20:39 < stockholm> hendry: you are from fi?
+20:39 < mariusk> stockholm: no, i think he studies there only
+20:39 < stockholm> dang, i need someone familiar with finnish schools.
+20:40 < mariusk> stockholm: linus :-)
+20:41 < stockholm> i talked to a debian developer in .fi. he said all those "internet off" and "login disabled" were not necessary there.
+20:41 < stockholm> mariusk: linus is a possibility, yes. but he does not irc. have his phone number?
+20:42 < hendry> stockholm: what do you need to know?
+20:43 < hendry> check out debian-fi for real Finnish peeps
+20:43 < hendry> #debian-fi
+20:44 < stockholm> yes, debian-fi is good.
+20:44 < Barbarossa> stockholm: noch bedraf ueber LDAP ACls zu reden?
+20:45 < stockholm> Barbarossa: ich habe sie erstmal auf eis gelegt, und will sie im nächsten durchgang einbauen und jetzt erstmal eine beta version rausbringen.
+20:45 < Barbarossa> ok
+20:45 < Barbarossa> wenns akut ist, meld Dich 
+20:45 < stockholm> Barbarossa: ich hoffe übermorgen oder so.
+20:45 < Barbarossa> evtl. per mail
+20:45 < stockholm> ok
+20:46 < Barbarossa> morgen hab ich Softwareentw.-vorlesung, da hab ich normalerweise Zeiz :)
+20:46 < stockholm> Barbarossa: hast du meine mail an devel gelesen?
+20:47 < Barbarossa> oehm
+20:47 < Barbarossa> les ich gleich nochmal genau
+21:07 < mariusk> Werner_: a little norweglish?: "on a moment of time that you will be able to choose very soon."
+21:08 < Werner_> mariusk: on one of the questions when installing the package?
+21:10 < mariusk> Werner_: debconf questions yes
+21:10 < mariusk> Werner_: why does it ask about local/extern again?
+21:10 < mariusk> Werner_: for setting up more than one client?
+21:12 < mariusk> Werner_: should I answer cancel to stop?
+21:13 < mariusk> Werner_: the other questions should also be proofread by a native english speaker
+21:14 < Werner_> mariusk: does it ask you the same questions more than once? and you're sure it isn't one for server and one for client?
+21:15 < Werner_> mariusk: I know my english is not too god... will fix that before trying to put them into Debian :)
+21:17 < mariusk> Werner_: at least I get this question for the second time: "What kind of backup server?", "The type you choose here, determines what kind of server slbackup will configure for you?" What does that mean?
+21:19 < mariusk> Werner_: your english is probably understandable (I am not sure, as it might contain some norwegian-like phrases that I understand), it's just what I expect when I read english
+21:21 < Werner_> mariusk: extern server is when you do not store the backups on the computer you are installing slbackup on...
+21:23 -!- pere is now known as pere_poff
+21:26 -!- Netsplit brunner.freenode.net <-> irc.freenode.net quits: lunaq_, mariusk
+21:28 -!- Netsplit over, joins: mariusk
+21:29 < mariusk> Werner_: hmm. They were not exactly identical. One question about backup client and another for server. Not easy to understand what to answer
+21:29 -!- lunaq [lunaq@zappa.halden.net] has joined #debian-edu
+21:30 -!- lunaq_ [lunaq@zappa.halden.net] has joined #debian-edu
+21:32 -!- lunaq_ [lunaq@zappa.halden.net] has quit [Read error: 54 (Connection reset by peer)]
+21:36 < Werner_> mariusk: hmm... maybe it's easier to understand the configuration file than the debconf-questions :)
+--- Log closed Mon Nov 24 21:56:22 2003
+--- Log opened Tue Nov 25 21:14:32 2003
+21:14 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+21:14 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+21:14 -!- Irssi: Join to #debian-edu was synced in 15 secs
+21:18 -!- perh_ [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+21:27 -!- pere is now known as pere_poff
+21:30 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit [Read error: 110 (Connection timed out)]
+22:38 < mariusk> stockholm: my way?
+22:38 < mariusk> stockholm: i was going to finish it now
+22:39 < mariusk> stockholm: he could proofread my traslation, although a native english speaker should do that (do we know any in SL? The "finnish" guy?)
+22:48 < mariusk> stockholm: saw your e-mail
+22:56 < mariusk> stockholm: is the guy here/#skolelinux?
+22:58 < Barbarossa> mariusk: no
+23:03 < stockholm> no, i dont think he does irc. he did not seem to. (c:
+23:04 < hendry> I am native English speaker btw
+23:08 < mariusk> hendry: do you have time to proofread english`
+23:08 < mariusk> ?
+23:08 < mariusk> hendry: you don't happen to understand german?
+23:09 < hendry> mariusk: I can proofread english
+23:09 < hendry> mariusk: mein deutsch ist nicht sehr gut
+23:09 < hendry> my mother is german. 
+23:10 < hendry> i don't know any grammar. can get the gist of most of it though
+23:12 < mariusk> hendry: i'm translating de->en. I understand the german (but my grammar isn't that good either), but my english might not be perfect
+23:14 < mariusk> hendry: do you understand any norwegian then (it is similar to german)?
+23:17 < hendry> mariusk: nope. I don't any Norwegian sorry.
+23:17 < hendry> mariusk: nope. I don't know any Norwegian sorry.
+23:26 < stockholm> mariusk, hendry: if you just UNDERSTAND the the german original that is more then enought.
+23:26 < stockholm> hendry: you have common sense, that helps a lot
+23:27 < mariusk> stockholm: that is no problem. The hard part for me is to write english.... A norwegian translation had been finished in half the time....
+23:28 < mariusk> stockholm: de<->no maps more directly than no,de<->en
+23:30 < mariusk> hendry, stockholm: what is Abholverzeichnis in english?
+23:31 < mariusk> we have the same in norwegian: utlevering- og inn(/av)leveringskataloger
+23:35 < stockholm> collection directory
+23:35 < stockholm> perhaps.
+23:36 < stockholm> mariusk: but seriously, if one can read a language, it is often good enought to translate FROM it.
+23:36 < stockholm> hendry: you should give it a shot
+23:36 < mariusk> stockholm: no that is Ablieferverzeichnis. the one to deliver stuff to the puils?
+23:37 < Barbarossa> yes
+23:37 < mariusk> stockholm: that was just what I said. but you should know the language you are tranlating TO well
+23:38 < stockholm> right.
+23:38 < mariusk> hendry: i'm nearly finished. Do you have time to proofread it?
+23:39  * mariusk just need to run a spellchecker first
+23:40 < mariusk> stockholm: I called that delivery directory. What about the opposite (Abholverzeichnis)?
+23:40 < Barbarossa> retreive dir?
+23:40 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
+23:42 < hendry> mariusk: I am to fall asleep
+23:42 < hendry> mariusk: I could do it tomorrow morning
+23:42 < mariusk> hendry: ok. could I e-mail it to you then?
+23:42 < hendry> mariusk: sure, hendry@cs.helsinki.fi
+23:43 < mariusk> hendry: think I have it signed :-)
+23:43 < Barbarossa> mariusk: I can read it too if you want
+23:43 < mariusk> Barbarossa: are you a native eng. speaker ? :-)
+23:44 < Barbarossa> no, nativ german speaker :)
+23:44 < mariusk> Barbarossa: that is not the same :-)
+23:44 < Barbarossa> ok
+--- Log closed Tue Nov 25 23:44:35 2003
+--- Log opened Wed Nov 26 22:11:57 2003
+22:11 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+22:11 -!- Irssi: #debian-edu: Total of 18 nicks [0 ops, 0 halfops, 0 voices, 18 normal]
+22:12 -!- Irssi: Join to #debian-edu was synced in 14 secs
+22:15 -!- Colargol [runesk@george.medisin.ntnu.no] has quit ["Client exiting"]
+--- Log closed Wed Nov 26 22:33:27 2003
+--- Log opened Fri Nov 28 22:49:22 2003
+22:49 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+22:49 -!- Irssi: #debian-edu: Total of 17 nicks [0 ops, 0 halfops, 0 voices, 17 normal]
+22:49 -!- Irssi: Join to #debian-edu was synced in 16 secs
+22:50 < pere> hi
+22:59 < hendry> moi
+22:59  * hendry feels guilty for not doing anything SkoleLinux this week
+23:03 < pere> hendry: how did the venture cup thing go?   When is the decision taken?
+23:05 < hendry> i don't think i will find out till later
+23:05 < hendry> but there is other stuff to look into
+--- Day changed Sat Nov 29 2003
+00:12 -!- pere is now known as pere_Zzzz
+--- Log closed Sat Nov 29 00:41:31 2003
+--- Log opened Sat Nov 29 14:20:53 2003
+14:20 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+14:20 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+14:21 -!- Irssi: Join to #debian-edu was synced in 15 secs
+14:35 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has quit ["out away"]
+14:46 -!- Fotokis [~Tommy@ti500710a001-0166.dialup.online.no] has joined #debian-edu
+15:13 -!- Fotokis [~Tommy@ti500710a001-0166.dialup.online.no] has quit [Read error: 60 (Operation timed out)]
+16:32 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+16:32 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit [Read error: 104 (Connection reset by peer)]
+--- Log opened Sat Nov 29 19:11:30 2003
+19:11 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+19:11 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+19:11 -!- Irssi: Join to #debian-edu was synced in 14 secs
+20:45 -!- perh [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+--- Log closed Sat Nov 29 23:44:26 2003
+--- Log opened Sun Nov 30 11:59:32 2003
+11:59 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+11:59 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+11:59 -!- Irssi: Join to #debian-edu was synced in 15 secs
+12:23 -!- josef_ [~josef@pD9E85C74.dip.t-dialin.net] has joined #debian-edu
+12:36 -!- josef [~josef@pD9E8786E.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+13:11 < mariusk> k4x: wie geht es mit dem qualitaetsarbeit?
+13:18 -!- josef_ is now known as josef
+13:30 < k4x> wir sind fleissig dabei!
+13:30 < k4x> es gibt noch kleine fehler im sgml ... bart ist am korrigieren
+13:30 < mariusk> k4x: ok. gut :-)
+13:31 < k4x> mariusk: version 1.01 is in work
+13:31 < k4x> priority today is a priority list of requirement od german teacher
+13:33 < stockholm> k4x:  and that with priorites, please 
+13:33 < k4x> yesterday our youngsters translated some debin debconf pofiles ;-)
+13:34 < k4x> hi andreas
+13:34 < k4x> ok, i get some respons from 30 teachers ...
+13:35 < k4x> i post the results today on devel list
+13:35 -!- stockholm [~andreas@petrus.schuldei.org] has quit [Remote closed the connection]
+14:19 -!- stockholm [~andreas@petrus.schuldei.org] has joined #debian-edu
+15:49 -!- pere [~pere@217-13-7-10.dd.nextgentel.com] has joined #debian-edu
+16:26 -!- Fotokis [~Tommy@ti500710a140-0451.dialup.online.no] has joined #debian-edu
+16:38 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+16:45 -!- Fotokis [~Tommy@ti500710a140-0451.dialup.online.no] has quit ["Client Exiting"]
+--- Log closed Sun Nov 30 16:55:39 2003
+--- Log opened Sun Nov 30 19:19:49 2003
+19:19 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+19:19 -!- Irssi: #debian-edu: Total of 18 nicks [0 ops, 0 halfops, 0 voices, 18 normal]
+19:20 -!- Irssi: Join to #debian-edu was synced in 15 secs
+19:37 -!- Fotokis [~Tommy@ti500710a000-0204.dialup.online.no] has joined #debian-edu
+19:38 -!- Jerazol [~Tommy@ti500710a011-0040.dialup.online.no] has joined #debian-edu
+19:39 -!- Jera [~Tommy@ti500710a001-0239.dialup.online.no] has joined #debian-edu
+19:49 -!- Fotokis [~Tommy@ti500710a000-0204.dialup.online.no] has quit [Read error: 60 (Operation timed out)]
+19:58 -!- Jera [~Tommy@ti500710a001-0239.dialup.online.no] has quit ["Client Exiting"]
+20:03 -!- Jerazol [~Tommy@ti500710a011-0040.dialup.online.no] has quit [Connection timed out]
+20:46 -!- Fotokis [~Tommy@ti500710a012-0074.dialup.online.no] has joined #debian-edu
+21:00 -!- Fotokis [~Tommy@ti500710a012-0074.dialup.online.no] has quit ["Client Exiting"]
+21:19 -!- perh_ [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+21:24 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit ["Client Exiting"]
+22:20 -!- Fotokis [~Tommy@ti500710a140-0355.dialup.online.no] has joined #debian-edu
+23:02 -!- Fotokis [~Tommy@ti500710a140-0355.dialup.online.no] has quit ["Client Exiting"]
+23:10 -!- perh_ [~perh@26.80-202-19.nextgentel.com] has quit [Read error: 60 (Operation timed out)]
+23:13 -!- perh_ [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+--- Day changed Mon Dec 01 2003
+00:07 -!- k4x [~k4x@dvmwest.gt.owl.de] has quit ["leaving"]
+00:09 -!- k4x [~k4x@dvmwest.gt.owl.de] has joined #debian-edu
+00:10 < pere> hi
+00:12 < Snoopey> tjenare
+--- Log closed Mon Dec 01 00:12:42 2003
+--- Log opened Mon Dec 01 20:22:29 2003
+20:22 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+20:22 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+20:22 -!- Irssi: Join to #debian-edu was synced in 14 secs
+20:32 -!- Jerazol [~Tommy@ti500710a140-0002.dialup.online.no] has joined #debian-edu
+20:38 -!- Fotokis [~Tommy@ti500710a002-0145.dialup.online.no] has quit [Read error: 60 (Operation timed out)]
+20:41 -!- Jerazol [~Tommy@ti500710a140-0002.dialup.online.no] has quit [Read error: 60 (Operation timed out)]
+21:23 -!- Jerazol [~Tommy@ti500710a002-0094.dialup.online.no] has joined #debian-edu
+21:26 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+21:43 -!- Jera [~Tommy@ti500710a001-0180.dialup.online.no] has joined #debian-edu
+22:04 -!- Jerazol [~Tommy@ti500710a002-0094.dialup.online.no] has quit [Read error: 110 (Connection timed out)]
+22:07 -!- Jera [~Tommy@ti500710a001-0180.dialup.online.no] has quit [Read error: 110 (Connection timed out)]
+22:26 -!- pere is now known as pere_poff
+--- Log closed Mon Dec 01 23:53:42 2003
+--- Log opened Tue Dec 02 18:51:45 2003
+18:51 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+18:51 -!- Irssi: #debian-edu: Total of 16 nicks [0 ops, 0 halfops, 0 voices, 16 normal]
+18:52 -!- Irssi: Join to #debian-edu was synced in 15 secs
+20:32 -!- Netsplit truong.freenode.net <-> irc.freenode.net quits: stockholm, Snoopey, perh, lunaq, lAphy, mariusk, klausAde, Barbarossa, Werner_, josef,  (+5 more, use /NETSPLIT to show all of them)
+20:41 -!- Netsplit over, joins: klausAde, k4x, josef, perh, buxy, finnarne, lunaq, Svenna, mariusk, stockholm (+5 more)
+21:50 -!- pere is now known as pere_poff
+22:08 -!- vance [~vance@rn-re124c14.uwaterloo.ca] has joined #debian-edu
+23:02 -!- Fotokis [~Tommy@ti500710a010-0175.dialup.online.no] has joined #debian-edu
+23:21 -!- Fotokis [~Tommy@ti500710a010-0175.dialup.online.no] has quit ["Client Exiting"]
+--- Day changed Wed Dec 03 2003
+00:06 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
+01:06 -!- finnarne is now known as faj_zzzz
+01:53 -!- perh [~perh@26.80-202-19.nextgentel.com] has quit ["Client Exiting"]
+--- Log closed Wed Dec 03 02:13:34 2003
+--- Log opened Wed Dec 03 23:05:19 2003
+23:05 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+23:05 -!- Irssi: #debian-edu: Total of 20 nicks [0 ops, 0 halfops, 0 voices, 20 normal]
+23:05 -!- Irssi: Join to #debian-edu was synced in 15 secs
+23:32 -!- Fotokis [~Tommy@ti500710a140-0095.dialup.online.no] has quit ["Client Exiting"]
+--- Day changed Thu Dec 04 2003
+00:08 -!- faj_away is now known as finnarne
+00:08 -!- finnarne changed the topic of #debian-edu to: http://debian.rfc3514.org || new kernels are availible in woody-test, see sl-bug #560
+00:24 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit ["Klienten avslutter"]
+--- Log closed Thu Dec 04 00:41:17 2003
+--- Log opened Thu Dec 04 19:43:00 2003
+19:43 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+19:43 -!- Irssi: #debian-edu: Total of 18 nicks [0 ops, 0 halfops, 0 voices, 18 normal]
+19:43 -!- Irssi: Join to #debian-edu was synced in 15 secs
+20:00 -!- Fotokis [~Tommy@ti500710a010-0047.dialup.online.no] has quit ["Client Exiting"]
+21:40 -!- faj_away is now known as finnarne
+--- Log closed Thu Dec 04 22:25:09 2003
+--- Log opened Sat Dec 06 09:09:08 2003
+09:09 -!- hendry [~hendry@cs180011.pp.htv.fi] has joined #debian-edu
+09:09 -!- Irssi: #debian-edu: Total of 15 nicks [0 ops, 0 halfops, 0 voices, 15 normal]
+09:09 -!- Irssi: Join to #debian-edu was synced in 14 secs
+10:26 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has joined #debian-edu
+10:27 < Werner_> pere_Zzzz: checkbot did only use one hour tonight :)
+10:29 -!- pere_Zzzz is now known as pere
+10:29 < pere> Werner_: yes. :)
+10:29 < pere> and the web stats seem to be limping along.
+10:35 < Werner_> pere: I see... is there any statistical reason for splitting skolelinux.no and skulelinux.no?
+10:36 < Werner_> and the same question for d.sko.. d.sku, sko..ping, sku..ping?
+10:36 < pere> Werner_: no.  
+10:37 < pere> it is just the web server making separate log files.
+10:37 < Werner_> pere: I'm trying to make a clean-up in the virtualhost-part of the web-server and post to drift... 
+10:37 < Werner_> s/post/mail/
+11:08 < pere> Werner_: quite a few bad links in the signpost.
+11:08 < pere> Werner_: and someone need to teach arnt that all directory urls need a trailing slash (/).
+11:09 < Werner_> pere: you are looking athttp://d.skolelinux.no/checkbot/checkbot-www.skolelinux.no.html?
+11:09 < Werner_> pere: yes, I noticed :) I'll confront him with it tonight...
+11:35 -!- perh [~perh@26.80-202-19.nextgentel.com] has joined #debian-edu
+11:41 < pere> Werner_: yes, I am looking at the checkbot report.  Everey link to directory foo is redirected to foo/, and this slow down the URL resolution.
+11:51 < Werner_> pere: I'll try to fix that... but I don't agree that there was _so_ many dead links..?
+11:51 < pere> Compared to the total number of links, no it wasn't that bad. :)
+11:53 < pere> But I am glad that we got checkbot working on it, to detect them.
+11:54 < Werner_> pere: I agree... and I'll follow up the dead links in linux-signpost/...
+12:07 < pere> New passwd package in woody-test, ready for testing.  It is a backport of the current Sid version.
+12:07 < slragnar> Werner_: i'm here for a minute

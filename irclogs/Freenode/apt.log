@@ -1,0 +1,34 @@
+--- Log opened Sat Apr 12 21:23:44 2003
+21:23 -!- Irssi: Starting query in Freenode with apt
+21:23 <hendry> news
+21:23 <apt> |==== News for #debian: (1 items)
+21:23 <apt> |= Last updated 2d 6h 1m 27s ago.
+21:23 <apt>  Num  Item                                          
+21:23 <apt> [ 1]* DMCA sends modchip manufacturer to jail
+21:23 <apt> |= End of News.
+21:23 <apt> use 'news read <#>' or 'news read <keyword>'
+21:23 <hendry> news read 1
+21:23 -apt(apt@LAIN.CHEME.cmu.edu)- +- News #debian #1: DMCA sends modchip manufacturer to jail
+21:23 -apt(apt@LAIN.CHEME.cmu.edu)- | Added by greycat at Thu Apr 10 08:25:05 2003
+21:23 -apt(apt@LAIN.CHEME.cmu.edu)- | Expire: Thu Apr 17 08:25:05 2003  [4d 17h 58m 20s from now]
+21:23 -apt(apt@LAIN.CHEME.cmu.edu)- see <http://www.theregister.com/content/54/30165.html> and boycott your friendly neighborhood fascist
+21:23 -apt(apt@LAIN.CHEME.cmu.edu)- | Requested 32 times, last by yomismo
+--- Log closed Sat Apr 12 21:29:26 2003
+--- Log opened Sun Sep 21 17:51:40 2003
+17:51 -!- Irssi: Starting query in Freenode with apt
+17:51 <hendry> news
+17:51 <apt> |==== News for #debian: (4 items)
+17:51 <apt> |= Last updated 1h 47m 1s ago.
+17:51 <apt>  Num  Item                                          
+17:51 <apt> [ 1]* Fixed ssh for woody (3.4p1-1.1) and sid (3.6.1p2-6.0)
+17:51 <apt> [ 2]* reportbug is broken
+17:51 <apt> [ 3]* Fixed ssh for woody (3.4p1-1.woody.2) and sid (3.6.1p2-8)
+17:51 <apt> [ 4]* KDE is broken in Sid, has been for 15 days.
+17:51 <apt> |= End of News.
+17:51 <apt> use 'news read <#>' or 'news read <keyword>'
+--- Log closed Sun Sep 21 17:56:48 2003
+--- Log opened Sat Nov 01 15:33:22 2003
+15:33 -!- Irssi: Starting query in Freenode with apt
+15:33 <hendry> news
+15:33 <hendry> help
+--- Log closed Sat Nov 01 15:39:24 2003

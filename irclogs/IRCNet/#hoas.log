@@ -1,0 +1,397 @@
+--- Log opened Mon Mar 03 19:46:05 2003
+19:46 -!- hendry [~hendry@hoas-50dd010e.hoasnet.inet.fi] has joined #hoas
+19:46 -!- Irssi: #hoas: Total of 24 nicks [13 ops, 0 halfops, 0 voices, 11 normal]
+19:46 -!- Irssi: Join to #hoas was synced in 1 secs
+20:10 -!- llaura [s_someone_@hoas-50dd0925.hoasnet.inet.fi] has joined #hoas
+20:59 -!- llaura [s_someone_@hoas-50dd0925.hoasnet.inet.fi] has quit [Connection reset by peer]
+21:48 -!- zomeone [zomeone@hoas-50dd011d.hoasnet.inet.fi] has quit []
+22:00 -!- Quarterbr is now known as QBAway
+22:15 -!- QBAway [Infinity@hoas-50dd0d1a.hoasnet.inet.fi] has quit [exit]
+22:18 -!- ofnok [ofnok@hki2-4-4-c7.hoasnet.inet.fi] has joined #hoas
+22:25 -!- QBAway [Infinity@hoas-50dd05ea.hoasnet.inet.fi] has joined #hoas
+22:25 -!- mode/#hoas [+o QBAway] by kaermes
+23:17 -!- ofnok [ofnok@hki2-4-4-c7.hoasnet.inet.fi] has quit [mmmmmmm]
+--- Log closed Tue Mar 04 00:06:19 2003
+--- Log opened Sat Apr 12 21:19:28 2003
+21:19 -!- hendry [~hendry@hoas-50dd09d9.hoasnet.inet.fi] has joined #hoas
+21:19 -!- Irssi: #hoas: Total of 21 nicks [14 ops, 0 halfops, 0 voices, 7 normal]
+21:19 -!- Irssi: Join to #hoas was synced in 0 secs
+21:19 < hendry> QBAway: lan party?
+--- Log closed Sat Apr 12 21:23:33 2003
+--- Log opened Wed Apr 16 17:33:48 2003
+17:33 -!- hendry [~hendry@hoas-50dd02ac.hoasnet.inet.fi] has joined #hoas
+17:33 -!- Irssi: #hoas: Total of 19 nicks [10 ops, 0 halfops, 0 voices, 9 normal]
+17:33 -!- Irssi: Join to #hoas was synced in 1 secs
+17:34 < hendry> Quarterbr: simo?
+17:34 < hendry> I need some help with an English->Finnish translation. Anyone want to help? :)
+17:36 -!- Kompo [~kimmo@jt1ba-331.tky.hut.fi] has left #hoas [Kompo]
+17:39 -!- mode/#hoas [+ooo hekkuli_ hendry mabalmi] by Quarterbr
+17:42 <@zillo> just say the word ;)
+17:43 < omo> hmm..
+17:45 <@hendry> i wanted to know the verb of emailing / mailing someone
+17:46 <@hendry> vastaa I used in the end
+17:47 < omo> that's a difficult word, since most finns use "mailata" but if it were something more official... would have to know the context
+17:48 <@zillo> hendry: can you say the whole thing?
+17:49 <@Quarterbr> it was best to go around that mailing thing :)
+17:49 <@zillo> write email == kirjoittaa s‰hkˆpostia
+17:49 <@Quarterbr> Miksi vastasit suomeksi kun kirjoitin englanniksi alunperin
+17:55 -!- TheShadow [~Death@hki1-4-4-0b.hoasnet.inet.fi] has quit [Ping timeout]
+17:55 -!- Zhadum [~Death@hki1-4-4-0b.hoasnet.inet.fi] has joined #hoas
+18:10 -!- omo [olli.oja@hoas-50dd04fc.hoasnet.inet.fi] has quit [poispois]
+18:38 -!- YurZa [~glass@hoas-50dd0dc1.hoasnet.inet.fi] has joined #hoas
+18:39 <@Daedalon> Myyk‰‰s joku mulle TW-EA701.
+19:17 <@Quarterbr> what is
+19:29 <@hendry> http://www.iraqometer.com/
+--- Log closed Wed Apr 16 20:05:33 2003
+--- Log opened Wed Apr 16 20:06:25 2003
+20:06 -!- hendry [~hendry@hoas-50dd02ac.hoasnet.inet.fi] has joined #hoas
+20:06 -!- Irssi: #hoas: Total of 18 nicks [11 ops, 0 halfops, 0 voices, 7 normal]
+20:06 -!- Irssi: Join to #hoas was synced in 1 secs
+20:18 -!- llaura [llaura@hoas-50dd017c.hoasnet.inet.fi] has left #hoas [llaura]
+--- Log closed Wed Apr 16 20:29:59 2003
+--- Log opened Wed Apr 16 20:30:50 2003
+20:30 -!- hendry [~hendry@hoas-50dd02ac.hoasnet.inet.fi] has joined #hoas
+20:30 -!- Irssi: #hoas: Total of 17 nicks [11 ops, 0 halfops, 0 voices, 6 normal]
+20:30 -!- Irssi: Join to #hoas was synced in 1 secs
+20:32 -!- mode/#hoas [+oo Cousteau hendry] by Quarterbr
+20:38 -!- Quarterbr [Infinity@hoas-50dd082a.hoasnet.inet.fi] has quit [boot]
+20:43 -!- Quarterbr [Infinity@hoas-50dd0d09.hoasnet.inet.fi] has joined #hoas
+20:43 -!- mode/#hoas [+o Quarterbr] by kaermes
+21:19 -!- YurZa [~glass@hoas-50dd0dc1.hoasnet.inet.fi] has quit [Connection timed out]
+21:25 -!- YurZa [~glass@hoas-50dd0dc1.hoasnet.inet.fi] has joined #hoas
+21:46 <@hendry> Quarterbr: moo
+22:56 -!- gerard- [~basta7d@hoas-50dd050d.hoasnet.inet.fi] has joined #hoas
+22:57 -!- gerard- [~basta7d@hoas-50dd050d.hoasnet.inet.fi] has left #hoas [gerard-]
+23:09 -!- Netsplit irc.cc.tut.fi <-> irc.saunalahti.fi quits: @zillo
+23:09 -!- Quarterbr [Infinity@hoas-50dd0d09.hoasnet.inet.fi] has quit [Ping timeout]
+23:10 -!- YurZa [~glass@hoas-50dd0dc1.hoasnet.inet.fi] has quit [Connection reset by peer]
+--- Log closed Wed Apr 16 23:10:49 2003
+--- Log opened Wed Apr 16 23:12:19 2003
+23:12 -!- hendry [~hendry@hoas-50dd02ac.hoasnet.inet.fi] has joined #hoas
+23:12 -!- Irssi: #hoas: Total of 17 nicks [12 ops, 0 halfops, 0 voices, 5 normal]
+23:12 -!- Irssi: Join to #hoas was synced in 1 secs
+--- Log closed Thu Apr 17 00:37:54 2003
+--- Log opened Wed Apr 23 11:08:56 2003
+11:08 -!- hendry [~hendry@hoas-50dd08f1.hoasnet.inet.fi] has joined #hoas
+11:08 -!- Irssi: #hoas: Total of 20 nicks [14 ops, 0 halfops, 0 voices, 6 normal]
+11:08 -!- Irssi: Join to #hoas was synced in 1 secs
+11:19 -!- skks [sakkeus@nine-inch.nailed.org] has quit [Ping timeout]
+11:24 -!- skks [sakkeus@194.100.129.89] has joined #hoas
+12:48 -!- Daedalon [daedalon@reactorbox.org] has quit [Reconnecting]
+12:48 -!- Daedalon [daedalon@daenet.org] has joined #HOAS
+12:48 -!- Discus2 [Discus2@hoas-50dd075a.hoasnet.inet.fi] has joined #hoas
+12:48 -!- mode/#hoas [+o Daedalon] by kaermes
+13:24 -!- Discus2 [Discus2@hoas-50dd075a.hoasnet.inet.fi] has quit [Ping timeout]
+13:35 -!- IreneH [~IreneH@hoas-50dd0cc8.hoasnet.inet.fi] has joined #hoas
+13:36 -!- mode/#hoas [+o IreneH] by kaermes
+15:05 -!- Anssi_ [~batman@hoas-50dd053d.hoasnet.inet.fi] has joined #hoas
+15:13 -!- Anssi_ [~batman@hoas-50dd053d.hoasnet.inet.fi] has left #hoas [Anssi_]
+15:32 -!- M-J [~M-J@hoas-50dd0408.hoasnet.inet.fi] has joined #hoas
+15:34 -!- Peterpan_ [+PeterPan@hoas-50dd0cbf.hoasnet.inet.fi] has joined #hoas
+15:40 -!- QBAway is now known as Quarterbr
+16:02 -!- Netsplit *.hut.fi <-> irc.opoy.fi quits: htp
+16:09 -!- Peterpan_ [+PeterPan@hoas-50dd0cbf.hoasnet.inet.fi] has quit [Ping timeout]
+16:14 -!- Netsplit over, joins: htp
+16:18 -!- Netsplit *.hut.fi <-> irc.opoy.fi quits: htp
+16:29 -!- Netsplit over, joins: htp
+16:45 -!- Netsplit *.hut.fi <-> irc.opoy.fi quits: htp
+16:54 -!- Netsplit over, joins: htp
+16:58 -!- llaura [llaura@hoas-50dd0148.hoasnet.inet.fi] has joined #hoas
+17:02 -!- Netsplit *.belnet.be <-> *.irc6.net quits: @hekkunysv
+17:04 -!- Netsplit over, joins: @hekkunysv
+--- Log closed Wed Apr 23 17:22:58 2003
+--- Log opened Wed Apr 23 17:24:33 2003
+17:24 -!- hendry [~hendry@hoas-50dd08f1.hoasnet.inet.fi] has joined #hoas
+17:24 -!- Irssi: #hoas: Total of 7 nicks [4 ops, 0 halfops, 0 voices, 3 normal]
+17:24 -!- Irssi: Join to #hoas was synced in 2 secs
+17:32 -!- hkkl [hekkuli@leningrad.hekkuli.org] has joined #hoas
+17:32 -!- kaermes [hekkuli@hki1-4-1-aa.hoasnet.inet.fi] has joined #hoas
+17:32 -!- TheShadow [~Death@hki1-4-1-53.hoasnet.inet.fi] has joined #hoas
+17:32 -!- Cousteau [Cousteau@hoas-50dd0cf2.hoasnet.inet.fi] has joined #hoas
+17:32 -!- ServerMode/#hoas [+ooo hkkl kaermes Cousteau] by *.hut.fi
+17:32 -!- mabalmi [Mabalmi@hki1-1-1-e4.hoasnet.inet.fi] has joined #hoas
+17:32 -!- Sathamoth [~Satha@hoas-50dd0335.hoasnet.inet.fi] has joined #hoas
+17:32 -!- ofnok [~ofnok@hki2-4-4-c7.hoasnet.inet.fi] has joined #hoas
+17:32 -!- Quarterbr [Infinity@hoas-50dd0c7c.hoasnet.inet.fi] has joined #hoas
+17:32 -!- omo [olli.oja@hoas-50dd07e6.hoasnet.inet.fi] has joined #hoas
+17:32 -!- ServerMode/#hoas [+ooo mabalmi Quarterbr omo] by *.hut.fi
+17:32 -!- IreneH [~IreneH@hoas-50dd0cc8.hoasnet.inet.fi] has joined #hoas
+17:32 -!- M-J [~M-J@hoas-50dd0408.hoasnet.inet.fi] has joined #hoas
+17:32 -!- hekkunysv [hekkuli@hekkuli.nysv.org] has joined #hoas
+17:32 -!- htp [^han_@jet.suomi.net] has joined #hoas
+17:32 -!- hekkuli_ [k0101564@tamagoch.evtek.fi] has joined #hoas
+17:32 -!- ServerMode/#hoas [+ooo IreneH hekkunysv hekkuli_] by *.hut.fi
+17:44 -!- IreneH [~IreneH@hoas-50dd0cc8.hoasnet.inet.fi] has quit [Ping timeout]
+18:16 -!- Discus2 [Discus2@hoas-50dd075a.hoasnet.inet.fi] has joined #hoas
+18:16 -!- Discus2 [Discus2@hoas-50dd075a.hoasnet.inet.fi] has quit [Connection reset by peer]
+18:44 -!- skks [sakkeus@194.100.129.89] has quit [Lost terminal]
+18:45 -!- skks [sakkeus@nine-inch.nailed.org] has joined #hoas
+18:45 -!- mode/#hoas [+o skks] by kaermes
+19:22 -!- YurZa [~glass@hoas-50dd0cca.hoasnet.inet.fi] has joined #hoas
+19:53 -!- Quarterbr [Infinity@hoas-50dd0c7c.hoasnet.inet.fi] has quit [Connection reset by peer]
+20:18 -!- Quarterbr [Infinity@hoas-50dd09a4.hoasnet.inet.fi] has joined #hoas
+20:18 -!- mode/#hoas [+o Quarterbr] by kaermes
+--- Log opened Wed Apr 30 13:58:11 2003
+13:58 -!- hendry [~hendry@hoas-50dd0808.hoasnet.inet.fi] has joined #hoas
+13:58 -!- Irssi: #hoas: Total of 20 nicks [13 ops, 0 halfops, 0 voices, 7 normal]
+13:58 -!- Irssi: Join to #hoas was synced in 1 secs
+14:10 -!- omo [olli.oja@hoas-50dd007a.hoasnet.inet.fi] has quit [Ping timeout]
+14:15 -!- Quart [Infinity@hoas-50dd07ed.hoasnet.inet.fi] has joined #hoas
+14:15 -!- mode/#hoas [+o Quart] by kaermes
+14:17 -!- mode/#hoas [+o Quart] by QBScreen
+14:18 -!- Quarterbr [Infinity@hoas-50dd04d6.hoasnet.inet.fi] has quit [Ping timeout]
+14:20 -!- Quart is now known as Quarterbr
+14:34 -!- Netsplit *.hut.fi <-> irc.opoy.fi quits: htp
+14:44 -!- Netsplit over, joins: htp
+15:36 -!- llaura [llaura@hoas-50dd04a9.hoasnet.inet.fi] has joined #hoas
+15:42 -!- glaSS [~glass@hoas-50dd0cca.hoasnet.inet.fi] has quit [( www.nnscript.de :: NoNameScript 3.7 :: www.XLhost]
+15:43 -!- glaSS [~glass@hoas-50dd0cca.hoasnet.inet.fi] has joined #hoas
+18:53 -!- IreneH [~IreneH@hoas-50dd0d98.hoasnet.inet.fi] has joined #hoas
+18:53 -!- mode/#hoas [+o IreneH] by kaermes
+18:53 <@pelti> perkelesaatanavittujumalautahelvetintakatukkatsekitperkeleenvitutsaatanat
+18:56 <@IreneH> joo iloista vappua vaan itse kullekin
+18:57 <@pelti> jei.
+18:57 <@pelti> onneksi jotain positiivista.
+18:57 <@pelti> ja v‰h‰n parani olo kun k‰vi virkist‰v‰ss‰ viile‰ss‰ suihkussa
+18:58 <@IreneH> t‰‰ll‰ on niin perkeleen kylm‰ ett‰ m‰ k‰vin tulikuumassa suihkussa ett‰ varpaat sulais
+18:58 <@IreneH> kauniisti aurinko paistaa, aika hieno juttu.
+18:59 <@pelti> ja on muuten aika kuumaa paahdetta
+18:59 <@pelti> k‰vin ‰sken parvekkeella istuskelemassa, oli pakko tulla kuumuuden takia takas sis‰‰n.
+18:59 <@pelti> arska kun paahtaa suoraan parvekkeelle
+18:59 <@IreneH> ‰l‰h‰n nyt liiottele, vai onko sulla jotku parvekelasit
+19:00 <@pelti> ei
+19:00 <@pelti> muttei tuule laisinkaan
+19:13 <@IreneH> kyll‰ on huonosti mulla asiat, molemmat vanhemmat on sairaalassa :)
+19:28 <@pelti> auts
+19:28 <@pelti> vai onko ne moikkaamassa jotain kenties :)
+19:28 < ofnok> m‰ oon kohta sairaalassa t‰t‰ menoa :)
+19:29 <@pelti> hopihopi. lis‰‰ viunaa. silm‰t liikkuu viel‰
+19:29 < ofnok> ei liiku :D
+19:29 <@pelti> no sormet liikkuu
+19:29 <@pelti> siin‰ riitt‰v‰ syy
+19:30 < ofnok> no pit‰‰ ottaa pirtua v‰h‰
+19:30 <@pelti> aeh.
+19:30 <@pelti> se on ik‰v‰‰ viunaa. menee mulla _aina_ jalkoihin
+19:30 <@pelti> j‰rki pelaa mutta jalat ei vie en‰‰ kun pirtua nieleskelen
+19:30 < ofnok> heh mulla ei k‰y ollenka jalkoihin
+19:31 < ofnok> muisti menee aina mutta muuten ei mit‰‰n vaikutusta
+19:31 <@pelti> no seh‰n ei haittaa.
+19:31 <@pelti> kun menee kunnolla muisti niin ei ole syyt‰ morkkikseenkaan :)
+19:32 < ofnok> ei oo joo-o, krapulakaan ei oo p‰‰ssy viel‰ kertaakaa yll‰tt‰m‰‰ ku on pirtua ottanu
+19:32 < ofnok> t‰ll‰kin hetkell‰ kuningasjuomaa 1.5l tos hyllyl =)
+19:36 -!- mabalmi [Mabalmi@hki1-1-1-e4.hoasnet.inet.fi] has quit []
+19:36 -!- mabalmi [Mabalmi@hki1-1-1-e4.hoasnet.inet.fi] has joined #hoas
+19:40 <@skks> ei jallua tule 1,5l pulloissa
+19:49 < ofnok> kuka mit‰‰ vitu paskaa jallua joiskaan
+19:49 <@pelti> jallu rokkaa :)
+19:49 <@pelti> 3 t‰hte‰ se olla pit‰‰
+19:49 <@pelti> onkos skks l‰hdˆss‰ kylille viel‰ t‰n‰‰n?
+19:50 <@skks> * Jallu on parempaa kun *** Jallu
+19:50 <@pelti> nojaa... :)
+19:50 <@skks> emm‰ kyll‰ o miettiny kylillel‰htˆ‰
+19:50 <@skks> otin kyll‰ housutkin jo pois
+19:50 <@pelti> makuasioista on turha nusasta pilkkua :)
+19:50 <@pelti> ei mullakaan ole enemp‰‰ kuin kylpytakki p‰‰ll‰ :)
+19:50 <@skks> mut jos jostain lˆytyy meininki‰ niin ehk‰ vois harkita
+19:50 <@pelti> mukavan vilposet oltavat alakerrassa
+19:51 <@pelti> no evtek:in rasti on tokoinrannassa
+19:51 < ofnok> no mut ottaa pirtua ni ei tarvi makuasioista kiistell‰ =)
+19:51 <@pelti> jos on helsmanniin menossa
+19:51 <@skks> mulle on ihan sama periaattessa, emm‰ kyll‰ ollu aamulla miss‰‰n puistoissa palelemassa
+19:51 <@skks> mit‰s meininki‰ siell‰ sitten olis?
+19:51 <@pelti> no jotain rastia ne siell‰ vet‰‰
+19:52 <@pelti> en oo itsek‰‰n viel‰ p‰‰tt‰ny l‰hdenkˆ.
+19:52 <@pelti> kovasti vaan kaveri sielt‰ soitteli ja koitti ehdotella
+20:14 -!- artnay [bluesky@hki2-6-1-a5.hoasnet.inet.fi] has quit [Biofeedback.]
+20:20 <@zillo> hkkl: isoveljess‰ jotain h‰ikk‰‰?
+20:20 <@zillo> domain forwardi ei ainanakaan skulaa
+22:45 -!- omo [olli.oja@hoas-50dd020c.hoasnet.inet.fi] has joined #hoas
+--- Day changed Thu May 01 2003
+00:05 <@skks> hups, oksensin tennispalatsin williamkoohon
+00:14 < Sathamoth> jes.
+00:46 -!- IreneH [~IreneH@hoas-50dd0d98.hoasnet.inet.fi] has quit [Connection reset by peer]
+01:22 -!- Sathamoth [~Satha@hoas-50dd0335.hoasnet.inet.fi] has quit [Ping timeout]
+01:24 -!- Sathamoth [~Satha@hoas-50dd0335.hoasnet.inet.fi] has joined #hoas
+--- Log opened Mon Jun 16 19:00:28 2003
+19:00 -!- hendry [~hendry@hoas-50dd0865.hoasnet.inet.fi] has joined #hoas
+19:00 -!- Irssi: #hoas: Total of 18 nicks [6 ops, 0 halfops, 0 voices, 12 normal]
+19:00 -!- Irssi: Join to #hoas was synced in 6 secs
+19:00 -!- IreneH [~IreneH@hoas-50dd00bc.hoasnet.inet.fi] has joined #hoas
+19:28 -!- TheShadow [~Death@hki1-4-4-0b.hoasnet.inet.fi] has quit [Ping timeout]
+19:43 -!- QBAway is now known as Quarterbr
+20:11 -!- Gkml_ [joni@nubilus.decet.fi] has joined #hoas
+20:22 -!- Kyberias [-jaakko@hoas-50dd0992.hoasnet.inet.fi] has joined #hoas
+20:22 < Kyberias> kotkotkot
+20:23 <@hkkl> kitkat
+20:31 < Kyberias> kato irene taas t‰‰ll‰
+20:41 <@Quarterbr> irenekaktus
+20:41 -!- mode/#hoas [+ooo hendry IreneH Kyberias] by Quarterbr
+20:41 -!- mode/#hoas [+ooo Gkml Gkml_ hekkuli_] by Quarterbr
+20:57 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has quit [www.aanet.tk]
+20:59 -!- kaermes [hekkuli@hki1-4-4-69.hoasnet.inet.fi] has joined #hoas
+20:59 -!- mode/#hoas [+o kaermes] by hkkl
+20:59 -!- mode/#hoas [+oo Blob pelti] by kaermes
+21:36 -!- IreneH [~IreneH@hoas-50dd00bc.hoasnet.inet.fi] has quit []
+22:53 -!- Quarterbr is now known as QBAway
+23:45 -!- Kyberias [-jaakko@hoas-50dd0992.hoasnet.inet.fi] has quit [Connection reset by peer]
+23:49 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has quit [Ping timeout]
+23:50 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has joined #hoas
+--- Day changed Tue Jun 17 2003
+00:08 -!- Gkml_ [joni@nubilus.decet.fi] has quit [nuqn]
+00:25 -!- TheShadow [~Death@hki1-4-4-0b.hoasnet.inet.fi] has joined #hoas
+--- Log closed Tue Jun 17 00:29:30 2003
+--- Log opened Fri Jun 20 21:18:30 2003
+21:18 -!- hendry [~hendry@hoas-50dd0851.hoasnet.inet.fi] has joined #hoas
+21:18 -!- Irssi: #hoas: Total of 18 nicks [10 ops, 0 halfops, 0 voices, 8 normal]
+21:18 -!- Irssi: Join to #hoas was synced in 5 secs
+--- Log closed Fri Jun 20 22:51:09 2003
+--- Log opened Sat Jun 21 14:10:06 2003
+14:10 -!- hendry [~hendry@hoas-50dd080f.hoasnet.inet.fi] has joined #hoas
+14:10 -!- Irssi: #hoas: Total of 17 nicks [9 ops, 0 halfops, 0 voices, 8 normal]
+14:10 -!- Irssi: Join to #hoas was synced in 1 secs
+14:10 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has joined #hoas
+14:11 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has quit [Connection reset by peer]
+14:13 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has joined #hoas
+14:16 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has quit [Ping timeout]
+15:10 -!- BlackGhou [BlackGhou@ua212d96.elisa.omakaista.fi] has joined #hoas
+15:42 -!- Gkml [joni@nubilus.decet.fi] has quit [leaving]
+--- Log closed Sat Jun 21 15:51:35 2003
+--- Log opened Sat Jun 21 19:18:22 2003
+19:18 -!- hendry [~hendry@hoas-50dd0871.hoasnet.inet.fi] has joined #hoas
+19:18 -!- Irssi: #hoas: Total of 16 nicks [8 ops, 0 halfops, 0 voices, 8 normal]
+19:18 -!- Irssi: Join to #hoas was synced in 2 secs
+19:21 -!- htp [^han_@jet.suomi.net] has joined #hoas
+19:21 -!- ServerMode/#hoas [+o htp] by *.hut.fi
+19:21 -!- hekkuli_ [k0101564@tamagoch.evtek.fi] has joined #hoas
+--- Log closed Sat Jun 21 19:33:28 2003
+--- Log opened Sun Jun 29 14:31:51 2003
+14:31 -!- hendry [~hendry@hoas-50dd084a.hoasnet.inet.fi] has joined #hoas
+14:31 -!- Irssi: #hoas: Total of 19 nicks [11 ops, 0 halfops, 0 voices, 8 normal]
+14:31 -!- Irssi: Join to #hoas was synced in 2 secs
+14:34 < hendry> Quarterbr: moo
+15:54 -!- IreneH [~IreneH@hoas-50dd00a3.hoasnet.inet.fi] has joined #hoas
+15:55 -!- mode/#hoas [+o IreneH] by kaermes
+16:31 -!- Kyberias [-jaakko@hoas-50dd094e.hoasnet.inet.fi] has joined #hoas
+16:31 -!- mode/#hoas [+o Kyberias] by kaermes
+--- Log closed Sun Jun 29 17:16:09 2003
+--- Log opened Mon Jun 30 18:28:37 2003
+18:28 -!- hendry [~hendry@hoas-50dd09d4.hoasnet.inet.fi] has joined #hoas
+18:28 -!- Irssi: #hoas: Total of 20 nicks [10 ops, 0 halfops, 0 voices, 10 normal]
+18:28 -!- Irssi: Join to #hoas was synced in 1 secs
+18:39 -!- IreneH [~IreneH@hoas-50dd0903.hoasnet.inet.fi] has quit []
+19:16 -!- Netsplit *.tut.fi <-> *.at quits: zillo
+19:37 -!- Netsplit over, joins: zillo
+21:28 -!- Netsplit *.hut.fi <-> irc.opoy.fi quits: @htp
+21:37 -!- Netsplit over, joins: @htp
+21:37 -!- YurZa [~glass@hoas-50dd0994.hoasnet.inet.fi] has quit [Connection timed out]
+21:39 -!- YurZa [~glass@hoas-50dd0994.hoasnet.inet.fi] has joined #hoas
+21:46 -!- Netsplit *.tut.fi <-> irc.opoy.fi quits: @htp
+21:52 -!- Netsplit over, joins: @htp
+22:42 -!- mode/#hoas [+ooo hendry suski_ zomeone] by Quarterbr
+--- Log opened Thu Jul 03 23:55:15 2003
+23:55 -!- hendry [~hendry@hoas-50dd0810.hoasnet.inet.fi] has joined #hoas
+23:55 -!- Irssi: #hoas: Total of 16 nicks [8 ops, 0 halfops, 0 voices, 8 normal]
+23:55 -!- Irssi: Join to #hoas was synced in 2 secs
+--- Log closed Thu Jul 03 23:57:45 2003
+--- Log opened Sun Jul 06 15:34:29 2003
+15:34 -!- hendry [~hendry@hoas-50dd098b.hoasnet.inet.fi] has joined #hoas
+15:34 -!- Irssi: #hoas: Total of 15 nicks [8 ops, 0 halfops, 0 voices, 7 normal]
+15:34 -!- Irssi: Join to #hoas was synced in 3 secs
+15:56 -!- Quart [Infinity@hoas-50dd00ec.hoasnet.inet.fi] has joined #hoas
+15:56 -!- mode/#hoas [+o Quart] by Cousteau
+15:58 -!- Quarterbr [Infinity@hoas-50dd00ec.hoasnet.inet.fi] has quit [Ping timeout]
+16:45 < Sathamot1> viel‰ks ne lanit on menossa ;P
+16:45 < Sathamot1> prkl ku v‰h‰ ven‰hti
+--- Log closed Sun Jul 06 17:12:17 2003
+--- Log opened Sun Jul 06 17:13:26 2003
+17:13 -!- hendry [~hendry@hoas-50dd098b.hoasnet.inet.fi] has joined #hoas
+17:13 -!- Irssi: #hoas: Total of 15 nicks [8 ops, 0 halfops, 0 voices, 7 normal]
+17:13 -!- Irssi: Join to #hoas was synced in 1 secs
+17:20 -!- zillo [zillo@kumikameli.net] has joined #hoas
+19:16 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has quit [P=UI m U=RI]
+19:21 -!- Sathamot1 [~Satha@hoas-50dd081e.hoasnet.inet.fi] has quit [Ping timeout]
+19:42 -!- RiikkaL [Kyberias@hoas-50dd096f.hoasnet.inet.fi] has joined #hoas
+20:04 -!- IreneH [~IreneH@hoas-50dd0974.hoasnet.inet.fi] has quit []
+20:28 -!- Sathamoth [~Satha@hoas-50dd004a.hoasnet.inet.fi] has joined #hoas
+--- Log closed Sun Jul 06 21:03:14 2003
+--- Log opened Mon Aug 04 17:48:23 2003
+17:48 -!- hendry [~hendry@hoas-50dd002f.hoasnet.inet.fi] has joined #hoas
+17:48 -!- Irssi: #hoas: Total of 13 nicks [7 ops, 0 halfops, 0 voices, 6 normal]
+17:48 -!- Irssi: Join to #hoas was synced in 1 secs
+17:49 -!- Cousteau [Cousteau@hoas-50dd000d.hoasnet.inet.fi] has quit [boot]
+17:59 -!- Cousteau [Cousteau@hoas-50dd0990.hoasnet.inet.fi] has joined #hoas
+18:12 -!- Quarterbr [Infinity@hoas-50dd002e.hoasnet.inet.fi] has joined #hoas
+18:12 -!- mode/#hoas [+o Quarterbr] by kaermes
+18:13 -!- mode/#hoas [+o Quarterbr] by QBScreen
+18:18 -!- mode/#hoas [+ooo Cousteau glaSS hendry] by Quarterbr
+18:18 -!- mode/#hoas [+o mabalmi] by Quarterbr
+--- Log opened Wed Aug 06 09:24:09 2003
+09:24 -!- hendry [~hendry@hoas-50dd00f3.hoasnet.inet.fi] has joined #hoas
+09:24 -!- Irssi: #hoas: Total of 14 nicks [9 ops, 0 halfops, 0 voices, 5 normal]
+09:24 -!- Irssi: Join to #hoas was synced in 2 secs
+09:46 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has joined #hoas
+11:29 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has quit [P=UI m U=RI]
+12:03 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has joined #hoas
+12:37 -!- zomeone is now known as llaura
+12:44 -!- IreneH [~IreneH@hoas-50dd0013.hoasnet.inet.fi] has joined #hoas
+12:44 -!- mode/#hoas [+o IreneH] by kaermes
+13:50 -!- artnay [bluesky@hki2-6-1-a5.hoasnet.inet.fi] has joined #hoas
+14:19 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has quit [P=UI m U=RI]
+15:20 -!- omo [olli.oja@hoas-50dd0978.hoasnet.inet.fi] has joined #hoas
+16:17 -!- blueh [~blueh@hoas-50dd00a4.hoasnet.inet.fi] has quit []
+17:18 -!- llaura [llaura@hoas-50dd00be.hoasnet.inet.fi] has quit [Connection reset by peer]
+18:01 -!- zomeone [llaura@hoas-50dd09a5.hoasnet.inet.fi] has joined #hoas
+18:27 -!- Cousteau [Cousteau@hoas-50dd0990.hoasnet.inet.fi] has quit [Nostaa ankkurin ja l‰htee kohti uusia seikkailuja]
+18:28 -!- Cousteau [Cousteau@hoas-50dd0990.hoasnet.inet.fi] has joined #hoas
+19:20 -!- artnay [bluesky@hki2-6-1-a5.hoasnet.inet.fi] has quit []
+19:27 -!- skks [sakkeus@nine-inch.nailed.org] has quit [Ping timeout]
+19:29 -!- skks [sakkeus@nine-inch.nailed.org] has joined #hoas
+19:29 -!- mode/#hoas [+o skks] by kaermes
+19:55 -!- skks [sakkeus@nine-inch.nailed.org] has quit [EOF From client]
+19:58 -!- skks [sakkeus@nine-inch.nailed.org] has joined #hoas
+19:58 -!- mode/#hoas [+o skks] by kaermes
+--- Log closed Wed Aug 06 20:25:09 2003
+--- Log opened Wed Aug 06 20:26:15 2003
+20:26 -!- hendry [~hendry@hoas-50dd00f3.hoasnet.inet.fi] has joined #hoas
+20:26 -!- Irssi: #hoas: Total of 15 nicks [9 ops, 0 halfops, 0 voices, 6 normal]
+20:26 -!- Irssi: Join to #hoas was synced in 1 secs
+--- Log closed Wed Aug 06 22:57:42 2003
+--- Log opened Mon Aug 11 15:58:47 2003
+15:58 -!- hendry [~hendry@hoas-50dd00c5.hoasnet.inet.fi] has joined #hoas
+15:58 -!- Irssi: #hoas: Total of 14 nicks [7 ops, 0 halfops, 0 voices, 7 normal]
+15:58 -!- Irssi: Join to #hoas was synced in 4 secs
+16:03 -!- Magistus [magistus@alfredos.multi.fi] has joined #Hoas
+16:10 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has joined #hoas
+16:16 -!- zomeone [llaura@hoas-50dd0958.hoasnet.inet.fi] has quit [Ping timeout]
+16:17 -!- Blob [blob@karvainen.nallukka.net] has joined #hoas
+16:18 -!- mode/#hoas [+o Blob] by kaermes
+17:29 -!- mabalmi [Mabalmi@hki1-1-1-e4.hoasnet.inet.fi] has quit [Connection reset by peer]
+17:29 -!- Cousteau_ is now known as Cousteau
+17:29 -!- mabalmi [~mabalmi@hki1-1-1-e4.hoasnet.inet.fi] has joined #hoas
+18:25 -!- k0nZA [~vittuherm@cs78224158.pp.htv.fi] has joined #hoas
+19:59 -!- k0nZA [~vittuherm@cs78224158.pp.htv.fi] has quit [Connection timed out]
+20:19 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has quit [Ping timeout]
+20:21 -!- uaz1 [~jarij@hki2-1-4-37.hoasnet.inet.fi] has quit [P=UI m U=RI]
+20:21 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has joined #hoas
+20:36 -!- jasonx_ [-server44@157.200.246.174] has joined #hoas
+21:16 -!- Netsplit irc.cs.hut.fi <-> irc.kolumbus.fi, *.stealth.net, *.at, irc.saunalahti.fi, irc.song.fi, *.tut.fi quits: jasonx_, Gkml, Magistus, @skks, Daedalon, @QBScreen, Cousteau, @hkkl, @zillo, @Blob,  (+2 more, use /NETSPLIT to show all of them)
+21:17 -!- lllaura [llaura@hoas-50dd0958.hoasnet.inet.fi] has joined #hoas
+21:18 -!- Cousteau_ [Cousteau@hoas-50dd0011.hoasnet.inet.fi] has joined #hoas
+21:20 -!- Netsplit over, joins: @Quarterbr, jasonx_, @Blob, Magistus, Daedalon, @skks, @kaermes, @QBScreen, Gkml, @zillo (+1 more)
+21:37 -!- jasonx_ [-server44@157.200.246.174] has quit []
+21:44 -!- k0nZA [~vittuherm@cs78224158.pp.htv.fi] has joined #hoas
+21:49 -!- Cousteau_ is now known as Cousteau
+22:00 -!- pelti [pelti@smooth.piipiip.net] has joined #hoas
+22:01 -!- mode/#hoas [+o pelti] by kaermes
+22:36 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has quit [Ping timeout]
+22:37 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has joined #hoas
+23:01 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has quit [Ping timeout]
+23:02 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has joined #hoas
+23:22 -!- Sathamoth [~Satha@hoas-50dd0992.hoasnet.inet.fi] has quit [brb]
+--- Log closed Mon Aug 11 23:45:31 2003
+--- Log opened Wed Aug 20 22:19:59 2003
+22:19 -!- hendry [~hendry@hoas-50dd00ee.hoasnet.inet.fi] has joined #hoas
+22:19 -!- Irssi: #hoas: Total of 17 nicks [9 ops, 0 halfops, 0 voices, 8 normal]
+22:20 -!- Irssi: Join to #hoas was synced in 1 secs
+22:23 < hendry> Quarterbr: moo
+--- Log closed Thu Aug 21 00:07:58 2003

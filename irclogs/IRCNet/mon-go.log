@@ -1,0 +1,41 @@
+--- Log opened Mon Aug 11 16:23:28 2003
+16:23 -!- Irssi: Starting query in IRCNet with mon-go
+16:23 <hendry> hi
+16:23 <mon-go> Hi
+16:23 <mon-go> Just got svg sort of working
+16:23 <mon-go> nested shite don't work, ie. elements in groups
+16:24 <mon-go> the recursive algorithm would be simple, but just don't get it working so restorted to an even simpler one
+16:24 <mon-go> so wassup K?
+16:24 <hendry> Ah good. I was about to say it is beyond my skillset to get java running and classpath blah. 
+16:24 <hendry> I wanted you to encourage you to make a package or something 
+16:24 <hendry> Or will it just work now ? :)
+16:24 <mon-go> you need batik libraries
+16:24 <mon-go> Batik batik
+16:24 <hendry> ok ok 
+16:25 <hendry> Is it worth running and taking screenshots at this point?
+16:25 <mon-go> Well I guess so
+16:25 <mon-go> Just you need to have a nice RDF to load
+16:25 <hendry> Is classpath a bash env var?
+16:26 <hendry> sweet jesus. maybe i'll just wait for tomorrow
+16:27 <mon-go> if you use eclipse you don't have to poke the classpath by hand
+16:27 <mon-go> I think I'll come to the dept today
+16:27 <mon-go> I mean I think I'll go there now
+16:27 <hendry> did you look at my new round of crappy pictures? I think you need to quickly tell me what classes are inherentiddd 
+16:27 <hendry> http://db.cs.helsinki.fi/~msisalmi/twiki/pub/Digimon/PlanningDocument/PlanningDocument_08082003.pdf
+16:27 <hendry> Oh
+16:28 <hendry> Ok, drop by. I'll be here till 7
+16:28 <hendry> My door is closed atm so don't be scared to knock
+16:28 <mon-go> How come?
+16:28 <mon-go> you are there till 7?
+16:28 <hendry> I will sign my contract down in Kallio at 7pm =)
+16:29 <mon-go> Oh..
+16:29 <mon-go> the system overview is nice, those little things there
+16:29 <mon-go> servers or blocks or legos or whatnot...
+16:30 <hendry> Components. We can discuss when you are here. It is quicker
+16:30 <mon-go> Ok, I check the laundry situation. they should be abt. finished, if they're not I'll leave them rolling and come
+16:30 <mon-go> see you
+16:31 <mon-go> "random I am, never give a damn.." :)
+--- Log closed Mon Aug 11 16:37:36 2003
+--- Log opened Mon Aug 11 22:59:51 2003
+22:59 <hendry> How fast is 1.4 Mbps in kb/s?
+--- Log closed Mon Aug 11 22:59:53 2003

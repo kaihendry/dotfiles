@@ -1,0 +1,198 @@
+--- Log opened Tue Nov 04 19:33:30 2003
+19:33 -!- hendry [~hendry@cs78149199.pp.htv.fi] has joined #skolelinux
+19:33 -!- Irssi: #skolelinux: Total of 31 nicks [25 ops, 0 halfops, 0 voices, 6 normal]
+19:33 -!- Irssi: Join to #skolelinux was synced in 2 secs
+19:33 < klausAde> hendry: evening.
+19:34 < hendry> hi
+19:34 < hendry> was just talking to pere on Freenode
+19:35 <@pere_> welcome. :)
+19:35 < hendry> tonight I am getting a proposal together for some venture capital
+19:35 < hendry> http://tap.homelinux.org/debatewiki/VentureCup
+19:35 < hendry> pere_: :)
+19:35 < hendry> btw I tried the latest SkoleLinux in a lab today. I have lots of comments which will file bug reports on later.
+19:37 <@pere_> hendry: sounds good. :)
+19:37 <@pere_> did you try pr41?  Did it work?
+19:38 < hendry> I tried server and workstation configurations, as I only have two machines I can destroy
+19:38 < hendry> server seemed to work, i think. workstation failed. I will send that info...
+19:39 <@pere_> X config?
+19:39  * pere_ have to run for a meeting.  See you all later.
+19:39 -!- pere_ is now known as pere_poff
+19:39 < hendry> X was one
+19:40 -!- Q-FONK [~q-funk@funkyware.pp.htv.fi] has joined #skolelinux
+19:40 < Q-FONK> hejsan
+19:40 < hendry> Q-FONK: lo
+19:40 -!- hilaire [+hilaire@81.56.227.203] has joined #skolelinux
+19:42 -!- p33r_ [~dark@oraw421.cm.chello.no] has joined #skolelinux
+19:42 < klausAde> p33r_: grrrrr
+19:42 < p33r_> klausAde: jeg prøvde å ringe deg, men fikk ikke tak i deg
+19:43 < Q-FONK> hendry: was there anything in particular I was suposed to do here? 
+19:43 < klausAde> p33r_: ingen som ringte på min mobil...
+19:43 < p33r_> klausAde: har sikkert ringt rundt 7 ganger
+19:44 < p33r_> merkelig
+19:45 -!- p33r [~dark@oraw421.cm.chello.no] has quit [Ping timeout]
+19:45 < hendry> Q-FONK: well this is skolelinux
+19:45 < Q-FONK> and?
+19:46 < hendry> people talk about skolelinux here
+19:46 < Q-FONK> so?
+19:46 < hendry> and i am living and breathing it for next couple of hours
+19:46 < Q-FONK> ok
+19:46 < Q-FONK> fair enough.
+19:51 -!- p33r_ is now known as p33r
+20:00 -!- tore [~tore@nfsd.linpro.no] has joined #skolelinux
+20:01 -!- mode/#skolelinux [+o tore] by bugbot
+20:11 < p33r> hmm
+20:12 < p33r> finnes det noen måte å kjøre opp en "bare-bones" skolelinux tjener på, hvis jeg f.eks vil ha webserver et annet sted en på filservern osv. ? eller må jeg bare slå av servicene etter at jeg har installert "tjener" profilen?
+20:26 -!- Bull- [~bull@82.80-202-91.nextgentel.com] has joined #skolelinux
+20:48 -!- Khi [khi@skummelt.no] has joined #skolelinux
+20:49 < Khi> 'kveld :)
+21:13 -!- markus_x3 [~markus@217-13-23-149.dd.nextgentel.com] has joined #skolelinux
+21:22 < hendry> Is there another of saying "SkoleLinux" the complete solution for schools
+21:23 <@Werner_> hendry: "Skolelinux - the ultimate operating system for school usage"
+21:24 <@Werner_> or maybe you would want the word "complete"...
+21:26 < hendry> complete almost sounds just as lame
+21:26 <@Snoopey> "Skolelinux - better than sliced bread"
+21:27 < hendry> and, what was it... "Consumer friendly" licensing ?
+22:08 < hendry> Do you charge schools for SkoleLinux installations ?
+22:10 <@Veggen> like, licenses? no.
+22:10 < klausAde> hendry: "We" don't charge for the cd. Some take money for installing, some don't.
+22:11 <@Snoopey> It's not the software it self they charge for, in any case.
+22:12 < hendry> I am talking about the service. I am well versed with licensing matters.
+22:14 <@Veggen> hendry: what kind of service? I don't think you can expect to forever get free support from the project. But there should be good opportunities for IT personell at school to make their own user group-like support systems etc. It all depends how much you can do yourself. You can probably find someone to do it all for you, but that'll most likely cost money.
+22:15 <@ToreSB> Joho.
+22:16 -!- haraldib [~harald@81.80-202-20.nextgentel.com] has joined #skolelinux
+22:16 < klausAde> hendry: Some (me) take money for installing, some don't.
+22:16 <@Veggen> hendry: you might find some local Linux User Groups that are willing to put in some time to help you. But, only if you're willing to put in time yourself and show that you're interested in learning how to manage it yourself, etc. That's how it works, noone wants to commit themselves to working for free forever ;)
+22:17 <@ToreSB> "Skolelinux... Smooth-running like diarrhea"?
+22:17 <@ToreSB> :P
+22:17 < markus_x3> klausAde: Jeg mener det skal ligge et verktøy på Knoppix so gjør at jeg kan slette en HD?
+22:17 < markus_x3> Hva gjør jeg?
+22:17 <@ToreSB> markus_x3, Det fins mange
+22:18 < markus_x3> Jeg skal bare slette en disk på enkleste måte
+22:18 < markus_x3> Det er en SATA disk
+22:18 <@lunaq> markus_x3: yes /dev/mindisk
+22:18 <@lunaq> markus_x3: yes > /dev/mindisk, beklager
+22:18 <@ToreSB> markus_x3, Vil du wipe eller bare formattere (uten å slette alt, bare skjule for maskinen?)
+22:18 < markus_x3> Wipe
+22:19 <@ToreSB> Hurra...... Nå skal eg leggja inn Windoze...
+22:19 < hendry> Q-FONK: you there?
+22:19 < markus_x3> Wintendo?
+22:19 <@ToreSB> Haha.
+22:19 <@ToreSB> Trenger min Dreamweaver.
+22:20 <@ToreSB> Klarte å ødelegge min webside etter en flørt med amaya
+22:20 < markus_x3> ToreSB: Hvordan whiper jeg helt?
+22:20 <@ToreSB> yes > /dev/mindisk funker.
+22:20 < markus_x3> Flott
+22:20 <@ToreSB> Men hvis du er opp imot CIA... Ville jeg tatt cat /dev/urandom > /dev/mindisk
+22:21 <@ToreSB> Da er det vanskeligere å hente data.
+22:21 <@Veggen> ...og minst 6-7 ganger, hvis du er VIRKELIG paranoid ;)
+22:21 <@ToreSB> Hvis du er engaged i "Terrerist Activities".
+22:21 <@lunaq> ToreSB: Det er vel ikke noe forskjell, uten at CIA har det litt "morsommere" som i forskjellige tegn..
+22:22 < markus_x3> OK, da er det egentlig formatering jeg er ute etter.
+22:22 < markus_x3> Jeg skal legge in en FW-pakke på maskinene, men den lar seg iriterer av noe gammal drit som ligger der
+22:22 <@Snoopey> markus_x3: bruk mkfs.
+22:22 <@ToreSB> lunaq, Jo, stor forskjell. Man kan subtrahere enkelt ASCII-verdiene til "yes" men hvis man ikke vet hva er der fra før blir det vanskeligere
+22:22 <@ToreSB> markus_x3, Da trenger du bare å mkfs.
+22:23 <@Veggen> apropos, en av problemene med å få donasjonsmaskiner fra Telenor, var faktisk at diskene måtte wipes...og det kostet penger. Det kostet faktisk flere hundre kroner PER maskin som skulle wipes med det verktøyet....
+22:23 <@ToreSB> Veggen, Åh fy F...!
+22:23 <@Veggen> ToreSB: mm.
+22:23 < markus_x3> Jeg har mottat 60 maskiner som har vært behandlet av HIBAS. Ingen var slettet!!!!!!!!!!!!!!!!
+22:23 < markus_x3> Eller er det IBAS
+22:23 <@Snoopey> IBAS.
+22:24 <@Snoopey> Det er _ille_.
+22:24 < markus_x3> De kom fra et tilsyn, alt lå på diskene
+22:24 <@ToreSB> Jeg fikk en 386 som hadde vært brukt av Hydro
+22:24 <@ToreSB> Hva er IBAS?
+22:24 <@Snoopey> ToreSB: ibas.no
+22:25 <@Snoopey> De har spesialisert seg på "trygg" sletting av data og rekonstruksjon, osv.
+22:25 <@ToreSB> Med tonnevis av regnskap osv.
+22:25 <@ToreSB> Hahahahhaa
+22:25 <@ToreSB> Ironi...
+22:25 <@Veggen> trygg sletting er ikke VELDIG mye mer avansert en cat /dev/urandom>/dev/<disk> * 7
+22:25 < markus_x3> Vi har selvsagt slettet alt selv, og lagt annet OS på toppen. Og det er lenge siden.
+22:26 < markus_x3> De fleste av disse maskinene har vi i tillegg kastet HD'ene på, da de skulle vær tynne klienter
+22:26 <@Veggen> Skjønt, ryktene skal ha det til at det er en sekvens av 1'ere og 0'er som skal skrives i hver posisjon for "optimal" sletting.
+22:26 <@ToreSB> Veggen, Lisensieres ut for 30000 kroner. Første linjen av kildekoden: #!/bin/bash
+22:27 <@ToreSB> Hihi... Skal kanskje få en SPARC ^^
+22:28 <@ToreSB> "Gammel" 199*<5 årgang 
+22:28 <@ToreSB> Men skjermen.... Min GUD... skjermen...
+22:29 <@ToreSB> 20" ellernoe
+22:29 <@ToreSB> og totalt flat
+22:29 <@ToreSB> <3
+22:35 < hendry> There is no funny licensing with SkoleLinux manuals are there?
+22:36 <@Snoopey> No.
+22:40 <@ToreSB> hendry, Of course, unless you count the proprietary alphabet/language I wrote it in.
+22:40 <@ToreSB> ;)
+22:42 < hendry> http://tap.homelinux.org/debatewiki/VentureCup
+22:42 < hendry> comments?
+22:47 -!- sLins [-slinsie@c-570e73d5.08-21-6f736c2.cust.bredband.no] has joined #skolelinux
+22:47 -!- tkragnar [~ragnar@193.91.146.34] has quit [Klient afslutter]
+22:50 < klausAde> anyone have any experience putting Skolelinux on a compaq ml350?
+22:52 -!- Netsplit *.se <-> *.DE quits: @k4x
+22:52 -!- Netsplit *.se <-> *.at quits: @Barbaross
+22:55 <@finnarne> p33r: Du installerer en server,f.eks, men før du tar første reboot, så går du inn og sletter innholdet i variabelen PROFILE i /etc/skolelinux/config
+22:56 -!- Netsplit over, joins: @Barbaross, @k4x
+22:57 -!- mode/#skolelinux [+o Barbaross] by bugbot
+22:59 -!- mode/#skolelinux [+o p33r] by ToreSB
+23:04 <@finnarne> hendry: On the webpage it seems like you are going to extend Skolelinux, But not give the extension back - please give your translation back, or else you will have to continue the process on your own, and every time SL gets a new version you are one step behind. 
+23:05 <@finnarne> hendry: in other words, please contribute with the finish translations to Skolelinux/Debian/Kde. 
+23:05 -!- stockholm [~andreas@petrus.schuldei.org] has joined #skolelinux
+23:06 -!- mode/#skolelinux [+o stockholm] by bugbot
+23:06 < hendry> finnarne: yes, that will be definitely done.
+23:07 < hendry> finnarne: the audience for that page is business people. they do not need to know about those arrangements. 
+23:07 < hendry> finnarne: you see i avoid talking about free software and opensource as much as possible.
+23:08 <@finnarne> hendry: Koulu is finnish for SKole ? 
+23:08 < hendry> finnarne: yes
+23:09 <@finnarne> Koul :) 
+23:10 <@ToreSB> Koululinux ^^
+23:10 <@ToreSB> (Piirkamumling ;)
+23:12 <@ToreSB> Hmmm, tror jeg tusler til sengs jeg.
+23:12 < markus_x3> Det er ikke ofte man laster ned over 2500 mail
+23:12 <@ToreSB> 'wiedersehn alle
+23:13 <@ToreSB> markus_x3, Erhm, "desverre"? ;)
+23:13 < markus_x3> Det er mail fra juli til nå
+23:13 <@ToreSB> Apropos gammel mail
+23:13 -!- mode/#skolelinux [+o markus_x3] by finnarne
+23:13 <@ToreSB> Jeg må ta en backup av eposten min på UiO
+23:13 <@markus_x3> Jeg er fornøyd med filtreringen. Kun 12 spam'er på den tiden
+23:13 <@ToreSB> Hahhah - apropos Uio
+23:14 -!- mode/#skolelinux [+ooo hilaire klausAde kmaraas] by finnarne
+23:14 <@ToreSB> Jeg var på maskinrommet der og skulle hente noe
+23:14 <@ToreSB> Lette igjennom skap osv...
+23:14 <@markus_x3> Jeg var så j... lei webmail at jeg nå gikk over til andre boller, og tok derfor ned den mailen jeg har hatt liggendepå serveren
+23:14 -!- mode/#skolelinux [+oo Bull- sLins] by finnarne
+23:15 <@ToreSB> Og plutselig så fant jeg Unix på magnetbånd :D
+23:15 <@ToreSB> Skikkelig IBM 9-track 
+23:15 <@ToreSB> UNIX 32v ellernoe
+23:15 <@ToreSB> Hihi.
+23:15 <@ToreSB> Men natta. 
+23:16 <@markus_x3> finnarne: Jeg har fått et problem med ssh fordi jeg jobber mot 10.0.2.2 både her og på jobben.
+23:16 <@markus_x3> Har et lite SL-nett gående hjemme som du vet.
+23:16 -!- ToreSB [~tore@062016148138.customer.alfanett.no] has quit [Nå såver jeg, får i moren er de norsk-tenttamen.]
+23:16 <@markus_x3> Den sier at RSA keyen er feil
+23:16 <@markus_x3> Hva gjør jeg med det
+23:16 <@finnarne> markus_x3: Velkommen i klubben. Har du bare 2 maskiner som heter tjener.intern du ? 
+23:16 <@markus_x3> Jada
+23:17 <@markus_x3> Jeg har sett Ragnar slite
+23:17 <@markus_x3> Hva er det man gjør
+23:17 <@finnarne> markus_x3: du går inn i .ssh/known_hosts og sletter linjen som begynner med tjener, eller 10.0.2.2 eller begge
+23:17 <@markus_x3> OK, kort og godt
+23:18 <@finnarne> du kan også mekke på navnet på tjener.intern , slik at du kan kalle dem for hjemme, og ulsrud, så er du kvitt problemet. 
+23:18 <@markus_x3> det får bli en annen dag
+23:19 <@finnarne> tror det skal holde å legge inn en linje som sier 10.0.2.2 hjemme i /etc/hosts, og så koble seg opp med ssh -l root hjemme
+23:19 -!- ozmaway is now known as ozmund
+23:19 <@markus_x3> hvordan fjerner jeg en linje  vim
+23:19 <@finnarne> markus_x3: dd
+23:20 <@finnarne> ozmund: God kveld - mannen som aldri sover. 
+23:20 <@finnarne> ozmund: Skal du være med til Ulsrud ? 
+23:20 <@ozmund> finnarne, vel det var i vår/sommer. Nå sover jeg masse :)
+23:20 <@ozmund> finnarne, nei. Jeg kommer ikke.
+23:21 <@finnarne> ozmund: Har lagt merke til at du bare er innpå så vidt ja. Feigingen :) 
+23:21 <@Veggen> sove, ja. Den slags er det mulig jeg ikke får tid til resten av uken. Omtrent. vel, iallefall ikke mye :)
+23:22 <@ozmund> finnarne, vel, jeg er inne i en interessant prosess på skolen. Men det er ikke noe å annonsere. Ligger litt lavt i terrenget. 
+23:23 <@finnarne> ozmund: Dette her er ikke stedet for ikke å annonsere noe :) 
+23:24 <@ozmund> finnarne, dessuten har jeg brukere av SL å forholde meg til, og det krever masse. Mest når det gjelder nettleser. Vi prøver foreløpig med konqueror.
+23:24 <@ozmund> markus_x3, hvilken nettleser bruker dere på skolen?
+23:25 -!- klausAde [~klaus@217-148-238.adsl.tele2.no] has quit [Klienten avslutter]
+23:26 <@ozmund> finnarne, vet du, hvilken de bruker?
+23:26 <@markus_x3> finnarne: Kan man ikke gjøre dette fra 10.0.2.2: "scp -r 10.0.2.104:/home/markus"
+--- Log closed Tue Nov 04 23:26:26 2003

@@ -1,0 +1,226 @@
+--- Log opened Sun Aug 17 17:18:43 2003
+17:18 -!- hendry [~hendry@hoas-50dd0995.hoasnet.inet.fi] has joined #debian-devel
+17:18 -!- Irssi: #debian-devel: Total of 224 nicks [0 ops, 0 halfops, 0 voices, 224 normal]
+17:18 -!- Irssi: Join to #debian-devel was synced in 2 secs
+17:25 -!- gtach is now known as gtachCAR
+17:26 -!- Md [md@md.staff.freenode] has joined #debian-devel
+17:35  * Md ITP udev (devfs substitute
+17:35 -!- mush [~ffff@h24-207-8-80.cst.dccnet.com] has quit [Read error: 110 (Connection timed out)]
+17:35 < asuffield> does it suck less than devfs?
+17:36 < Md> asuffield: much less, it's 100% userspace
+17:37 < bob2> even the kernel devs don't hate it.
+17:41 < ilmari> it's written by GregKH, who actually is sane (as opposed to Richard Gooch)
+17:41 < StevenK> Wheee.
+17:41 < StevenK> Greg K-H is a cool guy.
+17:41 < ilmari> StevenK: btw, about my linda bug...
+17:42 < ilmari> should I tack the no deps issue onto the non-stripped bug or report it separately?
+17:42 < StevenK> If you like.
+17:43 < ilmari> that was an either-or question, not a yes/no quetion
+17:43 < ilmari> s,quet,quest,
+17:43 < asuffield> where does it hook in, the hotplug thingy?
+17:43 < ilmari> asuffield: yup
+17:43 < StevenK> ilmari: Tack it on.
+17:43 < teo> hmmm, www.gnu.org seems to be down
+17:43 < ilmari> asuffield: and uses sysfs and a user-specified policy to create device nodes
+17:44  * Md ITP sysutils too
+17:44 < ilmari> it comes with some built-in policies (traditional and devfs naming, iirc
+17:44 < Md> and this sucks, because there is already an unrelated and not relevant sysutils package
+17:46 < ilmari> sysutils is the sysfs utils package, right?
+17:47 < bob2> wow, mdz did piles of digging on my alsa-source bug.
+17:47 < Md> ilmari: yes
+17:47 < ilmari> Md: you could call it sysfsutils, mention sysutils in the short desc and explain in the long
+17:48 < Md> either this or sys-utils, but I like more sysfsutils
+17:48 < Zomb> what should I mount to make /dev/ttyXY work under kernel 2.6?
+17:49 < Md> Zomb: nothing needed
+17:49 < ilmari> Zomb: do you use devfs?
+17:49 < Zomb> yes, devfs
+17:49 < Zomb> with devfsd and symlinks seem to be okay
+17:49 < ilmari> you need to mount devpts on /dev/pts
+17:50 < Zomb> hm, I was sure it has been already mountet; will check later
+17:50  * vorlon takes an axe to PHP upstream.
+17:50 < ilmari> devfs no longer supplies that (it was duplicate functionality and required loads of crud in devfs)
+17:50 < Md> ilmari: are you involved in devfs maintenance?
+17:50 < Md> devfsd even
+17:50 < ilmari> Md: nope
+17:51 < ilmari> i just use it
+17:51 < Md> I have a couple of devfs-related bugs open against module-init-tools and I'm not sure about what to do...
+17:52 < Marlow> the thing about devpts was, that the functionality was better in devfs, but devpts should be up to speed now ... (if i got that right)
+17:54 < ilmari> Md: my suggestion in #187681 makes stuff behave similarly to 2.4. you should also coordinate with the devfsd maintainer and both upstreams to move modprobe.devfs to devfsd
+17:54 -!- gnarf [gnarf@p508E5184.dip.t-dialin.net] has joined #debian-devel
+17:54 < ilmari> Md: but I already said that in the bug :)
+17:54 < Md> ilmari: what about the /dev/ppp related-one?
+17:55 -!- ElectricElf [david@electricelf.usercloak.freenode] has quit [Remote closed the connection]
+17:55 -!- ElectricElf [david@electricelf.usercloak.freenode] has joined #debian-devel
+17:55 < gnarf> i found a bug in smbclient testing/unstable. (might be old). when smbclient tab completion has an empty list, it crashes with a segmentation fault.
+17:55 < ilmari> Md: it's caused by the same issue as #187681
+17:56 < ilmari> Md: debian's devfsd doesn't call modprobe -C /etc/modules.devfs
+17:59  * Md uploads a new mutt package. enjoy.
+17:59 < bob2> minus header caching?
+17:59 < Czesiu> Md: 195310 is an upstream error, contrib/gpg.rc, line 59
+17:59 < Czesiu> ah :)
+17:59 -!- gnarf [gnarf@p508E5184.dip.t-dialin.net] has left #debian-devel []
+18:00 < Md> bob2: yes
+18:00 < StevenK> Oh God, no. Header caching is Good.
+18:01 < bob2> YES.
+18:01 < Md> StevenK: OK, send me a fixed patch then...
+18:02 < StevenK> Md: Uh? Do you have a bug number?
+18:02 < Czesiu> StevenK: #189999, #194843, #196832, #196978, #197182, #199052
+18:02 < StevenK> RIght. Way too many.
+18:05  * Czesiu has a really stupid question. Is pgp_traditional a format like: -----BEGIN PGP SIGNED MESSAGE-----\nHash: ...\n\nmessage\n-----BEGIN PGP SIGNATURE-----\nsig\n-----END PGP SIGNATURE-----?
+18:05 < teo> Czesiu, afair, yes
+18:05 < Md> yes
+18:06 < Czesiu> great
+18:06 < Czesiu> I'm going to close some bug related to it.
+--- Log closed Sun Aug 17 18:06:54 2003
+--- Log opened Sun Aug 17 22:14:33 2003
+22:14 -!- hendry [~hendry@hoas-50dd0a46.hoasnet.inet.fi] has joined #debian-devel
+22:14 -!- Irssi: #debian-devel: Total of 226 nicks [0 ops, 0 halfops, 0 voices, 226 normal]
+22:14 -!- Irssi: Join to #debian-devel was synced in 1 secs
+22:18 < Madkiss> tetrinet somebody?
+22:21 -!- caci [~caci@pD902B3E5.dip.t-dialin.net] has quit ["telinit 1"]
+22:23 -!- wart [~wart@ptc78.dialup.spbu.ru] has joined #debian-devel
+22:27 -!- micky90 [~aba@ppp-62-245-208-178.mnet-online.de] has joined #debian-devel
+22:27 -!- micky90 [~aba@ppp-62-245-208-178.mnet-online.de] has left #debian-devel []
+22:28 -!- aroldan [aroldan@200.91.226.29] has quit ["leaving"]
+22:28 -!- pluto47 [~aba@ppp-62-245-208-178.mnet-online.de] has joined #debian-devel
+22:28 -!- pluto47 is now known as aba_
+22:32 < nickr> oh thats really mature, somebody put the ascii goatse.cx guy on the xouvert wiki page
+22:34  * Marlow is out of here ... for now
+22:34 -!- Marlow [~marlow@as2-6-3.tbg.s.bonet.se] has quit ["bye"]
+22:35 < aba_> regarding the topic: what's broken on alioth right now? www seems to work.
+22:37 < liiwi> bah, konquerror is broken too
+22:39 -!- aba [~aba@ppp-62-245-160-162.mnet-online.de] has quit [Read error: 110 (Connection timed out)]
+22:40 -!- aba_ is now known as aba
+22:40 < nchip> /. wiki pages is like the stupidest thing todo..
+22:41 -!- Phython [~jim@CPE080020f943c6-CM014070228156.cpe.net.cable.rogers.com] has joined #debian-devel
+22:41 < calc> liiwi: eh?
+22:41 < Phython> Overfiend: the keyboard for type 5 is fucked, again
+22:41 < Phython> I'm a bit drunk to fix it, but you should now
+22:41 < calc> liiwi: konq isn't broken here, maybe your box is buggy?
+22:42 < Phython> Overfiend: I mean sun type 5 keyboards
+22:42 < srbaker> Phython: you suck.
+22:42 < srbaker> Phython: we're going to be in Ontario 01 - 10 September, basically. :
+22:42 < calc> liiwi: or is it a particular page that is giving it problems?
+22:43 < liiwi> calc: spewing assertion errors
+22:43 < nchip> liiwi> hrm, galeon crashes every five minutes
+22:44 < nchip> I think that if both are crashing liiwis problems are in somewhere else
+22:44  * liiwi asserts that browsers are crap
+22:44 < calc> that isn't konq, its a lib konq is using afaict
+22:45 < liiwi> hrm, how the heck do I close single tab
+22:45 < calc> ctrl-w ?
+22:46 < liiwi> hrm, on last session it did not show menus if I right-clicked on the tab
+22:46 < liiwi> now it does
+22:47 < calc> dpkg conf file handling causes quite a few kde "bugs"
+22:47 < calc> it randomly doesn't install files for users apparently
+22:47 < calc> dunno if that may be what was causing your problem though
+22:49 -!- Joy [joy@imu4.imu.carnet.hr] has joined #debian-devel
+22:52 -!- cappicard [~cappicard@AC87F2B6.ipt.aol.com] has joined #debian-devel
+23:01 -!- XSnack_ [~foobar@p50896F13.dip.t-dialin.net] has joined #debian-devel
+23:01 -!- p2-mate [~p2@NAT.office.mind.be] has joined #debian-devel
+23:02 -!- joostk [~joost@c124048.upc-c.chello.nl] has joined #debian-devel
+23:02 < joostk> hi
+23:02 < Yoe> p2-mate: back in Belgium? ;-)
+23:02 < p2-mate> hey Yoe !
+23:02 < p2-mate> Yoe: yes :)
+23:02 < p2-mate> Yoe: I'm in belgium :)
+23:03  * joostk sees no mention of sid libc6 problems in the topic.  anyone else having problems?
+23:03 < Yoe> p2-mate: BTW, I didn't thank you for bringing that amiga yet. so... ;-)
+23:03 < joostk> openoffice broke in particular
+23:03 < p2-mate> Yoe: oh :)
+23:03 < p2-mate> Yoe: does it work ?
+23:03 < Yoe> p2-mate: not yet
+23:04 < Yoe> it lacks a floppy drive *and* a hard disk
+23:04 < Yoe> so I'll have to figure that out first.
+23:04 < sebfrance> can anyone confirm me that the number of debian packages on file:///usr/share/apache/icons/debian/banner_v.gif is incorrect on sid?
+23:04 < p2-mate> Yoe: any 2.5inch IDE disk should work
+23:04 < p2-mate> Yoe: floppy is trickier
+23:04 < Yoe> any IDE disk. It doesn't matter if the thing doesn't close
+23:05 < p2-mate> Yoe: you need a special floppydrive to be able to do 1.44MB disks
+23:05 < Yoe> yeah,
+23:05 < p2-mate> Yoe: if you have the appropriate conversion yes :)
+23:05 < Yoe> but there are some instructions on aminet on how to do it with a PC floppy drive
+23:05 < p2-mate> Yoe: OTOH, do you need a floppy ?
+23:05 < Yoe> p2-mate: uh, that's the point
+23:05 < ilmari> sebfrance: that's incorrect even for woody
+23:05 < p2-mate> Yoe: you can use pcmcia network
+23:06 < Yoe> the reason you brought it to me is that I need to get debian-installer to work on m68k :-)
+23:06 < p2-mate> Yoe: netinstall ? :P
+23:06 < p2-mate> Yoe: netinstall ? :)
+23:06 < ilmari> sebfrance: woody has «more than 8710 pacakges», quoting the debian.org front page
+23:06 < Yoe> p2-mate: that's the first step, but not enough.
+23:06 < Yoe> I have to test everything :-)
+23:06 -!- cappicard [~cappicard@AC87F2B6.ipt.aol.com] has quit [Connection reset by peer]
+23:06 < Yoe> OTOH, I'm not even sure whether the floppy drive is supported under linux at all, so...
+23:06 < sebfrance> ilmari: ok, I'll patch the gif :]
+23:06 < ilmari> tr/«»/""/
+23:06 -!- terpstra [~terpstra@drm9-d9bb121d.pool.mediaWays.net] has quit ["Client exiting"]
+23:06 < p2-mate> Yoe: it is
+23:07 < Yoe> ah, 'kay.
+23:07 < p2-mate> Yoe: at least I used it at some point :)
+23:07 < Yoe> heh
+23:07 < ilmari> sebfrance: and make it a png while you're at it :)
+23:07 < sebfrance> sure
+23:07 < sebfrance> I don't have any way to save it as gif as far as I've seen
+23:07 -!- mait [bottoms@pool-138-88-232-100.res.east.verizon.net] has joined #debian-devel
+23:08 < nchip> maybe one should create that image dynamicly while installing :)
+23:09 < p2-mate> Yoe: but I did the debian install by downloading the kernel + rootimage under amiga os
+23:09 < ilmari> sebfrance: you need gimp1.x-nonfree, x in {2,3}
+23:09 < ilmari> depending on you gimp version
+23:09 < sebfrance> ilmari: yeah, but I'll do without it
+23:09 < sebfrance> thanks
+23:09 < sebfrance> ilmari: do I need to get confirmed the 'bug' is also in sid or can I send it right away?
+23:09 < p2-mate> Yoe: and boot all this using amiboot
+23:10 < ilmari> sebfrance: the sid version says 2283 packages, >500 developers
+23:10 < ilmari> and Four CD's
+23:10 < sebfrance> ilmari: ok thanks,
+23:10 < p2-mate> Yoe: I don't there ever have been real bootfloppy images for debian on the amiga
+23:11 < Yoe> p2-mate: you're not the only one. Moreover, for m68k macs, it's th ony _possible_ way :-)
+23:11 < ilmari> just make the sid version the same as the woody one and remember to update it before sarge
+23:11 < Yoe> p2-mate: IIRC, it's not possible.
+23:11 < p2-mate> Yoe: amiboot is the only booter on the amiga
+23:11 < Yoe> however, that doesn't mean I don't want to try it :-)
+23:11 < ilmari> when we know the the approximate final size
+23:11 < p2-mate> Yoe: it is possible I think, but I'm not sure if it makes sense to do it :)
+23:12 < Yoe> heh
+23:12 < Yoe> oh well. I'll find out once I get it to work :-)
+23:12 -!- kov [~kov@200.222.243.220] has joined #debian-devel
+23:12 -!- XSnack [~foobar@p50896091.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+23:16 -!- joostk [~joost@c124048.upc-c.chello.nl] has quit ["Leaving"]
+23:18 -!- michele [~michele@host27-0.pool62211.interbusiness.it] has quit ["."]
+23:19 -!- Marlow [~marlow@3ffe:200:1:155:0:0:0:2] has joined #debian-devel
+23:20 < sebfrance> ok, should I make some php/gd script for the generation of the debian icons for apache?
+23:21 -!- docelic [~docelic@ri01-164.dialin.iskon.hr] has joined #debian-devel
+23:24 -!- ds-uhv [~ds@adsl-64-160-46-108.dsl.snfc21.pacbell.net] has joined #debian-devel
+23:24 -!- Rotty [someone@dsl-156-240.utaonline.at] has quit ["Bye"]
+23:28 -!- Keybuk [scott@descent.netsplit.com] has joined #debian-devel
+23:30 -!- cmccormick2 [cm6721@alb-24-194-85-70.nycap.rr.com] has left #debian-devel []
+23:32 < srbaker> so we had a debian party yesterday
+23:32 < docelic> Im still hungover ;)
+23:32 < Marlow> so did we :)
+23:32 < srbaker> Jon, who hosted the party, made cupcakes with debian swirls.
+23:33 < docelic> srbaker: oh btw, what was the outcome of the paternity test ?
+23:33 < jkm> http://vic.dyndns.org/pics/2003-08-16/index-simple.html | Debian birthday in Ottawa.
+23:33 < srbaker> docelic: wasn't done yet.  it's expensive
+23:33 < jkm> its worth mentioning, the pub we were at was called woody's :)
+23:33 < Marlow> pictures from the party in Stockholm yesterday: http://gril.la/index.php?currDir=./030816-Debian_10_%E5r
+23:35 < Marlow> jkm: fits nice ...
+23:35 < jkm> hehe.
+23:36 < who_> Marlow: http://www.sigma.su.se/~tipx/pic/debian/ <- some more
+23:36 < who_> Marlow: who were you?
+23:36 < Marlow> who_ : the dane :) ..
+23:37 < Marlow> who_ : guy on the last picture, in the middle
+23:37 < Marlow> who_ : holding the lock of that telephone company locker .
+23:37 < who_> Marlow: ah, the guy that I talked about support/helpdesks with?
+23:37 < Marlow> who_ : probably :)
+23:37 < who_> Marlow: ok ;-)
+23:37 < who_> Marlow: I had a really nice time, what about you?
+23:38 < Marlow> who_ came home quite late ..
+23:38 < Marlow> who_ : we ended up on some private pub place at slussen ..
+23:38 < Marlow> who_ : was fun ...
+23:38 < who_> Marlow: hehe, ok, got drunk as hell too? ;-)
+23:38 -!- ore [~romain@trion-1-82-67-41-165.fbx.proxad.net] has quit ["ERC Version 4.0 $Revision: 1.530 $ (IRC client for Emacs)"]
+23:39 < Marlow> who_ : not as bad, but the Hot shots are taking revenge on the day after
+23:39 < Marlow> who_ : Galliano is some nasty stuff ...
+23:40 < who_> Marlow: hehe, yep, tastes good tho ;-)
+23:40 < Marlow> who_ : of course ..
+--- Log closed Sun Aug 17 23:41:07 2003

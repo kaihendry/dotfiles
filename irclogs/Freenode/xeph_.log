@@ -1,0 +1,147 @@
+--- Log opened Sun Oct 26 13:08:19 2003
+13:08 -!- Irssi: Starting query in Freenode with xeph_
+13:08 <xeph_> Hey, do you mind if I private msg you?
+13:11 <hendry> not at all
+13:11 <hendry> where are you from in SA?
+13:11 <xeph_> kewl, thanks.
+13:11 <xeph_> Just North of Durban.
+13:11 <hendry> I am from Durbs myself
+13:11 <hendry> Westville
+13:12 <xeph_> Ah. kewl, I'm from Stanger then ;)
+13:12 <hendry> http://db.cs.helsinki.fi/~hendry/log/
+13:13 <hendry> Stanger? Isn't that a suburb? or district?
+13:13 <xeph_> Hey, I've just recently installed pyBlosxom and I cant figure out how to change the 'look' of it. Can you show me the door?
+13:13 <xeph_> Stanger/KwaDukuza 75k's north of Durban. Before Ballito.
+13:14 <xeph_> It's a small town.
+13:14 <hendry> edit templates like head.html
+13:14 <hendry> there should be some included
+13:14 <hendry> put these in your blog dir/
+13:15 <hendry> what sort of net connection for you have?
+13:15 <hendry> style your blog with CSS
+13:16 <xeph_> atm, 128k ISDN. But switching to 16Mb Satellite at the month.
+13:18 <hendry> two way?
+13:18 <xeph_> 16Mb d/l. 8Mb u/l.
+13:19 <hendry> what do you do out there in Stanger btw? apologies for being nosy
+13:21 <xeph_> I'm actually still in high school :) 
+13:21 <xeph_> I found 4 .html files in the contribs dir. Which one should I consider as the index page?
+13:24 <hendry> you choose :)
+13:24 <hendry> bad
+13:24 <hendry> blogs
+13:24 <hendry> books
+13:24 <hendry> comment-form.html
+13:24 <hendry> comment-form.rss
+13:24 <hendry> comment.html
+13:24 <hendry> comment.rss
+13:24 <hendry> comments
+13:24 <hendry> comment-story.html
+13:24 <hendry> comment-story.rss
+13:24 <hendry> content_type.html
+13:24 <hendry> cornwall
+13:24 <hendry> debian
+13:24 <hendry> email
+13:24 <hendry> finland
+13:24 <hendry> food
+13:24 <hendry> foot.html
+13:24 <hendry> game
+13:24 <hendry> hardware
+13:24 <hendry> head.html
+13:24 <hendry> hoasnet
+13:24 <hendry> industry
+13:24 <hendry> LUG
+13:24 <hendry> me
+13:24 <hendry> media
+13:24 <hendry> mozilla
+13:24 <hendry> network
+13:24 <hendry> opera
+13:24 <hendry> other
+13:24 <hendry> p2p
+13:24 <hendry> redhat
+13:24 <hendry> school
+13:24 <hendry> search.html
+13:24 <hendry> security
+13:24 <hendry> story.html
+13:24 <hendry> unicode
+13:24 <hendry> voice
+13:24 <hendry> w3c
+13:24 <hendry> winblows
+13:24 <hendry> total 164
+13:24 <hendry> drwxr-sr-x   30 hendry   hendry       4096 2003-10-12 16:55 .
+13:24 <hendry> drwxr-sr-x  184 hendry   hendry      12288 2003-10-26 13:20 ..
+13:24 <hendry> drwxr-sr-x    5 hendry   hendry       4096 2003-10-12 20:49 bad
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-06-19 00:10 blogs
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-08-15 15:54 books
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        938 2003-05-26 11:55 comment-form.html
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry          0 2003-05-26 11:55 comment-form.rss
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        233 2003-05-26 11:55 comment.html
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry          0 2003-05-26 11:55 comment.rss
+13:24 <hendry> drwxr-sr-x   14 hendry   hendry       4096 2003-09-19 00:24 comments
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        325 2003-05-26 11:55 comment-story.html
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        232 2003-05-26 11:55 comment-story.rss
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry         10 2003-05-26 11:55 content_type.html
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-09-02 23:03 cornwall
+13:24 <hendry> drwxr-sr-x    6 hendry   hendry       4096 2003-07-22 20:46 debian
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-10-18 12:39 email
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-08-11 05:00 finland
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-06-19 00:10 food
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        449 2003-05-26 11:55 foot.html
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-06-28 01:13 game
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-10-04 16:21 hardware
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry       1619 2003-10-04 15:06 head.html
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-07-30 21:52 hoasnet
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-06-19 00:10 industry
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 LUG
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-10-04 15:32 me
+13:24 <hendry> drwxr-sr-x    4 hendry   hendry       4096 2003-06-11 12:23 media
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 mozilla
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-10-17 13:22 network
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 opera
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 other
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 p2p
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 redhat
+13:24 <hendry> drwxr-sr-x    3 hendry   hendry       4096 2003-05-26 22:10 school
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry         97 2003-06-07 19:07 search.html
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 security
+13:24 <hendry> -rwxr-xr-x    1 hendry   hendry        393 2003-10-04 15:09 story.html
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-10-18 11:50 unicode
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 voice
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-06-19 00:10 w3c
+13:24 <hendry> drwxr-sr-x    2 hendry   hendry       4096 2003-05-26 22:10 winblows
+13:24 <hendry> /home/hendry
+13:24 <hendry> oops thats my /home/hendry/blog
+13:25 <hendry> how is Durbs? My parents are going to visit next week
+13:27 <xeph_> Hmm. So I dont put the .html files in the dir with my pyblosxom.cgi file? 
+13:27 <xeph_> It's summer now and you can make out that the temperature is rising ;)
+13:28 <xeph_> Except today it's partially cloudy. Yesterday was really hoy.
+13:28 <xeph_> *hot
+13:29 <xeph_> Aha! I got it now :)
+13:29 <xeph_> Thanks :)
+13:32 <xeph_> How can I add plugins etc...?
+13:33 <hendry> edit the config file
+13:33 <hendry> there should be some documentation for you now to read!
+13:33 <xeph_> :) Do you live in Finland?
+13:34 <hendry> yes
+13:35 <xeph_> kewl :)
+13:37 <xeph_> what OS do you use?
+13:38 <hendry> Debian
+13:41 <xeph_> Debian's kewl.
+--- Log closed Sun Oct 26 13:47:21 2003
+--- Log opened Sun Oct 26 14:04:22 2003
+14:04 <xeph_> I've just set my py['plugin_dirs'] key and now when I access the pyblosxom.cgi page it give me 500 Error :/
+14:04 <xeph_> *gives
+--- Log closed Sun Oct 26 14:10:22 2003
+--- Log opened Sun Oct 26 14:11:28 2003
+14:11 <hendry> turn on debug in the conf
+--- Log closed Sun Oct 26 14:17:22 2003
+--- Log opened Sun Oct 26 14:19:28 2003
+14:19 <xeph_> How? I can't see an option to turn it on in config.py
+14:21 <hendry> check pyblosxom.cgi
+--- Log closed Sun Oct 26 14:27:22 2003
+--- Log opened Sun Oct 26 14:31:05 2003
+14:31 <xeph_> kewl thanks. it works now :)
+--- Log closed Sun Oct 26 14:36:22 2003
+--- Log opened Sun Oct 26 14:46:03 2003
+14:46 <xeph_> I gtg. If you ever need info on whats going down here in SA and stuff, don't hesitate to drop me an email.. cowboyninja@leenucks.za.net
+--- Log closed Sun Oct 26 14:51:22 2003
+--- Log opened Sun Oct 26 15:00:14 2003
+15:00 -!- xeph_ [~xeph@ndvt-ip-nas-1-p18.telkom-ipnet.co.za] has quit ["Client Exiting"]
+--- Log closed Sun Oct 26 15:05:22 2003

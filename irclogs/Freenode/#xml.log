@@ -1,0 +1,52 @@
+--- Log opened Mon Mar 24 11:07:01 2003
+11:07 -!- hendry [~hendry@hoas-50dd06dd.hoasnet.inet.fi] has joined #xml
+11:07 -!- Irssi: #xml: Total of 18 nicks [1 ops, 0 halfops, 0 voices, 17 normal]
+11:07 -!- Irssi: Join to #xml was synced in 1 secs
+11:08 < hendry> I have an xml file. I want to count how many <p> tags there are. And check they are not nested.
+11:08 < hendry> I use sax? any methods to recommend?
+11:17 < luciash> hendry: maybe <xsl:for-each select="//p"><xsl:if test="not('.//p')"><xsl:variable value="{count(.)}"/></.. ?
+11:17 < luciash> hendry: just an idea, not tested
+11:21 < hendry> xsl?
+11:26 < luciash> hendry: yep
+11:26 < luciash> brb
+11:26 -!- Akhorahil [~akhorahil@co125697-a.almel1.ov.home.nl] has quit [Read error: 60 (Operation timed out)]
+11:26 -!- luciash [~lukas@rtv1.policka.cz] has quit [Remote closed the connection]
+11:52 -!- Akhorahil [~akhorahil@co125697-a.almel1.ov.home.nl] has joined #xml
+12:06 -!- luciash [~lukas@rtv1.policka.cz] has joined #xml
+13:23 -!- pivisko [~pivo@212.89.237.40] has joined #xml
+14:24 < pivisko> helo, how do I list the contents of a directory using xslt? I need to retrieve a piece of data from each file in the directory.
+14:26 -!- jor [foobar@adsl219194.adsl.utwente.nl] has joined #xml
+15:29 < luciash> pivisko: i don't think it's possible
+15:30 < luciash> pivisko: btw: zdravime cechy ;) i hope u r czech :o)
+15:31 < pivisko> slovak
+15:31 < pivisko> zistujem, ze sa to da nejak s pomocou javy
+15:32 < luciash> pivisko: ;)
+15:32 < pivisko> ale neviem, ci kazdy procesor tovrobi rovnako
+15:32 < luciash> pivisko: jo ale jen pomoci xslt to podle mne nejde
+15:33 < pivisko> tak nejak
+15:33  * jor wishes he had one of those star trek universal translator devices ;)
+15:48 -!- luciash [~lukas@rtv1.policka.cz] has quit [Read error: 54 (Connection reset by peer)]
+16:22 -!- luciash [~lukas@rtv1.policka.cz] has joined #xml
+16:28 -!- luciash [~lukas@rtv1.policka.cz] has quit [Remote closed the connection]
+16:31 -!- Tycho [snow@c-24-125-90-54.va.client2.attbi.com] has joined #xml
+16:31 < Tycho> Hello.
+16:49 < jor> hi
+16:50 < shapr> y0
+16:50 < jor> hey shapr, how's you xslt going today? :)
+16:50 < shapr> I've been writing Haskell... wanna see the results? ;-)
+16:51 < shapr> I wrote a factoid plugin for the Haskell irc 'bot
+16:54 < jor> Is it better/smarter then the default factoid stuff most bots have nowadays? :)
+16:54 < shapr> not yet
+16:54 < shapr> I wrote it over the weekend
+16:56 < shapr> if you have ideas or suggestions
+16:57 < jor> write a english language/grammar plugin and make it pass the turing test ;p
+16:57 < shapr> um
+16:57 < shapr> I'm too little :-)
+16:59 < jor> bleh, mozilla's xslt processor sucks
+17:00 < jor> can't even output proper xhtml and show it as XHTML :/
+17:02 < jor> and it's char encoding decisions suck also
+17:02 < jor> now to get my hands on a box with IE6 :/
+17:11 < Tycho> I know this is sort of off-topic, but I've been Googling for days and asking in bunches of channels with no resolve. I'm trying to find a library for PHP that allows XML validation against an XSD schema.
+17:12 < Tycho> Library/function/anything
+17:12 -!- luciash [~lukas@rtv1.policka.cz] has joined #xml
+--- Log closed Mon Mar 24 17:13:11 2003

@@ -1,0 +1,621 @@
+--- Log opened Sun Apr 27 22:06:41 2003
+22:06 -!- hendry [~hendry@hoas-50dd0488.hoasnet.inet.fi] has joined #c
+22:06 -!- Irssi: #c: Total of 222 nicks [0 ops, 0 halfops, 0 voices, 222 normal]
+22:06 -!- Irssi: Join to #c was synced in 2 secs
+22:06 -!- fearmax [~max@L1198P08.dipool.highway.telekom.at] has joined #c
+22:07 < Erwin> maybe valgrind will help :)
+--- Log closed Sun Apr 27 22:07:07 2003
+--- Log opened Sun Apr 27 23:09:11 2003
+23:09 -!- hendry [~hendry@hoas-50dd0488.hoasnet.inet.fi] has joined #c
+23:09 -!- Irssi: #c: Total of 228 nicks [0 ops, 0 halfops, 0 voices, 228 normal]
+23:09 -!- Irssi: Join to #c was synced in 2 secs
+23:09 < dx> heh valgrind found errors in itself debugging my program
+23:09 -!- aroldan [aroldan@200.91.226.12] has joined #c
+23:09 < quotemaster> heheh
+23:10 -!- PurpleHaze [~purplehaz@h84n1fls31o1104.telia.com] has quit ["leaving"]
+23:11 -!- harpo is now known as harpoAWY
+23:11 < rik> interestingly, if you switch on the optimizer, you lose the guarentee of in-order evaluation of &&'s and stuff, so it can happen.
+23:11 < rik> it've seen it happen too. it's very funny when people rely on it.
+23:11 < quotemaster> No..
+23:11 < quotemaster> That's a bug.
+23:11 < quotemaster> The standard explicitly guarantees short-circuiting of boolean operators.
+23:12 -!- bryan|away [~eleeteh@hunt-pri2-a32.txucom.net] has joined #c
+23:12 < quotemaster> So why shouldn't I rely on it?
+23:12 < rik> yeah, but gcc doesn't when you switch on the optimizer, at least in a couple of old versions. i can't remember which though.
+23:12  * rik tries to remember when this happened.
+23:12 -!- sigjuice [~sigjuice@12-210-35-171.client.attbi.com] has quit ["Client Exiting"]
+23:13 < Erwin> rik: Huh?
+23:13 < rik> well, i can't remember, so it must have been some time ago, and may well have been a bug.
+23:13 < rik> ignore me. i'm not saying anything helpful.
+23:14 -!- Alipha [Alipha@0-1pool184-57.nas3.rochester1.mn.us.da.qwest.net] has quit [Read error: 104 (Connection reset by peer)]
+23:14 -!- Alipha [Alipha@0-1pool184-57.nas3.rochester1.mn.us.da.qwest.net] has joined #c
+23:15 -!- DeSigna|afk is now known as DeSigna
+23:18 -!- czarusk [czara@art.janter.net] has joined #c
+23:18 -!- thu [~thu@h24-78-136-7.vc.shawcable.net] has joined #c
+23:19 -!- aroldan [aroldan@200.91.226.12] has quit ["and so I know..."]
+23:20 -!- \elsevoid is now known as LordVoid
+23:23 -!- portalgod_c [portalgod@adsl-20-202-6.mia.bellsouth.net] has quit [Read error: 104 (Connection reset by peer)]
+23:25 -!- gp [gp@p147-tnt1.syd.ihug.com.au] has joined #c
+23:26 -!- noname [~noname@pc1-alde1-5-cust137.glfd.cable.ntl.com] has joined #c
+23:26 -!- harpoAWY [~harpo@200.70.105.254] has quit ["Read error: 2.71828182846 (Excessive e)"]
+23:26 -!- aelfgar [~aelfgar@pcp01780134pcs.howard01.md.comcast.net] has joined #c
+23:27 -!- noname [~noname@pc1-alde1-5-cust137.glfd.cable.ntl.com] has left #c ["Client exiting"]
+23:27 -!- gecko2 [~gecko@gecko2.mirdelegate.bsduser.org.uk] has joined #c
+23:27 -!- harpo [~harpo@200.70.105.254] has joined #C
+23:28 -!- fearmax [~max@L1198P08.dipool.highway.telekom.at] has quit ["Client Exiting"]
+23:28 -!- k3rnel [~p8nt_ba11@sdn-ap-021scfairP0216.dialsprint.net] has joined #c
+23:28 -!- aelfgar [~aelfgar@pcp01780134pcs.howard01.md.comcast.net] has quit [Client Quit]
+23:29 < k3rnel> hey
+23:29 -!- sigjuice [~sigjuice@12-210-35-171.client.attbi.com] has joined #c
+23:32 -!- LordFrith [~chatzilla@leblon.rutgers.edu] has left #c []
+23:32 < Skapare> k3rnel: hey back
+23:35 -!- elemental [elemental@tnt2-165-238.cac.psu.edu] has quit [No route to host]
+23:36 -!- elemental [elemental@tnt2-164-173.cac.psu.edu] has joined #c
+23:36 < dx> > 1200 lines and it works
+23:36 < k3rnel> YO PEOPLE
+23:36 < k3rnel> whats up
+23:36 < dx> whats up k3rnel
+23:36 < k3rnel> this fucking channel has 230 ppl, but its dead
+23:36 < k3rnel> thats fucking st0pid
+23:36 -!- ValarQ [~kalle@h248n2fls34o266.telia.com] has quit ["My nose feels like a bad Ronald Reagan movie"]
+23:36 < k3rnel> IAMS / TUPID
+23:37 < k3rnel> ssh into freeslack.com
+23:37 -!- k3rnel [~p8nt_ba11@sdn-ap-021scfairP0216.dialsprint.net] has left #c []
+23:38 -!- kermit [kermit@129.21.129.227] has joined #c
+23:38 -!- harpo is now known as harpoAWY
+23:40 -!- Lennart [~len@137.96-201-80.adsl.skynet.be] has quit [Remote closed the connection]
+23:41 -!- cppowboy [~Cppowboy@t7o69p31.telia.com] has joined #c
+23:42 -!- xtorsyon [~xtorsyon@host217-32-115-121.in-addr.btopenworld.com] has left #C ["Client exiting"]
+23:46 -!- SlipVayne [~jair@dup-148-221-185-201.prodigy.net.mx] has joined #C
+23:49 < sigjuice> hi
+23:51 -!- movement is now known as papalysis
+23:51 -!- keyhack [keyhack@64-215-24-229.nrp2.mon.ny.frontiernet.net] has quit ["Client exiting"]
+23:51 -!- hamcha [~hamcha@h108n1fls31o945.telia.com] has quit ["leaving"]
+23:52 -!- juhl [~jesper@213.237.34.34.adsl.suoe.worldonline.dk] has joined #C
+23:58 -!- sarsvirus [~sethars@216-119-135-197.ipset15.wt.net] has quit [Read error: 113 (No route to host)]
+23:59 < Skapare> sigjuice: hi back
+--- Day changed Mon Apr 28 2003
+00:01 -!- destroyer [~destroyer@005.a.007.syd.iprimus.net.au] has quit ["Client Exiting"]
+00:01 -!- destroyer [~destroyer@005.a.007.syd.iprimus.net.au] has joined #c
+00:01 -!- keyhack [keyhack@64-215-24-229.nrp2.mon.ny.frontiernet.net] has joined #c
+00:05 -!- maxam [~alambert@d01.u1.cyberlink.bc.ca] has joined #c
+00:05 < maxam> if(14 > 1024) blah else blahblah
+00:05 < maxam> why do I get blahblah ???
+00:06 < maxam> am I crazy?  I printf the value of my two ulong's before and after the if() statement, and they're 14 and 1024...
+00:06 -!- sda [1001@CM-vina-242-221.cm.vtr.net] has joined #c
+00:06 -!- LoRez_ is now known as LoRez
+00:07 < andre`> are you sure you do not mean if(14 < 1024) ?
+00:07 < Erwin> paste some code, max 5 lines
+00:07 < sda> hello, what function can I use to generate random number (say int p = random_funcion(range) )?
+00:07 < Xsh> nn dudes / dudettes - escapism r0x
+00:08 < Erwin> sda: look up rand and srand in your reference
+00:08 < andre`> sda : rand or srand , read the manpage about it for info about its usage
+00:08 < sda> ok thanks
+00:10 -!- phe [1000@AToulouse-206-1-11-76.abo.wanadoo.fr] has quit ["Client Exiting"]
+00:11 < maxam> andre`: I mean, "if 14 is larger than 1024, do blah.  if it is smaller, do blahblah."  it is doing blahblah...
+00:11 < maxam> er... wait, did I type that right?
+00:11  * maxam boggles for a moment..
+00:11 < dx> how do i get readline() to display the latest item in its history with the up key
+00:12 < maxam> nevermind, I see my logic bug... I was testing as I thought, but got my blah and blahblah mixed up as to the way I wanted themm...
+00:12 < maxam> thanks.
+00:12 < andre`> :-)
+--- Log closed Mon Apr 28 00:12:56 2003
+--- Log opened Thu May 01 11:42:32 2003
+11:42 -!- hendry [~hendry@hoas-50dd0c12.hoasnet.inet.fi] has joined #c
+11:42 -!- Irssi: #c: Total of 194 nicks [0 ops, 0 halfops, 0 voices, 194 normal]
+11:42 -!- zsteva [~zsteva@217.23.195.40] has quit ["Excellent time to become a missing person."]
+11:42 -!- Irssi: Join to #c was synced in 5 secs
+11:43 < hendry> I need a table like datastructure. table(x, y) = 5 type stuff. How do I go about doing that in C?
+11:44 < durnew> an array?
+11:44 < durnew> int[5][5] :\
+11:45 -!- cbird [~cbird@81.21.197.115] has joined #c
+11:45 < cbird> hi
+11:45 < durnew> hi
+11:45 < hendry> int[5][5] is a five by five type table?
+11:46 < durnew> it'
+11:46 -!- Forcemstr [~jon@pD9E1C3C2.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+11:46 < cbird> does gnu cpp not recognize multiline macros with language talkens like 'if' or 'do' ?
+11:46 < durnew> hendry: it acts as a two dimensional array
+11:46 < IanH> hendry, it's called an array, as durnew said.
+11:46 < durnew> which can be treated as an x,y table
+11:46 < IanH> hendry, a C book is very useful when programming in C.
+11:46 < durnew> cbird: #c++
+11:46 < IanH> Especially useful when learning to do so.
+11:46 < hendry> IanH: Ok, I will go off any play
+11:47 < cbird> durnew: i mean C preprocessor nod c++ compiller
+11:47 < durnew> oh, thought i read gpp
+11:47 < durnew> dyslexia :\
+11:47 < IanH> cbird, multi-line macros are not allowed.
+11:48 < durnew> can dyslexia form later in life? :P
+11:48 < IanH> cbird, you can make them span lines in your source file by escaping the newlines.
+11:48 < zen-x> durnew, I believe so
+11:48 -!- ddurst [~ddurst@adsl-gte-la-216-86-192-34.mminternet.com] has joined #c
+11:48 < zen-x> durnew, hrmm I thought you meant affect later in life like not go away (dyslexia here too maybe)
+11:49 < zen-x> durnew, don't know if it's like alzheimers
+11:49 < durnew> no, i meant develop during adulthood
+11:49 < durnew> yea, oh well
+11:49 < IanH> I don't think anybody knows, since you wouldn't be able to tell the difference between 'late development' and 'late detection'.
+11:51 < durnew> could just be horrible eyesight
+11:51 < durnew> and i know that can deteriorate with time ;)
+11:52 -!- Qte [~chatzilla@nat-pc.but.auc.dk] has quit ["ChatZilla 0.8.9 [Mozilla rv:1.1/20020826]"]
+11:53 < cbird> IanH: what do you mean: "by escaping the newlines" ?
+11:53 < durnew> cbird: \
+11:54 < cbird> yes, i do so
+11:54 < durnew> cbird: \<line break here>
+11:54 < IanH> cbird, placing a '\' as the last character of the line.
+11:54 < IanH> cbird, what is it that you're trying to do?
+11:54 -!- tekk [~tekk@12.222.233.58] has quit [Read error: 104 (Connection reset by peer)]
+11:54 < cbird> oh, i knew that
+11:55 < cbird> i just have a macro like: #define PUSH( x )\
+11:55 < cbird> if( x )\
+11:55 < cbird> ...
+11:55 < cbird> and preprocessor complains on that 'if'
+11:55 < cbird> (gcc 2.95.4)
+11:56 < durnew> cbird: can you upload your code somewhere?
+11:56 -!- unconscious [0x0F@mppp-p-144-139-119-23.prem.tmns.net.au] has quit [Read error: 113 (No route to host)]
+11:56 < IanH> cbird, it shouldn't.
+11:56 < durnew> or paste it in #flood
+11:56 < cbird> i gess it shouln't
+11:56 < cbird> when i use gcc32
+11:57 < IanH> cbird, that's a bad way to do a function-like macro, though, due to the behaviour of semicolons.
+11:57 < cbird> well, i just need to have it this way
+11:57 < IanH> cbird, if( foo ) PUSH(foo); else return;
+11:57 < IanH> cbird, consider how that would expand.
+11:57 -!- tekk [~tekk@12-222-233-58.client.insightBB.com] has joined #C
+11:57 < cbird> it was not an exact citation
+11:57 < cbird> i just wanted to point the problem
+11:58 < durnew> *sigh*
+11:58 < IanH> cbird, it really doesn't matter what sort of citation it was - if you've made a macro from an if(), it won't work properly in the situation I described.
+11:58 < IanH> cbird, there are better ways to do this.
+11:58 < cbird> yes
+11:58 < cbird> of course
+11:58 -!- ddurst [~ddurst@adsl-gte-la-216-86-192-34.mminternet.com] has left #c ["Client Exiting"]
+11:58 < IanH> And you aren't using them because....
+11:59 < durnew> cbird: if you need help we'll need the exact citation
+11:59 < cbird> well, i dont think i may upload anything
+11:59 < cbird> may i paste the code here
+11:59 < cbird> ?
+11:59 < durnew> #flood
+12:00 < IanH> http://www.rafb.net/paste/
+--- Log closed Thu May 01 12:04:20 2003
+--- Log opened Sun May 04 14:15:22 2003
+14:15 -!- hendry [~hendry@hoas-50dd0272.hoasnet.inet.fi] has joined #c
+14:15 -!- Irssi: #c: Total of 202 nicks [0 ops, 0 halfops, 0 voices, 202 normal]
+14:15 -!- Irssi: Join to #c was synced in 1 secs
+14:17 -!- DeSigna [~designa@bri-ts5-2600-109.tpgi.com.au] has quit [Remote closed the connection]
+14:19 -!- klonical [~klonical@33.Red-80-37-209.pooles.rima-tde.net] has quit ["Terminated"]
+14:21 -!- fearmax [~max@L1209P27.dipool.highway.telekom.at] has quit [Read error: 113 (No route to host)]
+14:22 -!- snaund [~kims@219-88-78-200.jetstart.xtra.co.nz] has quit ["Client exiting"]
+14:22 -!- arize [foobar@81.26.233.14] has joined #c
+14:22 < arize> gmorning
+14:22 -!- snaund [~kims@219-88-78-200.jetstart.xtra.co.nz] has joined #c
+14:24 -!- bline [office-8@office.gossamer-threads.com] has quit ["Client exiting"]
+14:25 -!- lordshinvor [1000@ppp-62-11-81-203.dialup.tiscali.it] has quit ["Lost terminal"]
+14:26 -!- elvstone [~elvis@h185n2fls33o877.telia.com] has joined #c
+14:28 -!- hoda [~hoda@12-221-176-131.client.insightBB.com] has joined #c
+14:28 < sjj> Zhivago: around?
+14:34 -!- DeSigna [~designa@bri-ts4-2600-162.tpgi.com.au] has joined #c
+14:37 -!- z_n [~z_n@199.3.135.42] has quit [Read error: 110 (Connection timed out)]
+14:38 -!- gvs [~gvs@u212-239-164-121.adsl.pi.be] has quit [Read error: 54 (Connection reset by peer)]
+14:41 -!- alejandro [~alejandro@78.Red-80-35-162.pooles.rima-tde.net] has joined #c
+14:41 < alejandro> hello
+14:42 < snaund> hi
+14:43 -!- fearmax [~max@L1209P26.dipool.highway.telekom.at] has joined #c
+14:45 -!- fab|zzz is now known as fab
+14:48 -!- Ishq- [~Ishq@frm-64-4-103-32.access.ntelos.net] has quit ["Sic Semper Tyrannis!"]
+14:48 -!- Ishq [~Ishq@frm-64-4-103-32.access.ntelos.net] has joined #C
+14:49 -!- vx`schlumpf [~vx_schlum@dsl-213-023-040-224.arcor-ip.net] has joined #c
+14:52 -!- sn4und [~kims@219-88-78-23.jetstart.xtra.co.nz] has joined #c
+14:55 -!- gumble_ [~gumble@p50826F9F.dip.t-dialin.net] has joined #c
+14:57 -!- DeSigna [~designa@bri-ts4-2600-162.tpgi.com.au] has quit [No route to host]
+15:00 < hendry> with getopt, how do I best pass my program several args? like -keyword cat -keyword dog -keyword rabbit ?
+15:01 -!- snaund [~kims@219-88-78-200.jetstart.xtra.co.nz] has quit [Read error: 60 (Operation timed out)]
+15:02 -!- sn4und is now known as snaund
+15:03 < d33p> why not -keyword car dog rabbit ?
+15:04 < jasta> that's not how getopt works ;)
+15:04 < jasta> however, "-keyword" isnt how it works either
+15:04 < hendry> d33p: that would be ok. with getopt example, i get: Non-option argument dog
+15:09 -!- harpoAWY [~harpo@200.70.105.5] has joined #C
+15:10 -!- PaxAnima [~petter@v058b.studby.ntnu.no] has joined #c
+15:11 -!- gumble__ [~gumble@pD9E66269.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+15:15 -!- doomster [~uli@b112217.adsl.hansenet.de] has joined #C
+15:15 < doomster> hello!
+15:15 -!- gfafgawrg [~gfafgawrg@213-35-164-194-dsl.kjj.estpak.ee] has joined #c
+15:15 < doomster> anyone an idea how/if I can customize the gdb pretty-printer ?
+15:16 -!- ya [bah@adsl-161-44.37-151.net24.it] has joined #c
+15:16 < ya> yo
+15:16 < ya> how do you compile a static lib?
+15:16 -!- Erwin [~erwin@port283.ds1-he.adsl.cybercity.dk] has quit [Read error: 110 (Connection timed out)]
+15:17 < elvstone> -static i think, man gcc.
+15:17 -!- elvstone [~elvis@h185n2fls33o877.telia.com] has quit ["bbl."]
+--- Log closed Sun May 04 15:20:59 2003
+--- Log opened Sun May 04 16:01:54 2003
+16:01 -!- hendry [~hendry@hoas-50dd0272.hoasnet.inet.fi] has joined #c
+16:01 -!- Irssi: #c: Total of 204 nicks [0 ops, 0 halfops, 0 voices, 204 normal]
+16:01 -!- Irssi: Join to #c was synced in 2 secs
+16:02 < snaund> in the context of english, ( is described as a bracket, despite the technical term of a paren
+16:06 -!- pradeep [~pradeep@bay1-5.dial.umd.edu] has joined #c
+16:07 < Zhivago-> snaund: well, (, { and [ are in the same family
+16:07 < snaund> sure
+16:07 < Zhivago-> snaund: in that sense a ( is a bracket, but I don't think that you can claim a renaming
+16:07 -!- pradeep [~pradeep@bay1-5.dial.umd.edu] has quit [Client Quit]
+16:08 < d33p> Zhivago-: ()'s == round brackets?
+--- Log closed Sun May 04 16:08:29 2003
+--- Log opened Sun May 04 19:29:59 2003
+19:29 -!- hendry [~hendry@hoas-50dd0272.hoasnet.inet.fi] has joined #c
+19:29 -!- Irssi: #c: Total of 214 nicks [0 ops, 0 halfops, 0 voices, 214 normal]
+19:30 -!- Irssi: Join to #c was synced in 1 secs
+19:30 < PoppaVic> Lovely idea ;-)
+19:30 < arize> Zhivago: hehe. The point was to make plastic materials glow by leading electrons through it. So far it's possible to create lines, but not much more.
+19:30 < arize> Zhivago-: and afaik it can't produce color output.
+19:31 < Zhivago-> yes well, fortunately retinal projection is in r&d :)
+19:31 < Zhivago-> when that hits prodution we should be able to mount a display in the corner of a pair of glasses
+19:32 -!- knix [~jimmy@adsl-63-193-210-167.dsl.snfc21.pacbell.net] has quit ["sudo sysctl -w kernel.panic='1'"]
+19:32 < arize> Zhivago-: nice. Then we can all feel like attack helicopter pilots flying at night. ;)
+19:34 < hendry> Can someone please give me a hand with a multi-dim array problem I am having here: www.fysh.org/~kai/sample.c ?
+19:34 < hendry> I get this error: sample.c:25: warning: passing arg 1 of `compute_goto' from incompatible pointer type
+19:35 < yrlnry> hendry: compute_goto is declared as taking an int **, but you are passing an (int [ROW])*
+19:35 < q[mrw]> hendry: use a decent editor. you have stacks of unnecessary trailing whitespace.
+19:35 < q[mrw]> lkjsdfl
+19:36 < yrlnry> hendry:g is an array of arrays.  You're passing a pointer to the first array in g.
+19:36 -!- rm [0@cm-net-fln-C8B08C6A.brdterra.com.br] has joined #c
+19:37 < q[mrw]> you don't need that memset either.
+19:38 < hendry> er... Ok, I am trying to understand. I want to simply pass that 2-dim array around to be populated by compute_goto
+19:38 < hendry> and g would be used by several other functions. Is using pointers the best way to share a datastructure?
+19:39 < hendry> q[mrw]: i thought I need a memset to clear the mem, so I can easily find out if if there has been a value set.
+19:40 < hendry> yrlnry: isn't an int** a int[][], which g is? don't understand : (int [ROW])* . Could you please tell me what it should be?
+19:40 < q[mrw]> hendry: assign {0} to it.
+19:40 < yrlnry> hendry: No.
+19:40 -!- paralysis is now known as movement
+19:40 -!- Gremlin_ [~Gremlin@d50.as1.spfd.oh.voyager.net] has joined #C
+19:40 < yrlnry> hendry: Arrays and pointers are not the same thing.
+19:40 < Gremlin_> I'm back!
+19:40 -!- Gremlin_ is now known as Cybermorphic
+19:41 < Cybermorphic> Anyone I was talking to about emulation still here?
+19:41 < Cybermorphic> It was a couple hours ago.
+19:41 < yrlnry> hendry: And I don't think I can explain in detail on IRC; sory.
+19:41 < arize> Cybermorphic: I'm here. erwin is afk
+19:41 < Cybermorphic> Cool
+19:42 < Cybermorphic> So what do you think about my question? If it is possible to emulate an entire computer system on a computer system to the point where you could manage and store virtual files within the emulated system?
+19:42 < hendry> yrlnry: do you have some example at least ? ( i am pretty desperate to get this working )
+19:43 < yrlnry> hendry: Give me a minute
+19:44 < arize> Cybermorphic: the question is incomplete since the 'if' statement is left without operator and answer definitions.
+19:44 < Cybermorphic> A computer inside a computer. That is the patent I have been reading about. The purpose of it is to trap viruses. You create a virtual computer to trick and release viruses into, to see if it causes damages.
+19:44 < Cybermorphic> That why you can catch viruses even if you don't know there signatures
+19:45 < Cybermorphic> Just by automaticly analyzing damages to the virtual computer system.
+19:46 < Cybermorphic> Well even if I don't ask a well formed question, might you still have a helpfull answer?
+19:46 < arize> Cybermorphic: Hmm... The only thing you'd do is to reinvent the wheel. Anti-Virus programs that run in daemonmode check for 'malicious' code
+19:47 < Cybermorphic> Ooh really?
+19:47 < arize> Cybermorphic: which is what you'd want the analysis program to do.
+19:47 < Cybermorphic> What is daemonmode?
+19:47 < arize> Cybermorphic: backgrounded.
+19:47 < Cybermorphic> backgrounded?
+19:48 < hksdu> Cybermorphic: ftp daemon means ftp server running in the background.
+19:48 < arize> Cybermorphic: I suppose you're using windows since viruses are of concern to you
+19:48 < Cybermorphic> No linux
+19:48 < hksdu> arize: lol
+19:48 -!- sahbizz [ertger@200.222.183.77] has joined #c
+19:48 -!- sahbizz [ertger@200.222.183.77] has left #c []
+19:48 < Erwin> hendry: if you are doing multi-dimensional array, read the C FAQ. It has some information about it.
+19:48 < Cybermorphic> I use windows too though, but right now I am on linux.
+19:48 < Cybermorphic> Can a virus get around daemonmod by changing its own code around?
+19:49 < yrlnry> hendry: See http://www.plover.com/~mjd/misc/c/2darray.c
+19:49 < virus> ...
+19:49 < virus> =]
+19:49 < virus> sure I can!
+19:49 < hksdu> lol
+19:49 < arize> Cybermorphic: the apps in the lower right of the windows taskbar are most likely daemons that wait for certain things to happen so they can take certain actions.
+19:50 < arize> Cybermorphic: if I were you I'd give up coding an emulator if you don't know this much....
+19:50 < Cybermorphic> Well I am familiar with the term: daemon
+19:50 < Cybermorphic> But not what daemon mode does in terms of antivirus software.
+19:51 -!- harpo is now known as harpoAWY
+19:51 < arize> Cybermorphic: oh? I'm familiar with the term "Space Shuttle" but I don't know how to fly one (let alone build it)
+19:51 < Cybermorphic> 8D
+19:52 < Cybermorphic> Anyway I am intrested in this idea of a virtual computer, not for the purposes of anti-virus software but for the novelty of it.
+19:52 -!- aaron^ [dontbanme@dialup-67.25.229.121.Dial1.Indianapolis1.Level3.net] has joined #c
+19:52 < wcstok> novelty?
+19:52 < arize> Cybermorphic: daemon mode is just what I told you. An underlying process waiting for certain things to happen before it takes action. I can imagine the anti-virus daemons hooks certain interrupts and checks their function codes before they are allowed to execute.
+19:53 < Chunky> afaik, its file-io
+19:53 < Chunky> so they can examine files as they are loaded/executed
+19:53 < arize> Chunky: whatever. It still has to check the interrupts and the function codes.
+19:53 < Cybermorphic> So basicly daemon mode watches to see if anything malicious happens inside the computer incase they didn't catch a known virus before it was executed.
+19:53 -!- recluse [~recluse@u21.ifox.com] has joined #c
+19:53 -!- recluse [~recluse@u21.ifox.com] has quit [Client Quit]
+19:54 -!- recluse [~recluse@u21.ifox.com] has joined #c
+19:54 -!- hksdu [~Leung@CPE0060676711ec-CM400035832997.cpe.net.cable.rogers.com] has quit ["Client Exiting"]
+19:54 -!- yrlnry [nunya127@perl.plover.com] has quit ["[x]chat"]
+19:55 -!- \zxc [~Angel@213.137.8.227] has quit [Connection reset by peer]
+19:55 < arize> Cybermorphic: *sigh* the running anti-virus software *IS* what catches the known viruses. It also alerts for programs taking actions that MAY be 'unhealthy' to your system. That's why you sometimes have to turn off auto-protection when you install certain programs (drivers, mainly)
+19:55 -!- recluse [~recluse@u21.ifox.com] has quit [Client Quit]
+19:55 -!- recluse [~recluse@u21.ifox.com] has joined #c
+19:55 < Cybermorphic> I see.
+19:56 < binarie> is it efficient to implement string comparesment with switch() ? like to test for particular string that is passed at a command line execution
+19:56 -!- Rint [~john@wsip-68-107-209-6.tu.ph.cox.net] has quit [Read error: 113 (No route to host)]
+19:56 < arize> binarie: man getopt
+19:56 < Cybermorphic> But isn't it really a good test, because sometimes anti-virus software fails, to put new software on a junk computer just for the purposes of seeing if it causes damage and general testing?
+19:56 < wcstok> you can't switch on strings
+19:57 < binarie> so... if ( !strcmp(av[1], "echo") blahblah; all the way eh
+19:57 < Erwin> binarie: How many times are you going to be parsing your command lines each time your program runs?
+19:57 -!- phbc [~trance@200.222.55.159] has quit ["Client Exiting"]
+19:57 < binarie> we have to rewrite stty command, ... lots of strings
+19:57 < binarie> Erwin yes, each time
+19:58 < arize> Cybermorphic: no, because the reason the anti-virus software fails is that the virus does something that isn't reported as malicious, and I doubt your analysis tool can keep up with the antivirus corporations updates of what code is malicious or not.
+19:58 < arize> binarie: I suggest you look into getopt
+19:58 -!- bkhl [~bkhl@md4690905.utfors.se] has joined #c
+19:58 < Cybermorphic> Ahh I see...
+19:59 < Cybermorphic> Well I think the idea of a virtual computer is a good one even just for its own sake.
+19:59 < binarie> arize but it's not even C function, and we stricly have to use C
+19:59 < Cybermorphic> Thanks for enlightening me though arize
+19:59 < arize> Cybermorphic: so you see now why I meant when I said you were reinventing the wheel...
+19:59 < Cybermorphic> Yes that is the part I didn't understand about my friends patent.
+20:00 < arize> Cybermorphic: that too is an old idea. do you think videogames developers produce the game cassettes every time they test a game?
+20:00 < binarie> ahh :P
+20:00 < Cybermorphic> How you have any better chance of detecting a virus after it has already caused problems in a VR computer system, than you do before hand in a real system.
+20:00 < arize> Cybermorphic: about that patent ... what is exactly the solution he has patented?
+20:00 < Cybermorphic> You can look it up at the official US pattent website
+20:01 < Cybermorphic> Or I can give you a link
+20:01 < arize> binarie: it is a C function....
+20:01 < arize> Cybermorphic: hand me a link.
+20:01 < Cybermorphic> http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=/netahtml/search-adv.htm&r=1&f=G&l=50&d=ptxt&S1=schnurer-john.INZZ.&OS=in/schnurer-john&RS=IN/schnurer-john
+20:01 -!- linuxfreck [~chris@pD9EB5B14.dip.t-dialin.net] has joined #c
+20:02 < Erwin> getopt is not a ANSI C function, but POSIX. But then again, it will be hard to implement stty using ANSI C.
+20:02 < Cybermorphic> There is a very unflattering "wired" article about him and a gravity shielding expiriment he worked on I was reading about last night.
+20:02 < Cybermorphic> "Buisness Week" wrote an article on the same expiriment but made it sounds very good.
+20:03 < twkm> not an unusual thing.
+20:03 < Cybermorphic> So your thinking if I want to get into creating Virtual Computers I should look into video game console emulation?
+20:04 < Cybermorphic> I'm mainly intrested in the idea of a virtual computer because of this book I read called, Godel Escher Bach: An eternal golden braid.
+20:04 < arize> Erwin: well. it was C function he asked about. :)
+20:05 -!- Anti-Halcyon [~anti-halc@64.203.193.86] has joined #C
+20:06 -!- q[mrw] [Z@ppp58.dyn11.pacific.net.au] has quit [Read error: 110 (Connection timed out)]
+20:06 < d33p> what are these 'microwave burritos'?
+20:06 < arize> Cybermorphic: yes. the source code for snes9x is available (somewhere). It's easy enough to get you started. Then you'll have to read about the processor type you want to emulate and so on....
+20:06 -!- STiAT|off is now known as STiAT
+20:06 < debugger> anyone known if a write(2) is atomic ?
+20:06 < arize> d33p: food?
+20:06 < PoppaVic> d33p: Burro's explode - so they use "burritos"
+20:06 < d33p> hmm..
+20:07 < Cybermorphic> What happens if you emulate a windows program like windows explorer, or some other windows tool you might find in the control panel on linux?
+20:07 < PoppaVic> You die a horrible, painful death?
+20:08 < wcstok> microsoft sends the lawyerbeasts after you?
+20:08 < binarie> debugger atomic with what? lseek?
+20:08 -!- recluse [~recluse@u21.ifox.com] has quit ["Client exiting"]
+20:08 < PoppaVic> Besides, we already patented it ;-)
+20:08 < debugger> binarie: between concurrent writes
+20:08 < debugger> binarie: say, between to process writes.
+20:09 -!- recluse [~recluse@u21.ifox.com] has joined #c
+20:09 < binarie> you have to set tie O_APPEND flag
+20:09 < binarie> for it to be atomic, with lseek that is
+20:09 < arize> Cybermorphic: The 'control panel on linux' ?
+20:09 < debugger> binarie: hum.. you are not getting where I want
+20:09 < Cybermorphic> emulating windows control panel tools, on linux.
+20:09 -!- aaron^ [dontbanme@dialup-67.25.229.121.Dial1.Indianapolis1.Level3.net] has quit []
+20:10 < binarie> it is to atomic by it self, like if 2 processes access the file at the same time to write something to it at the end
+20:10 < Cybermorphic> Tools that are designed to configure windows operating system functions and manage windows for your hardware.
+20:10 < binarie> s/to/not
+20:10 < Erwin> Cybermorphic: they don't do that magically. you have to emulate everything.
+20:10 < arize> Cybermorphic: that would be an absolute waste of time, since it would have to be completely rewritten. And that too has already been done (by KDE I think)
+20:10 < Chunky> KDE looks pretty much like windows
+20:11 < Cybermorphic> I'm running redhat right now.
+20:11 < arize> Cybermorphic: KDE is a window manager (very windowsy). you'll probably like it......
+20:11 < Erwin> Cybermorphic: so if some tool wants to write directly to the hardware then well, either you let it, which is probably a bad idea, or you insert some emulation layer in between. e.g. vmwareemulates a svga card
+20:11 -!- cha0s [~cha0s@a213-22-116-204.netcabo.pt] has quit [Read error: 104 (Connection reset by peer)]
+20:11 -!- zul[pasla] [mushroom@AClermont-Ferrand-101-1-6-18.abo.wanadoo.fr] has quit [Read error: 60 (Operation timed out)]
+20:11 -!- bkhl [~bkhl@md4690905.utfors.se] has quit []
+20:11 < debugger> binarie: imagine this, process A write 300 bytes, in the meantime, process B writes 100 bytes to the same file; now the question is, will process B write occour only after process B?
+20:12 < binarie> debugger that's call the "race condition"
+20:12 < debugger> oh .. replace the last "process B" with "A"
+20:13 < debugger> binarie: yes I known; but apart from that, will the OS do both writes concurrently?
+20:13 < binarie> yes
+20:13 < binarie> and you will loose some data
+20:13 < binarie> unless you set some tty flags that would bind lseek to write
+20:14 < debugger> I known how to serialize it!  hehe
+20:14 < arize> debugger: or lseek manually.
+20:14 -!- HellFyre [~hellfyre@dsl.119.mt.onewest.net] has left #c ["I like core dumps"]
+20:14 < debugger> i just want to known if os serialized writes to the same file
+20:14 -!- hipnod [~hipnod@host-209-214-85-221.fll.bellsouth.net] has quit [Read error: 54 (Connection reset by peer)]
+20:15 < Erwin> in unix, last write wins
+20:15 < debugger> but the OS has to do this for pipes :/
+20:15 < binarie> arize would it happen though that, when one process lseeks the file, and when it finds it, the other process lseeks the file and when it is done the first process writes to the file and so is the second process, overwriting the first process entry?
+20:15 < debugger> Erwin: but, both writes are serialized?
+20:15 < Erwin> for writing to pipes, you are guaranteed PIPE_BUF bytes (at least 512) that can be written atomically
+20:15 < debugger> and in files?
+20:15 -!- NtStRt[out] [~cknp@1-107.mganm700-2.telepar.net.br] has joined #c
+20:16 < debugger> do we have that guaranty?
+20:16 -!- grube [~grube@adsl-68-75-103-174.dsl.toldoh.ameritech.net] has joined #c
+20:16 < arize> binarie: I suppose so, yes.
+20:16 < grube> hey all
+20:16 -!- zen-x [~x@c16437.rochd2.qld.optusnet.com.au] has joined #c
+20:17 < debugger> Erwin: do you known?
+20:17 < binarie> ahh... and so, by setting O_APPEND flag with stty, you are garanteed that lseek and write be atomic, that is no proccess is taking into the action untill lseeks finds entry AND write writes it
+20:17 -!- ImaginaryUser [1000@dialup-67.73.158.40.Dial1.Chicago1.Level3.net] has quit [Read error: 113 (No route to host)]
+20:17 -!- hipnod [~hipnod@host-216-77-220-50.fll.bellsouth.net] has joined #c
+20:17 < binarie> as far as i know, that's how they apend to utmp file
+20:17 < debugger> so writes on files are also atomic?
+20:17 < binarie> *append
+20:17 < binarie> debugger if you set the tty option. yes
+20:18 -!- JustinCA [~JustinCA@hsa247.pool003.at101.earthlink.net] has joined #c
+20:18 < debugger> alright, makes sense =)
+20:18 < debugger> thx :)
+20:18 < binarie> actualy it's not even stty
+20:19 < binarie> in  fcntl.h file somewhere
+20:19 < debugger> yes, I will look at the actuall constant.
+20:19 -!- zsteva [~zsteva@217.23.195.45] has joined #c
+20:19 -!- recluse_ [~recluse@u21.ifox.com] has joined #c
+20:19 -!- recluse [~recluse@u21.ifox.com] has quit ["Client exiting"]
+20:19 -!- recluse_ is now known as recluse
+20:21 -!- ImaginaryUser [1000@user-v8lcspu.dialup.mindspring.com] has joined #C
+20:21 < PoppaVic> damnit.. *sigh* OK, I did "#define __USE_ISOC99 \n #include <limits.h>\n" - and I still can't "see" ULLONG_MAX, LLONG_MIN, LLONG_MAX - what's the scoop here?
+20:22 < twkm> which c compiler?
+20:22 < PoppaVic> 2.95.4
+20:23 < wcstok> open up limits.h
+20:23 < PoppaVic> in there
+20:23 < wcstok> they named the constants wrong on this isntallation of 2.95.2 *shrug*
+20:23 < orbitz> does 2.95.4 have much C99 support
+20:23 -!- grube [~grube@adsl-68-75-103-174.dsl.toldoh.ameritech.net] has quit [""BLEARG!!!!""]
+20:23 < justin> in the limits.h its wrapped aorund ifdef __USE_ISOC99
+20:23 -!- YanGz [yangz@cm171.omega64.scvmaxonline.com.sg] has joined #c
+20:24 < PoppaVic> right
+20:24 -!- STiAT is now known as STiAT|off
+20:24 < Erwin> PoppaVic: why don't you use -std=c99 switch?
+20:24 < PoppaVic> I even tried gcc -std=c9x
+20:24 -!- lompik [~lompik@Mix-StDenis-104-2-146.abo.wanadoo.fr] has joined #c
+20:25 -!- kdehl [~madman@as3-2-3.sgp.lk.bonet.se] has joined #c
+20:25 < PoppaVic> tried both, Erwin - lemme try again here
+20:25 -!- Netsplit brunner.freenode.net <-> irc.freenode.net quits: Hirogen2
+20:25 < orbitz> PoppaVic: look at your limits.h fiel and make sure it's even there
+20:25 < PoppaVic> nope - still screams
+20:25 < PoppaVic> it is, man - been there - read that ;-)
+20:26 < PoppaVic> OK, hold one - lemme try -E and see wtf
+20:26 < PoppaVic> whoa..suckin' - ain't ANYTHING up there except filenames and lines..
+20:28 < twkm> Erwin: -std isn't in 2.95.  i think it uses -fstd instead.
+20:28 < PoppaVic> -std
+20:28 -!- kawfee [~unknown@cs679146-109.austin.rr.com] has joined #c
+20:29 -!- fab|douche is now known as fab
+20:29 -!- bkhl [~bkhl@md469221d.utfors.se] has joined #c
+20:29 < arize> twkm: 2.95.4 uses -std, but I get this when I use -std=c99: cc1: unknown C standard `c99'
+20:29 -!- nomius [~nomius@200.45.235.125] has joined #C
+20:29 < PoppaVic> c9x
+20:29 < arize> ah
+20:30 -!- Netsplit over, joins: Hirogen2
+20:30 < twkm> interesting, the docs i have for 2.95 say -fstd.
+20:30 < twkm> hmm.
+20:30 -!- grube [~grube@adsl-68-75-103-174.dsl.toldoh.ameritech.net] has joined #c
+20:31 < PoppaVic> ahh, wait a sec here..
+20:32 -!- rm [0@cm-net-fln-C8B08C6A.brdterra.com.br] has quit ["Client exiting"]
+20:35 < PoppaVic> drat
+20:37 -!- tekk [~tekk@12-222-233-58.client.insightBB.com] has quit [Read error: 104 (Connection reset by peer)]
+20:37 -!- kennyd [~kennyd@216-108.dsl2.net.hinet.hr] has joined #c
+20:38 < kennyd> can i ask a batch scripting question? i tried few dozen channels on 4 networks but nobody knew
+20:39 < zen-x> kennyd, just as long as it's not long and you don't flood
+20:40 -!- grube [~grube@adsl-68-75-103-174.dsl.toldoh.ameritech.net] has quit [""I'm confused as to what's happening, so I'm going to go cry.""]
+20:40 < kennyd> how do I list all the directories c:\path\ (not subdirs)? it can be done with FOR loop but i can't figure out the syntax from reading help file
+20:40 < kennyd> FOR /R c:\path %i% IN (*) DO echo %i%
+20:40 < kennyd> something like that
+20:40 < zen-x> oh, .bat scripts? hrmm
+20:40 < kennyd> yeah
+20:41  * zen-x thought shell scripts
+20:41 < orbitz> man, better off writing a C prog to do it than figuring out batch scripts:)
+20:41 < zen-x> better off installing cygwin
+20:41 < kennyd> heh
+20:41 < kennyd> C is a bit of an overkill for this
+20:41 < zen-x> not really, it will be an interesting excercise if you haven't done so
+20:42 < zen-x> anyway, doesn't dir /s list all the dirs? or even dirtree or tree ?
+20:42 -!- hamcha [~hamcha@h108n1fls31o945.telia.com] has quit ["leaving"]
+20:42 < kennyd> that was just an example, i don't really want to echo the directories
+20:42 -!- _pragma [~pragma@24-205-99-82.rno-cres.charterpipeline.net] has quit ["Life is a sexually transmitted disease of which there is 100% fatality."]
+20:42 -!- api [~api@cm217.omega168.scvmaxonline.com.sg] has quit ["Client exiting"]
+20:43 < zen-x> kennyd, dunno
+20:43 < zen-x> anyway, crashing now, later
+20:43 -!- zen-x [~x@c16437.rochd2.qld.optusnet.com.au] has quit ["Client exiting"]
+20:45 -!- tekk [~tekk@12-222-233-58.client.insightBB.com] has joined #C
+20:45 -!- [sKUrZ0] is now known as sKUrZ0
+20:46 -!- aaron^ [dontbanme@dialup-67.25.230.45.Dial1.Indianapolis1.Level3.net] has joined #c
+20:46 < kennyd> well i suppose i could do it in C
+20:47 < kennyd> i'm doing a q3 version changer, doing it in C would let me pick the version automatically, if I can figure out how to connect to quake 3 server and get a version
+20:49 < twkm> i'll just bet there are documents describing that sort of thing.
+20:49 -!- done[4] [~peterpan@adsl-157-5-122.ard.bellsouth.net] has joined #c
+20:49 -!- knives [~knives@217-126-249-91.uc.nombres.ttd.es] has joined #c
+20:50 -!- D-Swat [D-Swat@pD903ADB0.dip.t-dialin.net] has joined #c
+20:50 -!- ImaginaryUser [1000@user-v8lcspu.dialup.mindspring.com] has quit [Read error: 113 (No route to host)]
+20:50 -!- done[4] [~peterpan@adsl-157-5-122.ard.bellsouth.net] has quit [Client Quit]
+20:51 -!- rapha [~Raphael@p5085C9C9.dip0.t-ipconnect.de] has joined #c
+20:51 -!- digitalfallout [~digitalfa@24.247.62.36.gha.mi.chartermi.net] has joined #c
+20:52 < PoppaVic> hmm.. is there any preprocessor voodoo to have it paste <something> together <n> times?
+20:53 -!- knives [~knives@217-126-249-91.uc.nombres.ttd.es] has quit ["knives has no reason"]
+20:53 < PoppaVic> ..as in FOO(4,F)  generating 0xFFFF ?
+20:53 < orbitz> aaron would probably know, he's all abou tthe metaprogramming
+20:55 -!- bkhl [~bkhl@md469221d.utfors.se] has quit [Read error: 60 (Operation timed out)]
+20:56 -!- bux [~bux@h224n2fls32o863.telia.com] has joined #c
+20:56 -!- brad_mssw [~brad@shop.mcve.com] has joined #c
+20:56 -!- lament [~lament@h24-78-145-92.vc.shawcable.net] has joined #c
+20:56 < PoppaVic> ok, then try this - I know << & >>, but damn - no.. of course not *sigh*
+20:57 < orbitz> can you ajek rescursive macros
+20:57 < PoppaVic> I dunno - prolly not.
+20:58 -!- rapha [~Raphael@p5085C9C9.dip0.t-ipconnect.de] has quit ["Client exiting"]
+20:58 -!- Raagshinnah [~freezer@modemcable177.64-130-66.cap.mc.videotron.ca] has quit ["Illegal operations, Illogical solutions - Existential problems, Shutting down the system..."]
+20:58 -!- dx [~dx@du-244-229.mrep.net] has joined #c
+20:59 < dx> happy morning
+21:02 < orbitz> hi
+21:03 < dx> hello, orbitz
+21:03 < PoppaVic> shit - this is irksome.
+21:04 < PoppaVic> I'd even be happy with a way to bitshift&fill.
+21:05 < justin> i think you just want ~(0)
+21:05 < orbitz> you coudl make inline function
+21:05 < PoppaVic> whoa - wait - try that again, justin?
+21:05 < PoppaVic> I'm trying to cobble up a datafile totally sans code - about 10 lines, orbitz ;-)
+21:06 < PoppaVic> ..playing with -S as well.
+21:06 < justin> hmm
+21:07 -!- nomius [~nomius@200.45.235.125] has quit ["bbl"]
+21:08 < PoppaVic> ahh
+21:08 -!- rommle [rommle@12-246-15-192.client.attbi.com] has joined #c
+21:08 < rommle> hi
+21:08 < dx> hi
+21:08 < PoppaVic> justin: I think you got it..
+21:09 -!- dx [~dx@du-244-229.mrep.net] has quit ["ircII EPIC4-1.0.1 -- Are we there yet?"]
+21:12 < rommle> can anyone recomend a good book to learn c :\
+21:12 -!- bancebehn [schulze_th@pD9EB3E91.dip.t-dialin.net] has joined #c
+21:12 -!- hamcha [~hamcha@h108n1fls31o945.telia.com] has joined #c
+21:12 < quotemaster> K&R
+21:13 < orbitz> second edition
+21:13 -!- YanGz [yangz@cm171.omega64.scvmaxonline.com.sg] has quit []
+21:14 < quotemaster> Whatever you do, don't use "Learn X in y units-of-time" books.
+21:15 < rommle> ya, i figure those learn c in 21 wont teach much at all :\
+21:16 < quotemaster> Used to be frequent and be an op in Efnet #C++.
+21:16 < quotemaster> Had some stupid questions from people who tried to learn the easy way.
+21:16 < orbitz> avoid Schildt too
+21:16 < rommle> alright
+21:17 < rommle> so K&R 2nd edition?
+21:17 < quotemaster> That's the best you can get, IMHO.
+21:17 < rommle> ok ty :)
+21:18 -!- vx`schlumpf [~vx_schlum@dsl-213-023-040-224.arcor-ip.net] has joined #c
+21:18 -!- \zxc [~Angel@213.137.8.227] has joined #c
+21:18 -!- Zhivago- [~brian@210.117.107.174] has quit [Read error: 54 (Connection reset by peer)]
+21:20 -!- Sancezz [schulze_th@pD9EB398F.dip.t-dialin.net] has quit [Read error: 60 (Operation timed out)]
+21:20 -!- bancebehn is now known as Sancez
+21:20 -!- Sancez is now known as Sancezz
+21:21 -!- Ambient [ambient@ambient.lnet.lut.fi] has joined #c
+21:22 < binarie> darn... what's the syntax of the argument of a function that is being fetched with an array of structs?
+21:22 < binarie> struct mystruct *?
+21:23 < orbitz> eh
+21:23 < orbitz> 'fetched'?
+21:23 < orbitz> arrays decay to pointers on function calls
+21:24 < binarie> i'm passing a pointer to an array of structures that is
+21:24 < nAn0> what's the gdb command for "go on" ?
+21:24 < Erwin> what's the half-life of an array?
+21:24 < Erwin> nAn0: continue
+21:24 < nAn0> thx
+21:24 < wcstok> continue
+21:24 -!- noss [~cs79@snickers.e.kth.se] has joined #c
+21:25 -!- NtStRt[out] [~cknp@1-107.mganm700-2.telepar.net.br] has quit ["<NetStaRt> U.S.A. Bahh!!!! Este é o verdadeiro AntiCristo."]
+21:27 -!- zsteva [~zsteva@217.23.195.45] has quit [Read error: 60 (Operation timed out)]
+21:27 < vorpal> Erwin: haha :)
+21:28 < vorpal> and they emit 'delta' radiation
+21:29 -!- vorpal [~vorpal@ip68-105-135-136.tc.ph.cox.net] has quit ["[x]chat"]
+21:30 -!- R3x_m4ns0n [~Anaximand@200.21.166.68] has joined #c
+21:31 -!- br33zy [~br33zy@dt0f7n86.san.rr.com] has joined #c
+21:31 -!- br33zy is now known as br33zybrb
+21:33 < nAn0> hm
+21:33 < nAn0> what are those declarations above the function body?
+21:34 < orbitz> 'those'?
+21:34 < nAn0> hm
+21:34 < nAn0> may i past 3 lines?
+21:35 < nAn0> 2 are enough ;)
+21:35 < nAn0> int  m_umode(cptr, sptr, parc, parv)
+21:35 < nAn0>         aClient *cptr, *sptr;
+21:35 < nAn0> then the function body starts
+21:36 < orbitz> K&R style
+21:36 < nAn0> K&R style ?
+21:36 < orbitz> yes
+21:37 < nAn0> and what is it?
+21:37 < brad_mssw> nAn0: same as doing  in m_umode(aClient *cptr, aClient *sptr, int parc, int parv)
+21:37 < nAn0> same?
+21:37 < nAn0> okay
+21:37 < nAn0> k&r = kerninghan & ritchie?
+21:38 < quotemaster> Yep
+21:39 -!- rommle [rommle@12-246-15-192.client.attbi.com] has quit ["ty #c for your help :)"]
+21:39 -!- SelfTide [plag@CPE-65-26-218-222.wi.rr.com] has quit [Read error: 104 (Connection reset by peer)]
+21:39 -!- overtone [~st14014@pD9E95A1E.dip.t-dialin.net] has joined #c
+21:40 < overtone> hi
+21:40 < orbitz> hi
+21:42 -!- Plag [plag@CPE-65-26-218-222.wi.rr.com] has joined #c
+--- Log closed Sun May 04 21:42:17 2003
