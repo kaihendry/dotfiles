@@ -1,6 +1,6 @@
 servers = (
   {
-    address = "irc.kolumbus.fi";
+    address = "irc.song.fi";
     chatnet = "IRCNet";
     port = "6667";
     autoconnect = "yes";
