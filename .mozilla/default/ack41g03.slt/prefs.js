@@ -9,7 +9,7 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/home/hendry/mp3");
+user_pref("browser.download.dir", "/tmp");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
@@ -47,7 +47,7 @@ user_pref("font.name.fantasy.x-western", "adobe-courier-iso8859-1");
 user_pref("font.size.variable.x-western", 20);
 user_pref("general.open_location.last_url", "www.free6.com");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "ISO-2022-JP, us-ascii, KOI8-R, UTF-8, ISO-8859-15");
+user_pref("intl.charsetmenu.browser.cache", "UTF-8, ISO-8859-1, windows-1252, ISO-2022-JP, us-ascii");
 user_pref("intl.charsetmenu.composer.cache", "UTF-8, ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("mail.smtpservers", "");
