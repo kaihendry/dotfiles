@@ -1,5 +1,6 @@
 #2c
 http://db.cs.helsinki.fi
+http://ww2.intouchsurvey.com
 http://www.1rstwap.com
 https://admin.iki.fi
 https://gateway-vallila.hupnet.helsinki.fi
