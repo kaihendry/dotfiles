@@ -41,6 +41,7 @@ if [ "$PS1" ]; then
         #                 2 for window title
         #  \[ and \] are there to have bash ignore unprintable characters
         #PS1='\[\033]0;\h\007\]\h\$ '
+        PS1='\h:\!\$ '
         PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
         ;;
 
