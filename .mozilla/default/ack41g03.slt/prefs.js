@@ -45,6 +45,7 @@ user_pref("security.disable_button.changePassword", false);
 user_pref("security.disable_button.resetPassword", false);
 user_pref("security.password_lifetime", 0);
 user_pref("security.warn_entering_secure", false);
+user_pref("security.warn_leaving_secure", false);
 user_pref("security.warn_submit_insecure", false);
 user_pref("signon.SignonFileName", "70572827.s");
 user_pref("signon.rememberSignons", false);
