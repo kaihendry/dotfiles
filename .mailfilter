@@ -1,5 +1,17 @@
 # $Id$
 
+# mail comes in
+
+# if it gets categorized as spam it goes to spamassasin(sa) maildir
+
+# if spam gets into my inbox I move it the spamassasin maildir
+# why not go straight to sa-learn? because usually I am not reading mail from my server.
+# therefore I would be piping into wrong machine's spamassasin...
+
+# every now and then I goto spamassasin folder to look at the catch
+# I train the bayesian filter, and god forbid if I find HAM I make sure sa knows about it!
+
+
 DEFAULT="$HOME/Maildir"
 logfile $HOME/.maildroplog
 
@@ -26,20 +38,9 @@ if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|
 to $DEFAULT/.spam-unreadable
 ####
 
-#xfilter 'bogofilter -f -p -u -l -e -v'
-
-#if (/^X-Bogosity: (Spam|Yes)/)
-#to ".spam-bogofilter"
-
-#if (/^X-Bogosity: Unsure/)
-#cc "unsure-bogofilter"
-
 xfilter '/usr/bin/spamc'
 
 if (/^X-Spam-Flag: YES/) 
 {
-#cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
 }
-
-
