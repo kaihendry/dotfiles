@@ -27,7 +27,7 @@ set ispell="aspell -e -c"
 #set allow_8bit
 set charset="utf-8"
 
-set mbox_type=Maildir               # Maildir
+set mbox_type=mbox               # Maildir
 set mbox=~/mail/inbox/"inbox-`date +%m-%Y`" # location of inbox
 save-hook ~A ="inbox-`date +%m-%Y`"
 #set postponed=~/Mail/postponed  # location of postponed messages
