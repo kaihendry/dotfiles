@@ -1,4 +1,4 @@
-base=/home/hendry/mail
-folders=inbox...:sent-mail...
+base=/home/hendry/Mail
+folders=UnivCS/...
 vfolder=searchresults
 database=/home/hendry/.mairix_database

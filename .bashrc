@@ -34,7 +34,7 @@ if [ "$PS1" ]; then
 
     # set a (really) fancy prompt
 
-    export PS1='\h:\w\$ '
+    PS1='\u@\h:\w\$ '
 
     # If this is an xterm set the title to user@host:dir
     case $TERM in
