@@ -22,7 +22,7 @@ mailboxes imaps://hendry@daidalos.pannuhuone.org/rss
 set realname="Kai Hendry"
 set from="hendry@cs.helsinki.fi"
 set hostname="cs.helsinki.fi"
-set alternates=hendry@(iki.fi|cs.helsinki.fi|natalian.org)
+alternates hendry\@(iki.fi|cs.helsinki.fi|natalian.org)
 
 set beep_new                    # beep if new mail comes in
 set editor="vim '+set tw=72'"
