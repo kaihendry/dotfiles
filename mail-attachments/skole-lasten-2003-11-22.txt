@@ -1,0 +1,425 @@
+
+
+Verteiler
+
+Mailingliste user@Skolelinux.de
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Änderungsindex
+
+
+
+
+
+
+erstellt:
+............................................................................
+.
+
+      Eckert, Terlecki, Wilhelm / Datum
+
+
+
+
+
+geprüft:
+............................................................................
+.
+
+      Leibner / Datum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+freigegeben:
+............................................................................
+.
+
+      Gramlich / Datum
+
+
+
+
+
+gültig ab:
+............................................................................
+.
+
+
+
+
+
+      Neues Dokument
+
+ersetzt Version vom:
+............................................................................
+.
+
+
+1 Inhaltsübersicht
+
+0     Inhaltsübersicht 2
+
+1     Zweck 3
+
+2     Systemverwaltung 3
+
+2.1   Installation des Servers    3
+
+2.1.1 Einfache Standardinstallation    3
+
+2.1.2 Flexible manuelle Installation   3
+
+2.1.3 Printserver      3
+
+2.1.4 Nutzerverwaltung 3
+
+2.1.5 Pflege der Accountdaten     3
+
+2.1.6 Kontrolle des belegten Plattenplatzes  4
+
+2.1.7 Kontrolle des Printserver   4
+
+2.1.8 Prüfungsumgebung 4
+
+2.2   Datensicherung   4
+
+2.3   Sicherheitsupdates    4
+
+2.4   Softwareverwaltung    4
+
+2.5   Fernwartung      4
+
+2.6   Versionswechsel  4
+
+2.7   Migration  4
+
+3     Serverdienste    5
+
+3.1   Zugang zum Internet   5
+
+3.2   Der lokale Webserver  5
+
+3.3   Der Mailserver   5
+
+3.4   Der Newsserver   5
+
+3.5   Der Fileserver   5
+
+3.5.1 Austauschverzeichnisse      5
+
+3.5.2 Abholverzeichnis 5
+
+3.5.3 Ablieferverzeichnis   6
+
+3.6   Der Printserver  6
+
+3.7   Der Mail-Listenserver 6
+
+3.8   Das Wiki   6
+
+3.9   Das Forum  6
+
+4     Dokumentation    6
+
+4.1   Administrationshandbuch     6
+
+4.2   Benutzerhandbuch 6
+
+4.3   Begleitmaterial  6
+
+4.4   Unterrichtsmaterial   6
+
+
+2 Zweck
+
+Es sollten hier die Anforderungen aus Lehrersicht für diesen Schulserver
+zusammengetragen werden. Dieses Dokument dient dazu Anforderungen
+nachvollziehbar zu fixieren. Das Lastenheft wird eine  Grundlage für die
+Erstellung eines Pflichtenheftes sein. Erarbeitet wurde das Lastenheft von
+Teilnehmern der deutschen Skolelinux Mailinglingliste.
+
+
+3 Systemverwaltung
+
+3.1 Installation des Servers
+
+3.1.1 Einfache Standardinstallation
+
+
+bedeutet, daß die Eingaben auf das wirklich notwendige reduziert sind. Die
+Einrichtung der Festplatte (Partitionierung, Formatierung, Installation,
+Hardwareerkennung, ...) sollte weitestgehend automatisch ablaufen. Es
+sollte dem Admin eine einfache Einrichtung eine USV möglich sein.
+
+3.1.2 Flexible manuelle Installation
+
+
+Eine manuelle Installation sollte bei ausreichendem Kenntnisstand möglich
+sein, um z.B. Skolelinux in ein vorhandenes Netzwerk zu integrieren.
+
+
+3.1.3 Printserver
+
+
+Der Printserver sollte ein einfaches Einrichten und Konfigurieren von
+Druckern ermöglichen.
+
+
+3.1.4 Nutzerverwaltung
+
+
+Jeder User erhält einen Account. Jeder User des System soll nur die minimal
+nötigen Rechte bekommen. Das Prinzip des kleinsten Privilegs ist
+einzuhalten.
+
+Die Rechte der User sind mindestens zwischen Adminstrator, Lehrer und
+Schüler zu unterscheiden. Die Nutzerverwaltung soll eine weitere
+Unterteilung in Projektleiter, Projektgruppen und Fachlehrer ermöglichen.
+
+Aus allen gängigen Schulverwaltungsprogrammen sollen die Nutzerdaten
+importierbar sein.
+
+
+3.1.5 Pflege der Accountdaten
+
+
+Die Pflege der Accountdaten soll sich nach den spezifischen Anforderungen
+des Schultyps richten. Jeder User soll sein Passwort selbstständig ändern
+können. Berechtigte Lehrer/-innen sollen das Passwort von Schülern ändern
+können.
+
+Die Accountdaten sollen zum Schuljahreswechsel leicht aktualisiert werden
+können.
+
+Beim Löschen der Accounts soll eine befristete Archivierung der Daten des
+Users möglich sein.
+
+
+3.1.6 Kontrolle des belegten Plattenplatzes
+
+
+Durch eine übersichtliche Anzeige soll eine einfache Kontrolle des belegten
+Plattenplatzes möglich sein.
+
+3.1.7 Kontrolle des Printserver
+
+
+Es soll festlegt werden können, welcher User auf welchen Drucker zugreifen
+darf. Die Auswahl mehrerer Drucker soll möglich sein. Das Recht Drucker zu
+sperren und freizugeben sowie Druckaufträge zu stoppen und zu löschen
+sollte einem User zugeordnet werden können. Jeder User soll seine eigenen
+Druckjobs löschen können. Es soll einstellbar sein, dass bei der Abmeldung
+eines Users seine Druckaufträge gelöscht werden.
+
+3.1.8 Prüfungsumgebung
+
+
+Für  Prüfungssituationen (Klausuren) soll es eine einfache Möglichkeit
+geben, die Kommunikation der Schüler untereinander zu unterbinden.
+
+
+3.2 Datensicherung
+
+Es soll ein komplettes als auch ein differenziertes Backup möglich sein.
+
+
+3.3 Sicherheitsupdates
+
+Das gesamte System soll einfach und schnell auf den aktuellen
+Sicherheitsstand gebracht werden können.
+
+
+3.4 Softwareverwaltung
+
+Eine einfache, sichere und schnelle Installation und Deinstallation von
+Software muss gewährleistet sein. Dazu gehört auch ein Update einzelner
+Softwarepakete.
+
+3.5 Fernwartung
+
+Für die gesamte Administration soll eine verschlüsselte Fernwartung möglich
+sein.
+
+3.6 Versionswechsel
+
+Die Aktualisierung auf eine neue Version soll sicher und störungsfrei
+durchführbar sein.
+
+3.7 Migration
+
+Die Ablösung von Windows und Linuxservern soll möglich sein.
+
+
+
+4 Serverdienste
+
+
+Die administrativen Aufgaben sollen über die Rechteverwaltung delegierbar
+sein.
+
+Alle sensiblen Daten (Authentifizierung) sollen grundsätzlich nur
+verschlüsselt ausgetauscht werden. Die Nutzung der bereitgestellten Dienste
+soll für jeden User individuell einstellbar sein.
+
+4.1 Zugang zum Internet
+
+Der Zugang zum Internet soll raumweise, maschinenweise und personenbezogen
+freigegeben und gesperrt werden können.
+
+Unerwünschte Webseiten sollen gesperrt werden können. Die Pflege des
+Filters sollte leicht sein. Im Unterricht soll das aktive surfen beobachtet
+werden können. Das Surfverhalten soll protokolliert werden können.
+
+4.2 Der lokale Webserver
+
+Ein lokaler Webserver soll für jeden Nutzer die Möglichkeit bieten,
+statische und dynamische Webseiten zu präsentieren. Nach Kontrolle durch
+den verantwortlichen Lehrer sollen die individuellen Webseiten öffentlich
+zugänglich gemacht werden können.
+
+Es sollte möglich sein, ausgewählte Webseiten auf einen externen Webserver
+im Internet verschlüsselt hochzuladen.
+
+4.3 Der Mailserver
+
+Ein Mailserver soll sowohl lokales als auch externes mailen ermöglichen.
+Die Berechtigungen sollen über die Nutzerverwaltung einstellbar sein. Es
+soll die Möglichkeit bestehen einen Virenscanner einzubinden. Für den
+Einsatz im deutschen Sprachraum soll eine Schnittstelle für die Angebote
+von Winshuttle angeboten werden.
+
+4.4 Der Newsserver
+
+Ein lokaler Newsserver soll ausgewählte Newsgroups zur Verfügung stellen.
+Die Schreib-/ Leseberechtigung soll über die Nutzerverwaltung einstellbar
+sein.
+
+4.5 Der Fileserver
+
+Jedem User soll ein eigenes Verzeichnis zur Verfügung stehen. Die Größe des
+Verzeichnisses soll über die Nutzerverwaltung einstellbar sein.
+
+4.5.1 Austauschverzeichnisse
+
+
+Es sollen klassenbezogene, raumbezogene und projektbezogene
+Austauschverzeichnisse zur Verfügung gestellt werden. Auch hier soll die
+maximale Größe einstellbar sein.
+
+
+4.5.2 Abholverzeichnis
+
+
+Hier sollen Lehrer/-innen, Kurs- und Projektleiter Dateien zum Abholen zur
+Verfügung stellen können. Schüler sollen in diesem Verzeichnis nur
+Leserechte haben.
+
+4.5.3 Ablieferverzeichnis
+
+
+Hier sollen Schüler fertig bearbeitete Dokumente oder Dateien ablegen
+können. Dieses Verzeichnis soll geschützt sein vor dem Zugriff anderer
+Schüler. Lehrer sollen diese Dateien oder Dokumente auf einfache Weise
+sammeln und verschieben können.
+
+
+4.6 Der Printserver
+
+
+Ein Printserver soll die Druckaufträge verwalten und die Möglichkeit
+bieten, den gedruckten Seitenumfang zu begrenzen und abzurechnen. Ausdrucke
+sollen dem User zuzuordnen sein.
+
+
+4.7 Der Mail-Listenserver
+
+Zur Kommunikation der verschiedensten Gruppen, für E-Mail-Projekte und als
+Newsletter von Seiten der Elternsprecher, Schülersprecher, Schulleitung,
+Arbeitsgemeinschaften und Projekte soll ein Mail-Listenserver zur Verfügung
+gestellt werden.
+
+4.8 Das Wiki
+
+       Für Gruppenarbeiten sollte ein Wiki zur Verfügung gestellt werden.
+
+4.9 Das Forum
+
+Ein Forum (Portal) sollte zur Verfügung gestellt werden.
+
+5 Dokumentation
+
+Eine benutzerangepasste Dokumentation ist unbedingt erforderlich und
+gliedert sich
+
+in Administrationshandbuch, Benutzerhandbuch und Begleitmaterial.
+
+5.1 Administrationshandbuch
+
+Das Administrationshandbuch umfasst die Themen Installation des
+Grundsystems,
+
+Konfiguration der Serverdienste, Benutzerverwaltung, Wartung und
+Sicherstellung des laufenden Betriebs, Update und Upgrade des Systems und
+eine FAQ
+
+5.2 Benutzerhandbuch
+
+Das Benutzerhandbuch vermittelt alle zum Umgang mit dem System notwendigen
+Kenntnisse.
+
+5.3 Begleitmaterial
+
+Didaktisches Begleitmaterial zum pädagogischen Einsatz der installierten
+Software.
+
+5.4 Unterrichtsmaterial
+
+Anleitungen zur Verwendung pädagogischer Software
+
+

@@ -1,0 +1,62 @@
+On Sunday 27 Jul 2003 10:21 pm, Kai Hendry wrote about Your signed GPG key:
+> Hi,
+
+Thanks Kai, I've verified the sig and fingerprint so here's your key:
+
+[neil@mdk91 neil]$ gpg --fingerprint 22341978
+pub  1024D/22341978 2003-07-04 Kai Hendry <hendry@cs.helsinki.fi>
+     Key fingerprint = 0CC2 168C 8B01 E982 30E4  FE49 31FF F0FC 2234 1978
+sub  2048g/E00B9B26 2003-07-04
+
+with my sig added. (It's also updated on the keyservers.)
+
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 5.0
+Comment: PGP Key Server 0.9.4+patch2+modifiedMWjumbopatch
+
+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
+/JTL1TWEEaZoWV0G4CmTby1H
+=wTyK
+-----END PGP PUBLIC KEY BLOCK-----
+
+
+-- 
+
+Neil Williams
+=============
+http://www.codehelp.co.uk
+http://www.dclug.org.uk
+
+http://slashdot.org/~codehelp
+

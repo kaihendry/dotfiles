@@ -88,4 +88,4 @@ message-hook "~h multipart" "set mime_forward=ask-yes"
 lists ohtuv03-digimon-list
 
 bind attach S save-entry
-macro attach s S^A~/mail-attachments/
+macro attach s S^A~/mail/mail-attachments/
