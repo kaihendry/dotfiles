@@ -121,7 +121,7 @@ genframe_bindings{
     -- Tag viewed object
     kpress(DEFAULT_MOD.."T", make_mplex_sub_fn(WRegion.toggle_tag)),
 
- o   submap(DEFAULT_MOD.."K", {
+    submap(DEFAULT_MOD.."K", {
         -- Selected object/tab switching
         kpress("AnyModifier+N", WGenFrame.switch_next),
         kpress("AnyModifier+P", WGenFrame.switch_prev),
@@ -149,7 +149,7 @@ genframe_bindings{
     kpress(DEFAULT_MOD.."G", querylib.query_gotoclient),
     kpress(SECOND_MOD.."F1", querylib.query_man),
     kpress(SECOND_MOD.."F3", querylib.query_exec),
-    kpress(DEFAULT_MOD.."F3", querylib.query_renameworkspace(_)),
+    kpress(DEFAULT_MOD.."F3", querylib.query_renameworkspace),
     kpress(SECOND_MOD.."F4", querylib.query_ssh),
     kpress(SECOND_MOD.."F5", querylib.query_editfile),
     kpress(SECOND_MOD.."F6", querylib.query_runfile),
