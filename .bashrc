@@ -2,8 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export MAIL=/home/hendry/Mail/inboxing
-
 # If running interactively, then:
 if [ "$PS1" ]; then
 
