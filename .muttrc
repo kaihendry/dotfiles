@@ -11,16 +11,13 @@ set imap_force_ssl=yes
 set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 set folder={hendry@mail.cs.helsinki.fi/ssl}
 
-#set spoolfile={hendry@dabase.com/ssl}
-#set folder={hendry@dabase.com/ssl}
+#account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
+#account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}'
 
-account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
-account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}INBOX'
-
-mailboxes !
-mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX {hendry@daidalos.pannuhuone.org/ssl}
-
-#set move=yes
+mailboxes {hendry@daidalos.pannuhuone.org/ssl}
+mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
+mailboxes imaps://hendry@daidalos.pannuhuone.org/prazefarm
+mailboxes imaps://hendry@daidalos.pannuhuone.org/rss
 
 set realname="Kai Hendry"
 set from="hendry@cs.helsinki.fi"
@@ -63,14 +60,8 @@ set pager_index_lines=5
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
 
-# check these commands work
-macro pager J "!gpg --keyserver wwwkeys.eu.pgp.net --recv-key " "Get PGP Key"
-macro pager K "!gpg --lsign-key " "Sign PGP Key"
-
-# BOGOFILTER
-macro index X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
-macro pager X "<enter-command>unset wait_key\n<pipe-entry>bogofilter -S\n<enter-command>set wait_key\n<delete-message>"
-
+macro index X "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
+macro pager X "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
 
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
