@@ -16,7 +16,7 @@ set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 # tab should be next new
 bind	index G			imap-fetch-mail
 
-mailboxes ! +INBOX +INBOX.inex +INBOX.esn-helsinki +INBOX.debating +INBOX.junk
+mailboxes ! +INBOX +INBOX.inex +INBOX.debating +INBOX.junk
 
 #set move=yes
 
