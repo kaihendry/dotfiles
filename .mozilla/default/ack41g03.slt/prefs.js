@@ -10,6 +10,7 @@
  */
 
 user_pref("browser.download.dir", "/tmp");
+user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
 user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
@@ -25,7 +26,7 @@ user_pref("ext.checky.pref.agent.webthing.accessibility", true);
 user_pref("ext.checky.pref.agent.webthing.page", true);
 user_pref("ext.checky.pref.global.tempdirectory", "/home/hendry/.mozilla/default/ack41g03.slt");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "us-ascii, windows-1252, ISO-8859-15, ISO-8859-1, UTF-8");
+user_pref("intl.charsetmenu.browser.cache", "UTF-8, Shift_JIS, us-ascii, windows-1252, ISO-8859-15");
 user_pref("intl.charsetmenu.composer.cache", "ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("network.cookie.p3p", "frfradaa");

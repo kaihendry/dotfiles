@@ -1405,3 +1405,102 @@
 14:57 < godog> search for bugs on http://bugs.debian.org and/or file a new one :)
 14:57 < yang> i mean, when writing indoe tables
 14:58 < yang> it could be something wrong with this machine
+15:05 -!- Basse [~eagle@ti121210a080-1142.bb.online.no] has joined #debian-boot
+15:26 -!- billyoc [~billyoc@66-65-21-18.nyc.rr.com] has joined #debian-boot
+15:35 -!- sweetdeamo [~eses@200.69.145.227] has joined #debian-boot
+15:40 -!- sweetdeamo [~eses@200.69.145.227] has quit []
+15:54 -!- Gleydson [~Gleydson@200.161.142.92] has joined #debian-boot
+15:54 < Gleydson> hi all
+15:54 < Gleydson> is currently any access method enabled for DD other than CVS to checkout and commit D-I stuff?
+15:56 -!- godog [~filo@212.141.102.176] has quit [Read error: 54 (Connection reset by peer)]
+15:58 -!- mrvn_ [mrvn@pD95197F8.dip.t-dialin.net] has joined #debian-boot
+16:08 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [".:: und tschüss ::."]
+16:12 -!- mrvn [mrvn@p50835C4A.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+16:21 -!- Basse [~eagle@ti121210a080-1142.bb.online.no] has quit [Remote closed the connection]
+16:23 -!- manty [~manty@204.Red-213-96-224.pooles.rima-tde.net] has joined #debian-boot
+16:39 -!- bal00 [~hector@156.Red-80-37-116.pooles.rima-tde.net] has joined #debian-boot
+16:41 < bal00> hi all
+16:41 < bal00> I'm using the floppy images I got from http://people.debian.org/~sjogren/d-i/images/2003-12-21/
+16:42 < bal00> and tell me an error about the scsi modules package
+16:42 < bal00> and stop installing
+16:42 < bal00> ideas?
+16:43 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+16:43 < bal00> is the same error I got when trying the floppies from last built before gluck closed down
+16:44 < bal00> ideas??
+16:50 -!- jackhead [~jackhead@pD9E40B23.dip.t-dialin.net] has joined #debian-boot
+16:51 < jackhead> Hallo everybody
+16:52 < jackhead> I am just trying to understand how to get from a template file to the various translated versions of the template.
+16:53 < jackhead> The gettext documentation says to run xgettext on the C files, but that does not fit for debconf templates
+16:53 < jackhead> Could somebody give me a hint how to start?
+16:55 -!- dan_t [~daniele@213.21.137.78] has quit [Read error: 110 (Connection timed out)]
+16:58 < tbm> jackhead: look at the po-debconf package
+17:00 -!- decko [~decko@200.225.247.109] has quit [Read error: 110 (Connection timed out)]
+17:01 < jackhead> tbm: Thanks.
+17:06 < Gleydson> People, how is currently state of D-I upload for DD people? (same applyes for CVS CO and CI)?
+17:06 < Gleydson> I've out for a while and when get back, I've see that CVS server is yet disabled
+17:07 < jackhead> CVS has moved to Alioth
+17:07 < jackhead> https://alioth.debian.org/scm/?group_id=1382
+17:08 < Gleydson> thanks :)
+17:09 < jackhead> Gleydson: joeyh can add your account to those with committ permission
+17:09 -!- decko [~decko@200.225.247.54] has joined #debian-boot
+17:09 < Gleydson> jackhead: So I'll ask him for that. thanks again :-)
+17:11 < pere> both joeyh and tsauther should be able to give out write access.
+17:11 < pere> https://alioth.debian.org/projects/d-i/ list both as admins, at least.
+17:12 < Gleydson> good! I'll also CC tsauther :-)
+17:12 < Gleydson> thanks!
+17:14 -!- piotr [~piotr@FW-30-241.go.retevision.es] has quit ["leaving"]
+17:14 < pere> ah, typo.  tsauter.
+17:15  * Gleydson changing the CC e-mail line...
+17:15 < Gleydson> :)
+17:18 -!- Gleydson [~Gleydson@200.161.142.92] has quit ["Cliente saiu"]
+17:20 -!- Arvind-NL [~Hoi@ip503d4396.speed.planet.nl] has quit [Read error: 104 (Connection reset by peer)]
+17:24 -!- Arvind-NL [~Hoi@ip503d4396.speed.planet.nl] has joined #debian-boot
+17:31 -!- mrvn_ is now known as mrvn
+17:48 -!- Jonzl_ [~Jonzl@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+17:55 -!- joeyh [joey@kitenet.net] has joined #debian-boot
+18:02 < waldi> joeyh: does any part of debhelper use -t ?
+18:03 < joeyh> not at the moment
+18:03 < bob2> hm, d-i oopsed when it tris to load the ym<mumble> sound card module
+18:07 < waldi> joeyh: okay, i allocate them for selection via package type
+18:08 < bal00> I'm using the floppy images I got from http://people.debian.org/~sjogren/d-i/images/2003-12-21/
+18:08 < bal00> and tell me an error about the scsi modules package
+18:08 < bal00> and stop installing
+18:08 < bal00> is the same error I got when trying the floppies from last built before gluck closed down
+18:08 < bal00> ideas??
+18:11 -!- jello [~joe@user-0ccerca.cable.mindspring.com] has joined #debian-boot
+18:18 < joeyh> waldi: how will the flag look in use?
+18:18 < joeyh> wow, 7 languages at 100%!
+18:19 < waldi> joeyh: -t\ ?$type
+18:19 < joeyh> we'll probably get 8 or 9 total. Sweet!
+18:19 < waldi> or --type $type
+18:19 < joeyh> where type is "udeb"?
+18:20 < waldi> udeb or deb
+18:20 < joeyh> you'll have to call the command multpile times, once for debs and once for udebs then
+18:21 < joeyh> I thought you had some hack involving nameing in the control file?
+18:21 < waldi> no, some packages builds udeb and debs seperate
+18:23 < waldi> it don't affect the naming
+18:32 < pere> joeyh: is autopartkit the only udeb using libparted?  libparted is broken.
+18:32 < waldi> pere: parted-udeb uses them also
+18:33 < joeyh> artitioner uses it
+18:33 < joeyh> er, partitioner. Just to get the list.
+18:33 < pere> ok.  perhaps they don't trigger the bug?
+18:37 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [".:: und tschüss ::."]
+18:44 -!- Jonzl_ [~Jonzl@dfn236001.extern.uni-tuebingen.de] has quit ["Client exiting"]
+18:51 -!- tobias [tobias@pD9E58480.dip.t-dialin.net] has joined #debian-boot
+19:02 -!- noshadow [~brl@pcpool09.mathematik.uni-freiburg.de] has joined #debian-boot
+19:05 -!- Basse [~eagle@ti121210a080-1142.bb.online.no] has joined #debian-boot
+19:06 -!- jim [~jim@h152.172.155.12.cablerocket.net] has quit [Read error: 104 (Connection reset by peer)]
+19:11 -!- dev0 [~tobias@pD953C59E.dip.t-dialin.net] has quit [Read error: 110 (Connection timed out)]
+19:23 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has quit [Remote closed the connection]
+19:29 < joeyh> anyone here who understands how to set up to build cd images on gluck?
+19:30 < Basse> are there d-i cd-images with xfs support somewhere?
+19:32 < joeyh> not for d-i afaik
+19:33 < Basse> :-(
+19:39 -!- Basse [~eagle@ti121210a080-1142.bb.online.no] has quit [Remote closed the connection]
+19:41 -!- pb_ [~pb@cpc2-cmbg4-3-0-cust239.cmbg.cable.ntl.com] has joined #debian-boot
+19:56 < bal00> can someone help me with the d-i floppies ??
+19:59 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has joined #debian-boot
+20:01 -!- jbailey [~jbailey@CPE00062579efac-CM014260028338.cpe.net.cable.rogers.com] has joined #debian-boot
+20:03 -!- Jonzl [~bla@dfn236001.extern.uni-tuebingen.de] has quit [Client Quit]
+20:17 -!- decko [~decko@200.225.247.54] has quit [Read error: 104 (Connection reset by peer)]
+20:23 -!- jackhead [~jackhead@pD9E40B23.dip.t-dialin.net] has quit ["leaving"]
