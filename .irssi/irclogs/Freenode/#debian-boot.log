@@ -259,3 +259,63 @@
 18:26 -!- Jonzl [~bittenich@dfn237120.extern.uni-tuebingen.de] has joined #debian-boot
 18:42 -!- michele [~michele@host186-0.pool62211.interbusiness.it] has quit ["."]
 --- Log closed Tue Dec 16 18:42:46 2003
+--- Log opened Tue Dec 16 19:59:51 2003
+19:59 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+19:59 -!- Irssi: #debian-boot: Total of 50 nicks [0 ops, 0 halfops, 0 voices, 50 normal]
+19:59 < joeyh> pere: yes
+20:00 -!- Irssi: Join to #debian-boot was synced in 12 secs
+20:00 < pere> found it.
+20:00 < giuseppe> joeyh: thanks
+20:01 < pere> gaudenz: there?
+20:03 < gaudenz> yes
+20:03 < gaudenz> pere: tock tock ...
+20:03  * manty leaves, bbl
+20:04 < pere> gaudenz: I'm yet again trying to get overfiend over to #debian-boot to discuss discover.
+20:04 -!- p2-mate [~p2@NAT.office.mind.be] has joined #debian-boot
+20:04 < gaudenz> joeyh: I created gaudenz-guest at alioth how can I get added to d-i?
+20:04 < pere> gaudenz: I give up on Eric Gillespie as we are obviosuly not able to communicate, and hope someone else might have more success.
+20:05 < joeyh> gaudenz: added
+20:05 < gaudenz> pere: branden/overfiend understood you :-)
+20:06 < gaudenz> joeyh: Do I have to get a fresh checkout from alioth or is it possible to use the old cvs checkout? Or did we move to svn?
+20:06 < joeyh> it's still in cvs
+20:06 < waldi> gaudenz: cvstools
+20:06 < waldi> cvschroot
+20:06 < pere> gaudenz: can you take over the communication?  I am just getting frustrated.
+20:06 < joeyh> I posted to debian-boot with a command that can move repositories
+20:06 < joeyh> have to substitute in your info of course
+20:06 < gaudenz> pere: I will try...
+20:07 < joeyh> cvschroot, kewl
+20:07 < gaudenz> pere: What about just checking in the didiscover we have into ddetect and using that?
+20:07 < gaudenz> kewl?
+20:08 < pere> gaudenz: that might work, but is it "upgrade-friendly"?
+20:08 < giuseppe> joeyh: I did try the new CVS and I get an error: cvs server: failed to create lock directory for `/cvsroot/d-i/debian-installer' (/cvsroot/d-i/debian-installer/#cvs.lock): Permission denied
+20:08 < joeyh> hm
+20:08 < gaudenz> pere: As long as the libdiscover APi does not change it should work.
+20:08 < pere> giuseppe: sounds like the directory is missing group write access.
+20:09 < giuseppe> right, the CVS directory
+20:09 < giuseppe> pere: do you have the same problem?
+20:09 < joeyh> do they all need it, or only toplevel?
+20:09 < pere> joeyh: I can co-maintain alioth if you want.
+20:09 < waldi> joeyh: find /cvsroot/d-i/ -type d | xargs chmod 2775
+20:09 < giuseppe> joeyh: now the problem is in anna
+20:10 < giuseppe> joeyh: ok, it is working now
+20:10  * joeyh goes to fix base-config too
+20:10 < joeyh> ok
+20:11 < pere> giuseppe: I haven't had time to get back to d-i development yet, so I haven't tested it. :)
+20:11 < waldi> fuck, my ibook misses a cursor on the fb
+20:11 < giuseppe> pere: good, so I will have the time to get the translation in sync :-)
+20:14 -!- fluid [~fluid@pD9E21441.dip.t-dialin.net] has joined #debian-boot
+20:15 -!- Azrael]2 [~azrael@pD9EB76BF.dip.t-dialin.net] has joined #debian-boot
+20:16 < joeyh> so I mofidied kernel-installer last night to install pcmcia modules debs on i386, only to find they arn't on the netinst image
+20:19 < gaudenz> joeyh: I still get the Permission denied on lock creation and can't checkout.
+20:20 < giuseppe> gaudenz: on what directory?
+20:20 < gaudenz> giuseppe: tools/netcfg
+20:20 < giuseppe> gaudenz: it is working here
+20:20 < gaudenz> cvs server: failed to create lock directory for `/cvsroot/d-i/debian-installer/tools/netcfg' (/cvsroot/d-i/debian-installer/tools/netcfg/#cvs.lock): Permission denied
+20:21 < giuseppe> it must be related to the user then
+20:21 < joeyh> gaudenz is the only "guest" so far
+20:21 < joeyh> hmm
+20:24 < joeyh> gaudenz: can you log into to alioth and see if you're in the d-i group?
+20:27 -!- Azrael]2 [~azrael@pD9EB76BF.dip.t-dialin.net] has left #debian-boot []
+20:31 < gaudenz> gaudenz-guest@quantz:~$ id
+20:31 < gaudenz> uid=20149(gaudenz-guest) gid=20149 groups=20149

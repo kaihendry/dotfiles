@@ -173,3 +173,14 @@
 18:11 <hendry> account del 0
 18:11 <root> Account deleted
 --- Log closed Tue Dec 16 18:17:05 2003
+--- Log opened Tue Dec 16 19:59:20 2003
+19:59 -!- Irssi: Starting query in bitlbee with root
+19:59 <root> Account successfully added
+19:59 <root> Trying to get all accounts connected...
+19:59 <root> JABBER - Logging in: Connecting
+19:59 <root> Password accepted
+19:59 <root> JABBER - Logging in: Connected
+19:59 <root> JABBER - Logging in: Requesting Authentication Method
+19:59 <root> JABBER - Logging in: Authenticating
+19:59 <root> JABBER - Logged in
+--- Log closed Tue Dec 16 20:05:19 2003

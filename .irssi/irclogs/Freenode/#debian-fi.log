@@ -31,3 +31,29 @@
 18:08 -!- Irssi: #debian-fi: Total of 20 nicks [0 ops, 0 halfops, 0 voices, 20 normal]
 18:08 -!- Irssi: Join to #debian-fi was synced in 10 secs
 --- Log closed Tue Dec 16 18:42:46 2003
+--- Log opened Tue Dec 16 19:59:51 2003
+19:59 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-fi
+19:59 -!- Irssi: #debian-fi: Total of 21 nicks [0 ops, 0 halfops, 0 voices, 21 normal]
+20:00 -!- Irssi: Join to #debian-fi was synced in 10 secs
+20:00 < hendry> i now have the ultimate mail setup at last!
+20:00  * hendry has discovered offlineimap
+20:03 < liiwi> eh
+20:03 < Viiru> What does that do?
+20:03 < liiwi> heh
+20:04 < liiwi> offlineimap rocks
+20:05 < Viiru> How do you integrate it with gnus?
+20:09 < hendry> Viiru: i guess you specify a local maildir
+20:10 < hendry> liiwi: however when i think about it. it does look a lot like a fetchmail/procmail setup i had sometime ago
+20:10 < Viiru> hendry: Gnus works in mysterious ways.. Mainly it likes to store mail in a format of it's own. I tried to make it work in a maildir, but there were problems..
+20:11 < hendry> Viiru: it must adhere to RFC standard thingies
+20:11 < hendry> surely
+20:12 < Viiru> It does.
+20:12 < Viiru> But getting mail and storing it are a very diffenrent thing. It gets mail from maildirs with ease, but getting it to store it's mail in one is trciky.
+20:13 < hendry> maildir is mail storage format, no?
+20:16 < Viiru> Yes. But Gnus doesn't like using it as such.
+20:17 < Viiru> It will not store mail in a maildir without great pains. Believe it or try it yourself. ;)
+20:17 < hendry> maildir does have it's problems. I don't think it can be put into homedir source control sanely
+20:18 < hendry> Viiru: how about vanilla mbox?
+20:19 < Viiru> hendry: I don't think it's even possible to make gnus store anything in an mbox. It reads them just fine, though.
+20:30 < hendry> i am from the mutt/vim camp
+20:31 < liiwi> nnmbox exists, so gnus can use it as backend
