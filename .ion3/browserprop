@@ -1,6 +1,0 @@
--- xprop WM_CLASS
-winprop {
-   class = "Mozilla-bin", 
-   instance = "Gecko",
-   target = "web"
-}
