@@ -9,26 +9,16 @@ initialise_screen_id(0, {
             name = "WIonWS",
             split_tree = {
                 type = "WIonFrame",
-                name = "WIonFrame",
-                flags = 0,
+                name = "WIonFrame<1>",
+                flags = 16,
+                saved_x = 700, saved_w = 700,
                 subs = {
                     {
                         type = "WClientWin",
-                        windowid = 8388652,
+                        windowid = 10485776,
                         checkcode = 1,
                         switchto = true,
                     },
-                },
-            },
-        },
-        {
-            type = "WIonWS",
-            name = "WIonWS<1>",
-            split_tree = {
-                type = "WIonFrame",
-                name = "WIonFrame<1>",
-                flags = 0,
-                subs = {
                 },
             },
         },
@@ -42,7 +32,7 @@ initialise_screen_id(0, {
                 subs = {
                     {
                         type = "WClientWin",
-                        windowid = 6291472,
+                        windowid = 4194320,
                         checkcode = 2,
                         switchto = true,
                     },
@@ -60,7 +50,7 @@ initialise_screen_id(0, {
                 subs = {
                     {
                         type = "WClientWin",
-                        windowid = 10485776,
+                        windowid = 8388652,
                         checkcode = 3,
                         switchto = true,
                     },
