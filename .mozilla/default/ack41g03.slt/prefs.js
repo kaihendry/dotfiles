@@ -9,7 +9,7 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/tmp");
+user_pref("browser.download.dir", "/home/hendry/movie");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
@@ -47,7 +47,7 @@ user_pref("font.name.fantasy.x-western", "adobe-courier-iso8859-1");
 user_pref("font.size.variable.x-western", 20);
 user_pref("general.open_location.last_url", "www.free6.com");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "UTF-8, ISO-8859-15, windows-1252, Shift_JIS, ISO-8859-1");
+user_pref("intl.charsetmenu.browser.cache", "us-ascii, KOI8-R, UTF-8, ISO-8859-15, windows-1252");
 user_pref("intl.charsetmenu.composer.cache", "UTF-8, ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("mail.smtpservers", "");
@@ -189,7 +189,7 @@ user_pref("security.warn_leaving_secure", false);
 user_pref("security.warn_submit_insecure", false);
 user_pref("signon.SignonFileName", "70572827.s");
 user_pref("timebomb.first_launch_time", "1070540841017589");
-user_pref("update_notifications.provider.0.last_checked", 1083844016);
+user_pref("update_notifications.provider.0.last_checked", 1084472886);
 user_pref("wallet.SchemaValueFileName", "70706990.w");
 user_pref("wallet.captureForms", false);
 user_pref("wallet.caveat", true);
