@@ -376,3 +376,24 @@ ssh myntti.helsinki.fi
 exit
 history | grep ssh
 ssh myntti.helsinki.fi
+ll
+exit
+top
+ls /boot/
+cat /etc/lilo.conf 
+sudo aptitude
+apt-cache search 2.4.23
+apt-cache search 2.4.22
+uname -a
+sudo apt-get install pcmcia-modules-2.4.22-686 alsa-modules-2.4.22-1-686 kernel-image-2.4.22-1-686
+ls
+ls -al
+svn status
+svn update
+ls
+ls -al
+svn propget svn:externals .
+vim .bashrc 
+ls -a
+ll
+vim .bashrc 

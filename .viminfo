@@ -48,19 +48,23 @@ $/
 	Hi
 
 # File marks:
-'0  1  6  ~/svn-commit.tmp
-'1  2  80  ~/svn-prop.tmp
-'2  1  7  /tmp/svn-commit.tmp
-'3  1  0  /tmp/personal/cv/index.shtml
-'4  1  0  ~/.mutt_certificates
-'5  91  0  ~/.muttrc
-'6  1  0  ~/.muttrc
-'7  28  7  ~/configs/.bashrc
-'8  77  0  ~/.subversion/README.txt
-'9  33  1  /usr/share/doc/xdm/README.Debian
+'0  1  4  ~/svn-commit.tmp
+'1  30  18  ~/.bashrc
+'2  11  0  ~/.bashrc
+'3  1  0  /boot/grub/menu.lst
+'4  2  80  ~/svn-prop.tmp
+'5  1  7  /tmp/svn-commit.tmp
+'6  1  0  /tmp/personal/cv/index.shtml
+'7  1  0  ~/.mutt_certificates
+'8  91  0  ~/.muttrc
+'9  1  0  ~/.muttrc
 
 # Jumplist (newest first):
--'  1  6  ~/svn-commit.tmp
+-'  1  4  ~/svn-commit.tmp
+-'  30  18  ~/.bashrc
+-'  11  4  ~/.bashrc
+-'  51  0  ~/.bashrc
+-'  1  0  /boot/grub/menu.lst
 -'  2  80  ~/svn-prop.tmp
 -'  1  0  ~/svn-prop.tmp
 -'  1  7  /tmp/svn-commit.tmp
@@ -154,17 +158,21 @@ $/
 -'  1  0  /usr/share/doc/xdm/README.Debian
 -'  1  0  ~/.xsession-errors
 -'  1  0  ~/.xsession-errors
--'  77  0  ~/.subversion/README.txt
--'  6  0  ~/.subversion
--'  4  0  ~/.subversion
--'  1  0  ~/.subversion
 
 # History of marks within files (newest to oldest):
 
 > ~/svn-commit.tmp
-	"	1	6
-	^	1	7
-	.	1	6
+	"	1	4
+	^	1	5
+	.	1	4
+
+> ~/.bashrc
+	"	30	18
+	^	30	19
+	.	30	18
+
+> /boot/grub/menu.lst
+	"	1	0
 
 > ~/svn-prop.tmp
 	"	2	80
@@ -188,10 +196,6 @@ $/
 
 > ~/configs/.bashrc
 	"	28	7
-
-> ~/.bashrc
-	"	51	1
-	.	8	0
 
 > ~/.subversion/README.txt
 	"	77	0

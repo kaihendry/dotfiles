@@ -27,7 +27,7 @@ if [ "$PS1" ]; then
     fi
 
     # some more ls aliases
-    alias ll='ls -l'
+    alias ll='ls -al'
     #alias la='ls -A'
     #alias l='ls -CF'
 
