@@ -26,6 +26,9 @@ cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
 }
 
+if (/^To: rss\@natalian\.org/)
+to $DEFAULT/.rss
+
 if (/^To: .*prazefarm\.co\.uk/)
 to $DEFAULT/.prazefarm
 
