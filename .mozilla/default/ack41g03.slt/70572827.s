@@ -91,3 +91,9 @@ Username
 *Password
 ~ODYxNjUx
 .
+inex.is.informatik.uni-duisburg.de:2003 (INEX {down,up}load area)
+\=username=\
+~dWhlbHNpbmtp
+*\=password=\
+~d2loZjY3
+.
