@@ -30,9 +30,9 @@ set ispell="aspell -e -c"
 set charset="utf-8"
 
 #These need to change to offline operation
-set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y.%m-%b`" #Archive inbox mail
-set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of postponed messages
-set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y.%m-%b`" #Archive send mail
+set mbox=+UnivCS/"INBOX.inbox.`date +%Y.%m-%b`" #Archive inbox mail
+set postponed=+UnivCS/INBOX.postponed  # location of postponed messages
+set record=+UnivCS/"INBOX.Sent.`date +%Y.%m-%b`" #Archive send mail
 
 color status 	white 		blue
 color index 	brightwhite	black   ~N    	

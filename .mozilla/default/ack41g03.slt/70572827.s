@@ -1,5 +1,6 @@
 #2c
 http://db.cs.helsinki.fi
+https://gateway.hupnet.helsinki.fi
 https://www.amazon.co.uk
 .
 http://bugs.skolelinux.no
