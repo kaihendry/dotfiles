@@ -9,6 +9,10 @@ set imap_force_ssl=yes
 set folder={hendry@mail.cs.helsinki.fi/ssl}
 set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 
+#set folder={hendry@daidalos.pannuhuone.org/ssl}
+#set spoolfile={hendry@daidalos.pannuhuone.org/ssl}
+
+
 # tab should be next new
 bind	index G			imap-fetch-mail
 

@@ -3,29 +3,30 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
+subversion.tigris.org	FALSE	/	FALSE	1644889450	LAST_QUERY	component%3Dsubversion%26issue_status%3DUNCONFIRMED%26issue_status%3DNEW%26issue_status%3DSTARTED%26issue_status%3DREOPENED%26keywords%3Dbite-sized%26cmdtype%3Ddoit
+subversion.tigris.org	FALSE	/	FALSE	1644889450	ISSUELIST	390%3A571%3A574%3A601%3A630%3A670%3A695%3A696%3A699%3A706%3A707%3A708%3A779%3A780%3A783%3A897%3A923%3A971%3A990%3A1209%3A1383%3A1390%3A1495%3A1628
+.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
+.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
+www.startmonkey.com	FALSE	/	FALSE	1136985444	popup	true
+.bbc.co.uk	TRUE	/	FALSE	1076870352	BBCpatina	hp:7777775311021,
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1075974816	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1076013940	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .www.raxnet.net	TRUE	/	FALSE	1105257160	phpbb2mysql_data	a%3A0%3A%7B%7D
-.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
-.google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
+.hel.fi	TRUE	/	FALSE	2051222404	SITESERVER	ID=30793b717d06176072e9d5720cc7aade
 www.durex.com	FALSE	/	FALSE	1262303078	country	UK
 tbray.org	FALSE	/	FALSE	1105269994	style	sans
 www.tbray.org	FALSE	/	FALSE	1103117197	style	sans
 .cnn.com	TRUE	/	FALSE	1281665523	CNNid	Gaa5117-16375289-1070970788746-1
-.www.cnn.com	TRUE	/	FALSE	1073820104	adsPopup0	1073733701546
 www.cnn.com	FALSE	/	FALSE	1168341704	nnselect	1073733704867
 .atwola.com	TRUE	/	FALSE	1104860793	badsrfi	V023aafb85addf73103ff9a2d9570e
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-.bbc.co.uk	TRUE	/	FALSE	1076870352	BBCpatina	hp:7777775311021,
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1075974816	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1076013940	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .navrcholu.cz	TRUE	/	FALSE	1077314497	vid	19653498
 forums.kitten-x.com	FALSE	/	FALSE	1105221633	phpbb2mysql_data	a%3A0%3A%7B%7D
 .sun.com	TRUE	/	FALSE	1767225637	SUN_ID	195.10.181.165:98831073685450
 www.knoppix.net	FALSE	/	FALSE	1105025923	WIKI_PREFS2	O%3A15%3A%22userpreferences%22%3A1%3A%7Bs%3A6%3A%22_prefs%22%3Ba%3A0%3A%7B%7D%7D
 .www.knoppix.net	TRUE	/	FALSE	1105182968	phasdsa_data	s%3A0%3A%22%22%3B
-subversion.tigris.org	FALSE	/	FALSE	1644889450	LAST_QUERY	component%3Dsubversion%26issue_status%3DUNCONFIRMED%26issue_status%3DNEW%26issue_status%3DSTARTED%26issue_status%3DREOPENED%26keywords%3Dbite-sized%26cmdtype%3Ddoit
-subversion.tigris.org	FALSE	/	FALSE	1644889450	ISSUELIST	390%3A571%3A574%3A601%3A630%3A670%3A695%3A696%3A699%3A706%3A707%3A708%3A779%3A780%3A783%3A897%3A923%3A971%3A990%3A1209%3A1383%3A1390%3A1495%3A1628
 www.reacteur.com	FALSE	/	FALSE	1081372123	reacteur_req	%3B%3BJamie%20Kitson%3B%3B
 fl01.ct2.comclick.com	FALSE	/	FALSE	1862697636	comTrackIdSurfeur	ct2-72537726114905004401962238438227769578
 fl01.ct2.comclick.com	FALSE	/	FALSE	1862697636	ComTrackCookieCaping	1-1-683-2--

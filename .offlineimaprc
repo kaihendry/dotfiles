@@ -1,18 +1,32 @@
 [general]
-accounts = UnivCS
+accounts = UnivCS, Bilbo
 
 [Account UnivCS]
 localrepository = LocalCS
 remoterepository = RemoteCS
 
+[Account Bilbo]
+localrepository = LocalBilbo
+remoterepository = RemoteBilbo
+
 [Repository LocalCS]
 type = Maildir
 localfolders = ~/Mail/UnivCS
+
+[Repository LocalBilbo]
+type = Maildir
+localfolders = ~/Mail/Bilbo
 
 [Repository RemoteCS]
 type = IMAP
 ssl = yes
 remotehost = mail.cs.helsinki.fi
+remoteuser = hendry
+
+[Repository RemoteBilbo]
+type = IMAP
+ssl = yes
+remotehost = daidalos.pannuhuone.org
 remoteuser = hendry
 
 ##################################################
@@ -36,4 +50,3 @@ header = "mailboxes "
 peritem = "+%(accountname)s/%(foldername)s"
 sep = " "
 footer = "\n"
-
