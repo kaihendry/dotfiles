@@ -38,7 +38,7 @@ xfilter '/usr/bin/spamc'
 
 if (/^X-Spam-Flag: YES/) 
 {
-cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
+#cc "|/usr/bin/spamassassin -d -L|bogofilter -s"
 to $DEFAULT/.spam-spamassassin
 }
 
