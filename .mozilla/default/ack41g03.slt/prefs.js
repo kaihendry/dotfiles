@@ -12,7 +12,10 @@
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/NetscapeSearch.src");
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
 user_pref("browser.startup.homepage_override.mstone", "rv:1.5");
+user_pref("browser.tabs.loadInBackground", true);
+user_pref("browser.tabs.opentabfor.middleclick", true);
 user_pref("dom.disable_open_during_load", true);
+user_pref("intl.accept_languages", "");
 user_pref("intl.charsetmenu.browser.cache", "windows-1250, UTF-8, ISO-8859-1");
 user_pref("plugin.soname.list", "libXt.so:libXext.so");
 user_pref("prefs.converted-to-utf8", true);
