@@ -9,7 +9,7 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("browser.download.dir", "/home/hendry/mp3");
+user_pref("browser.download.dir", "/home/hendry/movie");
 user_pref("browser.download.save_converter_index", 0);
 user_pref("browser.history.last_page_visited", "http://www.mozilla.org/start/1.0/");
 user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/google.src");
@@ -17,7 +17,7 @@ user_pref("browser.search.opensidebarsearchpanel", false);
 user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
 user_pref("browser.startup.homepage_override.mstone", "rv:1.6");
 user_pref("browser.tabs.autoHide", false);
-user_pref("browser.tabs.extensions.auto_cleanUp_count", 8);
+user_pref("browser.tabs.extensions.auto_cleanUp_count", 9);
 user_pref("browser.tabs.extensions.default.type", 0);
 user_pref("browser.tabs.loadInBackground", true);
 user_pref("browser.tabs.opentabfor.middleclick", true);
