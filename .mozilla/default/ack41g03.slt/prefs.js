@@ -39,7 +39,7 @@ user_pref("ext.checky.pref.agent.webthing.accessibility", true);
 user_pref("ext.checky.pref.agent.webthing.page", true);
 user_pref("ext.checky.pref.global.tempdirectory", "/home/hendry/.mozilla/default/ack41g03.slt");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "UTF-8, ISO-8859-1, windows-1252, ISO-8859-7, windows-1250");
+user_pref("intl.charsetmenu.browser.cache", "ISO-8859-5, UTF-8, ISO-8859-1, windows-1252, ISO-8859-7");
 user_pref("intl.charsetmenu.composer.cache", "ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("mailnews.quotingPrefs.version", 1);
