@@ -66,5 +66,5 @@ ioncore.load_module("mod_ionws")
 winprop {
    class = "Mozilla-bin", 
    instance = "Gecko",
-   target = "web"
+   target = "web",
 }
