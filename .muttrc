@@ -11,9 +11,7 @@ set imap_force_ssl=yes
 set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
 set folder={hendry@mail.cs.helsinki.fi/ssl}
 
-#account-hook imaps://hendry@mail.cs.helsinki.fi 'set folder={hendry@mail.cs.helsinki.fi/ssl}; set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX'
-#account-hook imaps://hendry@daidalos.pannuhuone.org 'set folder={hendry@daidalos.pannuhuone.org/ssl}; set spoolfile={hendry@daidalos.pannuhuone.org/ssl}'
-
+# mailboxes I like to hear about when there is new mail
 mailboxes {hendry@daidalos.pannuhuone.org/ssl}
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
 mailboxes imaps://hendry@daidalos.pannuhuone.org/prazefarm
@@ -36,7 +34,8 @@ set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of 
 set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y.%m-%b`" #Archive send mail
 
 color status 	white 		blue
-color index 	brightwhite	black   ~N    	
+color index 	brightwhite	black   ~N
+
 # Some of these contain special ppl :)
 source ~/Mail/mutt.colours
 
@@ -62,8 +61,8 @@ set pager_index_lines=5
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
 
-macro index X "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
-macro pager X "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam\n"
+macro index S "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam-assassin\n"
+macro pager S "<save-message>imaps://hendry@daidalos.pannuhuone.org/spam-assassin\n"
 
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
@@ -84,8 +83,6 @@ ignore x-spam-status
 ignore x-spam-level
 ignore x-mailer user-agent
 
-macro index S "|sa-learn --spam --no-rebuild > /dev/null&nd"
-
 #set autoedit           # start editor without asking for to, subject,...
 set auto_tag           # if something is tagged, run commands on tagged msgs.
 set fast_reply         # do not ask for to, subject,... when replying
@@ -95,10 +92,7 @@ set pager_format="%S [%C] %n (%l) %s"
 set folder_format="%F %d %8s %N %f"
 set print_command="enscript -2r -o /tmp/email.ps -Email"
 
-# this does not seem to work atm
-#set query_command="lbdbq %s"
-
-# Need this if using cygwin
+# Need this if using cygwin(win32)
 #set sendmail = "/usr/sbin/ssmtp.exe"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>' 
