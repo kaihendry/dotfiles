@@ -22,6 +22,7 @@ mailboxes imaps://hendry@daidalos.pannuhuone.org/rss
 set realname="Kai Hendry"
 set from="hendry@cs.helsinki.fi"
 set hostname="cs.helsinki.fi"
+set alternates=hendry@(iki.fi|cs.helsinki.fi|natalian.org)
 
 set beep_new                    # beep if new mail comes in
 set editor="vim '+set tw=72'"
@@ -100,6 +101,10 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 send-hook   . 'my_hdr From: Kai Hendry <hendry@cs.helsinki.fi>' 
 #send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
+send-hook '~C jamie@kitten-x.com' 'my_hdr From: Kai Hendry <hendry@iki.fi>'
+
+set reverse_name
+unset reverse_realname
 
 bind attach S save-entry
 macro attach s S^A~/Mail/mail-attachments/
