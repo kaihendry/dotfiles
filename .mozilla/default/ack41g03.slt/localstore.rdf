@@ -64,11 +64,17 @@
                    height="300"
                    screenX="0"
                    screenY="0" />
+  <RDF:Description about="chrome://navigator/content/viewSource.xul#main-window"
+                   width="640"
+                   height="480"
+                   screenX="0"
+                   screenY="26"
+                   sizemode="normal" />
   <RDF:Description about="chrome://navigator/content/navigator.xul#main-window"
                    screenX="0"
-                   width="1024"
-                   height="768"
                    screenY="26"
+                   width="625"
+                   height="514"
                    sizemode="maximized" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#ProgressPercent"
                    ordinal="5" />
@@ -82,6 +88,12 @@
                    hidden="" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#statusCol"
                    hidden="true" />
+  <RDF:Description about="chrome://navigator/content/viewPartialSource.xul#main-window"
+                   width="500"
+                   height="300"
+                   screenX="0"
+                   screenY="26"
+                   sizemode="normal" />
   <RDF:Description about="chrome://communicator/content/pref/pref.xul">
     <NC:persist resource="chrome://communicator/content/pref/pref.xul#prefDialog"/>
   </RDF:Description>
@@ -140,6 +152,9 @@
                    screenY="24" />
   <RDF:Description about="NC:BookmarksRoot#$f063a742"
                    NC:open="true" />
+  <RDF:Description about="chrome://navigator/content/viewPartialSource.xul">
+    <NC:persist resource="chrome://navigator/content/viewPartialSource.xul#main-window"/>
+  </RDF:Description>
   <RDF:Description about="chrome://navigator/content/navigator.xul#sidebar-box"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#bookmark-window"
@@ -169,6 +184,9 @@
                    hidden="true" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#OrderReceivedColumn"
                    hidden="true" />
+  <RDF:Description about="chrome://navigator/content/viewSource.xul">
+    <NC:persist resource="chrome://navigator/content/viewSource.xul#main-window"/>
+  </RDF:Description>
   <RDF:Description about="chrome://messenger/content/messenger.xul#sizeCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/downloadmanager/downloadmanager.xul#TimeRemaining"
@@ -181,18 +199,20 @@
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul#abResultsOutliner"
                    height="94" />
   <RDF:Seq about="nc:urlbar-history">
+    <RDF:li>http://www.google.fi/</RDF:li>
+    <RDF:li>www.go</RDF:li>
+    <RDF:li>cnn.com</RDF:li>
+    <RDF:li>http://www.cs.helsinki.fi/</RDF:li>
+    <RDF:li>http://www.google.com/</RDF:li>
     <RDF:li>http://localhost/doc/screen</RDF:li>
     <RDF:li>http://www.irssi.org/</RDF:li>
     <RDF:li>mail.cs.helsinki.fi</RDF:li>
     <RDF:li>www.kitten-x.com</RDF:li>
-    <RDF:li>http://www.google.fi</RDF:li>
-    <RDF:li>http://www.google.com/</RDF:li>
     <RDF:li>www.linuxbrit.co.uk</RDF:li>
     <RDF:li>http://www.dotfiles.com/</RDF:li>
     <RDF:li>www.dotfile.com</RDF:li>
     <RDF:li>www.python.org/search</RDF:li>
     <RDF:li>esn helsinki</RDF:li>
-    <RDF:li>www.go</RDF:li>
     <RDF:li>http://localhost/~hendry/bookmarks.html</RDF:li>
     <RDF:li>localhost/~hendry/</RDF:li>
     <RDF:li>ww.irssi.org</RDF:li>
