@@ -9,7 +9,11 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
+user_pref("browser.search.defaultengine", "engine:///usr/lib/mozilla/searchplugins/NetscapeSearch.src");
+user_pref("browser.startup.homepage", "http://www.cs.helsinki.fi/u/hendry/");
 user_pref("browser.startup.homepage_override.mstone", "rv:1.5");
 user_pref("intl.charsetmenu.browser.cache", "ISO-8859-1");
 user_pref("prefs.converted-to-utf8", true);
+user_pref("signon.SignonFileName", "70572827.s");
 user_pref("timebomb.first_launch_time", "1070540841017589");
+user_pref("update_notifications.provider.0.last_checked", 1071751776);
