@@ -162,12 +162,12 @@ settings = {
     awaylog_level = "MSGS HILIGHT";
     awaylog_file = "~/.irssi/away.log";
   };
-  "irc/core" = { alternate_nick = "hendry_"; cmd_queue_speed = "2010"; };
+  "irc/core" = { alternate_nick = "hendry_"; cmd_queue_speed = "2010ms"; };
   "irc/dcc" = {
     dcc_autoget = "yes";
     dcc_autoresume = "yes";
     dcc_autoget_masks = "*!*@*";
-    dcc_autoget_max_size = "0";
+    dcc_autoget_max_size = "0k";
     dcc_download_path = "~";
   };
   "fe-common/core" = {

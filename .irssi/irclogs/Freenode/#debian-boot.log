@@ -193,3 +193,59 @@
 23:50 < vinsci> With free software, the only thing more irritating than nobody showing up when you ask for help with your own project, is to offer help to another project and be ignored.
 23:53 -!- Arvind-NL [~Hoi@ip503d4396.speed.planet.nl] has quit ["Leaving"]
 --- Log closed Sun Dec 14 23:56:49 2003
+--- Log opened Mon Dec 15 23:09:29 2003
+23:09 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+23:09 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+23:09 -!- Irssi: Join to #debian-boot was synced in 13 secs
+23:39 -!- pb_ [~pb@2002:5160:45ef:0:240:95ff:fe30:aa84] has joined #debian-boot
+23:40 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has quit ["Client exiting"]
+23:48 -!- piotr [~piotr@FW-30-241.go.retevision.es] has joined #debian-boot
+23:55 -!- decko|vestiba is now known as decko|theater
+23:57 -!- otavio [~otavio@200-203-056-007.pltce7001.dsl.brasiltelecom.net.br] has quit ["trocar parar o kernel 2.4"]
+--- Day changed Tue Dec 16 2003
+00:00 -!- otavio [~otavio@200-203-056-007.pltce7001.dsl.brasiltelecom.net.br] has joined #debian-boot
+00:01 -!- jello [~joe@user-0ccerca.cable.mindspring.com] has joined #debian-boot
+00:18 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has quit ["And twice on Sunday . . ."]
+00:23 < otavio> Hello
+00:23 < otavio> I've built a new image and now this doesn't install. It fail on try run chroot to install base-files on /target/
+00:23 < otavio> some idea?
+00:25 < jbailey> It looks like that new rootskel was all ia64 needed to build from that last CVS snapshot that I got.  Hopefully my part of the upload will go tonight.
+00:26 < otavio> jbailey: I'm using i386. Some general change?
+00:27 < jbailey> No - just that I hadn't bothered setting to machine up to upload to gluck again since the compromise, and the ia64 buildd doesn't seem to be back online.
+00:27 < jbailey> I built the missing piece myself and uploaded it, so with any luck it'll upload tonight so that manty can make the cd image.
+00:28 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has joined #debian-boot
+00:31 -!- jello [~joe@user-0ccerca.cable.mindspring.com] has quit ["leaving"]
+00:36 -!- p2-mate_ [~p2@NAT.office.mind.be] has quit ["sleep"]
+00:36 -!- Misirlou [~aew@c-24-125-118-27.va.client2.attbi.com] has joined #debian-boot
+00:53 < manty> jbailey: still not uploaded?
+00:53 < jbailey> My mirror doesn't have all the files, but it attempts it at least.
+00:53 < jbailey> So I expect it to work, anyway.
+00:55 < manty> ok
+00:55 < manty> I'll check tomorrow to see if you have finally achieved it
+00:56 < jbailey> Yup, thanks.
+00:56 < manty> I only have i386 images right now
+00:56 < jbailey> Gotta run, fire alarm is going off and driving me nuts.
+00:56 < manty> but it doesn't matter much
+00:56 < manty> as we still don't have cdimage
+00:56 < manty> and I have to build at my public_html
+00:56 < manty> jbailey: see you
+00:56 < jbailey> Yeah, that's why I haven't been in a rush.
+00:56 < jbailey> I had a moment earlier.
+00:57 < jbailey>  /gone
+00:57 -!- jbailey [~jbailey@199.212.225.1] has quit ["Client exiting"]
+01:03 -!- dan_t [~daniele@213.21.137.78] has quit ["Client exiting"]
+01:05 -!- Arrogance [~aks@149-99-33-26.dsl.tor1.sprint-canada.net] has quit ["Client exiting"]
+--- Log closed Tue Dec 16 01:08:23 2003
+--- Log opened Tue Dec 16 14:13:10 2003
+14:13 -!- hendry [~hendry@xdsl-176-161.nblnetworks.fi] has joined #debian-boot
+14:13 -!- Irssi: #debian-boot: Total of 51 nicks [0 ops, 0 halfops, 0 voices, 51 normal]
+14:13 -!- Irssi: Join to #debian-boot was synced in 13 secs
+14:16 -!- michele [~michele@host130-115.pool81116.interbusiness.it] has quit ["der mond.."]
+14:25 -!- Jonzl [~Jonzl@stadt-herrenberg-gw.customer.toplink.net] has quit ["und tschüss"]
+14:28 -!- LarstiQ [larstiq@cust.7.157.adsl.cistron.nl] has joined #debian-boot
+14:40 -!- frankie [~frankie@firewall.ba.issia.cnr.it] has joined #debian-boot
+14:57 -!- pb_ [~pb@dsl-62-3-66-204.zen.co.uk] has quit ["Client exiting"]
+15:16 -!- Delicates [space@c211-30-98-46.carlnfd1.nsw.optusnet.com.au] has joined #debian-boot
+15:20 -!- Delicates [space@c211-30-98-46.carlnfd1.nsw.optusnet.com.au] has quit [Client Quit]
+15:30 -!- michele [~michele@host130-115.pool81116.interbusiness.it] has joined #debian-boot
+--- Log closed Tue Dec 16 15:30:50 2003
