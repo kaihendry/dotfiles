@@ -6,6 +6,9 @@ logfile $HOME/.maildroplog
 if (/^To: rss\@natalian\.org/)
 to $DEFAULT/.rss
 
+if (/^To: pppoeforum\@prazefarm\.co\.uk/)
+to $DEFAULT/.spam
+
 if (/^To: .*prazefarm\.co\.uk/)
 to $DEFAULT/.prazefarm
 
