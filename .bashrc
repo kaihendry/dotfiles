@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If running interactively, then:
 if [ "$PS1" ]; then
 
@@ -9,7 +5,7 @@ if [ "$PS1" ]; then
 
     # For subversion on CS computers
     if [ -d /home/hendry/svn/bin/ ]; then
-        export PATH=$PATH:/home/hendry/svn/bin/
+        export PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/home/hendry/svn/bin/
     fi
 
     export EDITOR=vim
@@ -27,8 +23,6 @@ if [ "$PS1" ]; then
     if [ "$TERM" != "dumb" ]; then
 	eval `dircolors -b`
 	alias ls='ls --color=auto'
-	#alias dir='ls --color=auto --format=vertical'
-	#alias vdir='ls --color=auto --format=long'
     fi
 
     # some more ls aliases
@@ -66,10 +60,10 @@ export CVSROOT=/home/group/nodes/cvs
 #export LANG=en_GB.UTF-8
 #export LC_ALL=en_GB.UTF-8
 
-export LANG=en_GB
-export LC_ALL=en_GB
-
-
+#export LANG=en_GB
+#export LC_ALL=en_GB
+#export LC_CTYPE=en_GB
+#export LC_MONETARY=en_GB
 
 export PATH=$PATH:/home/hendry/projects/scripts
 export PYTHONPATH=/home/hendry/projects/nevow/trunk
