@@ -38,7 +38,10 @@ colorscheme evening
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
 
+" For XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+" For subversion
+au BufNewFile,BufRead  svn-commit.* setf svn
 
 set encoding=utf-8          " Set Unicode as the default encoding
 set fileencodings=
