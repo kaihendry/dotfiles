@@ -2236,3 +2236,8 @@
 12:53 -!- pb_ [~pb@cpc2-cmbg4-3-0-cust239.cmbg.cable.ntl.com] has joined #debian-boot
 13:14 < aj> it's 0-day NMU time, don't ask me for approval
 13:16 -!- Jonzl [~Jonzl@dfn236108.extern.uni-tuebingen.de] has quit [Read error: 104 (Connection reset by peer)]
+13:18 -!- Jonzl [~Jonzl@dfn236108.extern.uni-tuebingen.de] has joined #debian-boot
+13:18 -!- Cit [lee@i.loathe.ms] has joined #debian-boot
+13:19 -!- decko [~decko@200.225.247.104] has joined #debian-boot
+13:20 < Cit> hello all
+13:21 < Cit> can anybody point me in the right direction for taking apart the install disks?

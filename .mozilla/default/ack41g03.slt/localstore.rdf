@@ -2,11 +2,13 @@
 <RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#ShortcutURL"
-                   ordinal="5" />
+                   ordinal="5"
+                   width="" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#unreadCol"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#LastVisitDate"
-                   ordinal="13" />
+                   ordinal="13"
+                   width="" />
   <RDF:Description about="chrome://messenger/content/mail3PaneWindowVertLayout.xul#sizeCol"
                    hidden="true" />
   <RDF:Description about="NC:BookmarksRoot#$f063a763"
@@ -15,10 +17,15 @@
                    height="94" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#URL"
                    ordinal="3"
-                   width="399" />
+                   width="399"
+                   hidden="" />
   <RDF:Description about="chrome://communicator/content/pref/pref.xul#prefDialog"
                    screenX="0"
                    screenY="26" />
+  <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul">
+    <NC:persist resource="chrome://communicator/content/bookmarks/addBookmark.xul#newBookmarkDialog"/>
+    <NC:persist resource="chrome://communicator/content/bookmarks/addBookmark.xul#bookmarks-view"/>
+  </RDF:Description>
   <RDF:Description about="chrome://messenger/content/messenger.xul#flaggedCol"
                    hidden="true" />
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul">
@@ -88,14 +95,16 @@
                    NC:open="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#Name"
                    ordinal="1"
-                   width="188" />
+                   width="188"
+                   hidden="" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#messengerWindow"
                    screenX="4"
                    screenY="4"
                    width="800"
                    height="565" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#LastModifiedDate"
-                   ordinal="11" />
+                   ordinal="11"
+                   width="" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#unreadCol"
                    hidden="true" />
   <RDF:Description about="chrome://global/content/filepicker.xul">
@@ -105,6 +114,13 @@
                    hidden="true" />
   <RDF:Description about="chrome://navigator/content/navigator.xul#sidebar-panels"
                    last-selected-panel="urn:sidebar:panel:bookmarks" />
+  <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#bookmarks-view"
+                   colinfo=" col:Name?width=&amp;hidden=&amp;ordinal=1"
+                   height="184"
+                   width="385" />
+  <RDF:Description about="chrome://communicator/content/bookmarks/addBookmark.xul#newBookmarkDialog"
+                   screenX="24"
+                   screenY="24" />
   <RDF:Description about="chrome://navigator/content/navigator.xul#sidebar-splitter"
                    hidden="true" />
   <RDF:Description about="NC:BookmarksRoot#$f063a742"
@@ -118,7 +134,8 @@
   <RDF:Description about="chrome://messenger/content/messenger.xul#OrderReceivedColumn"
                    hidden="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#BookmarkAddDate"
-                   ordinal="9" />
+                   ordinal="9"
+                   width="" />
   <RDF:Description about="NC:PersonalToolbarFolder"
                    NC:open="true" />
   <RDF:Description about="chrome://messenger/content/addressbook/addressbook.xul#abResultsOutliner"
@@ -129,7 +146,8 @@
                    NC:open="true" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#Description"
                    ordinal="7"
-                   width="22" />
+                   width="22"
+                   hidden="" />
   <RDF:Description about="chrome://messenger/content/messenger.xul#threadOutliner"
                    height="94" />
   <RDF:Description about="chrome://communicator/content/bookmarks/bookmarksManager.xul#bookmark-window"
@@ -139,8 +157,11 @@
                    screenY="26"
                    sizemode="normal" />
   <RDF:Seq about="nc:urlbar-history">
+    <RDF:li>www.google.com</RDF:li>
+    <RDF:li>www.linuxbrit.co.uk</RDF:li>
+    <RDF:li>http://www.dotfiles.com/</RDF:li>
+    <RDF:li>www.dotfile.com</RDF:li>
     <RDF:li>www.python.org/search</RDF:li>
-    <RDF:li>http://www.google.com/</RDF:li>
     <RDF:li>esn helsinki</RDF:li>
     <RDF:li>www.go</RDF:li>
     <RDF:li>http://localhost/~hendry/bookmarks.html</RDF:li>

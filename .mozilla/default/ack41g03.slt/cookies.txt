@@ -3,20 +3,20 @@
 # This is a generated file!  Do not edit.
 # To delete cookies, use the Cookie Manager.
 
-db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073127772	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .google.com	TRUE	/	FALSE	2147368447	PREF	ID=1749397d33963051:LD=en:CR=2:TM=1070701587:LM=1070707817:S=dhqPRUtCHLqbDZBT
+.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
+.imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
+.atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522
+db.cs.helsinki.fi	FALSE	/~hendry/faqwiz/faqw.py	FALSE	1073127772	hendry's tips and tricks-FAQ-Wizard	Kai%20Hendry/hendry%40cs.helsinki.fi/kaio
 .google.fi	TRUE	/	FALSE	2147368447	PREF	ID=0081f9c328613d8a:LD=fi:TM=1070701587:LM=1070701587:S=TzrIgbeTz4SJnD5G
 .atwola.com	TRUE	/	FALSE	1102242987	badsrfi	V023aafb85addf73103fd1b12bf993
 .doubleclick.net	TRUE	/	FALSE	1165133601	id	8000002eb3e06d9
-.go.com	TRUE	/	FALSE	1071309602	DE	0A0F59
 .go.com	TRUE	/	FALSE	1701858969	SWID	1D5EEFE0-3D6E-4E14-9440-9AE76D9EA370
+.go.com	TRUE	/	FALSE	1071309602	DE	0A0F59
 www.go.com	FALSE	/	FALSE	1577836800	CP	null*
 .ehg-dig.hitbox.com	TRUE	/	FALSE	1102242973	DM5205056IDWV6	V1Xi(#Xz%r@r@re^@X^i%Q%%z%zrzr"%r@r@re^@Xz%r@r@re^@X"%r@r@re^@X"%r@r@re^@X^i%Q%%"rz(xB$W:xB$G:hfI~xB$2T_aKxB(Ofm~z7}zA6W:6G:hfI~62T_aK|Ofm~zu::dmIhd
-.hitbox.com	TRUE	/	FALSE	1102242973	WSS_GW	V1AXiz%r@r@re^@X
 .hitbox.com	TRUE	/	FALSE	1070793373	CTG	1070706973
+.hitbox.com	TRUE	/	FALSE	1102242973	WSS_GW	V1AXiz%r@r@re^@X
 .www.ademails.com	TRUE	/	FALSE	1070728039	IC1059789437	1059789437
 .revenue.net	TRUE	/	FALSE	1654837499	Queue	089b0b5e3e41ee15b14e09fcd365600d|1070964538:1070705338:1:11947:20:205881:1:43605104|
 .tribalfusion.com	TRUE	/	FALSE	2145916800	ANON_ID	GCSKJIPNJRJG
-.imrworldwide.com	TRUE	/cgi-bin	FALSE	1232326805	IMRID	P85g@z699OUAAGBH334
-.bbc.co.uk	TRUE	/	FALSE	1102033054	BBC-UID	030f2c8e56700fc999d3ec11b1007f4a3cb57bdd00f880e05280ff1c9e0321100Mozilla%2f5%2e0%20%28X11%3b%20U%3b%20Linux%20i686%3b%20en%2dUS%3b%20rv%3a1%2e5%29%20Gecko%2f20031107%20Debian%2f1%2e5%2d3
-.atdmt.com	TRUE	/	FALSE	1228096808	AA002	1070489849-101337933/1071699522
