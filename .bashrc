@@ -67,3 +67,5 @@ export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
 export PATH=$PATH:/home/hendry/projects/scripts
+
+export PYTHONPATH=/home/hendry/projects/trunk
