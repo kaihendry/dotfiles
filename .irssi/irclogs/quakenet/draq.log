@@ -18,6 +18,12 @@
 20:00 !pelikaista.fi.quakenet.org Highest connection count: 3906 (3905 clients)
 20:00 !pelikaista.fi.quakenet.org on 1 ca 1(4) ft 20(20)
 --- Log closed Tue Dec 16 20:05:19 2003
+<<<<<<< .mine
+--- Log opened Wed Dec 17 16:53:39 2003
+16:53 !mediatraffic2.fi.quakenet.org Highest connection count: 445 (444 clients)
+16:53 !mediatraffic2.fi.quakenet.org on 1 ca 1(4) ft 20(20)
+--- Log closed Wed Dec 17 16:59:38 2003
+=======
 --- Log opened Wed Dec 17 21:58:32 2003
 21:58 !pelikaista.fi.quakenet.org Highest connection count: 4463 (4462 clients)
 21:58 !pelikaista.fi.quakenet.org on 1 ca 1(4) ft 20(20)
@@ -28,3 +34,12 @@
 00:03 !pelikaista.fi.quakenet.org Highest connection count: 4463 (4462 clients)
 00:03 !pelikaista.fi.quakenet.org on 1 ca 1(4) ft 20(20)
 --- Log closed Thu Dec 18 00:08:32 2003
+>>>>>>> .r161
+--- Log opened Thu Dec 18 23:31:21 2003
+23:31 !pelikaista.fi.quakenet.org Highest connection count: 4463 (4462 clients)
+23:31 !pelikaista.fi.quakenet.org on 1 ca 1(4) ft 20(20)
+--- Log closed Thu Dec 18 23:37:20 2003
+--- Log opened Fri Dec 19 19:09:04 2003
+19:09 !mediatraffic.fi.quakenet.org Highest connection count: 8270 (8268 clients)
+19:09 !mediatraffic.fi.quakenet.org on 1 ca 1(4) ft 20(20)
+--- Log closed Fri Dec 19 19:15:04 2003

@@ -25,7 +25,7 @@ user_pref("ext.checky.pref.agent.webthing.accessibility", true);
 user_pref("ext.checky.pref.agent.webthing.page", true);
 user_pref("ext.checky.pref.global.tempdirectory", "/home/hendry/.mozilla/default/ack41g03.slt");
 user_pref("intl.accept_languages", "");
-user_pref("intl.charsetmenu.browser.cache", "ISO-8859-1, UTF-8, ISO-8859-2, us-ascii, windows-1252");
+user_pref("intl.charsetmenu.browser.cache", "windows-1252, ISO-8859-15, ISO-8859-1, UTF-8, ISO-8859-2");
 user_pref("intl.charsetmenu.composer.cache", "ISO-8859-1");
 user_pref("ldap_2.prefs_migrated", true);
 user_pref("network.cookie.p3p", "frfradaa");
