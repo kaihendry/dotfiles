@@ -22,6 +22,8 @@ type = IMAP
 ssl = yes
 remotehost = mail.cs.helsinki.fi
 remoteuser = hendry
+#folderfilter = lambda foldername: foldername in ['inbox', 'Sent']
+folderfilter = lambda foldername: re.search('(^INBOX\.inbox\..+|^INBOX\.Sent\..+|INBOX$)', foldername)
 
 [Repository RemoteBilbo]
 type = IMAP
@@ -45,7 +47,7 @@ remoteuser = hendry
 # through eval, so you can (and must) use Python quoting.
 
 enabled = yes
-filename = ~/mail/muttrc.mailboxes
+filename = ~/Mail/muttrc.mailboxes
 header = "mailboxes "
 peritem = "+%(accountname)s/%(foldername)s"
 sep = " "

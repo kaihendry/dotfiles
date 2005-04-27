@@ -30,7 +30,7 @@ if [ "$PS1" ]; then
     alias ll='ls -al'
     #alias la='ls -A'
     #alias l='ls -CF'
-    alias mutto='mutt -F ~/.muttorc'
+    alias mutto='mutt -e "set folder=$HOME/Mail" -e "set spoolfile=+UnivCS/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
     export todo=~/personal/todo.txt
 
     # If this is an xterm set the title to user@host:dir
