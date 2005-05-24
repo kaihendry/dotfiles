@@ -4,6 +4,8 @@
 # Default severity level; will bypass prompt in reportbug, so disabled
 # severity normal
 
+mode advanced
+
 # BTS to use
 bts debian
 # See 'reportbug --bts help' for a current list of supported BTSes

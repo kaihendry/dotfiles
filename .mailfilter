@@ -38,7 +38,7 @@ if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|
 to $DEFAULT/.spam-unreadable
 ####
 
-xfilter '/usr/bin/spamc'
+#xfilter '/usr/bin/spamc'
 
 if (/^X-Spam-Flag: YES/) 
 {
