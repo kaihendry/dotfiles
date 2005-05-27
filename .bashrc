@@ -4,9 +4,10 @@ if [ "$PS1" ]; then
     export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
 
     # For subversion on CS computers
-    if [ -d /home/hendry/svn/bin/ ]; then
-        export PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/home/hendry/svn/bin/
-    fi
+    #if [ -d $HOME/svn/bin/ ]; then
+    #    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/svn/lib
+    #    export PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:$HOME/svn/bin/
+    #fi
 
     export EDITOR=vim
     export VISUAL=vim
