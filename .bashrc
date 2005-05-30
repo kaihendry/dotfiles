@@ -1,8 +1,6 @@
 # If running interactively, then:
 if [ "$PS1" ]; then
 
-    export CVSROOT=hendry@melkinpaasi.cs.helsinki.fi:/home/fs/hendry/cvs
-
     # For subversion on CS computers
     #if [ -d $HOME/svn/bin/ ]; then
     #    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/svn/lib
@@ -29,8 +27,6 @@ if [ "$PS1" ]; then
 
     # some more ls aliases
     alias ll='ls -al'
-    #alias la='ls -A'
-    #alias l='ls -CF'
     alias mutto='mutt -e "set folder=$HOME/Mail" -e "set spoolfile=+UnivCS/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
     export todo=~/personal/todo.txt
 
@@ -68,8 +64,7 @@ if [ "$PS1" ]; then
 
 fi
 
-export EMAIL=hendry@cs.helsinki.fi
-export CVSROOT=/home/group/nodes/cvs
+export EMAIL=hendry@iki.fi
 
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
