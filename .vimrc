@@ -52,5 +52,4 @@ autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 " For XML
 " au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
-set filetype on
-
+filetype plugin on
