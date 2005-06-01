@@ -32,7 +32,7 @@ config-files
 compress
 
 # Default "from" email address and real name (override with env. vars.)
-email "hendry@cs.helsinki.fi"
+email "hendry@iki.fi"
 realname "Kai Hendry"
 
 # Default REPLYTO (override with env. variables)
