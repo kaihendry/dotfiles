@@ -17,6 +17,7 @@ mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
 mailboxes imaps://hendry@dabase.com/prazefarm
 mailboxes imaps://hendry@dabase.com/rss
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.w3-di
+mailboxes pop://hendry@mail.soltecsoftware.com.au
 
 set realname="Kai Hendry"
 set from="hendry@iki.fi"
@@ -99,7 +100,8 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 #set sendmail = "/home/hendry/mysendmail"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
-#send-hook   '~C hkkk' 'my_hdr From: Kai Hendry <k75930@ky.hkkk.fi>'
+send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
+send-hook   '~C soltec' 'my_hdr From: Kai Hendry <hendry@soltecsoftware.com.au>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 send-hook '~C list@dclug.org.uk' 'my_hdr From: Kai Hendry <hendry@prazefarm.co.uk>'
 

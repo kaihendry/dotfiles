@@ -69,10 +69,10 @@ export EMAIL=hendry@iki.fi
 export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
-export LANG=en_GB
-export LC_ALL=en_GB
-export LC_CTYPE=en_GB
-export LC_MONETARY=en_GB
+#export LANG=en_GB
+#export LC_ALL=en_GB
+#export LC_CTYPE=en_GB
+#export LC_MONETARY=en_GB
 
 export PATH=$PATH:/home/hendry/projects/scripts
 export PYTHONPATH=/home/hendry/projects/nevow/trunk
