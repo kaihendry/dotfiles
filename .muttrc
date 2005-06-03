@@ -102,6 +102,7 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
 send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
 send-hook   '~C soltec' 'my_hdr From: Kai Hendry <hendry@soltecsoftware.com.au>'
+send-hook   '~C soltec' 'my_hdr Reply-To: Kai Hendry <hendry@soltecsoftware.com.au>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 send-hook '~C list@dclug.org.uk' 'my_hdr From: Kai Hendry <hendry@prazefarm.co.uk>'
 
