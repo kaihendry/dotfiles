@@ -15,37 +15,6 @@
 DEFAULT="$HOME/Maildir"
 logfile $HOME/.maildroplog
 
-if (/^To: rss\@natalian\.org/)
-to $DEFAULT/.rss
-
-if (/^To: pppoeforum\@prazefarm\.co\.uk/)
-to $DEFAULT/.spam
-
-if (/^To: .*prazefarm\.co\.uk/)
-to $DEFAULT/.prazefarm
-
-if (/^To: .*rossetti\.org\.uk/)
-to $DEFAULT/.rossetti
-
-if (/^From: root@dabase\.com /)
-to $DEFAULT/.cron
-
-if (/^From: faqw@dabase\.com /)
-to $DEFAULT/.faqw
-
-## Silently drop all completely unreadable mail into separate folder
-if (/^Subject:.*=\?(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)\?/ || /^Content-Type:.*charset="(.*big5|iso-2022-jp|ISO-2022-KR|euc-kr|gb2312|ks_c_5601-1987|windows-1251|windows-1256)/)
-to $DEFAULT/.spam-unreadable
-####
-
-#xfilter '/usr/bin/spamc'
-
-if (/^X-Spam-Flag: YES/) 
-{
-to $DEFAULT/.spam-spamassassin
-}
-
-
 # Enemies of Carlotta
 SENDER=$FROM
 /^(To|Cc):.*/
@@ -57,3 +26,4 @@ if ( $RETURNCODE == 0 )
         to "|enemies-of-carlotta --incoming"
 }
 
+to "!kai.hendry@gmail.com"
