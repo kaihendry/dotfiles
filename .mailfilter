@@ -1,21 +1,9 @@
 # $Id$
 
-# mail comes in
-
-# if it gets categorized as spam it goes to spamassasin(sa) maildir
-
-# if spam gets into my inbox I move it the spamassasin maildir
-# why not go straight to sa-learn? because usually I am not reading mail from my server.
-# therefore I would be piping into wrong machine's spamassasin...
-
-# every now and then I goto spamassasin folder to look at the catch
-# I train the bayesian filter, and god forbid if I find HAM I make sure sa knows about it!
-
-
-DEFAULT="$HOME/Maildir"
+#DEFAULT="$HOME/Maildir"
 logfile $HOME/.maildroplog
 
-# Enemies of Carlotta
+# Filter for Enemies of Carlotta(EoC) mailing list mails
 SENDER=$FROM
 /^(To|Cc):.*/
 RECIPIENT=getaddr($MATCH)
@@ -26,4 +14,5 @@ if ( $RETURNCODE == 0 )
         to "|enemies-of-carlotta --incoming"
 }
 
+# Else forward mail to my spam filter, Gmail
 to "!kai.hendry@gmail.com"
