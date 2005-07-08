@@ -125,4 +125,4 @@ image/*             ; xv %s                    ;
 application/pdf;                acroread %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput
 # Java Web Start
-application/x-java-jnlp-file; /tmp/j2sdk_nb/j2sdk1.4.2/jre/javaws/javaws %s
+application/x-java-jnlp-file; /tmp/make-jpkg.XXXXmAIUxs/extract/jdk1.5.0_03/jre/bin/javaws %s

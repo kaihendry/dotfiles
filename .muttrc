@@ -16,7 +16,7 @@ mailboxes {hendry@dabase.com/ssl}
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
 mailboxes imaps://hendry@dabase.com/prazefarm
 mailboxes imaps://hendry@dabase.com/rss
-mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.w3-di
+mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.debian-webapps
 mailboxes pop://hendry@mail.soltecsoftware.com.au
 
 set realname="Kai Hendry"

@@ -67,6 +67,7 @@ fi
 export EMAIL=hendry@iki.fi
 
 export LANG=en_GB.UTF-8
+export LANGUAGE=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
 #export LANG=en_GB
@@ -75,4 +76,7 @@ export LC_ALL=en_GB.UTF-8
 #export LC_MONETARY=en_GB
 
 export PATH=$PATH:/home/hendry/projects/scripts
-export PYTHONPATH=/home/hendry/projects/nevow/trunk
+export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
+export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
+
+alias tjblog='tail -f /home/hendry/jboss-soltec/server/default/log/server.log'
