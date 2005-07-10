@@ -46,7 +46,7 @@ local settings = {
   batterytimeleft_important = 600,  -- Battery time left (in secs) which will cause important hint
   batterytimeleft_critical = 300,   -- Battery time left (in secs) which will cause critical hint
   ac_state = "/proc/acpi/ac_adapter/AC/state",
-  temp_info = "/proc/acpi/thermal_zone/THRM/temperature",
+  temp_info = "/proc/acpi/thermal_zone/THM0/temperature",
   bat_info = "/proc/acpi/battery/BAT0/info",
   bat_state = "/proc/acpi/battery/BAT0/state",
 }
@@ -77,7 +77,7 @@ end
 
 local function get_ac()
   local file = io.open(settings.ac_state, "r")
-  if not string.find(file:read("*all"), "state:%s+on.line") then return 0
+  if not string.find(file:read("*all"), "state:%s+on-line") then return 0
   else return 1 end
   file:close()
 end
