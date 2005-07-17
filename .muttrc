@@ -98,7 +98,7 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 #set sendmail = "/usr/sbin/ssmtp.exe"
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"
 
-set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
+#set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
 send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
