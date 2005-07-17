@@ -8,8 +8,8 @@ set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
 set imap_force_ssl=yes
 
-set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
-set folder={hendry@mail.cs.helsinki.fi/ssl}
+set spoolfile={hendry@nipl.net/ssl}INBOX
+set folder={hendry@nipl.net/ssl}
 
 # mailboxes I like to hear about when there is new mail
 mailboxes {hendry@dabase.com/ssl}
@@ -18,11 +18,12 @@ mailboxes imaps://hendry@dabase.com/prazefarm
 mailboxes imaps://hendry@dabase.com/rss
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.debian-webapps
 mailboxes pop://hendry@mail.soltecsoftware.com.au
+mailboxes imaps://hendry@mail.nipl.net
 
 set realname="Kai Hendry"
 set from="hendry@iki.fi"
 set hostname="iki.fi"
-alternates hendry\@(iki.fi|cs.helsinki.fi|natalian.org)
+alternates hendry\@(iki.fi|cs.helsinki.fi|natalian.org|dabase.com|nipl.net)
 
 set beep_new                    # beep if new mail comes in
 set editor="vim '+set tw=72'"
@@ -97,7 +98,7 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 #set sendmail = "/usr/sbin/ssmtp.exe"
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"
 
-#set sendmail = "/home/hendry/mysendmail"
+set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
 send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
