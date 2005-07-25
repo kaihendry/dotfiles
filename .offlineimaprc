@@ -1,21 +1,17 @@
 [general]
-accounts = UnivCS
+accounts = UnivCS, nipl
 
 [Account UnivCS]
 localrepository = LocalCS
 remoterepository = RemoteCS
 
-[Account Bilbo]
-localrepository = LocalBilbo
-remoterepository = RemoteBilbo
+[Account nipl]
+localrepository = Localnipl
+remoterepository = Remotenipl
 
 [Repository LocalCS]
 type = Maildir
 localfolders = ~/Mail/UnivCS
-
-[Repository LocalBilbo]
-type = Maildir
-localfolders = ~/Mail/Bilbo
 
 [Repository RemoteCS]
 type = IMAP
@@ -25,10 +21,14 @@ remoteuser = hendry
 #folderfilter = lambda foldername: foldername in ['inbox', 'Sent']
 folderfilter = lambda foldername: re.search('(^INBOX\.inbox\..+|^INBOX\.Sent\..+|INBOX$)', foldername)
 
-[Repository RemoteBilbo]
+[Repository Localnipl]
+type = Maildir
+localfolders = ~/Mail/nipl
+
+[Repository Remotenipl]
 type = IMAP
 ssl = yes
-remotehost = daidalos.pannuhuone.org
+remotehost = nipl.net
 remoteuser = hendry
 
 ##################################################

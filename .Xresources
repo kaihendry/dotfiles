@@ -11,7 +11,7 @@ UXTerm*foreground: gray
 UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 
-UXTerm*Font: -misc-fixed-medium-r-semicondensed--13-*-*-*-*-*-iso10646-1
+UXTerm*Font: -misc-fixed-medium-r-semicondensed--14-*-*-*-*-*-iso10646-1
 UXTerm*Font: -efont-fixed-medium-r-normal-*-16-*-*-*-*-*-iso10646-1
 UXTerm*Font2: -efont-fixed-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
 UXTerm*Font3: -efont-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-1
