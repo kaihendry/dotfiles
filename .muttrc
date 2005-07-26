@@ -12,10 +12,7 @@ set spoolfile={hendry@nipl.net/ssl}INBOX
 set folder={hendry@nipl.net/ssl}
 
 # mailboxes I like to hear about when there is new mail
-mailboxes {hendry@dabase.com/ssl}
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
-mailboxes imaps://hendry@dabase.com/prazefarm
-mailboxes imaps://hendry@dabase.com/rss
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.debian-webapps
 mailboxes pop://hendry@mail.soltecsoftware.com.au
 mailboxes imaps://hendry@mail.nipl.net
@@ -62,9 +59,6 @@ set pager_index_lines=5
 
 set pgp_replysign     # always sign reply to signed message
 set pgp_replyencrypt  # always encrypt reply to encrypted message
-
-macro index S "<tag-prefix><save-message>imaps://hendry@dabase.com/spam\n"
-macro pager S "<tag-prefix><save-message>imaps://hendry@dabase.com/spam\n"
 
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
