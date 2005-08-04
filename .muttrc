@@ -8,8 +8,8 @@ set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
 set imap_force_ssl=yes
 
-set spoolfile={hendry@nipl.net/ssl}INBOX
-set folder={hendry@nipl.net/ssl}
+set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
+set folder={hendry@mail.cs.helsinki.fi/ssl}
 
 # mailboxes I like to hear about when there is new mail
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
@@ -27,6 +27,8 @@ set editor="vim '+set tw=72'"
 set ispell="aspell -e -c"
 
 set charset="utf-8"
+set date_format="!%Y-%m-%dT%R%Z"# iso8601
+set attribution="On %d %n wrote:"
 
 set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y-%m`" #Archive inbox mail
 set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of postponed messages
