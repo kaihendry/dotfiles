@@ -30,6 +30,7 @@ type = IMAP
 ssl = yes
 remotehost = nipl.net
 remoteuser = hendry
+folderfilter = lambda foldername: re.search('^INBOX$', foldername)
 
 ##################################################
 # Mailbox name recorder
