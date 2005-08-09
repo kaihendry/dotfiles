@@ -31,13 +31,13 @@ set date_format="!%Y-%m-%dT%R%Z"# iso8601
 set attribution="On %d %n wrote:"
 
 # Archive inbox mail
-set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y-%m`" 
+set mbox=imaps://hendry@mail.dabase.com/"INBOX.inbox.`date +%Y-%m`" 
 
 # Location of postponed messages
-set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  
+set postponed=imaps://hendry@mail.dabase.com/INBOX.postponed  
 
 # Archive send mail
-set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y-%m`" 
+set record=imaps://hendry@mail.dabase.com/"INBOX.Sent.`date +%Y-%m`" 
 
 color status 	white 		blue
 color index 	brightwhite	black   ~N
