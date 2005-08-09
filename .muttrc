@@ -8,12 +8,11 @@ set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
 set imap_force_ssl=yes
 
-set spoolfile={hendry@mail.cs.helsinki.fi/ssl}INBOX
-set folder={hendry@mail.cs.helsinki.fi/ssl}
+set spoolfile={hendry@mail.dabase.com/ssl}INBOX
+set folder={hendry@mail.dabase.com/ssl}
 
 # mailboxes I like to hear about when there is new mail
 mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX
-mailboxes {hendry@mail.cs.helsinki.fi/ssl}INBOX.debian-webapps
 mailboxes pop://hendry@mail.soltecsoftware.com.au
 mailboxes imaps://hendry@mail.nipl.net
 mailboxes imaps://hendry@mail.dabase.com
@@ -31,9 +30,14 @@ set charset="utf-8"
 set date_format="!%Y-%m-%dT%R%Z"# iso8601
 set attribution="On %d %n wrote:"
 
-set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y-%m`" #Archive inbox mail
-set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  # location of postponed messages
-set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y-%m`" #Archive send mail
+# Archive inbox mail
+set mbox=imaps://hendry@mail.cs.helsinki.fi/"INBOX.inbox.`date +%Y-%m`" 
+
+# Location of postponed messages
+set postponed=imaps://hendry@mail.cs.helsinki.fi/INBOX.postponed  
+
+# Archive send mail
+set record=imaps://hendry@mail.cs.helsinki.fi/"INBOX.Sent.`date +%Y-%m`" 
 
 color status 	white 		blue
 color index 	brightwhite	black   ~N
@@ -94,7 +98,6 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 # Need this if using cygwin(win32)
 #set sendmail = "/usr/sbin/ssmtp.exe"
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"
-
 #set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
