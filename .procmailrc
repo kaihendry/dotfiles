@@ -1,0 +1,41 @@
+MAILDIR=${HOME}/Maildir/
+DEFAULT=${HOME}/Maildir/
+PMDIR=${HOME}/.procmail
+LOGFILE=${MAILDIR}/procmail.log
+LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
+
+:0fw
+| spamassassin -P
+
+:0
+* ^X-Spam-Status: Yes
+.junk/
+
+:0
+* ^List-Id:.*dcglug\.org\.uk
+.lists.dcglug/
+
+:0
+* ^Subject: [MARA].*
+.lists.maradns/
+
+:0
+* ^(List-Id|(X-)?Mailing-List|X-List):\/.*
+{
+	LISTID=$MATCH
+
+	:0
+	* LISTID ?? ^.*[<]\/[^@>\.]*
+	.lists.$MATCH/
+
+	:0
+	* LISTID ?? ^\/[^@\.]*
+	.lists.$MATCH/
+}
+
+:0
+* ^User-Agent: rss2email
+.rss/
+
+:0
+${DEFAULT}
