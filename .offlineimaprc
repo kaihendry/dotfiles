@@ -1,5 +1,5 @@
 [general]
-accounts = UnivCS, nipl
+accounts = UnivCS
 
 [Account UnivCS]
 localrepository = LocalCS
