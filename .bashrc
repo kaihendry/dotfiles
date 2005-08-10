@@ -1,11 +1,11 @@
 # If running interactively, then:
 if [ "$PS1" ]; then
 
-    # For subversion on CS computers
-    #if [ -d $HOME/svn/bin/ ]; then
-    #    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/svn/lib
-    #    export PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:$HOME/svn/bin/
-    #fi
+    # For subversion
+    if [ -d $HOME/opt/bin/ ]; then
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/opt/lib
+        export PATH=$PATH:/home/hendry/opt/bin/
+    fi
 
     export EDITOR=vim
     export VISUAL=vim
@@ -70,13 +70,6 @@ export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
-#export LANG=en_GB
-#export LC_ALL=en_GB
-#export LC_CTYPE=en_GB
-#export LC_MONETARY=en_GB
-
 export PATH=$PATH:/home/hendry/projects/scripts
-export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
-export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
-
-alias tjblog='tail -f /home/hendry/jboss-soltec/server/default/log/server.log'
+#export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
+#export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
