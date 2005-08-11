@@ -20,8 +20,8 @@ LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 .lists.maradns/
 
 :0
-* List-Id.*<([^.]*).*>
-.lists.$1/
+* ^List-Id.*<([^.]*).*>
+.lists.$MATCH/
 
 # These rules can result in skipped mailman generated mails. Hmmm... BUG!
 :0
