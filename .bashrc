@@ -4,7 +4,7 @@ if [ "$PS1" ]; then
     # For subversion
     if [ -d $HOME/opt/bin/ ]; then
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/opt/lib
-        export PATH=$PATH:/home/hendry/opt/bin/
+        export PATH=$PATH:$HOME/opt/bin/
     fi
 
     export EDITOR=vim
@@ -70,6 +70,6 @@ export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 
-export PATH=$PATH:/home/hendry/projects/scripts
+export PATH=$PATH:$HOME/projects/scripts
 #export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 #export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
