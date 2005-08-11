@@ -16,12 +16,8 @@ LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 .lists.dcglug/
 
 :0
-* ^Subject: [MARA].*
+* ^Subject: \[MARA\].*
 .lists.maradns/
-
-:0
-* ^List-Id.*<([^.]*).*>
-.lists.$MATCH/
 
 # These rules can result in skipped mailman generated mails. Hmmm... BUG!
 :0
