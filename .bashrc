@@ -3,8 +3,8 @@ if [ "$PS1" ]; then
 
     # For subversion
     if [ -d $HOME/opt/bin/ ]; then
-        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/opt/lib
-        export PATH=$PATH:$HOME/opt/bin/
+        export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH
+        export PATH=$HOME/opt/bin/:$PATH
     fi
 
     export EDITOR=vim
@@ -66,9 +66,10 @@ fi
 
 export EMAIL=hendry@iki.fi
 
-export LANG=en_GB.UTF-8
-export LANGUAGE=en_GB.UTF-8
-export LC_ALL=en_GB.UTF-8
+# Fucks up some programs (svn) on hosts that don't have these locales I have
+#export LANG=en_US.UTF-8
+#export LANGUAGE=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
 
 export PATH=$PATH:$HOME/projects/scripts
 #export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/

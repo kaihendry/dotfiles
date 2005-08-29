@@ -15,6 +15,10 @@ LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 * ^List-Id:.*dcglug\.org\.uk
 .lists.dcglug/
 
+:0
+* ^List-Id: wp-hackers.lists.automattic.com
+.lists.wp-hackers/
+
 # These rules can result in skipped mailman generated mails. Hmmm... BUG!
 :0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
