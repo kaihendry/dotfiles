@@ -8,7 +8,7 @@ SHELL=/bin/sh
 EOC=/home/hendry/opt/bin/enemies-of-carlotta
 
 :0
-* ? $EOC --name=travel@natalian.org --is-list
+* ? $EOC --name=$RECIPIENT --is-list
 | $EOC --incoming
 
 :0
