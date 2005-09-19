@@ -1,11 +1,18 @@
+WHERETO=kai.hendry@gmail.com
 MAILDIR=${HOME}/Maildir/
 DEFAULT=${HOME}/Maildir/
 PMDIR=${HOME}/.procmail
 LOGFILE=${MAILDIR}/procmail.log
 LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
+SHELL=/bin/sh
 
-:0fw
-| spamassassin -P
+:0c
+* !^FROM_DAEMON
+* !^FROM_MAILER
+* !^X-Loop: to_gmail
+| (formail -t -I"To: $WHERETO" \
+               -A"X-Loop: to_gmail" \
+  ) | $SENDMAIL -t
 
 :0
 * ^X-Spam-Status: Yes
