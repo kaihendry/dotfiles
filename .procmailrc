@@ -1,4 +1,3 @@
-WHERETO=kai.hendry@gmail.com
 MAILDIR=${HOME}/Maildir/
 DEFAULT=${HOME}/Maildir/
 PMDIR=${HOME}/.procmail
@@ -6,10 +5,6 @@ LOGFILE=${MAILDIR}/procmail.log
 LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 SHELL=/bin/sh
 EOC=/home/hendry/opt/bin/enemies-of-carlotta
-
-:0
-* ? $EOC --name=$RECIPIENT --is-list
-| $EOC --incoming
 
 :0
 * ^List-Id:.*dcglug\.org\.uk
