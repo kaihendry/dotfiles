@@ -2,10 +2,10 @@
 if [ "$PS1" ]; then
 
     # For subversion
-    if [ -d $HOME/opt/bin/ ]; then
-        echo There is a problem here.
-        export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH
-        export PATH=$HOME/opt/bin/:$PATH
+    if [ -d $HOME/opt/ ]; then
+        echo Local stuff!
+        export LD_LIBRARY_PATH="$HOME/opt/lib:$LD_LIBRARY_PATH"
+        export PATH="$HOME/opt/bin/:$PATH"
     fi
 
     export EDITOR=vim
