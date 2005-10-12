@@ -14,6 +14,10 @@ EOC=/home/hendry/opt/bin/enemies-of-carlotta
 * ^List-Id: wp-hackers.lists.automattic.com
 .lists.wp-hackers/
 
+:0
+* ^Sender: owner-mutt-users@mutt.org
+.lists.mutt-users
+
 # These rules can result in skipped mailman generated mails. Hmmm... BUG!
 :0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
