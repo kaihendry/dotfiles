@@ -73,5 +73,5 @@ export EMAIL=hendry@iki.fi
 #export LC_ALL=en_US.UTF-8
 
 export PATH=$PATH:$HOME/projects/scripts
-#export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
+export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 #export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
