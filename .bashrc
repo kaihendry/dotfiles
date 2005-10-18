@@ -14,6 +14,7 @@ if [ "$PS1" ]; then
 
     # don't put duplicate lines in the history. See bash(1) for more options
     export HISTCONTROL=ignoredups
+    export HISTIGNORE="&:ls:ls *:mutt:[bf]g:exit"
 
     # check the window size after each command and, if necessary,
     # update the values of LINES and COLUMNS.
@@ -28,7 +29,7 @@ if [ "$PS1" ]; then
 
     # some more ls aliases
     alias ll='ls -al'
-    alias mutto='mutt -e "set folder=$HOME/Mail" -e "set spoolfile=+UnivCS/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
+    alias mutto='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
     export todo=~/personal/todo.txt
 
     # If this is an xterm set the title to user@host:dir

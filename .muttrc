@@ -6,7 +6,6 @@ source  ~/Mail/mutt.addressbook
 
 set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
-set imap_force_ssl=yes
 
 set spoolfile={hendry@mail.dabase.com/ssl}INBOX
 set folder={hendry@mail.dabase.com/ssl}

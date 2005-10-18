@@ -1,13 +1,13 @@
 [general]
-accounts = UnivCS
+accounts = dabase
 
 [Account UnivCS]
 localrepository = LocalCS
 remoterepository = RemoteCS
 
-[Account nipl]
-localrepository = Localnipl
-remoterepository = Remotenipl
+[Account dabase]
+localrepository = Localdabase
+remoterepository = Remotedabase
 
 [Repository LocalCS]
 type = Maildir
@@ -21,16 +21,17 @@ remoteuser = hendry
 #folderfilter = lambda foldername: foldername in ['inbox', 'Sent']
 folderfilter = lambda foldername: re.search('(^INBOX\.inbox\..+|^INBOX\.Sent\..+|INBOX$)', foldername)
 
-[Repository Localnipl]
+[Repository Localdabase]
 type = Maildir
-localfolders = ~/Mail/nipl
+localfolders = ~/Mail/dabase
 
-[Repository Remotenipl]
+[Repository Remotedabase]
 type = IMAP
 ssl = yes
-remotehost = nipl.net
+remotehost = mail.dabase.com
 remoteuser = hendry
-folderfilter = lambda foldername: re.search('^INBOX$', foldername)
+#folderfilter = lambda foldername: re.search('^INBOX$', foldername)
+folderfilter = lambda foldername: re.search('(^INBOX\.inbox\..+|^INBOX\.Sent\..+|INBOX$)', foldername)
 
 ##################################################
 # Mailbox name recorder
