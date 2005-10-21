@@ -1,10 +1,10 @@
+VERBOSE=YES
 MAILDIR=${HOME}/Maildir/
 DEFAULT=${HOME}/Maildir/
 PMDIR=${HOME}/.procmail
 LOGFILE=${MAILDIR}/procmail.log
 LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 SHELL=/bin/sh
-EOC=/home/hendry/opt/bin/enemies-of-carlotta
 
 :0
 * ^List-Id:.*dcglug\.org\.uk
@@ -15,14 +15,9 @@ EOC=/home/hendry/opt/bin/enemies-of-carlotta
 .lists.wp-hackers/
 
 :0
-* ^Sender: owner-mutt-users@mutt.org
-.lists.mutt-users
-
-# These rules can result in skipped mailman generated mails. Hmmm... BUG!
-:0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
 {
-	LISTID=$MATCH
+	LISTID=`echo $MATCH|sed -e 's/ /_/g'` 
 
 	:0
 	* LISTID ?? ^.*[<]\/[^@>\.]*
