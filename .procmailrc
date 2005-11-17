@@ -1,4 +1,4 @@
-VERBOSE=YES
+#VERBOSE=YES
 MAILDIR=${HOME}/Maildir/
 DEFAULT=${HOME}/Maildir/
 PMDIR=${HOME}/.procmail
@@ -15,6 +15,10 @@ SHELL=/bin/sh
 .lists.wp-hackers/
 
 :0
+* ^Sender: owner-mutt-users@mutt.org
+.lists.mutt-users/
+
+:0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
 {
 	LISTID=`echo $MATCH|sed -e 's/ /_/g'` 
@@ -28,9 +32,6 @@ SHELL=/bin/sh
 	.lists.$MATCH/
 }
 
-:0
-* ^User-Agent: rss2email
-.rss/
 
 :0
 ${DEFAULT}
