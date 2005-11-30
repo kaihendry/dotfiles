@@ -37,6 +37,8 @@ if [ "$PS1" ]; then
     # wc -l $todo 
     export todo=~/personal/todo.txt
 
+    source ~/.bashrc_history.sh
+
     # If this is an xterm set the title to user@host:dir
     case $TERM in
     xterm*)
@@ -79,5 +81,10 @@ export EMAIL=hendry@iki.fi
 #export LC_ALL=en_US.UTF-8
 
 export PATH=$PATH:$HOME/projects/scripts
+
+# For work
+if [ $HOSTNAME = "airbus" ] ;then
 export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
-#export JAVA_HOME=/usr/lib/j2sdk1.5-sun/
+export JAVA_HOME=/usr/java/current
+export PATH=$JAVA_HOME/bin:$PATH:/usr/sbin/:/sbin/
+fi
