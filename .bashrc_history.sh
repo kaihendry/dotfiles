@@ -54,7 +54,7 @@ if [ "$PS1" ] ; then # interactive shell
     archive_history()
     {
         TFILE=${HISTFILE}.$$.temp
-	CURTIME=`date`
+	CURTIME=`date -u --iso-8601=minutes`
 	CURTTY=`tty`
         #STAMP
         HISTORYDUMP=$(($HISTORYDUMP+1))
