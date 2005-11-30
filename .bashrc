@@ -12,8 +12,6 @@ if [ "$PS1" ]; then
     export VISUAL=vim
     export CVSEDITOR=vim
 
-    export HISTCONTROL=ignoredups
-    export HISTIGNORE="&:ls:ls *:mutt:[bf]g:exit"
     shopt -s cmdhist
 
     # check the window size after each command and, if necessary,
@@ -29,7 +27,14 @@ if [ "$PS1" ]; then
 
     # some more ls aliases
     alias ll='ls -al'
-    alias mutto='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
+
+    # for offline mail reading
+    alias mutto='mutt -e "set folder=$HOME/Mail" 
+                 -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" 
+                 -e "set spoolfile=+dabase/INBOX" 
+                 -e "source ~/Mail/muttrc.mailboxes"'
+
+    # wc -l $todo 
     export todo=~/personal/todo.txt
 
     # If this is an xterm set the title to user@host:dir
@@ -68,7 +73,7 @@ fi
 
 export EMAIL=hendry@iki.fi
 
-# Fucks up some programs (svn) on hosts that don't have these locales I have
+# Fucks up some programs on hosts that don't have these locales I have
 #export LANG=en_US.UTF-8
 #export LANGUAGE=en_US.UTF-8
 #export LC_ALL=en_US.UTF-8
