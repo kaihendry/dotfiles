@@ -32,6 +32,8 @@ SHELL=/bin/sh
 	.lists.$MATCH/
 }
 
+:0fw 
+| spamassassin -P 
 
 :0
 ${DEFAULT}
