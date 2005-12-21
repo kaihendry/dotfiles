@@ -15,7 +15,10 @@ required_hits		2
 # "friend@somewhere.com", "*@isp.com", or "*.domain.net" will all work.
 # whitelist_from	someone@somewhere.com
 
-rewrite_subject         0
+rewrite_subject         1
+whitelist_from lauradiehl@yahoo.com
+whitelist_from ruth_cfl@yahoo.com
+whitelist_from silke_becker@yahoo.de
 
 # Enable or disable network checks
 skip_rbl_checks         0
@@ -25,4 +28,3 @@ use_pyzor               1
 
 ok_languages            en fi de
 ok_locales              en fi de
-
