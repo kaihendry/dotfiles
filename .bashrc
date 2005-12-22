@@ -52,10 +52,6 @@ if [ "$PS1" ]; then
         PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
         ;;
 
-    screen)
-        # Screen uses "<esc> k <title> <esc> \" for window title
-        PS1='\[\033k\h\033\\\]\h\$ '
-        ;;
     *)
         # user@host pwd should be provided my WM title bar IMO
         PS1='\h\$ '
