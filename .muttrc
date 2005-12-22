@@ -94,6 +94,8 @@ set pager_format="%S [%C] %n (%l) %s"
 set folder_format="%F %d %8s %N %f"
 set print_command="enscript -2r -o /tmp/email.ps -Email"
 
+set envelope_from=yes
+
 # Need this if using cygwin(win32)
 #set sendmail = "/usr/sbin/ssmtp.exe"
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"

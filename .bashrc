@@ -88,3 +88,7 @@ export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 export JAVA_HOME=/usr/java/current
 export PATH=$JAVA_HOME/bin:$PATH:/usr/sbin/:/sbin/
 fi
+
+if [ $HOSTNAME = "debian" ] ;then
+export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
+fi
