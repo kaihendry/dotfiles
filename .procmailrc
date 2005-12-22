@@ -36,4 +36,8 @@ SHELL=/bin/sh
 | spamassassin -P 
 
 :0
+* ^X-Spam-Flag: YES
+.junk/
+
+:0
 ${DEFAULT}
