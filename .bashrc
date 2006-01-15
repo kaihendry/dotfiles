@@ -70,6 +70,8 @@ if [ "$PS1" ]; then
 fi
 
 export EMAIL=hendry@iki.fi
+export DEBEMAIL=hendry@iki.fi
+export DEBFULLNAME='Kai Hendry'
 
 # Fucks up some programs on hosts that don't have these locales I have
 #export LANG=en_US.UTF-8
