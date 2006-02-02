@@ -12,6 +12,7 @@ if [ "$PS1" ]; then
     export VISUAL=vim
     export CVSEDITOR=vim
 
+    export HISTCONTROL=ignoredups
     shopt -s cmdhist
 
     # check the window size after each command and, if necessary,
@@ -26,7 +27,7 @@ if [ "$PS1" ]; then
     fi
 
     # some more ls aliases
-    alias ll='ls -al'
+    alias ll='ls -alh'
 
     # for offline mail reading
     alias mutto='mutt -e "set folder=$HOME/Mail" 
