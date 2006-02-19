@@ -95,6 +95,7 @@ set folder_format="%F %d %8s %N %f"
 set print_command="enscript -2r -o /tmp/email.ps -Email"
 
 set envelope_from=yes
+set envelope_from envelope_from_address=hendry@dabase.com
 
 # Need this if using cygwin(win32)
 #set sendmail = "/usr/sbin/ssmtp.exe"
@@ -119,3 +120,6 @@ macro attach s S^A~/Mail/mail-attachments/
 
 lists whatwg@whatwg.org
 subscribe whatwg@whatwg.org
+
+#unset imap_idle
+set imap_idle=no
