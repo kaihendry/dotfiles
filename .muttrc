@@ -94,14 +94,15 @@ set pager_format="%S [%C] %n (%l) %s"
 set folder_format="%F %d %8s %N %f"
 set print_command="enscript -2r -o /tmp/email.ps -Email"
 
-set envelope_from=yes
-set envelope_from envelope_from_address=hendry@dabase.com
-
-# Need this if using cygwin(win32)
-#set sendmail = "/usr/sbin/ssmtp.exe"
+#set envelope_from=yes
+#set envelope_from envelope_from_address=hendry@dabase.com
+set envelope_from=no 
+set sendmail='/usr/lib/sendmail -oem -oi -f hendry@dabase.com'
 
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"
 #set sendmail = "/home/hendry/server.soltecsoftware.com.au-sendmail"
+# Need this if using cygwin(win32)
+#set sendmail = "/usr/sbin/ssmtp.exe"
 
 send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
 send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
@@ -121,5 +122,6 @@ macro attach s S^A~/Mail/mail-attachments/
 lists whatwg@whatwg.org
 subscribe whatwg@whatwg.org
 
+# For a mutt bug around the end of 2005
 #unset imap_idle
-set imap_idle=no
+#set imap_idle=no
