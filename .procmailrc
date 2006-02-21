@@ -6,6 +6,13 @@ LOGFILE=${MAILDIR}/procmail.log
 LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 SHELL=/bin/sh
 
+:0fw 
+| spamassassin
+
+:0
+* ^X-Spam-Flag: YES
+.junk/
+
 :0
 * ^List-Id:.*dcglug\.org\.uk
 .lists.dcglug/
@@ -17,6 +24,10 @@ SHELL=/bin/sh
 :0
 * ^Sender: owner-mutt-users@mutt.org
 .lists.mutt-users/
+
+:0
+* ^Sender: owner-mutt-dev@mutt.org
+.lists.mutt-dev/
 
 :0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
@@ -32,12 +43,6 @@ SHELL=/bin/sh
 	.lists.$MATCH/
 }
 
-:0fw 
-| spamassassin -P 
-
-:0
-* ^X-Spam-Flag: YES
-.junk/
 
 :0
 ${DEFAULT}

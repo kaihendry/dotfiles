@@ -23,3 +23,5 @@ if [ -d ~/man ]; then
     MANPATH=~/man:"${MANPATH}"
     export MANPATH
 fi
+export GEM_HOME=$HOME/.gems
+export GEM_PATH=/usr/lib/ruby/gems/1.8:$GEM_HOME

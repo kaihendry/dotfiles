@@ -19,6 +19,9 @@ rewrite_subject         0
 whitelist_from lauradiehl@yahoo.com
 whitelist_from ruth_cfl@yahoo.com
 whitelist_from silke_becker@yahoo.de
+whitelist_from jyk1515@hotmail.com
+whitelist_from joe1515@hanmail.net
+
 
 # Enable or disable network checks
 skip_rbl_checks         0
@@ -26,5 +29,5 @@ use_razor2              1
 use_dcc                 1
 use_pyzor               1
 
-ok_languages            en fi de
-ok_locales              en fi de
+ok_languages            en fi de kr
+ok_locales              en fi de kr
