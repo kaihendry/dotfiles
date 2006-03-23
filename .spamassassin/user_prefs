@@ -21,6 +21,10 @@ whitelist_from ruth_cfl@yahoo.com
 whitelist_from silke_becker@yahoo.de
 whitelist_from jyk1515@hotmail.com
 whitelist_from joe1515@hanmail.net
+whitelist_from pjb121@yahoo.com
+whitelist_from haremoon@paran.com
+whitelist_from *@khanworks.com
+whitelist_from *@hannux.com
 
 
 # Enable or disable network checks
