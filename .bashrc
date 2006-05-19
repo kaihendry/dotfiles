@@ -35,6 +35,9 @@ if [ "$PS1" ]; then
                  -e "set spoolfile=+dabase/INBOX" 
                  -e "source ~/Mail/muttrc.mailboxes"'
 
+    alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
+
+
     # wc -l $todo 
     export todo=~/personal/todo.txt
 
@@ -75,7 +78,7 @@ export DEBEMAIL=hendry@iki.fi
 export DEBFULLNAME='Kai Hendry'
 
 # Fucks up some programs on hosts that don't have these locales I have
-#export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 #export LANGUAGE=en_US.UTF-8
 #export LC_ALL=en_US.UTF-8
 
@@ -91,3 +94,4 @@ fi
 if [ $HOSTNAME = "debian" ] ;then
 export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 fi
+

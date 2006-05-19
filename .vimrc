@@ -3,6 +3,7 @@
 " Spell check
 map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
 :autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
+:autocmd FileType mail setlocal spell spelllang=en_gb
 
 "set mouse=a		        " Set to get mouse to work (doesn't work in screen)
 set nocp		            " forget about compatibility with old version of vi
