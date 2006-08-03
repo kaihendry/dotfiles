@@ -1,4 +1,4 @@
-personal_ws-1.1 en 234 
+personal_ws-1.1 en 247 
 CIS
 scroller
 API's
@@ -35,8 +35,8 @@ ulink
 Minimo
 MathML
 softkeys
-DPI
 CSS
+DPI
 SSI
 WAE
 SunOS
@@ -46,8 +46,8 @@ bolding
 SVG
 DRM
 CVS
-WAP
 UKP
+WAP
 contrib
 emX
 Bugzilla
@@ -68,10 +68,11 @@ url
 FOM
 formedness
 UTF
+IMAP
 NaviRoller
 CLDC
 multimodal
-Hendry
+hendry
 href
 Docomo
 utilise
@@ -89,6 +90,7 @@ Stylesheet
 summarisation
 CHTML's
 Inline
+IJG
 WCSS
 releaseinfo
 GSM
@@ -99,6 +101,7 @@ WTA
 criticised
 xml
 SINUX
+iki
 Basic's
 HyperText
 MyXML
@@ -135,6 +138,7 @@ VoiceXML
 html
 LIF
 SGML's
+Naraviewer
 HTTPS
 URIs
 Lucene
@@ -143,12 +147,14 @@ online
 gzip
 jsp
 phonebook
+fi
 XForms
 SMIL
 RIML's
 tbody
 webmail
 RDIXML
+resize
 CHTML
 schemas
 middleware
@@ -159,6 +165,8 @@ SyncML
 Praze
 subscribepush
 Marist
+http
+dabase
 mobile's
 li
 namespace
@@ -172,14 +180,18 @@ MMS
 ol
 multistep
 WURFL
+codec
 google
+OpenOffice
 xfig
 proxied
 PDA
 templating
+msc
 MP's
 itemizedlist
-PDF
+Lighttpd
+pdf
 UA
 UAProf
 listitem
@@ -196,6 +208,7 @@ WG
 tv
 Docbook
 modelling
+Openwave
 jpeg
 Ubuntu
 XP
