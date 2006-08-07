@@ -30,6 +30,10 @@ SHELL=/bin/sh
 .lists.mutt-dev/
 
 :0
+* ^Mailing-List: contact dev-help@qa.openoffice.org.*
+.lists.OO-qa/
+
+:0
 * ^(List-Id|(X-)?Mailing-List|X-List):\/.*
 {
 	LISTID=`echo $MATCH|sed -e 's/ /_/g'` 
@@ -43,6 +47,10 @@ SHELL=/bin/sh
 	.lists.$MATCH/
 }
 
+# If not mailing list mail and it's not from Gmail, some spammer has mailed my drop account!
+:0
+* ! ^X-Gmail-Received.*
+.junkdirect/
 
 :0
 ${DEFAULT}
