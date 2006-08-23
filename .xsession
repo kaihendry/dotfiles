@@ -7,8 +7,8 @@ if [ $HOSTNAME == "puti" ]; then spicctrl -b 192; fi
 [ /etc/alternatives/x-window-manager -ef /usr/bin/dwm ] && {
 while true
 do
-echo `date` `uptime | sed 's/.*://; s/,//g'`
-sleep 1
+echo `yacpi -s 10 -t | sed -e 's/cpu.*//;t ;d'` `date --iso-8601=minutes` `uptime | sed 's/.*://; s/,//g'`
+sleep 60
 done | dwm
 } || exec x-window-manager
 
