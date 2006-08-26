@@ -1,0 +1,12 @@
+background no
+out_to_console yes
+total_run_times 1
+own_window no 
+no_buffers yes
+uppercase no
+maximum_width 1
+
+TEXT
+[${time %l:%M %p, %a %d %B %Y}][CPU: $cpu% @ ${acpitemp}C][RAM:
+$memperc% ($swapperc%)][${Battery BAT0}][UP: ${upspeed eth1}k/s DOWN: ${downspeed
+eth1}k/s]
