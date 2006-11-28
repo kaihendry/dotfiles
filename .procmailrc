@@ -49,7 +49,7 @@ SHELL=/bin/sh
 
 # If not mailing list mail and it's not from Gmail, some spammer has mailed my drop account!
 :0
-* ! ^X-Gmail-Received.*
+* ! ^X-Forwarded-To: hendry@dabase.com
 .junkdirect/
 
 :0
