@@ -22,6 +22,14 @@ SHELL=/bin/sh
 .lists.wp-hackers/
 
 :0
+* ^X-PTS-Package: iceweasel
+.lists.iceweasel/
+
+:0
+* ^X-PTS-Package: live-package
+.lists.livepackage/
+
+:0
 * ^Sender: owner-mutt-users@mutt.org
 .lists.mutt-users/
 
