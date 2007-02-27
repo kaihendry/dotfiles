@@ -1,3 +1,5 @@
+xsetroot -solid "#FFFFFF"
+
 x-www-browser &
 x-terminal-emulator -e screen -UR &
 
