@@ -1,2 +1,4 @@
 startup_message off
+# UTF-8 everywhere
+defutf8 on
 #termcapinfo xterm ti@:te@

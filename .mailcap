@@ -3,5 +3,5 @@ text/html			; w3m -T text/html -dump '%s'		; copiousoutput; description="HTML Te
 text/plain			; cat %s                               	; copiousoutput
 application/MSWORD		; antiword %s				; copiousoutput
 image/*             ; feh %s                    ; 
-application/pdf;                acroread %s; test=sh -c 'test $DISPLAY'
+application/pdf;                xpdf %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput

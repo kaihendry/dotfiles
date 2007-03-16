@@ -1,6 +1,7 @@
-xsetroot -solid "#FFFFFF"
+xsetroot -solid "#000000"
 
-x-www-browser &
+/usr/bin/firefox &
+#/usr/bin/opera-persistent &
 x-terminal-emulator -e screen -UR &
 
 # one machine I was on needed this to ramp up the brightness
