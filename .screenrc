@@ -1,4 +1,5 @@
 startup_message off
 # UTF-8 everywhere
 defutf8 on
-#termcapinfo xterm ti@:te@
+# restore window contents after using (e.g.) vi
+altscreen on
