@@ -26,6 +26,8 @@ if [ "$PS1" ]; then
 	alias ls='ls --color=auto'
     fi
 
+    alias h='cat ~/.bash_history.archive | grep -i'
+
     # some more ls aliases
     alias ll='ls -alh'
 
