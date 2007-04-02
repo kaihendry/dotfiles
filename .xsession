@@ -10,7 +10,7 @@ while true
 do
 echo `yacpi -s 10 -t | sed -e 's/cpu.*//;t ;d'` `date --iso-8601=minutes` `uptime | sed 's/.*://; s/,//g'`
 sleep 5
-done | /usr/bin/dwm
+done | /usr/bin/dwm.user
 } || exec x-window-manager
 
 
