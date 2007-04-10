@@ -26,6 +26,8 @@ fi
 export GEM_HOME=$HOME/.gems
 export GEM_PATH=/usr/lib/ruby/gems/1.8:$GEM_HOME
 
+# /etc/inittab
+# 1:2345:respawn:/sbin/mingetty --autologin hendry tty1
 if [ -z "$DISPLAY" ] && [ $(tty) == /dev/tty1 ]; then
 while true
 do
