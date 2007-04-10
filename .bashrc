@@ -30,6 +30,7 @@ if [ "$PS1" ]; then
 
     # some more ls aliases
     alias ll='ls -alh'
+    alias todo='vim /home/hendry/projects/webconverger/webconverger.org/TODO'
 
     # for offline mail reading
     alias mutto='mutt -e "set folder=$HOME/Mail" 
