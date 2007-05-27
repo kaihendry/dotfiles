@@ -97,5 +97,3 @@ fi
 if [ $HOSTNAME = "debian" ] ;then
 export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 fi
-
-alias axxo='w3m "http://superfundo.org/download/axxo/index.php?dir=&sort=m_time&sort_mode=d"'
