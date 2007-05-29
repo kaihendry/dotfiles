@@ -3,3 +3,5 @@ startup_message off
 defutf8 on
 # restore window contents after using (e.g.) vi
 altscreen on
+
+defscrollback 1000
