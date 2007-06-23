@@ -1,6 +1,7 @@
 # background
 xsetroot -solid "#000000"
-feh --bg-scale /home/hendry/downloads/daisy.jpg
+xloadimage -onroot -fullscreen birthday\ card.jpg
+root-tail -f /var/log/messages,black /var/log/syslog,green
 
 /usr/bin/persistent-browser &
 

@@ -55,3 +55,7 @@ autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 " au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
 filetype plugin on
+
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+set wildmode=longest,list:longest,full
