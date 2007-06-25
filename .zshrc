@@ -1,4 +1,4 @@
-# Thanks to Ari Pollack
+# Thanks to Ari Pollak
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -62,14 +62,12 @@ PROMPT="%{${fg[green]}%}$USER%{${fg[white]}%}@%{${fg[green]}%}%m%{${fg[white]}%}
 
 zstyle ':completion:*' use-cache on 
 zstyle ':completion:*' cache-path ~/.zsh/cache
-		
 # list of completers to use
 zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 
 # allow one error for every three characters typed in approximate completer
 zstyle -e ':completion:*:approximate:*' max-errors \
     'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
-    
 # insert all expansions for expand completer
 zstyle ':completion:*:expand:*' tag-order all-expansions
 
@@ -90,5 +88,3 @@ zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
-
-
