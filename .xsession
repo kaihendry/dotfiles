@@ -1,7 +1,7 @@
 # background
 xsetroot -solid "#000000"
 xloadimage -onroot -fullscreen birthday\ card.jpg
-root-tail -f /var/log/messages,black /var/log/syslog,green
+root-tail --frame -f /var/log/messages,black /var/log/syslog,brown
 
 /usr/bin/persistent-browser &
 
