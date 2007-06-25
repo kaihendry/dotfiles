@@ -56,6 +56,7 @@ autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
 
 filetype plugin on
 
+" Highlight Whitespace. Remember 'diw' to kill the tyranny of whitespace!
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 set wildmode=longest,list:longest,full
