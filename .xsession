@@ -1,7 +1,11 @@
 # background
 xsetroot -solid "#000000"
 xloadimage -onroot -fullscreen birthday\ card.jpg
-root-tail --frame -f /var/log/messages,black /var/log/syslog,brown
+
+WIDTH=`xwininfo -root | grep Width | cut -d":" -f2`
+WIDTH=`expr $WIDTH - 20`
+WIDTH=${WIDTH}"x150-10-50"
+root-tail -g $WIDTH -fn fixed --frame -f /var/log/messages,black /var/log/syslog,brown
 
 /usr/bin/persistent-browser &
 

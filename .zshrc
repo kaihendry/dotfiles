@@ -60,7 +60,7 @@ colors
 PROMPT="%{${fg[green]}%}$USER%{${fg[white]}%}@%{${fg[green]}%}%m%{${fg[white]}%}:%{${fg[cyan]}%}%~%{${fg[white]}%}%#%{${fg[default]}%} "
 #RPROMPT='%W %t'     # prompt for right side of screen
 
-zstyle ':completion:*' use-cache on 
+zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 # list of completers to use
 zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
