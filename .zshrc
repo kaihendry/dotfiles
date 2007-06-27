@@ -57,7 +57,7 @@ alias -g .....='../../../..'
 autoload -U colors
 colors
 
-PROMPT="%{${fg[green]}%}$USER%{${fg[white]}%}@%{${fg[green]}%}%m%{${fg[white]}%}:%{${fg[cyan]}%}%~%{${fg[white]}%}%#%{${fg[default]}%} "
+PROMPT="%{${fg[green]}%}%m%{${fg[white]}%}:%{${fg[cyan]}%}%~%{${fg[white]}%}%#%{${fg[default]}%} "
 #RPROMPT='%W %t'     # prompt for right side of screen
 
 zstyle ':completion:*' use-cache on
