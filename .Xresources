@@ -34,4 +34,5 @@ Shift<Btn3Down>:        start-extend()\n\
 Shift<Btn3Motion>:      select-extend()\n\
 Shift<BtnUp>:           select-end(CLIPBOARD)
 
-
+#http://www.linuxpowertop.org/known.php
+UXTerm*sessionMgt: False
