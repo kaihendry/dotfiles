@@ -45,7 +45,7 @@
 
 
 if [ "$PS1" ] ; then # interactive shell
-    export STARTTIME=`date -u --iso-8601=minutes` \
+    export STARTTIME=`date -u` \
            HISTORYDUMP=0
     shopt -s cmdhist histappend
 
@@ -54,7 +54,7 @@ if [ "$PS1" ] ; then # interactive shell
     archive_history()
     {
         TFILE=${HISTFILE}.$$.temp
-	CURTIME=`date -u --iso-8601=minutes`
+	CURTIME=`date -u`
 	CURTTY=`tty`
         #STAMP
         HISTORYDUMP=$(($HISTORYDUMP+1))

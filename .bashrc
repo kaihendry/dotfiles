@@ -22,7 +22,9 @@ if [ "$PS1" ]; then
 
     # enable color support of ls and also add handy aliases
     if [ "$TERM" != "dumb" ]; then
-	eval `dircolors -b`
+        if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+        eval `dircolors -b`
+        fi
 	alias ls='ls --color=auto'
     fi
 
@@ -37,7 +39,7 @@ if [ "$PS1" ]; then
                  -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" 
                  -e "set spoolfile=+dabase/INBOX" 
                  -e "source ~/Mail/muttrc.mailboxes"'
-
+#
     alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
 
 
