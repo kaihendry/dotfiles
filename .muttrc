@@ -106,6 +106,7 @@ send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 send-hook '~C list@dcglug.org.uk' 'my_hdr From: Kai Hendry <hendry@prazefarm.co.uk>'
 send-hook '~C feedback@webconverger.com' 'my_hdr From: Kai Hendry <hendry@webconverger.com>'
+send-hook '~C hendry@aplixcorp.com' 'my_hdr From: Kai Hendry <hendry@aplixcorp.com>'
 send-hook '~C bugs\.debian\.org$' 'my_hdr X-Debbugs-No-Ack: please'
 
 set reverse_name
