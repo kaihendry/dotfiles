@@ -89,4 +89,4 @@ doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
-#export http_proxy=http://localhost:3128/
+export http_proxy=http://localhost:3128/

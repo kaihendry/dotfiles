@@ -100,4 +100,4 @@ if [ $HOSTNAME = "debian" ] ;then
 export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
 fi
 
-#export http_proxy=http://localhost:3128/
+export http_proxy=http://localhost:3128/
