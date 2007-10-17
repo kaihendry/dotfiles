@@ -36,3 +36,6 @@ Shift<BtnUp>:           select-end(CLIPBOARD)
 
 #http://www.linuxpowertop.org/known.php
 UXTerm*sessionMgt: False
+
+Emacs*background: black
+Emacs*foreground: white
