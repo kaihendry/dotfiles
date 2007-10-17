@@ -1,4 +1,4 @@
-#URxvt*font: -*-bitstream vera sans mono-medium-r-normal--24-*-*-*-*-*-*-*
+!URxvt*font: -*-bitstream vera sans mono-medium-r-normal--24-*-*-*-*-*-*-*
 URxvt.borderLess: True
 URxvt.reverseVideo: True
 URxvt.scrollBar: False
@@ -23,8 +23,8 @@ UXTerm*Font4: -efont-fixed-medium-r-normal-*-16-*-*-*-*-*-iso10646-1
 UXTerm*Font5: -misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
 UXTerm*Font6: -efont-fixed-medium-r-normal-*-24-*-*-*-*-*-iso10646-1
 
-#Paste from clipboard with shift
-#http://linux.seindal.dk/item71.html
+!Paste from clipboard with shift
+!http://linux.seindal.dk/item71.html
 UXTerm*VT100.Translations:    #override \
 Shift<Btn1Down>:        select-start()\n\
 Shift<Btn1Motion>:      select-extend()\n\
@@ -34,7 +34,7 @@ Shift<Btn3Down>:        start-extend()\n\
 Shift<Btn3Motion>:      select-extend()\n\
 Shift<BtnUp>:           select-end(CLIPBOARD)
 
-#http://www.linuxpowertop.org/known.php
+!http://www.linuxpowertop.org/known.php
 UXTerm*sessionMgt: False
 
 Emacs*background: black
