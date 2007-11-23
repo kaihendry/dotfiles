@@ -22,13 +22,13 @@ set visualbell		        " No bell sound
 set noai		            " No auto indent
 
 set nobackup		        " No backup files
-"set nowritebackup		    " No backup files
+set nowritebackup		    " No backup files
 
 set comments=nb:>	        " For email comment nesting
 "set paste
 
 set expandtab		        " No tabs!
-set shiftwidth=4	        " A tab become four spaces
+set shiftwidth=4	        " A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix

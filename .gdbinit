@@ -1,3 +1,4 @@
+# d32:~/svn/WebKit/WebKitBuild/Release/WebKitTools/GtkLauncher% gdb -tui GtkLauncher
 set auto-solib-add on
 show auto-solib-add
 
@@ -8,3 +9,9 @@ show print asm-demangle
 
 set breakpoint pending on
 show breakpoint pending
+
+define jsx
+    #b NP_Initialize
+    b NPP_GetValue
+    run http://plugin.webvm.net
+end
