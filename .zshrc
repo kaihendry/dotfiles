@@ -89,4 +89,5 @@ doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
+export PATH=/usr/lib/ccache:$PATH
 #export http_proxy=http://localhost:3128/

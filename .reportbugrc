@@ -34,26 +34,3 @@ compress
 # Default "from" email address and real name (override with env. vars.)
 email "hendry@iki.fi"
 realname "Kai Hendry"
-
-# Default REPLYTO (override with env. variables)
-# replyto "Kai Hendry <hendry@cs.helsinki.fi>"
-
-# Default HTTP Proxy (override with the env. variable)
-# http_proxy http://130.74.162.251:3128/
-
-# Use this to enable the internal MTA (bypassing /usr/sbin/sendmail)
-# smtphost smtp.kolumbus.fi
-
-# Use this to specify the path of your MTA; any SMTP server on Debian
-# should be OK with the default.
-# mta /usr/sbin/sendmail
-
-# User interface: text or newt
-# querybts and reportbug will use this setting
-# ui text
-
-# Editor
-# editor "emacs -nw"
-
-# Always use template mode (bypass all prompts, output to stdout)
-# template
