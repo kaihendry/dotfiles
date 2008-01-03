@@ -3,5 +3,7 @@ startup_message off
 defutf8 on
 # restore window contents after using (e.g.) vi
 altscreen on
-
-defscrollback 2000
+# bigger scroll back buffer
+defscrollback 10000
+# nice display on the bottom of the page to show selected screens
+hardstatus alwayslastline "%{kw} %{b}%H%{K}    < %-w%{Wb} %n %t %{-}%+w >"

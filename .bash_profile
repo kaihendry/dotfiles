@@ -34,3 +34,7 @@ do
   startx
 done
 fi
+
+if [ $HOSTNAME == 'won.local' ]; then
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+fi

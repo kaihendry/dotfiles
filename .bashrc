@@ -1,12 +1,7 @@
+# As of 2007 I use zsh-beta and .zshrc a bit more
+
 # If running interactively, then:
 if [ "$PS1" ]; then
-
-    # For subversion
-    if [ -d $HOME/opt/ ]; then
-        echo Local stuff!
-        export LD_LIBRARY_PATH="$HOME/opt/lib:$LD_LIBRARY_PATH"
-        export PATH="$HOME/opt/bin/:$PATH"
-    fi
 
     export EDITOR=vim
     export VISUAL=vim
@@ -24,14 +19,14 @@ if [ "$PS1" ]; then
     if [ "$TERM" != "dumb" ]; then
         if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
         eval `dircolors -b`
+        alias ls='ls --color=auto'
         fi
-	alias ls='ls --color=auto'
     fi
 
     alias h='cat ~/.bash_history.archive | grep -i'
 
     # some more ls aliases
-    alias ll='ls -alh'
+    alias ll='ls -alh --color=always'
     alias todo='vim /home/hendry/projects/webconverger/webconverger.org/TODO'
 
     # for offline mail reading
@@ -82,22 +77,6 @@ export EMAIL=hendry@iki.fi
 export DEBEMAIL=hendry@iki.fi
 export DEBFULLNAME='Kai Hendry'
 
-# Fucks up some programs on hosts that don't have these locales I have
-# export LANG=en_US.UTF-8
-#export LANGUAGE=en_US.UTF-8
-#export LC_ALL=en_US.UTF-8
-
 export PATH=$PATH:$HOME/projects/scripts
 
-# For work
-if [ $HOSTNAME = "airbus" ] ;then
-export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
-export JAVA_HOME=/usr/java/current
-export PATH=$JAVA_HOME/bin:$PATH:/usr/sbin/:/sbin/
-fi
-
-if [ $HOSTNAME = "debian" ] ;then
-export CVSROOT=:pserver:hendry@192.168.0.9:/home/cvs/repository/
-fi
-
-export http_proxy=http://localhost:3128/
+#export http_proxy=http://localhost:3128/
