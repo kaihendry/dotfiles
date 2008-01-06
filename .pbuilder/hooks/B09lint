@@ -1,0 +1,7 @@
+#!/bin/sh
+echo -n 'Installing lintian and linda: '
+apt-get install -y --force-yes --no-install-recommends linda lintian &> /dev/null
+echo done.
+lintian --show-overrides -I -i /tmp/buildd/*.changes
+linda --print-overrides -i /tmp/buildd/*.changes
+

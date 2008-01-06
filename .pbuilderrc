@@ -1,0 +1,10 @@
+HOOKDIR=/home/pabs/.pbuilder/hooks/
+#BASETGZ=/home/pabs/.pbuilder/chroot/
+BUILDRESULT=..
+REMOVEPACKAGES=""
+MIRRORSITE=ftp://ftp.iinet.net.au/debian
+PDEBUILD_PBUILDER=cowbuilder
+export CCACHE_DIR="/var/cache/pbuilder/ccache"
+export PATH="/usr/lib/ccache:${PATH}"
+EXTRAPACKAGES=ccache
+BINDMOUNTS="${CCACHE_DIR}"

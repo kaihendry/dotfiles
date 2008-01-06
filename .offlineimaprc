@@ -1,5 +1,19 @@
 [general]
-accounts = dabase
+accounts = GMail
+
+[Account GMail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = /home/hendry/Mail/gmail
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = kai.hendry@gmail.com
+ssl = yes
 
 [Account UnivCS]
 localrepository = LocalCS

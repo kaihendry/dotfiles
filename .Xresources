@@ -8,20 +8,16 @@ URxvt.internalBorder: 6
 UXTerm*utf8: 1
 UXTerm*scrollBar: False
 UXTerm*title: term
-UXTerm*saveLines: 1024
+UXTerm*saveLines:   10000
 UXTerm*termName: xterm
 
 UXTerm*background: black
 UXTerm*foreground: gray
 UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
+XTerm*vt100.metaSendsEscape: true
 
-UXTerm*font: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
-UXTerm*Font2: -efont-fixed-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
-UXTerm*Font3: -efont-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-1
-UXTerm*Font4: -efont-fixed-medium-r-normal-*-16-*-*-*-*-*-iso10646-1
-UXTerm*Font5: -misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
-UXTerm*Font6: -efont-fixed-medium-r-normal-*-24-*-*-*-*-*-iso10646-1
+UXTerm*font:      -*-terminus-medium-*-*-*-*-*-*-*-*-*-*-*
 
 !Paste from clipboard with shift
 !http://linux.seindal.dk/item71.html

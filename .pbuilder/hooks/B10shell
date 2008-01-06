@@ -1,0 +1,29 @@
+#!/bin/bash
+echo -n 'Installing convenience apps: '
+apt-get install -y --force-yes --no-install-recommends mc &> /dev/null
+echo -n 'mc '
+apt-get install -y --force-yes --no-install-recommends nano &> /dev/null
+echo -n 'nano '
+apt-get install -y --force-yes --no-install-recommends less &> /dev/null
+echo -n 'less '
+apt-get install -y --force-yes --no-install-recommends devscripts &> /dev/null
+echo -n 'devscripts '
+apt-get install -y --force-yes --no-install-recommends patchutils &> /dev/null
+echo -n 'patchutils '
+echo
+echo -n 'Setting bash config: '
+echo '[ -z "$PS1" ] && return' >> ~/.bashrc
+echo '. /etc/bash_completion'  >> ~/.bashrc
+echo done
+echo -n 'Setting mc config: '
+mkdir ~/.mc
+echo "[Midnight-Commander]" >> ~/.mc/ini
+echo navigate_with_arrows=1 >> ~/.mc/ini
+echo done
+echo -n 'Setting nano config: '
+echo set noconvert >> ~/.nanorc
+echo set mouse >> ~/.nanorc
+echo set nowrap >> ~/.nanorc
+echo set suspend >> ~/.nanorc
+echo done
+/bin/bash -i </dev/tty > /dev/tty
