@@ -90,7 +90,6 @@ _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
 export PATH=/usr/lib/ccache:$PATH
-export http_proxy=http://localhost:3128/
 
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'

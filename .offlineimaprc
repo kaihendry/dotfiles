@@ -1,5 +1,5 @@
 [general]
-accounts = GMail
+accounts = dabase
 
 [Account GMail]
 localrepository = Local

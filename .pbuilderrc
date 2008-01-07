@@ -4,7 +4,14 @@ BUILDRESULT=..
 REMOVEPACKAGES=""
 MIRRORSITE=ftp://ftp.iinet.net.au/debian
 PDEBUILD_PBUILDER=cowbuilder
-export CCACHE_DIR="/var/cache/pbuilder/ccache"
-export PATH="/usr/lib/ccache:${PATH}"
-EXTRAPACKAGES=ccache
-BINDMOUNTS="${CCACHE_DIR}"
+
+
+## SETUP
+#mkdir /var/cache/pbuilder/ccache
+#chown <BUILDUSERID/BUILDUSERNAME> /var/cache/pbuilder/ccache
+#
+#export CCACHE_DIR="/var/cache/pbuilder/ccache"
+#export PATH="/usr/lib/ccache:${PATH}"
+#EXTRAPACKAGES=ccache
+#BINDMOUNTS="${CCACHE_DIR}"
+##
