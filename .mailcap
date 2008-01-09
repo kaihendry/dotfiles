@@ -5,3 +5,5 @@ application/MSWORD		; antiword %s				; copiousoutput
 image/*             ; feh %s                    ; 
 application/pdf;                xpdf %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput
+# Java Web Start
+application/x-java-jnlp-file; /home/hendry/aplix/maemo/cdc-anselm/j2sdk1.4.2_16/jre/javaws/javaws %s

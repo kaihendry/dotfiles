@@ -2,14 +2,14 @@
 xsetroot -solid "#000000"
 
 #feh --bg-scale /home/hendry/porn/bgs/abstract.jpg
-feh --bg-center /home/hendry/private/1906309765_44a9f6b2a2_o.gif
+#feh --bg-center /home/hendry/private/1906309765_44a9f6b2a2_o.gif
 
 
 WIDTH=`xwininfo -root | grep Width | cut -d":" -f2`
 WIDTH=`expr $WIDTH - 20`
 WIDTH=${WIDTH}"x150-10-50"
 # make sure you have perms on /var/log/messages `sudo adduser $USER adm`
-root-tail -g $WIDTH -fn fixed -f /var/log/messages,white /var/log/syslog,yellow
+root-tail -g $WIDTH -f /var/log/messages,white /var/log/syslog,yellow
 
 #/usr/bin/persistent-browser &
 /usr/bin/iceweasel -P default &
