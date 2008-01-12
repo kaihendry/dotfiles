@@ -6,6 +6,8 @@ set print demangle
 show print demangle
 set print asm-demangle
 show print asm-demangle
+set exceptions true
+show debugexceptions
 
 set breakpoint pending on
 show breakpoint pending

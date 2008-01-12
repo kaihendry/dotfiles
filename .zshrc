@@ -94,3 +94,5 @@ export PATH=/usr/lib/ccache:$PATH
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'
 #sudo update-alternatives --config pager
+#
+alias diff=colordiff
