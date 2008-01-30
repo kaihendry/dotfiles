@@ -1,5 +1,3 @@
-# As of 2007 I use zsh-beta and .zshrc a bit more
-
 # If running interactively, then:
 if [ "$PS1" ]; then
 
@@ -27,19 +25,14 @@ if [ "$PS1" ]; then
 
     # some more ls aliases
     alias ll='ls -alh --color=always'
-    alias todo='vim /home/hendry/projects/webconverger/webconverger.org/TODO'
 
     # for offline mail reading
     alias mutto='mutt -e "set folder=$HOME/Mail" 
                  -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" 
                  -e "set spoolfile=+dabase/INBOX" 
                  -e "source ~/Mail/muttrc.mailboxes"'
-#
+
     alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
-
-
-    # wc -l $todo 
-    export todo=~/personal/todo.txt
 
     source ~/.bashrc_history.sh
 
@@ -73,10 +66,11 @@ if [ "$PS1" ]; then
 
 fi
 
+doc () {
+cd /usr/share/doc/$1
+ls
+}
+
 export EMAIL=hendry@iki.fi
 export DEBEMAIL=hendry@iki.fi
 export DEBFULLNAME='Kai Hendry'
-
-export PATH=$PATH:$HOME/projects/scripts
-
-#export http_proxy=http://localhost:3128/

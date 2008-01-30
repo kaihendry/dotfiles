@@ -1,9 +1,7 @@
 # black background
 xsetroot -solid "#000000"
 
-#feh --bg-scale /home/hendry/porn/bgs/abstract.jpg
-#feh --bg-center /home/hendry/private/1906309765_44a9f6b2a2_o.gif
-
+feh --bg-center /home/hendry/media/bg/ibm.gif
 
 WIDTH=`xwininfo -root | grep Width | cut -d":" -f2`
 WIDTH=`expr $WIDTH - 20`

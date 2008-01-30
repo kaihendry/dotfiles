@@ -2,7 +2,7 @@ HOOKDIR=/home/pabs/.pbuilder/hooks/
 #BASETGZ=/home/pabs/.pbuilder/chroot/
 BUILDRESULT=..
 REMOVEPACKAGES=""
-MIRRORSITE=ftp://ftp.iinet.net.au/debian
+MIRRORSITE=http://ftp.uk.debian.org/debian/
 PDEBUILD_PBUILDER=cowbuilder
 
 

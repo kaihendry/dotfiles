@@ -6,14 +6,15 @@ set print demangle
 show print demangle
 set print asm-demangle
 show print asm-demangle
-set exceptions true
-show debugexceptions
+#set exceptions true
+#show print debugexceptions
+show print pretty
 
 set breakpoint pending on
 show breakpoint pending
 
 define jsx
     #b NP_Initialize
-    b NPP_GetValue
-    run http://plugin.webvm.net
+    #b NPP_GetValue
+    run http://plugin.webvm.net/101/101.html
 end

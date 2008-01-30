@@ -7,6 +7,7 @@ source  ~/Mail/mutt.addressbook
 set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
 
+#set spoolfile=pop://aplixcorp.com0053@pop.aplixcorp.com
 set spoolfile={hendry@mail.dabase.com/ssl}INBOX
 set folder={hendry@mail.dabase.com/ssl}
 

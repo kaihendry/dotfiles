@@ -32,6 +32,7 @@ set shiftwidth=4	        " A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix
+"set noexpandtab
 
 colorscheme evening
 
