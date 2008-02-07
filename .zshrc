@@ -89,10 +89,17 @@ doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
-export PATH=/usr/lib/ccache:/home/hendry/android/android_sdk_linux_m3-rc37a/tools:$PATH
+EXTRABINS="$HOME/projects/scripts /usr/lib/ccache $HOME/android/android_sdk_linux_m3-rc37a/tools"
+
+for i in $EXTRABINS
+do
+if [ -e $i ];then
+    export PATH=$i:$PATH
+fi
+done
 
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'
 #sudo update-alternatives --config pager
-#
+
 alias diff=colordiff

@@ -1,64 +1,10 @@
 #VERBOSE=YES
-MAILDIR=${HOME}/Maildir/
-DEFAULT=${HOME}/Maildir/
-PMDIR=${HOME}/.procmail
+MAILHOME=/home/hendry/Mail
+MAILDIR=${MAILHOME}/local/
+DEFAULT=${MAILHOME}/local/
 LOGFILE=${MAILDIR}/procmail.log
 LOG="--- Logging ${LOGFILE} for ${LOGNAME}, "
 SHELL=/bin/sh
-
-:0fw 
-| spamassassin
-
-:0
-* ^X-Spam-Flag: YES
-.junk/
-
-:0
-* ^List-Id:.*dcglug\.org\.uk
-.lists.dcglug/
-
-:0
-* ^List-Id: wp-hackers.lists.automattic.com
-.lists.wp-hackers/
-
-:0
-* ^X-PTS-Package: iceweasel
-.lists.iceweasel/
-
-:0
-* ^X-PTS-Package: live-package
-.lists.livepackage/
-
-:0
-* ^Sender: owner-mutt-users@mutt.org
-.lists.mutt-users/
-
-:0
-* ^Sender: owner-mutt-dev@mutt.org
-.lists.mutt-dev/
-
-:0
-* ^Mailing-List: contact dev-help@qa.openoffice.org.*
-.lists.OO-qa/
-
-:0
-* ^(List-Id|(X-)?Mailing-List|X-List):\/.*
-{
-	LISTID=`echo $MATCH|sed -e 's/ /_/g'` 
-
-	:0
-	* LISTID ?? ^.*[<]\/[^@>\.]*
-	.lists.$MATCH/
-
-	:0
-	* LISTID ?? ^\/[^@\.]*
-	.lists.$MATCH/
-}
-
-# If not mailing list mail and it's not from Gmail, some spammer has mailed my drop account!
-:0
-* ! ^X-Forwarded-To: hendry@dabase.com
-.junkdirect/
 
 :0
 ${DEFAULT}
