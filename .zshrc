@@ -89,16 +89,19 @@ doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
-EXTRABINS="$HOME/projects/scripts /usr/lib/ccache $HOME/android/android_sdk_linux_m3-rc37a/tools /home/hendry/projects/static"
+
+EXTRABINS=($HOME/projects/scripts /usr/lib/ccache $HOME/android/android_sdk_linux_m3-rc37a/tools /home/hendry/projects/static)
 
 EPATH=""
-for i in $EXTRABINS
+for i in ${EXTRABINS[@]}
 do
 if [ -e $i ];then
     EPATH=$i:$EPATH
+	echo $EPATH
 fi
 done
-echo $EPATH
+export PATH=$PATH:$EPATH
+
 
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'
