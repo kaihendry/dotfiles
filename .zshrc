@@ -89,17 +89,31 @@ doc() { cd /usr/share/doc/$1 && ls }
 _doc() { _files -W /usr/share/doc -/ }
 compdef _doc doc
 
-EXTRABINS="$HOME/projects/scripts /usr/lib/ccache $HOME/android/android_sdk_linux_m3-rc37a/tools"
+EXTRABINS="$HOME/projects/scripts /usr/lib/ccache $HOME/android/android_sdk_linux_m3-rc37a/tools /home/hendry/projects/static"
 
+EPATH=""
 for i in $EXTRABINS
 do
 if [ -e $i ];then
-    export PATH=$i:$PATH
+    EPATH=$i:$EPATH
 fi
 done
+echo $EPATH
 
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'
 #sudo update-alternatives --config pager
+#
+alias tests='cd /home/hendry/aplix/code/trunk/tests/html'
+alias mods='cd /home/hendry/aplix/code/trunk/modules'
+alias webvm='cd /home/hendry/aplix/code/trunk/webvm'
+alias itest='iceweasel -p testing -a testing http://api.webvm.net/tests/'
+alias rec='screen -d -r'
+alias ac='vim private/personal/accounts'
 
 alias diff=colordiff
+
+
+alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
+alias checkmail='tail -f /var/log/exim4/mainlog'
+xbacklight -set 50

@@ -3,3 +3,4 @@
 	email = hendry@iki.fi
 [alias]
 	st = status
+	ci = commit -a

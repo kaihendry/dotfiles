@@ -19,5 +19,5 @@ while true
 do
 echo $(yacpi -t -c -p -b) FAN $(cat /proc/acpi/ibm/fan | grep "^level" | awk '{print $NF}') $(date +"%R %b %d")
 sleep 5
-done | /usr/bin/dwm
+done | /home/hendry/debian/dwm/dwm/dwm
 } || exec x-window-manager

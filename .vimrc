@@ -1,10 +1,11 @@
 " $Id$
 
 " Spell check
-map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
-:autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
-:autocmd FileType mail setlocal spell spelllang=en_gb
-:autocmd FileType *.rst setlocal spell spelllang=en_gb
+"map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
+map <F8> :setlocal spell spelllang=en_gb<CR>
+":autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
+":autocmd FileType mail setlocal spell spelllang=en_gb
+":autocmd FileType *.rst setlocal spell spelllang=en_gb
 
 "set mouse=a		        " Set to get mouse to work (doesn't work in screen)
 set nocp		            " forget about compatibility with old version of vi
@@ -27,12 +28,10 @@ set nowritebackup		    " No backup files
 set comments=nb:>	        " For email comment nesting
 "set paste
 
-set expandtab		        " No tabs!
 set shiftwidth=4	        " A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix
-"set noexpandtab
 
 colorscheme evening
 
