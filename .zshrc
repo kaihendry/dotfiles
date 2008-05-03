@@ -97,7 +97,6 @@ for i in ${EXTRABINS[@]}
 do
 if [ -e $i ];then
     EPATH=$i:$EPATH
-	echo $EPATH
 fi
 done
 export PATH=$PATH:$EPATH
@@ -115,8 +114,14 @@ alias rec='screen -d -r'
 alias ac='vim private/personal/accounts'
 
 alias diff=colordiff
+alias radio2='mplayer "rtsp://rmlive.bbc.co.uk/bbc-rbs/rmlive/ev7/live24/radio2/live/r2_dsat_g2.ra?BBC-UID=9427ad23ac8f6e909061ec7641002c1c5e71eb5fb010a166c395c50c48b52efa&SSO2-UID="'
+#alias radio1='mplayer "mms://wmlive-acl.bbc.co.uk/wms/radio1/radio1_nb_e1s1?BBC-UID=f4279e47c9a971baebd3dfea9040fba93d3d46eb50d03184e4ef3a0f75413cbc_n&amp;SSO2-UID="'
+alias radio4='mplayer "rtsp://rmlive.bbc.co.uk/bbc-rbs/rmlive/ev7/live24/radio4/live/r4_dsat_g2.ra?BBC-UID=3428f11c94d584ec7096897410205233fb0c690500400124647f991f15c8414e_n&SSO2-UID="'
 
-
+radio1() {
+mplayer "mms://wmlive-acl.bbc.co.uk/wms/radio1/radio1_nb_e1s1?BBC-UID=f4279e47c9a971baebd3dfea9040fba93d3d46eb50d03184e4ef3a0f75413cbc_n&amp;SSO2-UID="
+}
 alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
 alias checkmail='tail -f /var/log/exim4/mainlog'
-xbacklight -set 50
+xbacklight -set 100
+alias getwordpress="git clone ssh://kai-guest@alioth.debian.org/~/public_git/wordpress"

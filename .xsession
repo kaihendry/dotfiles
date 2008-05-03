@@ -11,6 +11,7 @@ root-tail -g $WIDTH -f /var/log/messages,white /var/log/syslog,yellow
 
 #/usr/bin/persistent-browser &
 /usr/bin/iceweasel -P default &
+#/home/hendry/ff3/firefox/firefox &
 
 x-terminal-emulator -e screen -UR &
 
@@ -19,5 +20,5 @@ while true
 do
 echo $(yacpi -t -c -p -b) FAN $(cat /proc/acpi/ibm/fan | grep "^level" | awk '{print $NF}') $(date +"%R %b %d")
 sleep 5
-done | /home/hendry/debian/dwm/dwm/dwm
+done | /usr/bin/dwm.default
 } || exec x-window-manager

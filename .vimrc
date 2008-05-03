@@ -3,6 +3,9 @@
 " Spell check
 "map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
 map <F8> :setlocal spell spelllang=en_gb<CR>
+noremap <BS> <Esc>1z=<CR>
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+                \ | wincmd p | diffthis
 ":autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
 ":autocmd FileType mail setlocal spell spelllang=en_gb
 ":autocmd FileType *.rst setlocal spell spelllang=en_gb
@@ -24,6 +27,8 @@ set noai		            " No auto indent
 
 set nobackup		        " No backup files
 set nowritebackup		    " No backup files
+
+let html_use_css = 1		" for :TOhtml
 
 set comments=nb:>	        " For email comment nesting
 "set paste
@@ -60,3 +65,4 @@ filetype plugin on
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 set wildmode=longest,list:longest,full
+
