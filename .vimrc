@@ -1,13 +1,14 @@
-" Spell check
-map <F8> :setlocal spell spelllang=en_gb<CR>
+" Spell check with F8
+map <F8> :setlocal spell! spelllang=en_gb<CR>
+
+" backspace quickly alters spelling mistake to most likely suggestion
+
 noremap <BS> <Esc>1z=<CR>
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd p | diffthis
 
-"set mouse=a		        " Set to get mouse to work (doesn't work in screen)
-set nocp		            " forget about compatibility with old version of vi
 syntax on		            " Syntax highlighting
-set background=dark 	    " Set background to dark to have nicer syntax highlighting
+set nocp		            " forget about compatibility with old version of vi
 set ttyfast		            " Smoother changes
 set ruler		            " We show vertical and horizontal position
 set showcmd                 " Show (partial) command in status line.
@@ -25,13 +26,13 @@ set nowritebackup		    " No backup files
 let html_use_css = 1		" for :TOhtml
 
 set comments=nb:>	        " For email comment nesting
-"set paste
 
 set shiftwidth=4	        " A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix
 
+set background=dark 	    " Set background to dark to have nicer syntax highlighting
 colorscheme evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -54,4 +55,3 @@ set modelines=5
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 set wildmode=longest,list:longest,full
-
