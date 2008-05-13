@@ -8,19 +8,19 @@ nnoremap <BS> <Esc>1z=<CR>
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd p | diffthis
 
-syntax on		            " Syntax highlighting
+syntax on					" Syntax highlighting
 set title					" Turn on titlebar support
-set nocp		            " forget about compatibility with old version of vi
-set ttyfast		            " Smoother changes
-set ruler		            " We show vertical and horizontal position
+set nocp					" forget about compatibility with old version of vi
+set ttyfast					" Smoother changes
+set ruler					" We show vertical and horizontal position
 set showcmd                 " Show (partial) command in status line.
 set showmatch               " Show matching brackets.
 set ignorecase              " Do case insensitive matching
 set incsearch               " Incremental search
-set hlsearch		        " Highlight search
-set backspace=2		        " To kill text with backspace!
-set visualbell		        " No bell sound
-set noai		            " No auto indent
+set hlsearch				" Highlight search
+set backspace=2				" To kill text with backspace!
+set visualbell				" No bell sound
+set noai					" No auto indent
 
 set backup                  " Make backups of files not matching 'backupskip'
 set noautowrite             " This should be default, but I worry...
@@ -28,14 +28,14 @@ set updatetime=2000         " Timeout for swapfile writes and CursorHold autocmd
 
 let html_use_css = 1		" for :TOhtml
 
-set comments=nb:>	        " For email comment nesting
+set comments=nb:>			" For email comment nesting
 
-set shiftwidth=4	        " A tab becomes four spaces
+set shiftwidth=4			" A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix
 
-set background=dark 	    " Set background to dark to have nicer syntax highlighting
+set background=dark			" Set background to dark to have nicer syntax highlighting
 colorscheme evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
