@@ -1,14 +1,8 @@
-" $Id$
-
 " Spell check
-"map <F8> :w!<CR>:!aspell check %<CR>:e! %<CR> 
 map <F8> :setlocal spell spelllang=en_gb<CR>
 noremap <BS> <Esc>1z=<CR>
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd p | diffthis
-":autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
-":autocmd FileType mail setlocal spell spelllang=en_gb
-":autocmd FileType *.rst setlocal spell spelllang=en_gb
 
 "set mouse=a		        " Set to get mouse to work (doesn't work in screen)
 set nocp		            " forget about compatibility with old version of vi
@@ -43,23 +37,18 @@ colorscheme evening
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
 
-" For subversion
-au BufNewFile,BufRead  svn-commit.* setf svn
+filetype plugin on
+au BufNewFile,BufRead svn-commit.* setf svn
+" treat .wgt files as .zip files
+au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 
 set encoding=utf-8          " Set Unicode as the default encoding
-"set fileencodings=ucs-bom,utf-8,latin1
 
 " How many lines to look for vim commands
 set modelines=5
 
-" Trim whitespace from python files
-autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
-autocmd BufRead,BufNewFile *.py syntax on autocmd BufRead,BufNewFile *.py set ai
-
 " For XML
 " au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
-
-filetype plugin on
 
 " Highlight Whitespace. Remember 'diw' to kill the tyranny of whitespace!
 highlight WhitespaceEOL ctermbg=red guibg=red
