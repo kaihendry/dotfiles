@@ -2,12 +2,14 @@
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 
 " backspace quickly alters spelling mistake to most likely suggestion
+" nnoremap restricts command to normal mode
+nnoremap <BS> <Esc>1z=<CR>
 
-noremap <BS> <Esc>1z=<CR>
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd p | diffthis
 
 syntax on		            " Syntax highlighting
+set title					" Turn on titlebar support
 set nocp		            " forget about compatibility with old version of vi
 set ttyfast		            " Smoother changes
 set ruler		            " We show vertical and horizontal position
@@ -20,8 +22,9 @@ set backspace=2		        " To kill text with backspace!
 set visualbell		        " No bell sound
 set noai		            " No auto indent
 
-set nobackup		        " No backup files
-set nowritebackup		    " No backup files
+set backup                  " Make backups of files not matching 'backupskip'
+set noautowrite             " This should be default, but I worry...
+set updatetime=2000         " Timeout for swapfile writes and CursorHold autocmd
 
 let html_use_css = 1		" for :TOhtml
 
@@ -40,16 +43,14 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 
 filetype plugin on
 au BufNewFile,BufRead svn-commit.* setf svn
-" treat .wgt files as .zip files
+" Treat .wgt files as .zip files
 au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 
+" http://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html
 set encoding=utf-8          " Set Unicode as the default encoding
 
 " How many lines to look for vim commands
 set modelines=5
-
-" For XML
-" au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
 " Highlight Whitespace. Remember 'diw' to kill the tyranny of whitespace!
 highlight WhitespaceEOL ctermbg=red guibg=red
