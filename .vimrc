@@ -22,18 +22,19 @@ set backspace=2				" To kill text with backspace!
 set visualbell				" No bell sound
 set noai					" No auto indent
 
-set backup                  " Make backups of files not matching 'backupskip'
+set nobackup                " No backups
 set noautowrite             " This should be default, but I worry...
 set updatetime=2000         " Timeout for swapfile writes and CursorHold autocmd
 
-let html_use_css = 1		" for :TOhtml
-
 set comments=nb:>			" For email comment nesting
+let html_use_css = 1		" for :TOhtml not to add inline style crud
 
 set shiftwidth=4			" A tab becomes four spaces
 set softtabstop=4
 set tabstop=4
 set fileformat=unix
+
+map gf :split <cfile><CR>  " gf to open file undercursor
 
 set background=dark			" Set background to dark to have nicer syntax highlighting
 colorscheme evening
@@ -56,3 +57,12 @@ set modelines=5
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 set wildmode=longest,list:longest,full
+
+" Try to autocomplete with 'omni completion' on TAB
+function! CleverTab()
+   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+	  return "\<Tab>"
+   else
+	  return "\<C-X>\<C-O>"
+endfunction
+inoremap <Tab> <C-R>=CleverTab()<CR>

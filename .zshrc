@@ -125,3 +125,6 @@ alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`
 alias checkmail='tail -f /var/log/exim4/mainlog'
 xbacklight -set 100
 alias getwordpress="git clone ssh://kai-guest@alioth.debian.org/~/public_git/wordpress"
+
+# disable terminal flow control
+stty -ixoff
