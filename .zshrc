@@ -128,3 +128,12 @@ alias getwordpress="git clone ssh://kai-guest@alioth.debian.org/~/public_git/wor
 
 # disable terminal flow control
 stty -ixoff
+
+if [ -z "${SSH_AGENT_PID}" ] && [ -z "${SSH_AUTH_SOCK}" ]; then
+	eval `ssh-agent`
+	logger "Setting up ssh-agent"
+	ssh-add ~/.ssh/id_rsa
+	ssh-add -l
+fi
+
+md5 () { md5sum $1 > $1.MD5SUM }

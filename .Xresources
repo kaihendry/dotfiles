@@ -1,4 +1,3 @@
-!URxvt*font: -*-bitstream vera sans mono-medium-r-normal--24-*-*-*-*-*-*-*
 URxvt.borderLess: True
 URxvt.reverseVideo: True
 URxvt.scrollBar: False
@@ -17,7 +16,8 @@ UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 XTerm*vt100.metaSendsEscape: true
 
-UXTerm*font:      -*-terminus-medium-*-*-*-*-*-*-*-*-*-*-*
+!Requires xfonts-terminus and a X restart for any changes
+UXTerm*font: terminus-16
 
 !Paste from clipboard with shift
 !http://linux.seindal.dk/item71.html
