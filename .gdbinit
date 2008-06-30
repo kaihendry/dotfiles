@@ -13,8 +13,10 @@ show print pretty
 set breakpoint pending on
 show breakpoint pending
 
-define jsx
+define webvm
+	cd /home/hendry/aplix/code/trunk/webvm
     #b NP_Initialize
     #b NPP_GetValue
-    run http://plugin.webvm.net/101/101.html
+    #file /usr/lib/webvm/npwebvm.so
+    run
 end

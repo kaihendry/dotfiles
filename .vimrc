@@ -1,6 +1,5 @@
 " Spell check with F8
 map <F8> :setlocal spell! spelllang=en_gb<CR>
-
 " backspace quickly alters spelling mistake to most likely suggestion
 " nnoremap restricts command to normal mode
 nnoremap <BS> <Esc>1z=<CR>
@@ -46,6 +45,7 @@ filetype plugin on
 au BufNewFile,BufRead svn-commit.* setf svn
 " Treat .wgt files as .zip files
 au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
+au BufReadCmd *.jar call zip#Browse(expand("<amatch>"))
 
 " http://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html
 set encoding=utf-8          " Set Unicode as the default encoding
