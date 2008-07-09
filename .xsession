@@ -33,7 +33,7 @@ do
     # format the values to 4 digit fields
     RXR=$(printf "%4d" $(echo "($RXBN - $RXB) / 1024/${SLEEP}" | bc))
     TXR=$(printf "%4d" $(echo "($TXBN - $TXB) / 1024/${SLEEP}" | bc))
-	echo -n "$(yacpi -t -c -p -b) "
+	echo -n $(acpi -b)
 	# The Unicode up&down arrow glyphs require a Unicode setup, e.g.:
 	#  -*-fixed-*-*-*-*-*-*-*-*-*-*-*-*
 	echo -n ${RXR}kB/s↓${TXR}kB/s↑
