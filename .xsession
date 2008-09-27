@@ -33,11 +33,14 @@ do
     # format the values to 4 digit fields
     RXR=$(printf "%4d" $(echo "($RXBN - $RXB) / 1024/${SLEEP}" | bc))
     TXR=$(printf "%4d" $(echo "($TXBN - $TXB) / 1024/${SLEEP}" | bc))
-	echo -n "$(acpi -b) "
+	CAP=$(cat /proc/acpi/battery/BAT0/info | sed -n 's/last full capacity:\s*\([0-9]*\) mWh/\1/p')
+	BAT=$(cat /proc/acpi/battery/BAT0/state | sed -n 's/remaining capacity:\s*\([0-9]*\) mWh/\1/p')
+	echo "$BAT * 100 / $CAP" | bc
 	# The Unicode up&down arrow glyphs require a Unicode setup, e.g.:
 	#  -*-fixed-*-*-*-*-*-*-*-*-*-*-*-*
 	echo -n ${RXR}kB/s↓${TXR}kB/s↑
-	echo $(date +"%R %b %d")
+	echo $(date +"%R %b %d ")
+	/home/hendry/debian/suckless/idle/idle
 
 	# reset old rates
     RXB=$RXBN; TXB=$TXBN

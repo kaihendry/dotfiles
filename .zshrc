@@ -142,7 +142,7 @@ md5 () { md5sum $1 > $1.MD5SUM }
 alias scpresume="rsync --partial --progress --rsh=ssh"
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 export WEBVMHOME=/home/hendry/aplix/code/trunk/webvm
+export J2MEWTK=/home/hendry/aplix/WTK2.5.2
 
-exec 2>>(while read line; do
-  print '\e[91m'${(q)line}'\e[0m' > /dev/tty; done &)
-
+#exec 2>>(while read line; do
+#  print '\e[91m'${(q)line}'\e[0m' > /dev/tty; done &)
