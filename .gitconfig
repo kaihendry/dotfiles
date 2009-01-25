@@ -4,3 +4,5 @@
 [alias]
 	st = status
 	ci = commit -a
+[color]
+	ui = auto

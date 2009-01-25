@@ -1,5 +1,12 @@
 # Thanks to Ari Pollak
 
+APLIX_ROOT=/mnt/truecrypt1/aplix
+
+if ! test -d $APLIX_ROOT
+then
+	echo $APLIX_ROOT mount not unlocked
+fi
+
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=20000
@@ -24,27 +31,20 @@ zstyle :compinstall filename '/home/hendry/.zshrc'
 autoload -Uz compinit
 compinit
 
-#if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then
-#while true
-#do
-#  startx
-#done
-#fi
-
 export EDITOR=vim
 export VISUAL=vim
 export CVSEDITOR=vim
 export EMAIL=hendry@iki.fi
 export DEBEMAIL=hendry@iki.fi
 export DEBFULLNAME='Kai Hendry'
+
 if [ `uname` = "Linux" ]; then
 	alias ls='ls -F --color=auto'
 else
 	alias ls='ls -F'
 fi
+
 alias ll='ls -alh'
-alias todo='vim /home/hendry/projects/webconverger/webconverger.org/TODO'
-alias h='cat ~/.bash_history.archive | grep -i'
 [ -x /usr/bin/dircolors ] && eval `dircolors`
 alias mv='nocorrect mv'       # no spelling correction on mv
 alias cp='nocorrect cp'       # no spelling correction on cp
@@ -58,7 +58,6 @@ autoload -U colors
 colors
 
 PROMPT="%{${fg[green]}%}%m%{${fg[white]}%}:%{${fg[cyan]}%}%~%{${fg[white]}%}%#%{${fg[default]}%} "
-#RPROMPT='%W %t'     # prompt for right side of screen
 
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
@@ -103,14 +102,12 @@ export PATH=$PATH:$EPATH
 
 [ -x /usr/bin/most ] && export PAGER=most
 [ -x /usr/bin/most ] && alias more='most' && alias less='most'
-#sudo update-alternatives --config pager
 
-alias tests='cd /home/hendry/aplix/code/trunk/tests/html'
-alias mods='cd /home/hendry/aplix/code/trunk/modules'
-alias webvm='cd /home/hendry/aplix/code/trunk/webvm'
-alias wiki='cd /home/hendry/aplix/wiki'
-alias rtest="ssh -X nox /home/hendry/runtest/runtest.sh -u"
-alias itest='/home/hendry/aplix/runtest/runtest.sh'
+alias tests="cd $APLIX_ROOT/code/trunk/tests/html"
+alias mods="cd $APLIX_ROOT/code/trunk/modules"
+alias webvm="cd $APLIX_ROOT/code/trunk/webvm"
+alias wiki="cd $APLIX_ROOT/wiki"
+alias itest="$APLIX_ROOT/runtest/runtest.sh"
 alias rec='screen -d -r'
 alias ac='vim private/personal/accounts'
 
@@ -118,11 +115,10 @@ alias diff=colordiff
 alias radio2='mplayer "rtsp://rmlive.bbc.co.uk/bbc-rbs/rmlive/ev7/live24/radio2/live/r2_dsat_g2.ra?BBC-UID=9427ad23ac8f6e909061ec7641002c1c5e71eb5fb010a166c395c50c48b52efa&SSO2-UID="'
 alias radio1='mplayer "mms://wmlive-acl.bbc.co.uk/wms/radio1/radio1_nb_e1s1?BBC-UID=f4279e47c9a971baebd3dfea9040fba93d3d46eb50d03184e4ef3a0f75413cbc_n&amp;SSO2-UID="'
 alias radio4='mplayer "rtsp://rmlive.bbc.co.uk/bbc-rbs/rmlive/ev7/live24/radio4/live/r4_dsat_g2.ra?BBC-UID=3428f11c94d584ec7096897410205233fb0c690500400124647f991f15c8414e_n&SSO2-UID="'
-alias radio5='mplayer "rtsp://rmlive-acl.bbc.co.uk/bbc-rbs/rmlive-acl/ev7/live24/radio5/live/r5_tl_g2.ra?BBC-UID=f4e8d3b4d73380462cbdde543030325dcc7dd7f0a0d081f444bff63fc234ac8b_n&SSO2-UID="'
 
-alias suspend='sudo s2ram -f -a 3'
+alias suspend='sudo s2ram -f -a 3 && slock'
+alias scpresume="rsync --partial --progress --rsh=ssh"
 
-alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
 alias checkmail='tail -f /var/log/exim4/mainlog'
 xbacklight -set 100 # max brightness please
 dict() { /usr/bin/dict "$@" | ${PAGER:-most}; }
@@ -130,19 +126,8 @@ dict() { /usr/bin/dict "$@" | ${PAGER:-most}; }
 # disable terminal flow control
 stty -ixoff
 
-#[ $TERM = "screen" ] && echo ${SSH_AGENT_PID}
-#if [ $TERM = "screen" ] && [ -z "${SSH_AGENT_PID}" ] && [ -z "${SSH_AUTH_SOCK}" ]; then
-#	eval `ssh-agent`
-#	logger "Setting up ssh-agent"
-#	ssh-add ~/.ssh/id_rsa
-#	ssh-add -l
-#fi
-
 md5 () { md5sum $1 > $1.MD5SUM }
-alias scpresume="rsync --partial --progress --rsh=ssh"
+synct() { rsync -zartpv --progress --delete $APLIX_ROOT/tsystem/csv kai@tsystem.iasolution.net:tsystem }
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
-export WEBVMHOME=/home/hendry/aplix/code/trunk/webvm
-export J2MEWTK=/home/hendry/aplix/WTK2.5.2
-
-#exec 2>>(while read line; do
-#  print '\e[91m'${(q)line}'\e[0m' > /dev/tty; done &)
+export WEBVMHOME=$APLIX_ROOT/code/trunk/webvm
+export J2MEWTK=$APLIX_ROOT/WTK2.5.2
