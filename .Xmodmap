@@ -1,2 +1,4 @@
 ! Add Compose
 keycode 113 = Multi_key
+remove lock = Caps_Lock
+keysym Caps_Lock = Escape
