@@ -1,76 +1,71 @@
 # If running interactively, then:
 if [ "$PS1" ]; then
 
-    export EDITOR=vim
-    export VISUAL=vim
-    export CVSEDITOR=vim
+	export EDITOR=vim
+	export VISUAL=vim
+	export CVSEDITOR=vim
 
-    export HISTCONTROL=ignoredups
-    shopt -s cmdhist
+	# check the window size after each command and, if necessary,
+	# update the values of LINES and COLUMNS.
+	shopt -s checkwinsize
 
-    # check the window size after each command and, if necessary,
-    # update the values of LINES and COLUMNS.
-    shopt -s checkwinsize
-    shopt -s histappend
+	# enable color support of ls and also add handy aliases
+	if [ "$TERM" != "dumb" ]; then
+		if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+			eval `dircolors -b`
+			alias ls='ls --color=auto'
+		fi
+	fi
 
-    # enable color support of ls and also add handy aliases
-    if [ "$TERM" != "dumb" ]; then
-        if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-        eval `dircolors -b`
-        alias ls='ls --color=auto'
-        fi
-    fi
+	alias h='cat ~/.bash_history.archive | grep -i'
 
-    alias h='cat ~/.bash_history.archive | grep -i'
+	# some more ls aliases
+	alias ll='ls -alh --color=always'
 
-    # some more ls aliases
-    alias ll='ls -alh --color=always'
+ 	PS1='\u@\h \W\$ '
 
-    # for offline mail reading
-    alias mutto='mutt -e "set folder=$HOME/Mail" 
-                 -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" 
-                 -e "set spoolfile=+dabase/INBOX" 
-                 -e "source ~/Mail/muttrc.mailboxes"'
+	# http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
+	export HISTCONTROL=ignoredups
+	shopt -s cmdhist
+	shopt -s histappend
+	PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
-    alias muttl='mutt -e "set folder=$HOME/Mail" -e "set record=+dabase/INBOX.Sent.`date +%Y-%m`" -e "set spoolfile=+dabase/INBOX" -e "source ~/Mail/muttrc.mailboxes"'
+	# enable programmable completion features (you don't need to enable
+	# this, if it's already enabled in /etc/bash.bashrc).
+	if [ -f /etc/bash_completion ]; then
+		. /etc/bash_completion
+	fi
 
-    source ~/.bashrc_history.sh
+	umask 002
 
-    # If this is an xterm set the title to user@host:dir
-    case $TERM in
-    xterm*)
-        # Xterm and rxvt use <esc> ] <num> ; <title> <bel>
-        #  Where <num> is 0 for both icon name and window title,
-        #                 1 for icon name
-        #                 2 for window title
-        #  \[ and \] are there to have bash ignore unprintable characters
-        #PS1='\[\033]0;\h\007\]\h\$ '
-        PS1='\h:\!\$ '
-        PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
-        ;;
+	doc () {
+		cd /usr/share/doc/$1
+		ls
+	}
 
-    *)
-        # user@host pwd should be provided my WM title bar IMO
-        PS1='\h\$ '
-        PROMPT_COMMAND=`history -a`
-        ;;
-    esac
+	alias ac='vim ~/private/personal/accounts'
+	alias suspend='sudo s2ram -f -a 3 && slock'
 
-    # enable programmable completion features (you don't need to enable
-    # this, if it's already enabled in /etc/bash.bashrc).
-    if [ -f /etc/bash_completion ]; then
-      . /etc/bash_completion
-    fi
+	[ -x /usr/bin/most ] && export PAGER=most
+	[ -x /usr/bin/most ] && alias more='most' && alias less='most'
 
-    umask 002
+	export EMAIL="hendry@iki.fi"
+	export DEBEMAIL="hendry@iki.fi"
+	export DEBFULLNAME='Kai Hendry'
+
+	APLIX_ROOT=/mnt/truecrypt1/aplix
+
+	alias tests="cd $APLIX_ROOT/code/trunk/tests/html"
+	alias mods="cd $APLIX_ROOT/code/trunk/modules"
+	alias webvm="cd $APLIX_ROOT/code/trunk/webvm"
+	alias wiki="cd $APLIX_ROOT/wiki"
+	alias itest="$APLIX_ROOT/runtest/runtest.sh"
+
+	xbacklight -set 100 2>/dev/null # max brightness please
+
+	# disable terminal flow control
+	stty -ixoff
+
+	complete -cf sudo
 
 fi
-
-doc () {
-cd /usr/share/doc/$1
-ls
-}
-
-export EMAIL=hendry@iki.fi
-export DEBEMAIL=hendry@iki.fi
-export DEBFULLNAME='Kai Hendry'

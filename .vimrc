@@ -4,9 +4,6 @@ map <F8> :setlocal spell! spelllang=en_gb<CR>
 " nnoremap restricts command to normal mode
 nnoremap <BS> <Esc>1z=<CR>
 
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-                \ | wincmd p | diffthis
-
 syntax on					" Syntax highlighting
 set title					" Turn on titlebar support
 set nocp					" forget about compatibility with old version of vi
@@ -36,7 +33,6 @@ set fileformat=unix
 map gf :split <cfile><CR>  " gf to open file undercursor
 
 set background=dark			" Set background to dark to have nicer syntax highlighting
-colorscheme evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif

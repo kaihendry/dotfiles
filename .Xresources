@@ -1,9 +1,3 @@
-URxvt.borderLess: True
-URxvt.reverseVideo: True
-URxvt.scrollBar: False
-URxvt.linespace: 5
-URxvt.internalBorder: 6
-
 UXTerm*utf8: 1
 UXTerm*scrollBar: False
 UXTerm*title: term
