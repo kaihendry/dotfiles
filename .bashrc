@@ -25,10 +25,14 @@ if [ "$PS1" ]; then
  	PS1='\u@\h \W\$ '
 
 	# http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
+	# http://wooledge.org:8000/BashFAQ/088
+    unset HISTFILESIZE
+	HISTSIZE=10000
 	export HISTCONTROL=ignoredups
 	shopt -s cmdhist
+	PROMPT_COMMAND="history -a"
+	export HISTSIZE PROMPT_COMMAND
 	shopt -s histappend
-	PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 	# enable programmable completion features (you don't need to enable
 	# this, if it's already enabled in /etc/bash.bashrc).
@@ -52,6 +56,7 @@ if [ "$PS1" ]; then
 	export EMAIL="hendry@iki.fi"
 	export DEBEMAIL="hendry@iki.fi"
 	export DEBFULLNAME='Kai Hendry'
+	export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 
 	APLIX_ROOT=/mnt/truecrypt1/aplix
 
