@@ -14,8 +14,10 @@ fi
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 
+dwm &
+
 while true
 do
-	echo "$(acpi -b | sed -r 's/^[^,]+,//') $(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
+	xsetroot -name "$(acpi -b | sed -r 's/^[^,]+,//') $(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
 	sleep 10
-done | dwm
+done

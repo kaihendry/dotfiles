@@ -41,7 +41,7 @@ filetype plugin on
 filetype plugin indent on
 au BufNewFile,BufRead svn-commit.* setf svn
 " Treat .wgt files as .zip files
-" au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
+au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 " au BufReadCmd *.jar call zip#Browse(expand("<amatch>"))
 
 " http://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html

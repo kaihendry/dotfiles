@@ -34,6 +34,11 @@ if [ "$PS1" ]; then
 	export HISTSIZE PROMPT_COMMAND
 	shopt -s histappend
 
+	# For my poor cd antics
+	shopt -s cdspell
+	shopt -s cdable_vars
+
+
 	# enable programmable completion features (you don't need to enable
 	# this, if it's already enabled in /etc/bash.bashrc).
 	if [ -f /etc/bash_completion ]; then
@@ -72,5 +77,9 @@ if [ "$PS1" ]; then
 	stty -ixoff
 
 	complete -cf sudo
+
+	if [ -d /home/hendry/android-sdk-linux_x86-1.1_r1/tools ] ; then
+		PATH=/home/hendry/android-sdk-linux_x86-1.1_r1/tools:"${PATH}"
+	fi
 
 fi

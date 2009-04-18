@@ -1,4 +1,5 @@
 ! Add Compose
-keycode 113 = Multi_key
+! pointer = 1 2 9 4 5 6 7 8 3
+! keycode 113 = Multi_key
 remove lock = Caps_Lock
 keysym Caps_Lock = Escape
