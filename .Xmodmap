@@ -3,3 +3,5 @@
 ! keycode 113 = Multi_key
 remove lock = Caps_Lock
 keysym Caps_Lock = Escape
+! keycode 115 = Super_L
+! pointer = 1 8 9 4 5 6 7 2 3
