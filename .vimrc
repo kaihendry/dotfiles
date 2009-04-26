@@ -4,6 +4,9 @@ map <F8> :setlocal spell! spelllang=en_gb<CR>
 " nnoremap restricts command to normal mode
 nnoremap <BS> <Esc>1z=<CR>
 
+set listchars=tab:>-
+set list
+
 syntax on					" Syntax highlighting
 set title					" Turn on titlebar support
 set nocp					" forget about compatibility with old version of vi
