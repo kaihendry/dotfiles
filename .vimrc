@@ -4,9 +4,7 @@ map <F8> :setlocal spell! spelllang=en_gb<CR>
 " nnoremap restricts command to normal mode
 nnoremap <BS> <Esc>1z=<CR>
 
-set listchars=tab:>-
-set list
-
+set list listchars=tab:»·,trail:·
 syntax on					" Syntax highlighting
 set title					" Turn on titlebar support
 set nocp					" forget about compatibility with old version of vi
@@ -46,6 +44,7 @@ au BufNewFile,BufRead svn-commit.* setf svn
 " Treat .wgt files as .zip files
 au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 " au BufReadCmd *.jar call zip#Browse(expand("<amatch>"))
+au BufRead,BufNewFile *.widl            set filetype=widl
 
 " http://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html
 set encoding=utf-8          " Set Unicode as the default encoding
@@ -66,4 +65,4 @@ function! CleverTab()
 	  return "\<C-X>\<C-O>"
 endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
-
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
