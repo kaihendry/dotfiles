@@ -1,5 +1,3 @@
-# $Id$
-
 set alias_file=~/Mail/mutt.addressbook
 # File to search for aliases in
 source  ~/Mail/mutt.addressbook
@@ -7,17 +5,17 @@ source  ~/Mail/mutt.addressbook
 set ssl_starttls=yes
 set certificate_file=~/Mail/certificates
 
-#set spoolfile=pop://aplixcorp.com0053@pop.aplixcorp.com
-set spoolfile={hendry@mail.dabase.com/ssl}INBOX
-set folder={hendry@mail.dabase.com/ssl}
+set imap_user="hendry@dabase.com"
+set spoolfile={mail.dabase.com/ssl}INBOX
+set folder={mail.dabase.com/ssl}
 
 # mailboxes I like to hear about when there is new mail
-mailboxes imaps://hendry@mail.dabase.com
+mailboxes imaps://mail.dabase.com
 
 set realname="Kai Hendry"
 set from="hendry@iki.fi"
 set hostname="iki.fi"
-alternates hendry\@(iki.fi|cs.helsinki.fi|natalian.org|dabase.com|nipl.net|khanworks.com)
+alternates hendry\@(iki.fi|natalian.org|dabase.com|aplix.co.jp)
 
 set beep_new                    # beep if new mail comes in
 set editor="vim -c 'set tw=72' -c 'set filetype=mail' -c 'setlocal spell spelllang=en_gb'"
@@ -28,13 +26,13 @@ set date_format="!%Y-%m-%dT%R%Z"# iso8601
 set attribution="On %d %n wrote:"
 
 # Archive inbox mail
-set mbox=imaps://hendry@mail.dabase.com/"INBOX.inbox.`date +%Y-%m`" 
+set mbox=imaps://mail.dabase.com/"INBOX.inbox.`date +%Y-%m`"
 
 # Location of postponed messages
-set postponed=imaps://hendry@mail.dabase.com/INBOX.postponed  
+set postponed=imaps://mail.dabase.com/INBOX.postponed
 
 # Archive send mail
-set record=imaps://hendry@mail.dabase.com/"INBOX.Sent.`date +%Y-%m`" 
+set record=imaps://mail.dabase.com/"INBOX.Sent.`date +%Y-%m`"
 
 color status 	white 		blue
 color index 	brightwhite	black   ~N
@@ -42,9 +40,9 @@ color index 	brightwhite	black   ~N
 # Some of these contain special ppl :)
 source ~/Mail/mutt.colours
 
-set ascii_chars		# So the threading arrows show up properly	       
+set ascii_chars		# So the threading arrows show up properly
 set sort=threads    # Sort by threads
-set menu_scroll		# scroll on last line of menu 
+set menu_scroll		# scroll on last line of menu
 unset suspend
 set smart_wrap
 set wrap_search
@@ -57,7 +55,7 @@ auto_view text/html
 # When viewing next page of info, retain last line of previous page
 set pager_context=5
 
-# Works a bit like a "preview" screen; 
+# Works a bit like a "preview" screen;
 # you can see the pager and 5 lines of the index at the same time
 set pager_index_lines=5
 
@@ -67,7 +65,7 @@ set pgp_replyencrypt  # always encrypt reply to encrypted message
 hdr_order From From: To: Cc: Subject: Date: X-Note: X-Mailer: User-Agent: \
           X-MimeOLE: Content-Type:
 unignore *
-ignore "from " received mime-version status x-status 
+ignore "from " received mime-version status x-status
 ignore sender references return-path lines precedence content-length
 ignore priority x-priority x-auth
 ignore X-eGroups-Return X-Mailing-List List-Help List-Unsubscribe List-Archive
@@ -94,7 +92,7 @@ set print_command="enscript -2r -o /tmp/email.ps -Email"
 
 #set envelope_from=yes
 #set envelope_from envelope_from_address=hendry@dabase.com
-set envelope_from=no 
+set envelope_from=no
 set sendmail='/usr/lib/sendmail -oem -oi -f hendry@dabase.com'
 
 #set sendmail = "ssh melkinpaasi.cs.helsinki.fi -t /usr/lib/sendmail"
@@ -102,8 +100,8 @@ set sendmail='/usr/lib/sendmail -oem -oi -f hendry@dabase.com'
 # Need this if using cygwin(win32)
 #set sendmail = "/usr/sbin/ssmtp.exe"
 
-send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>' 
-send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>' 
+send-hook   . 'my_hdr From: Kai Hendry <hendry@iki.fi>'
+send-hook   . 'my_hdr Reply-To: Kai Hendry <hendry@iki.fi>'
 message-hook "~h multipart" "set mime_forward=ask-yes"
 send-hook '~C list@dcglug.org.uk' 'my_hdr From: Kai Hendry <hendry@prazefarm.co.uk>'
 send-hook '~C feedback@webconverger.com' 'my_hdr From: Kai Hendry <hendry@webconverger.com>'
@@ -121,10 +119,6 @@ macro attach s S^A~/Mail/mail-attachments/
 
 lists whatwg@whatwg.org
 subscribe whatwg@whatwg.org
-
-# For a mutt bug around the end of 2005
-#unset imap_idle
-#set imap_idle=no
 
 # Control-b calls urlscan
 macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
