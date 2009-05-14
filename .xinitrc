@@ -14,6 +14,7 @@ fi
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 
+iceweasel -P default &
 dwm &
 
 while true
