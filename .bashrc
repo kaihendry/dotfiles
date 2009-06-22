@@ -21,6 +21,9 @@ if [ "$PS1" ]; then
 
 	# some more ls aliases
 	alias ll='ls -alh --color=always'
+	pol () { 
+		sudo vim /usr/lib/webvm/policy.conf 
+	}
 
  	PS1='\u@\h \W\$ '
 
@@ -68,6 +71,7 @@ if [ "$PS1" ]; then
 	alias tests="cd $APLIX_ROOT/code/trunk/tests/html"
 	alias mods="cd $APLIX_ROOT/code/trunk/modules"
 	alias webvm="cd $APLIX_ROOT/code/trunk/webvm"
+	export WEBVMHOME="$APLIX_ROOT/code/trunk/webvm"
 	alias wiki="cd $APLIX_ROOT/wiki"
 	alias itest="$APLIX_ROOT/runtest/runtest.sh"
 

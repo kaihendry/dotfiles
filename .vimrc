@@ -10,18 +10,18 @@ set title					" Turn on titlebar support
 set nocp					" forget about compatibility with old version of vi
 set ttyfast					" Smoother changes
 set ruler					" We show vertical and horizontal position
-set showcmd                 " Show (partial) command in status line.
-set showmatch               " Show matching brackets.
-set ignorecase              " Do case insensitive matching
-set incsearch               " Incremental search
+set showcmd					" Show (partial) command in status line.
+set showmatch				" Show matching brackets.
+set ignorecase				" Do case insensitive matching
+set incsearch				" Incremental search
 set hlsearch				" Highlight search
 set backspace=2				" To kill text with backspace!
 set visualbell				" No bell sound
 set noai					" No auto indent
 
-set nobackup                " No backups
-set noautowrite             " This should be default, but I worry...
-set updatetime=2000         " Timeout for swapfile writes and CursorHold autocmd
+set nobackup				" No backups
+set noautowrite				" This should be default, but I worry...
+set updatetime=2000			" Timeout for swapfile writes and CursorHold autocmd
 
 set comments=nb:>			" For email comment nesting
 let html_use_css = 1		" for :TOhtml not to add inline style crud
@@ -44,10 +44,10 @@ au BufNewFile,BufRead svn-commit.* setf svn
 " Treat .wgt files as .zip files
 au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 " au BufReadCmd *.jar call zip#Browse(expand("<amatch>"))
-au BufRead,BufNewFile *.widl            set filetype=widl
+au BufRead,BufNewFile *.widl			set filetype=widl
 
 " http://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html
-set encoding=utf-8          " Set Unicode as the default encoding
+set encoding=utf-8			" Set Unicode as the default encoding
 
 " How many lines to look for vim commands
 set modelines=5
@@ -67,3 +67,4 @@ endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set diffopt+=iwhite " Ignore whitespace whilst diffing
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list

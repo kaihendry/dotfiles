@@ -15,10 +15,16 @@ xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 
 iceweasel -P default &
-dwm &
+/home/hendry/debian/suckless/dwm/dwm &
+
+xrandr --output LVDS --mode 1024x768
+xrandr --output VGA --mode 1680x1050
+xrandr --output LVDS --left-of VGA
 
 while true
 do
 	xsetroot -name "$(acpi -b | sed -r 's/^[^,]+,//') $(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
 	sleep 10
 done
+
+
