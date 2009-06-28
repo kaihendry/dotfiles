@@ -85,5 +85,9 @@ if [ "$PS1" ]; then
 	if [ -d /home/hendry/android-sdk-linux_x86-1.5_r1/tools ] ; then
 		PATH=/home/hendry/android-sdk-linux_x86-1.5_r1/tools:/home/hendry/bondi/widl/obj:"${PATH}"
 	fi
+	if test -d /home/hendry/depot_tools
+	then
+		PATH=${PATH}:/home/hendry/depot_tools
+	fi
 
 fi

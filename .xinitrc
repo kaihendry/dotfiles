@@ -14,9 +14,9 @@ fi
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 
-iceweasel -P default &
-/home/hendry/debian/suckless/dwm/dwm &
+iceweasel -P default & # Run browser on startup
 
+# I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.
 xrandr --output LVDS --mode 1024x768
 xrandr --output VGA --mode 1680x1050
 xrandr --output LVDS --left-of VGA
@@ -25,6 +25,6 @@ while true
 do
 	xsetroot -name "$(acpi -b | sed -r 's/^[^,]+,//') $(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
 	sleep 10
-done
+done & # run in subshell
 
-
+exec /home/hendry/debian/suckless/dwm/dwm
