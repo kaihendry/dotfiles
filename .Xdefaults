@@ -1,0 +1,186 @@
+! ----------------------------------------------------------------------------
+! file:     ~/.Xdefaults
+! author:   Thayer Williams - http://cinderwick.ca
+! modified: November 7, 2008
+! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! ----------------------------------------------------------------------------
+
+! Xcursor --------------------------------------------------------------------
+
+Xcursor*theme:  Vanilla-DMZ-AA
+Xcursor.size:   22
+
+
+! terminal colors ------------------------------------------------------------
+
+! tangoesque scheme
+*background:  #222222
+*foreground:  #aaaaaa
+! Black
+*color0:      #000000
+*color8:      #555753
+! Red
+*color1:      #ff6565
+*color9:      #ff8d8d
+! Green
+*color2:      #93d44f
+*color10:     #c8e7a8
+! Yellow
+*color3:      #eab93d
+*color11:     #ffc123
+! Blue
+*color4:      #204a87
+*color12:     #3465a4
+! Mangenta
+*color5:      #ce5c00
+*color13:     #f57900
+! Cyan 
+*color6:      #89b6e2
+*color14:     #46a4ff
+! White
+*color7:      #cccccc
+*color15:     #ffffff
+
+
+
+! rxvt-unicode ---------------------------------------------------------------
+
+!for antialiased fonts (using Xft)
+!urxvt*font:     xft:Envy Code R:pixelsize=13
+!urxvt*font:     xft:dejavu sans mono:pixelsize=14
+!urxvt*boldFont: xft:dejavu sans mono:pixelsize=14
+!urxvt*font:     xft:Pragmata:pixelsize=13
+!urxvt*boldFont: xft:Pragmata:pixelsize=13
+
+!for normal X11 fonts:
+urxvt*font:      -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+urxvt*boldFont:  -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!urxvt*font:      -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+!urxvt*boldFont:  -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+!urxvt*font:      -*-proggyclean-*-*-*-*-*-*-*-*-*-*-*-*
+!urxvt*boldFont:  -*-proggyclean-*-*-*-*-*-*-*-*-*-*-*-*
+!urxvt*font:      -*-proggysquaresz-*-*-*-*-*-*-*-*-*-*-*-*
+!urxvt*boldFont:  -*-proggysquaresz-*-*-*-*-*-*-*-*-*-*-*-*
+
+urxvt*geometry:           160x50
+urxvt*internalBorder:     5
+urxvt*fading:             20
+urxvt*shading:            80
+urxvt*tintColor:          #222222
+urxvt*inheritPixmap:      false
+urxvt*depth:              24
+!urxvt*depth:              32
+urxvt*saveLines:          32767
+urxvt*visualBell:         true
+urxvt*scrollTtyKeypress:  true
+urxvt*scrollWithBuffer:   false
+urxvt*scrollTtyOutput:    false
+urxvt*scrollBar:          false
+urxvt*scrollstyle:        plain
+urxvt*scrollBar_right:    true
+urxvt*scrollColor:        #777777
+urxvt*cursorColor:        #ffcc00
+urxvt*loginShell:         true
+urxvt*termName:           rxvt
+urxvt*cutchars:           "()*,<>[]{}|'
+urxvt*print-pipe:         cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
+urxvt*secondaryScroll:    true
+urxvt*mapAlert:           true
+urxvt*utmpInhibit:        true
+urxvt*perl-lib:           /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:    default,matcher
+urxvt*urlLauncher:        /usr/bin/firefox
+urxvt*matcher.button:     1
+urxvt*background:         #191919
+!urxvt*background:         rgba:2222/2222/2222/dddd
+!urxvt*background:         rgba:0000/0000/0000/dddd
+
+
+! xterm ----------------------------------------------------------------------
+
+xterm*geometry:           80x25
+xterm*faceName:           terminus:pixelsize=10
+xterm*dynamicColors:      true
+xterm*utf8:               2
+xterm*eightBitInput:      true
+xterm*saveLines:          32767
+xterm*scrollTtyKeypress:  true
+xterm*scrollTtyOutput:    false
+xterm*scrollBar:          true
+xterm*loginShell:         true
+xterm*jumpScroll:         false
+xterm*multiScroll:        true
+xterm*toolBar:            true
+
+
+! lal clock ------------------------------------------------------------------
+
+lal*font:       Arial
+lal*fontsize:   12
+lal*bold:       true
+lal*color:      #ffffff
+lal*width:      150
+lal*format:     %a %b %d %l:%M%P
+
+
+! xclock ---------------------------------------------------------------------
+
+xclock*analog:            false
+xclock*update:            1         ! update every 1 sec
+xclock*Foreground:        white
+xclock*background:        black
+
+
+! xpdf -----------------------------------------------------------------------
+
+xpdf*enableFreetype:      yes
+xpdf*antialias:           yes
+xpdf*foreground:          black
+xpdf*background:          white
+xpdf*urlCommand:          /usr/bin/firefox %s
+xpdf*viKeys:              on
+
+! x11-ssh-askpass ------------------------------------------------------------
+
+
+x11-ssh-askpass*font:                   -*-nu-*-*-*-*-*-*-*-*-*-*-*-*
+x11-ssh-askpass*background:             #000000
+x11-ssh-askpass*foreground:             #ffffff
+x11-ssh-askpass.Button*background:      #000000
+x11-ssh-askpass.Indicator*foreground:   #ff9900
+x11-ssh-askpass.Indicator*background:   #090909
+x11-ssh-askpass*topShadowColor:         #000000
+x11-ssh-askpass*bottomShadowColor:      #000000
+x11-ssh-askpass.*borderWidth:           1
+
+
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-bold-r-*-*-*-100-*-*-*-*-iso8859-1
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-*-120-*-*-*-*-iso8859-1
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-*-120-*-*-*-*-iso8859-1
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-*-120-*-*-*-*-iso8859-1
+xscreensaver.Dialog.buttonFont:         -*-fixed-bold-r-*-*-*-120-*-*-*-*-iso8859-1
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-*-100-*-*-*-*-iso8859-1
+xscreensaver.passwd.passwdFont:         -*-fixed-bold-r-*-*-*-100-*-*-*-*-iso8859-1
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #111111
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #666666
+xscreensaver.Dialog.Button.background:  #ffffff
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #666666
+xscreensaver.Dialog.text.background:    #ffffff
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #ff0000
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       8
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+

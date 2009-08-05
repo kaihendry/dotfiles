@@ -21,8 +21,8 @@ if [ "$PS1" ]; then
 
 	# some more ls aliases
 	alias ll='ls -alh --color=always'
-	pol () { 
-		sudo vim /usr/lib/webvm/policy.conf 
+	pol () {
+		sudo vim /usr/lib/webvm/policy.conf
 	}
 
  	PS1='\u@\h \W\$ '
@@ -74,6 +74,7 @@ if [ "$PS1" ]; then
 	export WEBVMHOME="$APLIX_ROOT/code/trunk/webvm"
 	alias wiki="cd $APLIX_ROOT/wiki"
 	alias itest="$APLIX_ROOT/runtest/runtest.sh"
+	alias scan="sudo iwlist wlan0 scan"
 
 	xbacklight -set 100 2>/dev/null # max brightness please
 
@@ -90,4 +91,11 @@ if [ "$PS1" ]; then
 		PATH=${PATH}:/home/hendry/depot_tools
 	fi
 
+	upload() {
+curl -F key=kensentme -F f=@$1 http://upload.natalian.org
+	}
+
 fi
+
+GREP_OPTIONS="--exclude-dir=\.svn"
+export GREP_OPTIONS
