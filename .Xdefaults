@@ -14,7 +14,7 @@ Xcursor.size:   22
 ! terminal colors ------------------------------------------------------------
 
 ! tangoesque scheme
-*background:  #222222
+*background:  #000000
 *foreground:  #aaaaaa
 ! Black
 *color0:      #000000
@@ -34,7 +34,7 @@ Xcursor.size:   22
 ! Mangenta
 *color5:      #ce5c00
 *color13:     #f57900
-! Cyan 
+! Cyan
 *color6:      #89b6e2
 *color14:     #46a4ff
 ! White
@@ -53,8 +53,15 @@ Xcursor.size:   22
 !urxvt*boldFont: xft:Pragmata:pixelsize=13
 
 !for normal X11 fonts:
-urxvt*font:      -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-urxvt*boldFont:  -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+URxvt.buffered: true
+URxvt.background: black
+URxvt.foreground: white
+URxvt.cursorColor: green
+URxvt.underlineColor: yellow
+URxvt.font: xft:Terminus:pixelsize=14:antialias=false
+URxvt.boldFont: xft:Terminus:bold:pixelsize=14:antialias=false
+!urxvt*font:      -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
+!urxvt*boldFont:  -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
 !urxvt*font:      -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
 !urxvt*boldFont:  -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
 !urxvt*font:      -*-proggyclean-*-*-*-*-*-*-*-*-*-*-*-*
@@ -64,9 +71,9 @@ urxvt*boldFont:  -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
 
 urxvt*geometry:           160x50
 urxvt*internalBorder:     5
-urxvt*fading:             20
-urxvt*shading:            80
-urxvt*tintColor:          #222222
+!urxvt*fading:             20
+!urxvt*shading:            80
+!urxvt*tintColor:          #222222
 urxvt*inheritPixmap:      false
 urxvt*depth:              24
 !urxvt*depth:              32
@@ -91,7 +98,7 @@ urxvt*perl-lib:           /usr/lib/urxvt/perl/
 urxvt*perl-ext-common:    default,matcher
 urxvt*urlLauncher:        /usr/bin/firefox
 urxvt*matcher.button:     1
-urxvt*background:         #191919
+!urxvt*background:         #191919
 !urxvt*background:         rgba:2222/2222/2222/dddd
 !urxvt*background:         rgba:0000/0000/0000/dddd
 

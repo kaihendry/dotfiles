@@ -4,8 +4,8 @@ map <F8> :setlocal spell! spelllang=en_gb<CR>
 " nnoremap restricts command to normal mode
 nnoremap <BS> <Esc>1z=<CR>
 
-set list listchars=tab:»·,trail:·
 syntax on					" Syntax highlighting
+set mouse=
 set title					" Turn on titlebar support
 set nocp					" forget about compatibility with old version of vi
 set ttyfast					" Smoother changes
@@ -34,6 +34,7 @@ set fileformat=unix
 map gf :split <cfile><CR>  " gf to open file undercursor
 
 set background=dark			" Set background to dark to have nicer syntax highlighting
+"colors evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
@@ -67,4 +68,5 @@ endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set diffopt+=iwhite " Ignore whitespace whilst diffing
-autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list
+setlocal omnifunc=syntaxcomplete#Complete
+set list listchars=tab:»·,trail:·,extends:…
