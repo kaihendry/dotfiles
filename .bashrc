@@ -83,8 +83,8 @@ if [ "$PS1" ]; then
 
 	complete -cf sudo
 
-	if [ -d /home/hendry/android-sdk-linux_x86-1.5_r1/tools ] ; then
-		PATH=/home/hendry/android-sdk-linux_x86-1.5_r1/tools:/home/hendry/bondi/widl/obj:"${PATH}"
+	if [ -d /home/hendry/android-sdk-linux_x86-1.6_r1 ] ; then
+		PATH=/home/hendry/android-sdk-linux_x86-1.6_r1/tools:"${PATH}"
 	fi
 	if test -d /home/hendry/depot_tools
 	then
