@@ -1,3 +1,4 @@
+" Study http://hg.suckless.org/dextra/file/tip/bluegray/vimrc
 " Spell check with F8
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 " backspace quickly alters spelling mistake to most likely suggestion
@@ -34,7 +35,7 @@ set fileformat=unix
 map gf :split <cfile><CR>  " gf to open file undercursor
 
 set background=dark			" Set background to dark to have nicer syntax highlighting
-"colors evening
+colors evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
@@ -68,5 +69,9 @@ endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set diffopt+=iwhite " Ignore whitespace whilst diffing
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list
+setlocal omnifunc=syntaxcomplete#Complete
+"hi clear
+autocmd BufNewFile,BufRead *.csv setf csv
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…
