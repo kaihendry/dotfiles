@@ -34,6 +34,8 @@ set fileformat=unix
 map gf :split <cfile><CR>  " gf to open file undercursor
 
 set background=dark			" Set background to dark to have nicer syntax highlighting
+"colors zellner
+colors evening
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
@@ -68,3 +70,7 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set diffopt+=iwhite " Ignore whitespace whilst diffing
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list
+setlocal omnifunc=syntaxcomplete#Complete
+
+"hi clear
+autocmd BufNewFile,BufRead *.csv setf csv

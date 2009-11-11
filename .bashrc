@@ -27,8 +27,6 @@ if [ "$PS1" ]; then
 
  	PS1='\u@\h \W\$ '
 
-	# http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
-	# http://wooledge.org:8000/BashFAQ/088
     unset HISTFILESIZE
 	HISTSIZE=10000
 	export HISTCONTROL=ignoredups
@@ -40,7 +38,6 @@ if [ "$PS1" ]; then
 	# For my poor cd antics
 	shopt -s cdspell
 	shopt -s cdable_vars
-
 
 	# enable programmable completion features (you don't need to enable
 	# this, if it's already enabled in /etc/bash.bashrc).
@@ -68,31 +65,30 @@ if [ "$PS1" ]; then
 
 	APLIX_ROOT=/mnt/truecrypt1/aplix
 
-	alias tests="cd $APLIX_ROOT/code/trunk/tests/html"
-	alias mods="cd $APLIX_ROOT/code/trunk/modules"
-	alias webvm="cd $APLIX_ROOT/code/trunk/webvm"
-	export WEBVMHOME="$APLIX_ROOT/code/trunk/webvm"
-	alias wiki="cd $APLIX_ROOT/wiki"
-	alias itest="$APLIX_ROOT/runtest/runtest.sh"
+	alias tests="cd /home/hendry/W3/2006/waf/widgets/tests"
+	alias dtests="cd /home/hendry/W3/2006/waf/widgets-digsig/tests"
+	alias webvm="cd $APLIX_ROOT/webvm/trunk/webvm"
+	export WEBVMHOME="$APLIX_ROOT/webvm/trunk/webvm"
+	alias wiki="cd $APLIX_ROOT/public-wiki"
 	alias scan="sudo iwlist wlan0 scan"
+	alias wrt="cd /mnt/truecrypt1/aplix/code/trunk/widgetmanager"
 
 	xbacklight -set 100 2>/dev/null # max brightness please
 
 	# disable terminal flow control
-	stty -ixoff
+	stty -ixon
 
 	complete -cf sudo
 
-	if [ -d /home/hendry/android-sdk-linux_x86-1.5_r1/tools ] ; then
-		PATH=/home/hendry/android-sdk-linux_x86-1.5_r1/tools:/home/hendry/bondi/widl/obj:"${PATH}"
-	fi
-	if test -d /home/hendry/depot_tools
+	ANDROID_TOOLS=/home/hendry/android/tools
+	if test -d $ANDROID_TOOLS
 	then
-		PATH=${PATH}:/home/hendry/depot_tools
+		PATH=${PATH}:$ANDROID_TOOLS
 	fi
 
 	upload() {
-curl -F key=kensentme -F f=@$1 http://upload.natalian.org
+	curl -F key=kensentme2 -F f=@$1 http://upload.natalian.org
+	ssh -A hetty /srv/www/static-sync.sh
 	}
 
 fi
