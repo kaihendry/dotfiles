@@ -17,17 +17,12 @@ if [ "$PS1" ]; then
 		fi
 	fi
 
-	alias h='cat ~/.bash_history.archive | grep -i'
-
 	# some more ls aliases
 	alias ll='ls -alh --color=always'
-	pol () {
-		sudo vim /usr/lib/webvm/policy.conf
-	}
 
- 	PS1='\u@\h \W\$ '
+	PS1='\u@\h \W\$ '
 
-    unset HISTFILESIZE
+	unset HISTFILESIZE
 	HISTSIZE=10000
 	export HISTCONTROL=ignoredups
 	shopt -s cmdhist
@@ -35,22 +30,11 @@ if [ "$PS1" ]; then
 	export HISTSIZE PROMPT_COMMAND
 	shopt -s histappend
 
-	# For my poor cd antics
+	# For my poor typing antics
 	shopt -s cdspell
 	shopt -s cdable_vars
 
-	# enable programmable completion features (you don't need to enable
-	# this, if it's already enabled in /etc/bash.bashrc).
-	if [ -f /etc/bash_completion ]; then
-		. /etc/bash_completion
-	fi
-
 	umask 002
-
-	doc () {
-		cd /usr/share/doc/$1
-		ls
-	}
 
 	alias ac='vim ~/private/personal/accounts'
 	alias suspend='sudo s2ram -f -a 3 && slock'
@@ -65,13 +49,9 @@ if [ "$PS1" ]; then
 
 	APLIX_ROOT=/mnt/truecrypt1/aplix
 
-	alias tests="cd /home/hendry/W3/2006/waf/widgets/tests"
-	alias dtests="cd /home/hendry/W3/2006/waf/widgets-digsig/tests"
-	alias webvm="cd $APLIX_ROOT/webvm/trunk/webvm"
 	export WEBVMHOME="$APLIX_ROOT/webvm/trunk/webvm"
 	alias wiki="cd $APLIX_ROOT/public-wiki"
 	alias scan="sudo iwlist wlan0 scan"
-	alias wrt="cd /mnt/truecrypt1/aplix/code/trunk/widgetmanager"
 
 	xbacklight -set 100 2>/dev/null # max brightness please
 
@@ -86,12 +66,28 @@ if [ "$PS1" ]; then
 		PATH=${PATH}:$ANDROID_TOOLS
 	fi
 
-	upload() {
-	curl -F key=kensentme2 -F f=@$1 http://upload.natalian.org
-	ssh -A hetty.webconverger.org /srv/www/static-sync.sh
-	}
+	if test -f $HOME/.ssh/key
+	then
+		upload() {
+			. $HOME/.ssh/key
+			curl -F key=$KEY -F f=@$1 http://upload.natalian.org
+			ssh -A hetty.webconverger.org /srv/www/static-sync.sh
+		}
+	fi
+
+	if test -d $HOME/go
+	then
+		export GOROOT=$HOME/go
+		export GOOS=linux
+		export GOARCH=386
+	fi
+
+	if test -d $HOME/bin
+	then
+		export PATH=$HOME/bin:${PATH}
+	fi
+
+	GREP_OPTIONS="--exclude-dir=\.svn"
+	export GREP_OPTIONS
 
 fi
-
-GREP_OPTIONS="--exclude-dir=\.svn"
-export GREP_OPTIONS
