@@ -14,7 +14,7 @@ fi
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 
-iceweasel -P default & # Run browser on startup
+#iceweasel -P default & # Run browser on startup
 #~/firefox/firefox -P default &
 
 # I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.

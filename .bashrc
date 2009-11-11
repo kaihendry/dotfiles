@@ -88,7 +88,7 @@ if [ "$PS1" ]; then
 
 	upload() {
 	curl -F key=kensentme2 -F f=@$1 http://upload.natalian.org
-	ssh -A hetty /srv/www/static-sync.sh
+	ssh -A hetty.webconverger.org /srv/www/static-sync.sh
 	}
 
 fi
