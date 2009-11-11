@@ -79,7 +79,12 @@ if [ "$PS1" ]; then
 	then
 		export GOROOT=$HOME/go
 		export GOOS=linux
-		export GOARCH=386
+		if test "$(uname -m)" = "x86_64"
+		then
+			export GOARCH=amd64
+		else
+			export GOARCH=386
+		fi
 	fi
 
 	if test -d $HOME/bin
