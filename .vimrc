@@ -73,5 +73,6 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtab
 setlocal omnifunc=syntaxcomplete#Complete
 "hi clear
 autocmd BufNewFile,BufRead *.csv setf csv
+autocmd BufNewFile,BufRead *.go setf go
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…
