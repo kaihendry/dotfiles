@@ -72,6 +72,7 @@ set diffopt+=iwhite " Ignore whitespace whilst diffing
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list
 setlocal omnifunc=syntaxcomplete#Complete
 "hi clear
+autocmd BufNewFile,BufRead *.go setf go
 autocmd BufNewFile,BufRead *.csv setf csv
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…
