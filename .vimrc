@@ -74,5 +74,6 @@ setlocal omnifunc=syntaxcomplete#Complete
 "hi clear
 autocmd BufNewFile,BufRead *.go setf go
 autocmd BufNewFile,BufRead *.csv setf csv
+autocmd BufNewFile,BufRead *.go setf go
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…

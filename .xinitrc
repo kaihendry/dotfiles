@@ -24,8 +24,8 @@ xrandr --output LVDS --left-of VGA
 
 while true
 do
-	xsetroot -name "$(acpi -b | sed -r 's/^[^,]+,//') $(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
+	xsetroot -name "$(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
 	sleep 10
 done & # run in subshell
 
-exec /home/hendry/debian/suckless/dwm/dwm
+exec /home/hendry/suckless/dwm/dwm
