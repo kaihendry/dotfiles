@@ -6,4 +6,4 @@ image/*             ; feh %s                    ;
 application/pdf;                xpdf %s; test=sh -c 'test $DISPLAY'
 application/pdf;                pdftotext %s -; copiousoutput
 # Java Web Start
-application/x-java-jnlp-file; /home/hendry/aplix/maemo/cdc-anselm/j2sdk1.4.2_16/jre/javaws/javaws %s
+application/x-java-jnlp-file; /home/hendry/java/jdk1.5.0_22/jre/bin/javaws %s

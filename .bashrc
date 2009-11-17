@@ -45,7 +45,12 @@ if [ "$PS1" ]; then
 	export EMAIL="hendry@iki.fi"
 	export DEBEMAIL="hendry@iki.fi"
 	export DEBFULLNAME='Kai Hendry'
-	export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
+	export JAVA_HOME=/usr/lib/jvm/jdk1.5.0_22
+
+	if test -d $JAVA_HOME/bin
+	then
+		export PATH=$JAVA_HOME/bin:${PATH}
+	fi
 
 	APLIX_ROOT=/mnt/truecrypt1/aplix
 
@@ -60,7 +65,7 @@ if [ "$PS1" ]; then
 
 	complete -cf sudo
 
-	ANDROID_TOOLS=/home/hendry/android/tools
+	ANDROID_TOOLS=/home/hendry/android-sdk-linux/tools
 	if test -d $ANDROID_TOOLS
 	then
 		PATH=${PATH}:$ANDROID_TOOLS
