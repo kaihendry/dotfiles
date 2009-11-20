@@ -71,6 +71,14 @@ if [ "$PS1" ]; then
 		PATH=${PATH}:$ANDROID_TOOLS
 	fi
 
+	DEPOT_TOOLS=/home/hendry/depot_tools
+	if test -d $DEPOT_TOOLS
+	then
+		PATH=${PATH}:$DEPOT_TOOLS
+	fi
+
+
+
 	if test -f $HOME/.ssh/key
 	then
 		upload() {
