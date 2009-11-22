@@ -29,4 +29,4 @@ do
 done & # run in subshell
 
 #exec /home/hendry/debian/suckless/dwm/dwm
-exec /home/hendry/suckless/dwm/dwm
+exec /home/hendry/debian/suckless/dwm/dwm
