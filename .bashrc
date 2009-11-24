@@ -1,5 +1,5 @@
-# If running interactively, then:
-if [ "$PS1" ]; then
+if test "$PS1"
+then
 
 	export EDITOR=vim
 	export VISUAL=vim
@@ -9,15 +9,6 @@ if [ "$PS1" ]; then
 	# update the values of LINES and COLUMNS.
 	shopt -s checkwinsize
 
-	# enable color support of ls and also add handy aliases
-	if [ "$TERM" != "dumb" ]; then
-		if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-			eval `dircolors -b`
-			alias ls='ls --color=auto'
-		fi
-	fi
-
-	# some more ls aliases
 	alias ll='ls -alh --color=always'
 
 	PS1='\u@\h \W\$ '
@@ -54,7 +45,14 @@ if [ "$PS1" ]; then
 
 	APLIX_ROOT=/mnt/truecrypt1/aplix
 
-	export WEBVMHOME="$APLIX_ROOT/webvm/trunk/webvm"
+	a() { if test -d $APLIX_ROOT
+			  then
+				  cd $APLIX_ROOT
+			  else
+				  truecrypt ~/crypt /mnt/truecrypt1
+			  fi
+		  }
+
 	alias wiki="cd $APLIX_ROOT/public-wiki"
 	alias scan="sudo iwlist wlan0 scan"
 
@@ -68,6 +66,7 @@ if [ "$PS1" ]; then
 	ANDROID_TOOLS=/home/hendry/android-sdk-linux/tools
 	if test -d $ANDROID_TOOLS
 	then
+		export GDK_NATIVE_WINDOWS=true
 		PATH=${PATH}:$ANDROID_TOOLS
 	fi
 
@@ -76,8 +75,6 @@ if [ "$PS1" ]; then
 	then
 		PATH=${PATH}:$DEPOT_TOOLS
 	fi
-
-
 
 	if test -f $HOME/.ssh/key
 	then
