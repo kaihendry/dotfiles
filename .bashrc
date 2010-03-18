@@ -9,7 +9,7 @@ then
 	# update the values of LINES and COLUMNS.
 	shopt -s checkwinsize
 
-	alias ll='ls -alh --color=always'
+	alias ll='ls -alh --group-directories-first --color=always'
 
 	PS1='\u@\h \W\$ '
 
@@ -104,5 +104,6 @@ then
 
 	GREP_OPTIONS="--exclude-dir=\.svn"
 	export GREP_OPTIONS
+	alias widgets="cd /mnt/truecrypt1/aplix/webvm/trunk/widgets"
 
 fi

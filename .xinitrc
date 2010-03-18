@@ -18,9 +18,9 @@ xmodmap ~/.Xmodmap
 #~/firefox/firefox -P default &
 
 # I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.
-xrandr --output LVDS --mode 1024x768
-xrandr --output VGA --mode 1680x1050
-xrandr --output LVDS --left-of VGA
+xrandr --output LVDS1 --mode 1024x768
+xrandr --output VGA1 --mode 1680x1050
+xrandr --output LVDS1 --left-of VGA1
 
 while true
 do
@@ -28,5 +28,5 @@ do
 	sleep 10
 done & # run in subshell
 
-#exec /home/hendry/debian/suckless/dwm/dwm
 exec /home/hendry/debian/suckless/dwm/dwm
+#exec /usr/bin/dwm

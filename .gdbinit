@@ -2,6 +2,7 @@
 set auto-solib-add on
 show auto-solib-add
 
+
 set print demangle
 show print demangle
 set print asm-demangle
@@ -14,9 +15,15 @@ set breakpoint pending on
 show breakpoint pending
 
 define webvm
-	cd /home/hendry/aplix/code/trunk/webvm
-    #b NP_Initialize
-    #b NPP_GetValue
-    #file /usr/lib/webvm/npwebvm.so
-    run
+cd /home/hendry/aplix/code/trunk/webvm
+#b NP_Initialize
+#b NPP_GetValue
+#file /usr/lib/webvm/npwebvm.so
+run
+end
+
+define wm
+set args -d
+set follow-fork-mode child
+run
 end

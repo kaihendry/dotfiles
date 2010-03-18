@@ -29,7 +29,3 @@ fi
 if [ -z "$DISPLAY" ] && [ $(tty) == /dev/tty1 ]; then
   startx -retro
 fi
-
-if [ $HOSTNAME == 'won.local' ]; then
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-fi
