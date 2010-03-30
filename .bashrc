@@ -76,11 +76,10 @@ then
 		PATH=${PATH}:$DEPOT_TOOLS
 	fi
 
-	if test -f $HOME/.ssh/key
+	if test -f ~/.netrc
 	then
 		upload() {
-			. $HOME/.ssh/key
-			curl -F key=$KEY -F f=@$1 http://upload.natalian.org
+			curl --digest -n -F f=@my.widl http://upload.natalian.org/upload.php
 			ssh -A hetty.webconverger.org /srv/www/static-sync.sh
 		}
 	fi
