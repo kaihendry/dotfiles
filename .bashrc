@@ -50,6 +50,7 @@ then
 				  cd $APLIX_ROOT
 			  else
 				  truecrypt ~/crypt /mnt/truecrypt1
+				  cd $APLIX_ROOT
 			  fi
 		  }
 
@@ -67,7 +68,7 @@ then
 	if test -d $ANDROID_TOOLS
 	then
 		export GDK_NATIVE_WINDOWS=true
-		PATH=${PATH}:$ANDROID_TOOLS
+		export PATH=$ANDROID_TOOLS:${PATH}
 	fi
 
 	DEPOT_TOOLS=/home/hendry/depot_tools
