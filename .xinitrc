@@ -18,15 +18,19 @@ xmodmap ~/.Xmodmap
 #~/firefox/firefox -P default &
 
 # I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.
-xrandr --output LVDS1 --mode 1024x768
-xrandr --output VGA1 --mode 1680x1050
-xrandr --output LVDS1 --left-of VGA1
+#xrandr --output LVDS1 --mode 1024x768
+#xrandr --output VGA1 --mode 1680x1050
+#xrandr --output LVDS1 --left-of VGA1
 
+#set statusbar
 while true
 do
-	xsetroot -name "$(date +'%R %b %d ') $(uptime | sed 's/.*,//')"
-	sleep 10
-done & # run in subshell
+	if acpi -a | grep off-line > /dev/null; then
+		xsetroot -name "Bat. $( acpi -b | awk '{ print $4 " " $5 }' | tr -d ',' ) | Vol. $(amixer get Master | tail -1 | awk '{ print $5}' | tr -d '[]') | $(date +"%a, %b %d %R")"
+	else
+		xsetroot -name "Vol. $(amixer get Master | tail -1 | awk '{ print $5}' | tr -d '[]') | $(date +"%a, %b %d %R")"
+	fi
+	sleep 1s
+done &
 
-exec /home/hendry/debian/suckless/dwm/dwm
-#exec /usr/bin/dwm
+exec dwm
