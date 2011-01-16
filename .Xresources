@@ -10,8 +10,7 @@ UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 XTerm*vt100.metaSendsEscape: true
 
-!Requires xfonts-terminus and a X restart for any changes
-UXTerm*font: terminus-16
+UXTerm*faceName:    xft:Terminus:size=12:hinting=true
 
 !Paste from clipboard with shift
 !http://linux.seindal.dk/item71.html

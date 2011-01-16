@@ -2,7 +2,7 @@
 ! file:     ~/.Xdefaults
 ! author:   Thayer Williams - http://cinderwick.ca
 ! modified: November 7, 2008
-! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! vim:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
 ! ----------------------------------------------------------------------------
 
 ! Xcursor --------------------------------------------------------------------
@@ -40,84 +40,6 @@ Xcursor.size:   22
 ! White
 *color7:      #cccccc
 *color15:     #ffffff
-
-
-
-! rxvt-unicode ---------------------------------------------------------------
-
-!for antialiased fonts (using Xft)
-!urxvt*font:     xft:Envy Code R:pixelsize=13
-!urxvt*font:     xft:dejavu sans mono:pixelsize=14
-!urxvt*boldFont: xft:dejavu sans mono:pixelsize=14
-!urxvt*font:     xft:Pragmata:pixelsize=13
-!urxvt*boldFont: xft:Pragmata:pixelsize=13
-
-!for normal X11 fonts:
-URxvt.buffered: true
-URxvt.background: black
-URxvt.foreground: white
-URxvt.cursorColor: green
-URxvt.underlineColor: yellow
-URxvt.font: xft:Terminus:pixelsize=14:antialias=false
-URxvt.boldFont: xft:Terminus:bold:pixelsize=14:antialias=false
-!urxvt*font:      -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-!urxvt*boldFont:  -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
-!urxvt*font:      -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
-!urxvt*boldFont:  -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
-!urxvt*font:      -*-proggyclean-*-*-*-*-*-*-*-*-*-*-*-*
-!urxvt*boldFont:  -*-proggyclean-*-*-*-*-*-*-*-*-*-*-*-*
-!urxvt*font:      -*-proggysquaresz-*-*-*-*-*-*-*-*-*-*-*-*
-!urxvt*boldFont:  -*-proggysquaresz-*-*-*-*-*-*-*-*-*-*-*-*
-
-urxvt*geometry:           160x50
-urxvt*internalBorder:     5
-!urxvt*fading:             20
-!urxvt*shading:            80
-!urxvt*tintColor:          #222222
-urxvt*inheritPixmap:      false
-urxvt*depth:              24
-!urxvt*depth:              32
-urxvt*saveLines:          32767
-urxvt*visualBell:         true
-urxvt*scrollTtyKeypress:  true
-urxvt*scrollWithBuffer:   false
-urxvt*scrollTtyOutput:    false
-urxvt*scrollBar:          false
-urxvt*scrollstyle:        plain
-urxvt*scrollBar_right:    true
-urxvt*scrollColor:        #777777
-urxvt*cursorColor:        #ffcc00
-urxvt*loginShell:         true
-urxvt*termName:           rxvt
-urxvt*cutchars:           "()*,<>[]{}|'
-urxvt*print-pipe:         cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
-urxvt*secondaryScroll:    true
-urxvt*mapAlert:           true
-urxvt*utmpInhibit:        true
-urxvt*perl-lib:           /usr/lib/urxvt/perl/
-urxvt*perl-ext-common:    default,matcher
-urxvt*urlLauncher:        /usr/bin/google-chrome
-urxvt*matcher.button:     1
-!urxvt*background:         #191919
-!urxvt*background:         rgba:2222/2222/2222/dddd
-!urxvt*background:         rgba:0000/0000/0000/dddd
-
-
-! xterm ----------------------------------------------------------------------
-
-xterm*geometry:           80x25
-xterm*faceName:           terminus:pixelsize=10
-xterm*dynamicColors:      true
-xterm*utf8:               2
-xterm*eightBitInput:      true
-xterm*saveLines:          32767
-xterm*scrollTtyKeypress:  true
-xterm*scrollTtyOutput:    false
-xterm*scrollBar:          true
-xterm*loginShell:         true
-xterm*jumpScroll:         false
-xterm*multiScroll:        true
-xterm*toolBar:            true
 
 
 ! lal clock ------------------------------------------------------------------

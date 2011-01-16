@@ -1,4 +1,3 @@
-" Study http://hg.suckless.org/dextra/file/tip/bluegray/vimrc
 " Spell check with F8
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 " backspace quickly alters spelling mistake to most likely suggestion
@@ -34,8 +33,8 @@ set fileformat=unix
 
 map gf :split <cfile><CR>  " gf to open file undercursor
 
-set background=dark			" Set background to dark to have nicer syntax highlighting
-colors evening
+"set background=dark			" Set background to dark to have nicer syntax highlighting
+colors darkblue
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif

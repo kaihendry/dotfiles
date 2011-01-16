@@ -28,7 +28,7 @@ then
 	umask 002
 
 	alias ac='vim ~/private/personal/accounts'
-	alias suspend='sudo /etc/acpi/sleep.sh && sudo alsactl init 0'
+	alias suspend='sudo pm-suspend'
 
 	[ -x /usr/bin/most ] && export PAGER=most
 	[ -x /usr/bin/most ] && alias more='most' && alias less='most'

@@ -17,6 +17,7 @@ setxkbmap gb # british keyboard
 
 #iceweasel -P default & # Run browser on startup
 #~/firefox/firefox -P default &
+test -x /usr/bin/google-chrome && /usr/bin/google-chrome &
 
 # I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.
 #xrandr --output LVDS1 --mode 1024x768
