@@ -13,6 +13,7 @@ fi
 
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
+setxkbmap gb # british keyboard
 
 #iceweasel -P default & # Run browser on startup
 #~/firefox/firefox -P default &

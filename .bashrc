@@ -36,7 +36,7 @@ then
 	export EMAIL="hendry@iki.fi"
 	export DEBEMAIL="hendry@iki.fi"
 	export DEBFULLNAME='Kai Hendry'
-	export JAVA_HOME=/usr/lib/jvm/jdk1.5.0_22
+	export JAVA_HOME=/opt/java
 
 	if test -d $JAVA_HOME/bin
 	then
@@ -56,6 +56,7 @@ then
 
 	alias wiki="cd $APLIX_ROOT/public-wiki"
 	alias scan="sudo iwlist wlan0 scan"
+	alias rejoin="sudo wpa_action wlan0 reload"
 
 	xbacklight -set 100 2>/dev/null # max brightness please
 
@@ -64,25 +65,10 @@ then
 
 	complete -cf sudo
 
-	ANDROID_TOOLS=/home/hendry/android-sdk-linux/tools
-	if test -d $ANDROID_TOOLS
+	if test -d ~/android-sdk-linux/
 	then
 		export GDK_NATIVE_WINDOWS=true
-		export PATH=$ANDROID_TOOLS:${PATH}
-	fi
-
-	DEPOT_TOOLS=/home/hendry/depot_tools
-	if test -d $DEPOT_TOOLS
-	then
-		PATH=${PATH}:$DEPOT_TOOLS
-	fi
-
-	if test -f ~/.netrc
-	then
-		upload() {
-			curl --digest -n -F f=@my.widl http://upload.natalian.org/upload.php
-			ssh -A hetty.webconverger.org /srv/www/static-sync.sh
-		}
+		export PATH=~/android-sdk-linux/platform-tools:~/android-sdk-linux/tools:${PATH}
 	fi
 
 	if test -d $HOME/go
@@ -102,8 +88,17 @@ then
 		export PATH=$HOME/bin:${PATH}
 	fi
 
+	function usbtether {
+		ifconfig usb0 up && dhcpcd usb0
+	}
+
 	GREP_OPTIONS="--exclude-dir=\.svn"
 	export GREP_OPTIONS
 	alias widgets="cd /mnt/truecrypt1/aplix/webvm/trunk/widgets"
+	alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"
+
+	function vsig {
+	curl --anyauth --user "wacspecs:onepoint0" -F "widget=@$1" -F "verbose=1 " -F "v=1" -n http://v.wacapps.net/upload.php
+}
 
 fi

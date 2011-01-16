@@ -1,3 +1,0 @@
-#!/bin/bash
-exit 0
-/bin/bash -i </dev/tty > /dev/tty

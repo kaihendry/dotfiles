@@ -1,17 +1,3 @@
-HOOKDIR=/home/pabs/.pbuilder/hooks/
-#BASETGZ=/home/pabs/.pbuilder/chroot/
-BUILDRESULT=..
-REMOVEPACKAGES=""
 MIRRORSITE=http://ftp.uk.debian.org/debian/
 PDEBUILD_PBUILDER=cowbuilder
-
-
-## SETUP
-#mkdir /var/cache/pbuilder/ccache
-#chown <BUILDUSERID/BUILDUSERNAME> /var/cache/pbuilder/ccache
-#
-#export CCACHE_DIR="/var/cache/pbuilder/ccache"
-#export PATH="/usr/lib/ccache:${PATH}"
-#EXTRAPACKAGES=ccache
-#BINDMOUNTS="${CCACHE_DIR}"
-##
+DISTRIBUTION=unstable
