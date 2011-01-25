@@ -65,10 +65,10 @@ then
 
 	complete -cf sudo
 
-	if test -d ~/android-sdk-linux/
+	if test -d /opt/android-sdk
 	then
-		export GDK_NATIVE_WINDOWS=true
-		export PATH=~/android-sdk-linux/platform-tools:~/android-sdk-linux/tools:${PATH}
+		#export GDK_NATIVE_WINDOWS=true
+		export PATH="$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
 	fi
 
 	if test -d $HOME/go

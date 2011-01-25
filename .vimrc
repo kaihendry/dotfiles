@@ -33,8 +33,8 @@ set fileformat=unix
 
 map gf :split <cfile><CR>  " gf to open file undercursor
 
+"colors evening
 "set background=dark			" Set background to dark to have nicer syntax highlighting
-colors darkblue
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif

@@ -1,4 +1,5 @@
 #!/bin/sh
+xset -b # disable bell
 eval `/usr/bin/ssh-agent`
 
 if test -f /usr/lib/openssh/x11-ssh-askpass # Archlinux
@@ -13,11 +14,9 @@ fi
 
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
-setxkbmap gb # british keyboard
+setxkbmap -layout gb -option ctrl:nocaps
 
-#iceweasel -P default & # Run browser on startup
-#~/firefox/firefox -P default &
-test -x /usr/bin/google-chrome && /usr/bin/google-chrome &
+test -x /usr/bin/chromium && /usr/bin/chromium &
 
 # I have a dual screen setup. LVDS is my laptop's screen. VGA is my Samsung.
 #xrandr --output LVDS1 --mode 1024x768
