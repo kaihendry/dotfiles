@@ -1,10 +1,16 @@
+# TODO move all the environment set-up to ~/.bash_profile
 export EDITOR=vim
 export VISUAL=vim
 export CVSEDITOR=vim
 export EMAIL="hendry@iki.fi"
 export DEBEMAIL="hendry@iki.fi"
 export DEBFULLNAME='Kai Hendry'
-export JAVA_HOME=/opt/java
+
+if test -d /opt/java
+then
+	export JAVA_HOME=/opt/java
+	export PATH=$JAVA_HOME/bin:${PATH}
+fi
 
 GREP_OPTIONS="--exclude-dir=\.svn"
 export GREP_OPTIONS
@@ -31,15 +37,8 @@ export HISTSIZE PROMPT_COMMAND
 
 umask 002
 
-test -x /usr/bin/most  && export PAGER=most
-test -x /usr/bin/most  && alias more='most' && alias less='most'
-
-if test -d $JAVA_HOME/bin
-then
-	export PATH=$JAVA_HOME/bin:${PATH}
-fi
-
-xbacklight -set 100 2>/dev/null # max brightness please
+test -x /usr/bin/most && export PAGER=most
+test -x /usr/bin/most && alias more='most' && alias less='most'
 
 if test -d ~/android-sdk-linux
 then
