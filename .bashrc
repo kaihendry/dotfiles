@@ -1,104 +1,74 @@
-if test "$PS1"
+export EDITOR=vim
+export VISUAL=vim
+export CVSEDITOR=vim
+export EMAIL="hendry@iki.fi"
+export DEBEMAIL="hendry@iki.fi"
+export DEBFULLNAME='Kai Hendry'
+export JAVA_HOME=/opt/java
+
+GREP_OPTIONS="--exclude-dir=\.svn"
+export GREP_OPTIONS
+
+shopt -s checkwinsize
+shopt -s cmdhist
+shopt -s histappend
+# For my poor typing antics
+shopt -s cdspell
+shopt -s cdable_vars
+
+# disable terminal flow control
+stty -ixon
+
+complete -cf sudo
+
+PS1='\u@\h \W\$ '
+
+unset HISTFILESIZE
+HISTSIZE=10000
+PROMPT_COMMAND="history -a"
+export HISTCONTROL=ignoredups
+export HISTSIZE PROMPT_COMMAND
+
+umask 002
+
+test -x /usr/bin/most  && export PAGER=most
+test -x /usr/bin/most  && alias more='most' && alias less='most'
+
+if test -d $JAVA_HOME/bin
 then
+	export PATH=$JAVA_HOME/bin:${PATH}
+fi
 
-	export EDITOR=vim
-	export VISUAL=vim
-	export CVSEDITOR=vim
+xbacklight -set 100 2>/dev/null # max brightness please
 
-	# check the window size after each command and, if necessary,
-	# update the values of LINES and COLUMNS.
-	shopt -s checkwinsize
+if test -d ~/android-sdk-linux
+then
+	export PATH="$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools"
+fi
 
-	alias ll='ls -alh --group-directories-first --color=always'
-
-	PS1='\u@\h \W\$ '
-
-	unset HISTFILESIZE
-	HISTSIZE=10000
-	export HISTCONTROL=ignoredups
-	shopt -s cmdhist
-	PROMPT_COMMAND="history -a"
-	export HISTSIZE PROMPT_COMMAND
-	shopt -s histappend
-
-	# For my poor typing antics
-	shopt -s cdspell
-	shopt -s cdable_vars
-
-	umask 002
-
-	alias ac='vim ~/private/personal/accounts'
-	alias suspend='sudo pm-suspend'
-
-	[ -x /usr/bin/most ] && export PAGER=most
-	[ -x /usr/bin/most ] && alias more='most' && alias less='most'
-
-	export EMAIL="hendry@iki.fi"
-	export DEBEMAIL="hendry@iki.fi"
-	export DEBFULLNAME='Kai Hendry'
-	export JAVA_HOME=/opt/java
-
-	if test -d $JAVA_HOME/bin
+if test -d $HOME/go
+then
+	export GOROOT=$HOME/go
+	export GOOS=linux
+	if test "$(uname -m)" = "x86_64"
 	then
-		export PATH=$JAVA_HOME/bin:${PATH}
+		export GOARCH=amd64
+	else
+		export GOARCH=386
 	fi
+fi
 
-	APLIX_ROOT=/mnt/truecrypt1/aplix
-
-	a() { if test -d $APLIX_ROOT
-			  then
-				  cd $APLIX_ROOT
-			  else
-				  truecrypt ~/crypt /mnt/truecrypt1
-				  cd $APLIX_ROOT
-			  fi
-		  }
-
-	alias wiki="cd $APLIX_ROOT/public-wiki"
-	alias scan="sudo iwlist wlan0 scan"
-	alias rejoin="sudo wpa_action wlan0 reload"
-
-	xbacklight -set 100 2>/dev/null # max brightness please
-
-	# disable terminal flow control
-	stty -ixon
-
-	complete -cf sudo
-
-	if test -d /opt/android-sdk
-	then
-		#export GDK_NATIVE_WINDOWS=true
-		export PATH="$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
-	fi
-
-	if test -d $HOME/go
-	then
-		export GOROOT=$HOME/go
-		export GOOS=linux
-		if test "$(uname -m)" = "x86_64"
-		then
-			export GOARCH=amd64
-		else
-			export GOARCH=386
-		fi
-	fi
-
-	if test -d $HOME/bin
-	then
-		export PATH=$HOME/bin:${PATH}
-	fi
-
-	function usbtether {
-		ifconfig usb0 up && dhcpcd usb0
-	}
-
-	GREP_OPTIONS="--exclude-dir=\.svn"
-	export GREP_OPTIONS
-	alias widgets="cd /mnt/truecrypt1/aplix/webvm/trunk/widgets"
-	alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"
-
-	function vsig {
-	curl --anyauth --user "wacspecs:onepoint0" -F "widget=@$1" -F "verbose=1 " -F "v=1" -n http://v.wacapps.net/upload.php
+function usbtether {
+	ifconfig usb0 up && dhcpcd usb0
 }
 
-fi
+function vsig {
+curl --anyauth --user "wacspecs:onepoint0" -F "widget=@$1" -F "verbose=1 " -F "v=1" -n http://v.wacapps.net/upload.php
+}
+
+alias ll='ls -alh --group-directories-first --color=always'
+alias ac='vim ~/private/personal/accounts'
+alias suspend='sudo pm-suspend'
+alias scan="sudo iwlist wlan0 scan"
+alias rejoin="sudo wpa_action wlan0 reload"
+alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"

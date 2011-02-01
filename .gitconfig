@@ -6,3 +6,5 @@
 	ci = commit -a
 [color]
 	ui = auto
+[core]
+	autocrlf = input
