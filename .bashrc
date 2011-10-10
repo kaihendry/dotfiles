@@ -30,7 +30,7 @@ complete -cf sudo
 PS1='\u@\h \W\$ '
 
 unset HISTFILESIZE
-HISTSIZE=10000
+HISTSIZE=20000
 PROMPT_COMMAND="history -a"
 export HISTCONTROL=ignoredups
 export HISTSIZE PROMPT_COMMAND
@@ -57,17 +57,14 @@ then
 	fi
 fi
 
-function usbtether {
-	ifconfig usb0 up && dhcpcd usb0
-}
-
-function vsig {
-curl --anyauth --user "wacspecs:onepoint0" -F "widget=@$1" -F "verbose=1 " -F "v=1" -n http://v.wacapps.net/upload.php
-}
-
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
 alias suspend='sudo pm-suspend'
 alias scan="sudo iwlist wlan0 scan"
 alias rejoin="sudo wpa_action wlan0 reload"
 alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"
+
+ranger() {
+	command ranger --fail-unless-cd $@ &&
+		cd "$(grep \^\' ~/.config/ranger/bookmarks | cut -b3-)"
+}

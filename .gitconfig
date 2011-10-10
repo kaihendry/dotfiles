@@ -7,4 +7,4 @@
 [color]
 	ui = auto
 [core]
-	autocrlf = input
+	whitespace = fix

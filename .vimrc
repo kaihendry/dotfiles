@@ -33,8 +33,9 @@ set fileformat=unix
 
 map gf :split <cfile><CR>  " gf to open file undercursor
 
-"colors evening
-"set background=dark			" Set background to dark to have nicer syntax highlighting
+colorscheme elflord
+"set background=dark
+"colorscheme solarized
 
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
 		 \ exe "normal g'\"" | endif
@@ -76,3 +77,5 @@ autocmd BufNewFile,BufRead *.csv setf csv
 autocmd BufNewFile,BufRead *.go setf go
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…
+
+call pathogen#infect()

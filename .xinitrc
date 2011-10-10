@@ -44,11 +44,6 @@ do
 	sleep 20s
 done &
 
-if test -x /home/hendry/debian/dwm/dwm
-then
-	exec /home/hendry/debian/dwm/dwm
-else
-	dwm
-fi
+dwm
 
 xbacklight -set 100 2>/dev/null # max brightness please

@@ -4,3 +4,5 @@ if test -z "$DISPLAY" && test $(tty) == /dev/tty1
 then
   startx
 fi
+
+source ~/.bashrc
