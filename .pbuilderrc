@@ -1,3 +1,0 @@
-MIRRORSITE=http://ftp.uk.debian.org/debian/
-PDEBUILD_PBUILDER=cowbuilder
-DISTRIBUTION=unstable
