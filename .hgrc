@@ -1,5 +1,2 @@
 [ui]
 username = Kai Hendry <hendry@iki.fi>
-
-[extensions]
-mq = /usr/lib/python2.7/site-packages/hgext/mq.py
