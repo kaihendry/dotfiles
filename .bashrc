@@ -42,7 +42,7 @@ test -x /usr/bin/most && alias more='most' && alias less='most'
 
 if test -d ~/android-sdk-linux
 then
-	export PATH="$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools"
+	export PATH="$PATH:$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platform-tools"
 fi
 
 if test -d $HOME/go

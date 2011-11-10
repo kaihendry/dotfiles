@@ -45,5 +45,3 @@ do
 done &
 
 dwm
-
-xbacklight -set 100 2>/dev/null # max brightness please

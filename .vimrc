@@ -59,14 +59,6 @@ highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 set wildmode=longest,list:longest,full
 
-" Try to autocomplete with 'omni completion' on TAB
-function! CleverTab()
-   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-	  return "\<Tab>"
-   else
-	  return "\<C-X>\<C-O>"
-endfunction
-inoremap <Tab> <C-R>=CleverTab()<CR>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set diffopt+=iwhite " Ignore whitespace whilst diffing
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab|set softtabstop=4|set listchars=tab:>-,trail:_ list
@@ -78,4 +70,3 @@ autocmd BufNewFile,BufRead *.go setf go
 setlocal omnifunc=syntaxcomplete#Complete
 set list listchars=tab:»·,trail:·,extends:…
 
-call pathogen#infect()
