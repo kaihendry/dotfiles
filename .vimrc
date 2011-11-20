@@ -1,16 +1,29 @@
 map <F8> :setlocal spell! spelllang=en_gb<CR>
+nnoremap <BS> <Esc>1z=<CR>
 syntax on
+set title
 set ruler
-set ignorecase
+set showmatch
+set smartcase
 set incsearch
 set hlsearch
-set backspace=indent,eol,start
+set bs=2
 set nobackup
-let html_use_css = 1		" for :TOhtml not to add inline style crud
+let html_use_css = 1
 
 au BufReadCmd *.wgt call zip#Browse(expand("<amatch>"))
 set encoding=utf-8
 
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
 set diffopt+=iwhite " Ignore whitespace whilst diffing
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+set list listchars=tab:»·,trail:·,extends:>
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+colorscheme elflord
+set background=dark
+
+call pathogen#infect()
+filetype plugin indent on

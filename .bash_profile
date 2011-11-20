@@ -2,7 +2,7 @@
 # 1:2345:respawn:/sbin/mingetty --autologin hendry tty1
 if test -z "$DISPLAY" && test $(tty) == /dev/tty1
 then
-  startx >& ~/.myXLog
+  startx &> ~/.myXLog
   logout
 fi
 

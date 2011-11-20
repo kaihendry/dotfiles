@@ -1,4 +1,4 @@
-# TODO move all the environment set-up to ~/.bash_profile
+test -t 0 || break
 export EDITOR=vim
 export VISUAL=vim
 export CVSEDITOR=vim
@@ -6,19 +6,11 @@ export EMAIL="hendry@iki.fi"
 export DEBEMAIL="hendry@iki.fi"
 export DEBFULLNAME='Kai Hendry'
 
-if test -d /opt/java
-then
-	export JAVA_HOME=/opt/java
-	export PATH=$JAVA_HOME/bin:${PATH}
-fi
-
-GREP_OPTIONS="--exclude-dir=\.svn"
-export GREP_OPTIONS
+export GREP_OPTIONS="--exclude-dir=\.svn"
 
 shopt -s checkwinsize
 shopt -s cmdhist
 shopt -s histappend
-# For my poor typing antics
 shopt -s cdspell
 shopt -s cdable_vars
 
@@ -27,9 +19,8 @@ stty -ixon
 
 complete -cf sudo
 
-PS1='\u@\h \W\$ '
+PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
 
-unset HISTFILESIZE
 HISTSIZE=20000
 PROMPT_COMMAND="history -a"
 export HISTCONTROL=ignoredups
@@ -37,25 +28,8 @@ export HISTSIZE PROMPT_COMMAND
 
 umask 002
 
-test -x /usr/bin/most && export PAGER=most
-test -x /usr/bin/most && alias more='most' && alias less='most'
-
-if test -d ~/android-sdk-linux
-then
-	export PATH="$PATH:$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platform-tools"
-fi
-
-if test -d $HOME/go
-then
-	export GOROOT=$HOME/go
-	export GOOS=linux
-	if test "$(uname -m)" = "x86_64"
-	then
-		export GOARCH=amd64
-	else
-		export GOARCH=386
-	fi
-fi
+hash most && export PAGER=most
+hash most && alias more='most' && alias less='most'
 
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
@@ -68,3 +42,15 @@ ranger() {
 	command ranger --fail-unless-cd $@ &&
 		cd "$(grep \^\' ~/.config/ranger/bookmarks | cut -b3-)"
 }
+
+# GREP_COLOR=bright yellow on black bg.
+# use GREP_COLOR=7 to highlight whitespace on black terminals
+# LANG=C for speed. See also: http://www.pixelbeat.org/scripts/findrepo
+alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
+
+alias head='head -n $((${LINES:-12}-2))' #as many as possible without scrolling
+alias tail='tail -n $((${LINES:-12}-2)) -s.1' #Likewise, also more responsive -f
+
+
+# what most people want from od (hexdump)
+alias hd='od -Ax -tx1z -v'

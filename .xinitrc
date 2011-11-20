@@ -27,16 +27,16 @@ do
 	fi
 
 	LOCALTIME=$(date +%Z\=%Y-%m-%dT%H:%M)
-	WESTCOAST=$(TZ=America/Los_Angeles date +%Z\=%H:%M)
+	OTHERTIME=$(TZ=Europe/London date +%Z\=%H:%M)
 
 	if acpi -a | grep off-line > /dev/null
 	then
 		BAT="Bat. $(acpi -b | awk '{ print $4 " " $5 }' | tr -d ',')"
-		xsetroot -name "$BAT $MUTED $LOCALTIME $WESTCOAST"
+		xsetroot -name "$BAT $MUTED $LOCALTIME $OTHERTIME"
 	else
-		xsetroot -name "$MUTED $LOCALTIME $WESTCOAST"
+		xsetroot -name "$MUTED $LOCALTIME $OTHERTIME"
 	fi
 	sleep 20s
 done &
 
-dwm
+/usr/local/bin/dwm
