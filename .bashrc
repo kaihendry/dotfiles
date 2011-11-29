@@ -48,9 +48,5 @@ ranger() {
 # LANG=C for speed. See also: http://www.pixelbeat.org/scripts/findrepo
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
-alias head='head -n $((${LINES:-12}-2))' #as many as possible without scrolling
-alias tail='tail -n $((${LINES:-12}-2)) -s.1' #Likewise, also more responsive -f
-
-
 # what most people want from od (hexdump)
 alias hd='od -Ax -tx1z -v'

@@ -1,0 +1,3 @@
+[submodule "/home/hendry/.vim/bundle/vim-html5"]
+	path = /home/hendry/.vim/bundle/vim-html5
+	url = git@github.com:kaihendry/vim-html5.git

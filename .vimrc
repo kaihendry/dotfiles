@@ -4,7 +4,7 @@ syntax on
 set title
 set ruler
 set showmatch
-set smartcase
+set ignorecase
 set incsearch
 set hlsearch
 set bs=2
