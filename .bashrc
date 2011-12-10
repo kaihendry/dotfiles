@@ -1,4 +1,3 @@
-test -t 0 || break
 export EDITOR=vim
 export VISUAL=vim
 export CVSEDITOR=vim
