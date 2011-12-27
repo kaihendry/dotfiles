@@ -1,4 +1,8 @@
 #!/bin/sh
+# for terminus font in Archlinux :(
+xset +fp /usr/share/fonts/local
+xset fp rehash
+
 xset -b # disable bell
 eval `/usr/bin/ssh-agent`
 
@@ -12,11 +16,14 @@ then
 	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
 fi
 
+# 1280x720 = 720p
+hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date --rfc-3339=date).jpg &
+
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 
-test -x /usr/bin/chromium && /usr/bin/chromium &
+hash chromium && chromium &
 
 while true
 do

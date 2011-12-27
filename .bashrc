@@ -36,6 +36,7 @@ alias suspend='sudo pm-suspend'
 alias scan="sudo iwlist wlan0 scan"
 alias rejoin="sudo wpa_action wlan0 reload"
 alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"
+alias feh="sxiv"
 
 ranger() {
 	command ranger --fail-unless-cd $@ &&

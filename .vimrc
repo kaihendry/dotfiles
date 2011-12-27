@@ -26,4 +26,4 @@ colorscheme elflord
 set background=dark
 
 call pathogen#infect()
-filetype plugin indent on
+filetype plugin on
