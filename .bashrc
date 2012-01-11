@@ -38,6 +38,17 @@ alias rejoin="sudo wpa_action wlan0 reload"
 alias recordandroid="recordmydesktop -x 30 -y 47 --width 320 --height 480 --no-sound -o foo.ogv"
 alias feh="sxiv"
 
+htmldecode() {
+#perl -MHTML::Entities -le 'print decode_entities(<>)'
+perl -MHTML::Entities -pe 'decode_entities($_)'
+}
+
+htmlencode() {
+perl -MHTML::Entities -pe 'encode_entities($_)'
+}
+
+
+
 ranger() {
 	command ranger --fail-unless-cd $@ &&
 		cd "$(grep \^\' ~/.config/ranger/bookmarks | cut -b3-)"

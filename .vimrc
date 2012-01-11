@@ -17,12 +17,11 @@ set encoding=utf-8
 set diffopt+=iwhite " Ignore whitespace whilst diffing
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-set list listchars=tab:»·,trail:·,extends:>
+set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-colorscheme elflord
 set background=dark
 
 call pathogen#infect()
