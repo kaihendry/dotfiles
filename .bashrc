@@ -27,8 +27,8 @@ export HISTSIZE PROMPT_COMMAND
 
 umask 002
 
-hash most && export PAGER=most
-hash most && alias more='most' && alias less='most'
+hash most &>/dev/null && export PAGER=most
+hash most &>/dev/null && alias more='most' && alias less='most'
 
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
