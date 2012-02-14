@@ -1,9 +1,11 @@
 export EDITOR=vim
 export VISUAL=vim
 export CVSEDITOR=vim
-export EMAIL="hendry@iki.fi"
-export DEBEMAIL="hendry@iki.fi"
+export EMAIL="hendry@webconverger.com"
+export DEBEMAIL="hendry@webconverger.com"
 export DEBFULLNAME='Kai Hendry'
+
+test "$PS1" = "" && return
 
 export GREP_OPTIONS="--exclude-dir=\.svn"
 
