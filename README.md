@@ -17,3 +17,8 @@ Should get you setup.
 [Pathogen](https://github.com/tpope/vim-pathogen)
 
 	curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+
+
+# TODO
+
+Figure out git submodules

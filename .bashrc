@@ -1,11 +1,10 @@
+test -z "$PS1" && return
+
 export EDITOR=vim
 export VISUAL=vim
-export CVSEDITOR=vim
 export EMAIL="hendry@webconverger.com"
 export DEBEMAIL="hendry@webconverger.com"
 export DEBFULLNAME='Kai Hendry'
-
-test "$PS1" = "" && return
 
 export GREP_OPTIONS="--exclude-dir=\.svn"
 
@@ -19,15 +18,13 @@ complete -cf sudo
 
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
 
+# Trying to get a history that works... (might be BS)
 HISTSIZE=20000
 PROMPT_COMMAND="history -a"
 export HISTCONTROL=ignoredups
 export HISTSIZE PROMPT_COMMAND
 
 umask 002
-
-hash most &>/dev/null && export PAGER=most
-hash most &>/dev/null && alias more='most' && alias less='most'
 
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
