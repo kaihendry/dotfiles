@@ -32,3 +32,4 @@ alias suspend='sudo pm-suspend'
 alias feh="sxiv"
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
+alias e='vim'
