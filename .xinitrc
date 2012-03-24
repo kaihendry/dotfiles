@@ -23,7 +23,7 @@ xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 
-hash chromium && chromium &
+hash chromium && chromium --ignore-gpu-blacklist --enable-user-stylesheet &
 
 while true
 do

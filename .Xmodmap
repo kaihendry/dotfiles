@@ -1,3 +1,6 @@
 keycode 66 = Control_L
 clear Lock
 add Control = Control_L
+! disable insane pgdn/pgup keys on a Thinkpad
+keycode 166=
+keycode 167=
