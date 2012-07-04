@@ -33,3 +33,20 @@ alias feh="sxiv"
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 alias e='vim'
+alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot"
+alias b="sudo chroot ~/debian/sid-root"
+alias i="cd ~/debian/sid-root/root/webconverger"
+
+hb() {
+ssh hetty "cd ~/Debian-Live-config/webconverger; sudo make -f ~/Debian-Live-config/webconverger/Makefile deploy"
+}
+
+up() {
+cd ~/debian/sid-root/root/webconverger/chroot
+git push up
+}
+
+upneon() {
+cd ~/debian/sid-root/root/webconverger/chroot
+git push neon neon
+}
