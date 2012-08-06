@@ -1,5 +1,8 @@
 #!/bin/bash
 # for terminus font in Archlinux :(
+
+[ -f ~/.xprofile ] && . ~/.xprofile
+
 xset +fp /usr/share/fonts/local
 xset fp rehash
 

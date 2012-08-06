@@ -43,7 +43,7 @@ ssh hetty "cd ~/Debian-Live-config/webconverger; sudo make -f ~/Debian-Live-conf
 
 up() {
 cd ~/debian/sid-root/root/webconverger/chroot
-git push up
+git push
 }
 
 upneon() {
