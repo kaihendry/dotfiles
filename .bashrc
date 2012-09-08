@@ -46,7 +46,16 @@ cd ~/debian/sid-root/root/webconverger/chroot
 git push
 }
 
+6music(){
+mplayer http://www.bbc.co.uk/radio/listen/live/r6_aaclca.pls
+}
+
 upneon() {
 cd ~/debian/sid-root/root/webconverger/chroot
 git push neon neon
 }
+
+export GIT_AUTHOR_NAME="Kai Hendry"
+export GIT_COMMITTER_NAME="Kai Hendry"
+export GIT_COMMITTER_EMAIL=hendry@webconverger.com
+export GIT_AUTHOR_EMAIL=hendry@webconverger.com

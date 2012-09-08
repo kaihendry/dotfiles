@@ -1,4 +1,5 @@
 ! x11-ssh-askpass ------------------------------------------------------------
+x11-ssh-askpass*font:                   -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 x11-ssh-askpass*background:             #000000
 x11-ssh-askpass*foreground:             #ffffff
 x11-ssh-askpass.Button*background:      #000000

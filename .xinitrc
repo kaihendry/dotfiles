@@ -1,13 +1,16 @@
 #!/bin/bash
-# for terminus font in Archlinux :(
 
 [ -f ~/.xprofile ] && . ~/.xprofile
 
+# for terminus font in Archlinux :(
 xset +fp /usr/share/fonts/local
 xset fp rehash
 
 xset -b # disable bell
 eval `/usr/bin/ssh-agent`
+
+xset -dpms
+xset s off
 
 if test -f /usr/lib/openssh/x11-ssh-askpass # Archlinux
 then
@@ -26,7 +29,9 @@ xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 
+hash conky && conky &
 hash chromium && chromium &
+#firefox
 
 while true
 do
@@ -35,19 +40,13 @@ done &
 
 while true
 do
-	VOL=$(amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/')
 	LOCALTIME=$(date +%Z\=%Y-%m-%dT%H:%M)
-	BST=$(TZ=Asia/Singapore date +%Z\=%H:%M)
-	PDT=$(TZ=America/Los_Angeles date +%Z\=%H:%M)
-	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
-	TEMP="$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))C"
 
 	if acpi -a | grep off-line > /dev/null
 	then
-		BAT="$(acpi -b | awk '{ print $4 " " $5 }' | tr -d ',')"
-		xsetroot -name "$IP BAT:$BAT VOL:$VOL $TEMP $LOCALTIME $BST $PDT"
+		xsetroot -name "$LOCALTIME"
 	else
-		xsetroot -name "$IP $VOL $TEMP $LOCALTIME $BST $PDT"
+		xsetroot -name "$LOCALTIME"
 	fi
 	sleep 20s
 done

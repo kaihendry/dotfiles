@@ -1,0 +1,54 @@
+background yes
+alignment top_right
+xftfont Terminus:size=8
+
+TEXT
+${alignc}$nodename $kernel $machine
+
+Volume: ${alignr} ${exec amixer get Master | grep -m 1 -Eo '[0-9]+%'}
+Uptime: $alignr$uptime
+Battery: ${alignr}${battery BAT0}
+CPU: ${alignr}${freq} MHz (${acpitemp}C)
+Processes: ${alignr}$processes ($running_processes running)
+Load: ${alignr}$loadavg (${cpu cpu1}%)
+${cpugraph cpu1 333333 CCCCCC -t}
+
+Disk I/O Read: ${alignr}${diskio_read sda}
+${diskiograph_read sda 333333 CCCCCC -t}
+Disk I/O Write: ${alignr}${diskio_write sda}
+${diskiograph_write sda 333333 CCCCCC -t}
+
+Ram ${alignr}$mem / $memmax ($memperc%)
+${membar 4}
+
+Highest CPU $alignr CPU% MEM%
+${top name 1}$alignr${top cpu 1}${top mem 1}
+${top name 2}$alignr${top cpu 2}${top mem 2}
+${top name 3}$alignr${top cpu 3}${top mem 3}
+
+Highest MEM $alignr CPU% MEM%
+${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
+${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
+${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
+
+Root: ${alignr}${fs_used /} / ${fs_size /}
+${fs_bar 4 /}
+
+${wireless_essid wlan0} ${wireless_link_bar wlan0}
+Bitrate ${wireless_bitrate wlan0} AP ${wireless_ap wlan0}
+Down ${downspeed wlan0} k/s ${alignr}Up ${upspeed wlan0} k/s
+${downspeedgraph wlan0 25,107} ${alignr}${upspeedgraph wlan0 25,107}
+Total ${totaldown wlan0} ${alignr}Total ${totalup wlan0}
+Down ${downspeed net0} k/s ${alignr}Up ${upspeed net0} k/s
+${downspeedgraph net0 25,107} ${alignr}${upspeedgraph net0 25,107}
+Total ${totaldown net0} ${alignr}Total ${totalup net0}
+
+# Inbound: ${tcp_portmon 1 32767 count}  Outbound: ${tcp_portmon 32768 61000 count}${alignr}  ALL: ${tcp_portmon 1 65535 count}
+
+IP: ${alignr}${if_up wlan0}${addr wlan0}${else}${addr net0}${endif}
+DNS: ${alignr}${nameserver 0}
+${alignr}${nameserver 1}
+
+
+Time in SF:  ${tztime America/Los_Angeles}
+Time in SIN:  ${tztime Asia/Singapore}
