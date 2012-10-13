@@ -31,7 +31,10 @@ setxkbmap -layout gb -option ctrl:nocaps
 
 hash conky && conky &
 hash chromium && chromium &
-#firefox
+
+# AutoCutSel.
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
 
 while true
 do
@@ -40,13 +43,8 @@ done &
 
 while true
 do
-	LOCALTIME=$(date +%Z\=%Y-%m-%dT%H:%M)
-
-	if acpi -a | grep off-line > /dev/null
-	then
-		xsetroot -name "$LOCALTIME"
-	else
-		xsetroot -name "$LOCALTIME"
-	fi
+	localtime=$(date +%Z\=%Y-%m-%dT%H:%M)
+	bandwidth=$(grep $(ip route | egrep '^default' | sed -nr 's/.*dev (\S+).*/\1/p') /proc/net/dev | awk '{printf("Down %.2f Up %.2f", $2 / 1048576, $10 / 1048576);}')
+	xsetroot -name "$localtime $bandwidth"
 	sleep 20s
 done
