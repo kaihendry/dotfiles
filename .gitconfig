@@ -9,3 +9,5 @@
 	ui = auto
 [core]
 	whitespace = fix
+[push]
+	default = matching
