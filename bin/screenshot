@@ -1,0 +1,2 @@
+cd /tmp
+scrot $@ '%s_$wx$h.png' -e 'upload $f'

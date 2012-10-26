@@ -1,0 +1,3 @@
+host=webconverger.com
+path=static.natalian.org/`date --rfc-3339=date`/
+rsync --remove-source-files $1 $host:$path && logger http://${path}${1}
