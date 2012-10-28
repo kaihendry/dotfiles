@@ -1,3 +1,14 @@
+#!/bin/bash -x
+test -f $1 || exit
+s=$1
+d=$(basename $1)
+if test "${s##*.}" == "png"
+then
+	t=$(mktemp -u).png
+	pngcrush -q $s $t
+	trap "rm -f $t" EXIT
+	s=$t
+fi
 host=webconverger.com
 path=static.natalian.org/`date --rfc-3339=date`/
-rsync --remove-source-files $1 $host:$path && logger http://${path}${1}
+rsync --remove-source-files $s $host:${path}${d} && logger http://${path}${d}

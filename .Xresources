@@ -1,0 +1,16 @@
+UXTerm*utf8: 1
+UXTerm*scrollBar: False
+UXTerm*title: term
+UXTerm*saveLines:   10000
+UXTerm*termName: xterm
+
+UXTerm*background: black
+UXTerm*foreground: gray
+UXTerm*cursorColor: yellow
+UXTerm*pointerColor: white
+XTerm*vt100.metaSendsEscape: true
+
+UXTerm*faceName:    xft:Terminus:size=12:hinting=true
+
+UXTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+UXTerm*sessionMgt: False

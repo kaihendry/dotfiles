@@ -22,17 +22,15 @@ complete -cf sudo
 
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
 
-# Trying to get a history that works... (might be BS)
-HISTSIZE=20000
-PROMPT_COMMAND="history -a"
-export HISTCONTROL=ignoredups
-export HISTSIZE PROMPT_COMMAND
+unset HISTFILESIZE
+export HISTSIZE=10000
+export HISTCONTROL="ignoreboth"
 
 umask 002
 
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
-alias suspend='sudo pm-suspend'
+alias suspend='sudo systemctl suspend'
 alias feh="sxiv"
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
