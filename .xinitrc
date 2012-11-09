@@ -27,9 +27,6 @@ setxkbmap -layout gb -option ctrl:nocaps
 hash conky && conky &
 hash chromium && chromium &
 
-autocutsel -fork &
-autocutsel -selection PRIMARY -fork &
-
 while true
 do
 	dwm
