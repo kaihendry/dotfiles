@@ -31,7 +31,6 @@ umask 002
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/personal/accounts'
 alias suspend='sudo systemctl suspend'
-alias feh="sxiv"
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 alias e='vim'
@@ -39,9 +38,7 @@ alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot"
 alias b="sudo chroot ~/debian/sid-root"
 alias i="cd ~/debian/sid-root/root/webconverger"
 
-hb() {
-ssh hetty "cd ~/Debian-Live-config/webconverger; sudo make -f ~/Debian-Live-config/webconverger/Makefile deploy"
-}
+PROMPT_COMMAND="history -a; history -n"
 
 up() {
 cd ~/debian/sid-root/root/webconverger/chroot
@@ -50,11 +47,6 @@ git push
 
 6music(){
 mplayer http://www.bbc.co.uk/radio/listen/live/r6_aaclca.pls
-}
-
-upneon() {
-cd ~/debian/sid-root/root/webconverger/chroot
-git push neon neon
 }
 
 export GIT_AUTHOR_NAME="Kai Hendry"

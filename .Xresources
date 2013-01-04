@@ -10,7 +10,7 @@ UXTerm*cursorColor: yellow
 UXTerm*pointerColor: white
 XTerm*vt100.metaSendsEscape: true
 
-UXTerm*faceName:    xft:Terminus:size=12:hinting=true
+UXTerm*faceName:    xft:Terminus:hinting=true
 
 UXTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
 UXTerm*sessionMgt: False

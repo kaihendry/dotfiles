@@ -4,10 +4,12 @@ set -x
 
 xset +fp /usr/share/fonts/local
 xset fp rehash
-
 xset -b # disable bell
 
-eval `/usr/bin/ssh-agent`
+SSH_ENV=$HOME/.ssh/environment
+ssh-agent > ${SSH_ENV}
+chmod 600 ${SSH_ENV}
+. ${SSH_ENV} > /dev/null
 
 xset -dpms
 xset s off
