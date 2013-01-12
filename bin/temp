@@ -1,0 +1,5 @@
+#!/bin/bash -x
+SSH_ENV=$HOME/.ssh/environment
+. ${SSH_ENV} > /dev/null
+echo $(date +%s) $(cat /sys/class/thermal/thermal_zone0/temp) $(uname -r) $(cat /proc/loadavg) |
+ssh  sg 'cat - >> /srv/www/r2d2.webconverger.org/2012-12-27/temp.csv'

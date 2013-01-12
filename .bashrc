@@ -49,6 +49,12 @@ git push
 mplayer http://www.bbc.co.uk/radio/listen/live/r6_aaclca.pls
 }
 
+4music(){
+cvlc http://bbc.co.uk/radio/listen/live/r4.asx
+}
+
+
+
 export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
 export GIT_COMMITTER_EMAIL=hendry@webconverger.com
