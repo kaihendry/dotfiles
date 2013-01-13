@@ -49,7 +49,7 @@ git push
 mplayer http://www.bbc.co.uk/radio/listen/live/r6_aaclca.pls
 }
 
-4music(){
+r4(){
 cvlc http://bbc.co.uk/radio/listen/live/r4.asx
 }
 
