@@ -10,4 +10,4 @@
 [core]
 	whitespace = fix
 [push]
-	default = matching
+	default = current

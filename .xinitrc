@@ -26,8 +26,16 @@ xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 
-hash conky && conky &
+if hash conky
+then
+	conky &
+	#conky -c .conkyrc.another &
+fi
+
 hash chromium && chromium &
+hash fcitx && fcitx &
+
+
 
 while true
 do

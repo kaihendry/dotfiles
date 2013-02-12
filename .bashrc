@@ -23,7 +23,7 @@ complete -cf sudo
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
 
 unset HISTFILESIZE
-export HISTSIZE=10000
+export HISTSIZE=50000
 export HISTCONTROL="ignoreboth"
 
 umask 002
@@ -53,7 +53,9 @@ r4(){
 cvlc http://bbc.co.uk/radio/listen/live/r4.asx
 }
 
-
+halt(){
+sudo poweroff
+}
 
 export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"

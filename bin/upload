@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 u=$(mktemp -u)
 d=$(date --rfc-3339=date)
 mkdir -p $u/$d

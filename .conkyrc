@@ -52,3 +52,4 @@ ${alignr}${nameserver 1}
 
 Time in SF:  ${tztime America/Los_Angeles}
 Time in SIN:  ${tztime Asia/Singapore}
+
