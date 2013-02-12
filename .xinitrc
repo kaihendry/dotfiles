@@ -2,6 +2,8 @@
 exec >/tmp/startx$$.log 2>&1
 set -x
 
+[ -f ~/.xprofile ] && source ~/.xprofile
+
 xset +fp /usr/share/fonts/local
 xset fp rehash
 xset -b # disable bell
