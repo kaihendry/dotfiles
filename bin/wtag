@@ -1,0 +1,24 @@
+#!/bin/sh
+# TODO add -d to delete tag
+
+cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
+if [ -d "$cachedir" ]; then
+	taglist=$cachedir/sxiv-taglist
+else
+	taglist=$HOME/.sxiv-taglist
+fi
+
+file "$1" | grep -q "JPEG image data" || exit
+
+if tag=$(cat $taglist | dmenu -p "tag:")
+then
+	exiv2 -M"add Iptc.Application2.Keywords String $tag" $1 &&
+	# Add the tag to the taglist if it is unknown
+
+	if ! grep -xq $tag $taglist
+	then
+		echo Adding new tag ${tag} to $taglist from $1
+		echo $tag >> $taglist
+	fi
+
+fi

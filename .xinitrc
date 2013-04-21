@@ -23,30 +23,20 @@ fi
 
 # 1280x720 = 720p X220
 hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
+#hash conky && conky &
 
 xrdb -merge $HOME/.Xresources
 xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
-
-if hash conky
-then
-	conky &
-	#conky -c .conkyrc.another &
-fi
+xset m 18/10 0 # http://www.x.org/wiki/Development/Documentation/PointerAcceleration
 
 hash chromium && chromium &
-hash fcitx && fcitx &
-
-
+#hash fcitx && fcitx &
 
 while true
 do
-	dwm
+	dwm_status
+	sleep 2
 done &
 
-while true
-do
-	localtime=$(date +%Z\=%Y-%m-%dT%H:%M)
-	xsetroot -name "$localtime"
-	sleep 20s
-done
+exec /home/hendry/suckless/dwm/dwm 2> ~/tmp/dwm.log

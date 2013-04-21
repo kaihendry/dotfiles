@@ -5,7 +5,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export EDITOR=vim
-export VISUAL=vim
+export VISUAL=vi
 export EMAIL="hendry@webconverger.com"
 export DEBEMAIL="hendry@webconverger.com"
 export DEBFULLNAME='Kai Hendry'
@@ -21,6 +21,7 @@ shopt -s cdable_vars
 complete -cf sudo
 
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
+#PS1="\[\033[G\]$PS1"
 
 unset HISTFILESIZE
 export HISTSIZE=50000

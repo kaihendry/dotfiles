@@ -1,0 +1,3 @@
+#!/bin/bash
+file "$1" | grep -q "JPEG image data" || exit
+exiv2 -M"del Iptc.Application2.Keywords" $1
