@@ -1,7 +1,8 @@
 test -z "$PS1" && return
 
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+if test -d "$HOME/bin"
+then
+	PATH="$HOME/bin:$PATH"
 fi
 
 export EDITOR=vim
@@ -21,7 +22,6 @@ shopt -s cdable_vars
 complete -cf sudo
 
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
-#PS1="\[\033[G\]$PS1"
 
 unset HISTFILESIZE
 export HISTSIZE=50000
@@ -35,9 +35,13 @@ alias suspend='sudo systemctl suspend'
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 alias e='vim'
-alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot"
-alias b="sudo chroot ~/debian/sid-root"
-alias i="cd ~/debian/sid-root/root/webconverger"
+
+if test -d ~/debian/sid-root
+then
+	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot"
+	alias b="sudo chroot ~/debian/sid-root"
+	alias i="cd ~/debian/sid-root/root/webconverger"
+fi
 
 PROMPT_COMMAND="history -a; history -n"
 
@@ -54,8 +58,8 @@ r4(){
 cvlc http://bbc.co.uk/radio/listen/live/r4.asx
 }
 
-halt(){
-sudo poweroff
+p() {
+curl -n -F 'f:1=<-' http://ix.io
 }
 
 export GIT_AUTHOR_NAME="Kai Hendry"
