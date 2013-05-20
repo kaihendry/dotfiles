@@ -30,7 +30,7 @@ export HISTCONTROL="ignoreboth"
 umask 002
 
 alias ll='ls -alh --group-directories-first --color=always'
-alias ac='vim ~/private/personal/accounts'
+alias ac='vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'

@@ -14,17 +14,17 @@ echo -ne "[${song}]"
 print_volume() {
     volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
     if [ "$volume" = "0" ]; then
-        echo -e "[Mute]"
+        echo -e "Mute"
     else
-        echo -e "[\uE05D${volume}]"
+        echo -e "\uE05D${volume}"
     fi
 }
 
 print_wifi() {
     ip=$(ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{ print " "$2 }' || "")
-    wifi=$(wicd-cli -y -d | grep "Essid" | cut -d" " -f2)
+    wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
 
-    echo -e "[\uE09F$wifi$ip]"
+    echo -e "\uE09F$wifi$ip"
 }
 
 print_stats(){
@@ -33,24 +33,23 @@ print_stats(){
         {sum[i]=$2+$3+$4+$5; idle[i++]=$5}
     END {printf "%d\n", 100*( (sum[1]-sum[0]) - (idle[1]-idle[0]) ) / (sum[1]-sum[0])}
     ' <( head -n 1 /proc/stat; sleep 0.5; head -n 1 /proc/stat))"
-    echo -e "[\uE026$cpu \uE020$mem]"
+    echo -e "\uE026$cpu \uE020$mem"
 }
 
 print_bat(){
     onl="$(grep "on-line" <(acpi -V))"
     charge="$(awk '{print +$4}' <(acpi -b))"
     if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then 
-        echo -e "[\uE033${charge}]"
+        echo -e "\uE033${charge}"
     elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
-        echo -e "[\uE030${charge}]"
+        echo -e "\uE030${charge}"
     else
-        echo -e "[\uE041${charge}]"
+        echo -e "\uE041${charge}"
     fi
 }
 
 print_date(){
-    dte="$(date "+%H:%M")"
-    echo -e "$( date +"%a %m-%d")${dte}"
+	date "+%a %m-%dT%T%:::z"
 }
 
-xsetroot -name "$(print_stats) $(print_bat) $(print_volume) $(print_date)"
+xsetroot -name "$(print_stats) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"

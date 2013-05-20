@@ -23,4 +23,4 @@ cp -v $s $u/$d/$(basename $s)
 logger http://s.natalian.org/$d/$(basename $s)
 done
 
-rsync -rvz $u/ de:/srv/www/s.natalian.org/
+rsync -rvz $u/ uk.webconverger.com:/srv/www/s.natalian.org/
