@@ -25,5 +25,4 @@ set background=dark
 set undofile
 set undodir=/tmp
 
-call pathogen#infect()
 filetype plugin on

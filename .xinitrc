@@ -39,4 +39,4 @@ do
 	sleep 2
 done &
 
-exec /home/hendry/suckless/dwm/dwm 2> ~/tmp/dwm.log
+exec dwm 2> ~/tmp/dwm.log
