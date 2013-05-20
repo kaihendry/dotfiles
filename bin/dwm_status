@@ -1,16 +1,4 @@
 #!/bin/bash
-#
-## author flexo
-#
-
-print_music() {
-  song="$(mocp -Q '%artist - %song')"
-  if [[ ! $song ]]; then
-    song="Not playing"
-  fi
-echo -ne "[${song}]"
-}
-
 print_volume() {
     volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
     if [ "$volume" = "0" ]; then
@@ -21,8 +9,12 @@ print_volume() {
 }
 
 print_wifi() {
-    ip=$(ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{ print " "$2 }' || "")
-    wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
+    ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
+
+	if hash iw
+	then
+		wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
+	fi
 
     echo -e "\uE09F$wifi$ip"
 }
@@ -37,6 +29,7 @@ print_stats(){
 }
 
 print_bat(){
+	hash acpi || return 0
     onl="$(grep "on-line" <(acpi -V))"
     charge="$(awk '{print +$4}' <(acpi -b))"
     if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then 
