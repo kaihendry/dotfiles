@@ -1,5 +1,12 @@
 #!/bin/bash
+
+
 exec >/tmp/startx$$.log 2>&1
+
+# Prefer /usr/local/bin
+export PATH="/usr/local/bin:$PATH"
+echo PATH: $PATH
+
 set -x
 
 [ -f ~/.xprofile ] && source ~/.xprofile
