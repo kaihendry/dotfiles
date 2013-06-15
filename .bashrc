@@ -38,8 +38,8 @@ alias e='vim'
 
 if test -d ~/debian/sid-root
 then
-	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot"
-	alias b="sudo chroot ~/debian/sid-root"
+	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias b="sudo chroot ~/debian/sid-root env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
 	alias i="cd ~/debian/sid-root/root/webconverger"
 fi
 

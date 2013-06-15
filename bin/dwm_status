@@ -16,7 +16,7 @@ print_wifi() {
 		wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
 	fi
 
-    echo -e "\uE09F$wifi$ip"
+    echo -e "\uE09F$wifi $ip"
 }
 
 print_stats(){
@@ -26,6 +26,11 @@ print_stats(){
     END {printf "%d\n", 100*( (sum[1]-sum[0]) - (idle[1]-idle[0]) ) / (sum[1]-sum[0])}
     ' <( head -n 1 /proc/stat; sleep 0.5; head -n 1 /proc/stat))"
     echo -e "\uE026$cpu \uE020$mem"
+}
+
+print_temp(){
+	test -f /sys/class/thermal/thermal_zone0/temp || return 0
+	echo $(cat /sys/class/thermal/thermal_zone0/temp | sed 's/000$//')C
 }
 
 print_bat(){
@@ -45,4 +50,4 @@ print_date(){
 	date "+%a %m-%dT%T%:::z"
 }
 
-xsetroot -name "$(print_stats) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
+xsetroot -name "$(print_stats) $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
