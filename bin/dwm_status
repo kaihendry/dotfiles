@@ -18,29 +18,22 @@ function get_bytes {
 # Function which calculates the speed using actual and old byte number.
 # Speed is shown in KByte per second when greater or equal than 1 KByte per second.
 # This function should be called each second.
-function get_velocity
-{
-	value=$1
-		old_value=$2
-
-		let vel=$value-$old_value
-		let velKB=$vel/1024
-		if [ $velKB != 0 ];
-	then
-		echo -n "$velKB KB/s";
-		else
-			echo -n "$vel B/s";
-	fi
+function get_velocity {
+value=$1
+old_value=$2
+let velKB=($value-$old_value)/1024
+if test $velKB -gt 1024
+then
+	echo $(echo "scale=2; $velKB/1024" | bc)MB/s
+else
+	echo ${velKB}KB/s
+fi
 }
 
-# Gets initial values.
+# Get initial values
 get_bytes
 old_received_bytes=$received_bytes
 old_transmitted_bytes=$transmitted_bytes
-
-
-
-
 
 print_volume() {
     volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
@@ -52,14 +45,14 @@ print_volume() {
 }
 
 print_wifi() {
-    ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
+	ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
 
 	if hash iw
 	then
 		wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
 	fi
 
-    echo -e "\uE09F$wifi $ip"
+	echo -e "\uE09F$wifi $ip"
 }
 
 print_stats(){
@@ -73,14 +66,14 @@ print_stats(){
 
 print_temp(){
 	test -f /sys/class/thermal/thermal_zone0/temp || return 0
-	echo $(cat /sys/class/thermal/thermal_zone0/temp | sed 's/000$//')C
+	echo $(head -c 2 /sys/class/thermal/thermal_zone0/temp)C
 }
 
 print_bat(){
 	hash acpi || return 0
     onl="$(grep "on-line" <(acpi -V))"
     charge="$(awk '{print +$4}' <(acpi -b))"
-    if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then 
+    if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
         echo -e "\uE033${charge}"
     elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
         echo -e "\uE030${charge}"
@@ -90,10 +83,9 @@ print_bat(){
 }
 
 print_date(){
-	date "+%a %m-%dT%T%:::z"
+	date "+%a %m-%d %T%:::z"
 }
 
-# Main loop. It will repeat forever.
 while true
 do
 
@@ -106,14 +98,10 @@ vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes)
 
 xsetroot -name "$(print_stats) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
 
-# Update old values to perform new calculations.
+# Update old values to perform new calculations
 old_received_bytes=$received_bytes
 old_transmitted_bytes=$transmitted_bytes
 
-# Waits one second.
 sleep 1
 
 done
-
-
-
