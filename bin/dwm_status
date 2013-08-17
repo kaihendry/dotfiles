@@ -1,19 +1,16 @@
 #!/bin/bash
-
-# Global variables
-interface=wlan0
-received_bytes=""
-old_received_bytes=""
-transmitted_bytes=""
-old_transmitted_bytes=""
+# Screenshot: http://s.natalian.org/2013-08-17/dwm_status.png
+# Network speed stuff stolen from http://linuxclues.blogspot.sg/2009/11/shell-script-show-network-speed.html
 
 # This function parses /proc/net/dev file searching for a line containing $interface data.
 # Within that line, the first and ninth numbers after ':' are respectively the received and transmited bytes.
 function get_bytes {
+	# Find active network interface
+	interface=$(ip route | egrep '^default' | sed -nr 's/.*dev (\S+).*/\1/p')
+
 	line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
 	eval $line
 }
-
 
 # Function which calculates the speed using actual and old byte number.
 # Speed is shown in KByte per second when greater or equal than 1 KByte per second.
@@ -36,12 +33,13 @@ old_received_bytes=$received_bytes
 old_transmitted_bytes=$transmitted_bytes
 
 print_volume() {
-    volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
-    if [ "$volume" = "0" ]; then
-        echo -e "Mute"
-    else
-        echo -e "\uE05D${volume}"
-    fi
+	volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+	if test "$volume" -gt 0
+	then
+		echo -e "\uE05D${volume}"
+	else
+		echo -e "Mute"
+	fi
 }
 
 print_wifi() {
