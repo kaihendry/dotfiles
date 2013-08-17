@@ -45,4 +45,4 @@ dwm_status &
 
 pulseaudio --start
 
-exec dwm 2> ~/tmp/dwm.log
+exec /home/hendry/suckless/dwm/dwm 2> ~/tmp/dwm.log

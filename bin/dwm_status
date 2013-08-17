@@ -5,11 +5,11 @@
 # This function parses /proc/net/dev file searching for a line containing $interface data.
 # Within that line, the first and ninth numbers after ':' are respectively the received and transmited bytes.
 function get_bytes {
-	# Find active network interface
-	interface=$(ip route | egrep '^default' | sed -nr 's/.*dev (\S+).*/\1/p')
+# Find active network interface
+interface=$(ip route | egrep '^default' | sed -nr 's/.*dev (\S+).*/\1/p')
 
-	line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
-	eval $line
+line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
+eval $line
 }
 
 # Function which calculates the speed using actual and old byte number.
@@ -54,12 +54,12 @@ print_wifi() {
 }
 
 print_stats(){
-    mem="$(awk '/^-/ {print $3}' <(free -m))"
-    cpu="$(awk 'BEGIN{i=0}
-        {sum[i]=$2+$3+$4+$5; idle[i++]=$5}
-    END {printf "%d\n", 100*( (sum[1]-sum[0]) - (idle[1]-idle[0]) ) / (sum[1]-sum[0])}
-    ' <( head -n 1 /proc/stat; sleep 0.5; head -n 1 /proc/stat))"
-    echo -e "\uE026$cpu \uE020$mem"
+	mem="$(awk '/^-/ {print $3}' <(free -m))"
+	cpu="$(awk 'BEGIN{i=0}
+	{sum[i]=$2+$3+$4+$5; idle[i++]=$5}
+	END {printf "%d\n", 100*( (sum[1]-sum[0]) - (idle[1]-idle[0]) ) / (sum[1]-sum[0])}
+	' <( head -n 1 /proc/stat; sleep 0.5; head -n 1 /proc/stat))"
+	echo -e "\uE026$cpu \uE020$mem"
 }
 
 print_temp(){
@@ -69,15 +69,15 @@ print_temp(){
 
 print_bat(){
 	hash acpi || return 0
-    onl="$(grep "on-line" <(acpi -V))"
-    charge="$(awk '{print +$4}' <(acpi -b))"
-    if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
-        echo -e "\uE033${charge}"
-    elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
-        echo -e "\uE030${charge}"
-    else
-        echo -e "\uE041${charge}"
-    fi
+	onl="$(grep "on-line" <(acpi -V))"
+	charge="$(awk '{print +$4}' <(acpi -b))"
+	if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
+		echo -e "\uE033${charge}"
+	elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
+		echo -e "\uE030${charge}"
+	else
+		echo -e "\uE041${charge}"
+	fi
 }
 
 print_date(){
@@ -87,19 +87,19 @@ print_date(){
 while true
 do
 
-# Get new transmitted and received byte number values
-get_bytes
+	# Get new transmitted and received byte number values
+	get_bytes
 
-# Calculates speeds
-vel_recv=$(get_velocity $received_bytes $old_received_bytes)
-vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes)
+	# Calculates speeds
+	vel_recv=$(get_velocity $received_bytes $old_received_bytes)
+	vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes)
 
-xsetroot -name "$(print_stats) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
+	xsetroot -name "$(print_stats) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
 
-# Update old values to perform new calculations
-old_received_bytes=$received_bytes
-old_transmitted_bytes=$transmitted_bytes
+	# Update old values to perform new calculations
+	old_received_bytes=$received_bytes
+	old_transmitted_bytes=$transmitted_bytes
 
-sleep 1
+	sleep 1
 
 done

@@ -26,3 +26,4 @@ set undofile
 set undodir=/tmp
 
 filetype plugin on
+filetype indent on
