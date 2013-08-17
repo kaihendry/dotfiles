@@ -10,6 +10,7 @@ export VISUAL=vi
 export EMAIL="hendry@webconverger.com"
 export DEBEMAIL="hendry@webconverger.com"
 export DEBFULLNAME='Kai Hendry'
+export GIT_AUTHOR_NAME="Kai Hendry"
 
 export GREP_OPTIONS="--exclude-dir=\.svn"
 
@@ -38,7 +39,7 @@ alias e='vim'
 
 if test -d ~/debian/sid-root
 then
-	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
 	alias b="sudo chroot ~/debian/sid-root env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
 	alias i="cd ~/debian/sid-root/root/webconverger"
 fi

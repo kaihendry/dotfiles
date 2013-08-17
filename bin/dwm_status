@@ -1,4 +1,47 @@
 #!/bin/bash
+
+# Global variables
+interface=wlan0
+received_bytes=""
+old_received_bytes=""
+transmitted_bytes=""
+old_transmitted_bytes=""
+
+# This function parses /proc/net/dev file searching for a line containing $interface data.
+# Within that line, the first and ninth numbers after ':' are respectively the received and transmited bytes.
+function get_bytes {
+	line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
+	eval $line
+}
+
+
+# Function which calculates the speed using actual and old byte number.
+# Speed is shown in KByte per second when greater or equal than 1 KByte per second.
+# This function should be called each second.
+function get_velocity
+{
+	value=$1
+		old_value=$2
+
+		let vel=$value-$old_value
+		let velKB=$vel/1024
+		if [ $velKB != 0 ];
+	then
+		echo -n "$velKB KB/s";
+		else
+			echo -n "$vel B/s";
+	fi
+}
+
+# Gets initial values.
+get_bytes
+old_received_bytes=$received_bytes
+old_transmitted_bytes=$transmitted_bytes
+
+
+
+
+
 print_volume() {
     volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
     if [ "$volume" = "0" ]; then
@@ -50,4 +93,27 @@ print_date(){
 	date "+%a %m-%dT%T%:::z"
 }
 
-xsetroot -name "$(print_stats) $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
+# Main loop. It will repeat forever.
+while true
+do
+
+# Get new transmitted and received byte number values
+get_bytes
+
+# Calculates speeds
+vel_recv=$(get_velocity $received_bytes $old_received_bytes)
+vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes)
+
+xsetroot -name "$(print_stats) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
+
+# Update old values to perform new calculations.
+old_received_bytes=$received_bytes
+old_transmitted_bytes=$transmitted_bytes
+
+# Waits one second.
+sleep 1
+
+done
+
+
+

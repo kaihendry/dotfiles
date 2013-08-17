@@ -37,13 +37,10 @@ xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 xset m 18/10 0 # http://www.x.org/wiki/Development/Documentation/PointerAcceleration
 
-hash chromium && chromium &
+#hash google-chrome && google-chrome &
+#test -e ~/bin/surf-open.sh && ~/bin/surf-open.sh http://gmail.com
 #hash fcitx && fcitx &
 
-while true
-do
-	dwm_status
-	sleep 2
-done &
+dwm_status &
 
 exec dwm 2> ~/tmp/dwm.log
