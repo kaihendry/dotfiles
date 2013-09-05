@@ -36,8 +36,8 @@ xmodmap ~/.Xmodmap
 setxkbmap -layout gb -option ctrl:nocaps
 xset m 18/10 0 # http://www.x.org/wiki/Development/Documentation/PointerAcceleration
 
-# hash google-chrome && google-chrome &
-firefox &
+hash google-chrome && google-chrome &
+# firefox &
 
 #test -e ~/bin/surf-open.sh && ~/bin/surf-open.sh http://gmail.com
 #hash fcitx && fcitx &
