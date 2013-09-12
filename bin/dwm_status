@@ -72,7 +72,7 @@ print_temp(){
 print_bat(){
 	hash acpi || return 0
 	onl="$(grep "on-line" <(acpi -V))"
-	charge="$(awk '{print +$4}' <(acpi -b))"
+	charge="$(cat /sys/class/power_supply/BAT0/capacity)"
 	if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
 		echo -e "\uE033${charge}"
 	elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
