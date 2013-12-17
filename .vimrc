@@ -1,5 +1,4 @@
 map <F8> :setlocal spell! spelllang=en_gb<CR>
-syntax on
 set title
 set ruler
 set showmatch
@@ -19,11 +18,17 @@ set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+set noswapfile
 
 set background=dark
 
 set undofile
 set undodir=/tmp
 
+execute pathogen#infect()
+syntax on
 filetype plugin on
 filetype indent on
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+autocmd FileType go compiler go
+au FileType go map <leader>r :!go run %<CR>

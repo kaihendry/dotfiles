@@ -1,6 +1,2 @@
 [ui]
 username = Kai Hendry <hendry@iki.fi>
-
-[extensions]
-hgext.bookmarks =
-hggit =

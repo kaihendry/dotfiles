@@ -58,6 +58,8 @@ export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
 export GIT_COMMITTER_EMAIL=hendry@webconverger.com
 export GIT_AUTHOR_EMAIL=hendry@webconverger.com
+export NODE_PATH=/usr/lib/node_modules/
+export GOPATH=~/go
 
 s() {
 	systemctl status $1
