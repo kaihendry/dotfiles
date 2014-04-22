@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /tmp
-scrot $@ '%s_$wx$h.png' -e 'upload $f'
+# Requires scrot-patched from AUR
+scrot "$@" '%s_$wx$h.png' -u -e 'upload $f'

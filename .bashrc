@@ -5,6 +5,16 @@ then
 	PATH="$HOME/bin:$PATH"
 fi
 
+if test -d "$HOME/go_appengine"
+then
+	PATH="$HOME/go_appengine:$PATH"
+fi
+
+if test -d "/home/hendry/.gem/ruby/2.1.0/bin"
+then
+	PATH="/home/hendry/.gem/ruby/2.1.0/bin:$PATH"
+fi
+
 export EDITOR=vim
 export GREP_OPTIONS="--exclude-dir=\.svn"
 
