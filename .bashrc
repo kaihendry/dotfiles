@@ -20,17 +20,12 @@ export GREP_OPTIONS="--exclude-dir=\.svn"
 
 shopt -s checkwinsize
 shopt -s cmdhist
-shopt -s histappend
 shopt -s cdspell
 shopt -s cdable_vars
 
 complete -cf sudo
 
 PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
-
-unset HISTFILESIZE
-export HISTSIZE=50000
-export HISTCONTROL="ignoreboth"
 
 umask 002
 
@@ -47,7 +42,14 @@ then
 	alias i="cd ~/debian/sid-root/root/webconverger"
 fi
 
-PROMPT_COMMAND="history -a; history -n"
+# http://unix.stackexchange.com/a/1292/27433
+# avoid duplicates..
+export HISTCONTROL=ignoredups:erasedups
+# append history entries..
+shopt -s histappend
+
+# After each command, save and reload history
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 up() {
 	cd ~/debian/sid-root/root/webconverger/chroot
@@ -63,7 +65,6 @@ p() {
 }
 
 export EMAIL="hendry@webconverger.com"
-export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
 export GIT_COMMITTER_EMAIL=hendry@webconverger.com
