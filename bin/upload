@@ -24,4 +24,4 @@ logger "http://s.natalian.org/$d/$(basename "$s")"
 echo "http://s.natalian.org/$d/$(basename "$s")" | xclip -selection "primary" -i
 done
 
-rsync -rvz $u/ s.natalian.org:/srv/www/s.natalian.org/
+s3cmd -P sync $u/ s3://s.natalian.org/

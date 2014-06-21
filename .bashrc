@@ -48,8 +48,7 @@ export HISTCONTROL=ignoredups:erasedups
 # append history entries..
 shopt -s histappend
 
-# After each command, save and reload history
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 up() {
 	cd ~/debian/sid-root/root/webconverger/chroot
@@ -74,4 +73,7 @@ export GOPATH=~/go
 
 s() {
 	systemctl status $1
+}
+r() {
+	sudo systemctl restart $1
 }
