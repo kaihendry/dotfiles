@@ -32,7 +32,7 @@ umask 002
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
-
+alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
 if test -d ~/debian/sid-root
@@ -70,10 +70,3 @@ export GIT_COMMITTER_EMAIL=hendry@webconverger.com
 export GIT_AUTHOR_EMAIL=hendry@webconverger.com
 export NODE_PATH=/usr/lib/node_modules/
 export GOPATH=~/go
-
-s() {
-	systemctl status $1
-}
-r() {
-	sudo systemctl restart $1
-}
