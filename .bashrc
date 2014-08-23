@@ -42,13 +42,12 @@ then
 	alias i="cd ~/debian/sid-root/root/webconverger"
 fi
 
-# http://unix.stackexchange.com/a/1292/27433
-# avoid duplicates..
-export HISTCONTROL=ignoredups:erasedups
-# append history entries..
+# http://unix.stackexchange.com/a/18443/27433
 shopt -s histappend
-
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+HISTCONTROL=ignoredups
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+export HISTFILESIZE=-1 HISTSIZE=-1
+HISTFILE=~/bash_history/$(date +%Y-%m)
 
 up() {
 	cd ~/debian/sid-root/root/webconverger/chroot

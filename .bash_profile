@@ -1,6 +1,6 @@
-#
-# ~/.bash_profile
-#
-
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
+xlog=/tmp/xorg.log
+if ! test -s $xlog
+then
+	exec xinit -- vt$XDG_VTNR -keeptty -nolisten tcp > $xlog 2>&1
+fi

@@ -12,7 +12,7 @@ then
 	continue
 fi
 
-chmod +r $s
+chmod +r "$s"
 
 if test "${s##*.}" == "png"
 then
