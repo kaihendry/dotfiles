@@ -1,20 +1,5 @@
 test -z "$PS1" && return
 
-if test -d "$HOME/bin"
-then
-	PATH="$HOME/bin:$PATH"
-fi
-
-if test -d "$HOME/go_appengine"
-then
-	PATH="$HOME/go_appengine:$PATH"
-fi
-
-if test -d "/home/hendry/.gem/ruby/2.1.0/bin"
-then
-	PATH="/home/hendry/.gem/ruby/2.1.0/bin:$PATH"
-fi
-
 export EDITOR=vim
 export GREP_OPTIONS="--exclude-dir=\.svn"
 
@@ -54,12 +39,16 @@ up() {
 	git push
 }
 
-r4(){
-	cvlc http://bbc.co.uk/radio/listen/live/r4.asx
+h() {
+	grep $@ ~/bash_history/*
 }
 
 p() {
 	curl -n -F 'f:1=<-' http://ix.io
+}
+
+bitrate () {
+	iw wlan0 link | grep bitrate
 }
 
 export EMAIL="hendry@webconverger.com"
@@ -68,4 +57,18 @@ export GIT_COMMITTER_NAME="Kai Hendry"
 export GIT_COMMITTER_EMAIL=hendry@webconverger.com
 export GIT_AUTHOR_EMAIL=hendry@webconverger.com
 export NODE_PATH=/usr/lib/node_modules/
-export GOPATH=~/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+if test -d "$HOME/bin"
+then
+	PATH="$HOME/bin:$PATH"
+fi
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/hendry/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/home/hendry/google-cloud-sdk/completion.bash.inc'
+
+export CLOUDSDK_PYTHON=python2

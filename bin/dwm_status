@@ -61,8 +61,8 @@ print_wifi() {
 }
 
 print_mem(){
-	mem="$(awk '/^-/ {print $3}' <(free -m))"
-	echo -e "\uE020$mem"
+	memused=$(($(egrep 'Active:' /proc/meminfo | cut -d " " -f 11) / 1024))
+	echo -e "\uE020$memused"
 }
 
 print_temp(){

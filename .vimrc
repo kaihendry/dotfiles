@@ -25,10 +25,12 @@ set background=dark
 set undofile
 set undodir=/tmp
 
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
 filetype plugin on
 filetype indent on
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd FileType go compiler go
-au FileType go map <leader>r :!go run %<CR>
+set runtimepath+=/usr/lib/go/misc/vim
+let g:gofmt_command ="goimports"
+
