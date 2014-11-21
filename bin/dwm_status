@@ -61,7 +61,7 @@ print_wifi() {
 }
 
 print_mem(){
-	memused=$(($(egrep 'Active:' /proc/meminfo | cut -d " " -f 11) / 1024))
+	memused=$(($(egrep 'Active:' /proc/meminfo |  awk '{print $2}') / 1024))
 	echo -e "\uE020$memused"
 }
 
