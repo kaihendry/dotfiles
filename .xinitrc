@@ -6,6 +6,11 @@ exec >/tmp/startx$$.log 2>&1
 export PATH="/usr/local/bin:$PATH"
 echo PATH: $PATH
 
+# For android-studio https://wiki.archlinux.org/index.php/android#Android_Studio
+export _JAVA_AWT_WM_NONREPARENTING=1
+wmname LG3D
+
+
 set -x
 
 [ -f ~/.xprofile ] && source ~/.xprofile

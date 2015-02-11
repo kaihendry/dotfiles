@@ -1,7 +1,6 @@
 test -z "$PS1" && return
 
 export EDITOR=vim
-export GREP_OPTIONS="--exclude-dir=\.svn"
 
 shopt -s checkwinsize
 shopt -s cmdhist

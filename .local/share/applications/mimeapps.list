@@ -1,0 +1,26 @@
+[Default Applications]
+x-scheme-handler/http=google-chrome-unstable.desktop
+x-scheme-handler/https=google-chrome-unstable.desktop
+x-scheme-handler/ftp=userapp-Firefox-G580EX.desktop
+x-scheme-handler/chrome=userapp-Firefox-G580EX.desktop
+text/html=userapp-Firefox-G580EX.desktop
+application/x-extension-htm=userapp-Firefox-G580EX.desktop
+application/x-extension-html=userapp-Firefox-G580EX.desktop
+application/x-extension-shtml=userapp-Firefox-G580EX.desktop
+application/xhtml+xml=userapp-Firefox-G580EX.desktop
+application/x-extension-xhtml=userapp-Firefox-G580EX.desktop
+application/x-extension-xht=userapp-Firefox-G580EX.desktop
+application/pdf=google-chrome-unstable.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+x-scheme-handler/https=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+x-scheme-handler/ftp=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+x-scheme-handler/chrome=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+text/html=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/x-extension-htm=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/x-extension-html=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/x-extension-shtml=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/xhtml+xml=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/x-extension-xhtml=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
+application/x-extension-xht=userapp-Nightly-FK1W0W.desktop;userapp-Firefox-8Y0KDX.desktop;userapp-Firefox-9DFIDX.desktop;userapp-Firefox-G580EX.desktop;
