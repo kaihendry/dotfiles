@@ -10,7 +10,6 @@ echo PATH: $PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
 wmname LG3D
 
-
 set -x
 
 [ -f ~/.xprofile ] && source ~/.xprofile
@@ -46,10 +45,7 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 # Start pulseaudio
 start-pulseaudio-x11
 
-xrdb -merge $HOME/.Xresources
-xmodmap ~/.Xmodmap
-setxkbmap -layout gb -option ctrl:nocaps
-xset m 18/10 0 # http://www.x.org/wiki/Development/Documentation/PointerAcceleration
+setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
 browser=google-chrome-unstable
 
@@ -58,4 +54,6 @@ hash $browser && $browser &
 ~/bin/clipmenud &
 ~/bin/dwm_status &
 
+# https://bbs.archlinux.org/viewtopic.php?id=66453
+xmodmap ~/.Xmodmap &&
 exec ~/suckless/dwm/dwm 2> ~/tmp/dwm.log

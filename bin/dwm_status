@@ -53,15 +53,15 @@ print_wifi() {
 
 	if hash iw
 	then
-		wifi=$(iw wlan0 link | grep SSID | sed 's,.*SSID: ,,')
-		connectedto=$(iw wlan0 link | grep Connected | awk '{print $3}' | cut -c 10-)
+		wifi=$(iw wlp4s0 link | grep SSID | sed 's,.*SSID: ,,')
+		connectedto=$(iw wlp4s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
 	fi
 
 	echo -e "\uE09F$wifi $connectedto $ip"
 }
 
 print_mem(){
-	memfree=$(($(grep -m1 'MemFree:' /proc/meminfo | awk '{print $2}') / 1024))
+	memfree=$(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
 	echo -e "\uE020$memfree"
 }
 
@@ -97,7 +97,7 @@ do
 	vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 	vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-	xsetroot -name "$(print_mem) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_volume) $(print_date)"
+	xsetroot -name "$(print_mem) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(print_date)"
 
 	# Update old values to perform new calculations
 	old_received_bytes=$received_bytes

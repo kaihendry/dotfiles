@@ -1,8 +1,2 @@
-keycode 66 = Control_L
-clear Lock
-add Control = Control_L
-! disable insane pgdn/pgup keys on a Thinkpad
-keycode 166=0x0000
-keycode 167=0x0000
-keysym XF86AudioNext = End
-keysym XF86AudioPrev = Home
+keycode 108 = Home
+keycode 105 = End

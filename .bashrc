@@ -19,11 +19,11 @@ alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
-if test -d ~/debian/sid-root
+if test -d ~/debian/jessie-chroot
 then
-	alias c="sudo chroot ~/debian/sid-root/root/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias b="sudo chroot ~/debian/sid-root env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias i="cd ~/debian/sid-root/root/webconverger"
+	alias c="sudo chroot ~/debian/jessie-chroot/root/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias b="sudo chroot ~/debian/jessie-chroot env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias i="cd ~/debian/jessie-chroot/root/webconverger"
 fi
 
 # http://unix.stackexchange.com/a/18443/27433
@@ -34,7 +34,7 @@ export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
 
 up() {
-	cd ~/debian/sid-root/root/webconverger/chroot
+	cd ~/debian/jessie-chroot/root/webconverger/chroot
 	git push
 }
 
@@ -64,6 +64,9 @@ then
 	PATH="$HOME/bin:$PATH"
 fi
 
+if test -d /home/hendry/google-cloud-sdk
+then
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/hendry/google-cloud-sdk/path.bash.inc'
 
@@ -71,3 +74,4 @@ source '/home/hendry/google-cloud-sdk/path.bash.inc'
 source '/home/hendry/google-cloud-sdk/completion.bash.inc'
 
 export CLOUDSDK_PYTHON=python2
+fi

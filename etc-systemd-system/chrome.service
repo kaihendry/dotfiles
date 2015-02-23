@@ -1,0 +1,10 @@
+[Unit]
+Description=Kill chrome
+
+[Service]
+User=hendry
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/pkill chrome
+
+[Install]
+WantedBy=shutdown.target

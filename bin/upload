@@ -21,7 +21,7 @@ fi
 
 cp -v "$s" "$u/$d/$(basename "$s")"
 logger "http://s.natalian.org/$d/$(basename "$s")"
-echo "http://s.natalian.org/$d/$(basename "$s")" | xclip -selection "primary" -i
+echo "http://s.natalian.org/$d/$(basename "$s")" | xclip -selection "clipboard" -i
 done
 
 s3cmd -P sync $u/ s3://s.natalian.org/
