@@ -21,9 +21,9 @@ alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
 if test -d ~/debian/jessie-chroot
 then
-	alias c="sudo chroot ~/debian/jessie-chroot/root/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias b="sudo chroot ~/debian/jessie-chroot env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias i="cd ~/debian/jessie-chroot/root/webconverger"
+	alias c="sudo chroot ~/debian/jessie-chroot/root/Debian-Live-config/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias b="sudo chroot ~/debian/jessie-chroot env -i HOME=/root/ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	alias i="cd /home/hendry/debian/jessie-chroot/root/Debian-Live-config/webconverger"
 fi
 
 # http://unix.stackexchange.com/a/18443/27433

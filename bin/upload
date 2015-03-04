@@ -20,9 +20,14 @@ do
 	fi
 
 	dst=$(basename "$src")
+
 	cp -v "$src" "$tmp/$date/$dst"
-	logger "http://s.natalian.org/$date/$dst"
-	echo "http://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+
+	if s3cmd -P put "$tmp/$date/$dst" s3://s.natalian.org/$date/
+	then
+		logger "http://s.natalian.org/$date/$dst"
+		echo "http://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+	fi
+
 done
 
-s3cmd -P put "$tmp/$date/$dst" s3://s.natalian.org/$date/
