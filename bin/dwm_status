@@ -57,12 +57,12 @@ print_wifi() {
 		connectedto=$(iw wlp4s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
 	fi
 
-	echo -e "\uE09F$wifi $connectedto $ip"
+	echo -e "$wifi $connectedto $ip"
 }
 
 print_mem(){
 	memfree=$(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
-	echo -e "\uE020$memfree"
+	echo -e "$memfree"
 }
 
 print_temp(){
@@ -75,11 +75,11 @@ print_bat(){
 	onl="$(grep "on-line" <(acpi -V))"
 	charge="$(cat /sys/class/power_supply/BAT0/capacity)"
 	if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
-		echo -e "\uE033${charge}"
+		echo -e "${charge}"
 	elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
-		echo -e "\uE030${charge}"
+		echo -e "${charge}"
 	else
-		echo -e "\uE041${charge}"
+		echo -e "${charge}"
 	fi
 }
 

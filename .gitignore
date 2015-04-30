@@ -1,1 +1,4 @@
-bin
+Downloads/
+tmp
+*.tmp
+bash_history

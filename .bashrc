@@ -34,7 +34,7 @@ export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
 
 up() {
-	cd ~/debian/jessie-chroot/root/webconverger/chroot
+	cd ~/debian/jessie-chroot/root/Debian-Live-config/webconverger/chroot
 	git push
 }
 

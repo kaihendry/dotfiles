@@ -19,9 +19,10 @@ xset fp rehash
 xset -b # disable bell
 
 SSH_ENV=$HOME/.ssh/environment
-ssh-agent > ${SSH_ENV}
+ssh-agent | grep -v echo > ${SSH_ENV}
 chmod 600 ${SSH_ENV}
 . ${SSH_ENV} > /dev/null
+
 
 # https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling#Prevent_screen_from_turning_off
 #xset -dpms
@@ -39,6 +40,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 	unset f
 fi
 
+
 # 1280x720 = 720p X220
 hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
 
@@ -46,13 +48,19 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 start-pulseaudio-x11
 
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
+xset m 4/2 0
 
-browser=google-chrome-unstable
+#export MESA_GL_VERSION_OVERRIDE=3.3
+#export MESA_GLSL_VERSION_OVERRIDE=330
 
-hash $browser && $browser &
+google-chrome-unstable --force-device-scale-factor=1 &
 
 ~/bin/clipmenud &
 ~/bin/dwm_status &
+
+synclient PalmDetect=1
+synclient ClickPad=0
+synclient TapAndDragGesture=0
 
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&

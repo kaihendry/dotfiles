@@ -11,3 +11,5 @@
 	whitespace = fix
 [push]
 	default = current
+[annex]
+	genmetadata = true
