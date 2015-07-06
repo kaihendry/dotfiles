@@ -48,7 +48,7 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 start-pulseaudio-x11
 
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
-xset m 4/2 0
+xset m 5 1
 
 #export MESA_GL_VERSION_OVERRIDE=3.3
 #export MESA_GLSL_VERSION_OVERRIDE=330
@@ -58,9 +58,14 @@ google-chrome-unstable --force-device-scale-factor=1 &
 ~/bin/clipmenud &
 ~/bin/dwm_status &
 
-synclient PalmDetect=1
-synclient ClickPad=0
-synclient TapAndDragGesture=0
+#synclient PalmDetect=1
+#synclient ClickPad=0
+#synclient TapAndDragGesture=0
+#synclient TapButton2=-1
+#synclient TapButton1=-1
+#synclient TapButton3=-1
+synclient TouchPadOff=1
+
 
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&

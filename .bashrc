@@ -59,6 +59,14 @@ export NODE_PATH=/usr/lib/node_modules/
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+
+if test -d "/usr/local/bin"
+then
+	PATH="/usr/local/bin:$PATH"
+fi
+
+
+
 if test -d "$HOME/bin"
 then
 	PATH="$HOME/bin:$PATH"
