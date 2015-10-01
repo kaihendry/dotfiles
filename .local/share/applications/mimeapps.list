@@ -2,3 +2,11 @@
 x-scheme-handler/http=google-chrome-unstable.desktop
 x-scheme-handler/https=google-chrome-unstable.desktop
 text/html=google-chrome-unstable.desktop
+
+image/bmp=sxiv.desktop
+image/gif=sxiv.desktop
+image/jpeg=sxiv.desktop
+image/jpg=sxiv.desktop
+image/png=sxiv.desktop
+image/tiff=sxiv.desktop
+image/x-bmp=sxiv.desktop

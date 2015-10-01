@@ -83,3 +83,5 @@ source '/home/hendry/google-cloud-sdk/completion.bash.inc'
 
 export CLOUDSDK_PYTHON=python2
 fi
+
+source ~/.profile
