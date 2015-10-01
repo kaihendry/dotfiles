@@ -1,6 +1,43 @@
 #!/bin/bash
-tmp=$(mktemp -u)
+
+# Usage info
+show_help() {
+cat << EOF
+Usage: ${0##*/} [-hv] [-d date] [FILE]...
+Do stuff with FILE and write the result to standard output. With no FILE
+or when FILE is -, read standard input.
+
+    -h          display this help and exit
+    -d date     date other than today's date
+    -v          verbose mode. Can be used multiple times for increased
+                verbosity.
+EOF
+}
+
+# Initialize our own variables:
+verbose=0
 date=$(date --rfc-3339=date)
+
+OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
+while getopts "hvd:" opt; do
+    case "$opt" in
+        h)
+            show_help
+            exit 0
+            ;;
+        v)  verbose=$((verbose+1))
+            ;;
+        d)  date=$(date -d "$OPTARG" +%Y-%m-%d)
+            ;;
+        '?')
+            show_help >&2
+            exit 1
+            ;;
+    esac
+done
+shift "$((OPTIND-1))" # Shift off the options and optional --.
+
+tmp=$(mktemp -u)
 mkdir -p "$tmp/$date"
 trap 'rm -rf "$tmp"' EXIT
 
@@ -35,4 +72,3 @@ do
 	fi
 
 done
-
