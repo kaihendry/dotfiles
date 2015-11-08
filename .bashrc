@@ -1,6 +1,6 @@
 test -z "$PS1" && return
 
-export EDITOR=vim
+export EDITOR=nvim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -16,6 +16,7 @@ umask 002
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
+alias vim='nvim'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 

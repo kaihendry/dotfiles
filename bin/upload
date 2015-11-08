@@ -65,7 +65,7 @@ do
 
 	cp -v "$src" "$tmp/$date/$dst"
 
-	if s3cmd --storage-class=STANDARD_IA -P put "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
+	if s3cmd --add-header="X-Content-Type-Options:nosniff" --storage-class=STANDARD_IA --default-mime-type=text/plain --rr -P put "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "http://s.natalian.org/$date/$dst"
 		echo "http://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
