@@ -1,6 +1,4 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-xlog=/tmp/xorg.log
-if ! test -s $xlog
-then
-	exec xinit -- vt$XDG_VTNR -keeptty -nolisten tcp > $xlog 2>&1
-fi
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] || exit
+xlog=~/xorg/$(date +%s).log
+exec xinit -- vt$XDG_VTNR -keeptty -nolisten tcp > "$xlog" 2>&1
