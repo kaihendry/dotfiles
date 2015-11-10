@@ -14,7 +14,7 @@ PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
 umask 002
 
 alias ll='ls -alh --group-directories-first --color=always'
-alias ac='vim ~/private/accounts'
+alias ac='/usr/bin/vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
 alias vim='nvim'
 alias s='sudo systemctl'
