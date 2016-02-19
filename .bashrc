@@ -1,6 +1,6 @@
 test -z "$PS1" && return
 
-export EDITOR=nvim
+export EDITOR=vim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -16,7 +16,6 @@ umask 002
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
-alias vim='nvim'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
@@ -85,4 +84,4 @@ source '/home/hendry/google-cloud-sdk/completion.bash.inc'
 export CLOUDSDK_PYTHON=python2
 fi
 
-source ~/.profile
+test -f ~/.profile && source ~/.profile
