@@ -44,13 +44,11 @@ fi
 # 1280x720 = 720p X220
 hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
 
-# Start pulseaudio
-start-pulseaudio-x11
-
 setxkbmap -model thinkpad -layout us -option caps:none
 xset m 5 1
 
-google-chrome-unstable --force-device-scale-factor=1 &
+#google-chrome-unstable --force-device-scale-factor=1 &
+#firefox &
 
 ~/bin/dwm_status &
 

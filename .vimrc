@@ -28,10 +28,9 @@ set undodir=/tmp
 execute pathogen#infect()
 call pathogen#helptags()
 
-
 syntax on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
+set nofoldenable
 
 let g:go_fmt_command = "goimports"
 
@@ -44,3 +43,5 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+cmap w!! w !sudo tee > /dev/null %
+
