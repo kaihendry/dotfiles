@@ -17,8 +17,7 @@ umask 002
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac='/usr/bin/vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
-alias s='cd /etc/systemd/system'
-alias r='sudo systemctl restart'
+alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
 if test -d ~/debian/jessie-chroot
