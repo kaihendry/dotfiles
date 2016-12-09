@@ -67,8 +67,8 @@ do
 
 	if s3cmd --add-header="X-Content-Type-Options:nosniff" --storage-class=STANDARD_IA --default-mime-type=text/plain --rr -P put "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
-		logger "http://s.natalian.org/$date/$dst"
-		echo "http://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+		logger "https://s.natalian.org/$date/$dst"
+		echo "https://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
 	fi
 
 done

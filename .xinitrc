@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 exec >/tmp/startx$$.log 2>&1
 
@@ -6,15 +6,9 @@ exec >/tmp/startx$$.log 2>&1
 export PATH="/usr/local/bin:$PATH"
 echo PATH: $PATH
 
-# For android-studio https://wiki.archlinux.org/index.php/android#Android_Studio
-export _JAVA_AWT_WM_NONREPARENTING=1
-wmname LG3D
-
-set -x
-
 [ -f ~/.xprofile ] && source ~/.xprofile
 
-xset +fp /usr/share/fonts/local
+test -d /usr/share/fonts/local && xset +fp /usr/share/fonts/local
 xset fp rehash
 xset -b # disable bell
 
@@ -44,14 +38,19 @@ fi
 # 1280x720 = 720p X220
 hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
 
-setxkbmap -model thinkpad -layout us -option caps:none
+setxkbmap -model thinkpad -layout us -option caps:escape
 xset m 5 1
 
-#google-chrome-unstable --force-device-scale-factor=1 &
+google-chrome-unstable --force-device-scale-factor=1.5 &
 #firefox &
+
+#xsetroot -solid steelblue
+
+#xcompmgr -c &
+# xbattmon &
 
 ~/bin/dwm_status &
 
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
-exec ~/suckless/dwm/dwm 2> ~/tmp/dwm.log
+exec dwm 2> ~/tmp/dwm.log
