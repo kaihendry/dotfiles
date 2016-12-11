@@ -1,4 +1,5 @@
 test -z "$PS1" && return
+test -d ~/bash_history/ || mkdir ~/bash_history/
 
 export EDITOR=vim
 
@@ -8,22 +9,21 @@ shopt -s cdspell
 shopt -s cdable_vars
 
 complete -cf sudo
-
-PS1='\[\e[1m\]\h:\w\$\[\e[0m\] '
+GREEN="\[$(tput setaf 2)\]"
+RESET="\[$(tput sgr0)\]"
+PS1="${GREEN}\[\e[1m\]\w\$\[\e[0m\] ${RESET}"
 
 umask 002
 
 alias ll='ls -alh --group-directories-first --color=always'
-alias ac='vim ~/private/accounts'
+alias ac='/usr/bin/vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
 
-if test -d ~/debian/jessie-chroot
+if test -d /home/hendry/webc/webc
 then
-	alias c="sudo chroot ~/debian/jessie-chroot/root/Debian-Live-config/webconverger/chroot env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias b="sudo chroot ~/debian/jessie-chroot env -i HOME=/root/ PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
-	alias i="cd /home/hendry/debian/jessie-chroot/root/Debian-Live-config/webconverger"
+	alias c="sudo chroot /home/hendry/webc/webc env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
 fi
 
 # http://unix.stackexchange.com/a/18443/27433
@@ -39,7 +39,7 @@ up() {
 }
 
 h() {
-	grep $@ ~/bash_history/*
+	grep -a $@ ~/bash_history/*
 }
 
 p() {
@@ -50,12 +50,8 @@ bitrate () {
 	iw wlan0 link | grep bitrate
 }
 
-export EMAIL="hendry@webconverger.com"
 export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
-export GIT_COMMITTER_EMAIL=hendry@webconverger.com
-export GIT_AUTHOR_EMAIL=hendry@webconverger.com
-export NODE_PATH=/usr/lib/node_modules/
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
@@ -65,7 +61,10 @@ then
 	PATH="/usr/local/bin:$PATH"
 fi
 
-
+if test -d "$HOME/.local/bin"
+then
+	PATH="$HOME/.local/bin:$PATH"
+fi
 
 if test -d "$HOME/bin"
 then
@@ -84,4 +83,27 @@ source '/home/hendry/google-cloud-sdk/completion.bash.inc'
 export CLOUDSDK_PYTHON=python2
 fi
 
-source ~/.profile
+test -f ~/.profile && source ~/.profile
+
+#PATH="$HOME/.node_modules/bin:$PATH"
+#PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
+PATH="$HOME/.yarn-cache/.global/node_modules/.bin:$HOME/.yarn-config/global/node_modules/.bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
+alias g="cd /home/hendry/go/src/github.com/kaihendry"
+
+export WEBC_CHECKOUT=/home/hendry/webc/webc
+
+up() {
+	cd $WEBC_CHECKOUT
+	git push
+}
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# tmux capturep -pJ -E- -S-
+
+test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
+
+# added by travis gem
+[ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh

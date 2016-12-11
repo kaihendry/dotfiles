@@ -1,6 +1,3 @@
 #!/bin/bash
 cd /tmp
-# Requires scrot-patched from AUR
-logger here
 scrot "$@" '%s_$wx$h.png' -u -e 'upload $f'
-logger wth $?

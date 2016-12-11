@@ -1,6 +1,6 @@
 [user]
 	name = Kai Hendry
-	email = hendry@iki.fi
+	email = hendry@webconverger.com
 	signingkey = 64399BE2
 [alias]
 	st = status
@@ -15,3 +15,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[branch]
+	autosetuprebase = always

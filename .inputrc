@@ -1,2 +1,4 @@
 set bell-style none
 set enable-keypad on
+"\e[5~": beginning-of-line
+"\e[6~": end-of-line

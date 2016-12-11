@@ -1,7 +1,7 @@
 [Default Applications]
 x-scheme-handler/http=google-chrome-unstable.desktop
 x-scheme-handler/https=google-chrome-unstable.desktop
-text/html=google-chrome-unstable.desktop
+text/html=userapp-Firefox Developer Edition-NUNWPY.desktop
 
 image/bmp=sxiv.desktop
 image/gif=sxiv.desktop
@@ -10,3 +10,5 @@ image/jpg=sxiv.desktop
 image/png=sxiv.desktop
 image/tiff=sxiv.desktop
 image/x-bmp=sxiv.desktop
+x-scheme-handler/about=google-chrome-unstable.desktop
+x-scheme-handler/unknown=google-chrome-unstable.desktop
