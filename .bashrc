@@ -9,9 +9,12 @@ shopt -s cdspell
 shopt -s cdable_vars
 
 complete -cf sudo
-GREEN="\[$(tput setaf 2)\]"
-RESET="\[$(tput sgr0)\]"
-PS1="${GREEN}\[\e[1m\]\w\$\[\e[0m\] ${RESET}"
+if test "$HOSTNAME" == "teefour"
+then
+	GREEN="\[$(tput setaf 2)\]"
+	RESET="\[$(tput sgr0)\]"
+	PS1="${GREEN}\[\e[1m\]\w\$\[\e[0m\] ${RESET}"
+fi
 
 umask 002
 
