@@ -2,6 +2,7 @@ test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
 
 export EDITOR=vim
+export AWS_REGION=ap-southeast-1
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -85,10 +86,10 @@ fi
 
 test -f ~/.profile && source ~/.profile
 
-#PATH="$HOME/.node_modules/bin:$PATH"
-#PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
-PATH="$HOME/.yarn-cache/.global/node_modules/.bin:$HOME/.yarn-config/global/node_modules/.bin:$PATH"
-export npm_config_prefix=~/.node_modules
+#PATH="$HOME/.yarn-cache/.global/node_modules/.bin/:$HOME/.config/yarn/global/node_modules/.bin/:$HOME/.node_modules/bin/:$PATH"
+#export npm_config_prefix=~/.node_modules
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 alias g="cd /home/hendry/go/src/github.com/kaihendry"
 
