@@ -43,6 +43,7 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+au FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -50,7 +51,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 cmap w!! w !sudo tee > /dev/null %
 
-" nnoremap <silent> <F6> :SyntasticCheck<CR>
+nnoremap <silent> <F6> :SyntasticCheck<CR>
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_check_on_open = 1             " default is 0
 let g:syntastic_enable_signs = 1              " default is 1
@@ -64,3 +65,8 @@ let g:syntastic_always_populate_loc_list = 1  " default is 0
 "if has("autocmd")
 "	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+"
+"autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Using tabless https://www.npmjs.com/package/standard :(
+autocmd Filetype javascript setlocal sw=2 sts=2 expandtab

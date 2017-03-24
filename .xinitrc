@@ -51,6 +51,26 @@ google-chrome-unstable --force-device-scale-factor=1.5 &
 
 ~/bin/dwm_status &
 
+
+xlock() {
+	( slock && xset dpms 0 0 60 ) &
+	xset dpms 0 0 2
+	xset dpms force off
+}
+
+while true
+do
+	if [[ $(< /proc/acpi/button/lid/LID/state) = *closed ]]
+	then
+		case $(< /sys/class/power_supply/AC/online) in
+			1)  ( [[ ! "$(pidof slock)" ]] && xlock ) ;;
+			0)	systemctl suspend ;;
+		esac
+	fi
+	sleep 2
+done &
+
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
+
 exec dwm 2> ~/tmp/dwm.log
