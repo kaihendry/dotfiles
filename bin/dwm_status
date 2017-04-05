@@ -72,12 +72,15 @@ print_temp(){
 print_bat(){
 	hash acpi || return 0
 	onl="$(grep "on-line" <(acpi -V))"
-	charge="$(cat /sys/class/power_supply/BAT0/capacity)"
-	if [[ ( -z $onl && ${charge} -gt 20 ) ]]; then
-		echo -e "${charge}"
-	elif [[ ( -z $onl && ${charge} -le 20 ) ]]; then
+	charge="$(awk '{ sum += $1 } END { print sum }' /sys/class/power_supply/BAT*/capacity)"
+	if test -z "$onl"
+	then
+		# suspend when we close the lid
+		systemctl --user stop inhibit-lid-sleep-on-battery.service
 		echo -e "${charge}"
 	else
+		# On mains! no need to suspend
+		systemctl --user start inhibit-lid-sleep-on-battery.service
 		echo -e "${charge}"
 	fi
 }
