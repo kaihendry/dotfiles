@@ -17,3 +17,5 @@
 	required = true
 [branch]
 	autosetuprebase = always
+[url "https://e973529a8f5e87c0d8520a50f479947199db9a2d:x-oauth-basic@github.com/"]
+	insteadOf = https://github.com/

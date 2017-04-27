@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ "$EUID" -ne 0 ]
+then
+	echo "Please run $0 as root"
+	exit
+fi
+
+bd=/sys/devices/pci0000:00/0000:00:02.0/drm/card1/card1-eDP-1/intel_backlight/brightness
+
+bdv=$(cat $bd)
+
+case $1 in
+	up)
+		echo $(( bdv + 100 )) > $bd
+		cat $bd
+	;;
+	down)
+		echo $(( bdv - 100 )) > $bd
+		cat $bd
+	;;
+	*)
+	echo "$bdv"
+esac

@@ -23,7 +23,7 @@ alias ll='ls -alh --group-directories-first --color=always'
 alias ac='/usr/bin/vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
-alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
+alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
 
 if test -d /home/hendry/webc/webc
 then

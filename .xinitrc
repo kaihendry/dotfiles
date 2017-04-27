@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 exec >/tmp/startx$$.log 2>&1
 
 # Prefer /usr/local/bin
@@ -51,20 +54,16 @@ google-chrome-unstable --force-device-scale-factor=1.5 &
 
 ~/bin/dwm_status &
 
-
-xlock() {
-	( slock && xset dpms 0 0 60 ) &
-	xset dpms 0 0 2
-	xset dpms force off
-}
-
+# https://bbs.archlinux.org/viewtopic.php?pid=1695649#p1695649
+# DISABLED default of sleeping on lid close ~/.config/systemd/user/inhibit-lid-sleep-on-battery.service
 while true
 do
 	if [[ $(< /proc/acpi/button/lid/LID/state) = *closed ]]
 	then
+		logger Lid closed
 		case $(< /sys/class/power_supply/AC/online) in
-			1)  ( [[ ! "$(pidof slock)" ]] && xlock ) ;;
-			0)	systemctl suspend ;;
+			1)  ( [[ ! "$(pidof slock)" ]] && slock ) ;;
+			0) logger "suspending..."; systemctl suspend ;;
 		esac
 	fi
 	sleep 2
