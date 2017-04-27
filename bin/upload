@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Usage info
 show_help() {
@@ -16,7 +16,7 @@ EOF
 
 # Initialize our own variables:
 verbose=0
-date=$(date --rfc-3339=date)
+date=$(date +%Y-%m-%d)
 
 OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
 while getopts "hvd:" opt; do
@@ -65,10 +65,15 @@ do
 
 	cp -v "$src" "$tmp/$date/$dst"
 
-	if s3cmd --add-header "Cache-Control: max-age=31536000" --add-header="X-Content-Type-Options:nosniff" --storage-class=STANDARD_IA --default-mime-type=text/plain -P put "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
+	if aws --profile mine s3 cp --storage-class STANDARD_IA --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "https://s.natalian.org/$date/$dst"
-		echo "https://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+		if hash pbcopy 2>/dev/null
+		then
+			echo "https://s.natalian.org/$date/$dst" | pbcopy
+		else
+			echo "https://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+		fi
 	fi
 
 done

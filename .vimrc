@@ -29,9 +29,6 @@ set undodir=/tmp
 set wildmode=longest,list,full
 set wildmenu
 
-" execute pathogen#infect()
-" call pathogen#helptags()
-
 syntax on
 filetype plugin indent on
 set nofoldenable

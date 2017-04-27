@@ -54,16 +54,28 @@ bitrate () {
 	iw wlan0 link | grep bitrate
 }
 
+vtime () {
+	ffprobe -v quiet -print_format json -show_format "$1" | jq -r .format.tags.creation_time
+}
+
 export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+if test -d "$HOME/node_modules/.bin"
+then
+	PATH="$HOME/node_modules/.bin:$PATH"
+fi
 
 if test -d "/usr/local/bin"
 then
 	PATH="/usr/local/bin:$PATH"
 fi
+
+cors() {
+curl -v -o /dev/null $1 2>&1 | grep Allow
+}
 
 if test -d "$HOME/.local/bin"
 then
