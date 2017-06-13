@@ -67,3 +67,5 @@ let g:syntastic_always_populate_loc_list = 1  " default is 0
 
 " Using tabless https://www.npmjs.com/package/standard :(
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
+
+set autowrite
