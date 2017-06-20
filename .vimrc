@@ -69,3 +69,6 @@ let g:syntastic_always_populate_loc_list = 1  " default is 0
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 set autowrite
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+
