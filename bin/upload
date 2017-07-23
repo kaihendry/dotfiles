@@ -43,6 +43,14 @@ trap 'rm -rf "$tmp"' EXIT
 
 for src in "$@"
 do
+
+	if test -d "$src"
+	then
+		tar="$(basename $src).tar"
+		tar cvf "$tar" "$src"
+		src="$tar"
+	fi
+
 	if ! test -f "$src"
 	then
 		echo Missing filename "$src" >&2
