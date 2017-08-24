@@ -115,7 +115,7 @@ up() {
 	git push
 }
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # tmux capturep -pJ -E- -S-
 
