@@ -69,7 +69,8 @@ do
 	sleep 2
 done &
 
+xautolock -time 10 -locker slock &
+
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
-
 exec dwm 2> ~/tmp/dwm.log
