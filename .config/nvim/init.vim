@@ -42,8 +42,6 @@ Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'jodosha/vim-godebug'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1

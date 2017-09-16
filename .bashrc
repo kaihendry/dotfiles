@@ -120,5 +120,3 @@ test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
