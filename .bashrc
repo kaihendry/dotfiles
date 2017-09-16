@@ -107,7 +107,7 @@ webcup() {
 	git push
 }
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 
