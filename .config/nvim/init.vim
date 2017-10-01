@@ -18,6 +18,7 @@ set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
 set noswapfile
 
 set background=dark
@@ -25,34 +26,37 @@ set background=dark
 set undofile
 set undodir=/tmp
 
-" http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
-set wildmode=longest,list,full
-set wildmenu
-
 syntax on
 filetype plugin indent on
 set nofoldenable
 
-let g:go_fmt_command = "goimports"
-
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-au FileType go nmap <Leader>i <Plug>(go-info)
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-cmap w!! w !sudo tee > /dev/null %
-
 " Using tabless https://www.npmjs.com/package/standard
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
-set autowrite
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'w0rp/ale'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'jodosha/vim-godebug'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
+let g:deoplete#enable_at_startup = 1
+let g:go_fmt_command = "goimports"
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" tern
+if exists('g:plugs["tern_for_vim"]')
+  let g:tern_show_argument_hints = 'on_hold'
+  let g:tern_show_signature_in_pum = 1
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+endif
+
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
+

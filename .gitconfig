@@ -2,9 +2,6 @@
 	name = Kai Hendry
 	email = hendry@webconverger.com
 	signingkey = 64399BE2
-[alias]
-	st = status
-	ci = commit -a
 [color]
 	ui = auto
 [core]
@@ -17,3 +14,5 @@
 	required = true
 [branch]
 	autosetuprebase = always
+[diff]
+	tool = vimdiff

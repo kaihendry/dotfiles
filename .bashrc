@@ -23,7 +23,7 @@ alias ll='ls -alh --group-directories-first --color=always'
 alias ac='/usr/bin/vim ~/private/accounts'
 alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
-alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
+alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
 
 if test -d /home/hendry/webc/webc
 then
@@ -37,7 +37,7 @@ PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
 
-up() {
+webcup() {
 	cd ~/debian/jessie-chroot/root/Debian-Live-config/webconverger/chroot
 	git push
 }
@@ -62,11 +62,6 @@ export GIT_AUTHOR_NAME="Kai Hendry"
 export GIT_COMMITTER_NAME="Kai Hendry"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-if test -d "$HOME/node_modules/.bin"
-then
-	PATH="$HOME/node_modules/.bin:$PATH"
-fi
 
 if test -d "/usr/local/bin"
 then
@@ -101,23 +96,18 @@ fi
 
 test -f ~/.profile && source ~/.profile
 
-#PATH="$HOME/.yarn-cache/.global/node_modules/.bin/:$HOME/.config/yarn/global/node_modules/.bin/:$HOME/.node_modules/bin/:$PATH"
-#export npm_config_prefix=~/.node_modules
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+test -d "$HOME/.node_modules/bin" && export PATH="$HOME/.node_modules/bin:$PATH"
 
 alias g="cd /home/hendry/go/src/github.com/kaihendry"
 
 export WEBC_CHECKOUT=/home/hendry/webc/webc
 
-up() {
+webcup() {
 	cd $WEBC_CHECKOUT
 	git push
 }
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-
-# tmux capturep -pJ -E- -S-
+test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 

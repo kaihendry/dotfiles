@@ -76,7 +76,7 @@ do
 	if aws --profile mine s3 cp --storage-class STANDARD_IA --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "https://s.natalian.org/$date/$dst"
-		if hash pbcopy
+		if hash pbcopy 2>/dev/null
 		then
 			echo "https://s.natalian.org/$date/$dst" | pbcopy
 		else
