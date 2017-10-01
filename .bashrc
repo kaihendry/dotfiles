@@ -123,3 +123,5 @@ test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 
 # added by travis gem
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh
+
+export PATH="/usr/local/sbin:$PATH"
