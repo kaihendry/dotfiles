@@ -43,6 +43,14 @@ trap 'rm -rf "$tmp"' EXIT
 
 for src in "$@"
 do
+
+	if test -d "$src"
+	then
+		tar="$(basename $src).tar"
+		tar cvf "$tar" "$src"
+		src="$tar"
+	fi
+
 	if ! test -f "$src"
 	then
 		echo Missing filename "$src" >&2
@@ -65,7 +73,7 @@ do
 
 	cp -v "$src" "$tmp/$date/$dst"
 
-	if aws s3 cp --storage-class STANDARD_IA --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
+	if aws --profile mine s3 cp --storage-class STANDARD_IA --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "https://s.natalian.org/$date/$dst"
 		if hash pbcopy
