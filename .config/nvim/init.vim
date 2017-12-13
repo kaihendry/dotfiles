@@ -39,9 +39,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'jodosha/vim-godebug'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'jodosha/vim-godebug'
+Plug 'posva/vim-vue'
+"Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
@@ -55,8 +55,20 @@ if exists('g:plugs["tern_for_vim"]')
   autocmd FileType javascript setlocal omnifunc=tern#Complete
 endif
 
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
 
+
+autocmd Filetype vue setlocal sw=2 sts=2 expandtab
+
+set wildmode=longest,list,full
+set wildmenu
+
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+let g:ale_fixers = {'vue': ['eslint']}
+" nnoremap <leader>f :ALEFix<CR>
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1

@@ -1,8 +1,8 @@
 test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
 
-export EDITOR=vim
-export AWS_REGION=ap-southeast-1
+export EDITOR=nvim
+alias vim=nvim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -20,7 +20,7 @@ fi
 umask 002
 
 alias ll='ls -alh --group-directories-first --color=always'
-alias ac='/usr/bin/vim ~/private/accounts'
+alias ac="/usr/bin/vim ~/private/accounts"
 alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
