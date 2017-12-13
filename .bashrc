@@ -114,9 +114,4 @@ test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 # added by travis gem
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/hendry/.node_modules/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+export PATH="/usr/local/sbin:$PATH"
