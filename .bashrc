@@ -19,6 +19,7 @@ fi
 
 umask 002
 
+alias nt='st -e bash -c "cd $PWD; exec bash" &'
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
 alias suspend='sudo systemctl suspend'

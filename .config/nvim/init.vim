@@ -35,30 +35,23 @@ autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
+Plug 'srstevenson/vim-picker'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-commentary'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 "Plug 'jodosha/vim-godebug'
 Plug 'posva/vim-vue'
-"Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
 let g:go_fmt_command = "goimports"
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
-" tern
-if exists('g:plugs["tern_for_vim"]')
-  let g:tern_show_argument_hints = 'on_hold'
-  let g:tern_show_signature_in_pum = 1
-  autocmd FileType javascript setlocal omnifunc=tern#Complete
-endif
-
-let g:go_metalinter_autosave = 1
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
-
 
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
@@ -69,6 +62,20 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 let g:ale_fixers = {'vue': ['eslint']}
-" nnoremap <leader>f :ALEFix<CR>
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
+
+nmap <unique> <leader>s <Plug>PickerSplit
+
+
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#test#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
+
+autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>

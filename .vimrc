@@ -50,6 +50,7 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Using tabless https://www.npmjs.com/package/standard
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
+autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
 set autowrite
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']

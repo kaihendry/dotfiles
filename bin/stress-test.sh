@@ -4,9 +4,7 @@
 
 CONCURRENCY=4
 REQUESTS=100
-#ADDRESS="http://localhost:9000/"
-#ADDRESS="http://count.dabase.com:9000/"
-ADDRESS="https://count.dabase.com/"
+ADDRESS="https://count.webconverger.com/"
 
 show_help() {
 cat << EOF

@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/code --high-dpi-support=true --force-device-scale-factor=1.5 "$@"
+/usr/bin/code-oss --high-dpi-support=true --force-device-scale-factor=1.5 "$@"
