@@ -40,9 +40,7 @@ Plug 'w0rp/ale'
 Plug 'srstevenson/vim-picker'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-commentary'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-"Plug 'jodosha/vim-godebug'
+Plug 'ervandew/supertab'
 Plug 'posva/vim-vue'
 call plug#end()
 
@@ -79,3 +77,6 @@ function! s:build_go_files()
 endfunction
 
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+
+" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
