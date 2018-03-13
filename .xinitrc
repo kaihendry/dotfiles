@@ -44,8 +44,7 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 setxkbmap -model thinkpad -layout us -option caps:escape
 xset m 5 1
 
-google-chrome-unstable --force-device-scale-factor=1.5 &
-#firefox &
+x-www-browser &
 
 #xsetroot -solid steelblue
 

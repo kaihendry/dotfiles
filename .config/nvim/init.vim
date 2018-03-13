@@ -58,13 +58,12 @@ set wildmenu
 
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'vue': ['eslint'],
 \}
-let g:ale_fixers = {'vue': ['eslint']}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 
 nmap <unique> <leader>s <Plug>PickerSplit
-
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()

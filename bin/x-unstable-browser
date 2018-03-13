@@ -1,0 +1,3 @@
+#!/bin/bash
+/usr/bin/google-chrome-unstable --force-device-scale-factor=1.5 "$@"
+#/usr/bin/chromium --force-device-scale-factor=1.5 "$@"
