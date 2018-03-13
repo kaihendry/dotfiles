@@ -80,7 +80,7 @@ do
 		then
 			echo "https://s.natalian.org/$date/$dst" | pbcopy
 		else
-			echo "https://s.natalian.org/$date/$dst" | xclip -selection "clipboard" -i
+			echo "https://s.natalian.org/$date/$dst" | xsel -b
 		fi
 	fi
 

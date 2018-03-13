@@ -52,8 +52,8 @@ print_wifi() {
 
 	if hash iw
 	then
-		wifi=$(iw wlp4s0 link | grep SSID | sed 's,.*SSID: ,,')
-		connectedto=$(iw wlp4s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
+		wifi=$(iw wlp61s0 link | grep SSID | sed 's,.*SSID: ,,')
+		connectedto=$(iw wlp61s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
 	fi
 
 	echo -e "$wifi $connectedto $ip"
@@ -76,11 +76,11 @@ print_bat(){
 	if test -z "$onl"
 	then
 		# suspend when we close the lid
-		systemctl --user stop inhibit-lid-sleep-on-battery.service
+		#systemctl --user stop inhibit-lid-sleep-on-battery.service
 		echo -e "${charge}"
 	else
 		# On mains! no need to suspend
-		systemctl --user start inhibit-lid-sleep-on-battery.service
+		#systemctl --user start inhibit-lid-sleep-on-battery.service
 		echo -e "${charge}"
 	fi
 }
