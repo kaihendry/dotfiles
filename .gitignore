@@ -3,8 +3,4 @@ tmp
 *.tmp
 bash_history
 spuul
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+.ssh
