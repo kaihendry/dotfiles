@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
 exec >/tmp/startx$$.log 2>&1
@@ -68,7 +68,8 @@ do
 	sleep 2
 done &
 
-xautolock -time 10 -locker slock &
+#xautolock -time 10 -locker slock &
+xss-lock -- /usr/bin/slock &
 
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&

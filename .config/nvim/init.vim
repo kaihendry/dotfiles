@@ -34,20 +34,40 @@ set nofoldenable
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 call plug#begin('~/.vim/plugged')
+" Golang stuffs
 Plug 'fatih/vim-go'
-Plug 'sbdchd/neoformat'
-Plug 'w0rp/ale'
-Plug 'srstevenson/vim-picker'
-"Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
+
+" vim-go crutch to help generate tests for Golang
+Plug 'buoto/gotests-vim'
+
+" So I can hyperlink the github code I am editing to show the line I am
+" working on
+Plug 'tyru/open-browser-github.vim'
+Plug 'tyru/open-browser.vim'
+
+" So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
-Plug 'ervandew/supertab'
+
+" Could use
+" https://www.reddit.com/r/neovim/comments/8sigvd/how_do_i_open_a_js_file_under_my_cursor/e102d2a/
+" instead
+Plug 'tpope/vim-apathy'
+
+" For mangling JSON
+Plug 'tpope/vim-jdaddy'
+
+" Only used when I edit .vue files
 Plug 'posva/vim-vue'
+
+" So Neovim can remember where it left off
+Plug 'farmergreg/vim-lastplace'
+
+" So I can move between buffers easier... maybe I should use tabs or ctrl-^ instead?
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
-let g:deoplete#enable_at_startup = 1
 let g:go_fmt_command = "goimports"
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
 
@@ -56,26 +76,11 @@ autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 set wildmode=longest,list,full
 set wildmenu
 
-let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'vue': ['eslint'],
-\}
-let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
+" https://en.parceljs.org/hmr.html#safe-write
+set backupcopy=yes
 
-nmap <unique> <leader>s <Plug>PickerSplit
+set clipboard+=unnamedplus
 
-" run :GoBuild or :GoTestCompile based on the go file
-function! s:build_go_files()
-  let l:file = expand('%')
-  if l:file =~# '^\f\+_test\.go$'
-    call go#test#Test(0, 1)
-  elseif l:file =~# '^\f\+\.go$'
-    call go#cmd#Build(0)
-  endif
-endfunction
-
-autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
-
-" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
+" https://github.com/ctrlpvim/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPBuffer'

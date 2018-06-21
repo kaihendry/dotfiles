@@ -50,13 +50,17 @@ print_volume() {
 print_wifi() {
 	ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
 
-	if hash iw
-	then
-		wifi=$(iw wlp61s0 link | grep SSID | sed 's,.*SSID: ,,')
-		connectedto=$(iw wlp61s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
-	fi
+	if=wlp61s0
+		while IFS=$': \t' read -r label value
+		do
+			case $label in SSID) SSID=$value
+				;;
+			signal) SIGNAL=$value
+				;;
+		esac
+	done < <(iw "$if" link)
 
-	echo -e "$wifi $connectedto $ip"
+	echo -e "$SSID $SIGNAL $ip"
 }
 
 print_mem(){
@@ -89,6 +93,13 @@ print_date(){
 	date "+%a %m-%d %T%:::z"
 }
 
+show_record(){
+	test -f /tmp/r2d2 || return
+	rp=$(cat /tmp/r2d2 | awk '{print $2}')
+	size=$(du -h $rp | awk '{print $1}')
+	echo " $size $(basename $rp)"
+}
+
 while true
 do
 
@@ -99,7 +110,7 @@ do
 	vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 	vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-	xsetroot -name "$(print_mem) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat) $(test -f /tmp/r2d2 && cat /tmp/r2d2) $(print_date)"
+	xsetroot -name "$(print_mem) $vel_recv $vel_trans $(print_temp) $(print_wifi) $(print_bat)$(show_record) $(print_date)"
 
 	# Update old values to perform new calculations
 	old_received_bytes=$received_bytes
