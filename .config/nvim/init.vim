@@ -7,7 +7,9 @@ set incsearch
 set hlsearch
 set bs=2
 set nobackup
-let html_use_css = 1
+
+" https://en.parceljs.org/hmr.html#safe-write
+set backupcopy=yes
 
 set encoding=utf-8
 
@@ -34,6 +36,10 @@ set nofoldenable
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 call plug#begin('~/.vim/plugged')
+
+" JS stuff
+Plug 'w0rp/ale'
+
 " Golang stuffs
 Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
@@ -49,22 +55,17 @@ Plug 'tyru/open-browser.vim'
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
 
-" Could use
-" https://www.reddit.com/r/neovim/comments/8sigvd/how_do_i_open_a_js_file_under_my_cursor/e102d2a/
-" instead
+" So when I gf files, it actually works
 Plug 'tpope/vim-apathy'
-
-" For mangling JSON
-Plug 'tpope/vim-jdaddy'
 
 " Only used when I edit .vue files
 Plug 'posva/vim-vue'
 
-" So Neovim can remember where it left off
-Plug 'farmergreg/vim-lastplace'
-
-" So I can move between buffers easier... maybe I should use tabs or ctrl-^ instead?
+" So I can move between buffers/files easier...
 Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'ervandew/supertab'
+
 call plug#end()
 
 let g:go_fmt_command = "goimports"
@@ -76,11 +77,23 @@ autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 set wildmode=longest,list,full
 set wildmenu
 
-" https://en.parceljs.org/hmr.html#safe-write
-set backupcopy=yes
-
 set clipboard+=unnamedplus
 
 " https://github.com/ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPBuffer'
+" let g:ctrlp_cmd = 'CtrlPMixed'
+
+" restore cursor position when reopening a file
+autocmd BufReadPost * call setpos(".", getpos("'\""))
+
+" standard-prettier
+let g:ale_fixers = {'javascript': ['standard']}
+let g:ale_linters = {'javascript': ['standard']}
+let g:ale_sign_column_alwayus = 1
+let g:ale_fix_on_save = 1
+
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+endif

@@ -46,11 +46,6 @@ xset m 5 1
 
 x-www-browser &
 
-#xsetroot -solid steelblue
-
-#xcompmgr -c &
-# xbattmon &
-
 ~/bin/dwm_status &
 
 # https://bbs.archlinux.org/viewtopic.php?pid=1695649#p1695649
