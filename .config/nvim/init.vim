@@ -59,7 +59,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-apathy'
 
 " Only used when I edit .vue files
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
 
 " So I can move between buffers/files easier...
 Plug 'ctrlpvim/ctrlp.vim'
@@ -87,7 +87,7 @@ let g:ctrlp_map = '<c-p>'
 autocmd BufReadPost * call setpos(".", getpos("'\""))
 
 " standard-prettier
-let g:ale_fixers = {'javascript': ['standard']}
+let g:ale_fixers = {'javascript': ['standard'], 'json': ['jq']}
 let g:ale_linters = {'javascript': ['standard']}
 let g:ale_sign_column_alwayus = 1
 let g:ale_fix_on_save = 1
