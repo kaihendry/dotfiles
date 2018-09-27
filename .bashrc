@@ -69,6 +69,12 @@ then
 	PATH="/usr/local/bin:$PATH"
 fi
 
+
+if test -d "/home/hendry/.local/bin"
+then
+	PATH="/home/hendry/.local/bin:$PATH"
+fi
+
 cors() {
 curl -v -o /dev/null $1 2>&1 | grep Allow
 }

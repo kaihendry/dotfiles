@@ -66,6 +66,15 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'ervandew/supertab'
 
+" Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+"
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
+Plug 'Shougo/deoplete.nvim'
+" For Denite features
+Plug 'Shougo/denite.nvim'
+
 call plug#end()
 
 let g:go_fmt_command = "goimports"
@@ -88,7 +97,7 @@ autocmd BufReadPost * call setpos(".", getpos("'\""))
 
 " standard-prettier
 let g:ale_fixers = {'javascript': ['standard'], 'json': ['jq']}
-let g:ale_linters = {'javascript': ['standard']}
+let g:ale_linters = {'javascript': ['standard'],'CloudFormation' : ['cfn-lint']}
 let g:ale_sign_column_alwayus = 1
 let g:ale_fix_on_save = 1
 
@@ -97,3 +106,5 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 endif
+
+let g:deoplete#enable_at_startup = 1
