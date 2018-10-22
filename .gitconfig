@@ -17,3 +17,5 @@
 	autosetuprebase = always
 [diff]
 	tool = vimdiff
+[fetch]
+	prune = true

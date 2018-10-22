@@ -122,3 +122,7 @@ test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh
 
 export PATH="/usr/local/sbin:$PATH"
+
+r() {
+	cd /home/hendry/recordmydesktop2.0/$(date +%Y-%m-%d)
+}

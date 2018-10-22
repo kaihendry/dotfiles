@@ -41,8 +41,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 
 " Golang stuffs
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
+Plug 'zchee/deoplete-go', {'build': {'unix': 'make'}}
 
 " vim-go crutch to help generate tests for Golang
 Plug 'buoto/gotests-vim'
@@ -60,20 +61,18 @@ Plug 'tpope/vim-apathy'
 
 " Only used when I edit .vue files
 " Plug 'posva/vim-vue'
+"
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" For Denite features
+Plug 'Shougo/denite.nvim'
 
 " So I can move between buffers/files easier...
 Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'ervandew/supertab'
-
-" Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-"
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-" For async completion
-Plug 'Shougo/deoplete.nvim'
-" For Denite features
-Plug 'Shougo/denite.nvim'
 
 call plug#end()
 
@@ -101,10 +100,15 @@ let g:ale_linters = {'javascript': ['standard'],'CloudFormation' : ['cfn-lint']}
 let g:ale_sign_column_alwayus = 1
 let g:ale_fix_on_save = 1
 
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 endif
 
+nnoremap <silent><Leader>r :vsplit term://go run %<CR>
+autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
+
+let g:nvim_typescript#javascript_support = 1
 let g:deoplete#enable_at_startup = 1
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
