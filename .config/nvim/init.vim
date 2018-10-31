@@ -43,7 +43,6 @@ Plug 'w0rp/ale'
 " Golang stuffs
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'SirVer/ultisnips'
-Plug 'zchee/deoplete-go', {'build': {'unix': 'make'}}
 
 " vim-go crutch to help generate tests for Golang
 Plug 'buoto/gotests-vim'
@@ -64,10 +63,6 @@ Plug 'tpope/vim-apathy'
 "
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-" For async completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" For Denite features
-Plug 'Shougo/denite.nvim'
 
 " So I can move between buffers/files easier...
 Plug 'ctrlpvim/ctrlp.vim'
@@ -79,6 +74,10 @@ call plug#end()
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
+let g:go_metalinter_enabled = ['vet', 'golint']
+
+nmap <C-g> :GoDecls<cr>
+imap <C-g> <esc>:<C-u>GoDecls<cr>
 
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
@@ -100,7 +99,10 @@ let g:ale_linters = {'javascript': ['standard'],'CloudFormation' : ['cfn-lint']}
 let g:ale_sign_column_alwayus = 1
 let g:ale_fix_on_save = 1
 
-" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'

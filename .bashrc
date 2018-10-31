@@ -126,3 +126,7 @@ export PATH="/usr/local/sbin:$PATH"
 r() {
 	cd /home/hendry/recordmydesktop2.0/$(date +%Y-%m-%d)
 }
+
+ssm() {
+	aws --profile ${1:-uneet-dev} ssm describe-parameters
+}
