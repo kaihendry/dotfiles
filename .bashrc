@@ -38,11 +38,6 @@ PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
 
-webcup() {
-	cd ~/debian/jessie-chroot/root/Debian-Live-config/webconverger/chroot
-	git push
-}
-
 h() {
 	grep -a $@ ~/bash_history/*
 }
