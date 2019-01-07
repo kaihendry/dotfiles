@@ -61,19 +61,22 @@ do
 
 	if test "${src##*.}" == "png"
 	then
-		pngquant --ext .png -f "$src"
+		hash pngquant && pngquant --ext .png -f "$src"
 	fi
 
 	if test "${src##*.}" == "jpg"
 	then
-		hash jpegoptim && jpegoptim "$src"
+		jpegtmp=$(mktemp --suffix=.jpg)
+		hash cjpeg && cjpeg -quality 80 "$src" > $jpegtmp
+		echo "Squashing jpeg $(du -h "$src" "$jpegtmp")"
+		mv $jpegtmp "$src"
 	fi
 
 	dst=$(basename "$src")
 
 	cp -v "$src" "$tmp/$date/$dst"
 
-	if aws --profile mine s3 cp --storage-class STANDARD_IA --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
+	if aws --profile mine s3 cp --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "https://s.natalian.org/$date/$dst"
 		if hash pbcopy 2>/dev/null
