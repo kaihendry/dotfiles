@@ -2,6 +2,7 @@
 
 if test "$2"
 then
+	echo aws --profile $1 ssm get-parameters --names $2 --with-decryption --query Parameters[0].Value --output text
 	aws --profile $1 ssm get-parameters --names $2 --with-decryption --query Parameters[0].Value --output text
 else
 	aws --profile ${1:-uneet-dev} ssm describe-parameters

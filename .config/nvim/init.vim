@@ -72,8 +72,9 @@ call plug#end()
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
 " let g:go_auto_sameids = 1
-let g:go_gocode_propose_source = 0
+" let g:go_gocode_propose_source = 0
 let g:go_metalinter_enabled = ['vet', 'golint']
+" let g:go_info_mode='guru'
 
 nmap <C-g> :GoDecls<cr>
 imap <C-g> <esc>:<C-u>GoDecls<cr>
@@ -83,14 +84,13 @@ autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 set wildmode=longest,list,full
 set wildmenu
 
-set clipboard+=unnamedplus
-
 " https://github.com/ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlPMixed'
 
-" restore cursor position when reopening a file
-autocmd BufReadPost * call setpos(".", getpos("'\""))
+" restore cursor position when reopening a file, except if it's a git commit
+autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
 
 " standard-prettier
 let g:ale_fixers = {'javascript': ['standard'], 'json': ['jq']}
@@ -112,4 +112,3 @@ autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
 let g:nvim_typescript#javascript_support = 1
 let g:deoplete#enable_at_startup = 1
-" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"

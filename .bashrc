@@ -26,9 +26,18 @@ alias suspend='sudo systemctl suspend'
 alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
 
-if test -d /home/hendry/webc/webc
+export WEBC_CHECKOUT=/home/hendry/webc/webc
+if test -d $WEBC_CHECKOUT
 then
-	alias c="sudo chroot /home/hendry/webc/webc env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash"
+	c() {
+		#sudo mount -t proc proc $WEBC_CHECKOUT/proc/
+		#sudo mount -t sysfs sys $WEBC_CHECKOUT/sys/
+		#sudo mount -o bind /dev $WEBC_CHECKOUT/dev/
+		sudo chroot /home/hendry/webc/webc env -i GIT_AUTHOR_NAME='Kai Hendry' PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash
+		#sudo umount $WEBC_CHECKOUT/proc/
+		#sudo umount $WEBC_CHECKOUT/sys/
+		#sudo umount $WEBC_CHECKOUT/dev/
+	}
 fi
 
 # http://unix.stackexchange.com/a/18443/27433
@@ -102,7 +111,6 @@ test -d "$HOME/.node_modules/bin" && export PATH="$HOME/.node_modules/bin:$PATH"
 
 alias g="cd /home/hendry/go/src/github.com/kaihendry"
 
-export WEBC_CHECKOUT=/home/hendry/webc/webc
 
 webcup() {
 	cd $WEBC_CHECKOUT
