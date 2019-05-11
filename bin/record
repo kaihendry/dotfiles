@@ -1,6 +1,7 @@
 #!/bin/sh
 mp4=$(mktemp --suffix=.mp4 /tmp/record.XXXX)
 
+# used by  https://github.com/kaihendry/dotfiles/blob/master/bin/waystatus
 lockfile=/tmp/record
 
 if test -f $lockfile
@@ -12,6 +13,7 @@ then
 		echo Killed $(cat $lockfile)
 		output=$(awk '{print $2}' $lockfile)
 		logger recorded: $(du -h $output)
+		# https://github.com/kaihendry/recordmydesktop2.0/blob/master/htmlvideo
 		htmlvideo -w $output
 		upload $output
 		rm $lockfile
