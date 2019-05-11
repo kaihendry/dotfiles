@@ -1,5 +1,5 @@
 #!/bin/sh
-mp4=$(mktemp --suffix=.mp4 record.XXXX)
+mp4=$(mktemp --suffix=.mp4 /tmp/record.XXXX)
 
 lockfile=/tmp/record
 
@@ -12,6 +12,7 @@ then
 		echo Killed $(cat $lockfile)
 		output=$(awk '{print $2}' $lockfile)
 		logger recorded: $(du -h $output)
+		htmlvideo -w $output
 		upload $output
 		rm $lockfile
 		exit
