@@ -1,6 +1,7 @@
 test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
 
+
 export EDITOR=nvim
 alias vim=nvim
 
@@ -120,6 +121,7 @@ webcup() {
 test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
+test -d /home/linuxbrew/.linuxbrew/bin && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # added by travis gem
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh
@@ -129,3 +131,5 @@ export PATH="/usr/local/sbin:$PATH"
 r() {
 	cd /home/hendry/recordmydesktop2.0/$(date +%Y-%m-%d)
 }
+
+test -f /etc/profile.d/autojump.bash && source /etc/profile.d/autojump.bash

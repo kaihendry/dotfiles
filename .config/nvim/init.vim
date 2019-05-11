@@ -76,8 +76,8 @@ let g:go_auto_type_info = 1
 let g:go_metalinter_enabled = ['vet', 'golint']
 " let g:go_info_mode='guru'
 
-nmap <C-g> :GoDecls<cr>
-imap <C-g> <esc>:<C-u>GoDecls<cr>
+nmap <C-g> :GoDeclsDir<cr>
+imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
 
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
