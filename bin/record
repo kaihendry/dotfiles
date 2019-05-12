@@ -23,5 +23,5 @@ then
 	fi
 fi
 
-wf-recorder -a -f $mp4 -c h264_vaapi -d /dev/dri/renderD128 &
+wf-recorder -a -f $mp4 -c h264_vaapi -d /dev/dri/renderD128 -o eDP-1 &
 echo "$! $(readlink -f $mp4)" > $lockfile

@@ -15,10 +15,10 @@ test -d /usr/share/fonts/local && xset +fp /usr/share/fonts/local
 xset fp rehash
 xset -b # disable bell
 
-SSH_ENV=$HOME/.ssh/environment
-ssh-agent | grep -v echo > ${SSH_ENV}
-chmod 600 ${SSH_ENV}
-. ${SSH_ENV} > /dev/null
+# SSH_ENV=$HOME/.ssh/environment
+# ssh-agent | grep -v echo > ${SSH_ENV}
+# chmod 600 ${SSH_ENV}
+# . ${SSH_ENV} > /dev/null
 
 
 # https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling#Prevent_screen_from_turning_off
