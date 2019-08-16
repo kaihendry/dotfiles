@@ -35,11 +35,14 @@ autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 call plug#begin('~/.vim/plugged')
 
-" JS stuff
+" CSV
+Plug 'chrisbra/csv.vim'
+
+" JS stuff and JSON formatting
 Plug 'w0rp/ale'
 
 " Golang stuffs
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
 
 " vim-go crutch to help generate tests for Golang
@@ -61,6 +64,8 @@ Plug 'tpope/vim-apathy'
 "
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
+Plug 'hashivim/vim-terraform'
 
 " So I can move between buffers/files easier...
 Plug 'ctrlpvim/ctrlp.vim'
@@ -112,3 +117,4 @@ autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
 let g:nvim_typescript#javascript_support = 1
 let g:deoplete#enable_at_startup = 1
+let g:terraform_fmt_on_save=1
