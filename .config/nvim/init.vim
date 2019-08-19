@@ -62,8 +62,11 @@ Plug 'tpope/vim-apathy'
 " Only used when I edit .vue files
 " Plug 'posva/vim-vue'
 "
+"  # REQUIRED: Add a syntax file. YATS is the best
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/denite.nvim'
 
 Plug 'hashivim/vim-terraform'
 
@@ -116,5 +119,7 @@ nnoremap <silent><Leader>r :vsplit term://go run %<CR>
 autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
 let g:nvim_typescript#javascript_support = 1
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 let g:terraform_fmt_on_save=1
+
+" autocmd FileType typescript,typescript.tsx setl omnifunc=TSOmniFunc
