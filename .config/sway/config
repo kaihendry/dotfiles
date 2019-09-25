@@ -15,7 +15,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term st -e tmux
+set $term kitty -e tmux
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu dmenu_path | dmenu -fn "Terminus (TTF):pixelsize=28" | xargs swaymsg exec
@@ -23,7 +23,6 @@ set $menu dmenu_path | dmenu -fn "Terminus (TTF):pixelsize=28" | xargs swaymsg e
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -49,12 +48,12 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+input * { xkb_options caps:escape }
+
+input 1267:32:Elan_TrackPoint {
+    pointer_accel 0.8
+}
+
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -62,6 +61,8 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 ### Key bindings
 #
 # Basics:
+#
+#
 #
     # start a terminal
     bindsym $mod+Shift+Return exec $term
@@ -140,7 +141,12 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+0 move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
-#
+
+# brightness
+
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
@@ -223,7 +229,7 @@ bar {
 }
 
 exec clipman -d
-bindsym $mod+Insert exec exec clipman -s
+bindsym $mod+Insert exec clipman -s
 
 # xwayland disable
 

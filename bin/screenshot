@@ -5,7 +5,7 @@ then
 scrot "$@" '%s_$wx$h.png' -u -e 'upload $f'
 else
 	shot=$(mktemp --suffix=.png $(date +%+s.XXXX))
-	s=$(slurp)
+	#s=$(slurp)
 	if test "$s"
 	then
 		set -- $s

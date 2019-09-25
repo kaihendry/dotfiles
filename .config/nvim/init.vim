@@ -123,3 +123,7 @@ let g:nvim_typescript#javascript_support = 1
 let g:terraform_fmt_on_save=1
 
 " autocmd FileType typescript,typescript.tsx setl omnifunc=TSOmniFunc
+"
+set clipboard=unnamed
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

@@ -94,6 +94,11 @@ then
 	PATH="$HOME/bin:$PATH"
 fi
 
+if test -d "/home/linuxbrew/.linuxbrew/bin/"
+then
+	PATH="$PATH:/home/linuxbrew/.linuxbrew/bin/"
+fi
+
 if test -d /home/hendry/google-cloud-sdk
 then
 
@@ -121,7 +126,7 @@ webcup() {
 test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
-test -d /home/linuxbrew/.linuxbrew/bin && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+alias sam=/home/linuxbrew/.linuxbrew/bin/sam
 
 # added by travis gem
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh

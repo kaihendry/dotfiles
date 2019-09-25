@@ -6,6 +6,7 @@
 	ui = auto
 [core]
 	whitespace = fix
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
 	default = current
 	followTags = true
@@ -19,3 +20,5 @@
 	tool = vimdiff
 [fetch]
 	prune = true
+[github]
+	user = kaihendry
