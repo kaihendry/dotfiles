@@ -127,3 +127,7 @@ let g:terraform_fmt_on_save=1
 set clipboard=unnamed
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+set mouse=a
+
+autocmd BufReadPost *.jsonnet setl expandtab

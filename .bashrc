@@ -140,3 +140,20 @@ r() {
 test -f /etc/profile.d/autojump.bash && source /etc/profile.d/autojump.bash
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+alias today='date -u +%Y-%m-%d'
+
+millitime() {
+        if test "$1"
+        then
+                # time described by arg
+                echo $(($(date -d"$1" +%s%N)/1000000))
+        else
+                # now
+                echo $(($(date +%s%N)/1000000))
+        fi
+}
+
+todo () {
+	cd /home/hendry/wikis/dabase.branchable.com
+	hugo new --editor vim todo/$(date +%F).md
+}

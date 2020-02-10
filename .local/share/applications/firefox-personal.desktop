@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox
+GenericName=Web Browser
+Exec=/usr/lib/firefox/firefox -P default %u
+Icon=firefox
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;
+StartupNotify=true
+StartupWMClass=firefox
+Categories=Network;WebBrowser;

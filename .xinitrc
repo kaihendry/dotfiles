@@ -20,7 +20,6 @@ xset -b # disable bell
 # chmod 600 ${SSH_ENV}
 # . ${SSH_ENV} > /dev/null
 
-
 # https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling#Prevent_screen_from_turning_off
 #xset -dpms
 xset s off
@@ -68,4 +67,9 @@ xss-lock -- /usr/bin/slock &
 
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
+
+export _JAVA_AWT_WM_NONREPARENTING=1 
+export AWT_TOOLKIT=MToolkit 
+wmname LG3D
+
 exec dwm 2> ~/tmp/dwm.log
