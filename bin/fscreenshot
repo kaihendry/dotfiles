@@ -1,0 +1,10 @@
+#!/bin/bash
+TMP=$(mktemp /tmp/XXXXXXX.png)
+flameshot gui --raw > $TMP
+filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screenshot filename" < /dev/null)
+if test "$filename"
+then
+	output="/tmp/$filename.png"
+	mv -v "$TMP" $output
+	upload "$output"
+fi
