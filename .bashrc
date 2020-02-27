@@ -153,7 +153,4 @@ millitime() {
         fi
 }
 
-todo () {
-	cd /home/hendry/wikis/dabase.branchable.com
-	hugo new --editor vim todo/$(date +%F).md
-}
+alias vimconfig="$EDITOR ~/.config/nvim/init.vim"

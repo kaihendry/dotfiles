@@ -131,3 +131,8 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set mouse=a
 
 autocmd BufReadPost *.jsonnet setl expandtab
+
+iab <expr> dt strftime("# %F %a\n")
+
+" set cursorline
+" set cursorcolumn
