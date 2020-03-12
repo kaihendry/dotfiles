@@ -1,6 +1,7 @@
 [Default Applications]
 text/html=firefox-personal.desktop
 application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 application/postscript=inkscape.desktop;
