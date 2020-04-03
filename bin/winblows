@@ -1,0 +1,3 @@
+#!/bin/sh
+password=$(aws --profile mine ssm get-parameters --names TW_WINDOWS_PASSWORD --with-decryption --query Parameters[0].Value --output text)
+xfreerdp /u:"TWM\kihendry" /p:$password /v:192.168.1.17 /f /sound:sys:alsa
