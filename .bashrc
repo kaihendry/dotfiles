@@ -154,3 +154,5 @@ millitime() {
 }
 
 alias vimconfig="$EDITOR ~/.config/nvim/init.vim"
+
+stty -ixon -ixoff # disregard Ctrl-S \023 and Ctrl+Q \021 so that we can use them scrolling
