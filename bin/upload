@@ -19,7 +19,7 @@ verbose=0
 date=$(date +%Y-%m-%d)
 
 OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
-while getopts "hvd:" opt; do
+while getopts "rhvd:" opt; do
     case "$opt" in
         h)
             show_help
@@ -28,6 +28,9 @@ while getopts "hvd:" opt; do
         v)  verbose=$((verbose+1))
             ;;
         d)  date=$(date -d "$OPTARG" +%Y-%m-%d)
+            ;;
+        r)  date=$date-$(base64 /dev/urandom | tr -d '/+' | head -c 10)
+			# remove /+ since that can choke URLs
             ;;
         '?')
             show_help >&2
