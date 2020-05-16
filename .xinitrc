@@ -68,8 +68,10 @@ xss-lock -- /usr/bin/slock &
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
 
-export _JAVA_AWT_WM_NONREPARENTING=1 
-export AWT_TOOLKIT=MToolkit 
+export _JAVA_AWT_WM_NONREPARENTING=1
+export AWT_TOOLKIT=MToolkit
 wmname LG3D
+
+picom & # try fix tearing
 
 exec dwm 2> ~/tmp/dwm.log
