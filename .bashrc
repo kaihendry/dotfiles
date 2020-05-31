@@ -124,6 +124,9 @@ webcup() {
 }
 
 test -f /usr/bin/ruby && PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+test -d /home/hendry/tmp/flutter/bin && PATH="/home/hendry/tmp/flutter/bin:$PATH"
+export CHROME_EXECUTABLE=/usr/bin/chromium
+export ANDROID_SDK_ROOT=/opt/android-sdk
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
 alias sam=/home/linuxbrew/.linuxbrew/bin/sam

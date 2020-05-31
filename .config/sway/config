@@ -18,7 +18,7 @@ set $right l
 set $term kitty -e tmux
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu dmenu_path | dmenu -fn "Terminus (TTF):pixelsize=28" | xargs swaymsg exec
+set $menu dmenu_path | bemenu -fn "Terminus (TTF):pixelsize=28" | xargs swaymsg exec
 
 ### Output configuration
 #

@@ -24,3 +24,5 @@
 	user = kaihendry
 [url "git@source.golabs.io:"]
 	insteadOf = https://source.golabs.io/
+[credential]
+	helper = store

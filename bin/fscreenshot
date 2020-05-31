@@ -1,6 +1,8 @@
 #!/bin/bash
 TMP=$(mktemp /tmp/XXXXXXX.png)
-flameshot gui --raw > $TMP
+selection=$(hacksaw -s 5)  # add hacksaw arguments inside as you wish
+shotgun -g "$selection" $TMP
+cat $TMP | xclip -t 'image/png' -selection clipboard
 filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screenshot filename" < /dev/null)
 if test "$filename"
 then
