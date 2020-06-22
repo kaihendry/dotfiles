@@ -1,3 +1,4 @@
+# https://s.natalian.org/2020-06-09/1591697378_2560x1440.png
 buckets=$(aws s3api list-buckets --query "Buckets[].Name" | jq -r '.[]')
 for bucket in $buckets
 do

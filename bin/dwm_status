@@ -20,12 +20,12 @@ print_mem(){
 }
 
 print_network(){
-	logfile="${XDG_CACHE_HOME:-$HOME/.cache}/netlog"
+	logfile=/dev/shm/netlog
 	[ -f "$logfile" ] || echo "0 0" > "$logfile"
 	read -r rxprev txprev < "$logfile"
 	rxcurrent="$(($(paste -d '+' /sys/class/net/[ew]*/statistics/rx_bytes)))"
 	txcurrent="$(($(paste -d '+' /sys/class/net/[ew]*/statistics/tx_bytes)))"
-	printf "%dKiB %dKiB\\n" "$(((rxcurrent-rxprev)/1024))" "$(((txcurrent-txprev)/1024))"
+	echo "$(bc <<< "scale=2; ($rxcurrent-$rxprev) / 10^6")" "$(bc <<< "scale=2; ($txcurrent-$txprev) / 10^6")"
 	echo "$rxcurrent $txcurrent" > "$logfile"
 }
 

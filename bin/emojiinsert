@@ -1,0 +1,18 @@
+#!/bin/sh
+# Stolen from https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenuunicode
+
+activewindow=$(xdotool search --classname Navigator)
+
+# Get user selection via dmenu from emoji file.
+chosen=$(cut -d ';' -f1 /usr/local/share/emoji | dmenu -fn "Terminus (TTF):pixelsize=28" -i -l 30 | sed "s/ .*//")
+
+# Exit if none chosen.
+[ -z "$chosen" ] && exit
+
+# character. Otherwise, show a message that the emoji has been copied.
+if [ -n "$1" ]; then
+	xdotool type --window $activewindow "$chosen"
+else
+	echo "$chosen" | tr -d '\n' | xclip -selection clipboard
+	notify-send "'$chosen' copied to clipboard." &
+fi
