@@ -132,7 +132,7 @@ set mouse=a
 
 autocmd BufReadPost *.jsonnet setl expandtab
 
-iab <expr> dt strftime("# %F %a\n")
+" iab <expr> dt strftime("# %F %a\n")
 
 " set cursorline
 " set cursorcolumn
