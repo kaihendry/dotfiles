@@ -51,7 +51,7 @@ print_bat(){
 }
 
 print_date(){
-	date "+%a %m-%d %T%:::z"
+	echo $(date "+%a %m-%d %T%:::z") $(TZ=CET date "+ %H%:::z")
 }
 
 print_record(){

@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *urlcmd[]  = { "clipmenu-url", NULL };
 static const char *clipcmd[]  = { "clipmenu", "-i", "-fn", dmenufont, NULL };
 static const char *cmdbrightnessup[]  = { "sudo", "brightness", "up", NULL };
@@ -69,11 +69,12 @@ static const char *cmdbrightnessdown[]  = { "sudo", "brightness", "down", NULL }
 static const char *cmdsoundup[]  = { "amixer", "-q", "sset", "Master", "5%+", NULL };
 static const char *cmdsounddown[]  = { "amixer", "-q", "sset", "Master", "5%-", NULL };
 static const char *cmdsoundtoggle[]  = { "amixer", "-q", "sset", "Master", "toggle", NULL };
-static const char *screenshot[]  = { "/usr/local/bin/fscreenshot", NULL };
+static const char *screenshot[]  = { "fscreenshot", NULL };
 static const char *cmdlock[]  = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,			XK_grave,	spawn,	SHCMD("emojiinsert") },
 	{ MODKEY,                       XK_Insert, spawn,          {.v = clipcmd } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = urlcmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
