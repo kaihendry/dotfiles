@@ -1,0 +1,63 @@
+#!/bin/bash -e
+
+test "$WAYLAND_DISPLAY" && { exec record; exit; }
+
+lockfile=/tmp/r2d2
+
+if test -f $lockfile
+then
+	pid=$(awk '{print $1}' $lockfile)
+	if kill -0 $pid
+	then
+		kill -INT $pid
+		echo Killed $(cat $lockfile)
+		fn=$(awk '{print $2}' $lockfile)
+		logger x11captured: $(du -h $fn)
+		pkill swcursor
+		pkill xcompmgr
+		rm $lockfile
+		filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screencast filename" < /dev/null)
+		if test "$filename"
+		then
+			ofilename="$(dirname $(readlink -f ${fn}))/${filename}.mp4"
+			mv -v "$fn" "$ofilename"
+			# Rename FFREPORT log file too
+			mv -v "/tmp/$(basename $fn).log" "/tmp/$(basename $ofilename .mp4).log"
+			upload "$ofilename"
+		fi
+		exit
+	else
+		rm $lockfile
+	fi
+fi
+
+output="$HOME/recordmydesktop2.0/$(date +%F)/${1:-$(date +%s)}.mp4"
+mkdir -p $(dirname $output)
+test -f "$output" && exit
+
+for prg in xdpyinfo ffmpeg
+do
+	which $prg || { echo "needs ${prg} installed"; exit 1; }
+done
+
+xcompmgr & # needed by https://github.com/andykitchen/swcursor to give us a big cursor
+test -d /home/hendry/tmp/swcursor/ && cd /home/hendry/tmp/swcursor/ && ./swcursor &
+
+export FFREPORT=file=/tmp/$(basename $output).log
+echo Logging to $FFREPORT
+
+size=$(xdpyinfo | grep dimensions | awk '{print $2;}')
+x=${size%x*}
+y=${size#*x}
+
+# Capture the screen from the first active KMS plane
+# https://trac.ffmpeg.org/wiki/Hardware/VAAPI
+ffmpeg -report \
+	-v warning \
+	-f pulse -i default -c:a aac \
+	-device /dev/dri/card0 -f kmsgrab -thread_queue_size 512 -i - \
+	-vf "hwmap=derive_device=vaapi,scale_vaapi=w=${x}:h=${y}:format=nv12" -c:v h264_vaapi -qp 24 \
+	$output &
+
+echo "$! $(readlink -f $output)" > $lockfile
+echo -e "\033[1;34m$0\033[m Capturing $res to $output kill $(awk '{print $1}' $lockfile) to kill capture or run $0 again"
