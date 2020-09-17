@@ -4,7 +4,7 @@
 activewindow=$(xdotool search --classname Navigator)
 
 # Get user selection via dmenu from emoji file.
-chosen=$(cut -d ';' -f1 /usr/local/share/emoji | dmenu -fn "Terminus (TTF):pixelsize=28" -i -l 30 | sed "s/ .*//")
+chosen=$(cut -d ';' -f1 /usr/local/share/emoji | dmenu -i -l 30 | sed "s/ .*//")
 
 # Exit if none chosen.
 [ -z "$chosen" ] && exit

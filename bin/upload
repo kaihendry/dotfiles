@@ -29,8 +29,7 @@ while getopts "rhvd:" opt; do
             ;;
         d)  date=$(date -d "$OPTARG" +%Y-%m-%d)
             ;;
-        r)  date=$date-$(base64 /dev/urandom | tr -d '/+' | head -c 10)
-			# remove /+ since that can choke URLs
+        r)  date=$date-$(base64 /dev/urandom | tr -d '/+' | head -c 10) # remove /+ since that can choke URLs
             ;;
         '?')
             show_help >&2
@@ -62,18 +61,24 @@ do
 
 	chmod +r "$src"
 
-	if test "${src##*.}" == "png"
-	then
+case $(file "$src") in
+	*JPEG*)
+		if hash cwebp
+		then
+			webptmp=$(mktemp --suffix=.webp)
+			cwebp -q 80 "$src" -o $webptmp
+			echo "Squashing jpeg $(du -h "$src" "$webptmp")"
+			src=${src%.*}.webp
+			mv "$webptmp" "$src"
+		fi
+		;;
+	*PNG*)
 		hash pngquant && pngquant --ext .png -f "$src"
-	fi
-
-	if test "${src##*.}" == "jpg"
-	then
-		jpegtmp=$(mktemp --suffix=.jpg)
-		hash cjpeg && cjpeg -quality 80 "$src" > $jpegtmp
-		echo "Squashing jpeg $(du -h "$src" "$jpegtmp")"
-		mv $jpegtmp "$src"
-	fi
+		;;
+	*)
+		echo Not compressing $src
+		;;
+esac
 
 	dst=$(basename "$src")
 

@@ -1,5 +1,6 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] || return
+mkdir ~/xorg || true
 xlog=~/xorg/$(date +%s).log
 read -p "Start Xorg? " -n 1 -r
 echo    # (optional) move to a new line

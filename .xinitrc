@@ -72,6 +72,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export AWT_TOOLKIT=MToolkit
 wmname LG3D
 
-picom & # try fix tearing
+#picom & # try fix tearing
+
+xrandr --output eDP --set TearFree on
 
 exec dwm 2> ~/tmp/dwm.log

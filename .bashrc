@@ -1,9 +1,8 @@
 test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
 
-
-export EDITOR=nvim
-alias vim=nvim
+export EDITOR=vim
+alias vim=vim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -24,7 +23,6 @@ alias nt='st -e bash -c "cd $PWD; exec bash" &'
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
 alias suspend='sudo systemctl suspend'
-alias s='sudo systemctl'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
 
 export WEBC_CHECKOUT=/home/hendry/webc/webc
@@ -129,7 +127,6 @@ export CHROME_EXECUTABLE=/usr/bin/chromium
 export ANDROID_SDK_ROOT=/opt/android-sdk
 
 test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
-alias sam=/home/linuxbrew/.linuxbrew/bin/sam
 
 # added by travis gem
 [ -f /home/hendry/.travis/travis.sh ] && source /home/hendry/.travis/travis.sh
