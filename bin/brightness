@@ -1,15 +1,15 @@
 #!/bin/bash
-bd=/sys/devices/pci0000:00/0000:00:02.0/drm/card*/card*-eDP-1/intel_backlight/brightness
+bd=/sys/class/backlight/amdgpu_bl0/brightness
 
 bdv=$(cat $bd)
 
 case $1 in
 	up)
-		echo $(( bdv + 100 )) > $bd
+		echo $(( bdv + 20 )) > $bd
 		cat $bd
 	;;
 	down)
-		echo $(( bdv - 100 )) > $bd
+		echo $(( bdv - 20 )) > $bd
 		cat $bd
 	;;
 	*)
