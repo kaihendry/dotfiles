@@ -76,4 +76,6 @@ wmname LG3D
 
 xrandr --output eDP --set TearFree on
 
+export CM_DIR=/home/hendry/clip_history/
+
 exec dwm 2> ~/tmp/dwm.log

@@ -66,7 +66,7 @@ case $(file "$src") in
 		if hash cwebp
 		then
 			webptmp=$(mktemp --suffix=.webp)
-			cwebp -q 80 "$src" -o $webptmp
+			cwebp "$src" -o $webptmp
 			echo "Squashing jpeg $(du -h "$src" "$webptmp")"
 			src=${src%.*}.webp
 			mv "$webptmp" "$src"

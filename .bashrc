@@ -1,5 +1,6 @@
 test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
+test -d ~/clip_history/ || mkdir ~/clip_history/
 
 export EDITOR=vim
 alias vim=vim
