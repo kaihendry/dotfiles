@@ -1,0 +1,6 @@
+font:
+  normal:
+    family: "Terminus (TTF)"
+
+key_bindings:
+  - { key: F,        mods: Control,           action: SearchForward    }
