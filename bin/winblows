@@ -1,6 +1,6 @@
 #!/bin/sh
-IP=127.0.0.1
-#IP=192.168.1.16
+#IP=127.0.0.1
+IP=192.168.1.16
 #IP=10.150.90.3
 password=$(aws --profile mine ssm get-parameters --names TW_WINDOWS_PASSWORD:1 --with-decryption --query Parameters[0].Value --output text)
 xfreerdp /u:"TWM\kihendry" /p:$password /v:$IP /f /sound:sys:pulse /network:auto /fonts

@@ -68,6 +68,8 @@ xss-lock -- /usr/bin/slock &
 # https://bbs.archlinux.org/viewtopic.php?id=66453
 xmodmap ~/.Xmodmap &&
 
+alias vim="TERM=xterm-256color vim"
+
 export _JAVA_AWT_WM_NONREPARENTING=1
 export AWT_TOOLKIT=MToolkit
 wmname LG3D
