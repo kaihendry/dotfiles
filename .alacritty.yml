@@ -3,7 +3,11 @@ font:
     family: "Terminus (TTF)"
 
 key_bindings:
-  - { key: F,        mods: Control,           action: SearchForward    }
+  - { key: F,   mods: Control,           action: SearchForward    }
+  - { key: V,   mods: Control,           action: PasteSelection   }
+
+selection:
+  save_to_clipboard: true
 
 # https://github.com/alacritty/alacritty/wiki/Color-schemes#xterm
 colors:
@@ -32,3 +36,5 @@ colors:
      magenta: '#ff00ff'
      cyan:    '#00ffff'
      white:   '#ffffff'
+
+
