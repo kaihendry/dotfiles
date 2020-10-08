@@ -1,5 +1,9 @@
+clear Mod1
+clear Control
 keycode 108 = Home
 keycode 105 = End
+add Control = Control_L
+add Mod1 = Alt_L
 pointer = 1 2 3 4 5 6 7 0 0
 
 keycode 64 = Alt_L
