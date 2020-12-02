@@ -55,16 +55,20 @@ Plug 'tyru/open-browser.vim'
 
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
+" Readline bindings
+Plug 'tpope/vim-rsi'
 
 " So when I gf files, it actually works
 Plug 'tpope/vim-apathy'
+
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Only used when I edit .vue files
 " Plug 'posva/vim-vue'
 "
 "  # REQUIRED: Add a syntax file. YATS is the best
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'Shougo/denite.nvim'
 
@@ -111,10 +115,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-endif
-
 nnoremap <silent><Leader>r :vsplit term://go run %<CR>
 autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
@@ -128,11 +128,11 @@ let g:terraform_fmt_on_save=1
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-set mouse=a
-
 autocmd BufReadPost *.jsonnet setl expandtab
 
 " iab <expr> dt strftime("# %F %a\n")
 
 " set cursorline
 " set cursorcolumn
+"
+let g:firenvim_config = {'globalSettings': {},'localSettings': {'.*': {'takeover': 'never'},},}

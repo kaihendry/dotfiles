@@ -2,7 +2,7 @@
 Version=1.0
 Name=Firefox
 GenericName=Web Browser
-Exec=/usr/lib/firefox/firefox -P default %u
+Exec=/usr/lib/firefox/firefox -P hendry %u
 Icon=firefox
 Terminal=false
 X-MultipleArgs=false
