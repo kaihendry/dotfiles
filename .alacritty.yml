@@ -3,6 +3,7 @@ font:
     family: "Terminus (TTF)"
 
 key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
   - { key: F,   mods: Control,           action: SearchForward    }
   - { key: V,   mods: Control,           action: Paste }
 

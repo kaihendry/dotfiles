@@ -158,9 +158,10 @@ alias vimconfig="$EDITOR ~/.config/nvim/init.vim"
 
 stty -ixon -ixoff # disregard Ctrl-S \023 and Ctrl+Q \021 so that we can use them scrolling
 
+
 set -o vi
-bind -m vi-command ".":insert-last-argument
-bind -m vi-insert "\C-l.":clear-screen
-bind -m vi-insert "\C-a.":beginning-of-line
-bind -m vi-insert "\C-e.":end-of-line
-bind -m vi-insert "\C-w.":backward-kill-word
+bind -m vi-insert '\c-l':clear-screen
+bind -m vi-insert '\c-e':end-of-line
+bind -m vi-insert '\c-a':beginning-of-line
+bind -m vi-insert '\c-w':backward-kill-word
+bind -m vi-insert '\c-k':kill-line

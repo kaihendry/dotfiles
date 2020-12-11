@@ -5,3 +5,5 @@ taskd.ca=~/.task/ca.cert.pem
 taskd.server=taskwarrior.inthe.am:53589
 taskd.credentials=inthe_am/kai.hendry/729a9c1b-d358-4ced-8e86-a97a96936bd9
 taskd.trust=ignore hostname
+context.work=+work
+context.home=-work

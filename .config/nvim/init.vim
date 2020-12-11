@@ -36,10 +36,10 @@ autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 call plug#begin('~/.vim/plugged')
 
 " CSV
-Plug 'chrisbra/csv.vim'
+" Plug 'chrisbra/csv.vim'
 
-" JS stuff and JSON formatting
-Plug 'w0rp/ale'
+" JS stuff and JSON/YAML formatting
+Plug 'dense-analysis/ale'
 
 " Golang stuffs
 Plug 'fatih/vim-go'
@@ -56,10 +56,10 @@ Plug 'tyru/open-browser.vim'
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
 " Readline bindings
-Plug 'tpope/vim-rsi'
+" Plug 'tpope/vim-rsi'
 
 " So when I gf files, it actually works
-Plug 'tpope/vim-apathy'
+" Plug 'tpope/vim-apathy'
 
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
@@ -67,7 +67,7 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 " Plug 'posva/vim-vue'
 "
 "  # REQUIRED: Add a syntax file. YATS is the best
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'Shougo/denite.nvim'
@@ -75,7 +75,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hashivim/vim-terraform'
 
 " So I can move between buffers/files easier...
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'ervandew/supertab'
 
@@ -97,7 +97,7 @@ set wildmode=longest,list,full
 set wildmenu
 
 " https://github.com/ctrlpvim/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlPMixed'
 
 " restore cursor position when reopening a file, except if it's a git commit
@@ -136,3 +136,7 @@ autocmd BufReadPost *.jsonnet setl expandtab
 " set cursorcolumn
 "
 let g:firenvim_config = {'globalSettings': {},'localSettings': {'.*': {'takeover': 'never'},},}
+
+set guifont=:h11
+
+inoremap <C-H> <C-W>
