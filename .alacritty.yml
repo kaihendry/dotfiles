@@ -1,6 +1,7 @@
 font:
   normal:
     family: "Terminus (TTF)"
+  size: 12
 
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
@@ -10,32 +11,51 @@ key_bindings:
 selection:
   save_to_clipboard: true
 
-# https://github.com/alacritty/alacritty/wiki/Color-schemes#xterm
+
 colors:
-   # Default colors
-   primary:
-     background: '#000000'
-     foreground: '#ffffff'
-   # Normal colors
-   normal:
-     black:   '#000000'
-     red:     '#cd0000'
-     green:   '#00cd00'
-     yellow:  '#cdcd00'
-     blue:    '#0000ee'
-     magenta: '#cd00cd'
-     cyan:    '#00cdcd'
-     white:   '#e5e5e5'
+  primary:
+    background: '#181818'
+    foreground: '#d0d0d0'
 
-   # Bright colors
-   bright:
-     black:   '#7f7f7f'
-     red:     '#ff0000'
-     green:   '#00ff00'
-     yellow:  '#ffff00'
-     blue:    '#5c5cff'
-     magenta: '#ff00ff'
-     cyan:    '#00ffff'
-     white:   '#ffffff'
+  cursor:
+    text: '#000000'
+    cursor: '#ffffff'
 
+  vi_mode_cursor:
+    text: '#000000'
+    cursor: '#ffffff'
 
+  normal:
+    black:   '#181818'
+    red:     '#ac4142'
+    green:   '#90a959'
+    yellow:  '#f4bf75'
+    blue:    '#6a9fb5'
+    magenta: '#aa759f'
+    cyan:    '#75b5aa'
+    white:   '#d0d0d0'
+
+  bright:
+    black:   '#707070'
+    red:     '#ab4642'
+    green:   '#a1b56c'
+    yellow:  '#f7ca88'
+    blue:    '#7cafc2'
+    magenta: '#ba8baf'
+    cyan:    '#86c1b9'
+    white:   '#f5f5f5'
+
+  search:
+    focused_match:
+      foreground: '#181818'
+      background: '#ab4642'
+    matches:
+      foreground: '#181818'
+      background: '#f4bf75'
+    bar:
+      foreground: '#d0d0d0'
+      background: '#262626'
+
+  selection:
+    text: CellForeground
+    background: '#303030'
