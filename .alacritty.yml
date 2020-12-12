@@ -1,6 +1,16 @@
 font:
+  bold:
+    family: xos4 Terminus
+    style: Bold
+  bold_italic:
+    family: xos4 Terminus
+    style: Bold Italic
+  italic:
+    family: xos4 Terminus
+    style: Italic
   normal:
-    family: "Terminus (TTF)"
+    family: xos4 Terminus
+    style: Regular
   size: 12
 
 key_bindings:
