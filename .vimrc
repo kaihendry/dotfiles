@@ -7,7 +7,9 @@ set incsearch
 set hlsearch
 set bs=2
 set nobackup
-let html_use_css = 1
+
+" https://en.parceljs.org/hmr.html#safe-write
+set backupcopy=yes
 
 set encoding=utf-8
 
@@ -18,42 +20,118 @@ set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set noswapfile
 
 set background=dark
 
 set undofile
 set undodir=/tmp
 
-" http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
-set wildmode=longest,list,full
-set wildmenu
-
 syntax on
 filetype plugin indent on
 set nofoldenable
 
-let g:go_fmt_command = "goimports"
-
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-au FileType go nmap <Leader>i <Plug>(go-info)
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-cmap w!! w !sudo tee > /dev/null %
-
 " Using tabless https://www.npmjs.com/package/standard
 autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
+
+call plug#begin('~/.vim/plugged')
+
+" CSV
+" Plug 'chrisbra/csv.vim'
+
+" JS stuff and JSON/YAML formatting
+Plug 'dense-analysis/ale'
+
+" Golang stuffs
+Plug 'fatih/vim-go'
+Plug 'SirVer/ultisnips'
+
+" vim-go crutch to help generate tests for Golang
+Plug 'buoto/gotests-vim'
+
+" So I can hyperlink the github code I am editing to show the line I am
+" working on
+Plug 'tyru/open-browser-github.vim'
+Plug 'tyru/open-browser.vim'
+
+" So commenting in & out code blocks works
+Plug 'tpope/vim-commentary'
+" Readline bindings
+" Plug 'tpope/vim-rsi'
+
+" So when I gf files, it actually works
+" Plug 'tpope/vim-apathy'
+
+" Only used when I edit .vue files
+" Plug 'posva/vim-vue'
+"
+"  # REQUIRED: Add a syntax file. YATS is the best
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/denite.nvim'
+
+Plug 'hashivim/vim-terraform'
+
+" So I can move between buffers/files easier...
+Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'ervandew/supertab'
+
+call plug#end()
+
+let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
+" let g:go_auto_sameids = 1
+" let g:go_gocode_propose_source = 0
+let g:go_metalinter_enabled = ['vet', 'golint']
+" let g:go_info_mode='guru'
+
+nmap <C-g> :GoDeclsDir<cr>
+imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
+
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
-set autowrite
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave = 1
-let g:go_auto_type_info = 1
-let g:go_auto_sameids = 1
+set wildmode=longest,list,full
+set wildmenu
+
+" https://github.com/ctrlpvim/ctrlp.vim
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlPMixed'
+
+" restore cursor position when reopening a file, except if it's a git commit
+autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+
+" standard-prettier
+let g:ale_fixers = {'javascript': ['standard'], 'json': ['jq']}
+let g:ale_linters = {'javascript': ['standard'],'CloudFormation' : ['cfn-lint']}
+let g:ale_sign_column_alwayus = 1
+let g:ale_fix_on_save = 1
+
+let g:SuperTabDefaultCompletionType = "context"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+nnoremap <silent><Leader>r :vsplit term://go run %<CR>
+autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
+
+let g:nvim_typescript#javascript_support = 1
+" let g:deoplete#enable_at_startup = 1
+let g:terraform_fmt_on_save=1
+
+" autocmd FileType typescript,typescript.tsx setl omnifunc=TSOmniFunc
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd BufReadPost *.jsonnet setl expandtab
+
+" iab <expr> dt strftime("# %F %a\n")
+
+" set cursorline
+" set cursorcolumn
+
+set guifont=:h11
+
+" https://youtu.be/PEm0QJ46hNo
+inoremap <C-H> <C-W>

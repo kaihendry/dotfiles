@@ -163,5 +163,5 @@ set -o vi
 bind -m vi-insert '\c-l':clear-screen
 bind -m vi-insert '\c-e':end-of-line
 bind -m vi-insert '\c-a':beginning-of-line
-bind -m vi-insert '\c-w':backward-kill-word
+bind -m vi-insert '\c-h':backward-kill-word
 bind -m vi-insert '\c-k':kill-line
