@@ -14,7 +14,7 @@ set backupcopy=yes
 set encoding=utf-8
 
 set diffopt+=iwhite " Ignore whitespace whilst diffing
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent> <F5> :%s/\s\+$//<cr>
 
 set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set shiftwidth=4
