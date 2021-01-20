@@ -26,3 +26,5 @@
 	insteadOf = https://source.golabs.io/
 [credential]
 	helper = store
+[init]
+	defaultBranch = main

@@ -41,6 +41,9 @@ call plug#begin('~/.vim/plugged')
 " JS stuff and JSON/YAML formatting
 Plug 'dense-analysis/ale'
 
+
+Plug 'nathanaelkane/vim-indent-guides'
+
 " Golang stuffs
 Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
@@ -135,3 +138,5 @@ set guifont=:h11
 
 " https://youtu.be/PEm0QJ46hNo
 inoremap <C-H> <C-W>
+
+let g:indent_guides_enable_on_vim_startup = 1

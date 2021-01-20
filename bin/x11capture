@@ -20,7 +20,9 @@ then
 		if test "$filename"
 		then
 			ofilename="$(dirname $(readlink -f ${fn}))/${filename}.mp4"
-			mv -v "$fn" "$ofilename"
+			#mv -v "$fn" "$ofilename"
+			# there is some bug in avfoundation so we need to recode this
+			ffmpeg -i "$fn" -c:v libx264 "$ofilename"
 			# Rename FFREPORT log file too
 			mv -v "/tmp/$(basename $fn).log" "/tmp/$(basename $ofilename .mp4).log"
 			upload "$ofilename"
