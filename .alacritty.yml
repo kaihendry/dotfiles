@@ -1,15 +1,17 @@
+# https://s.natalian.org/2020-12-13/bitmap-vs-ttf.png
+# https://s.natalian.org/2020-12-13/htop-bitmap-vs-ttf.png
 font:
   bold:
-    family: xos4 Terminus
+    family: Terminus
     style: Bold
   bold_italic:
-    family: xos4 Terminus
+    family: Terminus
     style: Bold Italic
   italic:
-    family: xos4 Terminus
+    family: Terminus
     style: Italic
   normal:
-    family: xos4 Terminus
+    family: Terminus
     style: Regular
   size: 12
 
@@ -20,7 +22,6 @@ key_bindings:
 
 selection:
   save_to_clipboard: true
-
 
 colors:
   search:

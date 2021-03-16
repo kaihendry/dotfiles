@@ -35,18 +35,11 @@ autocmd Filetype javascript setlocal sw=2 sts=2 expandtab
 
 call plug#begin('~/.vim/plugged')
 
-" CSV
-" Plug 'chrisbra/csv.vim'
-
 " JS stuff and JSON/YAML formatting
 Plug 'dense-analysis/ale'
 
-
-Plug 'nathanaelkane/vim-indent-guides'
-
 " Golang stuffs
 Plug 'fatih/vim-go'
-Plug 'SirVer/ultisnips'
 
 " vim-go crutch to help generate tests for Golang
 Plug 'buoto/gotests-vim'
@@ -58,25 +51,6 @@ Plug 'tyru/open-browser.vim'
 
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
-" Readline bindings
-" Plug 'tpope/vim-rsi'
-
-" So when I gf files, it actually works
-" Plug 'tpope/vim-apathy'
-
-" Only used when I edit .vue files
-" Plug 'posva/vim-vue'
-"
-"  # REQUIRED: Add a syntax file. YATS is the best
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-" Plug 'Shougo/deoplete.nvim'
-" Plug 'Shougo/denite.nvim'
-
-Plug 'hashivim/vim-terraform'
-
-" So I can move between buffers/files easier...
-Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'ervandew/supertab'
 
