@@ -58,13 +58,17 @@ call plug#end()
 
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
-" let g:go_auto_sameids = 1
+let g:go_auto_sameids = 1
 " let g:go_gocode_propose_source = 0
 let g:go_metalinter_enabled = ['vet', 'golint']
 " let g:go_info_mode='guru'
 
+
 nmap <C-g> :GoDeclsDir<cr>
 imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
+au FileType go nmap <F10> :GoTest -short<cr>
+au FileType go nmap <F12> <Plug>(go-def)
+au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
 
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
@@ -94,7 +98,6 @@ nnoremap <silent><Leader>r :vsplit term://go run %<CR>
 autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
 let g:nvim_typescript#javascript_support = 1
-" let g:deoplete#enable_at_startup = 1
 let g:terraform_fmt_on_save=1
 
 " autocmd FileType typescript,typescript.tsx setl omnifunc=TSOmniFunc
