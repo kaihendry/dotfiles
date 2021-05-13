@@ -51,7 +51,7 @@ print_bat(){
 }
 
 print_date(){
-	echo $(date "+%a %m-%d %T%:::z") $(TZ=CET date "+ %H%:::z")
+	echo $(date "+%a %m-%d %T%:::z")
 }
 
 print_record(){
@@ -59,7 +59,7 @@ print_record(){
 	test -f /tmp/r2d2 || return
 	rp=$(cat /tmp/r2d2 | awk '{print $2}')
 	size=$(du -h $rp | awk '{print $1}')
-	echo " $size $(basename $rp)"
+	echo "🔴 $(basename $rp)"
 }
 
 while true

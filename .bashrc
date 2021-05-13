@@ -20,7 +20,6 @@ fi
 
 umask 002
 
-alias nt='st -e bash -c "cd $PWD; exec bash" &'
 alias ll='ls -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
 alias suspend='sudo systemctl suspend'
@@ -165,3 +164,9 @@ bind -m vi-insert '\c-e':end-of-line
 bind -m vi-insert '\c-a':beginning-of-line
 bind -m vi-insert '\c-h':backward-kill-word
 bind -m vi-insert '\c-k':kill-line
+
+sloc() {
+	find . -not -path '*/\.*' -type f -print0 | wc -l --files0-from=- | sort -n
+}
+
+eval "$(pyenv init -)"

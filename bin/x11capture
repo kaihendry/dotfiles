@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+# https://github.com/muesli/obs-cli/issues/6
+
 test "$WAYLAND_DISPLAY" && { exec record; exit; }
 
 lockfile=/tmp/r2d2
@@ -19,13 +21,13 @@ then
 		filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screencast filename" < /dev/null)
 		if test "$filename"
 		then
-			ofilename="$(dirname $(readlink -f ${fn}))/${filename}.mp4"
-			#mv -v "$fn" "$ofilename"
+			ofilename="$(dirname $(readlink -f ${fn}))/${filename}"
+			ffmpeg-normalize $fn -o $ofilename.mkv
 			# there is some bug in avfoundation so we need to recode this
-			ffmpeg -i "$fn" -c:v libx264 "$ofilename"
+			ffmpeg -i "$ofilename.mkv" -c:v libx264 "$ofilename.mp4" && rm "$ofilename.mkv"
 			# Rename FFREPORT log file too
-			mv -v "/tmp/$(basename $fn).log" "/tmp/$(basename $ofilename .mp4).log"
-			upload "$ofilename"
+			mv -v "/tmp/$(basename $fn).log" "$ofilename.log"
+			upload "$ofilename.mp4"
 		fi
 		exit
 	else

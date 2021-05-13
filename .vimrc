@@ -66,9 +66,25 @@ let g:go_metalinter_enabled = ['vet', 'golint']
 
 nmap <C-g> :GoDeclsDir<cr>
 imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
-au FileType go nmap <F10> :GoTest -short<cr>
-au FileType go nmap <F12> <Plug>(go-def)
+
+" Go specific mapping
 au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
+au filetype go nmap <leader>t :w<CR>:GoTestFunc<CR>
+au filetype go nmap <leader>T :w<CR>:GoTest<CR>
+au filetype go nmap <leader>r :w<CR>:GoRun<CR>
+au filetype go nmap <leader>b :GoDebugBreakpoint<CR>
+au filetype go nmap <leader>d :GoDebugStart<CR>
+au filetype go nmap <leader>s :GoDebugStop<CR>
+au filetype go nmap <leader>n :GoDebugNext<CR>
+au filetype go nmap <leader>c :GoDebugContinue<CR>
+au FileType go nmap <F12> <Plug>(go-def)
+
+augroup GoDebug
+  autocmd!
+  au FileType go nmap <F12><F12> :GoDebugStop<CR>
+  au FileType go nmap <F11> :GoDebugStep<CR>
+  au FileType go nmap <F9> :GoDebugBreakpoint<CR>
+augroup END
 
 autocmd Filetype vue setlocal sw=2 sts=2 expandtab
 
@@ -76,8 +92,8 @@ set wildmode=longest,list,full
 set wildmenu
 
 " https://github.com/ctrlpvim/ctrlp.vim
-" let g:ctrlp_map = '<c-p>'
-" let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 " restore cursor position when reopening a file, except if it's a git commit
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -95,7 +111,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 nnoremap <silent><Leader>r :vsplit term://go run %<CR>
-autocmd FileType go nmap <silent> <Leader>d <Plug>(go-def-tab)
 
 let g:nvim_typescript#javascript_support = 1
 let g:terraform_fmt_on_save=1
@@ -111,7 +126,7 @@ autocmd BufReadPost *.jsonnet setl expandtab
 " set cursorline
 " set cursorcolumn
 
-set guifont=:h11
+set guifont=Terminus_(TTF):h22
 
 " https://youtu.be/PEm0QJ46hNo
 inoremap <C-H> <C-W>
