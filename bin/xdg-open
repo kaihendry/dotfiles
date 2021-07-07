@@ -1,0 +1,26 @@
+#!/bin/bash
+
+profile="$(\
+	cat <<- EOF | dmenu -i -l 10 -fn "Terminus (TTF):pixelsize=28"
+	Firefox personal
+	Chrome personal
+	Chrome employer
+	Chrome client
+EOF
+)"
+
+case "$profile" in
+	"Firefox personal")
+	/usr/lib/firefox/firefox -P hendry "$@"
+	;;
+	"Chrome personal")
+	google-chrome-stable --profile-directory=Profile\ 1 "$@"
+	;;
+	"Chrome employer")
+	google-chrome-stable --profile-directory=Default "$@"
+	;;
+	"Chrome client")
+	google-chrome-stable --profile-directory=Profile\ 2 "$@"
+	;;
+esac
+

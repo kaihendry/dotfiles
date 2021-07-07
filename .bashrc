@@ -169,4 +169,8 @@ sloc() {
 	find . -not -path '*/\.*' -type f -print0 | wc -l --files0-from=- | sort -n
 }
 
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
+
+vpn() {
+	/usr/bin/gpclient
+}

@@ -28,3 +28,5 @@
 	helper = store
 [init]
 	defaultBranch = main
+[url "ssh://git@github.com-twm"]
+	insteadOf = ssh://git@github.com
