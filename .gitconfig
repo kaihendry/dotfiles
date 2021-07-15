@@ -28,5 +28,6 @@
 	helper = store
 [init]
 	defaultBranch = main
+	templatedir = /home/hendry/.git-template
 [url "ssh://git@github.com-twm"]
 	insteadOf = ssh://git@github.com

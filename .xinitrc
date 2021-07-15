@@ -5,6 +5,8 @@ xrandr --auto
 
 exec >/tmp/startx$$.log 2>&1
 
+systemctl --user import-environment DISPLAY
+
 # Prefer /usr/local/bin
 export PATH="/usr/local/bin:$PATH"
 echo PATH: $PATH
@@ -43,7 +45,7 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 setxkbmap -model thinkpad -layout us -option caps:escape
 xset m 5 1
 
-x-www-browser &
+firefox -P personal &
 
 ~/bin/dwm_status &
 
