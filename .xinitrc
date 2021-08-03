@@ -45,7 +45,7 @@ hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(da
 setxkbmap -model thinkpad -layout us -option caps:escape
 xset m 5 1
 
-firefox -P personal &
+# firefox -P hendry &
 
 ~/bin/dwm_status &
 

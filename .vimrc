@@ -52,7 +52,11 @@ Plug 'tyru/open-browser.vim'
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
 
+" Autocompletion
 Plug 'ervandew/supertab'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'hrsh7th/nvim-compe'
+
 
 call plug#end()
 

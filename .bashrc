@@ -175,10 +175,10 @@ vpn() {
 	/usr/bin/gpclient
 }
 
+gdiff() {
+	git diff main... --name-status
+}
 
-# >>> talisman >>>
-# Below environment variables should not be modified unless you know what you are doing
-export TALISMAN_HOME=/home/hendry/.talisman/bin
-alias talisman=$TALISMAN_HOME/talisman_linux_amd64
-export TALISMAN_INTERACTIVE=true
-# <<< talisman <<<
+ifconfig() {
+	ip -br -c a
+}
