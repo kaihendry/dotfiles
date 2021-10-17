@@ -16,7 +16,6 @@ then
 		fn=$(awk '{print $2}' $lockfile)
 		logger x11captured: $(du -h $fn)
 		pkill swcursor
-		pkill xcompmgr
 		rm $lockfile
 		filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screencast filename" < /dev/null)
 		if test "$filename"

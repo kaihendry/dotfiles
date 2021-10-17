@@ -54,7 +54,7 @@ Plug 'tpope/vim-commentary'
 
 " Autocompletion
 Plug 'ervandew/supertab'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'hrsh7th/nvim-compe'
 
 
@@ -98,6 +98,7 @@ set wildmenu
 " https://github.com/ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " restore cursor position when reopening a file, except if it's a git commit
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif

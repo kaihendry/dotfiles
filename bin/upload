@@ -16,16 +16,19 @@ EOF
 
 # Initialize our own variables:
 verbose=0
+nomanipulation=0
 date=$(date +%Y-%m-%d)
 
 OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
-while getopts "rhvd:" opt; do
+while getopts "rnhvd:" opt; do
     case "$opt" in
         h)
             show_help
             exit 0
             ;;
         v)  verbose=$((verbose+1))
+            ;;
+        n)  nomaniuplation=$((nomaniuplation+1))
             ;;
         d)  date=$(date -d "$OPTARG" +%Y-%m-%d)
             ;;
@@ -61,7 +64,7 @@ do
 
 	chmod +r "$src"
 
-case $(file "$src") in
+test $nomaniuplation || case $(file "$src") in
 	*JPEG*)
 		if hash cwebp
 		then

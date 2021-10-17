@@ -1,14 +1,2 @@
-clear Mod1
-clear Control
-keycode 108 = Home
-keycode 105 = End
-add Control = Control_L
-add Mod1 = Alt_L
-pointer = 1 2 3 4 5 6 7 0 0
-
-keycode 64 = Alt_L
 keycode 133 = Super_L
-remove Mod1 = Alt_L
-remove Mod4 = Super_L
-add Mod1 = Super_L
-add Mod4 = Alt_L
+add Mod3 = Super_L
