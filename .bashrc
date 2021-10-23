@@ -3,7 +3,7 @@ test -d ~/bash_history/ || mkdir ~/bash_history/
 test -d ~/clip_history/ || mkdir ~/clip_history/
 
 export EDITOR=vim
-alias vim=nvim
+alias vim=vim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -153,7 +153,7 @@ millitime() {
         fi
 }
 
-alias vimconfig="$EDITOR ~/.config/nvim/init.vim"
+alias nvimconfig="$EDITOR ~/.config/nvim/init.vim"
 
 stty -ixon -ixoff # disregard Ctrl-S \023 and Ctrl+Q \021 so that we can use them scrolling
 

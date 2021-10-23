@@ -34,6 +34,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
@@ -61,28 +62,34 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *urlcmd[]  = { "clipmenu-url", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *clipcmd[]  = { "clipmenu", "-i", "-fn", dmenufont, NULL };
+static const char *snipcmd[]  = { "snippy.sh", NULL };
 static const char *cmdbrightnessup[]  = { "sudo", "brightness", "up", NULL };
 static const char *cmdbrightnessdown[]  = { "sudo", "brightness", "down", NULL };
-static const char *cmdsoundup[]  = { "amixer", "-q", "sset", "Master", "5%+", NULL };
-static const char *cmdsounddown[]  = { "amixer", "-q", "sset", "Master", "5%-", NULL };
-static const char *cmdsoundtoggle[]  = { "amixer", "-q", "sset", "Master", "toggle", NULL };
+static const char *cmdsoundup[]  = { "pamixer", "-i", "1", NULL };
+static const char *cmdsounddown[]  = { "pamixer", "-d", "1", NULL };
+static const char *cmdsoundtoggle[]  = { "pamixer", "-m", NULL };
 static const char *screenshot[]  = { "fscreenshot", NULL };
+static const char *x11capture[]  = { "x11capture", NULL };
 static const char *cmdlock[]  = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,			XK_grave,	spawn,	SHCMD("emojiinsert") },
+	{ MODKEY,                       XK_grave,  spawn,         SHCMD("emojiinsert") },
+	{ 0,                            XK_Insert, spawn,          {.v = snipcmd } },
+	{ 0,                            XF86XK_Launch7, spawn,     {.v = snipcmd } },
 	{ MODKEY,                       XK_Insert, spawn,          {.v = clipcmd } },
-	{ MODKEY,                       XK_o,      spawn,          {.v = urlcmd } },
+	{ MODKEY|ShiftMask,             XK_r, spawn,               {.v = clipcmd } },
+	{ 0,                            XF86XK_Launch9, spawn,     {.v = clipcmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ 0,                            XK_Print,  spawn,          {.v = screenshot } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = screenshot } },
+	{ MODKEY,                       XK_Print,  spawn,          {.v = x11capture } },
 	{ MODKEY,                       XK_F12,    spawn,           {.v = cmdlock } },
-	{ 0,                            XF86MonBrightnessDown,     spawn,         {.v = cmdbrightnessdown } },
+	{ 0,                            XF86XK_Eject,    spawn,           {.v = cmdlock } },
+	{ 0,                            XF86XK_MonBrightnessDown,     spawn,         {.v = cmdbrightnessdown } },
 	{ 0,                            XF86MonBrightnessUp,       spawn,         {.v = cmdbrightnessup } },
 	{ 0,                            XF86AudioMute,             spawn,          {.v = cmdsoundtoggle } },
 	{ 0,                            XF86AudioRaiseVolume,      spawn,          {.v = cmdsoundup } },

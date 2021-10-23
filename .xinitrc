@@ -48,7 +48,7 @@ export CM_DIR=$HOME/clip_history/
 clipmenud &
 
 # https://support.zoom.us/hc/en-us/articles/202082128-Black-screen-during-screen-sharing
-xcompmgr &
+picom &
 
 xrandr --output DisplayPort-0 --set TearFree on
 
