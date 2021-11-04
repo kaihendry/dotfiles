@@ -44,19 +44,20 @@ Plug 'fatih/vim-go'
 " vim-go crutch to help generate tests for Golang
 Plug 'buoto/gotests-vim'
 
-" So I can hyperlink the github code I am editing to show the line I am
-" working on
-Plug 'tyru/open-browser-github.vim'
-Plug 'tyru/open-browser.vim'
-
 " So commenting in & out code blocks works
 Plug 'tpope/vim-commentary'
 
 " Autocompletion
-Plug 'ervandew/supertab'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'hrsh7th/nvim-compe'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Track the engine.
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 call plug#end()
 
@@ -66,7 +67,6 @@ let g:go_auto_sameids = 1
 " let g:go_gocode_propose_source = 0
 let g:go_metalinter_enabled = ['vet', 'golint']
 " let g:go_info_mode='guru'
-
 
 nmap <C-g> :GoDeclsDir<cr>
 imap <C-g> <esc>:<C-u>GoDeclsDir<cr>
@@ -103,17 +103,11 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " restore cursor position when reopening a file, except if it's a git commit
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-
 " standard-prettier
-let g:ale_fixers = {'javascript': ['standard'], 'json': ['jq']}
-let g:ale_linters = {'javascript': ['standard'],'CloudFormation' : ['cfn-lint']}
+let g:ale_fixers = {'javascript': ['prettier'], 'json': ['jq']}
+let g:ale_linters = {'javascript': ['prettier'],'CloudFormation' : ['cfn-lint']}
 let g:ale_sign_column_alwayus = 1
 let g:ale_fix_on_save = 1
-
-let g:SuperTabDefaultCompletionType = "context"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 nnoremap <silent><Leader>r :vsplit term://go run %<CR>
 

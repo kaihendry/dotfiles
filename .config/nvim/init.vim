@@ -1,1 +1,3 @@
-/home/hendry/.vimrc
+lua require('plugins')
+
+colorscheme dracula

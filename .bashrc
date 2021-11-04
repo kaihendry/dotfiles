@@ -2,8 +2,8 @@ test -z "$PS1" && return
 test -d ~/bash_history/ || mkdir ~/bash_history/
 test -d ~/clip_history/ || mkdir ~/clip_history/
 
-export EDITOR=vim
-alias vim=vim
+export EDITOR=nvim
+alias vim=nvim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -11,12 +11,6 @@ shopt -s cdspell
 shopt -s cdable_vars
 
 complete -cf sudo
-if test "$HOSTNAME" == "teefour"
-then
-	GREEN="\[$(tput setaf 2)\]"
-	RESET="\[$(tput sgr0)\]"
-	PS1="${GREEN}\[\e[1m\]\w\$\[\e[0m\] ${RESET}"
-fi
 
 umask 002
 
@@ -199,3 +193,11 @@ eval "$(pyenv init --path)"
 # the following to ~/.bashrc:
 
 eval "$(pyenv init -)"
+
+alias ge='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
+alias te='f(){ docker run -it --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
+alias je='f(){ docker run -it --rm -v $(pwd):/proj hendry/js-nvim:latest; unset -f f; }; f'
+# alias ed='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace sh1d0w/nvim-typescript; unset -f f; }; f'
+# alias ef='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace/$(basename $1) sh1d0w/nvim-typescript; unset -f f; }; f'
+
+alias i="cd ~/.config/nvim/"
