@@ -24,3 +24,13 @@ set tabstop=4
 
 set wildmode=longest,list,full
 set wildmenu
+
+set undofile
+set undodir=/tmp
+
+" vim-ctrlp
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+autocmd BufWritePre *.json %!jq .
+
+lua require('lsp')

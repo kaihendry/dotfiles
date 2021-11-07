@@ -15,7 +15,7 @@ font:
     family: Terminus
     style: Bold Italic
 
-  size: 12
+  size: 15
 
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }

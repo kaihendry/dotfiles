@@ -41,6 +41,8 @@ xset m 5 1
 
 ~/bin/dwm_status &
 
+stalonetray -c ~/stalonetrayrc &
+
 xss-lock -- /usr/bin/slock &
 
 export CM_MAX_CLIPS=0
