@@ -15,4 +15,8 @@ return require('packer').startup(function()
     use 'crispgm/nvim-go'
 	use 'nvim-lua/plenary.nvim'
     use 'nvim-lua/popup.nvim'
+
+	use 'jose-elias-alvarez/null-ls.nvim'
 end)
+
+
