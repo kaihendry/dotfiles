@@ -9,7 +9,6 @@ vim.cmd([[
 
 return require('packer').startup(function()
 	use {'dracula/vim', as = 'dracula'}
-	use {'github/copilot.vim'}
 	use 'tpope/vim-commentary' -- "gc" to comment visual regions/lines
 	-- use 'nvim-treesitter/nvim-treesitter' -- better syntax highlighting
 	-- -- Additional textobjects for treesitter
@@ -20,4 +19,8 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
+    -- use 'github/copilot.vim'
+	-- use 'hrsh7th/cmp-copilot'
+	use 'saadparwaiz1/cmp_luasnip'
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
 end)
