@@ -14,7 +14,8 @@ complete -cf sudo
 
 umask 002
 
-alias ll='ls -alh --group-directories-first --color=always'
+alias ls=exa
+alias ll='exa -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
 alias suspend='sudo systemctl suspend'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
@@ -196,7 +197,7 @@ eval "$(pyenv init -)"
 
 alias ge='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
-alias je='f(){ docker run -it --rm -v $(pwd):/proj hendry/js-nvim:latest; unset -f f; }; f'
+alias je='f(){ docker run -it --rm -v $(pwd):/src hendry/js-nvim:latest; unset -f f; }; f'
 # alias ed='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace sh1d0w/nvim-typescript; unset -f f; }; f'
 # alias ef='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace/$(basename $1) sh1d0w/nvim-typescript; unset -f f; }; f'
 
