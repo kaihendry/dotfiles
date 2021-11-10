@@ -166,10 +166,6 @@ sloc() {
 
 # eval "$(pyenv init -)"
 
-vpn() {
-	/usr/bin/gpclient
-}
-
 gdiff() {
 	git diff main... --name-status
 }
@@ -197,7 +193,7 @@ eval "$(pyenv init -)"
 
 alias ge='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
-alias je='f(){ docker run -it --rm -v $(pwd):/src hendry/js-nvim:latest; unset -f f; }; f'
+alias je='f(){ docker run -it --rm -v $(pwd):/src hendry/nvim:latest; unset -f f; }; f'
 # alias ed='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace sh1d0w/nvim-typescript; unset -f f; }; f'
 # alias ef='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace/$(basename $1) sh1d0w/nvim-typescript; unset -f f; }; f'
 

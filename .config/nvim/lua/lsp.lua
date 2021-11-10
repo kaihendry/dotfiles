@@ -83,6 +83,6 @@ cmp.setup({
       -- { name = 'copilot' },
       { name = 'luasnip' }, -- For luasnip users.
     }, {
-      { name = 'buffer' },
+      { name = "buffer", keyword_length = 5 },
     })
   })
