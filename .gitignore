@@ -1,9 +1,2 @@
-Downloads/
-dl/
-tmp
-*.tmp
-bash_history
-spuul
-.ssh
-.gitconfig
 *
+!.config/nvim
