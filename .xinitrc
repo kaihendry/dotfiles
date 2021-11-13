@@ -41,8 +41,6 @@ xset m 5 1
 
 ~/bin/dwm_status &
 
-stalonetray -c ~/stalonetrayrc &
-
 xss-lock -- /usr/bin/slock &
 
 export CM_MAX_CLIPS=0
@@ -50,7 +48,7 @@ export CM_DIR=$HOME/clip_history/
 clipmenud &
 
 # https://support.zoom.us/hc/en-us/articles/202082128-Black-screen-during-screen-sharing
-picom &
+#picom &
 
 xrandr --output DisplayPort-0 --set TearFree on
 

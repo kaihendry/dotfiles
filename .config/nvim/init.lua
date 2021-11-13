@@ -25,12 +25,9 @@ require('packer').startup(function()
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/nvim-cmp' -- for completion whilst using the language server
 	use 'github/copilot.vim' -- for AI completion
-	-- use 'hrsh7th/cmp-copilot'
+
 	use 'saadparwaiz1/cmp_luasnip' -- vim cmp requires luasnip
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
-
-	-- Highlight, edit, and navigate code using a fast incremental parsing library
-	use 'nvim-treesitter/nvim-treesitter'
 
 	use 'crispgm/nvim-go'
 	use 'nvim-lua/popup.nvim'
@@ -75,7 +72,6 @@ set wildmenu
 
 require('findstuff')
 require('lsp')
-require('treesitter')
 require('null')
 
 ::eof::

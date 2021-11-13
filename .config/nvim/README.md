@@ -1,7 +1,5 @@
 * https://hub.docker.com/repository/docker/hendry/nvim
 
-	alias je='f(){ docker run -it --rm -v $(pwd):/src hendry/nvim:latest; unset -f f; }; f'
-
 # @mjlbach
 
 https://github.com/nvim-lsp/try.nvim/blob/master/typescript/init.lua
