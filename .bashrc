@@ -37,6 +37,7 @@ fi
 # http://unix.stackexchange.com/a/18443/27433
 shopt -s histappend
 HISTCONTROL=ignoredups
+PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/\~}\007"'
 PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
 export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
@@ -191,6 +192,7 @@ eval "$(pyenv init --path)"
 
 eval "$(pyenv init -)"
 
+alias n='docker run -it --rm -v $(pwd):/src hendry/nvim:latest $@'
 alias goedit='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
 alias hen='f(){ docker run -it --rm -v $(pwd):/src hendry/nvim:latest; unset -f f; }; f'

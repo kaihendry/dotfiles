@@ -20,16 +20,23 @@ require('packer').startup(function()
 	use 'wbthomason/packer.nvim' -- Package manager
 	use 'tpope/vim-commentary' -- "gc" to comment visual regions/lines
 
+	use 'Mofiqul/dracula.nvim'
+
+	use "folke/which-key.nvim"
+
+	use 'tpope/vim-fugitive' -- Git commands in nvim
+	use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+
 	use 'neovim/nvim-lspconfig' -- use a language server
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/nvim-cmp' -- for completion whilst using the language server
 	use 'github/copilot.vim' -- for AI completion
 
-	use 'saadparwaiz1/cmp_luasnip' -- vim cmp requires luasnip
-	use 'L3MON4D3/LuaSnip' -- Snippets plugin
+	use {'hrsh7th/vim-vsnip', after = 'nvim-cmp'}
+	use { 'hrsh7th/cmp-vsnip', after = 'vim-vsnip' }
 
-	use 'crispgm/nvim-go'
+	-- use 'crispgm/nvim-go'
 	use 'nvim-lua/popup.nvim'
 
 	use {
@@ -37,8 +44,6 @@ require('packer').startup(function()
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	-- linting
-	use 'jose-elias-alvarez/null-ls.nvim'
 end)
 
 if os.getenv('INSTALL') then
@@ -68,10 +73,15 @@ set softtabstop=4
 set tabstop=4
 set wildmode=longest,list,full
 set wildmenu
+autocmd ColorScheme * highlight Whitespace ctermfg=red guifg=#FF0000
+colorscheme dracula
 ]], true)
 
 require('findstuff')
 require('lsp')
-require('null')
+require('nvim-cmp')
+
+-- Setup https://github.com/folke/which-key.nvim
+require'which-key'.setup{}
 
 ::eof::
