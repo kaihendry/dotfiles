@@ -3,7 +3,6 @@ test -d ~/bash_history/ || mkdir ~/bash_history/
 test -d ~/clip_history/ || mkdir ~/clip_history/
 
 export EDITOR=nvim
-alias vim=nvim
 
 shopt -s checkwinsize
 shopt -s cmdhist
