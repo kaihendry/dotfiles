@@ -4,6 +4,8 @@ test -d ~/clip_history/ || mkdir ~/clip_history/
 
 export EDITOR=nvim
 
+alias vi=nvim
+
 shopt -s checkwinsize
 shopt -s cmdhist
 shopt -s cdspell
@@ -20,8 +22,7 @@ alias suspend='sudo systemctl suspend'
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --exclude-dir=node_modules --color=auto'
 
 export WEBC_CHECKOUT=/home/hendry/webc/webc
-if test -d $WEBC_CHECKOUT
-then
+if test -d $WEBC_CHECKOUT; then
 	c() {
 		#sudo mount -t proc proc $WEBC_CHECKOUT/proc/
 		#sudo mount -t sysfs sys $WEBC_CHECKOUT/sys/
@@ -49,11 +50,11 @@ p() {
 	curl -n -F 'f:1=<-' http://ix.io
 }
 
-bitrate () {
+bitrate() {
 	iw wlan0 link | grep bitrate
 }
 
-vtime () {
+vtime() {
 	ffprobe -v quiet -print_format json -show_format "$1" | jq -r .format.tags.creation_time
 }
 
@@ -62,46 +63,39 @@ export GIT_COMMITTER_NAME="Kai Hendry"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-if test -d "/usr/local/bin"
-then
+if test -d "/usr/local/bin"; then
 	PATH="/usr/local/bin:$PATH"
 fi
 
-
-if test -d "/home/hendry/.local/bin"
-then
+if test -d "/home/hendry/.local/bin"; then
 	PATH="/home/hendry/.local/bin:$PATH"
 fi
 
 cors() {
-curl -v -o /dev/null $1 2>&1 | grep Allow
+	curl -v -o /dev/null $1 2>&1 | grep Allow
 }
 
-if test -d "$HOME/.local/bin"
-then
+if test -d "$HOME/.local/bin"; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
 
-if test -d "$HOME/bin"
-then
+if test -d "$HOME/bin"; then
 	PATH="$HOME/bin:$PATH"
 fi
 
-if test -d "/home/linuxbrew/.linuxbrew/bin/"
-then
+if test -d "/home/linuxbrew/.linuxbrew/bin/"; then
 	PATH="$PATH:/home/linuxbrew/.linuxbrew/bin/"
 fi
 
-if test -d /home/hendry/google-cloud-sdk
-then
+if test -d /home/hendry/google-cloud-sdk; then
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/hendry/google-cloud-sdk/path.bash.inc'
+	# The next line updates PATH for the Google Cloud SDK.
+	source '/home/hendry/google-cloud-sdk/path.bash.inc'
 
-# The next line enables bash completion for gcloud.
-source '/home/hendry/google-cloud-sdk/completion.bash.inc'
+	# The next line enables bash completion for gcloud.
+	source '/home/hendry/google-cloud-sdk/completion.bash.inc'
 
-export CLOUDSDK_PYTHON=python2
+	export CLOUDSDK_PYTHON=python2
 fi
 
 test -f ~/.profile && source ~/.profile
@@ -109,7 +103,6 @@ test -f ~/.profile && source ~/.profile
 test -d "$HOME/.node_modules/bin" && export PATH="$HOME/.node_modules/bin:$PATH"
 
 alias g="cd /home/hendry/go/src/github.com/kaihendry"
-
 
 webcup() {
 	cd $WEBC_CHECKOUT
@@ -138,20 +131,16 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 alias today='date -u +%Y-%m-%d'
 
 millitime() {
-        if test "$1"
-        then
-                # time described by arg
-                echo $(($(date -d"$1" +%s%N)/1000000))
-        else
-                # now
-                echo $(($(date +%s%N)/1000000))
-        fi
+	if test "$1"; then
+		# time described by arg
+		echo $(($(date -d"$1" +%s%N) / 1000000))
+	else
+		# now
+		echo $(($(date +%s%N) / 1000000))
+	fi
 }
 
-alias nvimconfig="$EDITOR ~/.config/nvim/init.vim"
-
 stty -ixon -ixoff # disregard Ctrl-S \023 and Ctrl+Q \021 so that we can use them scrolling
-
 
 set -o vi
 bind -m vi-insert '\c-l':clear-screen
@@ -194,8 +183,5 @@ eval "$(pyenv init -)"
 alias n='docker run -it --rm -v $(pwd):/src hendry/nvim:latest $@'
 alias goedit='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
-alias hen='f(){ docker run -it --rm -v $(pwd):/src hendry/nvim:latest; unset -f f; }; f'
-# alias ed='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace sh1d0w/nvim-typescript; unset -f f; }; f'
-# alias ef='f(){ docker run -it --rm -v $(cd $(dirname $1); pwd)/$(basename $1):/home/developer/workspace/$(basename $1) sh1d0w/nvim-typescript; unset -f f; }; f'
 
 alias i="cd ~/.config/nvim/"

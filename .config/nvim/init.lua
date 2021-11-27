@@ -33,7 +33,7 @@ require('packer').startup(function()
 	use 'github/copilot.vim' -- for AI completion
 
 	use {'hrsh7th/vim-vsnip', after = 'nvim-cmp'}
-	use { 'hrsh7th/cmp-vsnip', after = 'vim-vsnip' }
+	use {'hrsh7th/cmp-vsnip', after = 'vim-vsnip' }
 
 	-- use 'crispgm/nvim-go'
 	use 'nvim-lua/popup.nvim'
@@ -42,6 +42,16 @@ require('packer').startup(function()
 	  'nvim-telescope/telescope.nvim',
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
+ use {
+    'jose-elias-alvarez/null-ls.nvim',
+    requires = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+  }
+
+  use {
+    'jose-elias-alvarez/nvim-lsp-ts-utils',
+    require = { 'neovim/nvim-lspconfig', 'jose-elias-alvarez/null-ls.nvim' },
+  }
 
 end)
 
@@ -73,6 +83,7 @@ set tabstop=4
 set wildmode=longest,list,full
 set wildmenu
 autocmd ColorScheme * highlight Whitespace ctermfg=red guifg=#FF0000
+autocmd BufWritePre * :%s/\s\+$//e
 colorscheme dracula
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 ]], true)
@@ -80,5 +91,6 @@ map <F8> :setlocal spell! spelllang=en_gb<CR>
 require('findstuff')
 require('lsp')
 require('nvim-cmp')
+require('null')
 
 ::eof::
