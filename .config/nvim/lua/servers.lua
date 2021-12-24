@@ -12,6 +12,7 @@ return {
 				},
 				schemas = {
 					["https://raw.githubusercontent.com/awslabs/goformation/master/schema/sam.schema.json"] = "template.{yml,yaml}",
+					["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
 				},
 			},
 		},

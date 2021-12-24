@@ -102,8 +102,6 @@ test -f ~/.profile && source ~/.profile
 
 test -d "$HOME/.node_modules/bin" && export PATH="$HOME/.node_modules/bin:$PATH"
 
-alias g="cd /home/hendry/go/src/github.com/kaihendry"
-
 webcup() {
 	cd $WEBC_CHECKOUT
 	git push
@@ -181,7 +179,7 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 alias n='docker run -it --rm -v $(pwd):/src hendry/nvim:latest $@'
-alias goedit='f(){ docker run -it --rm -v $(pwd):/src hendry/goide; unset -f f; }; f'
+alias g='docker run -it --rm -v $(pwd):/src hendry/goide:latest $@'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
 
 alias i="cd ~/.config/nvim/"
