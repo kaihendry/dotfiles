@@ -1,17 +1,10 @@
-local ls = require "null-ls"
-local lsp = require "lspconfig"
+local null_ls = require("null-ls")
 
-ls.config {
-	sources = {
-		ls.builtins.formatting.stylua,
-		ls.builtins.formatting.shfmt,
-		ls.builtins.formatting.prettier,
-		ls.builtins.formatting.eslint,
-		ls.builtins.formatting.goimports,
-		ls.builtins.diagnostics.write_good,
-		ls.builtins.diagnostics.yamllint,
-		ls.builtins.diagnostics.shellcheck,
-	},
-	debug = true,
+-- register any number of sources simultaneously
+local sources = {
+	null_ls.builtins.formatting.prettier,
+	null_ls.builtins.diagnostics.write_good,
+	null_ls.builtins.code_actions.gitsigns,
 }
-lsp["null-ls"].setup {}
+
+null_ls.setup({ sources = sources })
