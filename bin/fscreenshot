@@ -1,6 +1,6 @@
 #!/bin/bash
 TMP=$(mktemp /tmp/XXXXXXX.png)
-flameshot gui --raw > $TMP
+flameshot gui --clipboard --raw > $TMP
 filename=$(dmenu -fn "Terminus (TTF):pixelsize=28" -p "Screenshot filename" < /dev/null)
 if test "$filename"
 then
