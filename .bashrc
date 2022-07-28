@@ -5,6 +5,7 @@ test -d ~/clip_history/ || mkdir ~/clip_history/
 export EDITOR=nvim
 
 alias vi=nvim
+alias vim=nvim
 
 shopt -s checkwinsize
 shopt -s cmdhist
@@ -43,7 +44,7 @@ export HISTFILESIZE=-1 HISTSIZE=-1
 HISTFILE=~/bash_history/$(date +%Y-%m)
 
 h() {
-	grep -a $@ ~/bash_history/*
+	rg -a $@ ~/bash_history/*
 }
 
 p() {
@@ -178,8 +179,14 @@ eval "$(pyenv init --path)"
 
 eval "$(pyenv init -)"
 
-alias n='docker run -it --rm -v $(pwd):/src hendry/nvim:latest $@'
+#alias n='docker run -it --rm -v $(pwd):/src hendry/nvim:latest $@'
 alias g='docker run -it --rm -v $(pwd):/src hendry/goide:latest $@'
 alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
 
+alias step=step-cli
+
 alias i="cd ~/.config/nvim/"
+
+# complete -C /usr/bin/aliyun aliyun
+
+eval "$(direnv hook bash)"

@@ -72,7 +72,6 @@ static const char *cmdsounddown[]  = { "pamixer", "-d", "1", NULL };
 static const char *cmdsoundtoggle[]  = { "pamixer", "-m", NULL };
 static const char *screenshot[]  = { "fscreenshot", NULL };
 static const char *x11capture[]  = { "x11capture", NULL };
-static const char *cmdlock[]  = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -80,15 +79,15 @@ static Key keys[] = {
 	{ 0,                            XK_Insert, spawn,          {.v = snipcmd } },
 	{ 0,                            XF86XK_Launch7, spawn,     {.v = snipcmd } },
 	{ MODKEY,                       XK_Insert, spawn,          {.v = clipcmd } },
-	{ MODKEY|ShiftMask,             XK_r, spawn,               {.v = clipcmd } },
+	{ MODKEY|ShiftMask,             XK_v, spawn,               {.v = clipcmd } },
 	{ 0,                            XF86XK_Launch9, spawn,     {.v = clipcmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_e,      spawn,          {.v = screenshot } },
+	{ 0,                            XK_Print,  spawn,          {.v = screenshot } },
 	{ MODKEY,                       XK_Print,  spawn,          {.v = x11capture } },
-	{ MODKEY,                       XK_F12,    spawn,           {.v = cmdlock } },
-	{ 0,                            XF86XK_Eject,    spawn,           {.v = cmdlock } },
+	{ 0,                            XF86XK_Eject,    spawn,           SHCMD("slock & xset dpms force off;")  },
 	{ 0,                            XF86XK_MonBrightnessDown,     spawn,         {.v = cmdbrightnessdown } },
 	{ 0,                            XF86MonBrightnessUp,       spawn,         {.v = cmdbrightnessup } },
 	{ 0,                            XF86AudioMute,             spawn,          {.v = cmdsoundtoggle } },

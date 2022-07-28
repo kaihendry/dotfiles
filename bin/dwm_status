@@ -2,7 +2,6 @@
 # Network speed stuff stolen from http://linuxclues.blogspot.sg/2009/11/shell-script-show-network-speed.html
 
 print_wifi() {
-	ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
 	if=wlan0
 		while IFS=$': \t' read -r label value
 		do
@@ -12,14 +11,18 @@ print_wifi() {
 				;;
 		esac
 	done < <(iw "$if" link)
-	echo -e "$SSID $SIGNAL $ip"
+	test "$SIGNAL" && echo -e "$SSID $SIGNAL"
+}
+
+print_ip_address() {
+	echo -e $(ip -j route get 8.8.8.8 | jq -r ".[0].prefsrc")
 }
 
 print_mem(){
 	echo $(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
 }
 
-print_network(){
+print_network_speed(){
 	logfile=/dev/shm/netlog
 	[ -f "$logfile" ] || echo "0 0" > "$logfile"
 	read -r rxprev txprev < "$logfile"
@@ -30,8 +33,8 @@ print_network(){
 }
 
 print_temp(){
-	test -f /sys/class/thermal/thermal_zone0/temp || return 0
-	echo $(head -c 2 /sys/class/thermal/thermal_zone0/temp)C
+	test -f /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon4/temp1_input || return 0
+	echo $(head -c 2 /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon4/temp1_input)C
 }
 
 print_bat(){
@@ -54,16 +57,10 @@ print_date(){
 	echo $(date "+%a %m-%d %T%:::z")
 }
 
-print_record(){
-	# https://github.com/kaihendry/recordmydesktop2.0/
-	test -f /tmp/r2d2 || return
-	rp=$(cat /tmp/r2d2 | awk '{print $2}')
-	size=$(du -h $rp | awk '{print $1}')
-	echo "🔴 $(basename $rp)"
-}
-
 while true
 do
-	xsetroot -name "$(print_mem) $(print_network) $(print_temp) $(print_wifi) $(print_bat) $(print_record) $(print_date)"
+	# Convert to printf
+	# ${x:+"$x"}
+	xsetroot -name "$(print_mem) $(print_network_speed) $(print_temp) $(print_wifi) $(print_ip_address) $(print_bat) $(print_date)"
 	sleep 1
 done

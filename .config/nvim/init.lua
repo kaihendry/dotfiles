@@ -36,6 +36,8 @@ require("packer").startup(function()
 
 	use("nvim-lua/popup.nvim")
 
+	use "lukas-reineke/indent-blankline.nvim"
+
 	use({
 		"lewis6991/gitsigns.nvim",
 		requires = {
