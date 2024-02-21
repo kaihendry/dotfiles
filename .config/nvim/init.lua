@@ -1,72 +1,20 @@
--- Install packer
-local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-
-if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-	vim.fn.execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+-- Install Lazy.vim package manager
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
-vim.api.nvim_exec(
-	[[
-  augroup Packer
-    autocmd!
-    autocmd BufWritePost init.lua PackerCompile
-  augroup end
-]],
-	false
-)
-
-local use = require("packer").use
-require("packer").startup(function()
-	use("wbthomason/packer.nvim") -- Package manager
-	use("tpope/vim-commentary") -- "gc" to comment visual regions/lines
-
-	use("Mofiqul/dracula.nvim")
-
-	use("tpope/vim-fugitive") -- I only use :0Gclog
-
-	use("neovim/nvim-lspconfig") -- use a language server
-	use("williamboman/nvim-lsp-installer")
-	use("hrsh7th/cmp-nvim-lsp")
-	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/nvim-cmp") -- for completion whilst using the language server
-	use("github/copilot.vim") -- for AI completion
-
-	use({ "hrsh7th/vim-vsnip", after = "nvim-cmp" })
-	use({ "hrsh7th/cmp-vsnip", after = "vim-vsnip" })
-
-	use("nvim-lua/popup.nvim")
-
-	use "lukas-reineke/indent-blankline.nvim"
-
-	use({
-		"lewis6991/gitsigns.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-		config = function()
-			require("gitsigns").setup()
-		end,
-	})
-
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
-
-	use({
-		"jose-elias-alvarez/null-ls.nvim",
-		requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-	})
-
-	use({
-		"jose-elias-alvarez/nvim-lsp-ts-utils",
-		require = { "neovim/nvim-lspconfig", "jose-elias-alvarez/null-ls.nvim" },
-	})
-end)
-
-if os.getenv("INSTALL") then
-	goto eof
-end
+require('lazy').setup({
+	'tpope/vim-fugitive',
+})
 
 --Set leader to space key
 vim.g.mapleader = " "
@@ -94,18 +42,8 @@ set wildmode=longest,list,full
 set wildmenu
 autocmd ColorScheme * highlight Whitespace ctermfg=red guifg=#FF0000
 autocmd BufWritePre * :%s/\s\+$//e
-colorscheme dracula
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 unmap Y
 ]],
 	true
 )
-
-require("findstuff")
-require("lsp")
-require("nvim-cmp")
-require("null")
-
-vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
-
-::eof::
