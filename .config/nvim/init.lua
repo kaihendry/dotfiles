@@ -1,3 +1,5 @@
+-- Keep below 100 LOC
+
 -- Install Lazy.vim package manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 	'tpope/vim-fugitive',
+	'github/copilot.vim',
 })
 
 --Set leader to space key
@@ -32,18 +35,25 @@ vim.o.smartcase = true
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
 
-vim.api.nvim_exec(
-	[[
-set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set wildmode=longest,list,full
-set wildmenu
-autocmd ColorScheme * highlight Whitespace ctermfg=red guifg=#FF0000
-autocmd BufWritePre * :%s/\s\+$//e
-map <F8> :setlocal spell! spelllang=en_gb<CR>
-unmap Y
-]],
-	true
-)
+-- Set options
+vim.opt.list = true
+vim.opt.listchars = "nbsp:¬,tab:»·,trail:·,extends:>"
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
+vim.opt.wildmode = "longest,list,full"
+vim.opt.wildmenu = true
+
+-- Highlight whitespace
+vim.api.nvim_create_autocmd("ColorScheme", {
+    pattern = "*",
+    callback = function()
+        vim.api.nvim_set_hl(0, "Whitespace", {ctermfg = "red", guifg = "#FF0000"})
+    end,
+})
+
+-- Map <F8> to toggle spell check for English (GB)
+vim.api.nvim_set_keymap('n', '<F8>', ':setlocal spell! spelllang=en_gb<CR>', {noremap = true, silent = true})
+
+-- Unmap Y
+vim.api.nvim_del_keymap('n', 'Y')
