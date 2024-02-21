@@ -1,72 +1,29 @@
+env:
+  TERM: xterm-256color
+
 font:
   normal:
-    family: Terminus
+    family: Terminess Nerd Font
     style: Medium
 
   bold:
-    family: Terminus
+    family: Terminess Nerd Font
     style: Bold
 
   italic:
-    family: Terminus
+    family: Terminess Nerd Font
     style: Medium Italic
 
   bold_italic:
-    family: Terminus
+    family: Terminess Nerd Font
     style: Bold Italic
 
-  size: 18
+  size: 14
 
 key_bindings:
   - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
   - { key: F, mods: Control, action: SearchForward }
-  - { key: V, mods: Control, action: Paste }
+  - { key: V, mods: Super, action: Paste }
 
 selection:
   save_to_clipboard: true
-
-colors:
-  search:
-    focused_match:
-      foreground: "#181818"
-      background: "#ab4642"
-    matches:
-      foreground: "#181818"
-      background: "#f4bf75"
-    bar:
-      foreground: "#d0d0d0"
-      background: "#262626"
-
-  primary:
-    background: "#000000"
-    foreground: "#ffffff"
-  cursor:
-    text: "#000000"
-    cursor: "#ffffff"
-  normal:
-    black: "#000000"
-    red: "#d54e53"
-    green: "#00ff00"
-    yellow: "#e6c547"
-    blue: "#7aa6da"
-    magenta: "#c397d8"
-    cyan: "#70c0ba"
-    white: "#eaeaea"
-  bright:
-    black: "#666666"
-    red: "#ff3334"
-    green: "#00ff00"
-    yellow: "#e7c547"
-    blue: "#7aa6da"
-    magenta: "#b77ee0"
-    cyan: "#54ced6"
-    white: "#ffffff"
-  dim:
-    black: "#000000"
-    red: "#8c3336"
-    green: "#00ff00"
-    yellow: "#97822e"
-    blue: "#506d8f"
-    magenta: "#80638e"
-    cyan: "#497e7a"
-    white: "#9a9a9a"

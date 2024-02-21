@@ -1,9 +1,9 @@
 [Default Applications]
-text/html=x-www-browser.desktop
+text/html=google-chrome.desktop
 application/pdf=org.pwmt.zathura.desktop
 x-scheme-handler/msteams=teams.desktop
-x-scheme-handler/http=x-www-browser.desktop
-x-scheme-handler/https=x-www-browser.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/ftp=firefox-personal.desktop
 x-scheme-handler/chrome=firefox.desktop
 application/x-extension-htm=firefox.desktop
@@ -13,9 +13,10 @@ application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 x-scheme-handler/webcal=chromium.desktop
-x-scheme-handler/about=x-www-browser.desktop
-x-scheme-handler/unknown=x-www-browser.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
 image/png=sxiv.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 
 [Added Associations]
 application/postscript=inkscape.desktop;

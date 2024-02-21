@@ -55,5 +55,5 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 -- Map <F8> to toggle spell check for English (GB)
 vim.api.nvim_set_keymap('n', '<F8>', ':setlocal spell! spelllang=en_gb<CR>', {noremap = true, silent = true})
 
--- Unmap Y
+-- Make Y copy the line
 vim.api.nvim_del_keymap('n', 'Y')

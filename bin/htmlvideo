@@ -66,8 +66,8 @@ mkdir "$today" &>/dev/null || true
 
 if ! FFREPORT=file=/tmp/$(basename $output).log ffmpeg -report -y -i "${input}" \
 	-metadata creation_time="$(date -u -Is -r "${input}")" \
-	-vaapi_device /dev/dri/renderD128 -movflags +faststart -vf 'format=nv12|vaapi,hwupload' -c:v h264_vaapi \
 	-metadata creation_time="$(date -u -Ins -r "${input}")" \
+	-c:v libx264 -preset slow -crf 22 \
 	$rotate \
 	-acodec aac "${output}" &> /dev/null
 then

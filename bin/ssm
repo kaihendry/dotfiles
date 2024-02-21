@@ -2,8 +2,8 @@
 
 if test "$1"
 then
-	aws --region us-east-1 ssm get-parameters --names $1 --with-decryption --query Parameters[0].Value --output text
+	aws --region eu-west-2 ssm get-parameters --names $1 --with-decryption --query Parameters[0].Value --output text
 else
-	aws --region us-east-1 ssm describe-parameters
+	aws --region eu-west-2 ssm describe-parameters
 fi
 

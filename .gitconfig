@@ -1,7 +1,6 @@
 [user]
 	name = Kai Hendry
 	email = hendry@iki.fi
-	signingkey = 64399BE2
 [color]
 	ui = auto
 [core]
@@ -22,12 +21,7 @@
 	prune = true
 [github]
 	user = kaihendry
-[url "git@source.golabs.io:"]
-	insteadOf = https://source.golabs.io/
 [credential]
 	helper = store
 [init]
 	defaultBranch = main
-	templatedir = /home/hendry/.git-template
-[url "ssh://git@github.com-twm"]
-	insteadOf = ssh://git@github.com

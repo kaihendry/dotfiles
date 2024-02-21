@@ -54,7 +54,7 @@ print_bat(){
 }
 
 print_date(){
-	echo $(date "+%a %m-%d %T%:::z")
+	echo $(date "+W%V %a %m-%d %T%:::z")
 }
 
 while true
