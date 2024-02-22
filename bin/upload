@@ -19,7 +19,8 @@ verbose=0
 nomanipulation=0
 date=$(date +%Y-%m-%d)
 
-OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
+OPTIND=1 # Reset is necessary if getopts was used previously in the script.
+
 while getopts "rnhvd:" opt; do
     case "$opt" in
         h)
@@ -86,7 +87,6 @@ esac
 	dst=$(basename "$src")
 
 	cp -v "$src" "$tmp/$date/$dst"
-
 	if aws --profile mine s3 cp --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"
 	then
 		logger "https://s.natalian.org/$date/$dst"

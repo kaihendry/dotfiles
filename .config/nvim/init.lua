@@ -15,25 +15,31 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+	'prettier/vim-prettier',
 	'tpope/vim-fugitive',
+	'tpope/vim-rhubarb',
 	'github/copilot.vim',
+	{ 'numToStr/Comment.nvim', opts = {} },
+	{
+		'lukas-reineke/indent-blankline.nvim',
+		main = 'ibl',
+		opts = {},
+	},
 })
 
---Set leader to space key
-vim.g.mapleader = " "
-
---Set highlight on search
+-- Set highlight on search
 vim.o.hlsearch = false
 
---Save undo history
+-- Save undo history
 vim.opt.undofile = true
 
---Case insensitive searching UNLESS /C or capital in search
+-- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
---Set colorscheme (order is important here)
+-- Set colorscheme (order is important here)
 vim.o.termguicolors = true
+vim.cmd('colorscheme desert')
 
 -- Set options
 vim.opt.list = true
@@ -44,16 +50,11 @@ vim.opt.tabstop = 4
 vim.opt.wildmode = "longest,list,full"
 vim.opt.wildmenu = true
 
--- Highlight whitespace
-vim.api.nvim_create_autocmd("ColorScheme", {
-    pattern = "*",
-    callback = function()
-        vim.api.nvim_set_hl(0, "Whitespace", {ctermfg = "red", guifg = "#FF0000"})
-    end,
-})
-
--- Map <F8> to toggle spell check for English (GB)
-vim.api.nvim_set_keymap('n', '<F8>', ':setlocal spell! spelllang=en_gb<CR>', {noremap = true, silent = true})
+-- Enable spell checking globally
+vim.o.spell = true
+vim.o.spelllang = "en_gb"
 
 -- Make Y copy the line
 vim.api.nvim_del_keymap('n', 'Y')
+
+vim.wo.relativenumber = true
