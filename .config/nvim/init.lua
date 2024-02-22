@@ -25,6 +25,23 @@ require('lazy').setup({
 		main = 'ibl',
 		opts = {},
 	},
+	{
+		"nomnivore/ollama.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+
+		keys = {
+			-- Sample keybind for prompt menu. Note that the <c-u> is important for selections to work properly.
+			{
+				"<leader>oo",
+				":<c-u>lua require('ollama').prompt()<cr>",
+				desc = "ollama prompt",
+				mode = { "n", "v" },
+			},
+		},
+		opts = {model = "stablelm2"},
+		}
 })
 
 -- Set highlight on search
