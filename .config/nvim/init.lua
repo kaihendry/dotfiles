@@ -19,29 +19,11 @@ require('lazy').setup({
 	'tpope/vim-fugitive',
 	'tpope/vim-rhubarb',
 	'github/copilot.vim',
-	{ 'numToStr/Comment.nvim', opts = {} },
 	{
 		'lukas-reineke/indent-blankline.nvim',
 		main = 'ibl',
 		opts = {},
 	},
-	{
-		"nomnivore/ollama.nvim",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-
-		keys = {
-			-- Sample keybind for prompt menu. Note that the <c-u> is important for selections to work properly.
-			{
-				"<leader>oo",
-				":<c-u>lua require('ollama').prompt()<cr>",
-				desc = "ollama prompt",
-				mode = { "n", "v" },
-			},
-		},
-		opts = {model = "stablelm2"},
-		}
 })
 
 -- Set highlight on search
@@ -54,7 +36,7 @@ vim.opt.undofile = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
--- Set colorscheme (order is important here)
+-- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd('colorscheme desert')
 
@@ -74,4 +56,5 @@ vim.o.spelllang = "en_gb"
 -- Make Y copy the line
 vim.api.nvim_del_keymap('n', 'Y')
 
-vim.wo.relativenumber = true
+-- show line numbers
+vim.opt.number = true
