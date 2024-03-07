@@ -18,9 +18,10 @@ require('lazy').setup({
 	'prettier/vim-prettier',
 	'tpope/vim-fugitive',
 	'tpope/vim-rhubarb',
+	'fatih/vim-go',
 	'github/copilot.vim',
 	{
-		'lukas-reineke/indent-blankline.nvim',
+		'lukas-reineke/indent-blankline.nvim', -- YAML engineering
 		main = 'ibl',
 		opts = {},
 	},
