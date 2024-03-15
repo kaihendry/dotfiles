@@ -93,4 +93,3 @@ source /usr/share/nvm/init-nvm.sh
 
 alias sts='aws sts get-caller-identity'
 alias ga='git commit -a'
-

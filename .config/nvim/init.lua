@@ -21,10 +21,25 @@ require('lazy').setup({
 	'fatih/vim-go',
 	'github/copilot.vim',
 	{
-		'lukas-reineke/indent-blankline.nvim', -- YAML engineering
-		main = 'ibl',
-		opts = {},
+		"nvim-telescope/telescope.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		keys = {
+			{ "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+		},
 	},
+	{
+		"jackMort/ChatGPT.nvim",
+		event = "VeryLazy",
+		config = function()
+			require("chatgpt").setup()
+		end,
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"folke/trouble.nvim",
+			"nvim-telescope/telescope.nvim"
+		}
+	}
 })
 
 -- Set highlight on search
