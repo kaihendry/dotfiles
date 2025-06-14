@@ -1,5 +1,5 @@
-# Setup    
+# Setup
 
 	git init
-	git remote set-url master git@github.com:kaihendry/dotfiles.git
-	git pull origin master
+	git remote add origin git@github.com:kaihendry/dotfiles.git
+	git pull origin main

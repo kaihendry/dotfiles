@@ -12,8 +12,8 @@ complete -cf sudo
 umask 002
 
 alias vim=nvim
-alias ls=exa
-alias ll='exa -alh --group-directories-first --color=always'
+alias ls=eza
+alias ll='eza -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
 
 # http://unix.stackexchange.com/a/18443/27433
@@ -88,8 +88,6 @@ eval "$(direnv hook bash)"
 eval "$(starship init bash)"
 
 export SAM_CLI_TELEMETRY=0
-
-source /usr/share/nvm/init-nvm.sh
 
 alias sts='aws sts get-caller-identity'
 alias ga='git commit -a'
