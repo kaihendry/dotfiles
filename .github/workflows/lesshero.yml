@@ -33,7 +33,7 @@ jobs:
       - uses: kaihendry/lesshero@v0.1.4
       - run:  mkdir "_site" && mv lesshero.html _site/index.html
       - name: Upload artifact # TODO: we want to ideally upload one file, not overwrite the whole site!
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
       - name: Deploy to GitHub Pages
         id: deployment # used in earlier steps.deployment.outputs.page_url reference
         uses: actions/deploy-pages@v4
