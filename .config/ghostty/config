@@ -1,0 +1,5 @@
+# help: ghostty +show-config --default --docs
+font-family = Jet Brains
+font-size = 18
+window-decoration = false
+copy-on-select = true

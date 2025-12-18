@@ -51,4 +51,10 @@ export SSH_AUTH_SOCK
 # see https://github.com/NixOS/nixpkgs/issues/14966#issuecomment-520083836
 mkdir -p "$HOME"/.local/share/keyrings
 
-exec /usr/local/bin/dwm 2>~/tmp/dwm.log
+google-chrome-stable --force-device-scale-factor=1.5 &
+
+# exec /usr/local/bin/dwm 2>~/tmp/dwm.log
+
+exec /home/hendry/tmp/dwm/dwm 2>~/tmp/dwm.log
+
+

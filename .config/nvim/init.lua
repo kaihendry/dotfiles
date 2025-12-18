@@ -27,16 +27,6 @@ require('lazy').setup({
 			{ "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
 		},
 	},
-	{
-    "dpayne/CodeGPT.nvim",
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'MunifTanjim/nui.nvim',
-    },
-    config = function()
-        require("codegpt.config")
-    end
-}
 })
 
 -- Set highlight on search

@@ -15,6 +15,7 @@ alias vim=nvim
 alias ls=eza
 alias ll='eza -alh --group-directories-first --color=always'
 alias ac="/usr/bin/vim ~/private/accounts"
+alias claude="npx @anthropic-ai/claude-code --dangerously-skip-permissions"
 
 # http://unix.stackexchange.com/a/18443/27433
 shopt -s histappend
@@ -95,3 +96,7 @@ alias ga='git commit -a'
 test -d /opt/google-cloud-cli/bin && export PATH=$PATH:/opt/google-cloud-cli/bin
 
 alias kamal='docker run -it --rm -v "${PWD}:/workdir" -v "${SSH_AUTH_SOCK}:/ssh-agent" -v /var/run/docker.sock:/var/run/docker.sock -e "SSH_AUTH_SOCK=/ssh-agent" ghcr.io/basecamp/kamal:latest'
+
+export _ZO_DOCTOR=0
+
+alias gemini="npx https://github.com/google-gemini/gemini-cli"
