@@ -37,6 +37,7 @@ alias vim=nvim
 alias svim='sudo --preserve-env=HOME nvim'
 alias codex='codex --yolo'
 
+alias rg='rg --max-columns=200 --max-columns-preview'
 alias ll="ls -lah"
 alias sts='aws sts get-caller-identity'
 alias today='date -u +%Y-%m-%d'

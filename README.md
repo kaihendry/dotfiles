@@ -33,10 +33,22 @@ Open a new terminal and verify with `echo $BASH_VERSION`.
 
 # macOS settings
 
-	./macos.sh
+Keyboard changes need a log out/in to take effect.
 
-Sets max keyboard repeat (log out/in to apply), tiny autohidden Dock,
-and Finder to list view / current-folder search / show all extensions.
+	# Keyboard: fastest key repeat, shortest delay (the GUI slider maximums)
+	defaults write NSGlobalDomain KeyRepeat -int 2
+	defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+	# Dock: autohide, smallest tiles
+	defaults write com.apple.dock autohide -bool true
+	defaults write com.apple.dock tilesize -int 16
+
+	# Finder: list view, search the current folder, show all file extensions
+	defaults write com.apple.finder FXPreferredViewStyle -string Nlsv
+	defaults write com.apple.finder FXDefaultSearchScope -string SCcf
+	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+	killall Dock Finder
 
 ## Raycast
 
