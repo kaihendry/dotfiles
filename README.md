@@ -15,17 +15,18 @@ shells not listed in /etc/shells, so:
 
 Open a new terminal and verify with `echo $BASH_VERSION`.
 
+# AWS
+
+`.aws/config` defines the `mine` profile — my personal AWS account
+(SSO via `aws sso login --sso-session mine`). Scripts like
+`bin/upload` use it as `AWS_PROFILE=mine` / `--profile mine`.
+
 # macOS settings
 
 	./macos.sh
 
 Sets max keyboard repeat (log out/in to apply), tiny autohidden Dock,
 and Finder to list view / current-folder search / show all extensions.
-
-Change hostname:
-
-	sudo scutil --set ComputerName "Kai's MacBook Pro"
-	sudo scutil --set LocalHostName m1
 
 ## Raycast
 

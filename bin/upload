@@ -12,6 +12,7 @@ EOF
 }
 
 # Initialize our own variables:
+bucket=${UPLOAD_BUCKET:-s.natalian.org}
 nomanipulation=0
 date=$(date +%Y-%m-%d)
 
@@ -88,15 +89,15 @@ for src in "$@"; do
 	cp -v "$src" "$tmp/$date/$dst"
 
 	if ! aws sts get-caller-identity --profile mine; then
-		BROWSER="chrome --profile-directory='Profile 2' %s" aws sso login --sso-session mine
+		aws sso login --sso-session mine
 	fi
 
-	if aws --profile mine s3 cp --acl public-read "$tmp/$date/$dst" "s3://s.natalian.org/$date/"; then
-		logger "https://s.natalian.org/$date/$dst"
+	if aws --profile mine s3 cp --acl public-read "$tmp/$date/$dst" "s3://$bucket/$date/"; then
+		logger "https://$bucket/$date/$dst"
 		if hash pbcopy 2>/dev/null; then
-			echo -n "https://s.natalian.org/$date/$dst" | pbcopy
+			echo -n "https://$bucket/$date/$dst" | pbcopy
 		else
-			echo -n "https://s.natalian.org/$date/$dst" | xsel -b
+			echo -n "https://$bucket/$date/$dst" | xsel -b
 		fi
 
 		aws --profile mine cloudfront create-invalidation --distribution-id E18Y8IGITQI2OG --paths "/$date/$dst"
