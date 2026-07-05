@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "tui": "fullscreen",
+  "theme": "dark",
+  "model": "claude-fable-5[1m]"
+}

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if test "$1"
-then
-	aws --region eu-west-2 ssm get-parameters --names $1 --with-decryption --query Parameters[0].Value --output text
-else
-	aws --region eu-west-2 ssm describe-parameters
-fi
-

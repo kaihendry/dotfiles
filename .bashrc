@@ -1,102 +1,54 @@
-test -z "$PS1" && return
-test -d ~/bash_history/ || mkdir ~/bash_history/
-test -d ~/clip_history/ || mkdir ~/clip_history/
+# yt-dlp needs browser cookies to pass YouTube's bot check (terminal needs Full Disk Access)
+export SUMMARIZE_YT_DLP_COOKIES_FROM_BROWSER=chrome
 
-shopt -s checkwinsize
-shopt -s cmdhist
-shopt -s cdspell
-shopt -s cdable_vars
+[[ $- == *i* ]] || return
 
-complete -cf sudo
+# --- history ---
+mkdir -p ~/bash_history
+__sess=~/bash_history/$(hostname -s).$$
+HISTFILE=~/bash_history/$(hostname -s).hist
+HISTSIZE=10000
+HISTFILESIZE=
+HISTTIMEFORMAT='%F %T '
 
-umask 002
+shopt -s histappend
+
+# rich per-session log: timestamp <TAB> cwd <TAB> command
+log_cmd() {
+  local HISTTIMEFORMAT= n cmd ts
+  read -r n cmd <<<"$(history 1)"
+  [[ $n == "$__last_hist_n" ]] && return
+  __last_hist_n=$n
+  printf -v ts '%(%F %T)T' -1
+  printf '%s\t%s\t%s\n' "$ts" "$PWD" "$cmd" >>"$__sess.tsv"
+}
+
+# --- shell options ---
+shopt -s extglob globstar checkjobs
+
+eval "$(/opt/homebrew/bin/brew shellenv bash)"
+eval "$(direnv hook bash)"
+eval "$(zoxide init bash --cmd j)"
+eval "$(fzf --bash)"
+
+PROMPT_COMMAND+=('history -a; history -n' log_cmd)
 
 alias vim=nvim
-alias ls=eza
-alias ll='eza -alh --group-directories-first --color=always'
-alias ac="/usr/bin/vim ~/private/accounts"
-alias claude="npx @anthropic-ai/claude-code --dangerously-skip-permissions"
+alias svim='sudo --preserve-env=HOME nvim'
+alias codex='codex --yolo'
 
-# http://unix.stackexchange.com/a/18443/27433
-shopt -s histappend
-HISTCONTROL=ignoredups
-PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/\~}\007"'
-PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
-export HISTFILESIZE=-1 HISTSIZE=-1
-HISTFILE=~/bash_history/$(date +%Y-%m)
-
-h() {
-	rg --sort path -a $@ ~/bash_history/*
-}
-
-export GIT_AUTHOR_NAME="Kai Hendry"
-export GIT_COMMITTER_NAME="Kai Hendry"
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-if test -d "/usr/local/bin"; then
-	PATH="/usr/local/bin:$PATH"
-fi
-
-if test -d "$HOME/.local/bin"; then
-	PATH="$HOME/.local/bin:$PATH"
-fi
-
-if test -d "$HOME/bin"; then
-	PATH="$HOME/bin:$PATH"
-fi
-
-if test -d "/home/linuxbrew/.linuxbrew/bin/"; then
-	PATH="$PATH:/home/linuxbrew/.linuxbrew/bin/"
-fi
-
-test -f /usr/bin/aws_completer && complete -C '/usr/bin/aws_completer' aws
-
-export PATH="/usr/local/sbin:$PATH"
-
-# test -f /etc/profile.d/autojump.bash && source /etc/profile.d/autojump.bash
-
-eval "$(zoxide init --cmd j  bash)"
-
-export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
-alias today='date -u +%Y-%m-%d'
-
-millitime() {
-	if test "$1"; then
-		# time described by arg
-		echo $(($(date -d"$1" +%s%N) / 1000000))
-	else
-		# now
-		echo $(($(date +%s%N) / 1000000))
-	fi
-}
-
-gdiff() {
-	git diff main... --name-status
-}
-
-ifconfig() {
-	ip -br -c a
-}
-
-alias g='docker run -it --rm -v $(pwd):/src hendry/goide:latest $@'
-alias te='f(){ docker run -it --entrypoint=sh --rm -v $(pwd):/src quay.io/nvim-lsp/try.nvim:nightly-typescript; unset -f f; }; f'
-
-alias i="cd ~/.config/nvim/"
-alias sloc="scc --no-cocomo -c"
-
-eval "$(direnv hook bash)"
-eval "$(starship init bash)"
-
-export SAM_CLI_TELEMETRY=0
-
+alias ll="ls -lah"
 alias sts='aws sts get-caller-identity'
+alias today='date -u +%Y-%m-%d'
 alias ga='git commit -a'
 
-test -d /opt/google-cloud-cli/bin && export PATH=$PATH:/opt/google-cloud-cli/bin
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] &&
+  . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
-alias kamal='docker run -it --rm -v "${PWD}:/workdir" -v "${SSH_AUTH_SOCK}:/ssh-agent" -v /var/run/docker.sock:/var/run/docker.sock -e "SSH_AUTH_SOCK=/ssh-agent" ghcr.io/basecamp/kamal:latest'
+PS1='$(ret=$?; if [[ $ret -ne 0 ]]; then printf "\[\e[31m\]"; fi)\W \$ \[\e[0m\]'
 
-export _ZO_DOCTOR=0
+h() {
+  rg -a -g '*.tsv' "$@" ~/bash_history/
+}
 
-alias gemini="npx https://github.com/google-gemini/gemini-cli"
+export PATH="$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$PATH"

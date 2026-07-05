@@ -1,26 +1,8 @@
 [user]
 	name = Kai Hendry
 	email = hendry@iki.fi
-[color]
-	ui = auto
-[core]
-	whitespace = fix
+[pull]
+	rebase = true
 [push]
 	default = current
-	followTags = true
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-[branch]
-	autosetuprebase = always
-[diff]
-	tool = vimdiff
-[fetch]
-	prune = true
-[github]
-	user = kaihendry
-[credential]
-	helper = store
-[init]
-	defaultBranch = main
+	autoSetupRemote = true

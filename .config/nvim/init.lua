@@ -1,63 +1,105 @@
--- Keep below 100 LOC
+local group = vim.api.nvim_create_augroup("user_config", { clear = true })
 
--- Install Lazy.vim package manager
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
+vim.api.nvim_create_autocmd("PackChanged", {
+  group = group,
+  callback = function(ev)
+    local name = ev.data.spec.name
+    local kind = ev.data.kind
 
-require('lazy').setup({
-	'prettier/vim-prettier',
-	'tpope/vim-fugitive',
-	'tpope/vim-rhubarb',
-	'fatih/vim-go',
-	'github/copilot.vim',
-	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		keys = {
-			{ "<C-p>", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-		},
-	},
+    if name == "fff.nvim" and (kind == "install" or kind == "update") then
+      if not ev.data.active then
+        vim.cmd.packadd("fff.nvim")
+      end
+
+      require("fff.download").download_or_build_binary()
+    end
+  end,
 })
 
--- Set highlight on search
-vim.o.hlsearch = false
+vim.pack.add({ "https://github.com/dmtrKovalenko/fff.nvim" })
 
--- Save undo history
-vim.opt.undofile = true
+vim.g.fff = {
+  lazy_sync = true,
+}
 
--- Case insensitive searching UNLESS /C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
-
--- Set colorscheme
-vim.o.termguicolors = true
-vim.cmd('colorscheme desert')
-
--- Set options
+vim.opt.backupcopy = "yes"
+vim.opt.diffopt:append("iwhite")
+vim.opt.foldenable = false
+vim.opt.ignorecase = true
 vim.opt.list = true
-vim.opt.listchars = "nbsp:¬,tab:»·,trail:·,extends:>"
 vim.opt.shiftwidth = 4
+vim.opt.showmatch = true
 vim.opt.softtabstop = 4
 vim.opt.tabstop = 4
-vim.opt.wildmode = "longest,list,full"
-vim.opt.wildmenu = true
+vim.opt.title = true
+vim.opt.undofile = true
+vim.opt.wildmode = { "longest", "list", "full" }
+vim.opt.listchars = {
+  nbsp = "¬",
+  tab = "»·",
+  trail = "·",
+  extends = ">",
+}
 
--- Enable spell checking globally
-vim.o.spell = true
-vim.o.spelllang = "en_gb"
+vim.keymap.set("n", "ff", function()
+  require("fff").find_files()
+end, { desc = "FFFind files" })
 
--- Make Y copy the line
-vim.api.nvim_del_keymap('n', 'Y')
+vim.keymap.set("n", "fg", function()
+  require("fff").live_grep()
+end, { desc = "LiFFFe grep" })
 
--- show line numbers
-vim.opt.number = true
+vim.keymap.set("", "<F8>", "<Cmd>setlocal spell! spelllang=en_gb<CR>", { desc = "Toggle British spellcheck" })
+vim.keymap.set("n", "<F5>", [[:%s/\s\+$//<CR>]], { silent = true, desc = "Trim trailing whitespace" })
+
+vim.cmd("syntax enable")
+vim.cmd("filetype plugin indent on")
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = group,
+  pattern = { "javascript", "vue", "yaml" },
+  callback = function()
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.softtabstop = 2
+    vim.opt_local.expandtab = true
+  end,
+})
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  group = group,
+  pattern = "*.jsonnet",
+  callback = function()
+    vim.opt_local.expandtab = true
+  end,
+})
+
+local function format_json_buffer()
+  if vim.bo.readonly or not vim.bo.modifiable then
+    return
+  end
+
+  local input = table.concat(vim.api.nvim_buf_get_lines(0, 0, -1, false), "\n")
+  if input == "" then
+    return
+  end
+
+  local cmd = vim.fn.executable("jq") == 1 and { "jq", "." } or { "python3", "-m", "json.tool" }
+  local result = vim.system(cmd, { stdin = input, text = true }):wait()
+
+  if result.code ~= 0 then
+    local message = vim.trim(result.stderr or "JSON formatting failed")
+    vim.notify(message, vim.log.levels.WARN, { title = "JSON format on save" })
+    return
+  end
+
+  local view = vim.fn.winsaveview()
+  local output = result.stdout:gsub("\n$", "")
+  vim.api.nvim_buf_set_lines(0, 0, -1, false, vim.split(output, "\n", { plain = true }))
+  vim.fn.winrestview(view)
+end
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  group = group,
+  pattern = "*.json",
+  callback = format_json_buffer,
+})

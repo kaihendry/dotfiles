@@ -1,0 +1,2 @@
+# Use Chrome cookies so YouTube stops demanding sign-in (requires Full Disk Access for the calling app)
+--cookies-from-browser chrome

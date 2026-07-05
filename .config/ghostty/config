@@ -1,5 +1,6 @@
-# help: ghostty +show-config --default --docs
-font-family = Jet Brains
-font-size = 18
-window-decoration = false
-copy-on-select = true
+font-family                    = JetBrains Mono
+font-size                      = 20
+font-thicken                   = true
+copy-on-select = clipboard
+
+shell-integration-features = ssh-env,ssh-terminfo
