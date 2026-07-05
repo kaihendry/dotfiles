@@ -1,8 +1,18 @@
 # Setup
 
-	git init
+Checked out directly into $HOME:
+
+	cd
+	git init -b main
 	git remote add origin git@github.com:kaihendry/dotfiles.git
-	git pull origin main
+	git fetch origin
+	git reset --hard origin/main
+	git branch -u origin/main
+
+# Homebrew
+
+	brew bundle --global          # install everything from ~/.Brewfile
+	brew bundle dump --global -f  # re-dump after installing/removing
 
 # Switch login shell to Homebrew bash
 
